@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw199",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gprofile_r",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Jaak Vilo",
-        "Jüri Reimand"
+        "Jüri Reimand",
+        "Jaak Vilo"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nef881c93bc354df1b0abfaee500c1ac5"
+          "@id": "_:N56129007c77a4bf0a3523ea32ecb0781"
         },
         {
-          "@id": "_:Nc8fe66093026412c87733ee2fc34a12b"
+          "@id": "_:N0f7f00ca488f4cffb54e4d4febeb688f"
         }
       ],
       "bsc:output": {
-        "@id": "_:N13ab7468a813419daefb547bc8095f18"
+        "@id": "_:N01d65c71e520448a9cd65214cf44144d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Suite"
+        "Suite",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_1775"
+          "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_0622"
@@ -69,29 +73,29 @@
           "@id": "edam:topic_0089"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_1775"
         }
       ],
       "sc:citation": [
         "pubmed:27098042",
-        "pmcid:PMC4987867",
         {
           "@id": "https://doi.org/10.1093/nar/gkw199"
-        }
+        },
+        "pmcid:PMC4987867"
       ],
       "sc:description": "gProfileR performs functional enrichment analysis, gene identifier conversion and mapping homologous genes across related organisms via the 'g:Profiler' toolkit. The tool performs statistical enrichment analysis to find over-representation of information like Gene Ontology terms, biological pathways, regulatory DNA elements, human disease gene annotations, and protein-protein interaction networks. The basic input is a list of genes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2422"
-        },
-        {
-          "@id": "edam:operation_3672"
-        },
-        {
           "@id": "edam:operation_2497"
         },
         {
+          "@id": "edam:operation_2422"
+        },
+        {
           "@id": "edam:operation_2436"
+        },
+        {
+          "@id": "edam:operation_3672"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -99,8 +103,8 @@
       "sc:name": "gProfileR",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://cran.r-project.org/web/packages/gProfileR/gProfileR.pdf"
@@ -109,7 +113,7 @@
       "sc:url": "https://cran.r-project.org/web/packages/gProfileR/index.html"
     },
     {
-      "@id": "_:N13ab7468a813419daefb547bc8095f18",
+      "@id": "_:N01d65c71e520448a9cd65214cf44144d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -120,18 +124,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nef881c93bc354df1b0abfaee500c1ac5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2295"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "Gene ID"
-    },
-    {
-      "@id": "_:Nc8fe66093026412c87733ee2fc34a12b",
+      "@id": "_:N56129007c77a4bf0a3523ea32ecb0781",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -142,8 +135,15 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw199",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0f7f00ca488f4cffb54e4d4febeb688f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2295"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Gene ID"
     }
   ]
 }

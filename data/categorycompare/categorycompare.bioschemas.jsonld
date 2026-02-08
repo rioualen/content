@@ -36,28 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-8141-7788",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.3389/fgene.2014.00098",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/categorycompare",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-8141-7788"
       },
       "bsc:input": {
-        "@id": "_:N8817fad088544e97b97297eae2d17364"
+        "@id": "_:Nf60b1c37f0aa40bf9789dbdff4439123"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd74e0211812c47eab9f8adb6d2edcee9"
+          "@id": "_:N8164a6266ce742d8a4bf1cfde8a4fd97"
         },
         {
-          "@id": "_:N5194d86bbd9a43bd8f8effffc5fce450"
+          "@id": "_:Nd84d78842d924c529dab766cb5461377"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -74,11 +66,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4010757",
         "pubmed:24808906",
         {
           "@id": "https://doi.org/10.3389/fgene.2014.00098"
-        }
+        },
+        "pmcid:PMC4010757"
       ],
       "sc:description": "Calculates significant annotations (categories) in each of two (or more) feature (i.e. gene) lists, determines the overlap between the annotations, and returns graphical and tabular data about the significant annotations and which combinations of feature lists the annotations were found to be significant. Interactive exploration is facilitated through the use of RCytoscape (heavily suggested).",
       "sc:featureList": {
@@ -87,9 +79,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "categoryCompare",
       "sc:operatingSystem": [
-        "Windows",
+        "Mac",
         "Linux",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/categoryCompare.html"
@@ -98,18 +90,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/categoryCompare.html"
     },
     {
-      "@id": "_:Nd74e0211812c47eab9f8adb6d2edcee9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N5194d86bbd9a43bd8f8effffc5fce450",
+      "@id": "_:N8164a6266ce742d8a4bf1cfde8a4fd97",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -120,7 +101,18 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N8817fad088544e97b97297eae2d17364",
+      "@id": "_:Nd84d78842d924c529dab766cb5461377",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Nf60b1c37f0aa40bf9789dbdff4439123",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -129,6 +121,14 @@
         "@id": "edam:format_2058"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fgene.2014.00098",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8141-7788",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -36,21 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-023-05266-4",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/genealyzer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne56979a1303e4bc2a75e39997181a3dc"
+        "@id": "_:N02102ba0172f4a8183a7f65f9731344a"
       },
       "bsc:output": {
-        "@id": "_:N825cc0f567ed403fb4984966c3f879b0"
+        "@id": "_:Nf37c6e68a475419baeb39b5f1cfd010b"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0203"
+        },
         {
           "@id": "edam:topic_3518"
         },
@@ -58,45 +57,50 @@
           "@id": "edam:topic_3315"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3295"
         },
         {
           "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_3295"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC10111666",
-        "pubmed:37069540",
         {
           "@id": "https://doi.org/10.1186/s12859-023-05266-4"
-        }
+        },
+        "pmcid:PMC10111666",
+        "pubmed:37069540"
       ],
       "sc:description": "Web application for the analysis and comparison of gene expression data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2939"
+          "@id": "edam:operation_3891"
         },
         {
           "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_3891"
+          "@id": "edam:operation_2939"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "Genealyzer",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:url": "https://genealyzer.item.fraunhofer.de/"
     },
     {
-      "@id": "_:Ne56979a1303e4bc2a75e39997181a3dc",
+      "@id": "_:Nf37c6e68a475419baeb39b5f1cfd010b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3754"
+      },
+      "sc:name": "GO-term enrichment data"
+    },
+    {
+      "@id": "_:N02102ba0172f4a8183a7f65f9731344a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -104,12 +108,8 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N825cc0f567ed403fb4984966c3f879b0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3754"
-      },
-      "sc:name": "GO-term enrichment data"
+      "@id": "https://doi.org/10.1186/s12859-023-05266-4",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

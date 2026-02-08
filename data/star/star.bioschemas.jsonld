@@ -36,43 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts635",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu146",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4106",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/star",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "rna-styar team",
       "bsc:input": {
-        "@id": "_:Na818c64e660b4d28887152509c2eb88f"
+        "@id": "_:N046790f2ea7447c48261c5f173dca5c8"
       },
       "bsc:output": [
         {
-          "@id": "_:N193f308d89e24bc58ce9803448a175af"
+          "@id": "_:N59a6fa98df764adaad9407c60e4ad48f"
         },
         {
-          "@id": "_:Nd5c2a3a727304c81b16fe66c9fd86812"
+          "@id": "_:N1b68b909393d41f6b89a5a3d6e2d2493"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1038/nmeth.4106"
+        },
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts635"
         },
@@ -81,12 +72,9 @@
         },
         "pubmed:23104886",
         "pubmed:24626854",
+        "pubmed:27941783",
         "pmcid:PMC3530905",
-        {
-          "@id": "https://doi.org/10.1038/nmeth.4106"
-        },
-        "pmcid:PMC5792058",
-        "pubmed:27941783"
+        "pmcid:PMC5792058"
       ],
       "sc:description": "Ultrafast universal RNA-seq data aligner",
       "sc:featureList": {
@@ -95,22 +83,41 @@
       "sc:license": "GPL-3.0",
       "sc:name": "STAR",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/alexdobin/STAR/releases"
+          "@id": "https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf"
         },
         {
-          "@id": "https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf"
+          "@id": "https://github.com/alexdobin/STAR/releases"
         }
       ],
       "sc:softwareVersion": "2.7.11",
       "sc:url": "http://code.google.com/p/rna-star/"
     },
     {
-      "@id": "_:N193f308d89e24bc58ce9803448a175af",
+      "@id": "_:N046790f2ea7447c48261c5f173dca5c8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N59a6fa98df764adaad9407c60e4ad48f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N1b68b909393d41f6b89a5a3d6e2d2493",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -126,23 +133,16 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:Nd5c2a3a727304c81b16fe66c9fd86812",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:name": "Gene expression matrix"
+      "@id": "https://doi.org/10.1093/bioinformatics/btu146",
+      "@type": "sc:CreativeWork"
     },
     {
-      "@id": "_:Na818c64e660b4d28887152509c2eb88f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "RNA sequence"
+      "@id": "https://doi.org/10.1093/bioinformatics/bts635",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.4106",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

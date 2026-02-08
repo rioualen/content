@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bsgenome",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "H. Pagès",
       "bsc:input": {
-        "@id": "_:Nf2910d9f87b84406a45e0f16240f6a25"
+        "@id": "_:N0dd646a7cbb14efd82d08264dda5ba48"
       },
       "bsc:output": [
         {
-          "@id": "_:N92ff75aa4bb248b69c9aa607e70ced5f"
+          "@id": "_:N3e9d50b2326141169cef4941484af4b0"
         },
         {
-          "@id": "_:N0f2a29e676004ee2aa4e6f82acdccad3"
+          "@id": "_:N05a52d4609c54ace89f55cec1d539220"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -68,8 +64,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4509590",
         "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         }
@@ -77,20 +73,20 @@
       "sc:description": "Infrastructure shared by all the Biostrings-based genome data packages.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1812"
-        },
-        {
           "@id": "edam:operation_0368"
         },
         {
           "@id": "edam:operation_2403"
+        },
+        {
+          "@id": "edam:operation_1812"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "BSgenome",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -100,7 +96,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/BSgenome.html"
     },
     {
-      "@id": "_:N92ff75aa4bb248b69c9aa607e70ced5f",
+      "@id": "_:N3e9d50b2326141169cef4941484af4b0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N05a52d4609c54ace89f55cec1d539220",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -111,31 +118,24 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N0f2a29e676004ee2aa4e6f82acdccad3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Nf2910d9f87b84406a45e0f16240f6a25",
+      "@id": "_:N0dd646a7cbb14efd82d08264dda5ba48",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1919"
         },
         {
-          "@id": "edam:format_1919"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Sequence record"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

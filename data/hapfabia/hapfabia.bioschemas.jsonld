@@ -36,26 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7449-2528",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkt1013",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/hapfabia",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7449-2528"
       },
       "bsc:input": {
-        "@id": "_:N3ae87b7d9e0a4c56820eb8c55e8723cb"
+        "@id": "_:N7e0b37cf96db464cb38c3004a249cdba"
       },
       "bsc:output": [
         {
-          "@id": "_:N21bb8f82509347858d88661c79396d88"
+          "@id": "_:N982bc08717e24ac588885992ea1e3805"
         },
         {
-          "@id": "_:Ne0699b61c530404d8d91288b2ef791d9"
+          "@id": "_:N38c148a0be7e4bc4b98b617b062f720d"
         },
         {
-          "@id": "_:Nf17dfd3aa0da4b07a7da9da7fd60a205"
+          "@id": "_:Nb692ad89590143cb9dbb40d5a6958a29"
         },
         {
-          "@id": "_:N2678ddded37b4858886d36c10279c768"
+          "@id": "_:Nd4d75f83d75f4969854499f6bb14be43"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -72,11 +80,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:24174545",
+        "pmcid:PMC3905877",
         {
           "@id": "https://doi.org/10.1093/nar/gkt1013"
         },
-        "pmcid:PMC3905877"
+        "pubmed:24174545"
       ],
       "sc:description": "Package to identify very short IBD segments in large sequencing data. Knowledge of short IBD segments are relevant for phasing of genotyping data, association studies, and for population genetics, where they shed light on the evolutionary history of humans. The package supports VCF formats, is based on sparse matrix operations, and provides visualization of haplotype clusters in different formats.",
       "sc:featureList": {
@@ -86,8 +94,8 @@
       "sc:name": "hapFabia",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/hapFabia.html"
@@ -96,51 +104,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/hapFabia.html"
     },
     {
-      "@id": "_:N21bb8f82509347858d88661c79396d88",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:Ne0699b61c530404d8d91288b2ef791d9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Haplotype map"
-    },
-    {
-      "@id": "_:Nf17dfd3aa0da4b07a7da9da7fd60a205",
+      "@id": "_:N982bc08717e24ac588885992ea1e3805",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -150,41 +114,85 @@
           "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_3508"
-        },
-        {
           "@id": "edam:format_3547"
         },
         {
           "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3508"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N2678ddded37b4858886d36c10279c768",
+      "@id": "_:N38c148a0be7e4bc4b98b617b062f720d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nb692ad89590143cb9dbb40d5a6958a29",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_3547"
         },
         {
           "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3508"
         }
       ],
-      "sc:name": "Report"
+      "sc:name": "Haplotype map"
     },
     {
-      "@id": "_:N3ae87b7d9e0a4c56820eb8c55e8723cb",
+      "@id": "_:Nd4d75f83d75f4969854499f6bb14be43",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N7e0b37cf96db464cb38c3004a249cdba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -193,14 +201,6 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt1013",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-7449-2528",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -36,11 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-1488-6052",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1186/s12859-015-0595-z",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0003-1488-6052",
+      "@id": "https://orcid.org/0000-0003-2324-086X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3663-0859",
       "@type": "sc:Person"
     },
     {
@@ -51,24 +59,24 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N51b78c7774404408a1c5ed4fa8e03b6e"
+          "@id": "_:N607827d74253414f965cfcd6d18a5b37"
         },
         {
-          "@id": "_:Nafda2c672b8a416989f18f880d03e8f5"
+          "@id": "_:N6489db5bfee8469989217c5cc5f95e9c"
         },
         {
-          "@id": "_:Nbc62b26205224eeeab252cf59254783a"
+          "@id": "_:Ne2e27ab352b94cfaaba108f2af7b6d1d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf74fa76105c74a9fa994f919b7037f53"
+          "@id": "_:N7928d8b417ec48b384adb4962f95c984"
         },
         {
-          "@id": "_:Nedee7344ccaf47daa9f6562a45475058"
+          "@id": "_:N451b25e83da24bd789e1971fa0398f00"
         },
         {
-          "@id": "_:Na43d535ee61843129ed1b2ecb78d88b7"
+          "@id": "_:Nac555bbce3b7415bb3509416ddf5d976"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -80,11 +88,11 @@
         "@id": "https://orcid.org/0000-0003-2324-086X"
       },
       "sc:citation": [
-        "pubmed:26130132",
+        "pmcid:PMC4486701",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0595-z"
         },
-        "pmcid:PMC4486701"
+        "pubmed:26130132"
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0003-1488-6052"
@@ -92,10 +100,10 @@
       "sc:description": "BioMaS is a friendly pipeline for Meta-barcoding HTS data analysis specifically designed for users without particular computing skills.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0496"
+          "@id": "edam:operation_3460"
         },
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_0496"
         },
         {
           "@id": "edam:operation_0232"
@@ -105,15 +113,70 @@
       "sc:license": "Not licensed",
       "sc:name": "BioMaS (Bioinformatic analysis of Metagenomic amplicons)",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:softwareVersion": "1.0",
-      "sc:url": "http://galaxy.cloud.ba.infn.it:8080/root"
+      "sc:url": "http://itsonewb.cloud.ba.infn.it/galaxy/tool_runner?tool_id=biomas2_wrapper"
     },
     {
-      "@id": "_:Nf74fa76105c74a9fa994f919b7037f53",
+      "@id": "_:N607827d74253414f965cfcd6d18a5b37",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N6489db5bfee8469989217c5cc5f95e9c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Ne2e27ab352b94cfaaba108f2af7b6d1d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N7928d8b417ec48b384adb4962f95c984",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N451b25e83da24bd789e1971fa0398f00",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nac555bbce3b7415bb3509416ddf5d976",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -122,69 +185,6 @@
         "@id": "edam:format_1910"
       },
       "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:Nedee7344ccaf47daa9f6562a45475058",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:Na43d535ee61843129ed1b2ecb78d88b7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N51b78c7774404408a1c5ed4fa8e03b6e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:Nafda2c672b8a416989f18f880d03e8f5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nbc62b26205224eeeab252cf59254783a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3663-0859",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2324-086X",
-      "@type": "sc:Person"
     }
   ]
 }

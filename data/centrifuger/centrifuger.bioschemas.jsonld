@@ -42,14 +42,20 @@
     {
       "@id": "https://bio.tools/centrifuger",
       "@type": "sc:SoftwareApplication",
+      "bsc:input": {
+        "@id": "_:Ne0b5a7c917aa412ca6070a26e5cf8b54"
+      },
+      "bsc:output": {
+        "@id": "_:Ne8493ea06a94460596050e137458be12"
+      },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Script"
+        "Script",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0637"
         },
         {
           "@id": "edam:topic_3174"
@@ -61,7 +67,7 @@
           "@id": "edam:topic_3837"
         },
         {
-          "@id": "edam:topic_0637"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -72,24 +78,35 @@
         "pubmed:38664753"
       ],
       "sc:description": "Lossless compression of microbial genomes for efficient and accurate metagenomic sequence classification.",
-      "sc:featureList": [
-        {
-          "@id": "edam:operation_3460"
-        },
-        {
-          "@id": "edam:operation_3211"
-        },
-        {
-          "@id": "edam:operation_3891"
-        },
-        {
-          "@id": "edam:operation_0224"
-        }
-      ],
+      "sc:featureList": {
+        "@id": "edam:operation_3460"
+      },
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "Centrifuger",
       "sc:url": "https://github.com/mourisl/centrifuger"
+    },
+    {
+      "@id": "_:Ne8493ea06a94460596050e137458be12",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:Ne0b5a7c917aa412ca6070a26e5cf8b54",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
     }
   ]
 }
