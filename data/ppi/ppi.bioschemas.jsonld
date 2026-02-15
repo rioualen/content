@@ -36,17 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/s10822-012-9626-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ppi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4ff09b2569a6400bbdd6a2c9ddb3c7fa"
+        "@id": "_:Nad1819021ff547a5b01ecb8702e1c0ea"
       },
       "bsc:output": {
-        "@id": "_:N903d3477a9d94430850f455f15c1cf4a"
+        "@id": "_:N489b938860834506b006a07bda2dbcfc"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -54,10 +50,10 @@
         "@id": "edam:topic_0128"
       },
       "sc:citation": [
-        "pubmed:23269578",
         {
           "@id": "https://doi.org/10.1007/s10822-012-9626-2"
-        }
+        },
+        "pubmed:23269578"
       ],
       "sc:description": "HyPPI classifies a protein-protein complex concerning its interaction type into permanent, transient or crystal artifact. Permanent protein-protein complexes are only stable in their complexed state and the subunits would denature upon complex dissociation. Transient protein-protein complexes are stable in the complexed form as well as in the monomeric depending of the necessary function of the complex. Crystal artifacts have no biological function and are artifically formed during crystallization process. The discrimination is performed using two characteristics of the protein-protein complex, the hydrophobicity of the interface (ΔGHydrophobic) and the quotient of interface area ratios (IF-quotient). The IF-quotient takes the symmetry of the protein-protein interface into account.",
       "sc:featureList": [
@@ -70,8 +66,8 @@
       ],
       "sc:name": "HyPPI",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:provider": "University of Hamburg - Center for Bioinformatics",
@@ -81,7 +77,15 @@
       "sc:url": "http://proteinsplus.zbh.uni-hamburg.de/#ppi"
     },
     {
-      "@id": "_:N4ff09b2569a6400bbdd6a2c9ddb3c7fa",
+      "@id": "_:N489b938860834506b006a07bda2dbcfc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Nad1819021ff547a5b01ecb8702e1c0ea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -92,12 +96,8 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N903d3477a9d94430850f455f15c1cf4a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:name": "Score"
+      "@id": "https://doi.org/10.1007/s10822-012-9626-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

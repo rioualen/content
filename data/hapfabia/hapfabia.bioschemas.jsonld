@@ -36,47 +36,39 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-7449-2528",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt1013",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/hapfabia",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7449-2528"
       },
       "bsc:input": {
-        "@id": "_:N7e0b37cf96db464cb38c3004a249cdba"
+        "@id": "_:N5ced75b495a2447f8382665049fddc78"
       },
       "bsc:output": [
         {
-          "@id": "_:N982bc08717e24ac588885992ea1e3805"
+          "@id": "_:N990d32bd14444424b3e7750ee8fa1bf9"
         },
         {
-          "@id": "_:N38c148a0be7e4bc4b98b617b062f720d"
+          "@id": "_:N152797e3884f47729cf74878545cd68e"
         },
         {
-          "@id": "_:Nb692ad89590143cb9dbb40d5a6958a29"
+          "@id": "_:Nd8a00b49eb0c4151aedcc6df586e5655"
         },
         {
-          "@id": "_:Nd4d75f83d75f4969854499f6bb14be43"
+          "@id": "_:N251fc597b7dd4d7b98b699d00fb1293f"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_0625"
         }
       ],
       "sc:citation": [
@@ -93,9 +85,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "hapFabia",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/hapFabia.html"
@@ -104,39 +96,50 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/hapFabia.html"
     },
     {
-      "@id": "_:N982bc08717e24ac588885992ea1e3805",
+      "@id": "_:N5ced75b495a2447f8382665049fddc78",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N990d32bd14444424b3e7750ee8fa1bf9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N38c148a0be7e4bc4b98b617b062f720d",
+      "@id": "_:N152797e3884f47729cf74878545cd68e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3547"
         },
         {
           "@id": "edam:format_3508"
@@ -148,29 +151,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nb692ad89590143cb9dbb40d5a6958a29",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Haplotype map"
-    },
-    {
-      "@id": "_:Nd4d75f83d75f4969854499f6bb14be43",
+      "@id": "_:Nd8a00b49eb0c4151aedcc6df586e5655",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -180,27 +161,46 @@
           "@id": "edam:format_3475"
         },
         {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N251fc597b7dd4d7b98b699d00fb1293f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1863"
+      },
+      "sc:encodingFormat": [
+        {
           "@id": "edam:format_3508"
         },
         {
           "@id": "edam:format_2330"
         },
         {
+          "@id": "edam:format_3475"
+        },
+        {
           "@id": "edam:format_3547"
         }
       ],
-      "sc:name": "Nucleic acid features"
+      "sc:name": "Haplotype map"
     },
     {
-      "@id": "_:N7e0b37cf96db464cb38c3004a249cdba",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
+      "@id": "https://doi.org/10.1093/nar/gkt1013",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-7449-2528",
+      "@type": "sc:Person"
     }
   ]
 }

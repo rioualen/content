@@ -36,67 +36,71 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkq918",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/parameciumdb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Contact Form",
       "bsc:input": [
         {
-          "@id": "_:N03f82a6e1ede4f08888128b1d16bddbd"
+          "@id": "_:Ncab5196837c94ad2b0e07c4aef19d214"
         },
         {
-          "@id": "_:Nad8e5a7f2ae947e283ea1f3b0cfe0c9c"
+          "@id": "_:N9be2df9457404decbaa4b8e4e0cff5c3"
         },
         {
-          "@id": "_:Ne600cf7ea0de41f192884ee8fe14cb07"
+          "@id": "_:N47a92b2937c04d29870d06a40b2f4412"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ndf41f04583c7446ca7d3ba92b02b065d"
+          "@id": "_:N750aec8144fd4fd4b34914a7e37299f8"
         },
         {
-          "@id": "_:Nf9519e59a3c74249abd678873c511853"
+          "@id": "_:N15bee9f1da954f5ca1b9751697f34e55"
         },
         {
-          "@id": "_:Na914de55a09340fca30d69511d87aeab"
+          "@id": "_:N913bfd598e9049a0826eea7218e31ecd"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0089"
-        },
-        {
           "@id": "edam:topic_3321"
         },
         {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_0160"
         },
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_0089"
+        },
+        {
+          "@id": "edam:topic_0621"
         },
         {
           "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:20952411",
         "pmcid:PMC3013783",
         {
           "@id": "https://doi.org/10.1093/nar/gkq918"
-        },
-        "pubmed:20952411"
+        }
       ],
       "sc:description": "Online community database for Paramecium species. Contains annotation of genome sequences and features, genome-wide data sets, advanced capabilities to query, retrieve, visualize and compare data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_2520"
         },
         {
           "@id": "edam:operation_0362"
         },
         {
-          "@id": "edam:operation_2520"
+          "@id": "edam:operation_0224"
         },
         {
           "@id": "edam:operation_0346"
@@ -109,9 +113,9 @@
       "sc:license": "CC-BY-4.0",
       "sc:name": "ParameciumDB",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://paramecium.i2bc.paris-saclay.fr/page/tutorials"
@@ -119,34 +123,40 @@
       "sc:url": "https://paramecium.i2bc.paris-saclay.fr"
     },
     {
-      "@id": "_:Ndf41f04583c7446ca7d3ba92b02b065d",
+      "@id": "_:Ncab5196837c94ad2b0e07c4aef19d214",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N9be2df9457404decbaa4b8e4e0cff5c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Nf9519e59a3c74249abd678873c511853",
+      "@id": "_:N47a92b2937c04d29870d06a40b2f4412",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0857"
+        "@id": "edam:data_1255"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1333"
+        "@id": "edam:format_2305"
       },
-      "sc:name": "Sequence search results"
+      "sc:name": "Sequence features"
     },
     {
-      "@id": "_:Na914de55a09340fca30d69511d87aeab",
+      "@id": "_:N750aec8144fd4fd4b34914a7e37299f8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -162,41 +172,31 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N03f82a6e1ede4f08888128b1d16bddbd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nad8e5a7f2ae947e283ea1f3b0cfe0c9c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2305"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Ne600cf7ea0de41f192884ee8fe14cb07",
+      "@id": "_:N15bee9f1da954f5ca1b9751697f34e55",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
       "sc:name": "Expression data"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkq918",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N913bfd598e9049a0826eea7218e31ecd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1333"
+      },
+      "sc:name": "Sequence search results"
     }
   ]
 }

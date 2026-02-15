@@ -44,41 +44,41 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Kieran O'Neill",
       "bsc:input": {
-        "@id": "_:N6551adfd02a74b3fbc0ffe92d6b72356"
+        "@id": "_:N237f2948757b4c938afdd47db9072a32"
       },
       "bsc:output": [
         {
-          "@id": "_:N96f5d09b496e48dcb4af27dec871f48a"
+          "@id": "_:Na5e9d1d8fc0a46fabe807a54891f49dc"
         },
         {
-          "@id": "_:Nb81e99b666704a88a6d97046dd110c45"
+          "@id": "_:Nb67efcd077544cc78a323bc4a929dcf7"
         },
         {
-          "@id": "_:Nb5bf4981f4ed4417be7d67dcd57af7fa"
+          "@id": "_:N1fcf33938670467f8996271596853eea"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_3361"
         },
         {
           "@id": "edam:topic_3306"
         }
       ],
       "sc:citation": [
+        "pubmed:25600947",
+        "pmcid:PMC4426837",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv008"
-        },
-        "pubmed:25600947",
-        "pmcid:PMC4426837"
+        }
       ],
       "sc:description": "Software to combine flow cytometry data that has been multiplexed into multiple tubes with common markers between them, by establishing common bins across tubes in terms of the common markers, then determining expression within each tube for each bin in terms of the tube-specific markers.",
       "sc:featureList": [
@@ -95,9 +95,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "flowBin",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/flowBin.html"
@@ -106,39 +106,50 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowBin.html"
     },
     {
-      "@id": "_:N96f5d09b496e48dcb4af27dec871f48a",
+      "@id": "_:N237f2948757b4c938afdd47db9072a32",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1636"
+        "@id": "edam:data_3108"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Heat map"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:Nb81e99b666704a88a6d97046dd110c45",
+      "@id": "_:Na5e9d1d8fc0a46fabe807a54891f49dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nb67efcd077544cc78a323bc4a929dcf7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": [
+        {
           "@id": "edam:format_3547"
         },
         {
           "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Report"
+      "sc:name": "Heat map"
     },
     {
-      "@id": "_:Nb5bf4981f4ed4417be7d67dcd57af7fa",
+      "@id": "_:N1fcf33938670467f8996271596853eea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -152,17 +163,6 @@
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N6551adfd02a74b3fbc0ffe92d6b72356",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
     }
   ]
 }

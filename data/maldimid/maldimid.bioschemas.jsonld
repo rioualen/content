@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/pmic.202300005",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/maldimid",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0b3d4c69b2b94ec3b30270407e924e63"
+          "@id": "_:N152d32450df247e6af706abecb0dcf19"
         },
         {
-          "@id": "_:N4a6c46cef4874cdf9c70a5ea1338a73c"
+          "@id": "_:Na113e09d352547838b9d5e52fb3769e4"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Web application"
+        "Web application",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -73,10 +69,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:37043374",
         {
           "@id": "https://doi.org/10.1002/pmic.202300005"
-        },
-        "pubmed:37043374"
+        }
       ],
       "sc:description": "R package and Shiny app for more specific identification of MALDI imaging proteolytic peaks using LC-MS/MS-based proteomic biomarker discovery data.",
       "sc:featureList": [
@@ -91,14 +87,22 @@
       "sc:license": "GPL-3.0",
       "sc:name": "MALDImID",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:url": "https://biosciences.shinyapps.io/Maldimid"
     },
     {
-      "@id": "_:N0b3d4c69b2b94ec3b30270407e924e63",
+      "@id": "_:N152d32450df247e6af706abecb0dcf19",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Na113e09d352547838b9d5e52fb3769e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -106,12 +110,8 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N4a6c46cef4874cdf9c70a5ea1338a73c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1002/pmic.202300005",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

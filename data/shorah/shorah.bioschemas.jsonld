@@ -36,40 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2164-14-501",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-12-119",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/shorah",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd2775393c35c4c1d889d9a8f07dd1cb8"
+          "@id": "_:N5774e255cd3540f8a7d52fbea563b36b"
         },
         {
-          "@id": "_:Ne75a8ff1ea14408ba8790b18bc65eebe"
+          "@id": "_:Nfd6534d5f4a940e18ec9602e6ed2ebc7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N27c534875a5649c8b1ce61a274a3175c"
+          "@id": "_:N0adc559dec1c4919b4606f485cb085e1"
         },
         {
-          "@id": "_:N5a43a06fc0254468ab274a75355eb2db"
+          "@id": "_:N983bf30ee31c426aa8a45e6d2dac5887"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_3174"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_3168"
@@ -88,53 +80,75 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2995073",
         {
           "@id": "https://doi.org/10.1186/1471-2105-12-119"
         },
-        "pubmed:23879730",
-        "pubmed:20671025",
-        "pmcid:PMC3848937",
         {
           "@id": "https://doi.org/10.1093/nar/gkq655"
         },
-        "pubmed:20377454",
-        "pmcid:PMC3113935",
-        {
-          "@id": "https://doi.org/10.1089/cmb.2009.0164"
-        },
+        "pubmed:20671025",
+        "pubmed:21521499",
+        "pmcid:PMC2995073",
         {
           "@id": "https://doi.org/10.1186/1471-2164-14-501"
         },
-        "pubmed:21521499"
+        "pubmed:20377454",
+        "pmcid:PMC3113935",
+        "pmcid:PMC3848937",
+        {
+          "@id": "https://doi.org/10.1089/cmb.2009.0164"
+        },
+        "pubmed:23879730"
       ],
       "sc:description": "Inference of a population from a set of short reads. The package contains programs that support mapping of reads to a reference genome, correcting sequencing errors by locally clustering reads in small windows of the alignment, reconstructing a minimal set of global haplotypes that explain the reads, and estimating the frequencies of the inferred haplotypes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0487"
+          "@id": "edam:operation_3227"
         },
         {
-          "@id": "edam:operation_3227"
+          "@id": "edam:operation_0487"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "ShoRAH",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/cbg-ethz/shorah/blob/master/README.md"
       },
       "sc:softwareVersion": [
-        "1.1.3",
-        "1.99.0"
+        "1.99.0",
+        "1.1.3"
       ],
       "sc:url": "https://github.com/cbg-ethz/shorah"
     },
     {
-      "@id": "_:N27c534875a5649c8b1ce61a274a3175c",
+      "@id": "_:N5774e255cd3540f8a7d52fbea563b36b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Nfd6534d5f4a940e18ec9602e6ed2ebc7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N0adc559dec1c4919b4606f485cb085e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1863"
@@ -145,7 +159,7 @@
       "sc:name": "Haplotype map"
     },
     {
-      "@id": "_:N5a43a06fc0254468ab274a75355eb2db",
+      "@id": "_:N983bf30ee31c426aa8a45e6d2dac5887",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -161,30 +175,20 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:Nd2775393c35c4c1d889d9a8f07dd1cb8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:Ne75a8ff1ea14408ba8790b18bc65eebe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
       "@id": "https://orcid.org/0000-0003-4739-5110",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2164-14-501",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7459-8186",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-12-119",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-9082-8607",
@@ -193,10 +197,6 @@
     {
       "@id": "https://doi.org/10.1093/nar/gkq655",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7459-8186",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1089/cmb.2009.0164",

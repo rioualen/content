@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv468",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/clustvis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Tauno Metsalu",
       "bsc:input": [
         {
-          "@id": "_:N6d5b299d8b1e40cda75175a9eb888c94"
+          "@id": "_:Nd9d356c15aae4b12856377a7e07dc252"
         },
         {
-          "@id": "_:Nb73aef852a2641d88cde6477f587172a"
+          "@id": "_:N65eaf16934f7462a88744f9c1dfc8877"
         },
         {
-          "@id": "_:N715a246ec56b4161bf4651d61c687d21"
+          "@id": "_:Nfa475d74e4c443d5b71588d854dd15e8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne477893de5db487f84390b1106cd155f"
+          "@id": "_:Nc3b53eb5baca4c23a2b9344cba142cfc"
         },
         {
-          "@id": "_:Nba4f40f6c81c44a8a24b238d311299df"
+          "@id": "_:N39ac8055161744ba9f7a704f983ee61e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -78,28 +82,28 @@
       "sc:description": "Web tool which allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2942"
-        },
-        {
-          "@id": "edam:operation_0313"
-        },
-        {
           "@id": "edam:operation_0531"
         },
         {
           "@id": "edam:operation_2939"
         },
         {
+          "@id": "edam:operation_2942"
+        },
+        {
           "@id": "edam:operation_2238"
+        },
+        {
+          "@id": "edam:operation_0313"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "ClustVis",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:provider": "ELIXIR-EE",
       "sc:softwareHelp": {
@@ -109,23 +113,45 @@
       "sc:url": "http://biit.cs.ut.ee/clustvis"
     },
     {
-      "@id": "_:N6d5b299d8b1e40cda75175a9eb888c94",
+      "@id": "_:Nc3b53eb5baca4c23a2b9344cba142cfc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3111"
+        "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3604"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3508"
         }
       ],
-      "sc:name": "Processed microarray data"
+      "sc:name": "Image"
     },
     {
-      "@id": "_:Nb73aef852a2641d88cde6477f587172a",
+      "@id": "_:N39ac8055161744ba9f7a704f983ee61e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3604"
+        }
+      ],
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:Nd9d356c15aae4b12856377a7e07dc252",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3113"
@@ -141,62 +167,36 @@
       "sc:name": "Sample annotation"
     },
     {
-      "@id": "_:N715a246ec56b4161bf4651d61c687d21",
+      "@id": "_:N65eaf16934f7462a88744f9c1dfc8877",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Ne477893de5db487f84390b1106cd155f",
+      "@id": "_:Nfa475d74e4c443d5b71588d854dd15e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1636"
+        "@id": "edam:data_3111"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3604"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3466"
+          "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Nba4f40f6c81c44a8a24b238d311299df",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkv468",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Processed microarray data"
     }
   ]
 }

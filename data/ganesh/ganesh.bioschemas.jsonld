@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm562",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ganesh",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-4327-3730"
       },
       "bsc:input": {
-        "@id": "_:Ne2636484183a49509d735c708eb84daa"
+        "@id": "_:Nc547b8c2bb324f9d91df95b684e0763b"
       },
       "bsc:output": {
-        "@id": "_:N59e5a63a2ee941ce88e0a7d1b4a9fa47"
+        "@id": "_:N71c1781219d4429aa15c37c963e23fee"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -53,10 +57,10 @@
         "@id": "edam:topic_0203"
       },
       "sc:citation": [
+        "pubmed:18033794",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btm562"
-        },
-        "pubmed:18033794"
+        }
       ],
       "sc:description": "A software to cluster expression data by Gibbs sampling procedure.",
       "sc:featureList": {
@@ -64,9 +68,9 @@
       },
       "sc:name": "GaneSh",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -76,7 +80,15 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/software/details/GaneSh"
     },
     {
-      "@id": "_:Ne2636484183a49509d735c708eb84daa",
+      "@id": "_:N71c1781219d4429aa15c37c963e23fee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1246"
+      },
+      "sc:name": "Sequence cluster (nucleic acid)"
+    },
+    {
+      "@id": "_:Nc547b8c2bb324f9d91df95b684e0763b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -87,20 +99,8 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N59e5a63a2ee941ce88e0a7d1b4a9fa47",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1246"
-      },
-      "sc:name": "Sequence cluster (nucleic acid)"
-    },
-    {
       "@id": "http://orcid.org/0000-0003-4327-3730",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm562",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

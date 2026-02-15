@@ -36,31 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1110/ps.8.5.978",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/chlorop",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf2bcd9103d03409689159478bf849e0d"
+        "@id": "_:N958d087a3bcc4171b3c97b27be897555"
       },
       "bsc:output": {
-        "@id": "_:Nb341dcc16229451c8c483629a8d26089"
+        "@id": "_:Nce090315174b418ea60767a543b3e86e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3510"
       },
       "sc:citation": [
+        "pubmed:10338008",
         {
           "@id": "https://doi.org/10.1110/ps.8.5.978"
         },
-        "pubmed:10338008",
         "pmcid:PMC2144330"
       ],
       "sc:description": "Prediction of presence of chloroplast transit peptides and their cleavage sites in plant proteins.",
@@ -71,24 +67,35 @@
       "sc:license": "Other",
       "sc:name": "ChloroP",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.cbs.dtu.dk/services/ChloroP/pages/instr.php"
+          "@id": "http://www.cbs.dtu.dk/services/ChloroP"
         },
         {
-          "@id": "http://www.cbs.dtu.dk/services/ChloroP"
+          "@id": "http://www.cbs.dtu.dk/services/ChloroP/pages/instr.php"
         }
       ],
       "sc:softwareVersion": "1.1",
       "sc:url": "http://cbs.dtu.dk/services/ChloroP/"
     },
     {
-      "@id": "_:Nb341dcc16229451c8c483629a8d26089",
+      "@id": "_:N958d087a3bcc4171b3c97b27be897555",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Nce090315174b418ea60767a543b3e86e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -99,15 +106,8 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nf2bcd9103d03409689159478bf849e0d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
+      "@id": "https://doi.org/10.1110/ps.8.5.978",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,8 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkz365",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0002-1262-2611",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8639-7592",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gku410",
@@ -48,55 +52,52 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0002-5918-6327",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1093/nar/gkz365",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/chopchop",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "https://orcid.org/0000-0002-1262-2611"
+          "@id": "https://orcid.org/0000-0002-5918-6327"
         },
         {
-          "@id": "https://orcid.org/0000-0002-5918-6327"
+          "@id": "https://orcid.org/0000-0002-1262-2611"
         }
       ],
       "bsc:input": [
         {
-          "@id": "_:N06488c7f602e403b97ad22da26918885"
+          "@id": "_:Nd83fba8d79634038a2fa7aebac34bc0e"
         },
         {
-          "@id": "_:Nc9812cf8e18047b69a02bf8f5b067064"
+          "@id": "_:N7c830dfa567d4dbe9628bfcc3ca2f30b"
         },
         {
-          "@id": "_:Ne05e78cdf32f400b8b3e6de0651e0663"
+          "@id": "_:N2df2481a24e34008871a484f18268f94"
         },
         {
-          "@id": "_:N0c3e116a093d4c9b9751c29c4a2872f3"
+          "@id": "_:N1e89ebf398e440aa98c2225c12099ced"
         },
         {
-          "@id": "_:N84dfdcff24f147748043947d8928efc2"
+          "@id": "_:Neb54fa25dbd54e3286f2ee4140c39ee9"
         },
         {
-          "@id": "_:Nd9aae955609b4754ab1d12d5094f56d1"
+          "@id": "_:N86e5bd9933c046adaee7f5e5040363ab"
         },
         {
-          "@id": "_:Nb2a2e8be61c34d78b3d5322b095a1948"
+          "@id": "_:Ne2dd5ba8c9364fa28182678dd7c081e7"
         }
       ],
       "bsc:output": {
-        "@id": "_:N31868f9122df4cf49c15d360471881d1"
+        "@id": "_:Nda7fefddd3204615a0a3904773a6cd1e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0622"
-        },
         {
           "@id": "edam:topic_3678"
         },
@@ -104,38 +105,41 @@
           "@id": "edam:topic_3912"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3511"
         },
         {
-          "@id": "edam:topic_3511"
+          "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:author": [
-        "Valen Group (Computational Biology Unit)",
         {
           "@id": "https://orcid.org/0000-0002-1262-2611"
-        }
+        },
+        "Valen Group (Computational Biology Unit)"
       ],
       "sc:citation": [
-        "pubmed:33905612",
-        "pubmed:27185894",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkw398"
-        },
-        "pubmed:24861617",
-        {
-          "@id": "https://doi.org/10.1002/cpz1.46"
-        },
+        "pubmed:31106371",
         "pmcid:PMC6602426",
-        {
-          "@id": "https://doi.org/10.1093/nar/gku410"
-        },
         "pmcid:PMC4086086",
-        "pmcid:PMC4987937",
         {
           "@id": "https://doi.org/10.1093/nar/gkz365"
         },
-        "pubmed:31106371"
+        {
+          "@id": "https://doi.org/10.1002/cpz1.46"
+        },
+        {
+          "@id": "https://doi.org/10.1093/nar/gkw398"
+        },
+        "pubmed:27185894",
+        {
+          "@id": "https://doi.org/10.1093/nar/gku410"
+        },
+        "pubmed:24861617",
+        "pmcid:PMC4987937",
+        "pubmed:33905612"
       ],
       "sc:contributor": [
         {
@@ -148,32 +152,32 @@
       "sc:description": "CHOPCHOP is a versatile tool for selecting target sites for CRISPR (Cas9, Cas9 nickase, Cas13, Cpf1/CasX) or TALEN-directed mutagenesis. The latest release of CHOPCHOP (version 3) includes many new features and visualization options, supporting over 200 genomes with whole-gene targeting and versatile search modes. The tool now enables precise RNA targeting with Cas13, supporting alternative transcript isoforms and predicting RNA accessibility using ViennaRNA's RNAfold. The update also introduces new DNA targeting modes, including CRISPR activation/repression, targeted enrichment of loci for long-read sequencing, and prediction of Cas9 repair outcomes. For larger queries or handling unsupported genomes, a command-line version is available with additional functionalities. CHOPCHOP v3 is user-friendly and well-equipped to support diverse targeting applications, facilitating effective experimental design.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2423"
-        },
-        {
           "@id": "edam:operation_2419"
         },
         {
           "@id": "edam:operation_3431"
+        },
+        {
+          "@id": "edam:operation_2423"
         }
       ],
       "sc:funder": [
-        "University of Bergen",
+        "The Research Council of Norway",
         "Bergen Research Foundation",
-        "The Research Council of Norway"
+        "University of Bergen"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "CHOPCHOP",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:provider": "University of Bergen",
       "sc:softwareHelp": [
         {
-          "@id": "http://chopchop.cbu.uib.no/instructions"
+          "@id": "https://bitbucket.org/valenlab/chopchop/src/master/README.md"
         },
         {
           "@id": "https://developer.atlassian.com/cloud/bitbucket/rest/api-group-downloads/#api-group-downloads"
@@ -182,45 +186,18 @@
           "@id": "http://chopchop.cbu.uib.no/faq"
         },
         {
-          "@id": "https://bitbucket.org/valenlab/chopchop/src/master/README.md"
+          "@id": "http://chopchop.cbu.uib.no/instructions"
         }
       ],
       "sc:softwareVersion": [
-        "3",
         "2",
+        "3",
         "1"
       ],
       "sc:url": "http://chopchop.cbu.uib.no/"
     },
     {
-      "@id": "_:N31868f9122df4cf49c15d360471881d1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:N06488c7f602e403b97ad22da26918885",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2295"
-      },
-      "sc:name": "Gene ID"
-    },
-    {
-      "@id": "_:Nc9812cf8e18047b69a02bf8f5b067064",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:Ne05e78cdf32f400b8b3e6de0651e0663",
+      "@id": "_:Nd83fba8d79634038a2fa7aebac34bc0e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1190"
@@ -228,18 +205,7 @@
       "sc:name": "Tool name"
     },
     {
-      "@id": "_:N0c3e116a093d4c9b9751c29c4a2872f3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1975"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N84dfdcff24f147748043947d8928efc2",
+      "@id": "_:N7c830dfa567d4dbe9628bfcc3ca2f30b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -258,7 +224,7 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:Nd9aae955609b4754ab1d12d5094f56d1",
+      "@id": "_:N2df2481a24e34008871a484f18268f94",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -266,7 +232,7 @@
       "sc:name": "Gene ID"
     },
     {
-      "@id": "_:Nb2a2e8be61c34d78b3d5322b095a1948",
+      "@id": "_:N1e89ebf398e440aa98c2225c12099ced",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1045"
@@ -274,16 +240,50 @@
       "sc:name": "Species name"
     },
     {
-      "@id": "https://orcid.org/0000-0002-8639-7592",
+      "@id": "_:Neb54fa25dbd54e3286f2ee4140c39ee9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N86e5bd9933c046adaee7f5e5040363ab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1975"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:Ne2dd5ba8c9364fa28182678dd7c081e7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2295"
+      },
+      "sc:name": "Gene ID"
+    },
+    {
+      "@id": "_:Nda7fefddd3204615a0a3904773a6cd1e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5918-6327",
       "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1002/cpz1.46",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1262-2611",
-      "@type": "sc:Person"
     }
   ]
 }

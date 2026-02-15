@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts607",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/multovl",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-0299-1165"
       },
       "bsc:input": {
-        "@id": "_:N8adeb40a4231460ab90dfce78fea3a83"
+        "@id": "_:Nf1418fe5e428472e91bc412d29910f8d"
       },
       "bsc:output": {
-        "@id": "_:Nfe59830aa5fd4da9914dc6d7bd1ccf83"
+        "@id": "_:Nce750ac3a11640d8b161bd26e2757669"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -53,10 +57,10 @@
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
-        "pubmed:23071271",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts607"
-        }
+        },
+        "pubmed:23071271"
       ],
       "sc:description": "Fast detection of multiple overlaps of genome regions",
       "sc:featureList": {
@@ -67,8 +71,8 @@
       "sc:name": "MULTOVL",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.interquadrat.eu/aa/software/multovl/guide.html"
@@ -77,7 +81,26 @@
       "sc:url": "https://www.interquadrat.eu/aa/software.php"
     },
     {
-      "@id": "_:Nfe59830aa5fd4da9914dc6d7bd1ccf83",
+      "@id": "_:Nf1418fe5e428472e91bc412d29910f8d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2305"
+        }
+      ],
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:Nce750ac3a11640d8b161bd26e2757669",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -88,31 +111,8 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N8adeb40a4231460ab90dfce78fea3a83",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2305"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence coordinates"
-    },
-    {
       "@id": "http://orcid.org/0000-0002-0299-1165",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts607",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

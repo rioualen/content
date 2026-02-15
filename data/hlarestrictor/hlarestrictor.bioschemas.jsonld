@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/hlarestrictor",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N512df937e1ba4e3a8fd483249974c4ed"
+        "@id": "_:N409f9393816b452db569600f49db0c11"
       },
       "bsc:output": {
-        "@id": "_:N83e7fd8ed27b4c60ad2e64114924a993"
+        "@id": "_:N0073db1526844a7c9b56856b7969dfa9"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -53,10 +57,10 @@
         "@id": "edam:topic_3534"
       },
       "sc:citation": [
-        "pubmed:21079948",
         {
           "@id": "https://doi.org/10.1007/s00251-010-0493-5"
-        }
+        },
+        "pubmed:21079948"
       ],
       "sc:description": "Patient-specific predictions of HLA restriction elements and optimal epitopes within peptides.",
       "sc:featureList": {
@@ -66,8 +70,8 @@
       "sc:license": "Other",
       "sc:name": "HLArestrictor",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:provider": "CBS",
@@ -78,18 +82,7 @@
       "sc:url": "http://cbs.dtu.dk/services/HLArestrictor/"
     },
     {
-      "@id": "_:N512df937e1ba4e3a8fd483249974c4ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N83e7fd8ed27b4c60ad2e64114924a993",
+      "@id": "_:N0073db1526844a7c9b56856b7969dfa9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -100,12 +93,19 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "https://doi.org/10.1007/s00251-010-0493-5",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N409f9393816b452db569600f49db0c11",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     },
     {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1007/s00251-010-0493-5",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkm779",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/annmap",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chris Wirth",
       "bsc:input": {
-        "@id": "_:Nf63041fd49654ea0b5fec04e2b25f033"
+        "@id": "_:N4853dd9fee3f4378b3626b7cb47240af"
       },
       "bsc:output": {
-        "@id": "_:N612a0fbb920c431ca9b78a2978c1eef4"
+        "@id": "_:N37be85ab64414e4999c9989c34b08a06"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0077"
         },
         {
-          "@id": "edam:topic_0077"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": [
+        "pubmed:17932061",
+        "pmcid:PMC2238884",
         {
           "@id": "https://doi.org/10.1093/nar/gkm779"
-        },
-        "pubmed:17932061",
-        "pmcid:PMC2238884"
+        }
       ],
       "sc:description": "Provides annotation mappings for Affymetrix exon arrays and coordinate based queries to support deep sequencing data analysis. Database access is hidden behind the API which provides a set of functions such as genesInRange(), geneToExon(), exonDetails(), etc. Functions to plot gene architecture and BAM file data are also provided. Underlying data are from Ensembl.",
       "sc:featureList": {
@@ -76,8 +72,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "annmap",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:softwareHelp": {
@@ -87,7 +83,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/annmap.html"
     },
     {
-      "@id": "_:Nf63041fd49654ea0b5fec04e2b25f033",
+      "@id": "_:N37be85ab64414e4999c9989c34b08a06",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:N4853dd9fee3f4378b3626b7cb47240af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -98,15 +105,8 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N612a0fbb920c431ca9b78a2978c1eef4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Database search results"
+      "@id": "https://doi.org/10.1093/nar/gkm779",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

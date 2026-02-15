@@ -36,34 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv561",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/patternquery",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
+        "Lukáš Pravda",
         "Primary Contact",
-        "David Sehnal",
-        "Lukáš Pravda"
+        "David Sehnal"
       ],
       "bsc:input": [
         {
-          "@id": "_:N94016a719f8d451fbe6042931e578ba4"
+          "@id": "_:N3ae1fb44749e4aea96fdd13f4778836c"
         },
         {
-          "@id": "_:N6fdf868cc3e34a088d3fe353e5d08ad9"
+          "@id": "_:N5e6b5244763d4dabbb072dc4821c1f69"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nbd29040213a14972995d4113e3edeed4"
+        "@id": "_:N882891116e694bc3aca0a66e479af0c0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3510"
+        },
+        {
+          "@id": "edam:topic_1317"
+        },
         {
           "@id": "edam:topic_0166"
         },
@@ -72,12 +74,6 @@
         },
         {
           "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_1317"
-        },
-        {
-          "@id": "edam:topic_3510"
         }
       ],
       "sc:author": "David Sehnal",
@@ -90,27 +86,27 @@
       ],
       "sc:contributor": [
         "Radka Svobodová Vařeková",
-        "Lukáš Pravda",
-        "Crina-Maria Ionescu"
+        "Crina-Maria Ionescu",
+        "Lukáš Pravda"
       ],
       "sc:description": "A web application to define, extract, and analyze structural patterns or biomolecular complexes in real-time.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0250"
+          "@id": "edam:operation_0570"
         },
         {
           "@id": "edam:operation_0245"
         },
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_0250"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "PatternQuery",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "ELIXIR-CZ",
@@ -118,31 +114,20 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://webchem.ncbr.muni.cz/Wiki/PatternQuery:UserManual"
+          "@id": "http://nar.oxfordjournals.org/citmgr?gca=nar%3B43%2FW1%2FW383"
         },
         {
           "@id": "http://webchem.ncbr.muni.cz/Platform/Home/About"
         },
         {
-          "@id": "http://nar.oxfordjournals.org/citmgr?gca=nar%3B43%2FW1%2FW383"
+          "@id": "http://webchem.ncbr.muni.cz/Wiki/PatternQuery:UserManual"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "http://ncbr.muni.cz/PatternQuery"
     },
     {
-      "@id": "_:N94016a719f8d451fbe6042931e578ba4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1127"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1477"
-      },
-      "sc:name": "PDB ID"
-    },
-    {
-      "@id": "_:N6fdf868cc3e34a088d3fe353e5d08ad9",
+      "@id": "_:N3ae1fb44749e4aea96fdd13f4778836c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -161,7 +146,18 @@
       "sc:name": "Structure"
     },
     {
-      "@id": "_:Nbd29040213a14972995d4113e3edeed4",
+      "@id": "_:N5e6b5244763d4dabbb072dc4821c1f69",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1127"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1477"
+      },
+      "sc:name": "PDB ID"
+    },
+    {
+      "@id": "_:N882891116e694bc3aca0a66e479af0c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -175,6 +171,10 @@
         }
       ],
       "sc:name": "Structure"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv561",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

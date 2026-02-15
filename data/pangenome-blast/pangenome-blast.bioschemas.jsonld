@@ -36,35 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-0744-7078",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btab077",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pangenome-blast",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ndec48900b99a4ecfb031500836a19d15"
+          "@id": "_:N1ce00bb5b9054c8ea134a8969f131a06"
         },
         {
-          "@id": "_:N55de056963624b7491520311acb8b8ff"
+          "@id": "_:Nf9a0624238294d68bb8f99f1e4aea0ee"
         },
         {
-          "@id": "_:Ne4ea5bf6287b457a8eabc8771d6e3d60"
+          "@id": "_:Nccbed83d9f5448b2aa611482b761d5e0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9ad710fd04bd4b289bbcb1afff124166"
+          "@id": "_:N156fd0912f2e44bcae59d7b90aedce98"
         },
         {
-          "@id": "_:N615f727b559d4ec2ab14973ef183c247"
+          "@id": "_:N2ea03fbec6a941c2b31f817914c16455"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0797"
         },
         {
-          "@id": "edam:topic_0797"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": {
@@ -90,13 +98,13 @@
       "sc:license": "GPL-3.0",
       "sc:name": "PLAST",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:provider": [
-        "Bielefeld University",
-        "Genome Informatics"
+        "Genome Informatics",
+        "Bielefeld University"
       ],
       "sc:softwareHelp": {
         "@id": "https://gitlab.ub.uni-bielefeld.de/gi/plast/-/blob/master/README.md"
@@ -105,23 +113,45 @@
       "sc:url": "https://github.com/tischulz1/plast"
     },
     {
-      "@id": "_:Ndec48900b99a4ecfb031500836a19d15",
+      "@id": "_:N156fd0912f2e44bcae59d7b90aedce98",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1234"
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1333"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N2ea03fbec6a941c2b31f817914c16455",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3975"
+          "@id": "edam:format_2333"
         },
         {
-          "@id": "edam:format_2333"
+          "@id": "edam:format_3975"
         }
       ],
-      "sc:name": "Sequence set (nucleic acid)"
+      "sc:name": "Sequence set"
     },
     {
-      "@id": "_:N55de056963624b7491520311acb8b8ff",
+      "@id": "_:N1ce00bb5b9054c8ea134a8969f131a06",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1211"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nf9a0624238294d68bb8f99f1e4aea0ee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -137,32 +167,10 @@
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:Ne4ea5bf6287b457a8eabc8771d6e3d60",
+      "@id": "_:Nccbed83d9f5448b2aa611482b761d5e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1211"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N9ad710fd04bd4b289bbcb1afff124166",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1333"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:N615f727b559d4ec2ab14973ef183c247",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
+        "@id": "edam:data_1234"
       },
       "sc:encodingFormat": [
         {
@@ -172,15 +180,7 @@
           "@id": "edam:format_2333"
         }
       ],
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btab077",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0744-7078",
-      "@type": "sc:Person"
+      "sc:name": "Sequence set (nucleic acid)"
     }
   ]
 }

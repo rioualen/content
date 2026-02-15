@@ -36,11 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-5903-617X",
+      "@id": "https://orcid.org/0000-0002-8689-2083",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0002-8689-2083",
+      "@id": "https://orcid.org/0000-0001-5903-617X",
       "@type": "sc:Person"
     },
     {
@@ -48,24 +48,24 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "https://orcid.org/0000-0001-5903-617X"
+          "@id": "https://orcid.org/0000-0002-8689-2083"
         },
         {
-          "@id": "https://orcid.org/0000-0002-8689-2083"
+          "@id": "https://orcid.org/0000-0001-5903-617X"
         }
       ],
       "bsc:input": {
-        "@id": "_:N4c538842935d47f3bec41673ee8b1a1b"
+        "@id": "_:N03608114098347baabde4efb116520dc"
       },
       "bsc:output": [
         {
-          "@id": "_:Ndda6983fc6cd4158a8839920ee40c10b"
+          "@id": "_:N2e2fbb17963c42b7b99988264822f6ed"
         },
         {
-          "@id": "_:Nf1e1eb1d50f542fcbdb7f0e0950e4c6b"
+          "@id": "_:N6321fdea22ee4274a47ad60d807d5133"
         },
         {
-          "@id": "_:Na939cff215a04edba18eeaff246ea746"
+          "@id": "_:Nd3a7b99e9cf94cadbd8911f43ec90c2d"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -77,10 +77,10 @@
       "sc:description": "This workflow provides an automated microbiome data analysis, starting with sequenced taxonomic markers (such as 16SrRNA) and using the standard QIIME2 toolbox to produce an abundance table and preliminary diversity, phylogeny and taxonomy analysis.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_0544"
         },
         {
-          "@id": "edam:operation_0544"
+          "@id": "edam:operation_3460"
         },
         {
           "@id": "edam:operation_0291"
@@ -90,45 +90,29 @@
       "sc:license": "Other",
       "sc:name": "microSysMics",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
+        "TENS",
         "LS2N",
-        "BiRD bioinformatics facility",
-        "TENS"
+        "BiRD bioinformatics facility"
       ],
       "sc:url": "https://gitlab.univ-nantes.fr/bird_pipeline_registry/microSysMics"
     },
     {
-      "@id": "_:N4c538842935d47f3bec41673ee8b1a1b",
+      "@id": "_:N2e2fbb17963c42b7b99988264822f6ed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
+        "@id": "edam:data_3272"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2545"
+        "@id": "edam:format_1910"
       },
-      "sc:name": "DNA sequence"
+      "sc:name": "Species tree"
     },
     {
-      "@id": "_:Ndda6983fc6cd4158a8839920ee40c10b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1872"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Taxonomic classification"
-    },
-    {
-      "@id": "_:Nf1e1eb1d50f542fcbdb7f0e0950e4c6b",
+      "@id": "_:N6321fdea22ee4274a47ad60d807d5133",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3707"
@@ -139,15 +123,31 @@
       "sc:name": "Biodiversity data"
     },
     {
-      "@id": "_:Na939cff215a04edba18eeaff246ea746",
+      "@id": "_:Nd3a7b99e9cf94cadbd8911f43ec90c2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3272"
+        "@id": "edam:data_1872"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3752"
+        }
+      ],
+      "sc:name": "Taxonomic classification"
+    },
+    {
+      "@id": "_:N03608114098347baabde4efb116520dc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1910"
+        "@id": "edam:format_2545"
       },
-      "sc:name": "Species tree"
+      "sc:name": "DNA sequence"
     }
   ]
 }

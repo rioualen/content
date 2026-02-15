@@ -36,21 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-2411-1325",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw623",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/egsea",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-2411-1325"
       },
       "bsc:input": {
-        "@id": "_:N0170d8a442624be3b5486b899db961e8"
+        "@id": "_:Na7014ad1561a4279ad83cbe0b76a6e46"
       },
       "bsc:output": {
-        "@id": "_:N501c46ff2ee3474bbb499d896c879696"
+        "@id": "_:Nc1580d495702464b9ea9201d6bcb6bfd"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2259"
@@ -68,8 +76,8 @@
       },
       "sc:name": "EGSEA",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:softwareHelp": {
@@ -79,18 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/EGSEA.html"
     },
     {
-      "@id": "_:N501c46ff2ee3474bbb499d896c879696",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:N0170d8a442624be3b5486b899db961e8",
+      "@id": "_:Na7014ad1561a4279ad83cbe0b76a6e46",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -101,12 +98,15 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "http://orcid.org/0000-0002-2411-1325",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw623",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc1580d495702464b9ea9201d6bcb6bfd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Data reference"
     }
   ]
 }

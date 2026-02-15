@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-8-166",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gosim",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Holger Froehlich",
       "bsc:input": {
-        "@id": "_:N5642dcab6d9142129848c2c962c88f97"
+        "@id": "_:N8d19886359494d87bcd852b9f51f838b"
       },
       "bsc:output": [
         {
-          "@id": "_:Na29d4b04c02f4f208030b310e6a0c358"
+          "@id": "_:N57854f4aa04f446b9631fa3146d1839f"
         },
         {
-          "@id": "_:Nabe3c270e212436fa403e94595c50c11"
+          "@id": "_:Nf52b3eee0c174487bf07331c36b70789"
         },
         {
-          "@id": "_:N0b78e8aac08b4dfdaa8f013a19a6fcbd"
+          "@id": "_:Nb70b619fe56e479c9e9e5e6b9c770ef9"
         },
         {
-          "@id": "_:N16060112bee548878420190dc993af2f"
+          "@id": "_:Ne2bd3ea44b0f40e2bbb7390fcf5dae69"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -63,33 +67,33 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0089"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC1892785",
         {
           "@id": "https://doi.org/10.1186/1471-2105-8-166"
         },
-        "pubmed:17519018"
+        "pubmed:17519018",
+        "pmcid:PMC1892785"
       ],
       "sc:description": "This package implements several functions useful for computing similarities between GO terms and gene products based on their GO annotation. Moreover it allows for computing a GO enrichment analysis.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3352"
         },
         {
-          "@id": "edam:operation_3352"
+          "@id": "edam:operation_2436"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "GOSim",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -99,18 +103,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GOSim.html"
     },
     {
-      "@id": "_:N5642dcab6d9142129848c2c962c88f97",
+      "@id": "_:N57854f4aa04f446b9631fa3146d1839f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1027"
+        "@id": "edam:data_1772"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID (NCBI)"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Score"
     },
     {
-      "@id": "_:Na29d4b04c02f4f208030b310e6a0c358",
+      "@id": "_:Nf52b3eee0c174487bf07331c36b70789",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -126,23 +135,7 @@
       "sc:name": "ID list"
     },
     {
-      "@id": "_:Nabe3c270e212436fa403e94595c50c11",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0582"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Ontology"
-    },
-    {
-      "@id": "_:N0b78e8aac08b4dfdaa8f013a19a6fcbd",
+      "@id": "_:Nb70b619fe56e479c9e9e5e6b9c770ef9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -158,24 +151,31 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N16060112bee548878420190dc993af2f",
+      "@id": "_:Ne2bd3ea44b0f40e2bbb7390fcf5dae69",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_0582"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         }
       ],
-      "sc:name": "Score"
+      "sc:name": "Ontology"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-8-166",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8d19886359494d87bcd852b9f51f838b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1027"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene ID (NCBI)"
     }
   ]
 }

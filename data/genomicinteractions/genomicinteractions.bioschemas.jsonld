@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12864-015-2140-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/genomicinteractions",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Liz Ing-Simmons",
-        "Malcolm Perry"
+        "Malcolm Perry",
+        "Liz Ing-Simmons"
       ],
       "bsc:input": [
         {
-          "@id": "_:N520a6a6b791748ab8c8da30520def2af"
+          "@id": "_:N2193b695a3f24405911d9159011e31f2"
         },
         {
-          "@id": "_:N091e8fe9d1eb464983e9dfd67b64a9b5"
+          "@id": "_:N35f4cb86fa954ca3bf7193b88bcf2acb"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N41f1bb9696c6413fba0f5d8760f8f983"
+          "@id": "_:Ne6e63304a24a431aa0018655f71284b5"
         },
         {
-          "@id": "_:Nf643327bb0354138bffcabeb44788ff4"
+          "@id": "_:N217d761e8fdb4e33b6bf258eefd7ac67"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -76,27 +72,27 @@
         }
       ],
       "sc:citation": [
-        "pubmed:26576536",
-        "pmcid:PMC4650858",
         {
           "@id": "https://doi.org/10.1186/s12864-015-2140-x"
-        }
+        },
+        "pmcid:PMC4650858",
+        "pubmed:26576536"
       ],
       "sc:description": "R package for handling Genomic interaction data, such as ChIA-PET/Hi-C, annotating genomic features with interaction information and producing various plots/statistics.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2949"
+          "@id": "edam:operation_0362"
         },
         {
-          "@id": "edam:operation_0362"
+          "@id": "edam:operation_2949"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "GenomicInteractions",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/GenomicInteractions.html"
@@ -105,39 +101,50 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GenomicInteractions.html"
     },
     {
-      "@id": "_:N41f1bb9696c6413fba0f5d8760f8f983",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nf643327bb0354138bffcabeb44788ff4",
+      "@id": "_:Ne6e63304a24a431aa0018655f71284b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N217d761e8fdb4e33b6bf258eefd7ac67",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
           "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_3547"
         }
       ],
-      "sc:name": "Nucleic acid features"
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:N520a6a6b791748ab8c8da30520def2af",
+      "@id": "_:N2193b695a3f24405911d9159011e31f2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N35f4cb86fa954ca3bf7193b88bcf2acb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -148,15 +155,8 @@
       "sc:name": "Sequence range"
     },
     {
-      "@id": "_:N091e8fe9d1eb464983e9dfd67b64a9b5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Feature table"
+      "@id": "https://doi.org/10.1186/s12864-015-2140-x",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

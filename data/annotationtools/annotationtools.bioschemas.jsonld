@@ -36,57 +36,53 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-9-26",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/annotationtools",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Alexandre Kuhn",
       "bsc:input": {
-        "@id": "_:Nd79e029caabd46adafda06e045df91f7"
+        "@id": "_:Nda2b838d758944c38d6acd8d8582d827"
       },
       "bsc:output": {
-        "@id": "_:N5c409f39d0294f7686f45466ebec62b3"
+        "@id": "_:N0bfbd32e21a24d9e8c0318c2a42e0490"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3366"
         },
         {
           "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_3366"
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2267709",
-        "pubmed:18201381",
         {
           "@id": "https://doi.org/10.1186/1471-2105-9-26"
-        }
+        },
+        "pubmed:18201381",
+        "pmcid:PMC2267709"
       ],
       "sc:description": "Functions to annotate microarrays, find orthologs, and integrate heterogeneous gene expression profiles using annotation and other molecular biology information available as flat file database (plain text files).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "annotationTools",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/annotationTools.html"
@@ -95,7 +91,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/annotationTools.html"
     },
     {
-      "@id": "_:Nd79e029caabd46adafda06e045df91f7",
+      "@id": "_:N0bfbd32e21a24d9e8c0318c2a42e0490",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:Nda2b838d758944c38d6acd8d8582d827",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -106,15 +113,8 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N5c409f39d0294f7686f45466ebec62b3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Database search results"
+      "@id": "https://doi.org/10.1186/1471-2105-9-26",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,36 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1748-7188-5-3",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp690",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cg-cat",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8ed594df5e9046a7bfd57280a5d12ec7"
+          "@id": "_:N545846c76f864086aad58f207c6d58d8"
         },
         {
-          "@id": "_:N1c1576ccb8e64e3b8207d3997dc131b0"
+          "@id": "_:N7f16ee3e640e4a0197eb79eb4f93855e"
         },
         {
-          "@id": "_:Na8ee328654eb445e93f3a480a0f40dda"
+          "@id": "_:N4b227f53e3a14aa0a7ef17441aa3735c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf0488a2adbdc488eb17cb3c8386e2d09"
+          "@id": "_:Ne89b9ef6b1a14ddbadeff6f4fe09ca37"
         },
         {
-          "@id": "_:Nc144093ea3f44163a99546596294c78a"
+          "@id": "_:N305b8853df0e45d69e6555c5a2982b18"
         },
         {
-          "@id": "_:N5ed980fae65a438fa3b89a85d7417ebb"
+          "@id": "_:N47fdba542c6f4a768c9c971181293590"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -75,15 +67,15 @@
       },
       "sc:author": "Peter Husemann",
       "sc:citation": [
-        "pmcid:PMC2826331",
-        "pmcid:PMC2820676",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp690"
         },
+        "pmcid:PMC2826331",
+        "pmcid:PMC2820676",
+        "pubmed:20047659",
         {
           "@id": "https://doi.org/10.1186/1748-7188-5-3"
         },
-        "pubmed:20047659",
         "pubmed:20015948"
       ],
       "sc:description": "With current sequencing technologies, it is feasible to generate a lot of reads for a given genome. However, the assembly usually ends up in a set of contigs with gaps between them. If the sequences of one (or several) related genome(s) are already known, this information can be used to estimate the order and orientation of the contigs towards each other. This helps in the finishing phase of a sequencing project since it eases the design of specific primer sequences to fill the gaps.",
@@ -103,12 +95,12 @@
       "sc:name": "CG-CAT",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
-        "CeBiTec",
         "Bielefeld University",
+        "CeBiTec",
         "BiBiServ"
       ],
       "sc:softwareHelp": {
@@ -118,18 +110,31 @@
       "sc:url": "http://bibiserv.cebitec.uni-bielefeld.de/cgcat"
     },
     {
-      "@id": "_:N8ed594df5e9046a7bfd57280a5d12ec7",
+      "@id": "_:Ne89b9ef6b1a14ddbadeff6f4fe09ca37",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2975"
+        "@id": "edam:data_3181"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1954"
-      },
-      "sc:name": "Nucleic acid sequence (raw)"
+      "sc:name": "Sequence assembly report"
     },
     {
-      "@id": "_:N1c1576ccb8e64e3b8207d3997dc131b0",
+      "@id": "_:N305b8853df0e45d69e6555c5a2982b18",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0862"
+      },
+      "sc:name": "Dotplot"
+    },
+    {
+      "@id": "_:N47fdba542c6f4a768c9c971181293590",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3181"
+      },
+      "sc:name": "Sequence assembly report"
+    },
+    {
+      "@id": "_:N545846c76f864086aad58f207c6d58d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -140,7 +145,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:Na8ee328654eb445e93f3a480a0f40dda",
+      "@id": "_:N7f16ee3e640e4a0197eb79eb4f93855e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
@@ -151,28 +156,23 @@
       "sc:name": "Nucleic acid sequence (raw)"
     },
     {
-      "@id": "_:Nf0488a2adbdc488eb17cb3c8386e2d09",
+      "@id": "_:N4b227f53e3a14aa0a7ef17441aa3735c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3181"
+        "@id": "edam:data_2975"
       },
-      "sc:name": "Sequence assembly report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_1954"
+      },
+      "sc:name": "Nucleic acid sequence (raw)"
     },
     {
-      "@id": "_:Nc144093ea3f44163a99546596294c78a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0862"
-      },
-      "sc:name": "Dotplot"
+      "@id": "https://doi.org/10.1093/bioinformatics/btp690",
+      "@type": "sc:CreativeWork"
     },
     {
-      "@id": "_:N5ed980fae65a438fa3b89a85d7417ebb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3181"
-      },
-      "sc:name": "Sequence assembly report"
+      "@id": "https://doi.org/10.1186/1748-7188-5-3",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

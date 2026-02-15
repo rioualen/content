@@ -40,20 +40,16 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1003703",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/clomial",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-5902-6238"
       },
       "bsc:input": {
-        "@id": "_:N36d03d30e69f4e048d80f491b924fcbc"
+        "@id": "_:N8ff5d0482de14b668f5c133efb40e863"
       },
       "bsc:output": {
-        "@id": "_:N03d8437f17884432bb93e0ff9a457139"
+        "@id": "_:Nb3a6d8d978aa4cb984ee8471335f3e35"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -75,11 +71,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:25010360",
         "pmcid:PMC4091710",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1003703"
-        }
+        },
+        "pubmed:25010360"
       ],
       "sc:description": "This tool fits binomial distributions to counts obtained from NGS data of multiple samples of the same tumor. The trained parameters can be interpreted to infer the clonal structure of the tumor.",
       "sc:featureList": {
@@ -89,8 +85,8 @@
       "sc:name": "Clomial",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/Clomial.html"
@@ -99,7 +95,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Clomial.html"
     },
     {
-      "@id": "_:N03d8437f17884432bb93e0ff9a457139",
+      "@id": "_:N8ff5d0482de14b668f5c133efb40e863",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Nb3a6d8d978aa4cb984ee8471335f3e35",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1622"
@@ -110,15 +117,8 @@
       "sc:name": "Disease report"
     },
     {
-      "@id": "_:N36d03d30e69f4e048d80f491b924fcbc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence variations"
+      "@id": "https://doi.org/10.1371/journal.pcbi.1003703",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

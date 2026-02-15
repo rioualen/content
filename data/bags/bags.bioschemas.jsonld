@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bags",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Alejandro Quiroz-Zarate",
       "bsc:input": {
-        "@id": "_:N179f3ec9c5ce4a438468a76004aaa6b8"
+        "@id": "_:N29619036cbf64b27ae406f16b2fdd053"
       },
       "bsc:output": {
-        "@id": "_:N6e920f1b6dfd4e90bc3c0a64b59d2163"
+        "@id": "_:Na4ea66661a5c4348b91dd4ce0e86ac67"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0203"
       },
       "sc:citation": [
-        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pubmed:25633503"
+        "pubmed:25633503",
+        "pmcid:PMC4509590"
       ],
       "sc:description": "R package providing functions to perform geneset significance analysis over simple cross-sectional data between 2 and 5 phenotypes of interest.",
       "sc:featureList": {
@@ -71,9 +67,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "BAGS",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/BAGS.html"
@@ -82,7 +78,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/BAGS.html"
     },
     {
-      "@id": "_:N179f3ec9c5ce4a438468a76004aaa6b8",
+      "@id": "_:Na4ea66661a5c4348b91dd4ce0e86ac67",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N29619036cbf64b27ae406f16b2fdd053",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -93,15 +100,8 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N6e920f1b6dfd4e90bc3c0a64b59d2163",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

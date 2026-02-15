@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-015-0681-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/simat",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mo R. Nezami Ranjbar",
       "bsc:input": {
-        "@id": "_:Nd1bacd32aaa1459ca309cb6f56032d98"
+        "@id": "_:Nce8d4f449eec424e8e20c0bdaacdc540"
       },
       "bsc:output": {
-        "@id": "_:Nc7fdeb8a564d4f5bb3afbba9e5d8c7c2"
+        "@id": "_:N5be1c5fa49404ea6bdd9aab8815f7add"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -59,10 +63,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:26283310",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0681-2"
         },
-        "pubmed:26283310",
         "pmcid:PMC4539696"
       ],
       "sc:description": "This package provides a pipeline for analysis of GC-MS data acquired in selected ion monitoring (SIM) mode. The tool also provides a guidance in choosing appropriate fragments for the targets of interest by using an optimization algorithm. This is done by considering overlapping peaks from a provided library by the user.",
@@ -88,18 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SIMAT.html"
     },
     {
-      "@id": "_:Nc7fdeb8a564d4f5bb3afbba9e5d8c7c2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Nd1bacd32aaa1459ca309cb6f56032d98",
+      "@id": "_:Nce8d4f449eec424e8e20c0bdaacdc540",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -110,8 +103,15 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0681-2",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N5be1c5fa49404ea6bdd9aab8815f7add",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Score"
     }
   ]
 }

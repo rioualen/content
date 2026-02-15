@@ -36,12 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-6485-8781",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btv145",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-6485-8781",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/chipseeker",
@@ -50,58 +50,58 @@
         "@id": "http://orcid.org/0000-0002-6485-8781"
       },
       "bsc:input": {
-        "@id": "_:N25ff7828ac9e4d1cb5ed743e52e80e45"
+        "@id": "_:N237559cb06724da7b0683a335a2ad946"
       },
       "bsc:output": [
         {
-          "@id": "_:N5c08ce90291b4a0990c3eb7e119687ee"
+          "@id": "_:N2f0558f88c0f43e88c06bf2ae542119a"
         },
         {
-          "@id": "_:N644d103cf6324dea88cdd4b1b971e381"
+          "@id": "_:Nbe9aebb5e1214bedb645c4b8b418d320"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3473"
-        },
         {
           "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_3473"
         }
       ],
       "sc:citation": [
-        "pubmed:25765347",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv145"
-        }
+        },
+        "pubmed:25765347"
       ],
       "sc:description": "This package implements functions to retrieve the nearest genes around the peak, annotate the genomic region of the peak, statistical methods for estimating the significance of overlap among ChIP peak data sets, and incorporate GEO database to compare the own dataset with those deposited in database. The comparison can be used to infer cooperative regulation and thus can be used to generate hypotheses.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_0337"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_0256"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "ChIPseeker",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:softwareHelp": {
@@ -111,7 +111,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ChIPseeker.html"
     },
     {
-      "@id": "_:N25ff7828ac9e4d1cb5ed743e52e80e45",
+      "@id": "_:N2f0558f88c0f43e88c06bf2ae542119a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:Nbe9aebb5e1214bedb645c4b8b418d320",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N237559cb06724da7b0683a335a2ad946",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -125,28 +147,6 @@
         }
       ],
       "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N5c08ce90291b4a0990c3eb7e119687ee",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N644d103cf6324dea88cdd4b1b971e381",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Plot"
     }
   ]
 }
