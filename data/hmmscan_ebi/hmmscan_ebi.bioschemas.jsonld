@@ -40,14 +40,14 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nc46004bf27c040759e5c40c77fd583e2"
+        "@id": "_:N31e0e6af754448b1b77591a64ae3a0e7"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd09af51f7f6b42bfa2b78f24657fc7f1"
+          "@id": "_:N373cfb87997d4aaa9beab0ff538f1c6b"
         },
         {
-          "@id": "_:Nda49690769d745a2a8d20db649d98354"
+          "@id": "_:N1a127b4b50e94b6699baf93fbaac77a1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -57,39 +57,39 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_0623"
         },
         {
-          "@id": "edam:topic_0623"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:author": "Sean Eddy",
       "sc:citation": [
-        "pubmed:21593126",
+        "pmcid:PMC9252731",
+        "pmcid:PMC3125773",
         {
           "@id": "https://doi.org/10.1093/nar/gkr367"
         },
-        "pmcid:PMC3125773",
-        "pmcid:PMC9252731",
-        "pubmed:35412617",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
-        }
+        },
+        "pubmed:21593126",
+        "pubmed:35412617"
       ],
       "sc:description": "Scan a protein sequence against a database of HMM profiles (e.g. TreeFam or Pfam-A).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:name": "hmmscan (EBI)",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -107,7 +107,15 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/pfa/hmmer_hmmscan/"
     },
     {
-      "@id": "_:Nd09af51f7f6b42bfa2b78f24657fc7f1",
+      "@id": "_:N31e0e6af754448b1b77591a64ae3a0e7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N373cfb87997d4aaa9beab0ff538f1c6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -115,20 +123,12 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nda49690769d745a2a8d20db649d98354",
+      "@id": "_:N1a127b4b50e94b6699baf93fbaac77a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
       },
       "sc:name": "Sequence signature matches"
-    },
-    {
-      "@id": "_:Nc46004bf27c040759e5c40c77fd583e2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkac240",

@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/protein/11.10.855",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sas",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Roman Laskowski",
       "bsc:input": {
-        "@id": "_:Nba5c330f263d475a9ff22c072a6885cb"
+        "@id": "_:N214e09e8a55448efb2921a7c64fa96d8"
       },
       "bsc:output": [
         {
-          "@id": "_:Nfc80e05d9a0545f096ca002f925b7c64"
+          "@id": "_:Nf6846f2b5064424290b2fd3be1939a0f"
         },
         {
-          "@id": "_:N025671ec06504537a13767be764ac7a8"
+          "@id": "_:Nc5585a0c26a54bd4ad7fd4c30e5775fc"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -61,14 +65,14 @@
         }
       ],
       "sc:author": [
-        "Roman Laskowski",
-        "Thornton Group"
+        "Thornton Group",
+        "Roman Laskowski"
       ],
       "sc:citation": [
-        "pubmed:9862203",
         {
           "@id": "https://doi.org/10.1093/protein/11.10.855"
-        }
+        },
+        "pubmed:9862203"
       ],
       "sc:contributor": "Duncan Milburn",
       "sc:description": "Annotation of protein sequence with structural info from similar proteins in the PDB.",
@@ -82,9 +86,9 @@
       ],
       "sc:name": "SAS",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -99,26 +103,7 @@
       "sc:url": "http://www.ebi.ac.uk/thornton-srv/databases/sas"
     },
     {
-      "@id": "_:Nba5c330f263d475a9ff22c072a6885cb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nfc80e05d9a0545f096ca002f925b7c64",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N025671ec06504537a13767be764ac7a8",
+      "@id": "_:Nf6846f2b5064424290b2fd3be1939a0f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -129,8 +114,23 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "https://doi.org/10.1093/protein/11.10.855",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc5585a0c26a54bd4ad7fd4c30e5775fc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N214e09e8a55448efb2921a7c64fa96d8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
     }
   ]
 }

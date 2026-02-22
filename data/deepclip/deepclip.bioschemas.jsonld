@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-8076-5035",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/DeepCLIP",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,18 +47,18 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Na0c9849dd0964a34b047694fa666b98b"
+          "@id": "_:Ncc87067879084cb1ab6e5bbbbd9dafa9"
         },
         {
-          "@id": "_:N5a3ef700e78a4ea8b1bec2b47c4572c2"
+          "@id": "_:N6edecf712d774599a6dac8a762c12462"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N480007a2fc4b41fda9fb06c5db6d7caa"
+          "@id": "_:Ndefe9fd319124e779de742e0a6a68f24"
         },
         {
-          "@id": "_:Nae3e466c6d2a4f72bcd75fc97a91b6ed"
+          "@id": "_:Ne5022d6e4dc34f269066c449ce586995"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -74,23 +78,23 @@
         }
       ],
       "sc:author": [
-        "Alexander Gulliver Bjørnholt Grønning",
+        {
+          "@id": "https://orcid.org/0000-0001-8076-5035"
+        },
         {
           "@id": "https://orcid.org/0000-0002-5315-8325"
         },
-        {
-          "@id": "https://orcid.org/0000-0001-8076-5035"
-        }
+        "Alexander Gulliver Bjørnholt Grønning"
       ],
       "sc:citation": [
-        "pmcid:PMC7367176",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkaa530"
-        },
+        "pubmed:32558887",
         {
           "@id": "https://doi.org/10.1101/757062"
         },
-        "pubmed:32558887"
+        "pmcid:PMC7367176",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkaa530"
+        }
       ],
       "sc:description": "Predicting the effect of mutations on protein-RNA binding with Deep Learning | This repository contains all DeepCLIP Python code | A context-aware neural network for modeling and predicting protein binding to nucleic acids using only sequence input | DeepCLIP is a neural network with shallow convolutional layers connected to a bidirectional LSTM layer",
       "sc:featureList": [
@@ -114,7 +118,23 @@
       "sc:url": "https://deepclip.compbio.sdu.dk"
     },
     {
-      "@id": "_:N480007a2fc4b41fda9fb06c5db6d7caa",
+      "@id": "_:Ndefe9fd319124e779de742e0a6a68f24",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Ne5022d6e4dc34f269066c449ce586995",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -125,23 +145,7 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:Nae3e466c6d2a4f72bcd75fc97a91b6ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Na0c9849dd0964a34b047694fa666b98b",
+      "@id": "_:Ncc87067879084cb1ab6e5bbbbd9dafa9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -152,7 +156,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N5a3ef700e78a4ea8b1bec2b47c4572c2",
+      "@id": "_:N6edecf712d774599a6dac8a762c12462",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -169,10 +173,6 @@
     {
       "@id": "https://doi.org/10.1093/nar/gkaa530",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8076-5035",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://orcid.org/0000-0002-5315-8325",

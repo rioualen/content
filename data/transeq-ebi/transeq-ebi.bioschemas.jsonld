@@ -40,18 +40,14 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/transeq-ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N58b1732714cf4702beb21e7676106672"
+        "@id": "_:N11d95e2091ad4f08ba0a3f553b9f20c4"
       },
       "bsc:output": {
-        "@id": "_:Nfb4004e858294487bafe75c16eb11742"
+        "@id": "_:Ne4bf3f4e6bc14e90b04f9ec2bebbfdb8"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -65,13 +61,13 @@
       "sc:author": "EMBOSS",
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
-        {
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
+        "pubmed:35412617",
         "pmcid:PMC9252731",
-        "pubmed:35412617"
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        }
       ],
       "sc:description": "Transeq translates nucleic acid sequences to their corresponding peptide sequences. It can translate to the three forward and three reverse frames, and output multiple frame translations at once.",
       "sc:featureList": {
@@ -79,9 +75,9 @@
       },
       "sc:name": "transeq (EBI)",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -99,7 +95,15 @@
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/st/emboss_transeq"
     },
     {
-      "@id": "_:Nfb4004e858294487bafe75c16eb11742",
+      "@id": "_:N11d95e2091ad4f08ba0a3f553b9f20c4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Ne4bf3f4e6bc14e90b04f9ec2bebbfdb8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -107,12 +111,8 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N58b1732714cf4702beb21e7676106672",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -45,28 +45,28 @@
       "biotools:primaryContact": "Julian L. Griffin",
       "bsc:input": [
         {
-          "@id": "_:N83c9357a057d4aa8afb4cefc15df43e0"
+          "@id": "_:N2e8a4184e6dd4816be3a5027b76b87a4"
         },
         {
-          "@id": "_:N2981bccfdb0742129fc0bc11fd9735f7"
+          "@id": "_:Ne5a384eb57014e8e9fe57dde25dd46cd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2158afd8fd4b4fd09097fcf6b1bbbf5e"
+          "@id": "_:N0d9e3cc3957d4e098a2d746ed100c250"
         },
         {
-          "@id": "_:N8de3fb7b32ab4f659265abb80fd494cf"
+          "@id": "_:N792f7e7ae5a24369ba991f4cb8fa79ca"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3382"
         },
         {
-          "@id": "edam:topic_3382"
+          "@id": "edam:topic_2269"
         },
         {
           "@id": "edam:topic_3520"
@@ -76,14 +76,17 @@
         }
       ],
       "sc:citation": [
-        "pubmed:28989334",
-        "pmcid:PMC5608769",
         {
           "@id": "https://doi.org/10.1007/s11306-017-1252-5"
-        }
+        },
+        "pubmed:28989334",
+        "pmcid:PMC5608769"
       ],
       "sc:description": "Processes high resolution mass spectrometry imaging data, performs multivariate statistics (PCA, clustering) and lipid identification.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3214"
+        },
         {
           "@id": "edam:operation_3443"
         },
@@ -92,15 +95,12 @@
         },
         {
           "@id": "edam:operation_3432"
-        },
-        {
-          "@id": "edam:operation_3214"
         }
       ],
       "sc:name": "massPix",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -109,18 +109,7 @@
       "sc:url": "https://github.com/hallz/massPix"
     },
     {
-      "@id": "_:N2158afd8fd4b4fd09097fcf6b1bbbf5e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N8de3fb7b32ab4f659265abb80fd494cf",
+      "@id": "_:N0d9e3cc3957d4e098a2d746ed100c250",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -136,18 +125,18 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N83c9357a057d4aa8afb4cefc15df43e0",
+      "@id": "_:N792f7e7ae5a24369ba991f4cb8fa79ca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2536"
+        "@id": "edam:data_2048"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3682"
+        "@id": "edam:format_3752"
       },
-      "sc:name": "Mass spectrometry data"
+      "sc:name": "Report"
     },
     {
-      "@id": "_:N2981bccfdb0742129fc0bc11fd9735f7",
+      "@id": "_:N2e8a4184e6dd4816be3a5027b76b87a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2850"
@@ -156,6 +145,17 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Lipid structure"
+    },
+    {
+      "@id": "_:Ne5a384eb57014e8e9fe57dde25dd46cd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3682"
+      },
+      "sc:name": "Mass spectrometry data"
     }
   ]
 }

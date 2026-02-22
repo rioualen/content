@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btk005",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/edge",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -47,37 +43,37 @@
         "Andrew J. Bass"
       ],
       "bsc:input": {
-        "@id": "_:N485e2bee0bb44a6e8f8f14f1392ced00"
+        "@id": "_:N5a5f3874708f4a568460d6459ca7f163"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb110b5634d7d4339b72b4c53eecf7130"
+          "@id": "_:Naa6a6fee25584bb8b1837c10e6638d09"
         },
         {
-          "@id": "_:N34005d3a11284c20bcf63439e7db07f5"
+          "@id": "_:N75f65f6a0fb844c2b7a26780eada65c1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Library"
+        "Library",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0203"
+        },
         {
           "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
-        "pubmed:16357033",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btk005"
-        }
+        },
+        "pubmed:16357033"
       ],
       "sc:description": "Software package for the significance analysis of DNA microarray experiments for both standard and time course experiments based on our new Optimal Discovery Procedure and Time Course Methodology.",
       "sc:featureList": {
@@ -86,9 +82,9 @@
       "sc:license": "MIT",
       "sc:name": "edge",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/edge.html"
@@ -97,7 +93,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/edge.html"
     },
     {
-      "@id": "_:N485e2bee0bb44a6e8f8f14f1392ced00",
+      "@id": "_:Naa6a6fee25584bb8b1837c10e6638d09",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N75f65f6a0fb844c2b7a26780eada65c1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N5a5f3874708f4a568460d6459ca7f163",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -108,36 +136,8 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nb110b5634d7d4339b72b4c53eecf7130",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N34005d3a11284c20bcf63439e7db07f5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "P-value"
+      "@id": "https://doi.org/10.1093/bioinformatics/btk005",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

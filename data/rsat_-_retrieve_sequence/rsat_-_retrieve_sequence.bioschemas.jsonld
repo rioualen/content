@@ -42,17 +42,17 @@
         "@id": "https://orcid.org/0000-0002-8799-8584"
       },
       "bsc:input": {
-        "@id": "_:N3ff1e491c30d47bfbe9dcfe643cdd316"
+        "@id": "_:Nba3c44608b3c40df9cac0daebfcd90fe"
       },
       "bsc:output": {
-        "@id": "_:N96bc80b1b60a4d6e9ce9eacabe331ff8"
+        "@id": "_:N0b9800eb60874cdab870a99fe5bed15c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
-        "Command-line tool",
         "Web API",
-        "Web service"
+        "Web service",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0204"
@@ -61,12 +61,12 @@
         "@id": "https://orcid.org/0000-0002-8799-8584"
       },
       "sc:citation": [
-        "pubmed:29722874",
         "pubmed:10641039",
-        "pmcid:PMC6030903",
+        "pubmed:29722874",
         {
           "@id": "https://doi.org/10.1093/nar/gky317"
-        }
+        },
+        "pmcid:PMC6030903"
       ],
       "sc:description": "Starting from a list of genes, returns upstream or downstream sequences.",
       "sc:featureList": {
@@ -75,13 +75,32 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "RSAT - Retrieve Sequence",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:url": "http://pedagogix-tagc.univ-mrs.fr/rsat/retrieve-seq_form.cgi"
     },
     {
-      "@id": "_:N3ff1e491c30d47bfbe9dcfe643cdd316",
+      "@id": "_:N0b9800eb60874cdab870a99fe5bed15c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1942"
+        },
+        {
+          "@id": "edam:format_1957"
+        }
+      ],
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nba3c44608b3c40df9cac0daebfcd90fe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -90,25 +109,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene ID"
-    },
-    {
-      "@id": "_:N96bc80b1b60a4d6e9ce9eacabe331ff8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1957"
-        },
-        {
-          "@id": "edam:format_1942"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "DNA sequence"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gky317",

@@ -43,29 +43,29 @@
       "@id": "https://bio.tools/edger",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Mark Robinson",
-        "Gordon Smyth",
-        "Yunshun Chen",
+        "Aaron Lun",
         {
           "@id": "http://orcid.org/0000-0002-2218-6833"
         },
-        "Aaron Lun"
+        "Gordon Smyth",
+        "Mark Robinson",
+        "Yunshun Chen"
       ],
       "bsc:input": {
-        "@id": "_:N5087cf5eff2f40598a77c7bb2c14fd42"
+        "@id": "_:N71681dae03ca4871bae4f8c4ed38a834"
       },
       "bsc:output": [
         {
-          "@id": "_:N1a006324491c45229c7eaad39229bd71"
+          "@id": "_:Na36b9a9aff2947adbb9dc259086ad352"
         },
         {
-          "@id": "_:N98d8fd4dbfb04ffaaf3d26ee4ed17961"
+          "@id": "_:Nd952cac85e1f49b3a96f8a16e6da8bc7"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -79,20 +79,20 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2796818",
-        "pubmed:27508061",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btp616"
+        },
         "pubmed:22287627",
-        "pmcid:PMC4934518",
-        "pubmed:19910308",
         {
           "@id": "https://doi.org/10.1093/nar/gks042"
         },
         {
-          "@id": "https://doi.org/10.1093/bioinformatics/btp616"
-        },
-        {
           "@id": "https://doi.org/10.12688/f1000research.8987.2"
         },
+        "pubmed:27508061",
+        "pmcid:PMC4934518",
+        "pmcid:PMC2796818",
+        "pubmed:19910308",
         "pmcid:PMC3378882"
       ],
       "sc:description": "Differential expression analysis of RNA-seq expression profiles with biological replication. Implements a range of statistical methodology based on the negative binomial distributions, including empirical Bayes estimation, exact tests, generalized linear models and quasi-likelihood tests. As well as RNA-seq, it be applied to differential signal analysis of other types of genomic data that produce counts, including ChIP-seq, SAGE and CAGE.",
@@ -102,9 +102,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "edgeR",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/edgeR.html"
@@ -113,7 +113,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/edgeR.html"
     },
     {
-      "@id": "_:N1a006324491c45229c7eaad39229bd71",
+      "@id": "_:Na36b9a9aff2947adbb9dc259086ad352",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nd952cac85e1f49b3a96f8a16e6da8bc7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -129,23 +145,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N98d8fd4dbfb04ffaaf3d26ee4ed17961",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N5087cf5eff2f40598a77c7bb2c14fd42",
+      "@id": "_:N71681dae03ca4871bae4f8c4ed38a834",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -160,12 +160,12 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gks042",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "http://orcid.org/0000-0002-2218-6833",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gks042",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

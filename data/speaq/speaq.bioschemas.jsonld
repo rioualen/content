@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1006018",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/speaq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Charlie Beirnaert",
       "bsc:input": {
-        "@id": "_:N785ec71cb4e344c9aaf7c7ad4775e39a"
+        "@id": "_:Nf985bf68f5a2459083bb252bcb2e2432"
       },
       "bsc:output": {
-        "@id": "_:N51d47dc6dc1d4090936b4eef5f2fe4f3"
+        "@id": "_:N9660215169c04afbb72bcba0694c4723"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
@@ -59,11 +63,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:29494588",
-        "pmcid:PMC5849334",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1006018"
-        }
+        },
+        "pmcid:PMC5849334",
+        "pubmed:29494588"
       ],
       "sc:description": "A framework for analyzing automatically raw 1D NMR spectra data. It is also compatible with other NMR frameworks or complementary LC-MS workflows.",
       "sc:featureList": {
@@ -73,34 +77,23 @@
       "sc:license": "Apache-2.0",
       "sc:name": "speaq",
       "sc:operatingSystem": [
+        "Mac",
         "Windows",
-        "Linux",
-        "Mac"
+        "Linux"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/Beirnaert/speaq/blob/master/README.md"
+          "@id": "https://cran.r-project.org/web/packages/speaq/speaq.pdf"
         },
         {
-          "@id": "https://cran.r-project.org/web/packages/speaq/speaq.pdf"
+          "@id": "https://github.com/Beirnaert/speaq/blob/master/README.md"
         }
       ],
       "sc:softwareVersion": "2.0",
       "sc:url": "https://cran.r-project.org/web/packages/speaq/index.html"
     },
     {
-      "@id": "_:N51d47dc6dc1d4090936b4eef5f2fe4f3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3617"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N785ec71cb4e344c9aaf7c7ad4775e39a",
+      "@id": "_:Nf985bf68f5a2459083bb252bcb2e2432",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3488"
@@ -111,8 +104,15 @@
       "sc:name": "NMR spectrum"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1006018",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9660215169c04afbb72bcba0694c4723",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3617"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

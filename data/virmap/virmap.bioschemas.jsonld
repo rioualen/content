@@ -36,17 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41467-018-05658-8",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/virmap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N53cb3e7d9c63482b92e9d3d3656bfbc6"
+        "@id": "_:Nde43221c9f6842f392f1dde23b840ee0"
       },
       "bsc:output": {
-        "@id": "_:Nb058546585744084a642de2d57f567ef"
+        "@id": "_:N671cfcf40f9e4bd5a577ab9278c419c8"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -59,19 +55,19 @@
         }
       ],
       "sc:citation": [
+        "pubmed:30097567",
+        "pmcid:PMC6086868",
         {
           "@id": "https://doi.org/10.1038/s41467-018-05658-8"
-        },
-        "pmcid:PMC6086868",
-        "pubmed:30097567"
+        }
       ],
       "sc:description": "VirMAP a tool that merge nucleotide and protein information to taxonomically classify viral reconstructions independent of genome coverage or read overlap",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_3435"
         },
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3460"
         },
         {
           "@id": "edam:operation_0232"
@@ -81,14 +77,22 @@
       "sc:license": "AGPL-3.0",
       "sc:name": "VirMAP",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://github.com/cmmr/VirMAP"
     },
     {
-      "@id": "_:Nb058546585744084a642de2d57f567ef",
+      "@id": "_:Nde43221c9f6842f392f1dde23b840ee0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N671cfcf40f9e4bd5a577ab9278c419c8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -96,12 +100,8 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N53cb3e7d9c63482b92e9d3d3656bfbc6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
+      "@id": "https://doi.org/10.1038/s41467-018-05658-8",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

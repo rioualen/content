@@ -36,6 +36,112 @@
   },
   "@graph": [
     {
+      "@id": "https://bio.tools/supermatcher",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:Nf6fe9918f59342c6bcbfdcadb018a4c5"
+        },
+        {
+          "@id": "_:N9796d6f0885040d4aae92f2aa63c8bc5"
+        },
+        {
+          "@id": "_:Nc80df11e892c4025b31717d84de55cd1"
+        }
+      ],
+      "bsc:output": {
+        "@id": "_:N38a1a3c918814916ae9c0ddf257824b8"
+      },
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_0097"
+      },
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
+        },
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
+        {
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
+        }
+      ],
+      "sc:contributor": [
+        "Wellcome Trust",
+        "UK BBSRC",
+        "EMBOSS Contributors",
+        "UK MRC"
+      ],
+      "sc:description": "Calculate approximate local pair-wise alignments of larger sequences.",
+      "sc:featureList": {
+        "@id": "edam:operation_0491"
+      },
+      "sc:funder": [
+        "Wellcome Trust",
+        "UK BBSRC",
+        "UK MRC"
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "GPL-3.0",
+      "sc:name": "supermatcher",
+      "sc:operatingSystem": [
+        "Windows",
+        "Linux",
+        "Mac"
+      ],
+      "sc:provider": [
+        "EMBOSS",
+        "EMBL-EBI"
+      ],
+      "sc:softwareHelp": [
+        {
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/supermatcher.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+        }
+      ],
+      "sc:softwareVersion": "r6",
+      "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/supermatcher.html"
+    },
+    {
+      "@id": "_:Nf6fe9918f59342c6bcbfdcadb018a4c5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N9796d6f0885040d4aae92f2aa63c8bc5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0874"
+      },
+      "sc:name": "Comparison matrix"
+    },
+    {
+      "@id": "_:Nc80df11e892c4025b31717d84de55cd1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N38a1a3c918814916ae9c0ddf257824b8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1381"
+      },
+      "sc:name": "Sequence alignment (pair)"
+    },
+    {
       "@id": "https://doi.org/10.1017/CBO9781139151399",
       "@type": "sc:CreativeWork"
     },
@@ -46,112 +152,6 @@
     {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://bio.tools/supermatcher",
-      "@type": "sc:SoftwareApplication",
-      "bsc:input": [
-        {
-          "@id": "_:Nd0214c36fb6b417cb5669c38fb76854e"
-        },
-        {
-          "@id": "_:N66e01f7489b44f478e3e81d83e8b5dda"
-        },
-        {
-          "@id": "_:Ne82c7f6b42474289a66dc25433f39e52"
-        }
-      ],
-      "bsc:output": {
-        "@id": "_:N0659369e66c2491a862aabbaa0e7b413"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Command-line tool",
-      "sc:applicationSubCategory": {
-        "@id": "edam:topic_0097"
-      },
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
-        },
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        },
-        {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
-        }
-      ],
-      "sc:contributor": [
-        "EMBOSS Contributors",
-        "UK BBSRC",
-        "Wellcome Trust",
-        "UK MRC"
-      ],
-      "sc:description": "Calculate approximate local pair-wise alignments of larger sequences.",
-      "sc:featureList": {
-        "@id": "edam:operation_0491"
-      },
-      "sc:funder": [
-        "UK BBSRC",
-        "Wellcome Trust",
-        "UK MRC"
-      ],
-      "sc:isAccessibleForFree": true,
-      "sc:license": "GPL-3.0",
-      "sc:name": "supermatcher",
-      "sc:operatingSystem": [
-        "Linux",
-        "Mac",
-        "Windows"
-      ],
-      "sc:provider": [
-        "EMBOSS",
-        "EMBL-EBI"
-      ],
-      "sc:softwareHelp": [
-        {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/supermatcher.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
-        }
-      ],
-      "sc:softwareVersion": "r6",
-      "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/supermatcher.html"
-    },
-    {
-      "@id": "_:N0659369e66c2491a862aabbaa0e7b413",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1381"
-      },
-      "sc:name": "Sequence alignment (pair)"
-    },
-    {
-      "@id": "_:Nd0214c36fb6b417cb5669c38fb76854e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:N66e01f7489b44f478e3e81d83e8b5dda",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0874"
-      },
-      "sc:name": "Comparison matrix"
-    },
-    {
-      "@id": "_:Ne82c7f6b42474289a66dc25433f39e52",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
     }
   ]
 }

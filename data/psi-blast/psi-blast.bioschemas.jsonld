@@ -36,18 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/psi-blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Ne6b78764c9114c4dacd301294af62ef0"
+        "@id": "_:N3e653f6360354905a7d861521118b71c"
       },
       "bsc:output": [
         {
-          "@id": "_:N6ba736bdcdf44c209aa1d5dadc257a23"
+          "@id": "_:Nd92f405cee49468fb49663b2066fe433"
         },
         {
-          "@id": "_:Nbc0e3af60c7d4fc7806535df6ea9c2c1"
+          "@id": "_:N583b885f3859493799ca8a15086fff77"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -60,20 +68,20 @@
       },
       "sc:citation": [
         "pubmed:38597606",
-        "pubmed:35412617",
         {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
+          "@id": "https://doi.org/10.1093/nar/gkae241"
         },
-        "pubmed:9254694",
+        "pmcid:PMC146917",
         {
           "@id": "https://doi.org/10.1093/nar/25.17.3389"
         },
-        "pmcid:PMC146917",
+        "pubmed:35412617",
         "pmcid:PMC9252731",
         "pmcid:PMC11223882",
         {
-          "@id": "https://doi.org/10.1093/nar/gkae241"
-        }
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        },
+        "pubmed:9254694"
       ],
       "sc:description": "Iterative protein sequence similarity search based on BLAST: search with a custom, position-specific, scoring matrix which can help find distant evolutionary relationships.",
       "sc:featureList": {
@@ -81,9 +89,9 @@
       },
       "sc:name": "PSI-BLAST (EBI)",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "NCBI",
@@ -94,33 +102,17 @@
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
-          "@id": "https://blast.ncbi.nlm.nih.gov/"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "https://blast.ncbi.nlm.nih.gov/"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/sss/psiblast"
     },
     {
-      "@id": "_:N6ba736bdcdf44c209aa1d5dadc257a23",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2854"
-      },
-      "sc:name": "Position-specific scoring matrix"
-    },
-    {
-      "@id": "_:Nbc0e3af60c7d4fc7806535df6ea9c2c1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:Ne6b78764c9114c4dacd301294af62ef0",
+      "@id": "_:N3e653f6360354905a7d861521118b71c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -128,12 +120,20 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nd92f405cee49468fb49663b2066fe433",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N583b885f3859493799ca8a15086fff77",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2854"
+      },
+      "sc:name": "Position-specific scoring matrix"
     },
     {
       "@id": "https://doi.org/10.1093/nar/25.17.3389",

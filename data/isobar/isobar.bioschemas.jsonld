@@ -40,6 +40,10 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "http://orcid.org/0000-0001-6192-0853",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/isobar",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,50 +51,47 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N6bd89b85dc244f71a603fe055a9d216c"
+          "@id": "_:Ne59d23e6d1894334bfce13400f2f1813"
         },
         {
-          "@id": "_:N045aaa193194401db0bce5daf90bf9c8"
+          "@id": "_:N3535dcc58f554956af4f1f359250c790"
         }
       ],
       "bsc:output": {
-        "@id": "_:N19c1bc4964cc41fab7a5241b92874eb0"
+        "@id": "_:Ne44d223697f448d485f491fbbede6b56"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_2269"
         },
         {
+          "@id": "edam:topic_3520"
+        },
+        {
           "@id": "edam:topic_0601"
         },
         {
           "@id": "edam:topic_0121"
-        },
-        {
-          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1021/pr1012784"
-        },
+        "pubmed:21526793",
         {
           "@id": "https://doi.org/10.1016/j.jprot.2013.02.022"
         },
         "pmcid:PMC3759844",
-        "pubmed:23470796",
-        "pubmed:21526793"
+        {
+          "@id": "https://doi.org/10.1021/pr1012784"
+        },
+        "pubmed:23470796"
       ],
       "sc:description": "isobar provides methods for preprocessing, normalization, and report generation for the analysis of quantitative mass spectrometry proteomics data labeled with isobaric tags, such as iTRAQ and TMT. Features modules for integrating and validating PTM-centric datasets (isobar-PTM). More information on http://www.ms-isobar.org.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_2238"
-        },
         {
           "@id": "edam:operation_3641"
         },
@@ -104,18 +105,21 @@
           "@id": "edam:operation_3639"
         },
         {
+          "@id": "edam:operation_3755"
+        },
+        {
           "@id": "edam:operation_3635"
         },
         {
-          "@id": "edam:operation_3755"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "isobar",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/isobar.html"
@@ -124,34 +128,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/isobar.html"
     },
     {
-      "@id": "_:N19c1bc4964cc41fab7a5241b92874eb0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3468"
-        }
-      ],
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:N6bd89b85dc244f71a603fe055a9d216c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3651"
-      },
-      "sc:name": "Peptide mass fingerprint"
-    },
-    {
-      "@id": "_:N045aaa193194401db0bce5daf90bf9c8",
+      "@id": "_:Ne59d23e6d1894334bfce13400f2f1813",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -162,12 +139,35 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "https://doi.org/10.1016/j.jprot.2013.02.022",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N3535dcc58f554956af4f1f359250c790",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3651"
+      },
+      "sc:name": "Peptide mass fingerprint"
     },
     {
-      "@id": "http://orcid.org/0000-0001-6192-0853",
-      "@type": "sc:Person"
+      "@id": "_:Ne44d223697f448d485f491fbbede6b56",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3468"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jprot.2013.02.022",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

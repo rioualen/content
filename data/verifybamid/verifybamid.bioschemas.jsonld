@@ -39,36 +39,36 @@
       "@id": "https://bio.tools/verifybamid",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "verifyBamID Google Group",
-        "Hyun Min Kang"
+        "Hyun Min Kang",
+        "verifyBamID Google Group"
       ],
       "bsc:input": [
         {
-          "@id": "_:N82fa190d5064411d8956f0c83212406a"
+          "@id": "_:Ncf83454d94d24e1982f9b23246a66eb7"
         },
         {
-          "@id": "_:Nd8a094ce4aaf40b09c9a89bd23e68709"
+          "@id": "_:Nadd13f6d2b874f28a87b1962e4fe3766"
         }
       ],
       "bsc:output": {
-        "@id": "_:N9f36adc1222748a480cb40d72e030ccd"
+        "@id": "_:N01f5ecf980124d09b8f9a9adf8792a1d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3572"
         }
       ],
       "sc:citation": [
-        "pubmed:23103226",
-        "pmcid:PMC3487130",
         {
           "@id": "https://doi.org/10.1016/j.ajhg.2012.09.004"
-        }
+        },
+        "pmcid:PMC3487130",
+        "pubmed:23103226"
       ],
       "sc:description": "Software that verifies whether the reads in particular file match previously known genotypes for an individual (or group of individuals), and checks whether the reads are contaminated as a mixture of two samples. It can detect sample contamination and swaps when external genotypes are available. When external genotypes are not available, it still robustly detects sample swaps.",
       "sc:featureList": {
@@ -78,8 +78,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "verifyBamID",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": [
         "sanger.ac.uk",
@@ -92,15 +92,18 @@
       "sc:url": "http://genome.sph.umich.edu/wiki/VerifyBamID"
     },
     {
-      "@id": "_:N9f36adc1222748a480cb40d72e030ccd",
+      "@id": "_:Ncf83454d94d24e1982f9b23246a66eb7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_3498"
       },
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N82fa190d5064411d8956f0c83212406a",
+      "@id": "_:Nadd13f6d2b874f28a87b1962e4fe3766",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -111,15 +114,12 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Nd8a094ce4aaf40b09c9a89bd23e68709",
+      "@id": "_:N01f5ecf980124d09b8f9a9adf8792a1d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3498"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1016/j.ajhg.2012.09.004",

@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13059-015-0668-3",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/elmer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Simon Coetzee",
       "bsc:input": [
         {
-          "@id": "_:N6a1281cd534941f5ab51ed7e8d542750"
+          "@id": "_:Nc18863b91067448ca8cf776a7bbc836b"
         },
         {
-          "@id": "_:Nf0f18232fe3149f8968770166d99654c"
+          "@id": "_:Need4961fd451494ea32df20b3956d5f9"
         }
       ],
       "bsc:output": {
-        "@id": "_:N308857aa22a44040986e8a23c32e8c19"
+        "@id": "_:N5d73783f9f684d46b3a65207038af30b"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -64,27 +68,27 @@
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4460959",
+        "pubmed:25994056",
         {
           "@id": "https://doi.org/10.1186/s13059-015-0668-3"
-        },
-        "pubmed:25994056",
-        "pmcid:PMC4460959"
+        }
       ],
       "sc:description": "This tool is designed to use DNA methylation and gene expression from a large number of samples to infer a regulatory element landscape and transcription factor network in primary tissues.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3204"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3204"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "ELMER",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ELMER.html"
@@ -93,18 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ELMER.html"
     },
     {
-      "@id": "_:N6a1281cd534941f5ab51ed7e8d542750",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3273"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Sample ID"
-    },
-    {
-      "@id": "_:Nf0f18232fe3149f8968770166d99654c",
+      "@id": "_:Nc18863b91067448ca8cf776a7bbc836b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -115,7 +108,18 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N308857aa22a44040986e8a23c32e8c19",
+      "@id": "_:Need4961fd451494ea32df20b3956d5f9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3273"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Sample ID"
+    },
+    {
+      "@id": "_:N5d73783f9f684d46b3a65207038af30b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -124,10 +128,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s13059-015-0668-3",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

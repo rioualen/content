@@ -36,22 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/s10586-013-0309-0",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt389",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/livermore_metagenomics_analysis_toolkit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Maya B Gokhale",
       "bsc:input": {
-        "@id": "_:N932ed06f46874cc1bf5c28e38a62b86c"
+        "@id": "_:N304879b0dd8e49d3bd461adffc866d08"
       },
       "bsc:output": {
-        "@id": "_:N4db0be2d2c6f43c5a5aab8187ed760a6"
+        "@id": "_:Nba1bc4b2fcde4279a1aa03606d29519d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -59,14 +51,14 @@
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
-        "pubmed:23828782",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btt389"
-        },
+        "pmcid:PMC3753567",
         {
           "@id": "https://doi.org/10.1007/s10586-013-0309-0"
         },
-        "pmcid:PMC3753567"
+        "pubmed:23828782",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btt389"
+        }
       ],
       "sc:description": "Efficiently assign taxonomic labels to as many reads as possible in very large metagenomic datasets and report the taxonomic profile of the input sample. The quick 'single pass' analysis of every read allows read binning to support additional more computationally expensive analysis such as metagenomic assembly or sensitive database searches on targeted subsets of reads. Its approach is kmer-based.",
       "sc:featureList": {
@@ -86,7 +78,18 @@
       "sc:url": "http://computation.llnl.gov/projects/livermore-metagenomics-analysis-toolkit"
     },
     {
-      "@id": "_:N4db0be2d2c6f43c5a5aab8187ed760a6",
+      "@id": "_:N304879b0dd8e49d3bd461adffc866d08",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2546"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nba1bc4b2fcde4279a1aa03606d29519d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -97,15 +100,12 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N932ed06f46874cc1bf5c28e38a62b86c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2546"
-      },
-      "sc:name": "DNA sequence"
+      "@id": "https://doi.org/10.1007/s10586-013-0309-0",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt389",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

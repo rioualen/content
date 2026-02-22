@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/gr.074492.107",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/velvet",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Daniel Zerbino",
       "bsc:input": [
         {
-          "@id": "_:N19a8cd50edc04dca923c214ab2eae7fb"
+          "@id": "_:N65e1f5e51b144da385f9dad1bb0d1edf"
         },
         {
-          "@id": "_:Nff2e9b4e6f0947658e184e0386403043"
+          "@id": "_:N1e5fbfed419346cbaa5c1876056d3eac"
         },
         {
-          "@id": "_:N93b693286c2440fda176f16939be20c0"
+          "@id": "_:N420139e81ff74bfd90929554c80338f1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N209594a9ecb4449a829956f12f7f4b4d"
+          "@id": "_:N02b9a7642e7e41dba3576b12f017d196"
         },
         {
-          "@id": "_:Nbff4da7304bc4e7096bb8e01b628d6c3"
+          "@id": "_:Nafdadce4c01e496ab4f91f949afa0cba"
         },
         {
-          "@id": "_:N441717347bf84aa292ca201609751f9d"
+          "@id": "_:N8be22a8e0080452ebae292aece14e501"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -71,11 +67,11 @@
         "@id": "edam:topic_0196"
       },
       "sc:citation": [
-        "pmcid:PMC2336801",
-        "pubmed:18349386",
         {
           "@id": "https://doi.org/10.1101/gr.074492.107"
-        }
+        },
+        "pubmed:18349386",
+        "pmcid:PMC2336801"
       ],
       "sc:description": "A de novo genomic assembler specially designed for short read sequencing technologies, such as Solexa or 454 or SOLiD.",
       "sc:featureList": [
@@ -89,8 +85,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Velvet",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/dzerbino/velvet/blob/master/Manual.pdf"
@@ -98,7 +94,45 @@
       "sc:url": "https://github.com/dzerbino/velvet"
     },
     {
-      "@id": "_:N209594a9ecb4449a829956f12f7f4b4d",
+      "@id": "_:N65e1f5e51b144da385f9dad1bb0d1edf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2573"
+        },
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N1e5fbfed419346cbaa5c1876056d3eac",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N420139e81ff74bfd90929554c80338f1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2337"
+      },
+      "sc:name": "Resource metadata"
+    },
+    {
+      "@id": "_:N02b9a7642e7e41dba3576b12f017d196",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -106,7 +140,7 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:Nbff4da7304bc4e7096bb8e01b628d6c3",
+      "@id": "_:Nafdadce4c01e496ab4f91f949afa0cba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -114,7 +148,7 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "_:N441717347bf84aa292ca201609751f9d",
+      "@id": "_:N8be22a8e0080452ebae292aece14e501",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -122,42 +156,8 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N19a8cd50edc04dca923c214ab2eae7fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nff2e9b4e6f0947658e184e0386403043",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2337"
-      },
-      "sc:name": "Resource metadata"
-    },
-    {
-      "@id": "_:N93b693286c2440fda176f16939be20c0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_2573"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence"
+      "@id": "https://doi.org/10.1101/gr.074492.107",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

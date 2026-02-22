@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkj118",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/treefam",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Fabian Schreiber",
       "bsc:input": {
-        "@id": "_:N70fb2c8cd44a4687a9e71da96f34d2f5"
+        "@id": "_:Nb7aef30e1e16455d88972ca849c0ccef"
       },
       "bsc:output": {
-        "@id": "_:N2ea9d94d6d1e470489921a1e324692d0"
+        "@id": "_:N75439fefb9534560b0f7d7f92c68701e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -63,45 +59,53 @@
         }
       ],
       "sc:author": [
-        "Fabian Schreiber",
-        "Mateus Patricio"
+        "Mateus Patricio",
+        "Fabian Schreiber"
       ],
       "sc:citation": [
         "pubmed:16381935",
-        "pmcid:PMC1347480",
         {
           "@id": "https://doi.org/10.1093/nar/gkj118"
-        }
+        },
+        "pmcid:PMC1347480"
       ],
       "sc:description": "Search of TreeFam's HMM collection, allows query sequence to be aligned (MAFFT) and inserted into tree (RAxML) to significantly matching models.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_0323"
         },
         {
-          "@id": "edam:operation_0323"
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:name": "TreeFam",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.treefam.org/help"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.treefam.org/help"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.treefam.org/search"
     },
     {
-      "@id": "_:N2ea9d94d6d1e470489921a1e324692d0",
+      "@id": "_:Nb7aef30e1e16455d88972ca849c0ccef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N75439fefb9534560b0f7d7f92c68701e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
@@ -109,12 +113,8 @@
       "sc:name": "Sequence signature matches"
     },
     {
-      "@id": "_:N70fb2c8cd44a4687a9e71da96f34d2f5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1093/nar/gkj118",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

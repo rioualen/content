@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp400",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/vitram",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8fbaa08b6b6544e2b7c50ce476309f77"
+        "@id": "_:N33945e25e7db4d78a53ee7662354ea7c"
       },
       "bsc:output": [
         {
-          "@id": "_:N2b9b873897c041c99d3421cb3bc10f47"
+          "@id": "_:Nc8d0fdba8d334835949110ad1c3fc51b"
         },
         {
-          "@id": "_:Nc8e8c9bce35f45c2bbcbd848bda5d32b"
+          "@id": "_:Nc28f56e15a75440490a0c7a4e6376acf"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -55,10 +59,10 @@
         "@id": "edam:topic_0203"
       },
       "sc:citation": [
+        "pubmed:19587224",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp400"
-        },
-        "pubmed:19587224"
+        }
       ],
       "sc:description": "Visualization of transcriptional modules.",
       "sc:featureList": {
@@ -77,15 +81,23 @@
       "sc:url": "http://bioinformatics.intec.ugent.be/kmarchal/ViTraM/Index.html"
     },
     {
-      "@id": "_:N2b9b873897c041c99d3421cb3bc10f47",
+      "@id": "_:N33945e25e7db4d78a53ee7662354ea7c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2968"
+        "@id": "edam:data_2603"
       },
-      "sc:name": "Image"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2332"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:Nc8e8c9bce35f45c2bbcbd848bda5d32b",
+      "@id": "_:Nc8d0fdba8d334835949110ad1c3fc51b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -93,24 +105,12 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N8fbaa08b6b6544e2b7c50ce476309f77",
+      "@id": "_:Nc28f56e15a75440490a0c7a4e6376acf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_2968"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp400",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Image"
     }
   ]
 }

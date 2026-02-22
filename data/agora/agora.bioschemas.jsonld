@@ -36,7 +36,100 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-7032-5650",
+      "@id": "https://bio.tools/agora",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": [
+        {
+          "@id": "http://orcid.org/0000-0001-7032-5650"
+        },
+        {
+          "@id": "http://orcid.org/0000-0002-8209-173X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7860-3560"
+        }
+      ],
+      "bsc:input": [
+        {
+          "@id": "_:N26d30679fcd145ed90eecd178e775fea"
+        },
+        {
+          "@id": "_:N237a251f5f644e0489fd825e5ccaf9bb"
+        },
+        {
+          "@id": "_:N49d1f1b8f0154168b4f113cf002de938"
+        }
+      ],
+      "bsc:output": {
+        "@id": "_:Na7d1d20d63754d6b8eabc64a27c5dc0c"
+      },
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0084"
+        },
+        {
+          "@id": "edam:topic_0194"
+        },
+        {
+          "@id": "edam:topic_3299"
+        }
+      ],
+      "sc:citation": [
+        "pubmed:36646945",
+        {
+          "@id": "https://doi.org/10.1038/s41559-022-01956-z"
+        },
+        "pmcid:PMC9998269"
+      ],
+      "sc:description": "AGORA stands for “Algorithm for Gene Order Reconstruction in Ancestors” .\n\nAGORA is used to generate ancestral genomes for the Genomicus online server for gene order comparison, and has been in constant use in the group since.",
+      "sc:featureList": {
+        "@id": "edam:operation_3745"
+      },
+      "sc:isAccessibleForFree": true,
+      "sc:license": "CECILL-C",
+      "sc:name": "AGORA",
+      "sc:operatingSystem": [
+        "Mac",
+        "Linux"
+      ],
+      "sc:url": "https://github.com/DyogenIBENS/Agora"
+    },
+    {
+      "@id": "_:Na7d1d20d63754d6b8eabc64a27c5dc0c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2711"
+      },
+      "sc:name": "Genome report"
+    },
+    {
+      "@id": "_:N26d30679fcd145ed90eecd178e775fea",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0916"
+      },
+      "sc:name": "Gene report"
+    },
+    {
+      "@id": "_:N237a251f5f644e0489fd825e5ccaf9bb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3271"
+      },
+      "sc:name": "Gene tree"
+    },
+    {
+      "@id": "_:N49d1f1b8f0154168b4f113cf002de938",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3272"
+      },
+      "sc:name": "Species tree"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-8209-173X",
       "@type": "sc:Person"
     },
     {
@@ -48,100 +141,7 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://bio.tools/agora",
-      "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": [
-        {
-          "@id": "http://orcid.org/0000-0002-8209-173X"
-        },
-        {
-          "@id": "http://orcid.org/0000-0001-7032-5650"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-7860-3560"
-        }
-      ],
-      "bsc:input": [
-        {
-          "@id": "_:N00b41b9ff99b4d17a57a3d2da2106679"
-        },
-        {
-          "@id": "_:N02f9f9f6a53247c29e5c16af9d9c9eba"
-        },
-        {
-          "@id": "_:N024a8a4127f34347808fa51ffd8f8b47"
-        }
-      ],
-      "bsc:output": {
-        "@id": "_:N978174d4bce34adaaf334a2e2cff4d6f"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Command-line tool",
-      "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0194"
-        },
-        {
-          "@id": "edam:topic_3299"
-        },
-        {
-          "@id": "edam:topic_0084"
-        }
-      ],
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1038/s41559-022-01956-z"
-        },
-        "pubmed:36646945",
-        "pmcid:PMC9998269"
-      ],
-      "sc:description": "AGORA stands for “Algorithm for Gene Order Reconstruction in Ancestors” .\n\nAGORA is used to generate ancestral genomes for the Genomicus online server for gene order comparison, and has been in constant use in the group since.",
-      "sc:featureList": {
-        "@id": "edam:operation_3745"
-      },
-      "sc:isAccessibleForFree": true,
-      "sc:license": "CECILL-C",
-      "sc:name": "AGORA",
-      "sc:operatingSystem": [
-        "Linux",
-        "Mac"
-      ],
-      "sc:url": "https://github.com/DyogenIBENS/Agora"
-    },
-    {
-      "@id": "_:N978174d4bce34adaaf334a2e2cff4d6f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2711"
-      },
-      "sc:name": "Genome report"
-    },
-    {
-      "@id": "_:N00b41b9ff99b4d17a57a3d2da2106679",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3271"
-      },
-      "sc:name": "Gene tree"
-    },
-    {
-      "@id": "_:N02f9f9f6a53247c29e5c16af9d9c9eba",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3272"
-      },
-      "sc:name": "Species tree"
-    },
-    {
-      "@id": "_:N024a8a4127f34347808fa51ffd8f8b47",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:name": "Gene report"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-8209-173X",
+      "@id": "http://orcid.org/0000-0001-7032-5650",
       "@type": "sc:Person"
     }
   ]

@@ -44,23 +44,23 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N469a238acef14501acd6aa4e75f71a8c"
+          "@id": "_:N6dc788c7880342c2a41401f3a925ba39"
         },
         {
-          "@id": "_:N92aa8f110e764045ba96d5e7a7633b61"
+          "@id": "_:Ne7f8b0f7e31342718d5476649fc0b488"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ncacbdbb4f246436f98f7500d76e2bf06"
+        "@id": "_:N846ac6e376a147909fc3258d65390c28"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3063"
         },
         {
-          "@id": "edam:topic_3063"
+          "@id": "edam:topic_0199"
         }
       ],
       "sc:citation": {
@@ -69,26 +69,37 @@
       "sc:description": "Takes variants as input and queries NCBI eutilities to generate ClinVar Variation Report scoring metrics. The overall goal is to generate annotations of use for given batches of variants to inform clinical interpretation. The metrics include: Clinotator Raw Score, Average Clinical Assertion Age, Clinotator Predicted Significance and eclassification Recommendation.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0338"
+        },
+        {
           "@id": "edam:operation_0226"
         },
         {
           "@id": "edam:operation_3225"
-        },
-        {
-          "@id": "edam:operation_0338"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "Clinotator",
       "sc:operatingSystem": [
+        "Windows",
         "Linux",
-        "Mac",
-        "Windows"
+        "Mac"
       ],
       "sc:url": "https://github.com/rbutleriii/Clinotator"
     },
     {
-      "@id": "_:N469a238acef14501acd6aa4e75f71a8c",
+      "@id": "_:N846ac6e376a147909fc3258d65390c28",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N6dc788c7880342c2a41401f3a925ba39",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1063"
@@ -104,7 +115,7 @@
       "sc:name": "Sequence identifier"
     },
     {
-      "@id": "_:N92aa8f110e764045ba96d5e7a7633b61",
+      "@id": "_:Ne7f8b0f7e31342718d5476649fc0b488",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -113,17 +124,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:Ncacbdbb4f246436f98f7500d76e2bf06",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
     }
   ]
 }

@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/pr2005378",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/amass",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9085e52efca844e8be3c76ffdb314a57"
+          "@id": "_:Neff34435ecd146d6a27d0691c0150252"
         },
         {
-          "@id": "_:Ne6781e0487ec4133b500eb06e30d5662"
+          "@id": "_:Nbceba8d274264d78805fced61ba1b3c7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ndb81aac27ac1414b9b61b90e1cb4d626"
+          "@id": "_:N3fdb4f0062d74abbb886a52a4993e2d9"
         },
         {
-          "@id": "_:Nb6301940557646b7a5d08018a4b66532"
+          "@id": "_:Nf96e86322ff149fd88fe91ce6a72418c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,19 +69,19 @@
         }
       ],
       "sc:citation": [
-        "pubmed:21800894",
         {
           "@id": "https://doi.org/10.1021/pr2005378"
         },
-        "pmcid:PMC3190602"
+        "pmcid:PMC3190602",
+        "pubmed:21800894"
       ],
       "sc:description": "Series of tools written in C++ that allows you to segment your mass spectrometry imaging dataset into regions with similar molecular signatures. The software allows for user input at each step of the process and returns the regions as well as the associated molecular signatures. It is composed of two dynamic libraries and a series of executables using the libraries as a base.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3443"
+          "@id": "edam:operation_3214"
         },
         {
-          "@id": "edam:operation_3214"
+          "@id": "edam:operation_3443"
         }
       ],
       "sc:name": "AMASS",
@@ -91,7 +95,48 @@
       "sc:url": "http://bix.ucsd.edu/AMASS/"
     },
     {
-      "@id": "_:N9085e52efca844e8be3c76ffdb314a57",
+      "@id": "_:N3fdb4f0062d74abbb886a52a4993e2d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3752"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nf96e86322ff149fd88fe91ce6a72418c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3591"
+        },
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3752"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Neff34435ecd146d6a27d0691c0150252",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -102,12 +147,15 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Ne6781e0487ec4133b500eb06e30d5662",
+      "@id": "_:Nbceba8d274264d78805fced61ba1b3c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
         {
           "@id": "edam:format_3752"
         },
@@ -115,61 +163,13 @@
           "@id": "edam:format_3591"
         },
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_3579"
         },
         {
           "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3579"
         }
       ],
       "sc:name": "Image"
-    },
-    {
-      "@id": "_:Ndb81aac27ac1414b9b61b90e1cb4d626",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nb6301940557646b7a5d08018a4b66532",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1021/pr2005378",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

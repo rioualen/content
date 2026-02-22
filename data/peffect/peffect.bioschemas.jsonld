@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/srep34516",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/peffect",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7c9ad9ddcde74c40b2eec4c33bb36491"
+        "@id": "_:Nd6905be5bd1e4c77a0d4fa8b57f92c89"
       },
       "bsc:output": {
-        "@id": "_:N539e7758952f42a5ae694d89d93b9e4f"
+        "@id": "_:N87944fc176964e9f88bfd7c3f47dc3ac"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3510"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3510"
         }
       ],
       "sc:author": "Tatyana Goldberg",
       "sc:citation": [
-        "pubmed:27713481",
         "pmcid:PMC5054392",
         {
           "@id": "https://doi.org/10.1038/srep34516"
-        }
+        },
+        "pubmed:27713481"
       ],
       "sc:contributor": [
         "Burkhard Rost",
-        "Alexander von Humboldt foundation through the German Federal Ministry for Education and Research",
         "Yana Bromberg",
+        "Alexander von Humboldt foundation through the German Federal Ministry for Education and Research",
         "Ernst Ludwig Ehrlich Studienwerk"
       ],
       "sc:description": "Prediction of type III effector proteins from protein sequence.",
@@ -81,9 +85,9 @@
       "sc:name": "pEffect",
       "sc:operatingSystem": "Linux",
       "sc:provider": [
+        "Rutgers University",
         "Technical University of Munich",
-        "RostLab",
-        "Rutgers University"
+        "RostLab"
       ],
       "sc:softwareHelp": {
         "@id": "https://rostlab.org/owiki/index.php/PEffect"
@@ -92,18 +96,7 @@
       "sc:url": "https://rostlab.org/services/peffect/"
     },
     {
-      "@id": "_:N7c9ad9ddcde74c40b2eec4c33bb36491",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2200"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:N539e7758952f42a5ae694d89d93b9e4f",
+      "@id": "_:N87944fc176964e9f88bfd7c3f47dc3ac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -114,8 +107,15 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "https://doi.org/10.1038/srep34516",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nd6905be5bd1e4c77a0d4fa8b57f92c89",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2200"
+      },
+      "sc:name": "Protein sequence (raw)"
     }
   ]
 }

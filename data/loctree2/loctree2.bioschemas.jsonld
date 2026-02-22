@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts390",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/loctree2",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "General",
       "bsc:input": {
-        "@id": "_:Nbd67201e3b2e4e61954d2e49b1b36609"
+        "@id": "_:N8dc54e72595044b086f85adf8e9cae87"
       },
       "bsc:output": {
-        "@id": "_:Nef0d8e2ad7ba46678e146e12defa3fcc"
+        "@id": "_:Nbc98750834e541b08b9c792c18d48abb"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -64,10 +68,10 @@
       ],
       "sc:citation": [
         "pmcid:PMC3436817",
-        "pubmed:22962467",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts390"
-        }
+        },
+        "pubmed:22962467"
       ],
       "sc:contributor": "Burkhard Rost",
       "sc:description": "Framework to predict localization in life's three domains, including globular and membrane proteins (3 classes for archaea; 6 for bacteria and 18 for eukaryota). The resulting method, works well even for protein fragments. It uses a hierarchical system of support vector machines that imitates the cascading mechanism of cellular sorting.The method also accurately distinguishes membrane and non-membrane proteins.",
@@ -78,8 +82,8 @@
       "sc:name": "LocTree2",
       "sc:operatingSystem": "Linux",
       "sc:provider": [
-        "tum.de",
-        "Technische Universität München"
+        "Technische Universität München",
+        "tum.de"
       ],
       "sc:softwareHelp": {
         "@id": "https://rostlab.org/owiki/index.php/Loctree2"
@@ -88,18 +92,7 @@
       "sc:url": "https://rostlab.org/owiki/index.php/Loctree2"
     },
     {
-      "@id": "_:Nbd67201e3b2e4e61954d2e49b1b36609",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "_:Nef0d8e2ad7ba46678e146e12defa3fcc",
+      "@id": "_:Nbc98750834e541b08b9c792c18d48abb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -110,8 +103,15 @@
       "sc:name": "Protein report"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts390",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8dc54e72595044b086f85adf8e9cae87",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence record"
     }
   ]
 }

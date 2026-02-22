@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv402",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ngl_viewer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Alexander Rose",
       "bsc:input": {
-        "@id": "_:Nf0d3476a9114404aa2be1ee68e905bca"
+        "@id": "_:N18c097f07aef464887ac2c09eb1080de"
       },
       "bsc:output": {
-        "@id": "_:Nc33fd846b60f4e8b8728345510d0754f"
+        "@id": "_:N21da857c0f6e460185c974aef89b7024"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
         "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0092"
       },
       "sc:citation": [
+        "pubmed:25925569",
         {
           "@id": "https://doi.org/10.1093/nar/gkv402"
         },
-        "pubmed:25925569",
         "pmcid:PMC4489237"
       ],
       "sc:description": "Web application for molecular visualization. It is employed to display molecules like proteins and DNA/RNA with a variety of representations.",
@@ -73,9 +69,9 @@
       "sc:license": "MIT",
       "sc:name": "NGL VIewer",
       "sc:operatingSystem": [
+        "Mac",
         "Windows",
-        "Linux",
-        "Mac"
+        "Linux"
       ],
       "sc:provider": "weirdbyte.de",
       "sc:softwareHelp": {
@@ -85,7 +81,23 @@
       "sc:url": "https://github.com/arose/ngl"
     },
     {
-      "@id": "_:Nc33fd846b60f4e8b8728345510d0754f",
+      "@id": "_:N18c097f07aef464887ac2c09eb1080de",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1477"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Structure"
+    },
+    {
+      "@id": "_:N21da857c0f6e460185c974aef89b7024",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1710"
@@ -96,20 +108,8 @@
       "sc:name": "Structure image"
     },
     {
-      "@id": "_:Nf0d3476a9114404aa2be1ee68e905bca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1476"
-        },
-        {
-          "@id": "edam:format_1477"
-        }
-      ],
-      "sc:name": "Structure"
+      "@id": "https://doi.org/10.1093/nar/gkv402",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

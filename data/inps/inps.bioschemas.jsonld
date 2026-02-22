@@ -39,38 +39,38 @@
       "@id": "https://bio.tools/inps",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Piero Fariselli",
         {
           "@id": "https://orcid.org/0000-0002-7359-0633"
-        }
+        },
+        "Piero Fariselli"
       ],
       "bsc:input": {
-        "@id": "_:Ncbc07154291a46858f80ebbb6d607efa"
+        "@id": "_:Nd130440a3dbe45cf92c8b0e83cdbd19d"
       },
       "bsc:output": {
-        "@id": "_:N209e0885b2864e5ea2ee94397304db9a"
+        "@id": "_:N7ad6438330fe42f7bce4fd80ae44ace8"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_0130"
         },
         {
-          "@id": "edam:topic_0130"
+          "@id": "edam:topic_0199"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0002-7359-0633"
       },
       "sc:citation": [
-        "pubmed:27153629",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btv291"
+        },
         "pubmed:25957347",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw192"
         },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btv291"
-        }
+        "pubmed:27153629"
       ],
       "sc:description": "Predicting the impact of mutations on protein stability from sequence",
       "sc:featureList": {
@@ -86,15 +86,7 @@
       "sc:url": "https://inpsmd.biocomp.unibo.it"
     },
     {
-      "@id": "_:Ncbc07154291a46858f80ebbb6d607efa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:N209e0885b2864e5ea2ee94397304db9a",
+      "@id": "_:N7ad6438330fe42f7bce4fd80ae44ace8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -102,8 +94,12 @@
       "sc:name": "Protein report"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv291",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nd130440a3dbe45cf92c8b0e83cdbd19d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:name": "Protein sequence (raw)"
     },
     {
       "@id": "https://orcid.org/0000-0002-7359-0633",
@@ -111,6 +107,10 @@
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btw192",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv291",
       "@type": "sc:CreativeWork"
     }
   ]
