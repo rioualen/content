@@ -36,14 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/0022-2836(91)90883-8",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/maxsprout",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N37f55b5816664735a5b1c2532130539f"
+        "@id": "_:Naa090c4767364fb3bdae533ab41c97c4"
       },
       "bsc:output": {
-        "@id": "_:N1466a85d65c8462a8f3e21153a772f5a"
+        "@id": "_:Ne7f4f668a5c64a138340fff4fab4e093"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -60,14 +68,14 @@
       ],
       "sc:author": "Liisa Holm",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
+        "pmcid:PMC9252731",
+        "pubmed:35412617",
         {
           "@id": "https://doi.org/10.1016/0022-2836(91)90883-8"
         },
-        "pubmed:35412617",
-        "pmcid:PMC9252731"
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        }
       ],
       "sc:description": "Generate protein backbone and side chain co-ordinates from a C(alpha) trace.",
       "sc:featureList": {
@@ -76,8 +84,8 @@
       "sc:name": "MaxSprout (EBI)",
       "sc:operatingSystem": [
         "Windows",
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -95,15 +103,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/structure/maxsprout/"
     },
     {
-      "@id": "_:N37f55b5816664735a5b1c2532130539f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1470"
-      },
-      "sc:name": "C-alpha trace"
-    },
-    {
-      "@id": "_:N1466a85d65c8462a8f3e21153a772f5a",
+      "@id": "_:Ne7f4f668a5c64a138340fff4fab4e093",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -111,12 +111,12 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "https://doi.org/10.1016/0022-2836(91)90883-8",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Naa090c4767364fb3bdae533ab41c97c4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1470"
+      },
+      "sc:name": "C-alpha trace"
     }
   ]
 }

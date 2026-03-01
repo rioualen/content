@@ -45,21 +45,21 @@
       "biotools:primaryContact": "Michael Lawrence",
       "bsc:input": [
         {
-          "@id": "_:Nc18f65c1db6e4da393947c312f3f4a04"
+          "@id": "_:N691cc51ffcd347689847931999b87b64"
         },
         {
-          "@id": "_:Nde3e9eea4a8e454ab2985bbba04f0027"
+          "@id": "_:N59bea385c0224bc4a6f9539ba3b64a50"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N15a61fc3a9aa4ff391c004719ed32de1"
+          "@id": "_:N4db097bdac504b69afd4c138b65e15e3"
         },
         {
-          "@id": "_:N09624f68c6e44173826420a03838facd"
+          "@id": "_:N01aa5816c28948cbbd7b80a51bdd9046"
         },
         {
-          "@id": "_:Nc8c04e75bdaa4ffc84430ef9a3c5a081"
+          "@id": "_:Nf26278cc83fa4d5ab50fe973eb242c5b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -76,10 +76,10 @@
         }
       ],
       "sc:citation": [
-        "pubmed:27008021",
         {
           "@id": "https://doi.org/10.1007/978-1-4939-3578-9_15"
-        }
+        },
+        "pubmed:27008021"
       ],
       "sc:description": "GSNAP and GMAP are a pair of tools to align short-read data. This package provides convenience methods to work with GMAP and GSNAP from within R. In addition, it provides methods to tally alignment results on a per-nucleotide basis using the bam_tally tool.",
       "sc:featureList": [
@@ -94,8 +94,8 @@
       "sc:name": "gmapR",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/gmapR.html"
@@ -104,39 +104,45 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gmapR.html"
     },
     {
-      "@id": "_:N15a61fc3a9aa4ff391c004719ed32de1",
+      "@id": "_:N691cc51ffcd347689847931999b87b64",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N59bea385c0224bc4a6f9539ba3b64a50",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_2572"
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N09624f68c6e44173826420a03838facd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:Nc8c04e75bdaa4ffc84430ef9a3c5a081",
+      "@id": "_:N4db097bdac504b69afd4c138b65e15e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -152,17 +158,14 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:Nc18f65c1db6e4da393947c312f3f4a04",
+      "@id": "_:N01aa5816c28948cbbd7b80a51bdd9046",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_2572"
@@ -171,23 +174,20 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Nde3e9eea4a8e454ab2985bbba04f0027",
+      "@id": "_:Nf26278cc83fa4d5ab50fe973eb242c5b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0849"
+        "@id": "edam:data_0867"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2330"
+        },
+        {
           "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
         }
       ],
-      "sc:name": "Sequence record"
+      "sc:name": "Sequence alignment report"
     }
   ]
 }

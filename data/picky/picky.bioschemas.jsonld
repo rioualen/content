@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41592-018-0002-6",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/picky",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chia-Lin Wei",
       "bsc:input": [
         {
-          "@id": "_:N8c6390e052ef4e45b9703040c149cc4b"
+          "@id": "_:N5a56804906f440bcb4d468efa6de89d0"
         },
         {
-          "@id": "_:N4c2a06c207bc42b2ad8c14fcc1fab12f"
+          "@id": "_:N83fa6f16f6ab4402a808b1b8f39aad8a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N89df8121ab054aadb6c6696db593c32d"
+          "@id": "_:Nb24fd7ea35064d62a9531a3a5d51993c"
         },
         {
-          "@id": "_:N1b6b361884734407bda57264bdc8db2a"
+          "@id": "_:Neff6e809e0df4f11b32d5e1c14cf94e6"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0080"
+        },
+        {
           "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0199"
@@ -75,29 +79,29 @@
         }
       ],
       "sc:citation": [
-        "pubmed:29713081",
         {
           "@id": "https://doi.org/10.1038/s41592-018-0002-6"
         },
-        "pmcid:PMC5990454"
+        "pmcid:PMC5990454",
+        "pubmed:29713081"
       ],
       "sc:description": "A pipeline for detecting structural variants from third generation long read sequencing data (works on Oxford Nanopore and PacBio).",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0253"
+        },
         {
           "@id": "edam:operation_0292"
         },
         {
           "@id": "edam:operation_3228"
-        },
-        {
-          "@id": "edam:operation_0253"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "Picky",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/TheJacksonLaboratory/Picky/wiki"
@@ -105,29 +109,7 @@
       "sc:url": "https://github.com/TheJacksonLaboratory/Picky"
     },
     {
-      "@id": "_:N89df8121ab054aadb6c6696db593c32d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "_:N1b6b361884734407bda57264bdc8db2a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N8c6390e052ef4e45b9703040c149cc4b",
+      "@id": "_:N5a56804906f440bcb4d468efa6de89d0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -138,7 +120,7 @@
       "sc:name": "Data reference"
     },
     {
-      "@id": "_:N4c2a06c207bc42b2ad8c14fcc1fab12f",
+      "@id": "_:N83fa6f16f6ab4402a808b1b8f39aad8a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -149,8 +131,26 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "https://doi.org/10.1038/s41592-018-0002-6",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nb24fd7ea35064d62a9531a3a5d51993c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Neff6e809e0df4f11b32d5e1c14cf94e6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
     }
   ]
 }

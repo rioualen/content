@@ -36,50 +36,54 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1005480",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mageri",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Dmitriy M. Chudakov",
       "bsc:input": [
         {
-          "@id": "_:N3d85f0fb42374ebca1614d424c6cf189"
+          "@id": "_:Nb3f109cd6696497abb31e21a5a4162ef"
         },
         {
-          "@id": "_:N40ed2ba8c691413e984e205981fd1e91"
+          "@id": "_:N071c8dbb46ad4b078a68ff147af658d7"
         }
       ],
       "bsc:output": {
-        "@id": "_:N4168cbd3ffa14beeada207382c23688b"
+        "@id": "_:Nf37a6170dc1047f09bad94f6d2d0c57f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
-        },
-        {
           "@id": "edam:topic_0634"
         },
         {
           "@id": "edam:topic_0199"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC5419444",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1005480"
         },
-        "pubmed:28475621"
+        "pubmed:28475621",
+        "pmcid:PMC5419444"
       ],
       "sc:description": "A software for analyzing UMI-tagged data for detecting ultra-rare variants.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0292"
+        },
         {
           "@id": "edam:operation_0310"
         },
         {
           "@id": "edam:operation_3227"
-        },
-        {
-          "@id": "edam:operation_0292"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -92,34 +96,7 @@
       "sc:url": "https://github.com/mikessh/mageri"
     },
     {
-      "@id": "_:N4168cbd3ffa14beeada207382c23688b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_2573"
-        }
-      ],
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N3d85f0fb42374ebca1614d424c6cf189",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0848"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "Raw sequence"
-    },
-    {
-      "@id": "_:N40ed2ba8c691413e984e205981fd1e91",
+      "@id": "_:Nb3f109cd6696497abb31e21a5a4162ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -130,8 +107,31 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1005480",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N071c8dbb46ad4b078a68ff147af658d7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0848"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "Raw sequence"
+    },
+    {
+      "@id": "_:Nf37a6170dc1047f09bad94f6d2d0c57f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2573"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence report"
     }
   ]
 }

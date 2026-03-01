@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/GIGASCIENCE/GIAB094",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/halvade_somatic",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N27938392f8524013ab477d191c3a33f8"
+        "@id": "_:N72f7b043052b42e9ada6ec52fbdb7aa9"
       },
       "bsc:output": {
-        "@id": "_:N9822d2a6e20f4832a251fae1322aacc7"
+        "@id": "_:Ne0bd496fca7842a28d0e5b415922d548"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
+        "pmcid:PMC8756192",
+        "pubmed:35022699",
         {
           "@id": "https://doi.org/10.1093/GIGASCIENCE/GIAB094"
-        },
-        "pmcid:PMC8756192",
-        "pubmed:35022699"
+        }
       ],
       "sc:description": "Halvade implements germline and somatic variant calling pipelines based on the best-practices pipelines from the Broad Institute using the Spark framework. Halvade will produce a VCF output file which contains the single nucleotide polymorphisms (SNPs) and short insertions and deletions (indels) when supported by the used tools. This program requires Spark on either a local cluster with one or more nodes, an Amazon EMR cluster or the Docker image to run.",
       "sc:featureList": [
@@ -74,18 +78,7 @@
       "sc:url": "https://bitbucket.org/dries_decap/halvadeforspark"
     },
     {
-      "@id": "_:N9822d2a6e20f4832a251fae1322aacc7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3779"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Annotated text"
-    },
-    {
-      "@id": "_:N27938392f8524013ab477d191c3a33f8",
+      "@id": "_:N72f7b043052b42e9ada6ec52fbdb7aa9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -101,8 +94,15 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/GIGASCIENCE/GIAB094",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne0bd496fca7842a28d0e5b415922d548",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3779"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Annotated text"
     }
   ]
 }

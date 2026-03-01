@@ -36,53 +36,57 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/oases",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Marcel Schulz",
-        "Daniel Zerbino"
+        "Daniel Zerbino",
+        "Marcel Schulz"
       ],
       "bsc:input": [
         {
-          "@id": "_:N41b260d03690450faff3f129be36b5b1"
+          "@id": "_:N03e1bf7601da4006b2297f2febb09ba5"
         },
         {
-          "@id": "_:N4151148e749c498bbe90ec1334d6ecad"
+          "@id": "_:N2afe6fbf295249d2b47fcd911e811532"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N899ce65b3aee4b8fa2f6df38f2132488"
+          "@id": "_:Nddec1c4fb7c444e488d23df2790a0e7e"
         },
         {
-          "@id": "_:N7c60fe6d837443d09121a4202d634c67"
+          "@id": "_:N8a167055ceb448f89bf74e26cafa6fed"
         },
         {
-          "@id": "_:Nc0c4d44fee4b40328511f1b328fd1981"
+          "@id": "_:Nd4633114aae64ad197389aa2e83f32cd"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0196"
-        },
-        {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3673"
+          "@id": "edam:topic_0196"
         },
         {
           "@id": "edam:topic_3308"
+        },
+        {
+          "@id": "edam:topic_3673"
         }
       ],
       "sc:citation": [
         "pmcid:PMC3324515",
-        "pubmed:22368243",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts094"
-        }
+        },
+        "pubmed:22368243"
       ],
       "sc:description": "De novo transcriptome assembler designed to produce transcripts from short read sequencing technologies. It uploads a preliminary assembly produced by Velvet, and clusters the contigs into small groups, called loci. It then exploits the paired-end read and long read information, when available, to construct transcript isoforms.",
       "sc:featureList": [
@@ -106,15 +110,7 @@
       "sc:url": "https://github.com/dzerbino/oases"
     },
     {
-      "@id": "_:N899ce65b3aee4b8fa2f6df38f2132488",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3181"
-      },
-      "sc:name": "Sequence assembly report"
-    },
-    {
-      "@id": "_:N7c60fe6d837443d09121a4202d634c67",
+      "@id": "_:Nddec1c4fb7c444e488d23df2790a0e7e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -122,7 +118,7 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:Nc0c4d44fee4b40328511f1b328fd1981",
+      "@id": "_:N8a167055ceb448f89bf74e26cafa6fed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -130,7 +126,15 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N41b260d03690450faff3f129be36b5b1",
+      "@id": "_:Nd4633114aae64ad197389aa2e83f32cd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3181"
+      },
+      "sc:name": "Sequence assembly report"
+    },
+    {
+      "@id": "_:N03e1bf7601da4006b2297f2febb09ba5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -138,16 +142,12 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:N4151148e749c498bbe90ec1334d6ecad",
+      "@id": "_:N2afe6fbf295249d2b47fcd911e811532",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
       },
       "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

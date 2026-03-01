@@ -40,18 +40,14 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rgestlibcomp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:Na4eebbfe177a4ec48c9f2e8b50cff86c"
+        "@id": "_:Nacf79ebac35d479999af507127c86bb0"
       },
       "bsc:output": {
-        "@id": "_:N4a8f839ebfb8446bb6a7d942d2c150c0"
+        "@id": "_:N7af5193c60e94d4aad9ab6cf719a7113"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -59,13 +55,13 @@
         "@id": "edam:topic_3277"
       },
       "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1093/nar/gkw343"
+        },
         "pmcid:PMC4987906",
         "pubmed:27137889",
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
         }
       ],
       "sc:description": "Attempts to estimate library complexity from sequence alone. Does so by sorting all reads by the first N bases (5 by default) of each read and then comparing reads with the first N bases identical to each other for duplicates. Reads are considered to be duplicates if they match each other with no gaps and an overall mismatch rate less than or equal to MAX_DIFF_RATE (0.03 by default).",
@@ -74,9 +70,9 @@
       },
       "sc:name": "rgestlibcomp",
       "sc:operatingSystem": [
-        "Windows",
+        "Mac",
         "Linux",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/broadinstitute/picard"
@@ -85,7 +81,23 @@
       "sc:url": "https://broadinstitute.github.io/picard/"
     },
     {
-      "@id": "_:N4a8f839ebfb8446bb6a7d942d2c150c0",
+      "@id": "_:Nacf79ebac35d479999af507127c86bb0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_2573"
+        }
+      ],
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N7af5193c60e94d4aad9ab6cf719a7113",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -96,20 +108,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Na4eebbfe177a4ec48c9f2e8b50cff86c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2573"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Data"
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

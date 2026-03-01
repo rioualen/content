@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1074/mcp.M115.055897",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-8285-7766",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/msqrob",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -54,18 +46,18 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N3fd2d46b570941d08021b5a34a1b8ff1"
+          "@id": "_:Nf79a777196d546178c8d5d53e306080a"
         },
         {
-          "@id": "_:N0be3fa247a6c4cfc84ad5d23d922a5e4"
+          "@id": "_:N450bcf73d0d94e2db6ff18772b02833c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Naba2d3769eb646eab5350f075ebb12f5"
+          "@id": "_:Neb80cf840b6841e1bc3833587c336475"
         },
         {
-          "@id": "_:Nf72f9e898ed34213a10b6ec30ce39531"
+          "@id": "_:N10cafb66530b41998dd17b9dff44c533"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -77,10 +69,10 @@
         "@id": "http://orcid.org/0000-0002-8285-7766"
       },
       "sc:citation": [
-        "pubmed:26566788",
         {
           "@id": "https://doi.org/10.1074/mcp.M115.055897"
         },
+        "pubmed:26566788",
         "pmcid:PMC4739679"
       ],
       "sc:description": "Allows a user to do quantitative protein-level statistical inference on label-free LC-MS proteomics data. Fold changes, p values and false discovery rates are estimated.The app allows for an easy-to-use graphical user interface starting from MaxQuant search results that requires no programming skills.",
@@ -89,16 +81,16 @@
           "@id": "edam:operation_3435"
         },
         {
-          "@id": "edam:operation_3664"
-        },
-        {
           "@id": "edam:operation_3659"
         },
         {
-          "@id": "edam:operation_3741"
+          "@id": "edam:operation_3658"
         },
         {
-          "@id": "edam:operation_3658"
+          "@id": "edam:operation_3664"
+        },
+        {
+          "@id": "edam:operation_3741"
         }
       ],
       "sc:funder": "Agentschap Innoveren en Ondernemen - Flemish Government",
@@ -107,8 +99,8 @@
       "sc:name": "MSqRob",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/statOmics/MSqRob"
@@ -116,18 +108,31 @@
       "sc:url": "https://github.com/ludgergoeminne/MSqRob"
     },
     {
-      "@id": "_:N3fd2d46b570941d08021b5a34a1b8ff1",
+      "@id": "_:Neb80cf840b6841e1bc3833587c336475",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0857"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence search results"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3468"
+        }
+      ],
+      "sc:name": "Report"
     },
     {
-      "@id": "_:N0be3fa247a6c4cfc84ad5d23d922a5e4",
+      "@id": "_:N10cafb66530b41998dd17b9dff44c533",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nf79a777196d546178c8d5d53e306080a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
@@ -143,28 +148,23 @@
       "sc:name": "Experiment report"
     },
     {
-      "@id": "_:Naba2d3769eb646eab5350f075ebb12f5",
+      "@id": "_:N450bcf73d0d94e2db6ff18772b02833c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_0857"
       },
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence search results"
     },
     {
-      "@id": "_:Nf72f9e898ed34213a10b6ec30ce39531",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3468"
-        }
-      ],
-      "sc:name": "Report"
+      "@id": "http://orcid.org/0000-0002-8285-7766",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1074/mcp.M115.055897",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

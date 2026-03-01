@@ -36,37 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2020.03.28.013003",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "http://orcid.org/0000-0001-6807-7029",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2020.03.28.013003",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/deeplc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "CompOmics",
       "bsc:input": {
-        "@id": "_:N2e2a94a4421446a2b9cb1f8c46ee04fe"
+        "@id": "_:N1f8b13be229844db8f4495d401ca424e"
       },
       "bsc:output": {
-        "@id": "_:N53056269059a406d839119c2e093f4ba"
+        "@id": "_:Neef4d269d3c94f13baa0d6ea836dda00"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3474"
+        },
         {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_0123"
-        },
-        {
-          "@id": "edam:topic_3474"
         }
       ],
       "sc:author": {
@@ -83,8 +83,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "DeepLC",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
+        "Mac",
         "Linux"
       ],
       "sc:softwareHelp": {
@@ -93,18 +93,7 @@
       "sc:url": "http://compomics.github.io/projects/DeepLC"
     },
     {
-      "@id": "_:N2e2a94a4421446a2b9cb1f8c46ee04fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N53056269059a406d839119c2e093f4ba",
+      "@id": "_:Neef4d269d3c94f13baa0d6ea836dda00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2979"
@@ -113,6 +102,17 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Peptide property"
+    },
+    {
+      "@id": "_:N1f8b13be229844db8f4495d401ca424e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Protein sequence"
     }
   ]
 }

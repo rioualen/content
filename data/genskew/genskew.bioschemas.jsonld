@@ -43,30 +43,30 @@
       "@id": "https://bio.tools/genskew",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7345f7417e914711bf102b1b8d789393"
+        "@id": "_:N2fdd9d0c57604ea6aba945d401f68715"
       },
       "bsc:output": [
         {
-          "@id": "_:N08c16662230e445d95e3cf9f3efb6738"
+          "@id": "_:N7cdce10a1be54a9a85539091ff67997f"
         },
         {
-          "@id": "_:N0026d608ed3049388bd0f75baae931c6"
+          "@id": "_:N3d5d0d9e40df43dc919a76f38f3fa16c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Web application"
+        "Web application",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
       "sc:citation": [
         "pubmed:16381839",
-        "pmcid:PMC1347510",
         {
           "@id": "https://doi.org/10.1093/nar/gkj148"
-        }
+        },
+        "pmcid:PMC1347510"
       ],
       "sc:description": "G+C skew plot of microbial genomes.",
       "sc:featureList": {
@@ -75,8 +75,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "GenSkew",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
+        "Mac",
         "Linux"
       ],
       "sc:provider": "AT-CUBE",
@@ -87,7 +87,15 @@
       "sc:url": "http://genskew.csb.univie.ac.at/"
     },
     {
-      "@id": "_:N08c16662230e445d95e3cf9f3efb6738",
+      "@id": "_:N2fdd9d0c57604ea6aba945d401f68715",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3497"
+      },
+      "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "_:N7cdce10a1be54a9a85539091ff67997f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -95,20 +103,12 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N0026d608ed3049388bd0f75baae931c6",
+      "@id": "_:N3d5d0d9e40df43dc919a76f38f3fa16c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N7345f7417e914711bf102b1b8d789393",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3497"
-      },
-      "sc:name": "DNA sequence (raw)"
     }
   ]
 }

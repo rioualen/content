@@ -43,26 +43,26 @@
       "@id": "https://bio.tools/aureme",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf2b7223bac454e2d83e82ae5ff489c91"
+        "@id": "_:Ne730a99c43684fd2ba8ca28d63067af7"
       },
       "bsc:output": {
-        "@id": "_:N7644b8804d504212a90efcd28f665e0b"
+        "@id": "_:Nc340a62835d144f18191a408e6b4e005"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
         "Workbench",
+        "Workflow",
         "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2259"
       },
       "sc:citation": [
-        "pmcid:PMC5988327",
         "pubmed:29791443",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1006146"
-        }
+        },
+        "pmcid:PMC5988327"
       ],
       "sc:description": "A unified workspace built around a Python package PADMet (Python library for hAndling metaData of METabolism), to house the reconstruction of genome-scale metabolic models.",
       "sc:featureList": {
@@ -78,7 +78,15 @@
       "sc:url": "http://aureme.genouest.org"
     },
     {
-      "@id": "_:N7644b8804d504212a90efcd28f665e0b",
+      "@id": "_:Ne730a99c43684fd2ba8ca28d63067af7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3497"
+      },
+      "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "_:Nc340a62835d144f18191a408e6b4e005",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -87,14 +95,6 @@
         "@id": "edam:format_2585"
       },
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Nf2b7223bac454e2d83e82ae5ff489c91",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3497"
-      },
-      "sc:name": "DNA sequence (raw)"
     }
   ]
 }

@@ -36,37 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jproteome.8b00728.",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/deltamass",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Dmitry Avtonomov",
       "bsc:input": [
         {
-          "@id": "_:N0ea364f018724c90809c1142a307c6d9"
+          "@id": "_:N6b6fd9bcf58144dfa97c0cb99e699383"
         },
         {
-          "@id": "_:N203de315dfa54054a624e6838890ae12"
+          "@id": "_:N274e2b8647e0416ebaca2049f920caad"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ndd2e839999494600b7812ca60e8beca5"
+        "@id": "_:Nd6d6d77d5ec549d9ac5960e01013da31"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
+        "pubmed:30523686",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.8b00728."
-        },
-        "pubmed:30523686"
+        }
       ],
       "sc:description": "Automated detection and visualization of mass shifts in proteomic open search results.",
       "sc:featureList": [
@@ -82,8 +78,8 @@
       "sc:name": "DeltaMass",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/chhh/deltamass/blob/master/README.md"
@@ -92,15 +88,7 @@
       "sc:url": "https://github.com/chhh/deltamass"
     },
     {
-      "@id": "_:Ndd2e839999494600b7812ca60e8beca5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0844"
-      },
-      "sc:name": "Molecular mass"
-    },
-    {
-      "@id": "_:N0ea364f018724c90809c1142a307c6d9",
+      "@id": "_:N6b6fd9bcf58144dfa97c0cb99e699383",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -116,20 +104,32 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N203de315dfa54054a624e6838890ae12",
+      "@id": "_:N274e2b8647e0416ebaca2049f920caad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3655"
+          "@id": "edam:format_3247"
         },
         {
-          "@id": "edam:format_3247"
+          "@id": "edam:format_3655"
         }
       ],
       "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:Nd6d6d77d5ec549d9ac5960e01013da31",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0844"
+      },
+      "sc:name": "Molecular mass"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jproteome.8b00728.",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

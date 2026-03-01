@@ -36,55 +36,55 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-0474-2218",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1186/1471-2105-14-308",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-0474-2218",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/mitoode",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Gregoire Pau",
         {
           "@id": "http://orcid.org/0000-0002-0474-2218"
-        }
+        },
+        "Gregoire Pau"
       ],
       "bsc:input": {
-        "@id": "_:N66e641f9c4534e3383baea808db0d57d"
+        "@id": "_:N0cfdc4158e63453a9663a70a654d0d2d"
       },
       "bsc:output": [
         {
-          "@id": "_:N9319caaa1b3a4e3198c0113747be2752"
+          "@id": "_:N51d3b836861140e894e866a7a6014489"
         },
         {
-          "@id": "_:N1faca433d5e246d589ddeb1d13f388c9"
+          "@id": "_:N89e99dd9b09c4fa38fb145d1dd9a3f51"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3523"
+          "@id": "edam:topic_3383"
         },
         {
           "@id": "edam:topic_0625"
         },
         {
-          "@id": "edam:topic_3383"
+          "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_3523"
         }
       ],
       "sc:citation": [
-        "pubmed:24131777",
         "pmcid:PMC3827932",
+        "pubmed:24131777",
         {
           "@id": "https://doi.org/10.1186/1471-2105-14-308"
         }
@@ -97,8 +97,8 @@
       "sc:name": "mitoODE",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/mitoODE.html"
@@ -107,7 +107,34 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/mitoODE.html"
     },
     {
-      "@id": "_:N9319caaa1b3a4e3198c0113747be2752",
+      "@id": "_:N0cfdc4158e63453a9663a70a654d0d2d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N51d3b836861140e894e866a7a6014489",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N89e99dd9b09c4fa38fb145d1dd9a3f51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -121,33 +148,6 @@
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N1faca433d5e246d589ddeb1d13f388c9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N66e641f9c4534e3383baea808db0d57d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Experimental measurement"
     }
   ]
 }

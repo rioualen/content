@@ -36,37 +36,41 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2020.08.11.245928",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/spec2vec",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N12e180bcaaf24b5c86ff5500bd12c5b9"
+          "@id": "_:N276110e38829469a8c229d6524bf7aae"
         },
         {
-          "@id": "_:Ne514c302db1a4886accb4f2791345b11"
+          "@id": "_:N8ed1dc32e0124ee997d24a0befdda403"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5410a73e0c274eaca68fce0f631d0bfa"
+          "@id": "_:Nabd8f916dfb24e78b7b0945f81c30a22"
         },
         {
-          "@id": "_:Nb56e0a77538f40b694af50c7e2015fa8"
+          "@id": "_:N7b80aeb0b94944b2b70e43146afc79f2"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0218"
-        },
-        {
           "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_0218"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3172"
         }
       ],
       "sc:citation": {
@@ -75,6 +79,12 @@
       "sc:description": "Improved mass spectral similarity scoring through learning of structural relationships.\n\nSpec2vec is a novel spectral similarity score inspired by a natural language processing algorithm -- Word2Vec. Where Word2Vec learns relationships between words in sentences, spec2vec does so for mass fragments and neutral losses in MS/MS spectra. The spectral similarity score is based on spectral embeddings learnt from the fragmental relationships within a large set of spectral data.\n\nAnalysis and benchmarking of mass spectra similarity measures using gnps data set.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3801"
+        },
+        {
+          "@id": "edam:operation_2426"
+        },
+        {
           "@id": "edam:operation_2424"
         },
         {
@@ -82,12 +92,6 @@
         },
         {
           "@id": "edam:operation_2421"
-        },
-        {
-          "@id": "edam:operation_3801"
-        },
-        {
-          "@id": "edam:operation_2426"
         }
       ],
       "sc:license": "Apache-2.0",
@@ -95,15 +99,34 @@
       "sc:url": "https://github.com/iomega/spec2vec"
     },
     {
-      "@id": "_:N5410a73e0c274eaca68fce0f631d0bfa",
+      "@id": "_:N276110e38829469a8c229d6524bf7aae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0950"
+        "@id": "edam:data_0943"
       },
-      "sc:name": "Mathematical model"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_4039"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:Nb56e0a77538f40b694af50c7e2015fa8",
+      "@id": "_:N8ed1dc32e0124ee997d24a0befdda403",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:Nabd8f916dfb24e78b7b0945f81c30a22",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -119,35 +142,12 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N12e180bcaaf24b5c86ff5500bd12c5b9",
+      "@id": "_:N7b80aeb0b94944b2b70e43146afc79f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_0950"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_4039"
-        },
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:Ne514c302db1a4886accb4f2791345b11",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2020.08.11.245928",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Mathematical model"
     }
   ]
 }

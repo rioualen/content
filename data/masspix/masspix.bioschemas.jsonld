@@ -45,18 +45,18 @@
       "biotools:primaryContact": "Julian L. Griffin",
       "bsc:input": [
         {
-          "@id": "_:N2e8a4184e6dd4816be3a5027b76b87a4"
+          "@id": "_:N4dd946b3bcd44fc19144822d16733765"
         },
         {
-          "@id": "_:Ne5a384eb57014e8e9fe57dde25dd46cd"
+          "@id": "_:N2cdc1998e4fc4b4fad758f036a9b8212"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0d9e3cc3957d4e098a2d746ed100c250"
+          "@id": "_:Na2f741c5a81c453e857dc1ca2d166fbb"
         },
         {
-          "@id": "_:N792f7e7ae5a24369ba991f4cb8fa79ca"
+          "@id": "_:N1aefb0dcb64749be8f93676dea7b99ab"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -69,24 +69,21 @@
           "@id": "edam:topic_2269"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC5608769",
+        "pubmed:28989334",
         {
           "@id": "https://doi.org/10.1007/s11306-017-1252-5"
-        },
-        "pubmed:28989334",
-        "pmcid:PMC5608769"
+        }
       ],
       "sc:description": "Processes high resolution mass spectrometry imaging data, performs multivariate statistics (PCA, clustering) and lipid identification.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3214"
-        },
         {
           "@id": "edam:operation_3443"
         },
@@ -94,14 +91,17 @@
           "@id": "edam:operation_3960"
         },
         {
+          "@id": "edam:operation_3214"
+        },
+        {
           "@id": "edam:operation_3432"
         }
       ],
       "sc:name": "massPix",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/hallz/massPix"
@@ -109,7 +109,40 @@
       "sc:url": "https://github.com/hallz/massPix"
     },
     {
-      "@id": "_:N0d9e3cc3957d4e098a2d746ed100c250",
+      "@id": "_:N4dd946b3bcd44fc19144822d16733765",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3682"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N2cdc1998e4fc4b4fad758f036a9b8212",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2850"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Lipid structure"
+    },
+    {
+      "@id": "_:Na2f741c5a81c453e857dc1ca2d166fbb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N1aefb0dcb64749be8f93676dea7b99ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -123,39 +156,6 @@
         }
       ],
       "sc:name": "Image"
-    },
-    {
-      "@id": "_:N792f7e7ae5a24369ba991f4cb8fa79ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N2e8a4184e6dd4816be3a5027b76b87a4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2850"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Lipid structure"
-    },
-    {
-      "@id": "_:Ne5a384eb57014e8e9fe57dde25dd46cd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3682"
-      },
-      "sc:name": "Mass spectrometry data"
     }
   ]
 }

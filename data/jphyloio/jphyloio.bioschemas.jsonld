@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/database/bav094",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/jphyloio",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ben C. Stöver",
       "bsc:input": [
         {
-          "@id": "_:N33e09a80b6784de3974befaa5752dbc6"
+          "@id": "_:N070546f4c561423aa5c2369703f190b5"
         },
         {
-          "@id": "_:N88f51b5dcf8e4444802508a450e82f22"
+          "@id": "_:N14ec63ed4aaa4be591fb5ab63432ec61"
         },
         {
-          "@id": "_:Nb25b7c71e9eb44b3a4900451e51d0508"
+          "@id": "_:N9564fc3fe405404ca83f026037d63523"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N84c64b293f3d4572ba29873e9ae1834c"
+          "@id": "_:N0d99e06c1c47421980a737bab331ac23"
         },
         {
-          "@id": "_:Nbe3f1ec593a94f158c67fae33a48b72a"
+          "@id": "_:N792765ef3c174b87a1f2bd99d57cb92a"
         },
         {
-          "@id": "_:N1c652867c01546898e5d0c7545566bd3"
+          "@id": "_:Ndbb57b70cbbe464b8c17ab6607537de9"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -68,31 +72,31 @@
           "@id": "edam:topic_3307"
         },
         {
-          "@id": "edam:topic_3070"
+          "@id": "edam:topic_3293"
         },
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_3070"
         }
       ],
       "sc:author": [
-        "Sarah Wiechers",
-        "Ben C. Stöver"
+        "Ben C. Stöver",
+        "Sarah Wiechers"
       ],
       "sc:citation": [
-        "pmcid:PMC4589695",
-        "pubmed:26424081",
         {
           "@id": "https://doi.org/10.1093/database/bav094"
-        }
+        },
+        "pmcid:PMC4589695",
+        "pubmed:26424081"
       ],
       "sc:contributor": "Kai F. Müller",
       "sc:description": "An open source Java library for reading and writing various tree and alignment formats. Application developers are able to implement format-independent data processing by including event based readers via the abstract strategy pattern. All readers are designed to deal with large amounts of data (alignments with many and/or very long sequences, large trees) without using a great amount of resources (CPU or RAM).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_1812"
         },
         {
           "@id": "edam:operation_3357"
@@ -103,14 +107,11 @@
       "sc:license": "LGPL-3.0",
       "sc:name": "JPhyloIO",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
+        "Windows",
         "Mac"
       ],
       "sc:softwareHelp": [
-        {
-          "@id": "http://bioinfweb.info/JPhyloIO/License"
-        },
         {
           "@id": "http://bioinfweb.info/JPhyloIO/Documentation/Demos"
         },
@@ -119,20 +120,23 @@
         },
         {
           "@id": "http://bioinfweb.info/JPhyloIO/Documentation/API/Latest/"
+        },
+        {
+          "@id": "http://bioinfweb.info/JPhyloIO/License"
         }
       ],
       "sc:softwareVersion": "0.5.4",
       "sc:url": "http://bioinfweb.info/JPhyloIO/"
     },
     {
-      "@id": "_:N84c64b293f3d4572ba29873e9ae1834c",
+      "@id": "_:N0d99e06c1c47421980a737bab331ac23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1912"
+          "@id": "edam:format_1997"
         },
         {
           "@id": "edam:format_3160"
@@ -141,13 +145,35 @@
           "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1997"
+          "@id": "edam:format_1912"
         }
       ],
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:Nbe3f1ec593a94f158c67fae33a48b72a",
+      "@id": "_:N792765ef3c174b87a1f2bd99d57cb92a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1910"
+        },
+        {
+          "@id": "edam:format_3160"
+        },
+        {
+          "@id": "edam:format_1912"
+        },
+        {
+          "@id": "edam:format_3159"
+        }
+      ],
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:Ndbb57b70cbbe464b8c17ab6607537de9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -166,15 +192,12 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N1c652867c01546898e5d0c7545566bd3",
+      "@id": "_:N070546f4c561423aa5c2369703f190b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0872"
+        "@id": "edam:data_3028"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1910"
-        },
         {
           "@id": "edam:format_1912"
         },
@@ -185,40 +208,43 @@
           "@id": "edam:format_3159"
         }
       ],
-      "sc:name": "Phylogenetic tree"
+      "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N33e09a80b6784de3974befaa5752dbc6",
+      "@id": "_:N14ec63ed4aaa4be591fb5ab63432ec61",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
       },
       "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1910"
+        },
+        {
+          "@id": "edam:format_3160"
+        },
         {
           "@id": "edam:format_2332"
         },
         {
-          "@id": "edam:format_3160"
+          "@id": "edam:format_1912"
         },
         {
           "@id": "edam:format_3159"
-        },
-        {
-          "@id": "edam:format_1910"
-        },
-        {
-          "@id": "edam:format_1912"
         }
       ],
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N88f51b5dcf8e4444802508a450e82f22",
+      "@id": "_:N9564fc3fe405404ca83f026037d63523",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
       },
       "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2332"
+        },
         {
           "@id": "edam:format_1912"
         },
@@ -226,42 +252,16 @@
           "@id": "edam:format_1991"
         },
         {
+          "@id": "edam:format_1997"
+        },
+        {
           "@id": "edam:format_3160"
         },
         {
           "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_1997"
         }
       ],
       "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:Nb25b7c71e9eb44b3a4900451e51d0508",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1912"
-        },
-        {
-          "@id": "edam:format_3159"
-        },
-        {
-          "@id": "edam:format_3160"
-        }
-      ],
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "https://doi.org/10.1093/database/bav094",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

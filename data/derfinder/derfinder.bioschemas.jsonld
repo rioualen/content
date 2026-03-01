@@ -36,27 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-2873-2671",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/biostatistics/kxt053",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-2873-2671",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/derfinder",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Leonardo Collado-Torres",
         {
           "@id": "http://orcid.org/0000-0002-2873-2671"
-        }
+        },
+        "Leonardo Collado-Torres"
       ],
       "bsc:input": {
-        "@id": "_:Ndf8f011cc5804c639b4e800a6b24724c"
+        "@id": "_:N8ca2a9202cee48b78e351e59ae79c578"
       },
       "bsc:output": {
-        "@id": "_:N0ed621119d6d40b9bb98dacc27fa39e3"
+        "@id": "_:N79fa33d97e48495aa3657a71a1af9604"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -86,8 +86,8 @@
       "sc:name": "derfinder",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/derfinder.html"
@@ -96,23 +96,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/derfinder.html"
     },
     {
-      "@id": "_:Ndf8f011cc5804c639b4e800a6b24724c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3496"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3006"
-        }
-      ],
-      "sc:name": "RNA sequence (raw)"
-    },
-    {
-      "@id": "_:N0ed621119d6d40b9bb98dacc27fa39e3",
+      "@id": "_:N79fa33d97e48495aa3657a71a1af9604",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -121,6 +105,22 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "_:N8ca2a9202cee48b78e351e59ae79c578",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3496"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3006"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "RNA sequence (raw)"
     }
   ]
 }

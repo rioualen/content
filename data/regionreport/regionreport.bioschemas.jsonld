@@ -44,10 +44,10 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Leonardo Collado-Torres",
       "bsc:input": {
-        "@id": "_:N7ff24eea2f5d4eecae5f7d440f6d1134"
+        "@id": "_:Nacff14cf880c4c54a3e6372916f615f0"
       },
       "bsc:output": {
-        "@id": "_:N6d3aa66149d5487889c76efbc93f5db8"
+        "@id": "_:Nc086d9c469f8442ba21e6bc673a78813"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -59,10 +59,10 @@
       },
       "sc:citation": [
         "pubmed:27694310",
+        "pmcid:PMC5314792",
         {
           "@id": "https://doi.org/10.1093/nar/gkw852"
-        },
-        "pmcid:PMC5314792"
+        }
       ],
       "sc:description": "Generate HTML or PDF reports to explore a set of regions such as the results from annotation-agnostic expression analysis of RNA-seq data at base-pair resolution performed by derfinder. You can also create reports for DESeq2 or edgeR results.",
       "sc:featureList": {
@@ -71,8 +71,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "regionReport",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -82,7 +82,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/regionReport.html"
     },
     {
-      "@id": "_:N6d3aa66149d5487889c76efbc93f5db8",
+      "@id": "_:Nacff14cf880c4c54a3e6372916f615f0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1017"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2078"
+      },
+      "sc:name": "Sequence range"
+    },
+    {
+      "@id": "_:Nc086d9c469f8442ba21e6bc673a78813",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -96,17 +107,6 @@
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N7ff24eea2f5d4eecae5f7d440f6d1134",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1017"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2078"
-      },
-      "sc:name": "Sequence range"
     }
   ]
 }

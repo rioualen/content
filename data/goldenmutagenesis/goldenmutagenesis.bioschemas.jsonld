@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-9212-9957",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://orcid.org/0000-0001-5444-9282",
       "@type": "sc:Person"
     },
@@ -44,77 +48,73 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0002-9212-9957",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/GoldenMutagenesis",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf1723e835f844351a8c400e7e2357af4"
+          "@id": "_:N08962be2db8345b2b6668204199d75b6"
         },
         {
-          "@id": "_:N37313a1e3f5b4d6d8f0fdd3e2e8bfc70"
+          "@id": "_:Ndad52f1db5bf4197b57c8e7e374c41bd"
         },
         {
-          "@id": "_:N10211d52237e47b3b6c2d7cbdd621d2f"
+          "@id": "_:N6a7f4281f3c4408bb835d768c601d60e"
         },
         {
-          "@id": "_:N28b797fdeee64c40a911ad3745339bcc"
+          "@id": "_:Nd8b42ac1c3fe4e22b282f3e52cf106db"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ndb6a2d62e0334eef8ca05a3c07e9c115"
+          "@id": "_:Ncb0a5c24ae2c461fb068c1fa7f6ca224"
         },
         {
-          "@id": "_:Nf4e02f16d72949bb85d752a1e585fc97"
+          "@id": "_:Na05b7fed2db24518b0a8aa76d2b5cc7b"
         },
         {
-          "@id": "_:N2d8124ade12c42a0892ca559ed830e7d"
+          "@id": "_:N9c022b77fd4e4dafbb280e2d010eecae"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Library"
+        "Library",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0632"
+        },
+        {
+          "@id": "edam:topic_2533"
+        },
+        {
+          "@id": "edam:topic_0196"
+        },
+        {
           "@id": "edam:topic_0601"
+        },
+        {
+          "@id": "edam:topic_3361"
         },
         {
           "@id": "edam:topic_3895"
         },
         {
           "@id": "edam:topic_0091"
-        },
-        {
-          "@id": "edam:topic_2533"
-        },
-        {
-          "@id": "edam:topic_0632"
-        },
-        {
-          "@id": "edam:topic_0196"
-        },
-        {
-          "@id": "edam:topic_3361"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0001-5444-9282"
       },
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1101/453621"
-        },
+        "pubmed:31358887",
         {
           "@id": "https://doi.org/10.1038/s41598-019-47376-1"
         },
-        "pubmed:31358887",
-        "pmcid:PMC6662682"
+        "pmcid:PMC6662682",
+        {
+          "@id": "https://doi.org/10.1101/453621"
+        }
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0002-9212-9957"
@@ -133,14 +133,14 @@
       "sc:name": "GoldenMutagenesis",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareVersion": "1.1.1",
       "sc:url": "https://msbi.ipb-halle.de/GoldenMutagenesisWeb"
     },
     {
-      "@id": "_:Nf1723e835f844351a8c400e7e2357af4",
+      "@id": "_:N08962be2db8345b2b6668204199d75b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -151,7 +151,18 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N37313a1e3f5b4d6d8f0fdd3e2e8bfc70",
+      "@id": "_:Ndad52f1db5bf4197b57c8e7e374c41bd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2200"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N6a7f4281f3c4408bb835d768c601d60e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -162,18 +173,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N10211d52237e47b3b6c2d7cbdd621d2f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2200"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N28b797fdeee64c40a911ad3745339bcc",
+      "@id": "_:Nd8b42ac1c3fe4e22b282f3e52cf106db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -184,37 +184,26 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:Ndb6a2d62e0334eef8ca05a3c07e9c115",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2531"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Protocol"
-    },
-    {
-      "@id": "_:Nf4e02f16d72949bb85d752a1e585fc97",
+      "@id": "_:Ncb0a5c24ae2c461fb068c1fa7f6ca224",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1240"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2331"
+          "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2331"
         }
       ],
       "sc:name": "PCR primers"
     },
     {
-      "@id": "_:N2d8124ade12c42a0892ca559ed830e7d",
+      "@id": "_:Na05b7fed2db24518b0a8aa76d2b5cc7b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -223,6 +212,17 @@
         "@id": "edam:format_3603"
       },
       "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N9c022b77fd4e4dafbb280e2d010eecae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2531"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Protocol"
     },
     {
       "@id": "https://doi.org/10.1101/453621",

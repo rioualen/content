@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-2323-0963",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/drcancer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,60 +43,60 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Na1463208d60d4e9ca89cbbfb29297844"
+          "@id": "_:Ne7ce1769cbfc42729aed0988406ffde3"
         },
         {
-          "@id": "_:Ne58a6d68d0fc4d418a04686c827dc4a8"
+          "@id": "_:N5724564ae75f4ae0bf72e398d75ff595"
         },
         {
-          "@id": "_:N851e39c871ad4147a65bedf8c6835687"
+          "@id": "_:N70b7dd6991394a22abd347b14049fb44"
         },
         {
-          "@id": "_:Ned2385846d734616b4faefa5319389ad"
+          "@id": "_:Ne97c8d94ada048da9cc0182f4451c7aa"
         },
         {
-          "@id": "_:N6ed905fc338e4d6fa0fd36f4c4707844"
+          "@id": "_:Nbb88f4f7fa7540b7b543589afbad05de"
         },
         {
-          "@id": "_:N33ed16215b804c4abde3adbccd55fd3e"
+          "@id": "_:N62e6314dd15b4536a30cae5b8ab2fee2"
         },
         {
-          "@id": "_:N85af9b807efb47dca45bd046c9678727"
+          "@id": "_:N1820c048907646858a27888af4640aa8"
         },
         {
-          "@id": "_:Nf1938a249ed240d89862f3c8864a9088"
+          "@id": "_:N23cf1115083b4a80a721091f56af0b3d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N741e290fec734dceb514806d5273f6a6"
+          "@id": "_:Nc808b2dbee28465981c6aecfe5f553db"
         },
         {
-          "@id": "_:Nab6f9458cd634fdfb1cbd028d87acc60"
+          "@id": "_:Nae3ed677d6944dee822c20018def4f0c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
-        },
-        {
           "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_0123"
+        },
+        {
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:author": {
         "@id": "http://orcid.org/0000-0002-2323-0963"
       },
       "sc:citation": [
-        "pubmed:21763417",
         {
           "@id": "https://doi.org/10.1016/j.ygeno.2011.06.010"
         },
-        "pmcid:PMC3371640"
+        "pmcid:PMC3371640",
+        "pubmed:21763417"
       ],
       "sc:description": "A machine learning-based predictor of cancer-causing SNPs.",
       "sc:featureList": {
@@ -109,9 +105,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "DrCancer",
       "sc:operatingSystem": [
-        "Mac",
+        "Linux",
         "Windows",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://snps.biofold.org/drcancer/pages/DrCancer_Help.html"
@@ -119,29 +115,37 @@
       "sc:url": "http://snps.biofold.org/drcancer"
     },
     {
-      "@id": "_:Na1463208d60d4e9ca89cbbfb29297844",
+      "@id": "_:Nc808b2dbee28465981c6aecfe5f553db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1016"
+        "@id": "edam:data_1622"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Sequence position"
+      "sc:name": "Disease report"
     },
     {
-      "@id": "_:Ne58a6d68d0fc4d418a04686c827dc4a8",
+      "@id": "_:Nae3ed677d6944dee822c20018def4f0c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2563"
+        "@id": "edam:data_1622"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Amino acid name (single letter)"
+      "sc:name": "Disease report"
     },
     {
-      "@id": "_:N851e39c871ad4147a65bedf8c6835687",
+      "@id": "_:Ne7ce1769cbfc42729aed0988406ffde3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1176"
+      },
+      "sc:name": "GO concept ID"
+    },
+    {
+      "@id": "_:N5724564ae75f4ae0bf72e398d75ff595",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -152,26 +156,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:Ned2385846d734616b4faefa5319389ad",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1176"
-      },
-      "sc:name": "GO concept ID"
-    },
-    {
-      "@id": "_:N6ed905fc338e4d6fa0fd36f4c4707844",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N33ed16215b804c4abde3adbccd55fd3e",
+      "@id": "_:N70b7dd6991394a22abd347b14049fb44",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2563"
@@ -182,15 +167,7 @@
       "sc:name": "Amino acid name (single letter)"
     },
     {
-      "@id": "_:N85af9b807efb47dca45bd046c9678727",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1176"
-      },
-      "sc:name": "GO concept ID"
-    },
-    {
-      "@id": "_:Nf1938a249ed240d89862f3c8864a9088",
+      "@id": "_:Ne97c8d94ada048da9cc0182f4451c7aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1016"
@@ -201,26 +178,49 @@
       "sc:name": "Sequence position"
     },
     {
-      "@id": "_:N741e290fec734dceb514806d5273f6a6",
+      "@id": "_:Nbb88f4f7fa7540b7b543589afbad05de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1622"
+        "@id": "edam:data_2563"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Disease report"
+      "sc:name": "Amino acid name (single letter)"
     },
     {
-      "@id": "_:Nab6f9458cd634fdfb1cbd028d87acc60",
+      "@id": "_:N62e6314dd15b4536a30cae5b8ab2fee2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1622"
+        "@id": "edam:data_1016"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Disease report"
+      "sc:name": "Sequence position"
+    },
+    {
+      "@id": "_:N1820c048907646858a27888af4640aa8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N23cf1115083b4a80a721091f56af0b3d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1176"
+      },
+      "sc:name": "GO concept ID"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-2323-0963",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1016/j.ygeno.2011.06.010",

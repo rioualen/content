@@ -36,21 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.medmic.2020.100011",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8280-8940",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/nf-rnaseqmetagen",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-8280-8940"
       },
       "bsc:input": {
-        "@id": "_:Nd8afce9c8b7046ce9e4e31013278316e"
+        "@id": "_:N60d594edd5584265913647c0c35be0dc"
       },
       "bsc:output": {
-        "@id": "_:Na2c8dda9d7a74b8cb368b1bd40254d3d"
+        "@id": "_:Nf09c1ef1489f48e4951619bd8b64c105"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Workflow"
+        "Workflow",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -66,18 +74,18 @@
       "sc:description": "A Nextflow pipeline for the identification and taxonomic classification of foreign/microbial reads reads from high throughput RNA-seq sequencing data",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_3198"
         },
         {
-          "@id": "edam:operation_3198"
+          "@id": "edam:operation_3460"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "nf-rnaSeqMetagen",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://phelelani.github.io/nf-rnaSeqMetagen/"
@@ -86,18 +94,7 @@
       "sc:url": "https://github.com/phelelani/nf-rnaSeqMetagen"
     },
     {
-      "@id": "_:Nd8afce9c8b7046ce9e4e31013278316e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:Na2c8dda9d7a74b8cb368b1bd40254d3d",
+      "@id": "_:Nf09c1ef1489f48e4951619bd8b64c105",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -108,12 +105,15 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "https://doi.org/10.1016/j.medmic.2020.100011",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8280-8940",
-      "@type": "sc:Person"
+      "@id": "_:N60d594edd5584265913647c0c35be0dc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "Expression data"
     }
   ]
 }
