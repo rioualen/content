@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkab1082",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/disprot",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,38 +51,38 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Ne68ca287e5684a3f81b10ca28444455c"
+          "@id": "_:Nafa197dde2ad4a1ebd14e94c91d2a9d8"
         },
         {
-          "@id": "_:N9da149f89e344f01b0658f3e71f89f43"
+          "@id": "_:Nc19729dd90354a2eb18a53152b8c23eb"
         },
         {
-          "@id": "_:Nb650b46a1d71485ab3df3e9959f0bf56"
+          "@id": "_:Nff991fc573474babb6fc0078a8689a34"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N977b83746e6e481bbf02b3278b96a23e"
+          "@id": "_:Nd805d886c42d488c95c6170dc98f147e"
         },
         {
-          "@id": "_:N6e204a9599e54ebea6f12b6dc5c92e58"
+          "@id": "_:N321b7877fc0640e1ac1e765ad794d261"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
+        "Web application",
         "Database portal",
-        "Web application"
+        "Web API"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3538"
       },
       "sc:citation": [
-        "pubmed:34850135",
+        "pmcid:PMC8728214",
         {
           "@id": "https://doi.org/10.1093/nar/gkab1082"
         },
-        "pmcid:PMC8728214"
+        "pubmed:34850135"
       ],
       "sc:description": "Database of protein disorder. It is a community resource annotating protein sequences for intrinsically disordered regions from the literature.",
       "sc:featureList": [
@@ -88,9 +96,9 @@
       "sc:license": "CC-BY-NC-1.0",
       "sc:name": "Database of protein disorder (DisProt)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": "University of Padua, Department of Biomedical Sciences, BioComputing UP lab",
       "sc:softwareHelp": {
@@ -100,23 +108,47 @@
       "sc:url": "https://disprot.org/"
     },
     {
-      "@id": "_:N977b83746e6e481bbf02b3278b96a23e",
+      "@id": "_:Nafa197dde2ad4a1ebd14e94c91d2a9d8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Nc19729dd90354a2eb18a53152b8c23eb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2723"
+      },
+      "sc:name": "Protein ID (DisProt)"
+    },
+    {
+      "@id": "_:Nff991fc573474babb6fc0078a8689a34",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1009"
+      },
+      "sc:name": "Protein name"
+    },
+    {
+      "@id": "_:Nd805d886c42d488c95c6170dc98f147e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2331"
+          "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_2331"
         }
       ],
       "sc:name": "Protein structure report"
     },
     {
-      "@id": "_:N6e204a9599e54ebea6f12b6dc5c92e58",
+      "@id": "_:N321b7877fc0640e1ac1e765ad794d261",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -130,38 +162,6 @@
         }
       ],
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:Ne68ca287e5684a3f81b10ca28444455c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2723"
-      },
-      "sc:name": "Protein ID (DisProt)"
-    },
-    {
-      "@id": "_:N9da149f89e344f01b0658f3e71f89f43",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1009"
-      },
-      "sc:name": "Protein name"
-    },
-    {
-      "@id": "_:Nb650b46a1d71485ab3df3e9959f0bf56",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkab1082",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
     }
   ]
 }

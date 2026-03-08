@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkp464",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/beaconlab_pscan",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Federico Zambelli",
-        "Giulio Pavesi"
+        "Giulio Pavesi",
+        "Federico Zambelli"
       ],
       "bsc:input": {
-        "@id": "_:Nce7c9930714c4cebb0a8b3905be2115f"
+        "@id": "_:N85f4d57fd61f45198edae4a616bcd01e"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne00ea6944caf49f2a5b4ec223be1fc18"
+          "@id": "_:N2a14928519404a46b9436a627e157a77"
         },
         {
-          "@id": "_:N0958f4844dd84a7fb60d6a481cec9d94"
+          "@id": "_:N19fa721724e7403b9c28a41d3d2feee7"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -67,11 +71,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:19487240",
-        "pmcid:PMC2703934",
         {
           "@id": "https://doi.org/10.1093/nar/gkp464"
-        }
+        },
+        "pmcid:PMC2703934",
+        "pubmed:19487240"
       ],
       "sc:description": "Software tool that scans a set of sequences (e.g. promoters) from co-regulated or co-expressed genes with motifs describing the binding specificity of known transcription factors and assesses which motifs are significantly over- or under-represented, providing thus hints on which transcription factors could be common regulators of the genes studied, together with the location of their candidate binding sites in the sequences",
       "sc:featureList": {
@@ -80,9 +84,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Pscan",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "ELIXIR-ITA-MILANO",
       "sc:softwareHelp": {
@@ -92,18 +96,7 @@
       "sc:url": "http://www.beaconlab.it/pscan"
     },
     {
-      "@id": "_:Nce7c9930714c4cebb0a8b3905be2115f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2295"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID"
-    },
-    {
-      "@id": "_:Ne00ea6944caf49f2a5b4ec223be1fc18",
+      "@id": "_:N2a14928519404a46b9436a627e157a77",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2755"
@@ -114,7 +107,7 @@
       "sc:name": "Transcription factor name"
     },
     {
-      "@id": "_:N0958f4844dd84a7fb60d6a481cec9d94",
+      "@id": "_:N19fa721724e7403b9c28a41d3d2feee7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -125,8 +118,15 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkp464",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N85f4d57fd61f45198edae4a616bcd01e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2295"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene ID"
     }
   ]
 }

@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pint",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Olli-Pekka Huovilainen",
       "bsc:input": [
         {
-          "@id": "_:N7ce77c6e0d404c07b53e915ce71169e0"
+          "@id": "_:N65ed5bef625c491fa73b592ab5aa0474"
         },
         {
-          "@id": "_:Nd3e6f435c0ba4a9a9a3e588b0abf84f0"
+          "@id": "_:N4db6c82e602145278de5eaf5be6c9119"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0d87aea421f64774b44827d8f08f9729"
+          "@id": "_:Nc165ab1da1544763b1d67f8426164cac"
         },
         {
-          "@id": "_:N837dde194633451bb2c3bf3fbc1f5775"
+          "@id": "_:N6906345efea6431dbd18f2131c0663a2"
         },
         {
-          "@id": "_:Nbdbc8a78614349fca464ecdb633f0425"
+          "@id": "_:N993956babca64f3095bec6cde57ebf03"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -69,13 +65,13 @@
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0085"
+        },
+        {
           "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_3518"
-        },
-        {
-          "@id": "edam:topic_0085"
+          "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_3366"
@@ -84,31 +80,31 @@
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_3518"
         }
       ],
       "sc:citation": [
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pmcid:PMC4509590",
-        "pubmed:25633503"
+        "pubmed:25633503",
+        "pmcid:PMC4509590"
       ],
       "sc:description": "Pairwise data integration for functional genomics, including tools for DNA/RNA/miRNA dependency screens.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3233"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3233"
         }
       ],
       "sc:license": "BSD-4-Clause",
       "sc:name": "pint",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/pint.html"
@@ -117,39 +113,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/pint.html"
     },
     {
-      "@id": "_:N0d87aea421f64774b44827d8f08f9729",
+      "@id": "_:N65ed5bef625c491fa73b592ab5aa0474",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3111"
+        "@id": "edam:data_3115"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Processed microarray data"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Microarray metadata"
     },
     {
-      "@id": "_:N837dde194633451bb2c3bf3fbc1f5775",
+      "@id": "_:N4db6c82e602145278de5eaf5be6c9119",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_3112"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nbdbc8a78614349fca464ecdb633f0425",
+      "@id": "_:Nc165ab1da1544763b1d67f8426164cac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -165,26 +151,40 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N7ce77c6e0d404c07b53e915ce71169e0",
+      "@id": "_:N6906345efea6431dbd18f2131c0663a2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3112"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene expression matrix"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:Nd3e6f435c0ba4a9a9a3e588b0abf84f0",
+      "@id": "_:N993956babca64f3095bec6cde57ebf03",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3115"
+        "@id": "edam:data_3111"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Microarray metadata"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Processed microarray data"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

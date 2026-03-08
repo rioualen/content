@@ -36,60 +36,73 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/pr8001244",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ms-gf",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9567431fa6c44518b92d104de0780c28"
+          "@id": "_:N56b62071ea764139bccd8bffe1dfc072"
         },
         {
-          "@id": "_:Nbeeef7a8efb448ab8f03983a50618fbc"
+          "@id": "_:Na76738780b124304a1a14a92f9100410"
         },
         {
-          "@id": "_:Nce4bd7851403407d8b34f4b57f634d0f"
+          "@id": "_:Nd1fd5d95a8764fdcb45f7e3307b4262a"
         },
         {
-          "@id": "_:N4f81f42b210641a09bf577c8e25d32f2"
+          "@id": "_:Nc55e017f53634cd68c0595cebfa55b0e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbe92e5f7ec7e4e00b00cd9aeedfcc0a4"
+          "@id": "_:Nacc4edd8a6c047d8befc9a3117806459"
         },
         {
-          "@id": "_:N70d4106da8c14508bae5646eb991bc1e"
+          "@id": "_:N98caa1d687a24d0ebfd23fea110f73f6"
         },
         {
-          "@id": "_:Nf48104e31f1d4337900b6f74554430ad"
+          "@id": "_:Nfb58e98634bc408eb5f7daf783152064"
         },
         {
-          "@id": "_:N63ee205d02c24978bc04784102605232"
+          "@id": "_:N4bd0768d8a954e10ad813ecb2c05e0f4"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
-        },
-        {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:18597511",
         {
           "@id": "https://doi.org/10.1021/pr8001244"
         },
-        "pubmed:25358478",
-        "pubmed:18597511"
+        "pubmed:25358478"
       ],
       "sc:description": "A tool which performs peptide identification by scoring MS/MS spectra against peptides derived from a protein sequence database.",
       "sc:featureList": [
         {
           "@id": "edam:operation_3643"
+        },
+        {
+          "@id": "edam:operation_3631"
+        },
+        {
+          "@id": "edam:operation_3649"
+        },
+        {
+          "@id": "edam:operation_3767"
         },
         {
           "@id": "edam:operation_3647"
@@ -98,22 +111,13 @@
           "@id": "edam:operation_0335"
         },
         {
-          "@id": "edam:operation_3767"
-        },
-        {
-          "@id": "edam:operation_3649"
-        },
-        {
-          "@id": "edam:operation_3631"
-        },
-        {
           "@id": "edam:operation_3646"
         }
       ],
       "sc:name": "MS-GF+",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://omics.pnl.gov/software/ms-gf"
@@ -121,32 +125,29 @@
       "sc:url": "http://omics.pnl.gov/software/ms-gf"
     },
     {
-      "@id": "_:N9567431fa6c44518b92d104de0780c28",
+      "@id": "_:N56b62071ea764139bccd8bffe1dfc072",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3483"
+        "@id": "edam:data_1667"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3652"
-        },
-        {
-          "@id": "edam:format_3653"
-        },
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Spectrum"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3247"
+      },
+      "sc:name": "E-value"
     },
     {
-      "@id": "_:Nbeeef7a8efb448ab8f03983a50618fbc",
+      "@id": "_:Na76738780b124304a1a14a92f9100410",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3247"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:Nd1fd5d95a8764fdcb45f7e3307b4262a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -157,18 +158,32 @@
       "sc:name": "Sequence set (protein)"
     },
     {
-      "@id": "_:Nce4bd7851403407d8b34f4b57f634d0f",
+      "@id": "_:Nc55e017f53634cd68c0595cebfa55b0e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1667"
+        "@id": "edam:data_3483"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3247"
-      },
-      "sc:name": "E-value"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3653"
+        },
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3654"
+        },
+        {
+          "@id": "edam:format_3652"
+        },
+        {
+          "@id": "edam:format_3244"
+        }
+      ],
+      "sc:name": "Spectrum"
     },
     {
-      "@id": "_:N4f81f42b210641a09bf577c8e25d32f2",
+      "@id": "_:Nacc4edd8a6c047d8befc9a3117806459",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -179,29 +194,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nbe92e5f7ec7e4e00b00cd9aeedfcc0a4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3247"
-      },
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N70d4106da8c14508bae5646eb991bc1e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1667"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3247"
-      },
-      "sc:name": "E-value"
-    },
-    {
-      "@id": "_:Nf48104e31f1d4337900b6f74554430ad",
+      "@id": "_:N98caa1d687a24d0ebfd23fea110f73f6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -212,7 +205,18 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N63ee205d02c24978bc04784102605232",
+      "@id": "_:Nfb58e98634bc408eb5f7daf783152064",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1667"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3247"
+      },
+      "sc:name": "E-value"
+    },
+    {
+      "@id": "_:N4bd0768d8a954e10ad813ecb2c05e0f4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1667"
@@ -221,10 +225,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "E-value"
-    },
-    {
-      "@id": "https://doi.org/10.1021/pr8001244",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

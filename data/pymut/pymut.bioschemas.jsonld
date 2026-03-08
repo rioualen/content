@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkx313",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pymut",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-0566-7723"
       },
       "bsc:input": {
-        "@id": "_:N970c6c28a0134ca68e23a733afca5556"
+        "@id": "_:N372661bd66c447fb912715fb278a5e08"
       },
       "bsc:output": {
-        "@id": "_:N7f14fc0d48e14ca18e607e0a51b1f348"
+        "@id": "_:N4f0386e614684a79bef6e64d9e8cf0f7"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
-        "pubmed:28453649",
-        "pmcid:PMC5793831",
         {
           "@id": "https://doi.org/10.1093/nar/gkx313"
-        }
+        },
+        "pmcid:PMC5793831",
+        "pubmed:28453649"
       ],
       "sc:description": "PyMut is a Python3 module that fills the gap between machine learning and bioinformatics, providing methods that help in the prediction of pathology in protein mutations.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3225"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_3225"
         },
         {
           "@id": "edam:operation_3661"
@@ -85,18 +89,7 @@
       "sc:url": "http://mmb.irbbarcelona.org/PMut/pymut"
     },
     {
-      "@id": "_:N7f14fc0d48e14ca18e607e0a51b1f348",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N970c6c28a0134ca68e23a733afca5556",
+      "@id": "_:N372661bd66c447fb912715fb278a5e08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -107,12 +100,19 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "https://orcid.org/0000-0002-0566-7723",
-      "@type": "sc:Person"
+      "@id": "_:N4f0386e614684a79bef6e64d9e8cf0f7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkx313",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0002-0566-7723",
+      "@type": "sc:Person"
     }
   ]
 }

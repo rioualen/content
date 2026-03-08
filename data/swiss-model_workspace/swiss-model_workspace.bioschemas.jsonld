@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-2715-335X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/swiss-model_workspace",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,46 +43,46 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N8c02ab0fba3d4e4b9d2f9bae58b210e5"
+          "@id": "_:N9554d7880b5744579f2b036b8f377d78"
         },
         {
-          "@id": "_:N4b02bd68aa6e46da8488c8eae73d56ec"
+          "@id": "_:Na66df9f3ba12410f940a4fc071a88745"
         },
         {
-          "@id": "_:N8cf9c43e67a5453199b15d76d4b1442b"
+          "@id": "_:Na9c80eba2c94486192dd5646e770b0a4"
         },
         {
-          "@id": "_:N34c49401419b4dc2b3cd5a75fe6467f3"
+          "@id": "_:N2792b22e96fc4691b90ffabaca217fdc"
         },
         {
-          "@id": "_:Neac31cfdff32442cb33b1300e8cb9bbe"
+          "@id": "_:N71ba737dcad0449abbd7cd029b135e30"
         }
       ],
       "bsc:output": {
-        "@id": "_:N51d6a0d28ac840f8b1a6b169113ec563"
+        "@id": "_:Naa9ff8931f05419798114ed80be0f1eb"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2275"
+          "@id": "edam:topic_0081"
+        },
+        {
+          "@id": "edam:topic_0082"
         },
         {
           "@id": "edam:topic_3306"
         },
         {
-          "@id": "edam:topic_0081"
-        },
-        {
-          "@id": "edam:topic_0082"
+          "@id": "edam:topic_2275"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC6030848",
         {
           "@id": "https://doi.org/10.1093/nar/gky427"
         },
-        "pubmed:29788355",
-        "pmcid:PMC6030848"
+        "pubmed:29788355"
       ],
       "sc:description": "SWISS-MODEL is a fully automated protein structure homology-modelling server, accessible via the ExPASy web server, or from the program DeepView (Swiss Pdb-Viewer). The purpose of this server is to make protein modelling accessible to all life science researchers worldwide.",
       "sc:featureList": {
@@ -95,9 +91,9 @@
       "sc:license": "CC-BY-SA-4.0",
       "sc:name": "SWISS-MODEL Workspace",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
       "sc:softwareHelp": {
@@ -106,23 +102,34 @@
       "sc:url": "https://swissmodel.expasy.org/"
     },
     {
-      "@id": "_:N51d6a0d28ac840f8b1a6b169113ec563",
+      "@id": "_:N9554d7880b5744579f2b036b8f377d78",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1460"
+        "@id": "edam:data_2974"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1477"
-        },
-        {
-          "@id": "edam:format_1476"
-        }
-      ],
-      "sc:name": "Protein structure"
+      "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N8c02ab0fba3d4e4b9d2f9bae58b210e5",
+      "@id": "_:Na66df9f3ba12410f940a4fc071a88745",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:Na9c80eba2c94486192dd5646e770b0a4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:N2792b22e96fc4691b90ffabaca217fdc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -133,39 +140,32 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:N4b02bd68aa6e46da8488c8eae73d56ec",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:N8cf9c43e67a5453199b15d76d4b1442b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:N34c49401419b4dc2b3cd5a75fe6467f3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:Neac31cfdff32442cb33b1300e8cb9bbe",
+      "@id": "_:N71ba737dcad0449abbd7cd029b135e30",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
       },
       "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Naa9ff8931f05419798114ed80be0f1eb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1477"
+        }
+      ],
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2715-335X",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gky427",

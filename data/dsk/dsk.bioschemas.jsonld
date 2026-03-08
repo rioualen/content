@@ -44,14 +44,14 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "Guillaume Rizk",
-        "Dominique Lavenier",
-        "Rayan Chikhi"
+        "Rayan Chikhi",
+        "Dominique Lavenier"
       ],
       "bsc:input": {
-        "@id": "_:N4250d856e8934e1496d9e6351eea75b1"
+        "@id": "_:Nb0ab0554a78a417dafa4968c62f12921"
       },
       "bsc:output": {
-        "@id": "_:N52382defdd5947fab92a4ae9aa841834"
+        "@id": "_:N2f58bfdcb2114b5a9ad6dcc1342babd8"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -59,10 +59,10 @@
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:23325618",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt020"
-        },
-        "pubmed:23325618"
+        }
       ],
       "sc:description": "K-mer counting software, similar to Jellyfish. Jellyfish is very fast but limited to large-memory servers and k 32. This software supports large values of k, and runs with (almost-)arbitrarily low memory usage and reasonably low temporary disk usage. It can count k-mers of large Illumina datasets on laptops and desktop computers.",
       "sc:featureList": {
@@ -80,7 +80,15 @@
       "sc:url": "http://minia.genouest.org/dsk/"
     },
     {
-      "@id": "_:N4250d856e8934e1496d9e6351eea75b1",
+      "@id": "_:N2f58bfdcb2114b5a9ad6dcc1342babd8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1261"
+      },
+      "sc:name": "Sequence composition report"
+    },
+    {
+      "@id": "_:Nb0ab0554a78a417dafa4968c62f12921",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
@@ -89,14 +97,6 @@
         "@id": "edam:format_2182"
       },
       "sc:name": "Nucleic acid sequence (raw)"
-    },
-    {
-      "@id": "_:N52382defdd5947fab92a4ae9aa841834",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1261"
-      },
-      "sc:name": "Sequence composition report"
     }
   ]
 }

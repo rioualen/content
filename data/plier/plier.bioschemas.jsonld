@@ -44,25 +44,25 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Crispin Miller",
       "bsc:input": {
-        "@id": "_:N2fcc00c4f4a14f1296f14a9433c9fba4"
+        "@id": "_:N679aa900ec2443d2a47dcb64da3e7de5"
       },
       "bsc:output": {
-        "@id": "_:Nf607dbca77524f488459d746df7dac2d"
+        "@id": "_:N92f7a91c9c094491b659d4cadbe5ff62"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0121"
+        },
         {
           "@id": "edam:topic_3518"
         },
         {
           "@id": "edam:topic_3572"
-        },
-        {
-          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": {
@@ -71,18 +71,18 @@
       "sc:description": "The Probe Logarithmic Error Intensity Estimate method produces an improved signal by accounting for experimentally observed patterns in probe behavior and handling error at the appropriately at low and high signal values.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3215"
+          "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3215"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "plier",
       "sc:operatingSystem": [
         "Mac",
-        "Linux",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/plier.html"
@@ -91,7 +91,26 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/plier.html"
     },
     {
-      "@id": "_:Nf607dbca77524f488459d746df7dac2d",
+      "@id": "_:N679aa900ec2443d2a47dcb64da3e7de5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3110"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1637"
+        },
+        {
+          "@id": "edam:format_1639"
+        },
+        {
+          "@id": "edam:format_1638"
+        }
+      ],
+      "sc:name": "Raw microarray data"
+    },
+    {
+      "@id": "_:N92f7a91c9c094491b659d4cadbe5ff62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3111"
@@ -100,25 +119,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Processed microarray data"
-    },
-    {
-      "@id": "_:N2fcc00c4f4a14f1296f14a9433c9fba4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3110"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1639"
-        },
-        {
-          "@id": "edam:format_1637"
-        },
-        {
-          "@id": "edam:format_1638"
-        }
-      ],
-      "sc:name": "Raw microarray data"
     }
   ]
 }

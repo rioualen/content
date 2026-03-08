@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1136/thoraxjnl-2015-207035",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/lunggens",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yan Xu",
       "bsc:input": {
-        "@id": "_:N527537cc27ec4df9885be30d27dd1673"
+        "@id": "_:N652c005bd28d48f4afa933a706a1696f"
       },
       "bsc:output": {
-        "@id": "_:Nc4abebfae7134974aac5e13aaf7fa911"
+        "@id": "_:N998f44da16154e2b89159396e05c6796"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
@@ -63,11 +59,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:26130332",
-        "pmcid:PMC4641439",
         {
           "@id": "https://doi.org/10.1136/thoraxjnl-2015-207035"
-        }
+        },
+        "pubmed:26130332",
+        "pmcid:PMC4641439"
       ],
       "sc:description": "Query single-cell gene expression databases by entering a gene symbol or a list of genes or selecting a cell type of their interest. Gene query provides quantitative RNA expression of the gene of interest in each lung cell type. Cell type query returns associated selective gene signatures and genes encoding cell surface markers and transcription factors in interactive heatmap and tables.",
       "sc:featureList": {
@@ -75,14 +71,14 @@
       },
       "sc:name": "LungGENS",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:url": "https://research.cchmc.org/pbge/lunggens/default.html"
     },
     {
-      "@id": "_:N527537cc27ec4df9885be30d27dd1673",
+      "@id": "_:N652c005bd28d48f4afa933a706a1696f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -90,12 +86,16 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:Nc4abebfae7134974aac5e13aaf7fa911",
+      "@id": "_:N998f44da16154e2b89159396e05c6796",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "https://doi.org/10.1136/thoraxjnl-2015-207035",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

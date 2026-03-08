@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-0744-7078",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1093/bioinformatics/btab077",
       "@type": "sc:CreativeWork"
     },
@@ -44,31 +48,31 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N35f094ac7de8404cbc4ae9aa5769a060"
+          "@id": "_:N6f3dad8c87654fb29d719a779f20b3aa"
         },
         {
-          "@id": "_:N910c6c8101f8498c9e76d0ee6df7eb35"
+          "@id": "_:Nf20a5864436a4ee2bfb09181a76d56df"
         },
         {
-          "@id": "_:N588b253256f0411f8ec4fddeca5c3402"
+          "@id": "_:Na77152830f4347baae553969d58aa559"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne9971b151041415da96186534e3a7057"
+          "@id": "_:N7df7edbac4b64f6d9e1cb8437fa0371d"
         },
         {
-          "@id": "_:Nba13d94e57804491bb8165ac086f6893"
+          "@id": "_:N30d4e1330a6648a78fc11662192a7433"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0797"
         },
         {
-          "@id": "edam:topic_0797"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": {
@@ -76,10 +80,10 @@
       },
       "sc:citation": [
         "pmcid:PMC8388040",
-        "pubmed:33532821",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btab077"
-        }
+        },
+        "pubmed:33532821"
       ],
       "sc:description": "PLAST is a heuristical method to search for highest scoring local alignments between a DNA sequence query and a graphical pangenome. It takes as input a plain DNA sequence and a pangenome which may either be a set of (multiple) FASTA or FASTQ files or a sequence graph constructed by the tool Bifrost. It then outputs statistically meaningful (gapped) alignments in the style of the NCBI BLAST standard output format. Alignments are calculated based on a \"seed-and-extend approach\" while traversing the sequence graph. Biologically meaningful alignments are filtered by using an alignment statistic explicitly developed for sequence-to-graph alignments involving graphical pangenomes.",
       "sc:featureList": [
@@ -109,7 +113,23 @@
       "sc:url": "https://github.com/tischulz1/plast"
     },
     {
-      "@id": "_:N35f094ac7de8404cbc4ae9aa5769a060",
+      "@id": "_:N6f3dad8c87654fb29d719a779f20b3aa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_3975"
+        }
+      ],
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:Nf20a5864436a4ee2bfb09181a76d56df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -120,55 +140,39 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N910c6c8101f8498c9e76d0ee6df7eb35",
+      "@id": "_:Na77152830f4347baae553969d58aa559",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
         {
           "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
         }
       ],
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:N588b253256f0411f8ec4fddeca5c3402",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3975"
-        },
-        {
-          "@id": "edam:format_2333"
-        }
-      ],
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:Ne9971b151041415da96186534e3a7057",
+      "@id": "_:N7df7edbac4b64f6d9e1cb8437fa0371d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3975"
+          "@id": "edam:format_2333"
         },
         {
-          "@id": "edam:format_2333"
+          "@id": "edam:format_3975"
         }
       ],
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:Nba13d94e57804491bb8165ac086f6893",
+      "@id": "_:N30d4e1330a6648a78fc11662192a7433",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -177,10 +181,6 @@
         "@id": "edam:format_1333"
       },
       "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0744-7078",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -36,42 +36,46 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu533",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/reademption",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nfea8b1a7bbdd4fca85e55d1c15d3f271"
+          "@id": "_:N394aa00173694d53af29533c1fec8508"
         },
         {
-          "@id": "_:Nc7a3b22779614ca6bc38b5cc5107d6f3"
+          "@id": "_:N2d12e9013a8d4d7a863530b9537efeb7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ndd2e8687a05f452fb53d3ec9c898cafc"
+          "@id": "_:Nae9a977516cd4c8ab5eb6dde792081ec"
         },
         {
-          "@id": "_:N366bdfed01c04a65a279f74300b33edf"
+          "@id": "_:Nbb722891b2fe4b41a22a47b800dca8aa"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0097"
+        },
+        {
           "@id": "edam:topic_3308"
         },
         {
           "@id": "edam:topic_0203"
-        },
-        {
-          "@id": "edam:topic_0097"
         }
       ],
       "sc:citation": [
+        "pubmed:25123900",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu533"
-        },
-        "pubmed:25123900"
+        }
       ],
       "sc:description": "READemption integrates the steps that are required to interpret and gain biological knowledge from RNA-Seq experiments in one tool and makes them accessible via a consistent command line interface.",
       "sc:featureList": {
@@ -80,9 +84,9 @@
       "sc:license": "ISC",
       "sc:name": "READemption",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://pythonhosted.org/READemption/#table-of-content"
@@ -90,15 +94,7 @@
       "sc:url": "https://pythonhosted.org/READemption/"
     },
     {
-      "@id": "_:Ndd2e8687a05f452fb53d3ec9c898cafc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:N366bdfed01c04a65a279f74300b33edf",
+      "@id": "_:Nae9a977516cd4c8ab5eb6dde792081ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -106,18 +102,15 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nfea8b1a7bbdd4fca85e55d1c15d3f271",
+      "@id": "_:Nbb722891b2fe4b41a22a47b800dca8aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2093"
+        "@id": "edam:data_0928"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2200"
-      },
-      "sc:name": "Data reference"
+      "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Nc7a3b22779614ca6bc38b5cc5107d6f3",
+      "@id": "_:N394aa00173694d53af29533c1fec8508",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3496"
@@ -133,8 +126,15 @@
       "sc:name": "RNA sequence (raw)"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu533",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2d12e9013a8d4d7a863530b9537efeb7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2200"
+      },
+      "sc:name": "Data reference"
     }
   ]
 }

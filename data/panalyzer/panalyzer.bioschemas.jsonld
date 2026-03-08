@@ -36,20 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-13-288",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/panalyzer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nde8b346e63a14ad3a4a1303a6a39f2c0"
+        "@id": "_:N08d418c5f73f409b83d5d8a044d9dd70"
       },
       "bsc:output": {
-        "@id": "_:N998d5d33120c4930ab6b5d0b9ba79ce3"
+        "@id": "_:Ne09d36bee7d14633a77d680028c2c1ae"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_3520"
         },
@@ -57,30 +58,33 @@
           "@id": "edam:topic_0080"
         },
         {
+          "@id": "edam:topic_0121"
+        },
+        {
           "@id": "edam:topic_3077"
         }
       ],
       "sc:citation": [
-        "pubmed:23126499",
-        "pmcid:PMC3548767",
         {
           "@id": "https://doi.org/10.1186/1471-2105-13-288"
-        }
+        },
+        "pubmed:23126499",
+        "pmcid:PMC3548767"
       ],
       "sc:description": "A tool for rearranging peptide sequences from shotgun proteomics into inferred proteins.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2990"
+          "@id": "edam:operation_3767"
         },
         {
-          "@id": "edam:operation_3767"
+          "@id": "edam:operation_2990"
         }
       ],
       "sc:name": "PAnalyzer",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://code.google.com/archive/p/ehu-bio/wikis/PAnalyzer.wiki"
@@ -88,7 +92,23 @@
       "sc:url": "https://code.google.com/archive/p/ehu-bio/wikis/PAnalyzer.wiki"
     },
     {
-      "@id": "_:N998d5d33120c4930ab6b5d0b9ba79ce3",
+      "@id": "_:N08d418c5f73f409b83d5d8a044d9dd70",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3247"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:Ne09d36bee7d14633a77d680028c2c1ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0907"
@@ -105,26 +125,6 @@
         }
       ],
       "sc:name": "Protein family report"
-    },
-    {
-      "@id": "_:Nde8b346e63a14ad3a4a1303a6a39f2c0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3247"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-13-288",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

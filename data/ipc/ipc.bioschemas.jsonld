@@ -40,16 +40,20 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "http://orcid.org/0000-0001-8187-1980",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/ipc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-8187-1980"
       },
       "bsc:input": {
-        "@id": "_:Ncfe8892b8cbc4c58aaab5949180fa4a9"
+        "@id": "_:N8586c142b7d14a1d9686c8e99e8165bb"
       },
       "bsc:output": {
-        "@id": "_:N65ecb9d58b05436c94be9d5f69228a9b"
+        "@id": "_:N24c17889fc9f43dea92ed2180a55b8ff"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -57,9 +61,6 @@
         "Web service"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3047"
-        },
         {
           "@id": "edam:topic_0121"
         },
@@ -70,15 +71,18 @@
           "@id": "edam:topic_3292"
         },
         {
+          "@id": "edam:topic_3047"
+        },
+        {
           "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
-        "pubmed:27769290",
-        "pmcid:PMC5075173",
         {
           "@id": "https://doi.org/10.1186/s13062-016-0159-9"
-        }
+        },
+        "pmcid:PMC5075173",
+        "pubmed:27769290"
       ],
       "sc:description": "Web service and standalone program for the estimation of protein and peptide pI using different sets of dissociation constant (pKa) values, including computationally optimized pKa sets. According to the benchmarks, the newly developed pKa sets outperform previous algorithms by at least 14.9 % for proteins and 0.9 % for peptides (on average, 22.1 % and 59.6 %, respectively), which corresponds to an average error of the pI estimation of 0.87 and 0.25 pH units, respectively.",
       "sc:featureList": {
@@ -88,9 +92,9 @@
       "sc:license": "Other",
       "sc:name": "IPC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://isoelectric.org/algorithms.html"
@@ -99,7 +103,15 @@
       "sc:url": "http://isoelectric.org"
     },
     {
-      "@id": "_:N65ecb9d58b05436c94be9d5f69228a9b",
+      "@id": "_:N8586c142b7d14a1d9686c8e99e8165bb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N24c17889fc9f43dea92ed2180a55b8ff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1528"
@@ -108,18 +120,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein isoelectric point"
-    },
-    {
-      "@id": "_:Ncfe8892b8cbc4c58aaab5949180fa4a9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-8187-1980",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -41,37 +41,37 @@
       "biotools:primaryContact": "Felix A. Klein",
       "bsc:input": [
         {
-          "@id": "_:N58b59616f7fb4aeca3bf5815993fafc4"
+          "@id": "_:Na6f30b0cdf764e9db2775e1bfc747c8d"
         },
         {
-          "@id": "_:Ncaa535f7529f43ddb115ac228e3a2eff"
+          "@id": "_:Na6dd058d8fee41edba8efb39f9462e82"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8fe64747e48c47fe91ebe740e10f6d2b"
+          "@id": "_:N8465bcb0a3cd4d2d9535366a410eb995"
         },
         {
-          "@id": "_:N2b18c2bbcad243b2aaf097ae9df7f065"
+          "@id": "_:N8f5a22779b53498fa93c58c19362a087"
         },
         {
-          "@id": "_:Nced2fad299aa4e828da51527702e7498"
+          "@id": "_:Naff40e1d01e84ec4942b4f5f4516cd74"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
         "pmcid:PMC4576695",
+        "pubmed:26034064",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv335"
-        },
-        "pubmed:26034064"
+        }
       ],
       "sc:description": "R package dedicated to the analysis of (multiplexed) 4C sequencing data. It provides a pipeline to detect specific interactions between DNA elements and identify differential interactions between conditions. The statistical analysis in R starts with individual bam files for each sample as inputs. To obtain these files, the package contains a python script to demultiplex libraries and trim off primer sequences. With a standard alignment software the required bam files can be then be generated.",
       "sc:featureList": {
@@ -80,9 +80,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "FourCSeq",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/FourCSeq.html"
@@ -91,7 +91,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/FourCSeq.html"
     },
     {
-      "@id": "_:N58b59616f7fb4aeca3bf5815993fafc4",
+      "@id": "_:Na6f30b0cdf764e9db2775e1bfc747c8d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -107,58 +107,42 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:Ncaa535f7529f43ddb115ac228e3a2eff",
+      "@id": "_:Na6dd058d8fee41edba8efb39f9462e82",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_1929"
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N8fe64747e48c47fe91ebe740e10f6d2b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N2b18c2bbcad243b2aaf097ae9df7f065",
+      "@id": "_:N8465bcb0a3cd4d2d9535366a410eb995",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:Nced2fad299aa4e828da51527702e7498",
+      "@id": "_:N8f5a22779b53498fa93c58c19362a087",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1017"
+        "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
@@ -166,6 +150,22 @@
         },
         {
           "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Naff40e1d01e84ec4942b4f5f4516cd74",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1017"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Sequence range"

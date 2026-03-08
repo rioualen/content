@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1748-7188-9-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/minia",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Rayan Chikhi",
-        "Guillaume Rizk"
+        "Guillaume Rizk",
+        "Rayan Chikhi"
       ],
       "bsc:input": {
-        "@id": "_:N54cb4d9ed6e94745a097b442f5be6789"
+        "@id": "_:N1ce5327f9b3b4839bbf3605a50290ed8"
       },
       "bsc:output": {
-        "@id": "_:Nf74788cb48984448bef765615e17cbf0"
+        "@id": "_:Nf4ac71e1c5a843c5823930cf2c78b3d1"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -54,11 +58,11 @@
         "@id": "edam:topic_0196"
       },
       "sc:citation": [
-        "pubmed:24565280",
-        "pmcid:PMC3974045",
         {
           "@id": "https://doi.org/10.1186/1748-7188-9-2"
-        }
+        },
+        "pmcid:PMC3974045",
+        "pubmed:24565280"
       ],
       "sc:description": "Short-read assembler based on a de Bruijn graph, capable of assembling a human genome on a desktop computer in a day.",
       "sc:featureList": {
@@ -76,7 +80,18 @@
       "sc:url": "http://minia.genouest.org/"
     },
     {
-      "@id": "_:N54cb4d9ed6e94745a097b442f5be6789",
+      "@id": "_:Nf4ac71e1c5a843c5823930cf2c78b3d1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N1ce5327f9b3b4839bbf3605a50290ed8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
@@ -90,21 +105,6 @@
         }
       ],
       "sc:name": "Nucleic acid sequence (raw)"
-    },
-    {
-      "@id": "_:Nf74788cb48984448bef765615e17cbf0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1748-7188-9-2",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

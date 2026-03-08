@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/321067",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-7475-0136",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/raven_toolbox",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,40 +43,40 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N0929aa7c1e714e0db5ff392a9319af4b"
+          "@id": "_:Nd7006531bf4e4741a017abcfc042d92f"
         },
         {
-          "@id": "_:Nd140663e0b0048b6adbc7036f9323df4"
+          "@id": "_:Nd4594139e23f495ab2746052fc7d1edc"
         },
         {
-          "@id": "_:Na93c994e55714e8fb7d7674c53b09e52"
+          "@id": "_:N9cfc930e4b4c48ecbabfa311fc9edfda"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3e9b55ba57084327aaa1fcbaf353351b"
+          "@id": "_:N506245211a604eb5aae36c173a848d54"
         },
         {
-          "@id": "_:Nb21763532a2540a1b7a68de86a92ab1c"
+          "@id": "_:Naa8424984b304c92aad5a0049697cdb9"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Script"
+        "Script",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2259"
-        },
-        {
-          "@id": "edam:topic_3307"
-        },
         {
           "@id": "edam:topic_3398"
         },
         {
           "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_2259"
+        },
+        {
+          "@id": "edam:topic_3307"
         }
       ],
       "sc:citation": {
@@ -93,22 +85,22 @@
       "sc:description": "The RAVEN (Reconstruction, Analysis and Visualization of Metabolic Networks) Toolbox 2 is a software suite for Matlab that allows for semi-automated reconstruction of genome-scale models (GEMs). It makes use of published models and/or KEGG, MetaCyc databases, coupled with extensive gap-filling and quality control features. The software suite also contains methods for visualizing simulation results and omics data, as well as a range of methods for performing simulations and analyzing the results. The software is a useful tool for system-wide data analysis in a metabolic context and for streamlined reconstruction of metabolic networks based on protein homology.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2497"
+          "@id": "edam:operation_3439"
         },
         {
           "@id": "edam:operation_3660"
         },
         {
-          "@id": "edam:operation_3439"
+          "@id": "edam:operation_2497"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "RAVEN Toolbox",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/SysBioChalmers/RAVEN/wiki"
@@ -117,7 +109,7 @@
       "sc:url": "https://github.com/SysBioChalmers/RAVEN"
     },
     {
-      "@id": "_:N0929aa7c1e714e0db5ff392a9319af4b",
+      "@id": "_:Nd7006531bf4e4741a017abcfc042d92f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -133,18 +125,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nd140663e0b0048b6adbc7036f9323df4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1208"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Na93c994e55714e8fb7d7674c53b09e52",
+      "@id": "_:Nd4594139e23f495ab2746052fc7d1edc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -155,7 +136,18 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N3e9b55ba57084327aaa1fcbaf353351b",
+      "@id": "_:N9cfc930e4b4c48ecbabfa311fc9edfda",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1208"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N506245211a604eb5aae36c173a848d54",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3722"
@@ -166,23 +158,31 @@
       "sc:name": "Physiology parameter"
     },
     {
-      "@id": "_:Nb21763532a2540a1b7a68de86a92ab1c",
+      "@id": "_:Naa8424984b304c92aad5a0049697cdb9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3750"
-        },
-        {
           "@id": "edam:format_3620"
         },
         {
           "@id": "edam:format_2585"
+        },
+        {
+          "@id": "edam:format_3750"
         }
       ],
       "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-7475-0136",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1101/321067",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

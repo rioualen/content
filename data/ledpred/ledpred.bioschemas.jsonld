@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv705",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ledpred",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Aitor Gonzalez",
       "bsc:input": [
         {
-          "@id": "_:N33cdd9f00fe14b209ac9de3d1d869b32"
+          "@id": "_:N0a3d405cab7f4e50ae7f67f6c393c2c5"
         },
         {
-          "@id": "_:N664e5389a34d48b08e5d7c967d7ae8b0"
+          "@id": "_:N29b42cda44234a60bc736a15af1a4970"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne603a8cd4f7c4db8b8f59d620c689e62"
+          "@id": "_:Nae187b8244b8406080629ba9135ba5ee"
         },
         {
-          "@id": "_:N424bc8d660ea4cbba9911cae12edbeac"
+          "@id": "_:N2133a9d9dc0645c48ea3072a8b066790"
         },
         {
-          "@id": "_:N5bd736a6d9ea493997b3d2ef8e5ab074"
+          "@id": "_:Ncd38810cf4cc4dc0905e228b30810fff"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,20 +69,20 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3474"
-        },
-        {
           "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3168"
+        },
+        {
+          "@id": "edam:topic_3474"
         }
       ],
       "sc:citation": [
-        "pubmed:26628586",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv705"
-        }
+        },
+        "pubmed:26628586"
       ],
       "sc:description": "This package creates a predictive model of regulatory sequences used to score unknown sequences based on the content of DNA motifs, NGS peaks and signals and other numerical scores of the sequences using supervised classification. It contains a workflow based on the support vector machine (SVM) algorithm that maps features to sequences.",
       "sc:featureList": {
@@ -88,8 +92,8 @@
       "sc:name": "LedPred",
       "sc:operatingSystem": [
         "Windows",
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/LedPred.html"
@@ -98,55 +102,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/LedPred.html"
     },
     {
-      "@id": "_:Ne603a8cd4f7c4db8b8f59d620c689e62",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N424bc8d660ea4cbba9911cae12edbeac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N5bd736a6d9ea493997b3d2ef8e5ab074",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:N33cdd9f00fe14b209ac9de3d1d869b32",
+      "@id": "_:N0a3d405cab7f4e50ae7f67f6c393c2c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -165,27 +121,71 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N664e5389a34d48b08e5d7c967d7ae8b0",
+      "@id": "_:N29b42cda44234a60bc736a15af1a4970",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2854"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3033"
+        },
+        {
           "@id": "edam:format_3003"
         },
         {
           "@id": "edam:format_3005"
-        },
-        {
-          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "Position-specific scoring matrix"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv705",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nae187b8244b8406080629ba9135ba5ee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "_:N2133a9d9dc0645c48ea3072a8b066790",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Ncd38810cf4cc4dc0905e228b30810fff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
     }
   ]
 }

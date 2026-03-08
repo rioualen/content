@@ -36,31 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts438",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ibbig",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Aedin Culhane",
       "bsc:input": {
-        "@id": "_:Nbd23cc97ae164cf9beb6455e9da87b86"
+        "@id": "_:N9c42237c623b4deb9e2132d84690cc92"
       },
       "bsc:output": [
         {
-          "@id": "_:Nec7837e385c6454d9f79d66a5d6800f2"
+          "@id": "_:N43707e227adc4b96b1cb1bc5d2eaa83a"
         },
         {
-          "@id": "_:N07f69b5a66ee4e0e99ebd1e206c1af37"
+          "@id": "_:N7e4e8ef4830147039f37613e19e83f03"
         },
         {
-          "@id": "_:N594bf87df52d4e3684b04753a425c011"
+          "@id": "_:N5f98249c55de41e5bdd8480316ca53ad"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -71,11 +67,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:22789589",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts438"
         },
-        "pmcid:PMC3463116",
-        "pubmed:22789589"
+        "pmcid:PMC3463116"
       ],
       "sc:description": "A bi-clustering algorithm which is optimizes for binary data analysis. It is applied to meta-gene set analysis of large numbers of gene expression datasets. The iterative algorithm extracts groups of phenotypes from multiple studies that are associated with similar gene sets. The tool does not require prior knowledge of the number or scale of clusters and allows discovery of clusters with diverse sizes.",
       "sc:featureList": [
@@ -89,9 +85,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "iBBiG",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/iBBiG.html"
@@ -100,18 +96,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/iBBiG.html"
     },
     {
-      "@id": "_:Nbd23cc97ae164cf9beb6455e9da87b86",
+      "@id": "_:N43707e227adc4b96b1cb1bc5d2eaa83a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2082"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Matrix"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:Nec7837e385c6454d9f79d66a5d6800f2",
+      "@id": "_:N7e4e8ef4830147039f37613e19e83f03",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N5f98249c55de41e5bdd8480316ca53ad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -127,36 +144,19 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N07f69b5a66ee4e0e99ebd1e206c1af37",
+      "@id": "_:N9c42237c623b4deb9e2132d84690cc92",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_2082"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Matrix"
     },
     {
-      "@id": "_:N594bf87df52d4e3684b04753a425c011",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
+      "@id": "https://doi.org/10.1093/bioinformatics/bts438",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

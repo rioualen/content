@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bioexcel_building_blocks_tutorials_protein_md_setup_tutorial_through_rest_api",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Genís Bayarri",
       "bsc:input": {
-        "@id": "_:Nbb304d5ba89340c9b866c065546d6cea"
+        "@id": "_:N26d7360456fb49ba8dbd2da282770ea8"
       },
       "bsc:output": [
         {
-          "@id": "_:N14344b40d79945b8aad3d2d0ed359a82"
+          "@id": "_:N0d83550ed2134f3b8cb2159b94713a89"
         },
         {
-          "@id": "_:N8dc7a2798e62491d9fce2635c6443107"
+          "@id": "_:N90e3c14b4a7a4619aff891b31a830ec1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -57,10 +61,10 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_0081"
         },
         {
-          "@id": "edam:topic_0081"
+          "@id": "edam:topic_2814"
         },
         {
           "@id": "edam:topic_0176"
@@ -68,42 +72,42 @@
       ],
       "sc:author": "Genís Bayarri",
       "sc:citation": [
-        "pubmed:31506435",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
         },
-        "pmcid:PMC6736963"
+        "pmcid:PMC6736963",
+        "pubmed:31506435"
       ],
       "sc:description": "This tutorial aims to illustrate the process of setting up a simulation system containing a protein, step by step, using the BioExcel Building Blocks (biobb) REST API. The particular example used is the Lysozyme protein (PDB code 1AKI).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2476"
+          "@id": "edam:operation_0477"
         },
         {
-          "@id": "edam:operation_0477"
+          "@id": "edam:operation_2476"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks tutorials: Protein MD Setup tutorial through REST API",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://biobb-wf-md-setup-api.readthedocs.io/en/latest/index.html"
+          "@id": "http://mmb.irbbarcelona.org/biobb-api/rest"
         },
         {
-          "@id": "http://mmb.irbbarcelona.org/biobb-api/rest"
+          "@id": "https://biobb-wf-md-setup-api.readthedocs.io/en/latest/index.html"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "https://mmb.irbbarcelona.org/biobb/availability/tutorials/rest-api"
     },
     {
-      "@id": "_:Nbb304d5ba89340c9b866c065546d6cea",
+      "@id": "_:N26d7360456fb49ba8dbd2da282770ea8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -114,7 +118,23 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N14344b40d79945b8aad3d2d0ed359a82",
+      "@id": "_:N0d83550ed2134f3b8cb2159b94713a89",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3872"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3883"
+        },
+        {
+          "@id": "edam:format_3880"
+        }
+      ],
+      "sc:name": "Topology data"
+    },
+    {
+      "@id": "_:N90e3c14b4a7a4619aff891b31a830ec1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -123,26 +143,6 @@
         "@id": "edam:format_3910"
       },
       "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:N8dc7a2798e62491d9fce2635c6443107",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3872"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3880"
-        },
-        {
-          "@id": "edam:format_3883"
-        }
-      ],
-      "sc:name": "Topology data"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

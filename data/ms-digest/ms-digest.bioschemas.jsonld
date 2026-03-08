@@ -40,32 +40,32 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N17e1f9de03d944c487e3016ac6c1c397"
+          "@id": "_:N4a35ed3ddce44125bde0489a0fd25b34"
         },
         {
-          "@id": "_:N3c89d4fa1eb3470abc76475d44947759"
+          "@id": "_:Nc0d3c976db6b4aa5b704dcea2c79ad77"
         }
       ],
       "bsc:output": {
-        "@id": "_:N4d4c2dad5bb645f99f08090bcb0b875e"
+        "@id": "_:Nb14c32ae5df34e7ca4b24fa8515e55f5"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
-        {
-          "@id": "edam:topic_0137"
-        },
         {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_0123"
+        },
+        {
+          "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0137"
         }
       ],
       "sc:description": "Digests a protein sequence.",
@@ -74,9 +74,9 @@
       },
       "sc:name": "MS-Digest",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://prospector.ucsf.edu/prospector/cgi-bin/msform.cgi?form=msdigest"
@@ -84,18 +84,23 @@
       "sc:url": "http://prospector.ucsf.edu/prospector/cgi-bin/msform.cgi?form=msdigest"
     },
     {
-      "@id": "_:N17e1f9de03d944c487e3016ac6c1c397",
+      "@id": "_:Nb14c32ae5df34e7ca4b24fa8515e55f5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1056"
+        "@id": "edam:data_1238"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Database name"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2548"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Proteolytic digest"
     },
     {
-      "@id": "_:N3c89d4fa1eb3470abc76475d44947759",
+      "@id": "_:N4a35ed3ddce44125bde0489a0fd25b34",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -106,20 +111,15 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:N4d4c2dad5bb645f99f08090bcb0b875e",
+      "@id": "_:Nc0d3c976db6b4aa5b704dcea2c79ad77",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1238"
+        "@id": "edam:data_1056"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2548"
-        }
-      ],
-      "sc:name": "Proteolytic digest"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database name"
     }
   ]
 }

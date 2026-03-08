@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13059-014-0550-8",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/deseq2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc7dea6a47b644582a085ad30f73bb20f"
+        "@id": "_:N7e52363e5b174ee192acd2993f5edf4e"
       },
       "bsc:output": {
-        "@id": "_:Nfd00ea66154c41e2800ab4f17dd9bd2b"
+        "@id": "_:N0173b667a0a6445bb808f312871b29b4"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -50,8 +54,8 @@
         "@id": "edam:topic_3170"
       },
       "sc:author": [
-        "Wolfgang Huber",
         "Michael Love",
+        "Wolfgang Huber",
         "Simon Anders"
       ],
       "sc:citation": [
@@ -64,19 +68,19 @@
       "sc:description": "R/Bioconductor package for differential gene expression analysis based on the negative binomial distribution. Estimate variance-mean dependence in count data from high-throughput sequencing assays and test for differential expression based on a model using the negative binomial distribution.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3680"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3680"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "DESeq2",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": "hdhub",
       "sc:softwareHelp": {
@@ -86,18 +90,7 @@
       "sc:url": "http://bioconductor.org/packages/DESeq2/"
     },
     {
-      "@id": "_:Nc7dea6a47b644582a085ad30f73bb20f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3917"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Count matrix"
-    },
-    {
-      "@id": "_:Nfd00ea66154c41e2800ab4f17dd9bd2b",
+      "@id": "_:N0173b667a0a6445bb808f312871b29b4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -108,8 +101,15 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "https://doi.org/10.1186/s13059-014-0550-8",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7e52363e5b174ee192acd2993f5edf4e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3917"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Count matrix"
     }
   ]
 }

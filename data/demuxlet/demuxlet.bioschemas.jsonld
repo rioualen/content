@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nbt.4042",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/demuxlet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N63b604bfa6134bf182f6eaf121f739a4"
+          "@id": "_:N47bd12398f3243409f023290319a7380"
         },
         {
-          "@id": "_:N07229da658d64d1195ac7a5bd3c96927"
+          "@id": "_:N82662552061948f8a48eaf2ff267a8f1"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf4b2eafe0d7c40d4beacc7fdd3adc51a"
+        "@id": "_:N90cd6231981c46f9aa40d03e4e0b5962"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -69,22 +73,22 @@
       "sc:description": "Deconvolution of sample identity and identification of multiplets when multiple samples are pooled by barcoded single cell sequencing.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3218"
-        },
-        {
           "@id": "edam:operation_3197"
         },
         {
           "@id": "edam:operation_2423"
+        },
+        {
+          "@id": "edam:operation_3218"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "demuxlet",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/statgen/demuxlet/tree/master/tutorial"
@@ -92,7 +96,7 @@
       "sc:url": "https://github.com/statgen/demuxlet"
     },
     {
-      "@id": "_:Nf4b2eafe0d7c40d4beacc7fdd3adc51a",
+      "@id": "_:N90cd6231981c46f9aa40d03e4e0b5962",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -103,43 +107,39 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N63b604bfa6134bf182f6eaf121f739a4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_3020"
-        }
-      ],
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N07229da658d64d1195ac7a5bd3c96927",
+      "@id": "_:N47bd12398f3243409f023290319a7380",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2572"
-        },
-        {
           "@id": "edam:format_2573"
         },
         {
           "@id": "edam:format_3462"
+        },
+        {
+          "@id": "edam:format_2572"
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "https://doi.org/10.1038/nbt.4042",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N82662552061948f8a48eaf2ff267a8f1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3020"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
     }
   ]
 }

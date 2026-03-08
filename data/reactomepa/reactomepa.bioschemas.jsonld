@@ -36,29 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-6485-8781",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1039/c5mb00663e",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/reactomepa",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-6485-8781"
       },
       "bsc:input": {
-        "@id": "_:Nd848db696aef41a5a3358939239cd867"
+        "@id": "_:N67b93efe63644dcea3b2b493d0fe2ad5"
       },
       "bsc:output": [
         {
-          "@id": "_:N3cbf246194484eb6a30b5c276ee06f8c"
+          "@id": "_:N89520afbde344270968517f11c52b01e"
         },
         {
-          "@id": "_:N98f546a83baf49418e8b0eff27a401fb"
+          "@id": "_:N864527cb82df4467b39dea676cbcdb2f"
         },
         {
-          "@id": "_:Ncb70fca823ce427bab470298b79e53de"
+          "@id": "_:N590ab55d5eac43f2bc1a242e136d828a"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -69,10 +77,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:26661513",
         {
           "@id": "https://doi.org/10.1039/c5mb00663e"
-        },
-        "pubmed:26661513"
+        }
       ],
       "sc:description": "This package provides functions for pathway analysis based on REACTOME pathway database. It implements enrichment analysis, gene set enrichment analysis and several functions for visualization.",
       "sc:featureList": {
@@ -81,9 +89,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ReactomePA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ReactomePA.html"
@@ -92,7 +100,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ReactomePA.html"
     },
     {
-      "@id": "_:Nd848db696aef41a5a3358939239cd867",
+      "@id": "_:N67b93efe63644dcea3b2b493d0fe2ad5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1027"
@@ -103,7 +111,7 @@
       "sc:name": "Gene ID (NCBI)"
     },
     {
-      "@id": "_:N3cbf246194484eb6a30b5c276ee06f8c",
+      "@id": "_:N89520afbde344270968517f11c52b01e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -114,18 +122,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N98f546a83baf49418e8b0eff27a401fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Ncb70fca823ce427bab470298b79e53de",
+      "@id": "_:N864527cb82df4467b39dea676cbcdb2f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0862"
@@ -136,12 +133,15 @@
       "sc:name": "Dotplot"
     },
     {
-      "@id": "https://doi.org/10.1039/c5mb00663e",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-6485-8781",
-      "@type": "sc:Person"
+      "@id": "_:N590ab55d5eac43f2bc1a242e136d828a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Pathway or network"
     }
   ]
 }

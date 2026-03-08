@@ -39,21 +39,21 @@
       "@id": "https://bio.tools/limmagui",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Yifang Hu",
         {
           "@id": "http://orcid.org/0000-0001-9221-2892"
         },
-        "Keith Satterley"
+        "Keith Satterley",
+        "Yifang Hu"
       ],
       "bsc:input": {
-        "@id": "_:N850cf8d13005464b8abd0092fe72e68d"
+        "@id": "_:N5d2c93544a7e4ca8a0054d76fcc62b63"
       },
       "bsc:output": [
         {
-          "@id": "_:N11a25ab67b0f4beeb19df276c413c912"
+          "@id": "_:Nd3a4740483044053807aadb1afffe8fb"
         },
         {
-          "@id": "_:Ne7ecf53da08144b393a1f2d21bbfdeee"
+          "@id": "_:Ne2a353e0b00e44eb93327b82706aad95"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -63,10 +63,10 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
@@ -82,9 +82,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "limmaGUI",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/limmaGUI.html"
@@ -93,18 +93,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/limmaGUI.html"
     },
     {
-      "@id": "_:N850cf8d13005464b8abd0092fe72e68d",
+      "@id": "_:Nd3a4740483044053807aadb1afffe8fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression data"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Report"
     },
     {
-      "@id": "_:N11a25ab67b0f4beeb19df276c413c912",
+      "@id": "_:Ne2a353e0b00e44eb93327b82706aad95",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -120,20 +125,15 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Ne7ecf53da08144b393a1f2d21bbfdeee",
+      "@id": "_:N5d2c93544a7e4ca8a0054d76fcc62b63",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_2603"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression data"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/bth449",
