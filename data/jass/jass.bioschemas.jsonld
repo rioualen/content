@@ -36,6 +36,126 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-1050-5582",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://bio.tools/jass",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": {
+        "@id": "http://orcid.org/0000-0002-7554-6783"
+      },
+      "bsc:input": [
+        {
+          "@id": "_:N9331b758deaa4012aca9e9360ae0eab8"
+        },
+        {
+          "@id": "_:N9073eb224fa4471689803f3011afa950"
+        }
+      ],
+      "bsc:output": {
+        "@id": "_:N076a2d3140fa4328b04b2741aa8b3efe"
+      },
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Web application",
+        "Web service",
+        "Command-line tool"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2269"
+        },
+        {
+          "@id": "edam:topic_3053"
+        },
+        {
+          "@id": "edam:topic_3517"
+        }
+      ],
+      "sc:author": [
+        "Carla Lasry",
+        {
+          "@id": "https://orcid.org/0000-0001-8214-9412"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1050-5582"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7421-0655"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7552-1009"
+        }
+      ],
+      "sc:citation": [
+        "pmcid:PMC6978790",
+        {
+          "@id": "https://doi.org/10.1101/714832v1"
+        },
+        {
+          "@id": "https://doi.org/10.1093/nargab/lqaa003"
+        },
+        "pubmed:32002517"
+      ],
+      "sc:contributor": [
+        "Chunzi Yao",
+        "Bjarni Vilhjalmsson",
+        "Vincent Laville"
+      ],
+      "sc:description": "software package that handles the computation of the joint statistics over sets of selected GWAS results, and the interactive exploration of the results through a web interface.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_0337"
+        },
+        {
+          "@id": "edam:operation_2238"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "MIT",
+      "sc:name": "JASS",
+      "sc:operatingSystem": "Linux",
+      "sc:softwareHelp": {
+        "@id": "http://statistical-genetics.pages.pasteur.fr/jass/"
+      },
+      "sc:softwareVersion": "1.0.1, 2.0, 2.1, 2.2",
+      "sc:url": "http://statistical-genetics.pages.pasteur.fr/jass/"
+    },
+    {
+      "@id": "_:N9331b758deaa4012aca9e9360ae0eab8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3590"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N9073eb224fa4471689803f3011afa950",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3590"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N076a2d3140fa4328b04b2741aa8b3efe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3590"
+      },
+      "sc:name": "Data"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-7552-1009",
       "@type": "sc:Person"
     },
@@ -52,132 +172,12 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://bio.tools/jass",
-      "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": {
-        "@id": "http://orcid.org/0000-0002-7554-6783"
-      },
-      "bsc:input": [
-        {
-          "@id": "_:N214fe4f64187468ba055928481518558"
-        },
-        {
-          "@id": "_:Ne875f11266d54bbf9a71b85bc730ee23"
-        }
-      ],
-      "bsc:output": {
-        "@id": "_:Ncd7e766e4b334827b0d9c1d7b816296e"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": [
-        "Command-line tool",
-        "Web service",
-        "Web application"
-      ],
-      "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3517"
-        },
-        {
-          "@id": "edam:topic_3053"
-        },
-        {
-          "@id": "edam:topic_2269"
-        }
-      ],
-      "sc:author": [
-        {
-          "@id": "https://orcid.org/0000-0001-8214-9412"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-7552-1009"
-        },
-        "Carla Lasry",
-        {
-          "@id": "https://orcid.org/0000-0003-1050-5582"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-7421-0655"
-        }
-      ],
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nargab/lqaa003"
-        },
-        "pmcid:PMC6978790",
-        {
-          "@id": "https://doi.org/10.1101/714832v1"
-        },
-        "pubmed:32002517"
-      ],
-      "sc:contributor": [
-        "Chunzi Yao",
-        "Vincent Laville",
-        "Bjarni Vilhjalmsson"
-      ],
-      "sc:description": "software package that handles the computation of the joint statistics over sets of selected GWAS results, and the interactive exploration of the results through a web interface.",
-      "sc:featureList": [
-        {
-          "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_0337"
-        }
-      ],
-      "sc:isAccessibleForFree": true,
-      "sc:license": "MIT",
-      "sc:name": "JASS",
-      "sc:operatingSystem": "Linux",
-      "sc:softwareHelp": {
-        "@id": "http://statistical-genetics.pages.pasteur.fr/jass/"
-      },
-      "sc:softwareVersion": "1.0.1, 2.0, 2.1, 2.2",
-      "sc:url": "http://statistical-genetics.pages.pasteur.fr/jass/"
-    },
-    {
-      "@id": "_:N214fe4f64187468ba055928481518558",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3590"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Ne875f11266d54bbf9a71b85bc730ee23",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3590"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Ncd7e766e4b334827b0d9c1d7b816296e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3590"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1050-5582",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1101/714832v1",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0001-8214-9412",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1101/714832v1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4636",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/spatialde",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Valentine Svensson",
       "bsc:input": {
-        "@id": "_:Ndc0ce952b0de44d4a83c93cc4318ba1a"
+        "@id": "_:N9d376ba3a31f4ed5bfca55f0ffe49ec0"
       },
       "bsc:output": {
-        "@id": "_:N652f6be054ef4c9f83d1b08c80c7bfe2"
+        "@id": "_:Ne9255431ac8a48549976965b442d125d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -52,44 +56,44 @@
           "@id": "edam:topic_3170"
         },
         {
+          "@id": "edam:topic_3473"
+        },
+        {
           "@id": "edam:topic_2269"
         },
         {
           "@id": "edam:topic_0203"
-        },
-        {
-          "@id": "edam:topic_3473"
         }
       ],
       "sc:citation": [
+        "pubmed:29553579",
+        "pmcid:PMC6350895",
         {
           "@id": "https://doi.org/10.1038/nmeth.4636"
-        },
-        "pubmed:29553579",
-        "pmcid:PMC6350895"
+        }
       ],
       "sc:description": "A method for identifying and characterizing spatially variable genes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0571"
-        },
-        {
           "@id": "edam:operation_0314"
         },
         {
-          "@id": "edam:operation_3664"
+          "@id": "edam:operation_0571"
         },
         {
           "@id": "edam:operation_3562"
+        },
+        {
+          "@id": "edam:operation_3664"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "SpatialDE",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/Teichlab/SpatialDE"
@@ -97,7 +101,15 @@
       "sc:url": "https://github.com/Teichlab/SpatialDE"
     },
     {
-      "@id": "_:N652f6be054ef4c9f83d1b08c80c7bfe2",
+      "@id": "_:N9d376ba3a31f4ed5bfca55f0ffe49ec0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Ne9255431ac8a48549976965b442d125d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -106,18 +118,6 @@
         "@id": "edam:format_2058"
       },
       "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:Ndc0ce952b0de44d4a83c93cc4318ba1a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4636",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

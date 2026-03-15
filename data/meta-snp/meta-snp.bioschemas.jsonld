@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-2323-0963",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1186/1471-2164-14-s3-s2",
       "@type": "sc:CreativeWork"
     },
@@ -47,34 +51,34 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Ne67f174cb5f546a9bc0e7aed8375aede"
+          "@id": "_:Nb85801ba0427469e9363c4640d5d782d"
         },
         {
-          "@id": "_:N14bbaa26f29c4c99ac049c0406425f58"
+          "@id": "_:N5c5ce2a8b3494c51b2433fede7335b4e"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5e7956de19e747bb98b9ad9581dc569d"
+        "@id": "_:Nf51cd0b22174428caaeaf7b12cdb5c82"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_0123"
         },
         {
-          "@id": "edam:topic_0123"
+          "@id": "edam:topic_0634"
         }
       ],
       "sc:author": {
         "@id": "http://orcid.org/0000-0002-2323-0963"
       },
       "sc:citation": [
+        "pmcid:PMC3839641",
+        "pubmed:23819846",
         {
           "@id": "https://doi.org/10.1186/1471-2164-14-s3-s2"
-        },
-        "pubmed:23819846",
-        "pmcid:PMC3839641"
+        }
       ],
       "sc:description": "Meta-predictor of disease causing variants.",
       "sc:featureList": {
@@ -83,9 +87,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Meta-SNP",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://snps.biofold.org/meta-snp/pages/help.html"
@@ -94,29 +98,7 @@
       "sc:url": "http://snps.biofold.org/meta-snp"
     },
     {
-      "@id": "_:Ne67f174cb5f546a9bc0e7aed8375aede",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2209"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mutation ID"
-    },
-    {
-      "@id": "_:N14bbaa26f29c4c99ac049c0406425f58",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:N5e7956de19e747bb98b9ad9581dc569d",
+      "@id": "_:Nf51cd0b22174428caaeaf7b12cdb5c82",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1622"
@@ -127,8 +109,26 @@
       "sc:name": "Disease report"
     },
     {
-      "@id": "http://orcid.org/0000-0002-2323-0963",
-      "@type": "sc:Person"
+      "@id": "_:Nb85801ba0427469e9363c4640d5d782d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2209"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Mutation ID"
+    },
+    {
+      "@id": "_:N5c5ce2a8b3494c51b2433fede7335b4e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence (raw)"
     }
   ]
 }

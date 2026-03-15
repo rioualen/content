@@ -36,22 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/S12859-021-04355-6",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/motif_prob",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2aae4d48a89c4c55a4d26a8df454c533"
+          "@id": "_:Ndba983e13c5b44f6a433b1aa8ccf0263"
         },
         {
-          "@id": "_:N6cb0da8bdbea4221b60f287837c9b2c4"
+          "@id": "_:N9e5caf317c574bafb35d129ab38626d5"
         }
       ],
       "bsc:output": {
-        "@id": "_:N25a86347740a4d33a86f40798971774b"
+        "@id": "_:N58132e55273d40cdaf0a7dae5627f7f1"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0203"
+        },
         {
           "@id": "edam:topic_0091"
         },
@@ -59,21 +66,18 @@
           "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_2269"
-        },
-        {
-          "@id": "edam:topic_0203"
-        },
-        {
           "@id": "edam:topic_0160"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
-        "pubmed:34537012",
+        "pmcid:PMC8449872",
         {
           "@id": "https://doi.org/10.1186/S12859-021-04355-6"
         },
-        "pmcid:PMC8449872"
+        "pubmed:34537012"
       ],
       "sc:description": "Fast and exact quantification of motif occurrences in biological sequences.",
       "sc:featureList": [
@@ -91,13 +95,21 @@
       "sc:license": "MIT",
       "sc:name": "motif_prob",
       "sc:operatingSystem": [
-        "Linux",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:url": "https://github.com/DataIntellSystLab/motif_prob"
     },
     {
-      "@id": "_:N2aae4d48a89c4c55a4d26a8df454c533",
+      "@id": "_:N58132e55273d40cdaf0a7dae5627f7f1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:name": "Sequence report"
+    },
+    {
+      "@id": "_:Ndba983e13c5b44f6a433b1aa8ccf0263",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -108,7 +120,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N6cb0da8bdbea4221b60f287837c9b2c4",
+      "@id": "_:N9e5caf317c574bafb35d129ab38626d5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -117,18 +129,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N25a86347740a4d33a86f40798971774b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "https://doi.org/10.1186/S12859-021-04355-6",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

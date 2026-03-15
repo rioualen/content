@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/elbow",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -47,30 +43,30 @@
         "Xiangli Zhang"
       ],
       "bsc:input": {
-        "@id": "_:N11beafa246004c7f9b643f712a183e01"
+        "@id": "_:N836c2aa7dfe043f897688261625b4ff8"
       },
       "bsc:output": [
         {
-          "@id": "_:N96aec0c0a6f04f41869af49cfe065f83"
+          "@id": "_:N86f5d98e00e34629805ffca60d7e6057"
         },
         {
-          "@id": "_:N1ec538f67c3a41498395b394b3bbac94"
+          "@id": "_:N85be35e451304af682bde9c8dac8eb1d"
         },
         {
-          "@id": "_:Nc3c796e3008a43e8a2dbb53d91a3daee"
+          "@id": "_:N2e0e2dfb396b4e3ca0b590e8d796f358"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_2269"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_0203"
@@ -80,10 +76,10 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
+        "pmcid:PMC4509590",
         "pubmed:25633503"
       ],
       "sc:description": "FC test that uses cluster analysis and pattern recognition to set cut off limits that are derived directly from intrareplicate variance. It provides the same consistency as fold testing in cross platform analysis and has lower FP and FN rates than standard fold testing. It provides a null value based on initial condition replicates and gives error bounds for results to allow better evaluation of significance.",
@@ -103,23 +99,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ELBOW.html"
     },
     {
-      "@id": "_:N96aec0c0a6f04f41869af49cfe065f83",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N1ec538f67c3a41498395b394b3bbac94",
+      "@id": "_:N86f5d98e00e34629805ffca60d7e6057",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -135,23 +115,39 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:Nc3c796e3008a43e8a2dbb53d91a3daee",
+      "@id": "_:N85be35e451304af682bde9c8dac8eb1d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N11beafa246004c7f9b643f712a183e01",
+      "@id": "_:N2e0e2dfb396b4e3ca0b590e8d796f358",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N836c2aa7dfe043f897688261625b4ff8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -160,6 +156,10 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

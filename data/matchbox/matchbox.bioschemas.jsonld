@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth756",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/matchbox",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Luigi Marchionni",
-        "Anuj Gupta"
+        "Anuj Gupta",
+        "Luigi Marchionni"
       ],
       "bsc:input": {
-        "@id": "_:N531ab0878bdb4e349a8f95a2c070d0f0"
+        "@id": "_:Nb2c32fd18a234102b0614bf6424ddb9a"
       },
       "bsc:output": [
         {
-          "@id": "_:N3c9cd79a206a4a94b20354c51d8d22d5"
+          "@id": "_:N725cd9231a5c47e983f7480eb23a6568"
         },
         {
-          "@id": "_:N0e44fb052cfe42cfbcc38980cbb1d529"
+          "@id": "_:Nb8ee22404f0141cd9db0fed350727e69"
         },
         {
-          "@id": "_:N7182b3102eb44a8b835266bc1354ffbf"
+          "@id": "_:N98fde7f048d74474acb9ac6cb1b66449"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -77,10 +73,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:15846361",
         {
           "@id": "https://doi.org/10.1038/nmeth756"
-        },
-        "pubmed:15846361"
+        }
       ],
       "sc:description": "This package enables comparing ranked vectors of features, merging multiple datasets, removing redundant features, using CAT-plots and Venn diagrams, and computing statistical significance.",
       "sc:featureList": [
@@ -94,9 +90,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "matchBox",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/matchBox.html"
@@ -105,7 +101,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/matchBox.html"
     },
     {
-      "@id": "_:N3c9cd79a206a4a94b20354c51d8d22d5",
+      "@id": "_:N725cd9231a5c47e983f7480eb23a6568",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Nb8ee22404f0141cd9db0fed350727e69",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -121,7 +133,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N0e44fb052cfe42cfbcc38980cbb1d529",
+      "@id": "_:N98fde7f048d74474acb9ac6cb1b66449",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -137,23 +149,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N7182b3102eb44a8b835266bc1354ffbf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N531ab0878bdb4e349a8f95a2c070d0f0",
+      "@id": "_:Nb2c32fd18a234102b0614bf6424ddb9a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -162,6 +158,10 @@
         "@id": "edam:format_2058"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth756",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

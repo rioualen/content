@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     },
@@ -48,19 +44,23 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genewise",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": [
         {
-          "@id": "_:N871b8902cc5e4fba817a83f6e3dc8b64"
+          "@id": "_:Nf039dcc2863b4476bf45469af7bc72e3"
         },
         {
-          "@id": "_:N189ab4b10f72443cb8cfce3814877c24"
+          "@id": "_:Nc095a2892d2747ceb70256db39e88d5a"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3763e30751934869b14ea01cecb36367"
+        "@id": "_:Ncbe9ed5148de4c71a7091aa07cefb16a"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -75,18 +75,18 @@
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
-        "pubmed:38597606",
-        "pmcid:PMC11223882",
-        "pubmed:35412617",
-        "pmcid:PMC9252731",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
-        "pmcid:PMC310858",
         {
           "@id": "https://doi.org/10.1101/gr.10.4.547"
         },
-        "pubmed:10779496"
+        "pubmed:35412617",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        },
+        "pubmed:10779496",
+        "pmcid:PMC11223882",
+        "pmcid:PMC310858",
+        "pmcid:PMC9252731",
+        "pubmed:38597606"
       ],
       "sc:description": "Compare a protein sequence to a genomic DNA sequence, allowing for introns and frameshifting errors.",
       "sc:featureList": [
@@ -100,34 +100,34 @@
       "sc:name": "GeneWise (EBI)",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
+        {
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+        },
         {
           "@id": "https://www.ebi.ac.uk/~birney/wise2/"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
-        {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/psa/genewise"
     },
     {
-      "@id": "_:N3763e30751934869b14ea01cecb36367",
+      "@id": "_:Nf039dcc2863b4476bf45469af7bc72e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1381"
+        "@id": "edam:data_3494"
       },
-      "sc:name": "Sequence alignment (pair)"
+      "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N871b8902cc5e4fba817a83f6e3dc8b64",
+      "@id": "_:Nc095a2892d2747ceb70256db39e88d5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -135,12 +135,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N189ab4b10f72443cb8cfce3814877c24",
+      "@id": "_:Ncbe9ed5148de4c71a7091aa07cefb16a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
+        "@id": "edam:data_1381"
       },
-      "sc:name": "DNA sequence"
+      "sc:name": "Sequence alignment (pair)"
     }
   ]
 }

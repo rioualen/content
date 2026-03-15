@@ -36,51 +36,55 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt543",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/customprodb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "xiaojing wang",
       "bsc:input": [
         {
-          "@id": "_:Ned17678da4a941fa993ebe13537b7f8e"
+          "@id": "_:N40de0fe11dbe4063b84008a052a0d7e2"
         },
         {
-          "@id": "_:Na391982585ee41529f9dff47dfc0466d"
+          "@id": "_:Nc735798bf9894d5098a07ad5de916718"
         },
         {
-          "@id": "_:N664132deba344559922ce3da023c2831"
+          "@id": "_:Ne89a36f22e704daf8a497c0df27e3799"
         },
         {
-          "@id": "_:N53a3443f30ee45fd926353ff52129568"
+          "@id": "_:Nfd59f7fd06664c62b2ef6d1fb6159de1"
         },
         {
-          "@id": "_:N5bec9a5269364f6db3d9b2ec7f9f3d5f"
+          "@id": "_:Na48c7a3ad7084e308340279bbecda61b"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nda68851c8ad84b558daabe25cf13d99a"
+        "@id": "_:N351b403bdf214ce0a4caac2e5ed32bb2"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3366"
         },
         {
-          "@id": "edam:topic_3366"
+          "@id": "edam:topic_3168"
         },
         {
           "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC3842753",
         "pubmed:24058055",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt543"
-        },
-        "pmcid:PMC3842753"
+        }
       ],
       "sc:description": "Generate customized protein sequence database from RNA-Seq data for proteomics search.",
       "sc:featureList": [
@@ -94,9 +98,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "customProDB",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/customProDB.html"
@@ -105,73 +109,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/customProDB.html"
     },
     {
-      "@id": "_:Ned17678da4a941fa993ebe13537b7f8e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1106"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "dbSNP ID"
-    },
-    {
-      "@id": "_:Na391982585ee41529f9dff47dfc0466d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N664132deba344559922ce3da023c2831",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N53a3443f30ee45fd926353ff52129568",
+      "@id": "_:N40de0fe11dbe4063b84008a052a0d7e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -193,12 +131,15 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N5bec9a5269364f6db3d9b2ec7f9f3d5f",
+      "@id": "_:Nc735798bf9894d5098a07ad5de916718",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3264"
       },
       "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
         {
           "@id": "edam:format_1929"
         },
@@ -207,15 +148,78 @@
         },
         {
           "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "COSMIC ID"
     },
     {
-      "@id": "_:Nda68851c8ad84b558daabe25cf13d99a",
+      "@id": "_:Ne89a36f22e704daf8a497c0df27e3799",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1106"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_3016"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "dbSNP ID"
+    },
+    {
+      "@id": "_:Nfd59f7fd06664c62b2ef6d1fb6159de1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3016"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Na48c7a3ad7084e308340279bbecda61b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N351b403bdf214ce0a4caac2e5ed32bb2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -224,10 +228,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt543",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

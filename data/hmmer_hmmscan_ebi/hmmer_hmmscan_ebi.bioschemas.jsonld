@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     },
@@ -49,24 +45,24 @@
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": [
         {
-          "@id": "_:N6cff6f4f26754beba08972691cb6fd0c"
+          "@id": "_:Nf58019d4265448988e57356347af1c33"
         },
         {
-          "@id": "_:N38f23d5bd50249c6b5da2952c8a4afd9"
+          "@id": "_:N4062ca0bfa5941b69b6516abc25687a3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc1c5b557e5c147c7a095357ba249a41d"
+          "@id": "_:Neb17e9813c3048d8af16a77f5ca23747"
         },
         {
-          "@id": "_:Nf74509defb58403a988c639fae6b838a"
+          "@id": "_:N804e811f431d4cf8b4abc7a84d9b3946"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web service"
+        "Web service",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -81,21 +77,21 @@
       ],
       "sc:author": "Sean Eddy",
       "sc:citation": [
+        "pmcid:PMC3125773",
         "pubmed:21593126",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
-        "pubmed:38597606",
-        "pmcid:PMC11223882",
         "pubmed:35412617",
-        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        "pmcid:PMC3125773",
+        "pmcid:PMC11223882",
         {
           "@id": "https://doi.org/10.1093/nar/gkr367"
-        }
+        },
+        "pmcid:PMC9252731",
+        "pubmed:38597606"
       ],
       "sc:description": "HMMER3 hmmscan is used to search sequences against collections of profiles.",
       "sc:featureList": {
@@ -110,20 +106,28 @@
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
+          "@id": "http://hmmer.org/"
+        },
+        {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
-        {
-          "@id": "http://hmmer.org/"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/pfa/hmmer3_hmmscan"
     },
     {
-      "@id": "_:Nc1c5b557e5c147c7a095357ba249a41d",
+      "@id": "_:Neb17e9813c3048d8af16a77f5ca23747",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "_:N804e811f431d4cf8b4abc7a84d9b3946",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -134,23 +138,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nf74509defb58403a988c639fae6b838a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N6cff6f4f26754beba08972691cb6fd0c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:N38f23d5bd50249c6b5da2952c8a4afd9",
+      "@id": "_:Nf58019d4265448988e57356347af1c33",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1364"
@@ -158,7 +146,19 @@
       "sc:name": "Hidden Markov model"
     },
     {
+      "@id": "_:N4062ca0bfa5941b69b6516abc25687a3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkr367",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
       "@type": "sc:CreativeWork"
     }
   ]

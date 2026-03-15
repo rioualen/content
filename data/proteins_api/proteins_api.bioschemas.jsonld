@@ -43,23 +43,23 @@
       "@id": "https://bio.tools/proteins_api",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Maria Martin",
-        "Andrew Nightingale"
+        "Andrew Nightingale",
+        "Maria Martin"
       ],
       "bsc:input": [
         {
-          "@id": "_:N400fb353e2154a3893664cb3dd32d874"
+          "@id": "_:Na15ecbf1a3a84d61854ee1e202075e62"
         },
         {
-          "@id": "_:N5260433cbe2f41278a9deada0a382b5e"
+          "@id": "_:N4754438bc7d14cda8376cb4dd92855d0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N51866697cadc411fa6b5732deafdb1d5"
+          "@id": "_:Nc54edb84495e4dd3a81eb13c2e0637d2"
         },
         {
-          "@id": "_:Na2719f0eda954e56adbe44ef598569b5"
+          "@id": "_:N564c9c6afc304f2b9af4d59638717e0e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -68,10 +68,10 @@
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
-        "pubmed:28383659",
         {
           "@id": "https://doi.org/10.1093/nar/gkx237"
         },
+        "pubmed:28383659",
         "pmcid:PMC5570157"
       ],
       "sc:description": "The Proteins REST API provides access to key biological data from UniProt and data from Large Scale Studies (LSS) mapped to UniProt. The services provide sequence feature annotations from UniProtKB, variation data from UniProtKB and mapped from LSS (1000 Genomes, ExAC and COSMIC), proteomics data mapped from LSS (PeptideAtlas, MaxQB and EPD), antigen sequences mapped from Human Protein Atlas (HPA), proteomes and taxonomy search and retrieval, and reference genome coordinate mappings.",
@@ -80,9 +80,9 @@
       },
       "sc:name": "Proteins API",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.ebi.ac.uk/proteins/api/doc/"
@@ -90,15 +90,45 @@
       "sc:url": "http://www.ebi.ac.uk/proteins/api"
     },
     {
-      "@id": "_:N400fb353e2154a3893664cb3dd32d874",
+      "@id": "_:Nc54edb84495e4dd3a81eb13c2e0637d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2305"
+        },
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
       "sc:name": "Data"
     },
     {
-      "@id": "_:N5260433cbe2f41278a9deada0a382b5e",
+      "@id": "_:N564c9c6afc304f2b9af4d59638717e0e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2332"
+        },
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2305"
+        }
+      ],
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Na15ecbf1a3a84d61854ee1e202075e62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -106,41 +136,11 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N51866697cadc411fa6b5732deafdb1d5",
+      "@id": "_:N4754438bc7d14cda8376cb4dd92855d0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_2305"
-        }
-      ],
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Na2719f0eda954e56adbe44ef598569b5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_2305"
-        },
-        {
-          "@id": "edam:format_3464"
-        }
-      ],
       "sc:name": "Data"
     }
   ]

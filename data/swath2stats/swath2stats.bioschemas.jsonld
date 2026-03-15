@@ -36,29 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-9105-6381",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0153160",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/swath2stats",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-9105-6381"
       },
       "bsc:input": {
-        "@id": "_:Nab6173879af24a568ca3263d8529b404"
+        "@id": "_:N80cb8a0a3f194f5b8208c1e7cf5448cd"
       },
       "bsc:output": {
-        "@id": "_:Nd878f536599749bca80507b1153a8cfb"
+        "@id": "_:N182c04791d98430f99813e4a254c0a42"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3520"
@@ -77,9 +69,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "SWATH2stats",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SWATH2stats.html"
@@ -88,7 +80,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SWATH2stats.html"
     },
     {
-      "@id": "_:Nab6173879af24a568ca3263d8529b404",
+      "@id": "_:N182c04791d98430f99813e4a254c0a42",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3111"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Processed microarray data"
+    },
+    {
+      "@id": "_:N80cb8a0a3f194f5b8208c1e7cf5448cd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -99,20 +107,12 @@
       "sc:name": "Raw microarray data"
     },
     {
-      "@id": "_:Nd878f536599749bca80507b1153a8cfb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3111"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Processed microarray data"
+      "@id": "http://orcid.org/0000-0001-9105-6381",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0153160",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

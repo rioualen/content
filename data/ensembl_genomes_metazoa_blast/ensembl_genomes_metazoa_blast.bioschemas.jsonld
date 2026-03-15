@@ -44,14 +44,14 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N8c833c00a6b5436cb7afac330b45d25c"
+        "@id": "_:N835201809caf4aa2a80b634bd70809a2"
       },
       "bsc:output": [
         {
-          "@id": "_:N390843a8c10741b6acd8b38f5c29ea1a"
+          "@id": "_:Nf7b8643ec6ef47369f68480951e06c72"
         },
         {
-          "@id": "_:N4fea35e4b56c4c079c23b3e1a31d3f53"
+          "@id": "_:N6e8b88e4a3284af2a9959e5fd9158119"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -61,11 +61,11 @@
       },
       "sc:author": "Ensembl team",
       "sc:citation": [
-        "pmcid:PMC4702834",
+        "pubmed:26687719",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
         },
-        "pubmed:26687719"
+        "pmcid:PMC4702834"
       ],
       "sc:description": "Searches Ensembl Metazoa sequences using Exonerate.",
       "sc:featureList": {
@@ -73,9 +73,9 @@
       },
       "sc:name": "Ensembl Genomes Metazoa Blast",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -90,7 +90,23 @@
       "sc:url": "http://metazoa.ensembl.org/Multi/blastview"
     },
     {
-      "@id": "_:N8c833c00a6b5436cb7afac330b45d25c",
+      "@id": "_:Nf7b8643ec6ef47369f68480951e06c72",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N6e8b88e4a3284af2a9959e5fd9158119",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "_:N835201809caf4aa2a80b634bd70809a2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -99,22 +115,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N390843a8c10741b6acd8b38f5c29ea1a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N4fea35e4b56c4c079c23b3e1a31d3f53",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
     }
   ]
 }

@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0047656",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mocat",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Georg Zeller",
       "bsc:input": {
-        "@id": "_:N049e291fd9534d149388a1a272eabe8d"
+        "@id": "_:Nd514259e7eb2458094340d34edc2d977"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne03936bebb474435bd6050ff94ccf8b7"
+          "@id": "_:N0075f3111f194c5cb40f26355f39e9c5"
         },
         {
-          "@id": "_:N4e2f40fa9553445e98087253a8a25e73"
+          "@id": "_:Nb8f892e9344249b5ab2612c9a0b99fd4"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -56,41 +60,41 @@
         "@id": "edam:topic_3174"
       },
       "sc:citation": [
-        "pubmed:27153620",
-        {
-          "@id": "https://doi.org/10.1371/journal.pone.0047656"
-        },
+        "pmcid:PMC4978931",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw183"
         },
-        "pmcid:PMC4978931",
+        "pubmed:27153620",
+        "pmcid:PMC3474746",
         "pubmed:23082188",
-        "pmcid:PMC3474746"
+        {
+          "@id": "https://doi.org/10.1371/journal.pone.0047656"
+        }
       ],
       "sc:description": "MOCAT is a modular and scalable software pipeline for analyzing shotgun metagenomics datasets generated with Illumina technology. Starting from raw fastQ files, it can quality-filter and remove contaminants from them, assemble metagenomic reads into contigs, predict prokaryotic genes on these, identify phylogenetic marker genes and generate taxonomic abundance profiles by mapping reads to these marker genes.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3672"
-        },
-        {
-          "@id": "edam:operation_3187"
-        },
-        {
-          "@id": "edam:operation_3200"
-        },
         {
           "@id": "edam:operation_2454"
         },
         {
           "@id": "edam:operation_0310"
+        },
+        {
+          "@id": "edam:operation_3672"
+        },
+        {
+          "@id": "edam:operation_3200"
+        },
+        {
+          "@id": "edam:operation_3187"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "MOCAT",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": [
         "HD-HuB",
@@ -103,34 +107,23 @@
       "sc:url": "http://vm-lux.embl.de/~kultima/MOCAT/"
     },
     {
-      "@id": "_:N049e291fd9534d149388a1a272eabe8d",
+      "@id": "_:Nd514259e7eb2458094340d34edc2d977",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1931"
+          "@id": "edam:format_1933"
         },
         {
-          "@id": "edam:format_1933"
+          "@id": "edam:format_1931"
         }
       ],
       "sc:name": "Nucleic acid sequence (raw)"
     },
     {
-      "@id": "_:Ne03936bebb474435bd6050ff94ccf8b7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:N4e2f40fa9553445e98087253a8a25e73",
+      "@id": "_:N0075f3111f194c5cb40f26355f39e9c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -141,11 +134,18 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw183",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nb8f892e9344249b5ab2612c9a0b99fd4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence assembly"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0047656",
+      "@id": "https://doi.org/10.1093/bioinformatics/btw183",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu815",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/andi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Fabian Klötzl",
       "bsc:input": {
-        "@id": "_:N4fa88b8bbbf5497b8c9d38911d9f2e71"
+        "@id": "_:N401c5a4d0dc14577af4c531bd6f4cb1b"
       },
       "bsc:output": {
-        "@id": "_:N5fe8c386e4fb4b61890eb92ab5eb25ec"
+        "@id": "_:Na1f1fe32e92f44b0b5b17a693fe0f9ee"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -52,14 +56,14 @@
       },
       "sc:author": "Fabian Klötzl",
       "sc:citation": [
-        "pubmed:25504847",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu815"
-        }
+        },
+        "pubmed:25504847"
       ],
       "sc:contributor": [
-        "Peter Pfaffelhuber",
-        "Bernhard Haubold"
+        "Bernhard Haubold",
+        "Peter Pfaffelhuber"
       ],
       "sc:description": "andi estimates the evolutionary distance between closely related genomes. These distances can be used to rapidly infer phylogenies for big sets of genomes. Because andi does not compute full alignments, it is so efficient that it scales even up to thousands of bacterial genomes.",
       "sc:featureList": {
@@ -70,8 +74,8 @@
       "sc:name": "andi",
       "sc:operatingSystem": "Linux",
       "sc:provider": [
-        "evolbio.mpg.de",
-        "Max Planck Institute for Evolutionary Biology"
+        "Max Planck Institute for Evolutionary Biology",
+        "evolbio.mpg.de"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/EvolBioInf/andi/blob/master/andi-manual.pdf"
@@ -80,18 +84,7 @@
       "sc:url": "https://github.com/EvolBioInf/andi"
     },
     {
-      "@id": "_:N4fa88b8bbbf5497b8c9d38911d9f2e71",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N5fe8c386e4fb4b61890eb92ab5eb25ec",
+      "@id": "_:Na1f1fe32e92f44b0b5b17a693fe0f9ee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0870"
@@ -102,8 +95,15 @@
       "sc:name": "Sequence distance matrix"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu815",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N401c5a4d0dc14577af4c531bd6f4cb1b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

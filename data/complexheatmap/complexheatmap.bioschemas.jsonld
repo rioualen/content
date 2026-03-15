@@ -36,12 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-7395-8709",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btw313",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-7395-8709",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/complexheatmap",
@@ -50,10 +50,10 @@
         "@id": "http://orcid.org/0000-0002-7395-8709"
       },
       "bsc:input": {
-        "@id": "_:N1dfac4557d5c4655bae3a5aa70213c43"
+        "@id": "_:Na504ec19441d4a7fbb70fd6f5e37d2c1"
       },
       "bsc:output": {
-        "@id": "_:Nc51400f768fa4dd7afea484d8ab2b48e"
+        "@id": "_:Nea67756074d54b22bb8e81b8f7dae07e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -67,26 +67,26 @@
         "@id": "http://orcid.org/0000-0002-7395-8709"
       },
       "sc:citation": [
-        "pubmed:27207943",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw313"
-        }
+        },
+        "pubmed:27207943"
       ],
       "sc:description": "Complex heatmaps are efficient to visualize associations \n    between different sources of data sets and reveal potential patterns. \n    Here the ComplexHeatmap package provides a highly flexible way to arrange \nmultiple heatmaps and supports various annotation graphics.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3553"
+          "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_0531"
+          "@id": "edam:operation_3553"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "ComplexHeatmap",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://jokergoo.github.io/ComplexHeatmap-reference/book/"
@@ -95,18 +95,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ComplexHeatmap.html"
     },
     {
-      "@id": "_:Nc51400f768fa4dd7afea484d8ab2b48e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N1dfac4557d5c4655bae3a5aa70213c43",
+      "@id": "_:Na504ec19441d4a7fbb70fd6f5e37d2c1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -115,6 +104,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Nea67756074d54b22bb8e81b8f7dae07e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Heat map"
     }
   ]
 }

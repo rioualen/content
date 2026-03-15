@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.jmb.2023.167963",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "http://orcid.org/0000-0002-0274-5669",
       "@type": "sc:Person"
     },
@@ -43,18 +47,18 @@
       "@id": "https://bio.tools/ispred-seq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Castrense Savojardo",
         {
           "@id": "http://orcid.org/0000-0002-0274-5669"
         },
-        "Matteo Manfredi",
-        "Rita Casadio"
+        "Castrense Savojardo",
+        "Rita Casadio",
+        "Matteo Manfredi"
       ],
       "bsc:input": {
-        "@id": "_:N67f1b09b61b5474b8bfb7d0ba4ea8b09"
+        "@id": "_:N1ec5ee478e184f78ad94d66442dc58cb"
       },
       "bsc:output": {
-        "@id": "_:Ne828c07f638742b68462fd2638a4f403"
+        "@id": "_:Ned97dc7b31474737b86c8fa9be3180e2"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -70,24 +74,24 @@
         }
       ],
       "sc:citation": [
+        "pubmed:37356906",
         {
           "@id": "https://doi.org/10.1016/j.jmb.2023.167963"
-        },
-        "pubmed:37356906"
+        }
       ],
       "sc:description": "Deep neural networks and embeddings for predicting interaction sites in protein sequences.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3899"
-        },
-        {
-          "@id": "edam:operation_2492"
+          "@id": "edam:operation_3092"
         },
         {
           "@id": "edam:operation_3094"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_2492"
+        },
+        {
+          "@id": "edam:operation_3899"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -104,7 +108,18 @@
       "sc:url": "https://ispredws.biocomp.unibo.it"
     },
     {
-      "@id": "_:Ne828c07f638742b68462fd2638a4f403",
+      "@id": "_:N1ec5ee478e184f78ad94d66442dc58cb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Ned97dc7b31474737b86c8fa9be3180e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -118,21 +133,6 @@
         }
       ],
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N67f1b09b61b5474b8bfb7d0ba4ea8b09",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.jmb.2023.167963",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

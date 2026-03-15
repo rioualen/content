@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu146",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/bioinformatics/bts635",
       "@type": "sc:CreativeWork"
     },
@@ -48,14 +52,14 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "rna-styar team",
       "bsc:input": {
-        "@id": "_:Nf2553ee2635e40ffbb82a17584d51491"
+        "@id": "_:N480a6840238d4269b2d01e05d16f64d4"
       },
       "bsc:output": [
         {
-          "@id": "_:N5948a10fae0d42deb43984ec707d70d1"
+          "@id": "_:N9583a4b30c254fbea93f3ec78f633b50"
         },
         {
-          "@id": "_:N92151680d8054233ab769d9367cca4ff"
+          "@id": "_:N10ea007ddbca47199d97b155b687a8a8"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -69,19 +73,19 @@
         }
       ],
       "sc:citation": [
-        "pubmed:23104886",
-        "pmcid:PMC5792058",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/bts635"
+        },
         {
           "@id": "https://doi.org/10.1038/nmeth.4106"
         },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btu146"
-        },
-        "pubmed:24626854",
         "pubmed:27941783",
         "pmcid:PMC3530905",
+        "pubmed:23104886",
+        "pmcid:PMC5792058",
+        "pubmed:24626854",
         {
-          "@id": "https://doi.org/10.1093/bioinformatics/bts635"
+          "@id": "https://doi.org/10.1093/bioinformatics/btu146"
         }
       ],
       "sc:description": "Ultrafast universal RNA-seq data aligner",
@@ -106,7 +110,31 @@
       "sc:url": "http://code.google.com/p/rna-star/"
     },
     {
-      "@id": "_:Nf2553ee2635e40ffbb82a17584d51491",
+      "@id": "_:N9583a4b30c254fbea93f3ec78f633b50",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_2573"
+        }
+      ],
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N10ea007ddbca47199d97b155b687a8a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N480a6840238d4269b2d01e05d16f64d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -115,34 +143,6 @@
         "@id": "edam:format_1930"
       },
       "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N5948a10fae0d42deb43984ec707d70d1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N92151680d8054233ab769d9367cca4ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2573"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu146",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

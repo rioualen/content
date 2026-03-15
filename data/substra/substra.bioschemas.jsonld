@@ -36,8 +36,90 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41591-022-02155-w",
-      "@type": "sc:CreativeWork"
+      "@id": "https://bio.tools/substra",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:Na773dae00ab44463ace7ab72219365ad"
+        },
+        {
+          "@id": "_:N961a2622b2b44c8e870fbae0e3653203"
+        },
+        {
+          "@id": "_:N7ac2d5e24a294afaab847bc7d545174d"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Web application",
+        "Library"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3316"
+        },
+        {
+          "@id": "edam:topic_3391"
+        },
+        {
+          "@id": "edam:topic_3070"
+        },
+        {
+          "@id": "edam:topic_3314"
+        }
+      ],
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.26434/chemrxiv-2022-ntd3r"
+        },
+        {
+          "@id": "https://doi.org/10.1038/s41591-022-02155-w"
+        },
+        {
+          "@id": "https://doi.org/10.48550/arXiv.1910.11567"
+        },
+        "pubmed:36658418"
+      ],
+      "sc:description": "Substra is an open source federated learning (FL) software. It provides a flexible Python interface and a web app to run federated learning training at scale.\n\nSubstra’s main usage is in production environments. It has already been deployed and used by hospitals and biotech companies (see the MELLODDY project for instance). Substra can also be used on a single machine on a virtually split dataset to perform FL simulations and debug code before launching experiments on a real network.",
+      "sc:featureList": {
+        "@id": "edam:operation_2238"
+      },
+      "sc:isAccessibleForFree": true,
+      "sc:license": "Apache-2.0",
+      "sc:name": "Substra",
+      "sc:operatingSystem": [
+        "Windows",
+        "Linux",
+        "Mac"
+      ],
+      "sc:softwareHelp": {
+        "@id": "https://docs.substra.org/en/stable/"
+      },
+      "sc:url": "https://docs.substra.org/en/stable/"
+    },
+    {
+      "@id": "_:Na773dae00ab44463ace7ab72219365ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N961a2622b2b44c8e870fbae0e3653203",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2087"
+      },
+      "sc:name": "Molecular property"
+    },
+    {
+      "@id": "_:N7ac2d5e24a294afaab847bc7d545174d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:name": "Text data"
     },
     {
       "@id": "https://doi.org/10.48550/arXiv.1910.11567",
@@ -48,90 +130,8 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://bio.tools/substra",
-      "@type": "sc:SoftwareApplication",
-      "bsc:input": [
-        {
-          "@id": "_:N0fdc97f8396942d797c566f58b97941f"
-        },
-        {
-          "@id": "_:N6b0ac0ff6c3548ba8e612344d7c0af2d"
-        },
-        {
-          "@id": "_:N3325113d40524f5f83d7296346c29c44"
-        }
-      ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": [
-        "Library",
-        "Web application"
-      ],
-      "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3070"
-        },
-        {
-          "@id": "edam:topic_3314"
-        },
-        {
-          "@id": "edam:topic_3391"
-        },
-        {
-          "@id": "edam:topic_3316"
-        }
-      ],
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1038/s41591-022-02155-w"
-        },
-        "pubmed:36658418",
-        {
-          "@id": "https://doi.org/10.26434/chemrxiv-2022-ntd3r"
-        },
-        {
-          "@id": "https://doi.org/10.48550/arXiv.1910.11567"
-        }
-      ],
-      "sc:description": "Substra is an open source federated learning (FL) software. It provides a flexible Python interface and a web app to run federated learning training at scale.\n\nSubstra’s main usage is in production environments. It has already been deployed and used by hospitals and biotech companies (see the MELLODDY project for instance). Substra can also be used on a single machine on a virtually split dataset to perform FL simulations and debug code before launching experiments on a real network.",
-      "sc:featureList": {
-        "@id": "edam:operation_2238"
-      },
-      "sc:isAccessibleForFree": true,
-      "sc:license": "Apache-2.0",
-      "sc:name": "Substra",
-      "sc:operatingSystem": [
-        "Linux",
-        "Windows",
-        "Mac"
-      ],
-      "sc:softwareHelp": {
-        "@id": "https://docs.substra.org/en/stable/"
-      },
-      "sc:url": "https://docs.substra.org/en/stable/"
-    },
-    {
-      "@id": "_:N0fdc97f8396942d797c566f58b97941f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N6b0ac0ff6c3548ba8e612344d7c0af2d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2087"
-      },
-      "sc:name": "Molecular property"
-    },
-    {
-      "@id": "_:N3325113d40524f5f83d7296346c29c44",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:name": "Text data"
+      "@id": "https://doi.org/10.1038/s41591-022-02155-w",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

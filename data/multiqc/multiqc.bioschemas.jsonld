@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw354",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/multiqc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,37 +47,37 @@
       },
       "bsc:output": [
         {
-          "@id": "_:N5cf97b11e6cf4128a313aa12b23c52e5"
+          "@id": "_:N7a80ff8caa77460992d3ce70fff35a48"
         },
         {
-          "@id": "_:N10fb80340837484093433d2b6eb29209"
+          "@id": "_:N8d48c1d9b44b4dd887eb0534c929349c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC5039924",
+        "pubmed:27312411",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw354"
-        },
-        "pubmed:27312411",
-        "pmcid:PMC5039924"
+        }
       ],
       "sc:description": "MultiQC aggregates results from multiple bioinformatics analyses across many samples into a single report. It searches a given directory for analysis logs and compiles a HTML report. It's a general use tool, perfect for summarising the output from numerous bioinformatics tools.",
       "sc:featureList": [
@@ -88,9 +92,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "MultiQC",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://multiqc.info/docs/"
@@ -98,7 +102,32 @@
       "sc:url": "http://multiqc.info/"
     },
     {
-      "@id": "_:N5cf97b11e6cf4128a313aa12b23c52e5",
+      "@id": "_:N7a80ff8caa77460992d3ce70fff35a48",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3914"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3750"
+        },
+        {
+          "@id": "edam:format_3752"
+        }
+      ],
+      "sc:name": "Quality control report"
+    },
+    {
+      "@id": "_:N8d48c1d9b44b4dd887eb0534c929349c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
@@ -109,37 +138,8 @@
       "sc:name": "Sequence alignment report"
     },
     {
-      "@id": "_:N10fb80340837484093433d2b6eb29209",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3914"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3750"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Quality control report"
-    },
-    {
       "@id": "http://orcid.org/0000-0003-4101-2502",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw354",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

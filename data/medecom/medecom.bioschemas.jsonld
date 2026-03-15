@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13059-017-1182-6",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/medecom",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pavlo Lutsik",
       "bsc:input": {
-        "@id": "_:Ne4d5f61c1764452ebb5eb8ca9c65a181"
+        "@id": "_:N895733eadc834ba985f36b6d0ee34e1b"
       },
       "bsc:output": [
         {
-          "@id": "_:N52f3ec1f462b4ebc96ab2dc9948df2a1"
+          "@id": "_:N8226778e56004720a1e83625a6248a3a"
         },
         {
-          "@id": "_:Nd8fc3d1b782f40a9ae5710f2a1fe3ff3"
+          "@id": "_:N079ede3bab8d4d23a24713c8d6d9a95c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0080"
-        },
         {
           "@id": "edam:topic_3295"
         },
         {
           "@id": "edam:topic_3518"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": [
@@ -76,10 +72,10 @@
       ],
       "sc:citation": [
         "pmcid:PMC5366155",
-        "pubmed:28340624",
         {
           "@id": "https://doi.org/10.1186/s13059-017-1182-6"
-        }
+        },
+        "pubmed:28340624"
       ],
       "sc:description": "Computational method for decomposition of heterogeneous DNA methylomes. It applies matrix factorization with biologically motivated constratints and regularization to discover and quantify latent components in methylomes of multi-cellual samples.",
       "sc:featureList": {
@@ -92,8 +88,8 @@
         "Mac"
       ],
       "sc:provider": [
-        "hdhub",
         "Hein Lab",
+        "hdhub",
         "Walter lab"
       ],
       "sc:softwareHelp": {
@@ -103,18 +99,26 @@
       "sc:url": "http://public.genetik.uni-sb.de/medecom/"
     },
     {
-      "@id": "_:Ne4d5f61c1764452ebb5eb8ca9c65a181",
+      "@id": "_:N8226778e56004720a1e83625a6248a3a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2082"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Matrix"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:N52f3ec1f462b4ebc96ab2dc9948df2a1",
+      "@id": "_:N079ede3bab8d4d23a24713c8d6d9a95c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -125,23 +129,19 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nd8fc3d1b782f40a9ae5710f2a1fe3ff3",
+      "@id": "_:N895733eadc834ba985f36b6d0ee34e1b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_2082"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13059-017-1182-6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

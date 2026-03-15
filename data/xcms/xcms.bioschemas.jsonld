@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq441",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/xcms",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,35 +47,35 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Neb114b1d9a4a42a3bfdfa00b50ebe66c"
+          "@id": "_:N71aeee2a7b534d92b3aec8aee71d2abe"
         },
         {
-          "@id": "_:N3f9c0c1275f3417e836bdaa296b8d9ce"
+          "@id": "_:N24e0c6a0bb214e9198ba596ca77cdb15"
         },
         {
-          "@id": "_:N09598663e7b341e0ab0f6e5e21c72109"
+          "@id": "_:N481a576fba8846798f8ead3a6e8570b6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N327b4d249eea421793f3215fd0408fd4"
+          "@id": "_:Naea2c3938e3046d0ac3f7e0c342aae46"
         },
         {
-          "@id": "_:N8f1430edd70f43a99bdace06de213a3f"
+          "@id": "_:Nd8387fc3fda84f96968572ec167811f6"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
         "Library",
+        "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3172"
         }
       ],
       "sc:citation": [
@@ -83,7 +87,13 @@
       "sc:description": "Framework for processing and visualization of chromatographically separated and single-spectra mass spectral data.  The packages enables imports from AIA/ANDI NetCDF, mzXML, mzData and mzML files and preprocesses data for high-throughput, untargeted analyte profiling.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3628"
+        },
+        {
           "@id": "edam:operation_3634"
+        },
+        {
+          "@id": "edam:operation_3694"
         },
         {
           "@id": "edam:operation_2428"
@@ -92,34 +102,28 @@
           "@id": "edam:operation_3203"
         },
         {
-          "@id": "edam:operation_3694"
-        },
-        {
-          "@id": "edam:operation_3695"
-        },
-        {
           "@id": "edam:operation_3215"
         },
         {
-          "@id": "edam:operation_3628"
+          "@id": "edam:operation_3695"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "xcms",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": [
-        {
-          "@id": "https://jorainer.github.io/xcmsTutorials/"
-        },
         {
           "@id": "http://bioconductor.org/packages/release/bioc/html/xcms.html"
         },
         {
           "@id": "https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
+        },
+        {
+          "@id": "https://jorainer.github.io/xcmsTutorials/"
         },
         {
           "@id": "https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
@@ -129,7 +133,67 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/xcms.html"
     },
     {
-      "@id": "_:N327b4d249eea421793f3215fd0408fd4",
+      "@id": "_:N71aeee2a7b534d92b3aec8aee71d2abe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3244"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N24e0c6a0bb214e9198ba596ca77cdb15",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3654"
+        },
+        {
+          "@id": "edam:format_3650"
+        },
+        {
+          "@id": "edam:format_3244"
+        }
+      ],
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N481a576fba8846798f8ead3a6e8570b6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
+        },
+        {
+          "@id": "edam:format_3650"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:Naea2c3938e3046d0ac3f7e0c342aae46",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nd8387fc3fda84f96968572ec167811f6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -143,70 +207,6 @@
         }
       ],
       "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N8f1430edd70f43a99bdace06de213a3f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Neb114b1d9a4a42a3bfdfa00b50ebe66c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3650"
-        },
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3244"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:N3f9c0c1275f3417e836bdaa296b8d9ce",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3244"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N09598663e7b341e0ab0f6e5e21c72109",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3650"
-        },
-        {
-          "@id": "edam:format_3654"
-        }
-      ],
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq441",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-7899-7192",

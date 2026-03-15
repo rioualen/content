@@ -36,46 +36,46 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-0737-1114",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btw037",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0737-1114",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/paa",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc0f3696f942645d6bea69c6670703e40"
+          "@id": "_:N3771169cc7bf48d2882379d6b02237bc"
         },
         {
-          "@id": "_:N0fe87e6c568c4e0d9b1f87bb1bee4d4d"
+          "@id": "_:N981296a5fdf544de9eb2dec04d6ae153"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0dbe920bb2904772aa6967c1f0b031a6"
+          "@id": "_:N9dcab88c4111467fb393ffd7dcfdb784"
         },
         {
-          "@id": "_:N5a4b8036d5834ccd98df0a34832a9eb2"
+          "@id": "_:N581276a7be614b08a1ae26e526723c2d"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3518"
-        },
         {
           "@id": "edam:topic_3360"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3518"
         }
       ],
       "sc:author": {
@@ -83,10 +83,10 @@
       },
       "sc:citation": [
         "pmcid:PMC4866526",
-        "pubmed:26803161",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw037"
-        }
+        },
+        "pubmed:26803161"
       ],
       "sc:contributor": "Martin Eisenacher",
       "sc:description": "It imports single color (protein) microarray data that has been saved in gpr file format. After preprocessing univariate feature preselection is performed. Subsequently, a multivariate feature selection is conducted to discover biomarker candidates. Thereto, either a frequency-based backwards elimination aproach or ensemble feature selection can be used. It provides a complete toolbox of analysis tools including several different plots for results examination and evaluation.",
@@ -97,15 +97,15 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "PAA - Protein Array Analyzer",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": [
         "Ruhr-Universitaet Bochum, Medizinisches Proteom-Center (MPC)",
-        "This work was supported by P.U.R.E., a project of Nordrhein-Westfalen, a federal state of Germany.",
+        "This work is supported by de.NBI, a project of the BMBF [FKZ 031 A 534A].",
         "BioInfra.Prot",
-        "This work is supported by de.NBI, a project of the BMBF [FKZ 031 A 534A]."
+        "This work was supported by P.U.R.E., a project of Nordrhein-Westfalen, a federal state of Germany."
       ],
       "sc:softwareHelp": {
         "@id": "https://www.bioconductor.org/packages/release/bioc/manuals/PAA/man/PAA.pdf"
@@ -114,7 +114,7 @@
       "sc:url": "http://bioconductor.org/packages/PAA/"
     },
     {
-      "@id": "_:Nc0f3696f942645d6bea69c6670703e40",
+      "@id": "_:N3771169cc7bf48d2882379d6b02237bc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -125,7 +125,7 @@
       "sc:name": "Text"
     },
     {
-      "@id": "_:N0fe87e6c568c4e0d9b1f87bb1bee4d4d",
+      "@id": "_:N981296a5fdf544de9eb2dec04d6ae153",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -133,7 +133,23 @@
       "sc:name": "Raw microarray data"
     },
     {
-      "@id": "_:N0dbe920bb2904772aa6967c1f0b031a6",
+      "@id": "_:N9dcab88c4111467fb393ffd7dcfdb784",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3591"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N581276a7be614b08a1ae26e526723c2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -142,22 +158,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "ID list"
-    },
-    {
-      "@id": "_:N5a4b8036d5834ccd98df0a34832a9eb2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Plot"
     }
   ]
 }

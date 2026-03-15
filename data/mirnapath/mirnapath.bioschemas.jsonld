@@ -41,42 +41,42 @@
       "biotools:primaryContact": "James M. Ward",
       "bsc:input": [
         {
-          "@id": "_:N835019ce01f84106beed258ed29e25cd"
+          "@id": "_:N9ed65290982e4b798f404ae5fc454088"
         },
         {
-          "@id": "_:N3626c9b6cbff413c96ce0c9d4ed38ba0"
+          "@id": "_:N1999bd435dab47cdaa7578b76f4d96a7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N48250d8e81cd48298d27991395b503ff"
+          "@id": "_:N1537be3b39b04ccd8d20f0e84f5eb700"
         },
         {
-          "@id": "_:Na2bb70b99a0b474a9a8ef57b0e5b0e61"
+          "@id": "_:N29066c6a92614c6ea8a9ab5ed206f8fd"
         },
         {
-          "@id": "_:Naa96f93130f6412e946b8f6732828e75"
+          "@id": "_:N5298be14da0c4619ba8bd5e3d401b418"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0659"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0659"
         }
       ],
       "sc:citation": [
-        "pubmed:25745387",
+        "pmcid:PMC4333818",
         {
           "@id": "https://doi.org/10.3389/fncel.2015.00053"
         },
-        "pmcid:PMC4333818"
+        "pubmed:25745387"
       ],
       "sc:description": "This package provides pathway enrichment techniques for miRNA expression data. Specifically, the set of methods handles the many-to-many relationship between miRNAs and the multiple genes they are predicted to target (and thus affect.)  It also handles the gene-to-pathway relationships separately. Both steps are designed to preserve the additive effects of miRNAs on genes, many miRNAs affecting one gene, one miRNA affecting multiple genes, or many miRNAs affecting many genes.",
       "sc:featureList": {
@@ -85,9 +85,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "miRNApath",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/miRNApath.html"
@@ -96,7 +96,61 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/miRNApath.html"
     },
     {
-      "@id": "_:N48250d8e81cd48298d27991395b503ff",
+      "@id": "_:N9ed65290982e4b798f404ae5fc454088",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N1999bd435dab47cdaa7578b76f4d96a7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3115"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Microarray metadata"
+    },
+    {
+      "@id": "_:N1537be3b39b04ccd8d20f0e84f5eb700",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N29066c6a92614c6ea8a9ab5ed206f8fd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N5298be14da0c4619ba8bd5e3d401b418",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -110,60 +164,6 @@
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:Na2bb70b99a0b474a9a8ef57b0e5b0e61",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Naa96f93130f6412e946b8f6732828e75",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N835019ce01f84106beed258ed29e25cd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N3626c9b6cbff413c96ce0c9d4ed38ba0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3115"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Microarray metadata"
     },
     {
       "@id": "https://doi.org/10.3389/fncel.2015.00053",

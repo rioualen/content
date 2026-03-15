@@ -36,42 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.jbiotec.2017.05.004",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gky879",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bacdive_ws",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4e82558e108040c181015074d7f07809"
+          "@id": "_:N869b11d2b51649cbaaeaefab86524aa6"
         },
         {
-          "@id": "_:N9e032e37e2764c028fb42b762cb2465a"
+          "@id": "_:N38c7225e00674aac9c3f2c1bc470af37"
         },
         {
-          "@id": "_:N5277e3b2a1fd434280a73b00a5e3deb4"
+          "@id": "_:N2e700e09699743159bf04eaac0de8208"
         },
         {
-          "@id": "_:Ncb28e408eae941a09247f659326576fb"
+          "@id": "_:Nfdd0f19f46d649baba9702563973e006"
         },
         {
-          "@id": "_:Nb5ff5b15bd864493ac49711b03d71192"
+          "@id": "_:Nab60922616bd4f18bb2eef298ae91e9d"
         },
         {
-          "@id": "_:Nf9900f64bd3f41b091bd46b29486618a"
+          "@id": "_:N80120e3ce99146efb2e90dc7b15b4467"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N389afcecde9d4607ae42454bad2bc5f5"
+          "@id": "_:N3dc482d5a2d945ff83a774a76879819f"
         },
         {
-          "@id": "_:N698541e5968e459ea2b9fbacc50821f2"
+          "@id": "_:Nd824c2f3914f417eb739b1bad821f1ec"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -91,29 +83,29 @@
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkt1058"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkae959"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkv983"
-        },
-        "pmcid:PMC3965005",
-        "pubmed:26424852",
+        "pubmed:28487186",
         {
           "@id": "https://doi.org/10.1093/nar/gkab961"
         },
         {
-          "@id": "https://doi.org/10.1016/j.jbiotec.2017.05.004"
+          "@id": "https://doi.org/10.1093/nar/gkae959"
         },
+        "pubmed:26424852",
+        "pmcid:PMC4702946",
+        "pubmed:24214959",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkt1058"
+        },
+        "pmcid:PMC3965005",
         {
           "@id": "https://doi.org/10.1093/nar/gky879"
         },
-        "pubmed:28487186",
-        "pubmed:24214959",
-        "pmcid:PMC4702946"
+        {
+          "@id": "https://doi.org/10.1093/nar/gkv983"
+        },
+        {
+          "@id": "https://doi.org/10.1016/j.jbiotec.2017.05.004"
+        }
       ],
       "sc:description": "The API for retrieving BacDive data in machine-readable JSON format. BacDive is the Bacterial Diversity Database and provides strain-linked information about bacterial and archaeal biodiversity. The API offers several possibilities to query detailed strain information.",
       "sc:featureList": {
@@ -123,9 +115,9 @@
       "sc:license": "CC-BY-4.0",
       "sc:name": "BacDive API",
       "sc:operatingSystem": [
-        "Linux",
+        "Mac",
         "Windows",
-        "Mac"
+        "Linux"
       ],
       "sc:provider": "Leibniz-Institut DSMZ-Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH",
       "sc:softwareHelp": [
@@ -139,7 +131,63 @@
       "sc:url": "https://api.bacdive.dsmz.de/"
     },
     {
-      "@id": "_:N389afcecde9d4607ae42454bad2bc5f5",
+      "@id": "_:N869b11d2b51649cbaaeaefab86524aa6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2379"
+      },
+      "sc:name": "Strain identifier"
+    },
+    {
+      "@id": "_:N38c7225e00674aac9c3f2c1bc470af37",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1045"
+      },
+      "sc:name": "Species name"
+    },
+    {
+      "@id": "_:N2e700e09699743159bf04eaac0de8208",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1048"
+      },
+      "sc:name": "Database ID"
+    },
+    {
+      "@id": "_:Nfdd0f19f46d649baba9702563973e006",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2787"
+      },
+      "sc:name": "NCBI genome accession"
+    },
+    {
+      "@id": "_:Nab60922616bd4f18bb2eef298ae91e9d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1097"
+      },
+      "sc:name": "Sequence accession (nucleic acid)"
+    },
+    {
+      "@id": "_:N80120e3ce99146efb2e90dc7b15b4467",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1870"
+      },
+      "sc:name": "Genus name"
+    },
+    {
+      "@id": "_:N3dc482d5a2d945ff83a774a76879819f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1048"
+      },
+      "sc:name": "Database ID"
+    },
+    {
+      "@id": "_:Nd824c2f3914f417eb739b1bad821f1ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -150,63 +198,7 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N698541e5968e459ea2b9fbacc50821f2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1048"
-      },
-      "sc:name": "Database ID"
-    },
-    {
-      "@id": "_:N4e82558e108040c181015074d7f07809",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1048"
-      },
-      "sc:name": "Database ID"
-    },
-    {
-      "@id": "_:N9e032e37e2764c028fb42b762cb2465a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2787"
-      },
-      "sc:name": "NCBI genome accession"
-    },
-    {
-      "@id": "_:N5277e3b2a1fd434280a73b00a5e3deb4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1870"
-      },
-      "sc:name": "Genus name"
-    },
-    {
-      "@id": "_:Ncb28e408eae941a09247f659326576fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1045"
-      },
-      "sc:name": "Species name"
-    },
-    {
-      "@id": "_:Nb5ff5b15bd864493ac49711b03d71192",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1097"
-      },
-      "sc:name": "Sequence accession (nucleic acid)"
-    },
-    {
-      "@id": "_:Nf9900f64bd3f41b091bd46b29486618a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2379"
-      },
-      "sc:name": "Strain identifier"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkae959",
+      "@id": "https://doi.org/10.1093/nar/gky879",
       "@type": "sc:CreativeWork"
     },
     {
@@ -214,7 +206,15 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1093/nar/gkae959",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkv983",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jbiotec.2017.05.004",
       "@type": "sc:CreativeWork"
     },
     {

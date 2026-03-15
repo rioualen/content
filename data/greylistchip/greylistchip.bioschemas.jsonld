@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/greylistchip",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Gordon Brown",
       "bsc:input": {
-        "@id": "_:N0c9c8f8eb78147af8bde205552e9be72"
+        "@id": "_:N25f59d0423a7499fbc9e41fbfeec13e3"
       },
       "bsc:output": {
-        "@id": "_:N176649cc71524dd48740b114b52a0cff"
+        "@id": "_:N6e624856ef17414e99d2350736cf2aae"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -59,11 +63,11 @@
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4509590",
         "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "Identify regions of ChIP experiments with high signal in the input, that lead to spurious peaks during peak calling. Remove reads aligning to these regions prior to peak calling, for cleaner ChIP analysis.",
       "sc:featureList": {
@@ -83,18 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GreyListChIP.html"
     },
     {
-      "@id": "_:N176649cc71524dd48740b114b52a0cff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N0c9c8f8eb78147af8bde205552e9be72",
+      "@id": "_:N25f59d0423a7499fbc9e41fbfeec13e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -105,8 +98,15 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N6e624856ef17414e99d2350736cf2aae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
     }
   ]
 }

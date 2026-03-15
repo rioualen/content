@@ -36,6 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/humu.21047",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-12-s4-s3",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-2323-0963",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/ws_snps_and_go",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -46,50 +58,50 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nfa02f4b7bd0a478f953ad2b50ced7654"
+          "@id": "_:N799f1fca5836411cb0307dbe015d2e8e"
         },
         {
-          "@id": "_:Nf0ccbfaccadc40e7a6e288fe65f6f539"
+          "@id": "_:N402f2acd00eb4713806973a67148f7ad"
         },
         {
-          "@id": "_:N20b08b9c9c384f27aeafa1a267cd560b"
+          "@id": "_:N5c07889f20dc488f9da7dc1a978aa2db"
         },
         {
-          "@id": "_:N16c4bae4e56b47beb51b4bd72ca21f4f"
+          "@id": "_:Nd91bdd82bdd14dd6be6616831951620c"
         }
       ],
       "bsc:output": {
-        "@id": "_:N81ac4581fa0f4c4abeb49cf2c1cb705f"
+        "@id": "_:N18522347396842b8a0ed4e3c890bfec6"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web service"
+        "Web service",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_3325"
         },
         {
           "@id": "edam:topic_0123"
         },
         {
-          "@id": "edam:topic_3325"
+          "@id": "edam:topic_0634"
         }
       ],
       "sc:author": {
         "@id": "http://orcid.org/0000-0002-2323-0963"
       },
       "sc:citation": [
-        "pubmed:19514061",
+        "pmcid:PMC3194195",
         {
           "@id": "https://doi.org/10.1002/humu.21047"
         },
-        "pmcid:PMC3194195",
+        "pubmed:21992054",
+        "pubmed:19514061",
         {
           "@id": "https://doi.org/10.1186/1471-2105-12-s4-s3"
-        },
-        "pubmed:21992054"
+        }
       ],
       "sc:description": "A web server for predicting disease associated variations from protein sequence and structure.",
       "sc:featureList": {
@@ -98,9 +110,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "WS-SNPs-and-GO",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -110,40 +122,7 @@
       "sc:url": "http://snps.biofold.org/snps-and-go"
     },
     {
-      "@id": "_:N81ac4581fa0f4c4abeb49cf2c1cb705f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1622"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Disease report"
-    },
-    {
-      "@id": "_:Nfa02f4b7bd0a478f953ad2b50ced7654",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1127"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "PDB ID"
-    },
-    {
-      "@id": "_:Nf0ccbfaccadc40e7a6e288fe65f6f539",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1176"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "GO concept ID"
-    },
-    {
-      "@id": "_:N20b08b9c9c384f27aeafa1a267cd560b",
+      "@id": "_:N799f1fca5836411cb0307dbe015d2e8e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1467"
@@ -154,7 +133,29 @@
       "sc:name": "Protein chain"
     },
     {
-      "@id": "_:N16c4bae4e56b47beb51b4bd72ca21f4f",
+      "@id": "_:N402f2acd00eb4713806973a67148f7ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1176"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "GO concept ID"
+    },
+    {
+      "@id": "_:N5c07889f20dc488f9da7dc1a978aa2db",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1127"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "PDB ID"
+    },
+    {
+      "@id": "_:Nd91bdd82bdd14dd6be6616831951620c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2209"
@@ -165,16 +166,15 @@
       "sc:name": "Mutation ID"
     },
     {
-      "@id": "http://orcid.org/0000-0002-2323-0963",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1002/humu.21047",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-12-s4-s3",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N18522347396842b8a0ed4e3c890bfec6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1622"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Disease report"
     }
   ]
 }

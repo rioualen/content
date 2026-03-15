@@ -36,6 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btx817",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8468-2050",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7502-7545",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/pcgr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,52 +55,52 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nfa1b19a1d0534f918dfd9667a390d96d"
+          "@id": "_:N71089ce5536d4974a0ef1f2e265aa2c5"
         },
         {
-          "@id": "_:N1ee5edd9276e4c82bbbb27ac1d5b6e11"
+          "@id": "_:N153e1a335dd042bab441e3b26c96db0a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbc7384047a144e0fa89ddb78280793f8"
+          "@id": "_:N0983a75ad9ec4ec795b403d314e17fa1"
         },
         {
-          "@id": "_:Na712921871b84e0786e8d45ca9982738"
+          "@id": "_:Ne7ee03943b1e4b258c7bd045fba1157f"
         },
         {
-          "@id": "_:Nc9425281153b400bb7ea0796fed07c99"
+          "@id": "_:Naff7f0e796c243408fa49c748081d350"
         },
         {
-          "@id": "_:N96d7fe997a3e4114a0e28331ff88ecea"
+          "@id": "_:N0768e352b77e44fdbf7193f71a1564da"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
-        },
-        {
-          "@id": "edam:topic_0199"
-        },
-        {
-          "@id": "edam:topic_3175"
-        },
-        {
-          "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_0622"
-        },
-        {
           "@id": "edam:topic_3374"
+        },
+        {
+          "@id": "edam:topic_3577"
         },
         {
           "@id": "edam:topic_0085"
         },
         {
-          "@id": "edam:topic_3577"
+          "@id": "edam:topic_2640"
+        },
+        {
+          "@id": "edam:topic_0199"
+        },
+        {
+          "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_3175"
+        },
+        {
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:author": {
@@ -107,29 +119,26 @@
       "sc:description": "The Personal Cancer Genome Reporter (PCGR) is a stand-alone software package for translation of individual tumor genomes for precision cancer medicine. PCGR interprets primarily somatic SNVs/InDels and copy number aberrations. The software extends basic gene and variant annotations from the Ensembl's Variant Effect Predictor (VEP) with oncology-relevant, up-to-date annotations, and produces interactive HTML reports intended for clinical interpretation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3226"
-        },
-        {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_0331"
         },
         {
           "@id": "edam:operation_3225"
         },
         {
-          "@id": "edam:operation_0331"
+          "@id": "edam:operation_3672"
+        },
+        {
+          "@id": "edam:operation_3226"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "PCGR - Personal Cancer Genome Reporter",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": [
-        {
-          "@id": "https://sigven.github.io/pcgr/articles/running.html#all-options"
-        },
         {
           "@id": "https://sigven.github.io/pcgr/authors.html#citation"
         },
@@ -137,17 +146,31 @@
           "@id": "https://sigven.github.io/pcgr/articles/installation.html"
         },
         {
-          "@id": "https://sigven.github.io/pcgr/articles/CHANGELOG.html"
+          "@id": "https://sigven.github.io/pcgr"
         },
         {
-          "@id": "https://sigven.github.io/pcgr"
+          "@id": "https://sigven.github.io/pcgr/articles/running.html#all-options"
+        },
+        {
+          "@id": "https://sigven.github.io/pcgr/articles/CHANGELOG.html"
         }
       ],
       "sc:softwareVersion": "1.0.2",
       "sc:url": "https://github.com/sigven/pcgr"
     },
     {
-      "@id": "_:Nfa1b19a1d0534f918dfd9667a390d96d",
+      "@id": "_:N71089ce5536d4974a0ef1f2e265aa2c5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N153e1a335dd042bab441e3b26c96db0a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
@@ -158,40 +181,7 @@
       "sc:name": "Text data"
     },
     {
-      "@id": "_:N1ee5edd9276e4c82bbbb27ac1d5b6e11",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:Nbc7384047a144e0fa89ddb78280793f8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:Na712921871b84e0786e8d45ca9982738",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nc9425281153b400bb7ea0796fed07c99",
+      "@id": "_:N0983a75ad9ec4ec795b403d314e17fa1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -202,7 +192,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N96d7fe997a3e4114a0e28331ff88ecea",
+      "@id": "_:Ne7ee03943b1e4b258c7bd045fba1157f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -213,16 +203,26 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx817",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Naff7f0e796c243408fa49c748081d350",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
     },
     {
-      "@id": "https://orcid.org/0000-0002-7502-7545",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8468-2050",
-      "@type": "sc:Person"
+      "@id": "_:N0768e352b77e44fdbf7193f71a1564da",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     }
   ]
 }

@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-5122-2418",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/htsanalyzer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,48 +43,48 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nb6d38946163d4109be227cf2b60eaeb0"
+          "@id": "_:N14b30a9eddce4d168af696f913cb256c"
         },
         {
-          "@id": "_:N8021da535f894f098cd0501c153157bf"
+          "@id": "_:Ne8340af3a6054411a5eddd4f2f8a4bf2"
         },
         {
-          "@id": "_:Naa28fab630d94cb6bed78693b4f84af5"
+          "@id": "_:N18fb0fbc8815413997b52b7ca6222bb0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5689805b0a924a7bb66bcb5b134b88b2"
+          "@id": "_:N8a3ef9e87dbb4b388c86055c3fc4b03c"
         },
         {
-          "@id": "_:Neef9a8bff9a943239714524d41b27242"
+          "@id": "_:N087978a0683a428ba84f5269785fbdd0"
         },
         {
-          "@id": "_:Nb7d1c1329cfd4e41a41a7bebae36af5c"
+          "@id": "_:N19bdac7f260047e88e858361a764c407"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0085"
         },
         {
-          "@id": "edam:topic_3523"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_3523"
         }
       ],
       "sc:citation": [
-        "pubmed:21258062",
         "pmcid:PMC3051329",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr028"
-        }
+        },
+        "pubmed:21258062"
       ],
       "sc:description": "This package provides classes and methods for gene set over-representation, enrichment and network analyses on high-throughput screens. A pipeline is also specifically designed for cellHTS2 object to perform integrative network analyses of high-throughput RNA interference screens. The users can build their own analysis pipeline for their own data set based on this package.",
       "sc:featureList": [
@@ -105,9 +101,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "HTSanalyzeR",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/HTSanalyzeR.html"
@@ -116,7 +112,64 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/HTSanalyzeR.html"
     },
     {
-      "@id": "_:Nb6d38946163d4109be227cf2b60eaeb0",
+      "@id": "_:N8a3ef9e87dbb4b388c86055c3fc4b03c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N087978a0683a428ba84f5269785fbdd0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N19bdac7f260047e88e858361a764c407",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N14b30a9eddce4d168af696f913cb256c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -127,18 +180,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N8021da535f894f098cd0501c153157bf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:Naa28fab630d94cb6bed78693b4f84af5",
+      "@id": "_:Ne8340af3a6054411a5eddd4f2f8a4bf2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -149,61 +191,19 @@
       "sc:name": "ID list"
     },
     {
-      "@id": "_:N5689805b0a924a7bb66bcb5b134b88b2",
+      "@id": "_:N18fb0fbc8815413997b52b7ca6222bb0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_2603"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:Neef9a8bff9a943239714524d41b27242",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:Nb7d1c1329cfd4e41a41a7bebae36af5c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Report"
+      "@id": "http://orcid.org/0000-0002-5122-2418",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btr028",

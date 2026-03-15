@@ -43,30 +43,36 @@
       "@id": "https://bio.tools/mole_pymol_plugin",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Lukáš Pravda",
+        "Primary Contact",
         "Karel Berka",
-        "David Sehnal",
-        "Primary Contact"
+        "Lukáš Pravda",
+        "David Sehnal"
       ],
       "bsc:input": [
         {
-          "@id": "_:N1d2d56d017e54b1697973b7142ba79f8"
+          "@id": "_:N28a4bc3b2eec4f9b98df239e16afe574"
         },
         {
-          "@id": "_:Nb2fe9ae0e5c24ce5aee4258e466d761d"
+          "@id": "_:N3174f6cbe706471d9921affb9d73d9fc"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne2235bbd9f75419da6fb26308edc0e8c"
+          "@id": "_:N240251e4ea8e497cbab536947a692cc8"
         },
         {
-          "@id": "_:Na1712849e12948b9b9b7a39989b7238d"
+          "@id": "_:Nd47b9ba7ca41460bae2a0b2f36a66b7f"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_0128"
+        },
         {
           "@id": "edam:topic_0821"
         },
@@ -78,12 +84,6 @@
         },
         {
           "@id": "edam:topic_0123"
-        },
-        {
-          "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0128"
         }
       ],
       "sc:author": "Lukáš Pravda",
@@ -91,13 +91,13 @@
         {
           "@id": "https://doi.org/10.1186/1758-2946-5-39"
         },
-        "pmcid:PMC3765717",
-        "pubmed:23953065"
+        "pubmed:23953065",
+        "pmcid:PMC3765717"
       ],
       "sc:description": "Plugin for MOLE 2.0 contains extended options for channel starting point automatic detection, for filtering of obtained channels to select only the relevant channels and allows estimation of basic physicochemical properties of channels.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0245"
+          "@id": "edam:operation_1816"
         },
         {
           "@id": "edam:operation_0250"
@@ -106,7 +106,7 @@
           "@id": "edam:operation_0570"
         },
         {
-          "@id": "edam:operation_1816"
+          "@id": "edam:operation_0245"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -118,8 +118,8 @@
         "Windows"
       ],
       "sc:provider": [
-        "ELIXIR-CZ",
         "Palacký University Olomouc, Czech Republic",
+        "ELIXIR-CZ",
         "Masaryk University Brno, Czech Republic"
       ],
       "sc:softwareHelp": {
@@ -129,29 +129,23 @@
       "sc:url": "http://webchem.ncbr.muni.cz/Platform/AppsBin/Mole/2.13.9.6/Mole2_pymol.zip"
     },
     {
-      "@id": "_:N1d2d56d017e54b1697973b7142ba79f8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1127"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "PDB ID"
-    },
-    {
-      "@id": "_:Nb2fe9ae0e5c24ce5aee4258e466d761d",
+      "@id": "_:N240251e4ea8e497cbab536947a692cc8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1475"
+        }
+      ],
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Ne2235bbd9f75419da6fb26308edc0e8c",
+      "@id": "_:Nd47b9ba7ca41460bae2a0b2f36a66b7f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1539"
@@ -162,20 +156,26 @@
       "sc:name": "Protein structural quality report"
     },
     {
-      "@id": "_:Na1712849e12948b9b9b7a39989b7238d",
+      "@id": "_:N28a4bc3b2eec4f9b98df239e16afe574",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1475"
-        },
-        {
-          "@id": "edam:format_1476"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N3174f6cbe706471d9921affb9d73d9fc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1127"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "PDB ID"
     }
   ]
 }

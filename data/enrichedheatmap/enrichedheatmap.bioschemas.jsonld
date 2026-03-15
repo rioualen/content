@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12864-018-4625-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/enrichedheatmap",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Zuguang Gu",
       "bsc:input": [
         {
-          "@id": "_:Na313d46973394fe3b8fae694d5829134"
+          "@id": "_:N7f89e1387ec84914ba2a4b6123795963"
         },
         {
-          "@id": "_:N9aaaffaa86ec4f978862cf7de24e483d"
+          "@id": "_:N1f23cf9551ab45ec999941c07e94bd22"
         },
         {
-          "@id": "_:Nbcd1419b2827489dbe0f593a0af00092"
+          "@id": "_:N3d559dd05b68408e82a5dfdd2e5ea33e"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0e4cc3a91c7e47e58264b2ae3c1e308a"
+        "@id": "_:N9c83aab56143495797cb47314069266f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -68,11 +72,11 @@
       ],
       "sc:author": "Zuguang Gu",
       "sc:citation": [
-        "pmcid:PMC5885322",
+        "pubmed:29618320",
         {
           "@id": "https://doi.org/10.1186/s12864-018-4625-x"
         },
-        "pubmed:29618320"
+        "pmcid:PMC5885322"
       ],
       "sc:description": "Enriched heatmap is a special type of heatmap which visualizes the enrichment of genomic signals on specific target regions. Here we implement Enriched heatmap by ComplexHeatmap package.",
       "sc:featureList": {
@@ -81,9 +85,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "EnrichedHeatmap",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/EnrichedHeatmap.html"
@@ -92,40 +96,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/EnrichedHeatmap.html"
     },
     {
-      "@id": "_:Na313d46973394fe3b8fae694d5829134",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N9aaaffaa86ec4f978862cf7de24e483d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1017"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence range"
-    },
-    {
-      "@id": "_:Nbcd1419b2827489dbe0f593a0af00092",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N0e4cc3a91c7e47e58264b2ae3c1e308a",
+      "@id": "_:N9c83aab56143495797cb47314069266f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -136,8 +107,37 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "https://doi.org/10.1186/s12864-018-4625-x",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7f89e1387ec84914ba2a4b6123795963",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N1f23cf9551ab45ec999941c07e94bd22",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N3d559dd05b68408e82a5dfdd2e5ea33e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1017"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence range"
     }
   ]
 }

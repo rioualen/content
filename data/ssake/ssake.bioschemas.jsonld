@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl629",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ssake",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Rene Warren",
       "bsc:input": {
-        "@id": "_:N85a131a3518a4c68b1bbed04674987ac"
+        "@id": "_:N1ce00158cbe1460a84ccc05364f307c7"
       },
       "bsc:output": [
         {
-          "@id": "_:N7d04068269e44a4784ca3b56e2db3684"
+          "@id": "_:Ne78c9bda7bc04e23bf5fe250b664814d"
         },
         {
-          "@id": "_:N06fd29f4a6594998a72b8127d31c4186"
+          "@id": "_:Nd1ecbe755abd48deb175d0c7ec1aea11"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,11 +61,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:17158514",
+        "pmcid:PMC7109930",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btl629"
-        },
-        "pubmed:17158514",
-        "pmcid:PMC7109930"
+        }
       ],
       "sc:description": "A program for assemblying short DNA sequences. The program cycles through sequence data stored in a hash table and progressively searches through a prefix tree for the longest possible k-mer between any two sequencis.",
       "sc:featureList": [
@@ -89,7 +85,18 @@
       "sc:url": "http://www.bcgsc.ca/platform/bioinfo/software/ssake"
     },
     {
-      "@id": "_:N7d04068269e44a4784ca3b56e2db3684",
+      "@id": "_:Ne78c9bda7bc04e23bf5fe250b664814d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:Nd1ecbe755abd48deb175d0c7ec1aea11",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3181"
@@ -100,18 +107,7 @@
       "sc:name": "Sequence assembly report"
     },
     {
-      "@id": "_:N06fd29f4a6594998a72b8127d31c4186",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N85a131a3518a4c68b1bbed04674987ac",
+      "@id": "_:N1ce00158cbe1460a84ccc05364f307c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -120,6 +116,10 @@
         "@id": "edam:format_2546"
       },
       "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btl629",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
