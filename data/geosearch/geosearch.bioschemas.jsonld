@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/geosearch",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Zhicheng Ji",
       "bsc:input": {
-        "@id": "_:N1c66ef19e0c24af8a944c7e046d97db3"
+        "@id": "_:Nfb5736f6ebba4631baa35ad9d474079b"
       },
       "bsc:output": {
-        "@id": "_:N605448d211f44859bc1b3631c1acec51"
+        "@id": "_:N775759f733844f30b1cf43626198b189"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -63,15 +59,15 @@
         }
       ],
       "sc:author": [
-        "Hongkai Ji",
-        "Zhicheng Ji"
+        "Zhicheng Ji",
+        "Hongkai Ji"
       ],
       "sc:citation": [
-        "pmcid:PMC4509590",
         "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        }
+        },
+        "pmcid:PMC4509590"
       ],
       "sc:description": "Extendable search engine for NCBI GEO (Gene Expression Omnibus). Instead of directly searching the term, it can find all the gene names contained in the search term and search all the alias of the gene names simultaneously in GEO database. It also provides other functions such as summarizing common biology keywords in the search results.",
       "sc:featureList": {
@@ -81,9 +77,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "GEOsearch",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "BioConductor",
       "sc:softwareHelp": {
@@ -93,23 +89,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GEOsearch.html"
     },
     {
-      "@id": "_:N605448d211f44859bc1b3631c1acec51",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N1c66ef19e0c24af8a944c7e046d97db3",
+      "@id": "_:Nfb5736f6ebba4631baa35ad9d474079b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -118,6 +98,26 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N775759f733844f30b1cf43626198b189",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2332"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

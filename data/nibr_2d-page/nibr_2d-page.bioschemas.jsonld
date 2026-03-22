@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-7341-1551",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/nibr_2d-page",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-7341-1551"
       },
       "bsc:input": {
-        "@id": "_:N859d96f92a8240cc9ba49fb65516da6c"
+        "@id": "_:Na4858d9ad963467c9c91a33a30eb386b"
       },
       "bsc:output": {
-        "@id": "_:N578082e3284d43188f142c3190974da3"
+        "@id": "_:Na68f94df726e4397bab6fc85501ad3b6"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
@@ -57,10 +53,10 @@
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
+        "pubmed:18617148",
         {
           "@id": "https://doi.org/10.1016/j.jprot.2008.02.005"
-        },
-        "pubmed:18617148"
+        }
       ],
       "sc:description": "World-wide gel-based proteomics database.",
       "sc:featureList": {
@@ -68,9 +64,9 @@
       },
       "sc:name": "NIBR 2D-PAGE",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://world-2dpage.expasy.org/portal/"
@@ -78,7 +74,15 @@
       "sc:url": "http://www.expasy.org/world-2dpage/"
     },
     {
-      "@id": "_:N578082e3284d43188f142c3190974da3",
+      "@id": "_:Na4858d9ad963467c9c91a33a30eb386b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1096"
+      },
+      "sc:name": "Sequence accession (protein)"
+    },
+    {
+      "@id": "_:Na68f94df726e4397bab6fc85501ad3b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
@@ -89,12 +93,8 @@
       "sc:name": "Experiment report"
     },
     {
-      "@id": "_:N859d96f92a8240cc9ba49fb65516da6c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1096"
-      },
-      "sc:name": "Sequence accession (protein)"
+      "@id": "http://orcid.org/0000-0002-7341-1551",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1016/j.jprot.2008.02.005",

@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku847",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mam-pipeline",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N399039c01fe3412786d1d823a6673796"
+        "@id": "_:N5533d8aa8be94413a7cc7b3ca17b80e5"
       },
       "bsc:output": {
-        "@id": "_:N73756ff2131e4e308a39f2b60ccd9819"
+        "@id": "_:N0c8431e1f7ab4108ba62fe1f67470668"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -62,9 +66,9 @@
       },
       "sc:name": "MAM-pipeline",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -74,7 +78,15 @@
       "sc:url": "http://www.biobix.be/mam/"
     },
     {
-      "@id": "_:N73756ff2131e4e308a39f2b60ccd9819",
+      "@id": "_:N5533d8aa8be94413a7cc7b3ca17b80e5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3497"
+      },
+      "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "_:N0c8431e1f7ab4108ba62fe1f67470668",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1893"
@@ -83,18 +95,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Locus ID"
-    },
-    {
-      "@id": "_:N399039c01fe3412786d1d823a6673796",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3497"
-      },
-      "sc:name": "DNA sequence (raw)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku847",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

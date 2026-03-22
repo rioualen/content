@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btac384",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/overprot",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc22a3ff56d2344e7919142bdb4aae0c9"
+          "@id": "_:N0e1c9ea4fd2142a4823716f2caa5f621"
         },
         {
-          "@id": "_:N9d2d0cf9d6874c819a2872339c9fe798"
+          "@id": "_:N6746fe55b11b47d78cbc3e5497859de6"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -75,27 +71,35 @@
       "sc:description": "OverProt creates an overview of secondary structure elements in protein families.\n\nFor each protein family from the CATH database, a secondary structure consensus is available, showing the characteristic helices and β-sheets of the family. A consensus for an arbitrary subset of a family can be computed using User-defined queries.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2488"
+        },
+        {
           "@id": "edam:operation_0570"
         },
         {
           "@id": "edam:operation_0468"
-        },
-        {
-          "@id": "edam:operation_2488"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "OverProt",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://overprot.ncbr.muni.cz/home"
     },
     {
-      "@id": "_:Nc22a3ff56d2344e7919142bdb4aae0c9",
+      "@id": "_:N0e1c9ea4fd2142a4823716f2caa5f621",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2700"
+      },
+      "sc:name": "CATH identifier"
+    },
+    {
+      "@id": "_:N6746fe55b11b47d78cbc3e5497859de6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1742"
@@ -103,12 +107,8 @@
       "sc:name": "PDB residue number"
     },
     {
-      "@id": "_:N9d2d0cf9d6874c819a2872339c9fe798",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2700"
-      },
-      "sc:name": "CATH identifier"
+      "@id": "https://doi.org/10.1093/bioinformatics/btac384",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

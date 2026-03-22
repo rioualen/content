@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-5054-7731",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/metagwgs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,24 +47,24 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Na1fbd5e85974402a922d4a0b3c76a930"
+          "@id": "_:N4a7a6685aeab4ffb996579cf94cc1ac8"
         },
         {
-          "@id": "_:N58d429e818cd4297a365b12a1555f03c"
+          "@id": "_:Ncb50695687244115bc7caa6bd8596769"
         },
         {
-          "@id": "_:Nfba5828cf4ba4ba3a06f887c7c04eb1f"
+          "@id": "_:N8be7156fb5844f409c6d6c9487768d97"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0795797a4819487d92f01582f753e899"
+          "@id": "_:N6723d79e725c4cb59c4d9d744ebffb8c"
         },
         {
-          "@id": "_:N07800adbe3154186befc359659048641"
+          "@id": "_:N724b184ba54d41e98229db6cdc706031"
         },
         {
-          "@id": "_:Na1884e82bfae466880b4b0ca0d3a2837"
+          "@id": "_:N41919aee38ce4679b8f5b01bd5652639"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -71,10 +75,10 @@
       "sc:description": "metagWGS is a workflow dedicated to the analysis of metagenomic data. It allows assembly, taxonomic annotation, and functional annotation of predicted genes. Since release 2.3, binning step with the possibility of cross-alignment is included. It has been developed in collaboration with several CATI BIOS4biol agents. Funded by Antiselfish Project (Labex Ecofect), ExpoMicoPig project (France Futur elevage) and SeqOccIn project (CPER - Occitanie Toulouse / FEDER), ATB_Biofilm funded by PNREST Anses, France genomique (ANR-10-INBS-09-08) and Resalab Ouest.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_0524"
         },
         {
-          "@id": "edam:operation_0524"
+          "@id": "edam:operation_3672"
         },
         {
           "@id": "edam:operation_3460"
@@ -89,13 +93,24 @@
         "@id": "https://genotoul-bioinfo.pages-forge.inrae.fr/metagwgs/master/index.html"
       },
       "sc:softwareVersion": [
-        "2.5.0",
-        "2.3"
+        "2.3",
+        "2.5.0"
       ],
       "sc:url": "https://forgemia.inra.fr/genotoul-bioinfo/metagwgs"
     },
     {
-      "@id": "_:N0795797a4819487d92f01582f753e899",
+      "@id": "_:N4a7a6685aeab4ffb996579cf94cc1ac8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Ncb50695687244115bc7caa6bd8596769",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -106,7 +121,29 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N07800adbe3154186befc359659048641",
+      "@id": "_:N8be7156fb5844f409c6d6c9487768d97",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N6723d79e725c4cb59c4d9d744ebffb8c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N724b184ba54d41e98229db6cdc706031",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -117,7 +154,7 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "_:Na1884e82bfae466880b4b0ca0d3a2837",
+      "@id": "_:N41919aee38ce4679b8f5b01bd5652639",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -126,43 +163,6 @@
         "@id": "edam:format_1915"
       },
       "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:Na1fbd5e85974402a922d4a0b3c76a930",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N58d429e818cd4297a365b12a1555f03c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nfba5828cf4ba4ba3a06f887c7c04eb1f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5054-7731",
-      "@type": "sc:Person"
     }
   ]
 }

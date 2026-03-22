@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3688",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ribotaper",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nad7ef5a5a091413d918b6acf2b90b5d6"
+          "@id": "_:N500e86230e8441988ea43fe43fac56b6"
         },
         {
-          "@id": "_:Nf8241f4444f04179a55937b08c91aa43"
+          "@id": "_:N2074e20838244270b093e2c98ff94e69"
         },
         {
-          "@id": "_:Nf72f3454dd8c4c91a7b3a3d8bb4aa284"
+          "@id": "_:N8aa3e7bb915740ad8091e2a1daba1c98"
         }
       ],
       "bsc:output": {
-        "@id": "_:N1d2c12f696d24837af4ca38092d153a1"
+        "@id": "_:Nc0e2d24c170b489c9ce1928c46e1b0fa"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -58,10 +62,10 @@
         "@id": "edam:topic_0085"
       },
       "sc:citation": [
-        "pubmed:26657557",
         {
           "@id": "https://doi.org/10.1038/nmeth.3688"
-        }
+        },
+        "pubmed:26657557"
       ],
       "sc:description": "New analysis pipeline for Ribosome Profiling (Ribo-seq) experiments, which exploits the triplet periodicity of ribosomal footprints to call translated regions.",
       "sc:featureList": {
@@ -76,37 +80,7 @@
       "sc:url": "https://ohlerlab.mdc-berlin.de/software/RiboTaper_126/"
     },
     {
-      "@id": "_:N1d2c12f696d24837af4ca38092d153a1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:Nad7ef5a5a091413d918b6acf2b90b5d6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:Nf8241f4444f04179a55937b08c91aa43",
+      "@id": "_:N500e86230e8441988ea43fe43fac56b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -117,7 +91,18 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nf72f3454dd8c4c91a7b3a3d8bb4aa284",
+      "@id": "_:N2074e20838244270b093e2c98ff94e69",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N8aa3e7bb915740ad8091e2a1daba1c98",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -128,8 +113,23 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3688",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc0e2d24c170b489c9ce1928c46e1b0fa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_3003"
+        }
+      ],
+      "sc:name": "Gene expression profile"
     }
   ]
 }

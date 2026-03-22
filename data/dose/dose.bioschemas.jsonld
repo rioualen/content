@@ -43,21 +43,21 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nf0643a2141d343378292615c169d3e26"
+          "@id": "_:Ncad5fa65861f49e291d4701de8c21452"
         },
         {
-          "@id": "_:Nf33890cd35af4d4eac8848c85bf30503"
+          "@id": "_:N68b010e56cc746a3b48537bc67b84370"
         },
         {
-          "@id": "_:Necc793f9ac9245d5940b470ab8a056dd"
+          "@id": "_:N20d614c75bc0455baf89a32f868f22f4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N44cb593e90274e65aba47031d1990d0d"
+          "@id": "_:N4c8ee669447d41aa92ccf8e45fd0e04f"
         },
         {
-          "@id": "_:N8e4d55132ad24e0dada8fdc4f8d4ac47"
+          "@id": "_:Nebe41ad554634516ad67e713ac8244d3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -67,10 +67,10 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_3063"
         },
         {
-          "@id": "edam:topic_3063"
+          "@id": "edam:topic_3572"
         }
       ],
       "sc:citation": [
@@ -82,10 +82,10 @@
       "sc:description": "This package implements five methods proposed by Resnik, Schlicker, Jiang, Lin and Wang respectively for measuring semantic similarities among DO terms and gene products. Enrichment analyses including hypergeometric model and gene set enrichment analysis are also implemented for discovering disease associations of high-throughput biological data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3352"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3352"
         },
         {
           "@id": "edam:operation_3223"
@@ -94,9 +94,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "DOSE",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/DOSE.html"
@@ -105,23 +105,40 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/DOSE.html"
     },
     {
-      "@id": "_:N44cb593e90274e65aba47031d1990d0d",
+      "@id": "_:Ncad5fa65861f49e291d4701de8c21452",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_2295"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene ID"
     },
     {
-      "@id": "_:N8e4d55132ad24e0dada8fdc4f8d4ac47",
+      "@id": "_:N68b010e56cc746a3b48537bc67b84370",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0582"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Ontology"
+    },
+    {
+      "@id": "_:N20d614c75bc0455baf89a32f868f22f4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N4c8ee669447d41aa92ccf8e45fd0e04f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -137,45 +154,28 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nf0643a2141d343378292615c169d3e26",
+      "@id": "_:Nebe41ad554634516ad67e713ac8244d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2295"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID"
-    },
-    {
-      "@id": "_:Nf33890cd35af4d4eac8848c85bf30503",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:Necc793f9ac9245d5940b470ab8a056dd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0582"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Ontology"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu684",
-      "@type": "sc:CreativeWork"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     },
     {
       "@id": "http://orcid.org/0000-0002-6485-8781",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu684",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

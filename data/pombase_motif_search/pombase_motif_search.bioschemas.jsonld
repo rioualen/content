@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gku1040",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pombase_motif_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "PomBase",
       "bsc:input": {
-        "@id": "_:N8ecb08dd29ce43d6b389330e4d1a1e53"
+        "@id": "_:N1c04599adf41435c9338425c7dc4df13"
       },
       "bsc:output": {
-        "@id": "_:N7cba193d1ef84435afc827b7c3d8f09f"
+        "@id": "_:Nb28c42fe6b9e4ad69c9dbb5be88a0b83"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -56,11 +52,11 @@
       },
       "sc:author": "Kim Rutherford",
       "sc:citation": [
-        "pubmed:25361970",
         {
           "@id": "https://doi.org/10.1093/nar/gku1040"
         },
-        "pmcid:PMC4383888"
+        "pmcid:PMC4383888",
+        "pubmed:25361970"
       ],
       "sc:description": "Search PomBase protein set for a given motif.",
       "sc:featureList": {
@@ -68,13 +64,13 @@
       },
       "sc:name": "PomBase Motif search",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:provider": [
-        "EMBL-EBI",
-        "Sanger Institute"
+        "Sanger Institute",
+        "EMBL-EBI"
       ],
       "sc:softwareHelp": [
         {
@@ -88,7 +84,15 @@
       "sc:url": "https://www.pombase.org/motif_search"
     },
     {
-      "@id": "_:N8ecb08dd29ce43d6b389330e4d1a1e53",
+      "@id": "_:Nb28c42fe6b9e4ad69c9dbb5be88a0b83",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "_:N1c04599adf41435c9338425c7dc4df13",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1352"
@@ -96,12 +100,8 @@
       "sc:name": "Regular expression"
     },
     {
-      "@id": "_:N7cba193d1ef84435afc827b7c3d8f09f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
+      "@id": "https://doi.org/10.1093/nar/gku1040",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

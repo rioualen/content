@@ -36,44 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/molbev/msu088",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/realphy",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1551198ad99a4081bf32011901964f49"
+          "@id": "_:N21630c64695f42ba8d2468717de4b00c"
         },
         {
-          "@id": "_:N5c0c6793aeb547e9bdbf5fd722a8e79f"
+          "@id": "_:N2709cec3b9a24e1fa8022d08c1ed55d7"
         },
         {
-          "@id": "_:Ne56588ea98c9433999a10d4854a1e033"
+          "@id": "_:N1bc2e95864d8475c850739194917cdea"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nd3e578059f0d4510a7d412ee1bb771c6"
+        "@id": "_:N4df7f8841c81439bbf31d179c64613e0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3299"
       },
       "sc:citation": [
+        "pmcid:PMC3995342",
         {
           "@id": "https://doi.org/10.1093/molbev/msu088"
         },
-        "pmcid:PMC3995342",
         "pubmed:24600054"
       ],
       "sc:description": "The Reference sequence Alignment based Phylogeny builder is a free online pipeline that can infer phylogenetic trees from whole genome sequence data. The user only has to provide genome sequences in FASTA, GenBank or FASTQ formats. From these sequences phylogenetic trees are inferred via PhyML. The alignments, tree files and information on SNPs and deleted sites will be available for download after the analysis is finished.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3478"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_3478"
         }
       ],
       "sc:name": "REALPHY",
@@ -88,7 +92,15 @@
       "sc:url": "https://realphy.unibas.ch/fcgi/realphy"
     },
     {
-      "@id": "_:N1551198ad99a4081bf32011901964f49",
+      "@id": "_:N21630c64695f42ba8d2468717de4b00c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2787"
+      },
+      "sc:name": "NCBI genome accession"
+    },
+    {
+      "@id": "_:N2709cec3b9a24e1fa8022d08c1ed55d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -99,7 +111,7 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:N5c0c6793aeb547e9bdbf5fd722a8e79f",
+      "@id": "_:N1bc2e95864d8475c850739194917cdea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2084"
@@ -110,24 +122,12 @@
       "sc:name": "Nucleic acid report"
     },
     {
-      "@id": "_:Ne56588ea98c9433999a10d4854a1e033",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2787"
-      },
-      "sc:name": "NCBI genome accession"
-    },
-    {
-      "@id": "_:Nd3e578059f0d4510a7d412ee1bb771c6",
+      "@id": "_:N4df7f8841c81439bbf31d179c64613e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
       },
       "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "https://doi.org/10.1093/molbev/msu088",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

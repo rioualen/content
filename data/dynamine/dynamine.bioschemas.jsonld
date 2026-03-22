@@ -36,41 +36,49 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku270",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1038/ncomms3741",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dynamine",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Wim Vranken",
       "bsc:input": {
-        "@id": "_:N4d7653aaaf5d4dd58730490fafaa05c4"
+        "@id": "_:N7b6d4379e0b0469ea8dcdcb48ef680b5"
       },
       "bsc:output": {
-        "@id": "_:N311bb86df4ee4a019acf9590ab092a35"
+        "@id": "_:N5487a8f439e1415ca7b4ff6a5cd8d9b6"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0123"
+        },
         {
           "@id": "edam:topic_3538"
         },
         {
           "@id": "edam:topic_3306"
-        },
-        {
-          "@id": "edam:topic_0123"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4086073",
+        {
+          "@id": "https://doi.org/10.1038/ncomms3741"
+        },
         {
           "@id": "https://doi.org/10.1093/nar/gku270"
         },
-        "pubmed:24225580",
+        "pmcid:PMC4086073",
         "pubmed:24728994",
-        {
-          "@id": "https://doi.org/10.1038/ncomms3741"
-        }
+        "pubmed:24225580"
       ],
       "sc:description": "Protein backbone dynamics prediction from sequence.",
       "sc:featureList": {
@@ -78,9 +86,9 @@
       },
       "sc:name": "DynaMine",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "vub.ac.be",
       "sc:softwareHelp": {
@@ -90,15 +98,7 @@
       "sc:url": "http://dynamine.ibsquare.be/"
     },
     {
-      "@id": "_:N311bb86df4ee4a019acf9590ab092a35",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N4d7653aaaf5d4dd58730490fafaa05c4",
+      "@id": "_:N7b6d4379e0b0469ea8dcdcb48ef680b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -109,12 +109,12 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "https://doi.org/10.1038/ncomms3741",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku270",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N5487a8f439e1415ca7b4ff6a5cd8d9b6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:name": "Protein features"
     }
   ]
 }

@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pasta",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-4525-7793"
       },
       "bsc:input": {
-        "@id": "_:N236f7601a4b64552b4612e5e1f8f3cfd"
+        "@id": "_:N719fe2803ea14a82b0fd47c65b0b1d74"
       },
       "bsc:output": {
-        "@id": "_:N1fec66de176642d998012e2cef46a8a8"
+        "@id": "_:Na2b889f81ae946a8a610075712336c0f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -61,11 +69,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:24848016",
-        "pmcid:PMC4086119",
         {
           "@id": "https://doi.org/10.1093/nar/gku399"
-        }
+        },
+        "pubmed:24848016",
+        "pmcid:PMC4086119"
       ],
       "sc:description": "A web server predictor for amyloid aggregation propensity from protein sequences.",
       "sc:featureList": {
@@ -73,9 +81,9 @@
       },
       "sc:name": "PASTA",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:provider": [
         "ELIXIR-ITA-PADOVA",
@@ -88,18 +96,7 @@
       "sc:url": "http://protein.bio.unipd.it/pasta2/index.html"
     },
     {
-      "@id": "_:N1fec66de176642d998012e2cef46a8a8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3556"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N236f7601a4b64552b4612e5e1f8f3cfd",
+      "@id": "_:N719fe2803ea14a82b0fd47c65b0b1d74",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -110,12 +107,15 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gku399",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
+      "@id": "_:Na2b889f81ae946a8a610075712336c0f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3556"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btx159",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metcirc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Naake",
       "bsc:input": {
-        "@id": "_:Na2365d40bc4d4603a43af5b27a41dd18"
+        "@id": "_:N730246958c4c4ebc9bbaf7b0bdcc8ca0"
       },
       "bsc:output": [
         {
-          "@id": "_:Nee37b88760d3469cb50f91229066cba4"
+          "@id": "_:N6e08fb06723a44ada0a48e8652b88f4a"
         },
         {
-          "@id": "_:N737d9dc40b6b40799b900d70735b090c"
+          "@id": "_:N55f6561a1966466a853217682f39f817"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2259"
-        },
         {
           "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3172"
+        },
+        {
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
@@ -75,13 +79,13 @@
       "sc:description": "This tool comprises a workflow to interactively explore metabolomics data by creating MSP or calculating m/z values and the similarity between precursors.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3925"
+        },
+        {
           "@id": "edam:operation_3801"
         },
         {
           "@id": "edam:operation_3432"
-        },
-        {
-          "@id": "edam:operation_3925"
         },
         {
           "@id": "edam:operation_3694"
@@ -91,45 +95,23 @@
       "sc:license": "GPL-2.0",
       "sc:name": "MetCirc",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://bioconductor.org/packages/release/bioc/manuals/MetCirc/man/MetCirc.pdf"
+          "@id": "http://bioconductor.org/packages/release/bioc/html/MetCirc.html"
         },
         {
-          "@id": "http://bioconductor.org/packages/release/bioc/html/MetCirc.html"
+          "@id": "https://bioconductor.org/packages/release/bioc/manuals/MetCirc/man/MetCirc.pdf"
         }
       ],
       "sc:softwareVersion": "1.0.1",
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/MetCirc.html"
     },
     {
-      "@id": "_:Nee37b88760d3469cb50f91229066cba4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2855"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Distance matrix"
-    },
-    {
-      "@id": "_:N737d9dc40b6b40799b900d70735b090c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Na2365d40bc4d4603a43af5b27a41dd18",
+      "@id": "_:N730246958c4c4ebc9bbaf7b0bdcc8ca0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -145,8 +127,26 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx159",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N6e08fb06723a44ada0a48e8652b88f4a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N55f6561a1966466a853217682f39f817",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2855"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Distance matrix"
     }
   ]
 }

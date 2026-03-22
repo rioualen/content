@@ -36,22 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-3663-0859",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1488-6052",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-015-0595-z",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2324-086X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/biomas_bioinformatic_analysis_of_metagenomic_amplicons",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -59,24 +43,24 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nea20b13800d74bfaaa1ea5a6440d99c2"
+          "@id": "_:Nc9fd1b9dbe2e416e821481dc461d9046"
         },
         {
-          "@id": "_:Nc7c92f6532d04bcda2b158978036c818"
+          "@id": "_:Nf9e4e9b88bdd49e88405bcc3ca9fc4d6"
         },
         {
-          "@id": "_:N42672d8b42f5416096563e44d29bd698"
+          "@id": "_:Nbcd541f9ecd24a15b89cd9e462dcde41"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc64282dcef55422f959c239118a50d41"
+          "@id": "_:N1b162c8fbf7c453884d043227be00889"
         },
         {
-          "@id": "_:Ndb25162755de4b4084553c24240a0ce4"
+          "@id": "_:N9468e8945a704f2ab73b3cf6e26ff437"
         },
         {
-          "@id": "_:Ne650e41ee83a48b99fdf0a42fbb71a91"
+          "@id": "_:Ne5fb8c6224764a708dd390fcf45d3dec"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -88,10 +72,10 @@
         "@id": "https://orcid.org/0000-0003-2324-086X"
       },
       "sc:citation": [
+        "pubmed:26130132",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0595-z"
         },
-        "pubmed:26130132",
         "pmcid:PMC4486701"
       ],
       "sc:contributor": {
@@ -100,28 +84,50 @@
       "sc:description": "BioMaS is a friendly pipeline for Meta-barcoding HTS data analysis specifically designed for users without particular computing skills.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3460"
+        },
+        {
           "@id": "edam:operation_0232"
         },
         {
           "@id": "edam:operation_0496"
-        },
-        {
-          "@id": "edam:operation_3460"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "BioMaS (Bioinformatic analysis of Metagenomic amplicons)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "http://itsonewb.cloud.ba.infn.it/galaxy/tool_runner?tool_id=biomas2_wrapper"
     },
     {
-      "@id": "_:Nc64282dcef55422f959c239118a50d41",
+      "@id": "_:N1b162c8fbf7c453884d043227be00889",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N9468e8945a704f2ab73b3cf6e26ff437",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Ne5fb8c6224764a708dd390fcf45d3dec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -132,7 +138,18 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:Ndb25162755de4b4084553c24240a0ce4",
+      "@id": "_:Nc9fd1b9dbe2e416e821481dc461d9046",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nf9e4e9b88bdd49e88405bcc3ca9fc4d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -143,7 +160,7 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:Ne650e41ee83a48b99fdf0a42fbb71a91",
+      "@id": "_:Nbcd541f9ecd24a15b89cd9e462dcde41",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -154,37 +171,20 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nea20b13800d74bfaaa1ea5a6440d99c2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
+      "@id": "https://orcid.org/0000-0003-1488-6052",
+      "@type": "sc:Person"
     },
     {
-      "@id": "_:Nc7c92f6532d04bcda2b158978036c818",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
+      "@id": "https://orcid.org/0000-0003-2324-086X",
+      "@type": "sc:Person"
     },
     {
-      "@id": "_:N42672d8b42f5416096563e44d29bd698",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
+      "@id": "https://orcid.org/0000-0003-3663-0859",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-015-0595-z",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

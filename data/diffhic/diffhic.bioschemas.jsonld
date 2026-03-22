@@ -36,38 +36,42 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-3564-4813",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/diffhic",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-3564-4813"
       },
       "bsc:input": {
-        "@id": "_:Na7c6d7c8410a4772b917cf7a1f023aaa"
+        "@id": "_:Nbb405c04e4f842edb06414173dda7c47"
       },
       "bsc:output": [
         {
-          "@id": "_:N7f07094d12bb4816bf7260ac38bd4e84"
+          "@id": "_:N70ed6fcf96454649a5be89631e80c4bc"
         },
         {
-          "@id": "_:Nf848017048ef45a6a82ae906a7ad6564"
+          "@id": "_:N6557e56bbe334de9bda449d6bd88f78c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3391"
+          "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3391"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4539688",
         "pubmed:26283514",
+        "pmcid:PMC4539688",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0683-0"
         }
@@ -84,9 +88,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "diffHic",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/diffHic.html"
@@ -95,7 +99,34 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/diffHic.html"
     },
     {
-      "@id": "_:N7f07094d12bb4816bf7260ac38bd4e84",
+      "@id": "_:Nbb405c04e4f842edb06414173dda7c47",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N70ed6fcf96454649a5be89631e80c4bc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N6557e56bbe334de9bda449d6bd88f78c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2589"
@@ -109,37 +140,6 @@
         }
       ],
       "sc:name": "Hierarchy"
-    },
-    {
-      "@id": "_:Nf848017048ef45a6a82ae906a7ad6564",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2333"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Na7c6d7c8410a4772b917cf7a1f023aaa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-3564-4813",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1186/s12859-015-0683-0",

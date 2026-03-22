@@ -40,33 +40,33 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Stephen R. Piccolo",
       "bsc:input": {
-        "@id": "_:N6e7bd0a75b064f039189b5a432ff5a2b"
+        "@id": "_:N22e360e6cb7e4557972bae211dde8ecd"
       },
       "bsc:output": {
-        "@id": "_:N1cb21b0bf1944f4fb50ccca05b4c0809"
+        "@id": "_:N467400e2c4094761a14493842594ee47"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3170"
+        },
         {
           "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_3518"
-        },
-        {
-          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
         "pubmed:24128763",
+        "pmcid:PMC3816418",
         {
           "@id": "https://doi.org/10.1073/pnas.1305823110"
-        },
-        "pmcid:PMC3816418"
+        }
       ],
       "sc:description": "Microarray normalization method to facilitate personalized-medicine workflows that can be applied to one or two channels microarrays. It normalizes each sample individually by modeling and removing probe -and array- specific background noise using only data from within each array.",
       "sc:featureList": {
@@ -86,23 +86,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SCAN.UPC.html"
     },
     {
-      "@id": "_:N1cb21b0bf1944f4fb50ccca05b4c0809",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3111"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_1644"
-        }
-      ],
-      "sc:name": "Processed microarray data"
-    },
-    {
-      "@id": "_:N6e7bd0a75b064f039189b5a432ff5a2b",
+      "@id": "_:N22e360e6cb7e4557972bae211dde8ecd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -116,6 +100,22 @@
         }
       ],
       "sc:name": "Raw microarray data"
+    },
+    {
+      "@id": "_:N467400e2c4094761a14493842594ee47",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3111"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_1644"
+        }
+      ],
+      "sc:name": "Processed microarray data"
     },
     {
       "@id": "https://doi.org/10.1073/pnas.1305823110",

@@ -40,14 +40,14 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Kevin Rue-Albrecht",
       "bsc:input": {
-        "@id": "_:N869134a931744f48ad7aa76bcd627d97"
+        "@id": "_:Ncfdfaae141674f7aab2399faf27b5d76"
       },
       "bsc:output": [
         {
-          "@id": "_:N717b0d49b55948c7b2883b6a95b1f53e"
+          "@id": "_:N049aa679a1084bc39566546ab3c010f5"
         },
         {
-          "@id": "_:N9454372de245497184254c640267cf14"
+          "@id": "_:N2f3b0291d597472da72ce294e1ac08b1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -64,11 +64,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:26968614",
         "pmcid:PMC4788925",
         {
           "@id": "https://doi.org/10.1186/s12859-016-0971-3"
-        }
+        },
+        "pubmed:26968614"
       ],
       "sc:description": "This package contains methods to visualise the expression profile of genes from a microarray or RNA-seq experiment, and offers a supervised clustering approach to identify GO terms containing genes with expression levels that best classify two or more predefined groups of samples.",
       "sc:featureList": {
@@ -77,9 +77,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "GOexpress",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/GOexpress.html"
@@ -88,18 +88,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GOexpress.html"
     },
     {
-      "@id": "_:N869134a931744f48ad7aa76bcd627d97",
+      "@id": "_:N049aa679a1084bc39566546ab3c010f5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_1636"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Gene expression data"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Heat map"
     },
     {
-      "@id": "_:N717b0d49b55948c7b2883b6a95b1f53e",
+      "@id": "_:N2f3b0291d597472da72ce294e1ac08b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -115,20 +120,15 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N9454372de245497184254c640267cf14",
+      "@id": "_:Ncfdfaae141674f7aab2399faf27b5d76",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1636"
+        "@id": "edam:data_2603"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Heat map"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Gene expression data"
     },
     {
       "@id": "https://doi.org/10.1186/s12859-016-0971-3",

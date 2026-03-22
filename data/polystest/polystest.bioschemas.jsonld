@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1074/mcp.RA119.001777",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/PolySTest",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6da96be038f847638719245b9415bc53"
+        "@id": "_:N9c5420f1065041d0b859addbb7facb44"
       },
       "bsc:output": [
         {
-          "@id": "_:Nf6a01e0e04d044cf85af1e5d198c799e"
+          "@id": "_:Na6bd7e1fa6934f068bf83de0dac8ee87"
         },
         {
-          "@id": "_:Nbbd80d7ad821419f9c0a4907d86b51c4"
+          "@id": "_:N1efef0ab542546d0963e5ab37b070417"
         },
         {
-          "@id": "_:N4deced0b3a32417494e4e89f909145df"
+          "@id": "_:N02fb1298fe554706ab5e0c70e714726c"
         },
         {
-          "@id": "_:N174377479c6d46c0b41bde47d2b4f156"
+          "@id": "_:N6c1ffb4234a1449682351dd7d56e808d"
         },
         {
-          "@id": "_:N8f22cc15cbcf43dd9097cbf50faa094d"
+          "@id": "_:N9d7e53ee4eff4997984619782a0a13de"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -72,76 +76,32 @@
         }
       ],
       "sc:citation": [
+        "pmcid:PMC8015005",
+        "pubmed:32424025",
         {
           "@id": "https://doi.org/10.1074/mcp.RA119.001777"
-        },
-        "pmcid:PMC8015005",
-        "pubmed:32424025"
+        }
       ],
       "sc:description": "Robust statistical testing of quantitative proteomics data. The tool comprises and combines different tests and includes a new method for combined statistics of quantitative and missing values.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3664"
+          "@id": "edam:operation_3741"
         },
         {
-          "@id": "edam:operation_3741"
+          "@id": "edam:operation_3664"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "PolySTest",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "http://computproteomics.bmb.sdu.dk/app_direct/PolySTest"
     },
     {
-      "@id": "_:Nf6a01e0e04d044cf85af1e5d198c799e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:Nbbd80d7ad821419f9c0a4907d86b51c4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N4deced0b3a32417494e4e89f909145df",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3905"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3604"
-      },
-      "sc:name": "Histogram"
-    },
-    {
-      "@id": "_:N174377479c6d46c0b41bde47d2b4f156",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3932"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Q-value"
-    },
-    {
-      "@id": "_:N8f22cc15cbcf43dd9097cbf50faa094d",
+      "@id": "_:Na6bd7e1fa6934f068bf83de0dac8ee87",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -152,7 +112,51 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N6da96be038f847638719245b9415bc53",
+      "@id": "_:N1efef0ab542546d0963e5ab37b070417",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3905"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3604"
+      },
+      "sc:name": "Histogram"
+    },
+    {
+      "@id": "_:N02fb1298fe554706ab5e0c70e714726c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N6c1ffb4234a1449682351dd7d56e808d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3932"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Q-value"
+    },
+    {
+      "@id": "_:N9d7e53ee4eff4997984619782a0a13de",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N9c5420f1065041d0b859addbb7facb44",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -166,10 +170,6 @@
         }
       ],
       "sc:name": "Expression data"
-    },
-    {
-      "@id": "https://doi.org/10.1074/mcp.RA119.001777",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

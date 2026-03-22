@@ -36,35 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-8798-5599",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/metams",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-8798-5599"
       },
       "bsc:input": {
-        "@id": "_:Ne2b45fe3be60407ea7c1bdc3573c1394"
+        "@id": "_:N15fbf680b3734c26bb2bde95fdaf1664"
       },
       "bsc:output": [
         {
-          "@id": "_:N5c607e9eebd24544a51bdb88751d0b92"
+          "@id": "_:N9bc2029816c34680901547bfd379ca92"
         },
         {
-          "@id": "_:Nbaef38033500487890c7e7b8fa2b5880"
+          "@id": "_:N9403d5819de54fddae33bf19eb11c250"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3172"
       },
       "sc:citation": [
+        "pubmed:24656939",
         {
           "@id": "https://doi.org/10.1016/j.jchromb.2014.02.051"
-        },
-        "pubmed:24656939"
+        }
       ],
       "sc:description": "MS-based metabolomics data processing and compound annotation pipeline.",
       "sc:featureList": {
@@ -73,9 +77,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "metaMS",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/metaMS.html"
@@ -84,29 +88,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/metaMS.html"
     },
     {
-      "@id": "_:N5c607e9eebd24544a51bdb88751d0b92",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:Nbaef38033500487890c7e7b8fa2b5880",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_4039"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:Ne2b45fe3be60407ea7c1bdc3573c1394",
+      "@id": "_:N15fbf680b3734c26bb2bde95fdaf1664",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -117,12 +99,30 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "https://doi.org/10.1016/j.jchromb.2014.02.051",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9bc2029816c34680901547bfd379ca92",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_4039"
+      },
+      "sc:name": "Mass spectrum"
     },
     {
-      "@id": "http://orcid.org/0000-0002-8798-5599",
-      "@type": "sc:Person"
+      "@id": "_:N9403d5819de54fddae33bf19eb11c250",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jchromb.2014.02.051",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

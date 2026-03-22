@@ -36,46 +36,42 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0036995",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/salmonella_crispr_typing",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Laetitia Fabre",
-        "Kenzo Hugo Hillion"
+        "Kenzo Hugo Hillion",
+        "Laetitia Fabre"
       ],
       "bsc:input": {
-        "@id": "_:Naea26fa532d24208a259876b6a822e83"
+        "@id": "_:Nf26f4b0b7e10482791f0c8ff745126c6"
       },
       "bsc:output": [
         {
-          "@id": "_:Nbc13c19198634e7583abc699457e9fae"
+          "@id": "_:Naa260705add3424fb917afd03c070feb"
         },
         {
-          "@id": "_:Nfe685e02c7d54db38db3ae74438233e8"
+          "@id": "_:Ndd7b4288b2394422afe6c5d13ee185d9"
         },
         {
-          "@id": "_:Nd8883306199c491783b110d995b854ad"
+          "@id": "_:Nae4b8699df984f2284f65eef15795542"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3301"
         },
         {
-          "@id": "edam:topic_3301"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:22623967",
+        "pmcid:PMC3356390",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0036995"
-        },
-        "pmcid:PMC3356390",
-        "pubmed:22623967"
+        }
       ],
       "sc:description": "This tool gets a CRISPR profile by identifying the presence of known spacers and direct repeats (DRs) in a given sequence based on a catalogue.",
       "sc:featureList": {
@@ -85,14 +81,14 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Salmonella CRISPR typing",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "Bioinformatics and Biostatistics Hub",
-        "C3BI",
         "Enteric Bacterial Pathogens",
-        "Institut Pasteur"
+        "Institut Pasteur",
+        "C3BI",
+        "Bioinformatics and Biostatistics Hub"
       ],
       "sc:softwareHelp": {
         "@id": "https://research.pasteur.fr/en/guides"
@@ -101,18 +97,7 @@
       "sc:url": "https://research.pasteur.fr/team/enteric-bacterial-pathogens/"
     },
     {
-      "@id": "_:Nbc13c19198634e7583abc699457e9fae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:Nfe685e02c7d54db38db3ae74438233e8",
+      "@id": "_:Naa260705add3424fb917afd03c070feb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2070"
@@ -123,7 +108,18 @@
       "sc:name": "Sequence motif (nucleic acid)"
     },
     {
-      "@id": "_:Nd8883306199c491783b110d995b854ad",
+      "@id": "_:Ndd7b4288b2394422afe6c5d13ee185d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:Nae4b8699df984f2284f65eef15795542",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -134,7 +130,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Naea26fa532d24208a259876b6a822e83",
+      "@id": "_:Nf26f4b0b7e10482791f0c8ff745126c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -143,6 +139,10 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0036995",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     },
@@ -44,14 +48,14 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N20531eaf24f84ae2aed6001e6d27d539"
+        "@id": "_:N1cd2fc9ea0804383a328c2f87885115a"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd57011619aaa4d9798b3c1c41217ea76"
+          "@id": "_:N07ca51da123f4823ad33dcb320155977"
         },
         {
-          "@id": "_:N86fc2d15c55c4a7ebb320d6e5a1bd776"
+          "@id": "_:Nac79ab16e8634358a295f863e3a5beed"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -60,13 +64,13 @@
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
-        },
         "pmcid:PMC4987906",
         "pubmed:27137889",
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        },
+        {
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         }
       ],
       "sc:description": "Marks all duplicate reads in a provided SAM or BAM file and either removes them or flags them.",
@@ -75,9 +79,9 @@
       },
       "sc:name": "MarkDuplicates (IP)",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/broadinstitute/picard"
@@ -86,7 +90,29 @@
       "sc:url": "https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/picard_pasteur_wrapper/rgPicardMarkDups/1.56.0"
     },
     {
-      "@id": "_:N20531eaf24f84ae2aed6001e6d27d539",
+      "@id": "_:N07ca51da123f4823ad33dcb320155977",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nac79ab16e8634358a295f863e3a5beed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N1cd2fc9ea0804383a328c2f87885115a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -100,32 +126,6 @@
         }
       ],
       "sc:name": "Data"
-    },
-    {
-      "@id": "_:Nd57011619aaa4d9798b3c1c41217ea76",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:N86fc2d15c55c4a7ebb320d6e5a1bd776",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

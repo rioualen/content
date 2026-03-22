@@ -36,57 +36,45 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu146",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts635",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4106",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/star",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "rna-styar team",
       "bsc:input": {
-        "@id": "_:N480a6840238d4269b2d01e05d16f64d4"
+        "@id": "_:Na3b6f43770e34679b33f6d76e35c082e"
       },
       "bsc:output": [
         {
-          "@id": "_:N9583a4b30c254fbea93f3ec78f633b50"
+          "@id": "_:Ncb8a2f3da4204210aed7c8c0e95e4636"
         },
         {
-          "@id": "_:N10ea007ddbca47199d97b155b687a8a8"
+          "@id": "_:Naec8b8c09d104f64a175382a6b5128d2"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
+        "pubmed:24626854",
+        "pubmed:23104886",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btu146"
+        },
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts635"
         },
+        "pubmed:27941783",
+        "pmcid:PMC3530905",
         {
           "@id": "https://doi.org/10.1038/nmeth.4106"
         },
-        "pubmed:27941783",
-        "pmcid:PMC3530905",
-        "pubmed:23104886",
-        "pmcid:PMC5792058",
-        "pubmed:24626854",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btu146"
-        }
+        "pmcid:PMC5792058"
       ],
       "sc:description": "Ultrafast universal RNA-seq data aligner",
       "sc:featureList": {
@@ -100,17 +88,25 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/alexdobin/STAR/releases"
+          "@id": "https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf"
         },
         {
-          "@id": "https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf"
+          "@id": "https://github.com/alexdobin/STAR/releases"
         }
       ],
       "sc:softwareVersion": "2.7.11",
       "sc:url": "http://code.google.com/p/rna-star/"
     },
     {
-      "@id": "_:N9583a4b30c254fbea93f3ec78f633b50",
+      "@id": "_:Ncb8a2f3da4204210aed7c8c0e95e4636",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Naec8b8c09d104f64a175382a6b5128d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -126,15 +122,7 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:N10ea007ddbca47199d97b155b687a8a8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N480a6840238d4269b2d01e05d16f64d4",
+      "@id": "_:Na3b6f43770e34679b33f6d76e35c082e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -143,6 +131,18 @@
         "@id": "edam:format_1930"
       },
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts635",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu146",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.4106",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

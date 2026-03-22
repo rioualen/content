@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-9412-9643",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/targetp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-9412-9643"
       },
       "bsc:input": {
-        "@id": "_:N1c02eb66a7d343ca9ff5065b041fb67a"
+        "@id": "_:N652e6d81edd649e898a2fa5295c9e67a"
       },
       "bsc:output": {
-        "@id": "_:N42dfd316352844ff80e1fc04beada146"
+        "@id": "_:N173a119ef65848c3863013bcd172290e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
         "Web service",
+        "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3510"
       },
       "sc:citation": [
-        "pubmed:10891285",
         {
           "@id": "https://doi.org/10.1006/jmbi.2000.3903"
-        }
+        },
+        "pubmed:10891285"
       ],
       "sc:description": "Prediction of the subcellular location of eukaryotic proteins.",
       "sc:featureList": {
@@ -78,18 +82,7 @@
       "sc:url": "http://cbs.dtu.dk/services/TargetP/"
     },
     {
-      "@id": "_:N1c02eb66a7d343ca9ff5065b041fb67a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N42dfd316352844ff80e1fc04beada146",
+      "@id": "_:N173a119ef65848c3863013bcd172290e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -100,8 +93,15 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "http://orcid.org/0000-0002-9412-9643",
-      "@type": "sc:Person"
+      "@id": "_:N652e6d81edd649e898a2fa5295c9e67a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     },
     {
       "@id": "https://doi.org/10.1006/jmbi.2000.3903",

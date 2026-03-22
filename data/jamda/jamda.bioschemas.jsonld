@@ -36,43 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/jcc.26522",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jcim.0c01095",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jcim.3c01573",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/jamda",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7dbc796d115d426b84e9f3b548d3451d"
+          "@id": "_:N2a1f7f5f2d704ba3bbec30313be5e616"
         },
         {
-          "@id": "_:N49fd9c53136a499d82991ea7e72b635a"
+          "@id": "_:Na8be504fad9b4fb7af495c25d984f2ae"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N47af07e747f64c1bb3130c30f3d4ec03"
+          "@id": "_:N94ee010c6ee143cca2c7f67f49e593f1"
         },
         {
-          "@id": "_:N1b4fbe715aae438280f766c8dc8d6369"
+          "@id": "_:N01d6d7ff53964885aa973b7a1fcdbd5e"
         },
         {
-          "@id": "_:N027364a4bb504a9ca3b526f7221d3098"
+          "@id": "_:Nba1a9faa5cf449bf869f9b6b499dab96"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web service"
+        "Web service",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -84,13 +72,13 @@
       ],
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1002/jcc.26522"
-        },
-        {
           "@id": "https://doi.org/10.1021/acs.jcim.3c01573"
         },
         {
           "@id": "https://doi.org/10.1021/acs.jcim.0c01095"
+        },
+        {
+          "@id": "https://doi.org/10.1002/jcc.26522"
         }
       ],
       "sc:description": "JAMDA enables the preparation of individual protein structures and the docking of small molecules in preprocessed binding sites of choice. JAMDA simplifies the process of protein-ligand docking by automatic preprocessing protocols for the protein and binding sites of interest. The JAMDAscore scoring function retrieved 75% of the native poses in the three highest-ranked solutions for high-quality protein-ligand complexes with default settings. Individual configurations for protein preparation are available, e.g., considering protein ensembles, relevant binding site water molecules, or cofactors. A user-defined number of input conformations for the ligands of interest can be generated fully automated using Conformator. Alternatively, users can also provide externally prepared ligand conformers.",
@@ -101,39 +89,15 @@
       "sc:license": "Other",
       "sc:name": "JAMDA",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
       "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/jamda.html"
     },
     {
-      "@id": "_:N7dbc796d115d426b84e9f3b548d3451d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2301"
-      },
-      "sc:name": "SMILES string"
-    },
-    {
-      "@id": "_:N49fd9c53136a499d82991ea7e72b635a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N47af07e747f64c1bb3130c30f3d4ec03",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:N1b4fbe715aae438280f766c8dc8d6369",
+      "@id": "_:N94ee010c6ee143cca2c7f67f49e593f1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
@@ -141,12 +105,48 @@
       "sc:name": "Protein-ligand complex"
     },
     {
-      "@id": "_:N027364a4bb504a9ca3b526f7221d3098",
+      "@id": "_:N01d6d7ff53964885aa973b7a1fcdbd5e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:Nba1a9faa5cf449bf869f9b6b499dab96",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:name": "Score"
+    },
+    {
+      "@id": "_:N2a1f7f5f2d704ba3bbec30313be5e616",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2301"
+      },
+      "sc:name": "SMILES string"
+    },
+    {
+      "@id": "_:Na8be504fad9b4fb7af495c25d984f2ae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jcim.0c01095",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jcim.3c01573",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/jcc.26522",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,35 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu205",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/readxplorer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2ff93a6a149f4c2cac0dd79a05ea06db"
+          "@id": "_:Nb41dc2aee7b74b079235f89d44c2c17a"
         },
         {
-          "@id": "_:N07478790762d41f1ac53bf0eb720bfe4"
+          "@id": "_:N0f664075d2714dbd9e8252139aeab7ec"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0122"
+        },
+        {
           "@id": "edam:topic_3308"
         },
         {
           "@id": "edam:topic_0797"
-        },
-        {
-          "@id": "edam:topic_0122"
         }
       ],
       "sc:citation": [
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu205"
         },
-        "pmcid:PMC4217279",
-        "pubmed:24790157"
+        "pubmed:24790157",
+        "pmcid:PMC4217279"
       ],
       "sc:description": "Freely available comprehensive exploration and evaluation tool for NGS data. It extracts and adds quantity and quality measures to each alignment in order to classify the mapped reads. This classification is then taken into account for the different data views and all supported automatic analysis functions.",
       "sc:featureList": {
@@ -74,9 +78,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ReadXplorer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": "bigi",
       "sc:softwareHelp": {
@@ -86,7 +90,29 @@
       "sc:url": "http://readxplorer.org"
     },
     {
-      "@id": "_:N2ff93a6a149f4c2cac0dd79a05ea06db",
+      "@id": "_:Nb41dc2aee7b74b079235f89d44c2c17a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2887"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1936"
+        },
+        {
+          "@id": "edam:format_1927"
+        },
+        {
+          "@id": "edam:format_1975"
+        }
+      ],
+      "sc:name": "Nucleic acid sequence record"
+    },
+    {
+      "@id": "_:N0f664075d2714dbd9e8252139aeab7ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -95,32 +121,6 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N07478790762d41f1ac53bf0eb720bfe4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2887"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1927"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1975"
-        },
-        {
-          "@id": "edam:format_1936"
-        }
-      ],
-      "sc:name": "Nucleic acid sequence record"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu205",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

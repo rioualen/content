@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ClustalW2_Phylogeny_API_EBI",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nea2572d9eb8d4bb99b0c30c2dd200125"
+        "@id": "_:N96ff14ad9e5b458eaafdbe87b718cf7e"
       },
       "bsc:output": {
-        "@id": "_:Ndee2b2d5a31b4df1a3c6184028418400"
+        "@id": "_:N71a2627b1a524509b81807dc277f3f47"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3293"
         },
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:17846036",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btm404"
-        },
-        "pubmed:17846036"
+        }
       ],
       "sc:description": "Create Neighbor-joining or UPGMA phylogentic trees from a multiple sequence alignment using ClustalW.",
       "sc:featureList": {
@@ -66,8 +70,8 @@
       },
       "sc:name": "ClustalW2 Phylogeny API EBI",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:softwareHelp": {
@@ -77,15 +81,7 @@
       "sc:url": "https://www.ebi.ac.uk/seqdb/confluence/pages/viewpage.action?pageId=54651945"
     },
     {
-      "@id": "_:Ndee2b2d5a31b4df1a3c6184028418400",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:Nea2572d9eb8d4bb99b0c30c2dd200125",
+      "@id": "_:N96ff14ad9e5b458eaafdbe87b718cf7e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -93,8 +89,12 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N71a2627b1a524509b81807dc277f3f47",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:name": "Phylogenetic tree"
     }
   ]
 }

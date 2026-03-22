@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-3977-7469",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts389",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/enrichnet",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,14 +51,14 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N5ddf9d4e52b54f86867f4e70f036470b"
+          "@id": "_:N114ee73f079146e3a5546cfa5bbfbb47"
         },
         {
-          "@id": "_:N47f68da1b4084128a25b4a0d9c7f1006"
+          "@id": "_:N05b205af9f4847d29143b5b74630d7ae"
         }
       ],
       "bsc:output": {
-        "@id": "_:N245b64492c56430daf5836cd21611f3f"
+        "@id": "_:N219755b5ed1443268feb4d9778ad2add"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -66,11 +74,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3436816",
         "pubmed:22962466",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts389"
-        }
+        },
+        "pmcid:PMC3436816"
       ],
       "sc:description": "Network-based enrichment analysis",
       "sc:featureList": {
@@ -79,9 +87,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "EnrichNet",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "lumc.nl",
       "sc:softwareHelp": {
@@ -91,26 +99,7 @@
       "sc:url": "http://www.enrichnet.org/"
     },
     {
-      "@id": "_:N5ddf9d4e52b54f86867f4e70f036470b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N47f68da1b4084128a25b4a0d9c7f1006",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1033"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Ensembl gene ID"
-    },
-    {
-      "@id": "_:N245b64492c56430daf5836cd21611f3f",
+      "@id": "_:N219755b5ed1443268feb4d9778ad2add",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -121,12 +110,23 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts389",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N114ee73f079146e3a5546cfa5bbfbb47",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1033"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "http://orcid.org/0000-0003-3977-7469",
-      "@type": "sc:Person"
+      "@id": "_:N05b205af9f4847d29143b5b74630d7ae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
     }
   ]
 }
