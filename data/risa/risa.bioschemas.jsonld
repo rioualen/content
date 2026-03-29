@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-15-S7-S11",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-3499-8262",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/risa",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-3499-8262"
       },
       "bsc:input": {
-        "@id": "_:Na7fb671dd5b84dc0ab82ef461a28f12d"
+        "@id": "_:N69910586a7054df19cb18da3223de4d8"
       },
       "bsc:output": {
-        "@id": "_:Ncf5d05011f07488aa20216097e3df290"
+        "@id": "_:Nf6b4fc0afade4f9ca23af93bebfcbd7c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -56,11 +64,11 @@
         "@id": "edam:topic_3361"
       },
       "sc:citation": [
-        "pmcid:PMC4015122",
         {
           "@id": "https://doi.org/10.1186/1471-2105-15-S7-S11"
         },
-        "pubmed:24564732"
+        "pubmed:24564732",
+        "pmcid:PMC4015122"
       ],
       "sc:description": "This tool allows to access metadata/data in ISA-Tab (Investigation / Study / Assay tab-delimited) format and build BioConductor data structures. Currently, data generated from microarray, flow cytometry and metabolomics-based (i.e. mass spectrometry) assays are supported. The package is extendable and efforts are undergoing to support metadata associated to proteomics assays.",
       "sc:featureList": {
@@ -69,9 +77,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Risa",
       "sc:operatingSystem": [
-        "Linux",
+        "Mac",
         "Windows",
-        "Mac"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/Risa.html"
@@ -80,23 +88,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Risa.html"
     },
     {
-      "@id": "_:Na7fb671dd5b84dc0ab82ef461a28f12d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_3162"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Ncf5d05011f07488aa20216097e3df290",
+      "@id": "_:Nf6b4fc0afade4f9ca23af93bebfcbd7c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -107,12 +99,20 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-15-S7-S11",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-3499-8262",
-      "@type": "sc:Person"
+      "@id": "_:N69910586a7054df19cb18da3223de4d8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3162"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

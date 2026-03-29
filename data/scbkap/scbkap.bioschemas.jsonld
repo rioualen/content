@@ -36,35 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1109/tcbb.2022.3230098",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/scbkap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9d40a612167b4699baad286bc1e166ba"
+        "@id": "_:N3b08d6c9424c4ef996399559c8f803fd"
       },
       "bsc:output": {
-        "@id": "_:Nacf367123ca2485fb9575d986f516133"
+        "@id": "_:N46be2c14269d44c8b1020a27721ce82b"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0602"
+        },
+        {
           "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_0602"
-        },
-        {
           "@id": "edam:topic_3512"
-        },
-        {
-          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
@@ -76,16 +72,16 @@
       "sc:description": "A Clustering Model for Single-Cell RNA-Seq Data Based on Bisecting K-Means.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3432"
-        },
-        {
           "@id": "edam:operation_3891"
         },
         {
-          "@id": "edam:operation_3935"
+          "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_0314"
+        },
+        {
+          "@id": "edam:operation_3935"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -93,13 +89,21 @@
       "sc:name": "scBKAP",
       "sc:operatingSystem": [
         "Mac",
-        "Linux",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:url": "https://github.com/YuBinLab-QUST/scBKAP"
     },
     {
-      "@id": "_:N9d40a612167b4699baad286bc1e166ba",
+      "@id": "_:N46be2c14269d44c8b1020a27721ce82b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "_:N3b08d6c9424c4ef996399559c8f803fd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -110,12 +114,8 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nacf367123ca2485fb9575d986f516133",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:name": "Clustered expression profiles"
+      "@id": "https://doi.org/10.1109/tcbb.2022.3230098",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metagenomefeatures",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nathan D. Olson",
       "bsc:input": [
         {
-          "@id": "_:N9d2c7fd9f6394e03a6a1997eb50d5c06"
+          "@id": "_:N3de4c6f13df34de79602b09b759bfc45"
         },
         {
-          "@id": "_:Nd687e87e95a544c98e496d69dbc46095"
+          "@id": "_:Nfc380c623c674982be23b5c13e79133f"
         },
         {
-          "@id": "_:Na56f935d819342879faef9e668a64042"
+          "@id": "_:N7b0186ec82664810b94e7f23cda7d10a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N66b8704b78994458bbb37d8f2ce0da8b"
+          "@id": "_:Nfa4ec7832c4e411eb1d9ea94490d76c6"
         },
         {
-          "@id": "_:N8f444cb77433430db751bdc6c2f7088e"
+          "@id": "_:N2c8f406f211646bea7d670a906016d9f"
         },
         {
-          "@id": "_:N2638f253fbef41bc8f4ee00d20c230b2"
+          "@id": "_:Nb57cc6068ad348b5a4f07b27931192b9"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -75,11 +79,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "Developed for use in exploring the taxonomic annotations for a marker-gene metagenomic sequence dataset. The package can be used to explore the taxonomic composition of a marker-gene database or annotated sequences from a marker-gene metagenome experiment.",
       "sc:featureList": [
@@ -93,9 +97,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "metagenomeFeatures",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/metagenomeFeatures.html"
@@ -104,7 +108,55 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/metagenomeFeatures.html"
     },
     {
-      "@id": "_:N66b8704b78994458bbb37d8f2ce0da8b",
+      "@id": "_:N3de4c6f13df34de79602b09b759bfc45",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:Nfc380c623c674982be23b5c13e79133f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3567"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Reference sample report"
+    },
+    {
+      "@id": "_:N7b0186ec82664810b94e7f23cda7d10a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3113"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sample annotation"
+    },
+    {
+      "@id": "_:Nfa4ec7832c4e411eb1d9ea94490d76c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -115,18 +167,7 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N8f444cb77433430db751bdc6c2f7088e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3567"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Reference sample report"
-    },
-    {
-      "@id": "_:N2638f253fbef41bc8f4ee00d20c230b2",
+      "@id": "_:N2c8f406f211646bea7d670a906016d9f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3113"
@@ -137,56 +178,15 @@
       "sc:name": "Sample annotation"
     },
     {
-      "@id": "_:N9d2c7fd9f6394e03a6a1997eb50d5c06",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:Nd687e87e95a544c98e496d69dbc46095",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3113"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Sample annotation"
-    },
-    {
-      "@id": "_:Na56f935d819342879faef9e668a64042",
+      "@id": "_:Nb57cc6068ad348b5a4f07b27931192b9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3567"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
       "sc:name": "Reference sample report"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

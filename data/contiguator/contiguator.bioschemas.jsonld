@@ -36,47 +36,51 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1751-0473-6-11",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/contiguator",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6ed4b0f9a553492f88c2125f6845468b"
+        "@id": "_:N65bc0f1e8cf34422995b02d8ae7baee9"
       },
       "bsc:output": {
-        "@id": "_:N2c9ed5414bd246b4809ce3420872b606"
+        "@id": "_:Ncc0131365a5f470caa1d90fa111046ae"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:21693004",
+        "pmcid:PMC3133546",
         {
           "@id": "https://doi.org/10.1186/1751-0473-6-11"
-        },
-        "pmcid:PMC3133546",
-        "pubmed:21693004"
+        }
       ],
       "sc:description": "A bacterial genomes finishing tool for structural insights on draft genomes",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3182"
+          "@id": "edam:operation_3209"
         },
         {
-          "@id": "edam:operation_3209"
+          "@id": "edam:operation_3182"
         }
       ],
       "sc:name": "CONTIGuator",
       "sc:url": "http://contiguator.sourceforge.net/"
     },
     {
-      "@id": "_:N2c9ed5414bd246b4809ce3420872b606",
+      "@id": "_:N65bc0f1e8cf34422995b02d8ae7baee9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:Ncc0131365a5f470caa1d90fa111046ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1711"
@@ -87,12 +91,8 @@
       "sc:name": "Sequence alignment image"
     },
     {
-      "@id": "_:N6ed4b0f9a553492f88c2125f6845468b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
+      "@id": "https://doi.org/10.1186/1751-0473-6-11",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

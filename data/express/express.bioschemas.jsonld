@@ -36,30 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/gb-2011-12-3-r22",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/express",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9a165d256c584271b281d385418b4a4c"
+          "@id": "_:N004a33b222324fd6a6746549606e8ff5"
         },
         {
-          "@id": "_:N0b98f5f12c514339ab23ccc8aa8c2385"
+          "@id": "_:N376572a743a4496ab7d27ec96c92b552"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc30d8bc46b3c41abbd6bc6e368d9c284"
+          "@id": "_:N6175085c47a34dc9beb309c084a604ad"
         },
         {
-          "@id": "_:Ncf99528c1bad4c0297894f882fcc3bf4"
+          "@id": "_:Na0ae5c3b1ba045d98a680d8433d948e8"
         },
         {
-          "@id": "_:N5ee8f1419a8648d8838e11944e4c6582"
+          "@id": "_:N3388f4dd223e46a9bb866920c9092622"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0203"
+        },
         {
           "@id": "edam:topic_3170"
         },
@@ -68,20 +75,17 @@
         },
         {
           "@id": "edam:topic_3169"
-        },
-        {
-          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
         "pmcid:PMC3129672",
-        {
-          "@id": "https://doi.org/10.1186/gb-2011-12-3-r22"
-        },
+        "pubmed:21410973",
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         },
-        "pubmed:21410973"
+        {
+          "@id": "https://doi.org/10.1186/gb-2011-12-3-r22"
+        }
       ],
       "sc:description": "Streaming tool for quantifying the abundances of a set of target sequences from sampled subsequences. Example applications include transcript-level RNA-Seq quantification, allele-specific/haplotype expression analysis (from RNA-Seq), transcription factor binding quantification in ChIP-Seq, and analysis of metagenomic data. It can be used to resolve ambiguous mappings in other high-throughput sequencing based applications.",
       "sc:featureList": {
@@ -91,8 +95,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "eXpress",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:softwareHelp": [
@@ -107,23 +111,31 @@
       "sc:url": "https://pachterlab.github.io/eXpress/index.html"
     },
     {
-      "@id": "_:N9a165d256c584271b281d385418b4a4c",
+      "@id": "_:N6175085c47a34dc9beb309c084a604ad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1383"
+        "@id": "edam:data_0006"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2573"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "sc:name": "Data"
     },
     {
-      "@id": "_:N0b98f5f12c514339ab23ccc8aa8c2385",
+      "@id": "_:Na0ae5c3b1ba045d98a680d8433d948e8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N3388f4dd223e46a9bb866920c9092622",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N004a33b222324fd6a6746549606e8ff5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -134,35 +146,23 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:Nc30d8bc46b3c41abbd6bc6e368d9c284",
+      "@id": "_:N376572a743a4496ab7d27ec96c92b552",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_1383"
       },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Ncf99528c1bad4c0297894f882fcc3bf4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N5ee8f1419a8648d8838e11944e4c6582",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_2573"
+        }
+      ],
+      "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/gb-2011-12-3-r22",
       "@type": "sc:CreativeWork"
     }
   ]

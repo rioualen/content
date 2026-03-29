@@ -36,22 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw363",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1015-9923",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0984-9946",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/database/baz005",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/apid_interactomes",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -63,10 +47,10 @@
         }
       ],
       "bsc:input": {
-        "@id": "_:N07c346cc62824b09a4cf81f0e11537ce"
+        "@id": "_:Nf89e807bdf464bf5adcb58cefdf1d68e"
       },
       "bsc:output": {
-        "@id": "_:N34c2fed359f54bd5957aef39b2724cd4"
+        "@id": "_:N52a29f80e0864a1298eaa2d4cc2ce80d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -83,23 +67,23 @@
       },
       "sc:citation": [
         "pmcid:PMC6354026",
-        {
-          "@id": "https://doi.org/10.1093/database/baz005"
-        },
         "pubmed:30715274",
+        "pmcid:PMC4987915",
+        "pubmed:27131791",
         {
           "@id": "https://doi.org/10.1093/nar/gkw363"
         },
-        "pmcid:PMC4987915",
-        "pubmed:27131791"
+        {
+          "@id": "https://doi.org/10.1093/database/baz005"
+        }
       ],
       "sc:description": "APID Interactomes provides a comprehensive collection of protein interactomes for more than 500 organisms based on the integration of known experimentally validated protein-protein physical interactions (PPIs). Construction of the interactomes is done with a methodological approach to report quality levels and coverage over the proteomes for each organism included.\nAPID unifies PPIs from primary databases of molecular interactions (BIND, BioGRID, DIP, HPRD, IntAct, MINT) and from experimentally resolved 3D structures (PDB) where more than two distinct proteins have been identified. APID also includes a data visualization web-tool that allows the construction of sub-interactomes using query lists of proteins of interest and the visual exploration of the corresponding networks, including an interactive selection of the properties of the interactions reliability of the \"edges\") and a mapping of the functional environment of the proteins (functional annotations of the \"nodes\").",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0276"
+          "@id": "edam:operation_3925"
         },
         {
-          "@id": "edam:operation_3925"
+          "@id": "edam:operation_0276"
         },
         {
           "@id": "edam:operation_3094"
@@ -109,9 +93,9 @@
       "sc:license": "CC-BY-NC-4.0",
       "sc:name": "APID Interactomes",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": {
         "@id": "https://orcid.org/0000-0002-0984-9946"
@@ -122,7 +106,15 @@
       "sc:url": "http://apid.dep.usal.es"
     },
     {
-      "@id": "_:N07c346cc62824b09a4cf81f0e11537ce",
+      "@id": "_:N52a29f80e0864a1298eaa2d4cc2ce80d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Nf89e807bdf464bf5adcb58cefdf1d68e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2764"
@@ -133,12 +125,20 @@
       "sc:name": "Protein name (UniProt)"
     },
     {
-      "@id": "_:N34c2fed359f54bd5957aef39b2724cd4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:name": "Pathway or network"
+      "@id": "https://doi.org/10.1093/database/baz005",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1015-9923",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0984-9946",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw363",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,39 +36,35 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3290",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/marginalign",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Benedict Paten",
-        "Mark Akeson"
+        "Mark Akeson",
+        "Benedict Paten"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nfe502fc740d64f488a16fb47abd4acd8"
+          "@id": "_:Nf3ef2a6d83134bab925412e2bfdd5642"
         },
         {
-          "@id": "_:Ne3355930fe9643df8959b18292758de5"
+          "@id": "_:N86f427a2bf6e4fab8b734f492b93dc2a"
         },
         {
-          "@id": "_:N9b22b9ca9ce54a9f8519b6a082548bcd"
+          "@id": "_:N36732448866f488a87b3fc752a8f0612"
         },
         {
-          "@id": "_:N7473251336514b9c8b600cdc81ff0485"
+          "@id": "_:N6fd1352cbccc456996b24a97ee52f143"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na7e0cf1f9861444b96e705cc6e3f88da"
+          "@id": "_:N59c8ec69c1cc4cf3a62dbf8751bb8ffd"
         },
         {
-          "@id": "_:N074ef814e5c64f98906b4ab04dea6e2b"
+          "@id": "_:Nd6c15ae232d54fb7a2e0efe28f3ce1f9"
         },
         {
-          "@id": "_:N044d0a54ec794a2e8775c2a69bd2fac3"
+          "@id": "_:Ncad8de5ee7ae40a29f069e952c3a95bc"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -81,11 +77,11 @@
       },
       "sc:author": "Benedict Paten",
       "sc:citation": [
+        "pubmed:25686389",
+        "pmcid:PMC4907500",
         {
           "@id": "https://doi.org/10.1038/nmeth.3290"
-        },
-        "pubmed:25686389",
-        "pmcid:PMC4907500"
+        }
       ],
       "sc:description": "The marginAlign package can be used to align reads to a reference genome and call single nucleotide variations (SNVs). It is specifically tailored for Oxford Nanopore Reads.",
       "sc:featureList": [
@@ -101,18 +97,7 @@
       "sc:url": "https://github.com/benedictpaten/marginAlign"
     },
     {
-      "@id": "_:Nfe502fc740d64f488a16fb47abd4acd8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2182"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:Ne3355930fe9643df8959b18292758de5",
+      "@id": "_:N59c8ec69c1cc4cf3a62dbf8751bb8ffd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -123,29 +108,7 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:N9b22b9ca9ce54a9f8519b6a082548bcd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N7473251336514b9c8b600cdc81ff0485",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Na7e0cf1f9861444b96e705cc6e3f88da",
+      "@id": "_:Nd6c15ae232d54fb7a2e0efe28f3ce1f9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -156,7 +119,40 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N074ef814e5c64f98906b4ab04dea6e2b",
+      "@id": "_:Ncad8de5ee7ae40a29f069e952c3a95bc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1364"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2072"
+      },
+      "sc:name": "Hidden Markov model"
+    },
+    {
+      "@id": "_:Nf3ef2a6d83134bab925412e2bfdd5642",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2182"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N86f427a2bf6e4fab8b734f492b93dc2a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N36732448866f488a87b3fc752a8f0612",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -167,15 +163,19 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:N044d0a54ec794a2e8775c2a69bd2fac3",
+      "@id": "_:N6fd1352cbccc456996b24a97ee52f143",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1364"
+        "@id": "edam:data_2977"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2072"
+        "@id": "edam:format_1929"
       },
-      "sc:name": "Hidden Markov model"
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3290",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

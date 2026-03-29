@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv185",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "http://orcid.org/0000-0002-0173-3009",
       "@type": "sc:Person"
     },
@@ -48,26 +44,30 @@
       "@type": "sc:Person"
     },
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv185",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sparse",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Sebastian Will",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Sebastian Will"
       ],
       "bsc:input": {
-        "@id": "_:N3d166cb04424475c9a56649d0d788adc"
+        "@id": "_:N6ab853b24e2146af9e10a6e8164c51a0"
       },
       "bsc:output": [
         {
-          "@id": "_:Nf40b63335cbc4213a3e758e7f8de55f9"
+          "@id": "_:Ncc8507f4142843e79293110d2b9647d5"
         },
         {
-          "@id": "_:N84b1591173434c2383f61ffd49292ac5"
+          "@id": "_:Nad76e2b7a04a416286ab4558a0efd392"
         },
         {
-          "@id": "_:N9092025d67034c64adc625fb844380eb"
+          "@id": "_:Naf8f034832c6438687a7534b418120cf"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -81,18 +81,18 @@
         }
       ],
       "sc:author": [
+        "Sebastian Will",
+        "Rolf Backofen",
         {
           "@id": "http://orcid.org/0000-0002-0173-3009"
-        },
-        "Rolf Backofen",
-        "Sebastian Will"
+        }
       ],
       "sc:citation": [
-        "pubmed:25838465",
         "pmcid:PMC4514930",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv185"
-        }
+        },
+        "pubmed:25838465"
       ],
       "sc:contributor": "Sebastian Will",
       "sc:description": "Very efficient structure-based alignment of RNAs.",
@@ -107,8 +107,8 @@
         "Linux"
       ],
       "sc:provider": [
-        "rnateam",
-        "University Freiburg"
+        "University Freiburg",
+        "rnateam"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.bioinf.uni-freiburg.de/Software/SPARSE/"
@@ -117,7 +117,48 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/SPARSE"
     },
     {
-      "@id": "_:N3d166cb04424475c9a56649d0d788adc",
+      "@id": "_:Ncc8507f4142843e79293110d2b9647d5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1465"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3466"
+      },
+      "sc:name": "RNA structure"
+    },
+    {
+      "@id": "_:Nad76e2b7a04a416286ab4558a0efd392",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1982"
+        }
+      ],
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:Naf8f034832c6438687a7534b418120cf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N6ab853b24e2146af9e10a6e8164c51a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -131,47 +172,6 @@
         }
       ],
       "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:Nf40b63335cbc4213a3e758e7f8de55f9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1465"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3466"
-      },
-      "sc:name": "RNA structure"
-    },
-    {
-      "@id": "_:N84b1591173434c2383f61ffd49292ac5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N9092025d67034c64adc625fb844380eb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Phylogenetic tree"
     }
   ]
 }

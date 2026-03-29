@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/basespacer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jared O'Connell",
       "bsc:input": {
-        "@id": "_:Ncfce24c40278478e8511954ae0b03ec8"
+        "@id": "_:N6297632bc5a84ff29229a65cdcdee3aa"
       },
       "bsc:output": {
-        "@id": "_:Nb169d48e481f46139dce5884ae73ba08"
+        "@id": "_:N20865fcc69e74c41967ff13b78101b17"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -62,8 +66,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4509590",
         "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         }
@@ -71,18 +75,18 @@
       "sc:description": "A rich R interface to Illumina's BaseSpace cloud computing environment, enabling the fast development of data analysis and visualisation tools.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2478"
+          "@id": "edam:operation_0564"
         },
         {
-          "@id": "edam:operation_0564"
+          "@id": "edam:operation_2478"
         }
       ],
       "sc:license": "Apache-2.0",
       "sc:name": "BaseSpaceR",
       "sc:operatingSystem": [
-        "Linux",
+        "Mac",
         "Windows",
-        "Mac"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/BaseSpaceR.html"
@@ -91,7 +95,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/BaseSpaceR.html"
     },
     {
-      "@id": "_:Ncfce24c40278478e8511954ae0b03ec8",
+      "@id": "_:N20865fcc69e74c41967ff13b78101b17",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N6297632bc5a84ff29229a65cdcdee3aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -100,26 +120,6 @@
         "@id": "edam:format_1930"
       },
       "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Nb169d48e481f46139dce5884ae73ba08",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

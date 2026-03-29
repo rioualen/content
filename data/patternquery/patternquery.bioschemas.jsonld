@@ -39,38 +39,38 @@
       "@id": "https://bio.tools/patternquery",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "David Sehnal",
         "Primary Contact",
-        "Lukáš Pravda"
+        "Lukáš Pravda",
+        "David Sehnal"
       ],
       "bsc:input": [
         {
-          "@id": "_:N8070821f17414a5eb50771b2296d0bb1"
+          "@id": "_:N13e6720e88a646bcaaa504fc8e7baa14"
         },
         {
-          "@id": "_:Nea2b8a8fa5df4794a0bf6a52e0a80c06"
+          "@id": "_:Nf8c3c1e267ac4ba2a49fa3a6392fe36c"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nbe2c9a9c9d6a4199be5ee3d1dc46a85d"
+        "@id": "_:Naef0ee7c085f4f1ab094e564f649b4b0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0081"
-        },
         {
           "@id": "edam:topic_0166"
         },
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3510"
         },
         {
-          "@id": "edam:topic_3510"
+          "@id": "edam:topic_0081"
+        },
+        {
+          "@id": "edam:topic_0154"
         },
         {
           "@id": "edam:topic_1317"
@@ -78,35 +78,35 @@
       ],
       "sc:author": "David Sehnal",
       "sc:citation": [
-        "pubmed:26013810",
-        "pmcid:PMC4489247",
         {
           "@id": "https://doi.org/10.1093/nar/gkv561"
-        }
+        },
+        "pubmed:26013810",
+        "pmcid:PMC4489247"
       ],
       "sc:contributor": [
-        "Lukáš Pravda",
         "Radka Svobodová Vařeková",
-        "Crina-Maria Ionescu"
+        "Crina-Maria Ionescu",
+        "Lukáš Pravda"
       ],
       "sc:description": "A web application to define, extract, and analyze structural patterns or biomolecular complexes in real-time.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0245"
+        },
         {
           "@id": "edam:operation_0250"
         },
         {
           "@id": "edam:operation_0570"
-        },
-        {
-          "@id": "edam:operation_0245"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "PatternQuery",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:provider": [
         "Masaryk University, Brno, Czech Republic",
@@ -114,20 +114,39 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://webchem.ncbr.muni.cz/Wiki/PatternQuery:UserManual"
-        },
-        {
           "@id": "http://nar.oxfordjournals.org/citmgr?gca=nar%3B43%2FW1%2FW383"
         },
         {
           "@id": "http://webchem.ncbr.muni.cz/Platform/Home/About"
+        },
+        {
+          "@id": "http://webchem.ncbr.muni.cz/Wiki/PatternQuery:UserManual"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "http://ncbr.muni.cz/PatternQuery"
     },
     {
-      "@id": "_:N8070821f17414a5eb50771b2296d0bb1",
+      "@id": "_:N13e6720e88a646bcaaa504fc8e7baa14",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1477"
+        },
+        {
+          "@id": "edam:format_2033"
+        }
+      ],
+      "sc:name": "Structure"
+    },
+    {
+      "@id": "_:Nf8c3c1e267ac4ba2a49fa3a6392fe36c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -138,36 +157,17 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:Nea2b8a8fa5df4794a0bf6a52e0a80c06",
+      "@id": "_:Naef0ee7c085f4f1ab094e564f649b4b0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1477"
+          "@id": "edam:format_2033"
         },
         {
           "@id": "edam:format_1476"
-        },
-        {
-          "@id": "edam:format_2033"
-        }
-      ],
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:Nbe2c9a9c9d6a4199be5ee3d1dc46a85d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1476"
-        },
-        {
-          "@id": "edam:format_2033"
         }
       ],
       "sc:name": "Structure"

@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0156132",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sgseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Leonard Goldstein",
       "bsc:input": {
-        "@id": "_:Na7f6c8b6fae74b7eb42006ae0d8783b2"
+        "@id": "_:N0589df31d44243a0b781cd6078da694a"
       },
       "bsc:output": [
         {
-          "@id": "_:N4945fe4a166b4f3a97db664cea56f7f3"
+          "@id": "_:N0b733b3750ad43179a9a8c120b2822b5"
         },
         {
-          "@id": "_:N161361f3f9294b778b45e6a860bbafc4"
+          "@id": "_:Nfed75b2522df4cd981b1135cb041787e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -68,10 +64,10 @@
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4878813",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0156132"
         },
-        "pmcid:PMC4878813",
         "pubmed:27218464"
       ],
       "sc:description": "Package for analyzing splice events from RNA-seq data. Input data are sequence reads mapped to a reference genome in BAM format. Genes are represented as a genome-wide splice graph, which can be obtained from existing annotation or can be predicted from the data. Splice events are identified from the graph and are quantified locally using structurally compatible reads at the start or end of each splice variant.",
@@ -82,8 +78,8 @@
       "sc:name": "SGSeq",
       "sc:operatingSystem": [
         "Mac",
-        "Linux",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SGSeq.html"
@@ -92,18 +88,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SGSeq.html"
     },
     {
-      "@id": "_:Na7f6c8b6fae74b7eb42006ae0d8783b2",
+      "@id": "_:N0b733b3750ad43179a9a8c120b2822b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3495"
+        "@id": "edam:data_2884"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2572"
+        "@id": "edam:format_3547"
       },
-      "sc:name": "RNA sequence"
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:N4945fe4a166b4f3a97db664cea56f7f3",
+      "@id": "_:Nfed75b2522df4cd981b1135cb041787e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -114,15 +110,19 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N161361f3f9294b778b45e6a860bbafc4",
+      "@id": "_:N0589df31d44243a0b781cd6078da694a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_3495"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3547"
+        "@id": "edam:format_2572"
       },
-      "sc:name": "Plot"
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0156132",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btaa436",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mi-cnn",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4dfc59e079c94e88b92ece2c9533aa91"
+        "@id": "_:N4ccb2bd95cbb4425a21100a463211df1"
       },
       "bsc:output": {
-        "@id": "_:Na564a74e0ff54c30a2fb1a61aa90fb29"
+        "@id": "_:Nafec3a37c3c94ed1b78f6fb20dc4a811"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
@@ -51,21 +55,21 @@
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_3520"
-        },
-        {
           "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_0634"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC7355295",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btaa436"
         },
-        "pubmed:32657378",
-        "pmcid:PMC7355295"
+        "pubmed:32657378"
       ],
       "sc:description": "Deep multiple instance learning classifies subtissue locations in mass spectrometry images from tissue-level annotations.\n\nMultiple instance learning based classification for MSI data.",
       "sc:featureList": [
@@ -73,17 +77,28 @@
           "@id": "edam:operation_2990"
         },
         {
-          "@id": "edam:operation_3860"
+          "@id": "edam:operation_3553"
         },
         {
-          "@id": "edam:operation_3553"
+          "@id": "edam:operation_3860"
         }
       ],
       "sc:name": "mi-CNN",
       "sc:url": "https://github.com/Vitek-Lab/mi-CNN_MSI"
     },
     {
-      "@id": "_:N4dfc59e079c94e88b92ece2c9533aa91",
+      "@id": "_:Nafec3a37c3c94ed1b78f6fb20dc4a811",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N4ccb2bd95cbb4425a21100a463211df1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -97,21 +112,6 @@
         }
       ],
       "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:Na564a74e0ff54c30a2fb1a61aa90fb29",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btaa436",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

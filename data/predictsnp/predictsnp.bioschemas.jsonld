@@ -44,19 +44,15 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0001-9677-5078",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1371/journal.pcbi.1003440",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0003-3139-3700",
+      "@id": "https://orcid.org/0000-0001-9677-5078",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0001-8718-7493",
+      "@id": "https://orcid.org/0000-0003-3139-3700",
       "@type": "sc:Person"
     },
     {
@@ -64,27 +60,27 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "PredictSNP team",
       "bsc:input": {
-        "@id": "_:N75a81410c7d14f738c35db6f6657ac11"
+        "@id": "_:N8fbf2fc6163e4a7d94dcbd23eb54230f"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc1243a609df4486a861b21161f9806d2"
+          "@id": "_:N121fbafde5a440a6b9aa1c9a35dac265"
         },
         {
-          "@id": "_:N4d8cad137b844b2184f9c28e054e6dc8"
+          "@id": "_:Nf86303c9702e4af490ff5448e2d20535"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_3325"
         },
         {
-          "@id": "edam:topic_3325"
+          "@id": "edam:topic_2885"
         },
         {
           "@id": "edam:topic_0078"
@@ -97,65 +93,65 @@
         }
       ],
       "sc:author": [
-        "Ondrej Salanda",
-        "Antonin Pavelka",
         {
           "@id": "https://orcid.org/0000-0001-9989-2720"
         },
+        "Ondrej Salanda",
         {
           "@id": "https://orcid.org/0000-0003-3139-3700"
-        }
+        },
+        "Antonin Pavelka"
       ],
       "sc:citation": [
-        "pmcid:PMC3894168",
         "pubmed:24453961",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1003440"
-        }
+        },
+        "pmcid:PMC3894168"
       ],
       "sc:contributor": [
+        "Ministry of Education of the Czech Republic",
+        "Eric D. Wieben",
         "Grant Agency of the Czech Republic",
-        "European Social Fund",
         {
           "@id": "https://orcid.org/0000-0002-7848-8216"
         },
-        "Brno University of Technology",
-        {
-          "@id": "https://orcid.org/0000-0001-9677-5078"
-        },
-        "Eric D. Wieben",
         {
           "@id": "https://orcid.org/0000-0001-8718-7493"
         },
-        "Ministry of Education of the Czech Republic",
-        "European Regional Development Fund"
+        "European Social Fund",
+        "European Regional Development Fund",
+        {
+          "@id": "https://orcid.org/0000-0001-9677-5078"
+        },
+        "Brno University of Technology"
       ],
       "sc:description": "A consensus classifier that combines six of the top performing tools for the prediction of the effects of mutation on protein function. The obtained results are provided together with annotations extracted from the Protein Mutant Database and the UniProt database.",
       "sc:featureList": {
         "@id": "edam:operation_0331"
       },
       "sc:funder": [
+        "European Social Fund",
         "European Regional Development Fund",
         "Brno University of Technology",
-        "Grant Agency of the Czech Republic",
         "Ministry of Education of the Czech Republic",
-        "European Social Fund"
+        "Grant Agency of the Czech Republic"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Proprietary",
       "sc:name": "PredictSNP",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "Loschmidt Laboratories",
-        "Brno University of Technology, Brno, Czech Republic",
-        "Mayo Clinic, Rochester, New York, United States of America",
         "Masaryk University, Brno, Czech Republic",
+        "Mayo Clinic, Rochester, New York, United States of America",
+        "Brno University of Technology, Brno, Czech Republic",
+        "ELIXIR-CZ",
         "International Centre for Clinical Research, Brno, Czech Republic",
-        "ELIXIR-CZ"
+        "Loschmidt Laboratories"
       ],
       "sc:softwareHelp": {
         "@id": "https://loschmidt.chemi.muni.cz/predictsnp1/docs/USER_GUIDE.pdf"
@@ -164,15 +160,18 @@
       "sc:url": "https://loschmidt.chemi.muni.cz/predictsnp1"
     },
     {
-      "@id": "_:Nc1243a609df4486a861b21161f9806d2",
+      "@id": "_:N8fbf2fc6163e4a7d94dcbd23eb54230f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2291"
+        "@id": "edam:data_2974"
       },
-      "sc:name": "UniProt ID"
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N4d8cad137b844b2184f9c28e054e6dc8",
+      "@id": "_:N121fbafde5a440a6b9aa1c9a35dac265",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -188,15 +187,16 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N75a81410c7d14f738c35db6f6657ac11",
+      "@id": "_:Nf86303c9702e4af490ff5448e2d20535",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2974"
+        "@id": "edam:data_2291"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence (raw)"
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8718-7493",
+      "@type": "sc:Person"
     }
   ]
 }

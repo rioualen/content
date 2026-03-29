@@ -36,32 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/s00251-013-0720-y",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/netmhciipan",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N88eca00b548d46678abd10906a9a99d5"
+        "@id": "_:N8510d17559c049549f37e70b5bfaf24e"
       },
       "bsc:output": {
-        "@id": "_:Ndd381be556984c59b2d2f1ceaa05ec52"
+        "@id": "_:Nf75b563901da4c5ca88dd3feb1a978a1"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3534"
       },
       "sc:author": "Edita Karosiene",
       "sc:citation": [
-        "pubmed:23900783",
         "pmcid:PMC3809066",
         {
           "@id": "https://doi.org/10.1007/s00251-013-0720-y"
-        }
+        },
+        "pubmed:23900783"
       ],
       "sc:description": "Predict binding of peptides to MHC class II molecules. The predictions are available for all three human MHC class II isotypes, HLA-DR, HLA-DP and HLA-DQ, as well as mouse molecules.",
       "sc:featureList": [
@@ -90,18 +98,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetMHCIIpan/"
     },
     {
-      "@id": "_:N88eca00b548d46678abd10906a9a99d5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Ndd381be556984c59b2d2f1ceaa05ec52",
+      "@id": "_:Nf75b563901da4c5ca88dd3feb1a978a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -112,12 +109,15 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1007/s00251-013-0720-y",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8510d17559c049549f37e70b5bfaf24e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

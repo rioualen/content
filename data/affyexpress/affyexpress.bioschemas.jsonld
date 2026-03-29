@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/affyexpress",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Xuejun Arthur Li",
       "bsc:input": {
-        "@id": "_:N524e1ad7a40547b294c6c17957eff72e"
+        "@id": "_:Nb7c1f3c43ef14fecbea4b1afd9c3d2fc"
       },
       "bsc:output": {
-        "@id": "_:Na7f3855f38254c57ad4fe59c5c499e95"
+        "@id": "_:N0ecb7057e6ce4febafa080da9a7c1890"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -59,11 +63,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "The purpose of this package is to provide a comprehensive and easy-to-use tool for quality assessment and to identify differentially expressed genes in the Affymetrix gene expression data.",
       "sc:featureList": {
@@ -72,9 +76,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "AffyExpress",
       "sc:operatingSystem": [
+        "Mac",
         "Windows",
-        "Linux",
-        "Mac"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/AffyExpress.html"
@@ -83,18 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/AffyExpress.html"
     },
     {
-      "@id": "_:N524e1ad7a40547b294c6c17957eff72e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:Na7f3855f38254c57ad4fe59c5c499e95",
+      "@id": "_:N0ecb7057e6ce4febafa080da9a7c1890",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -105,8 +98,15 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nb7c1f3c43ef14fecbea4b1afd9c3d2fc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Gene expression profile"
     }
   ]
 }

@@ -43,15 +43,15 @@
       "@id": "https://bio.tools/halvade_somatic",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbcaba3e310024a81a4a790f55ee0c2ed"
+        "@id": "_:N175f9738e5d445779960d34fc2a1b0e8"
       },
       "bsc:output": {
-        "@id": "_:Ne956b73b63db47a2b3e550b636e8d50f"
+        "@id": "_:Ne447c5c4846e421fb1a1c5ce60d79829"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
-        "pmcid:PMC8756192",
         "pubmed:35022699",
+        "pmcid:PMC8756192",
         {
           "@id": "https://doi.org/10.1093/GIGASCIENCE/GIAB094"
         }
@@ -59,10 +59,10 @@
       "sc:description": "Halvade implements germline and somatic variant calling pipelines based on the best-practices pipelines from the Broad Institute using the Spark framework. Halvade will produce a VCF output file which contains the single nucleotide polymorphisms (SNPs) and short insertions and deletions (indels) when supported by the used tools. This program requires Spark on either a local cluster with one or more nodes, an Amazon EMR cluster or the Docker image to run.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0491"
+          "@id": "edam:operation_3227"
         },
         {
-          "@id": "edam:operation_3227"
+          "@id": "edam:operation_0491"
         }
       ],
       "sc:license": "GPL-3.0",
@@ -78,23 +78,7 @@
       "sc:url": "https://bitbucket.org/dries_decap/halvadeforspark"
     },
     {
-      "@id": "_:Nbcaba3e310024a81a4a790f55ee0c2ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_1930"
-        }
-      ],
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Ne956b73b63db47a2b3e550b636e8d50f",
+      "@id": "_:Ne447c5c4846e421fb1a1c5ce60d79829",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3779"
@@ -103,6 +87,22 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Annotated text"
+    },
+    {
+      "@id": "_:N175f9738e5d445779960d34fc2a1b0e8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "DNA sequence"
     }
   ]
 }

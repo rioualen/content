@@ -36,52 +36,56 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-015-0873-9",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/trapline",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Markus Wolfien",
       "bsc:input": {
-        "@id": "_:N620e8b9943ed4e03975e24ff8065275b"
+        "@id": "_:N4ff316fe13ab4f1b8d7d6ce4564fec3e"
       },
       "bsc:output": [
         {
-          "@id": "_:N5da82a4da09d49c1b2ae7ff679061f79"
+          "@id": "_:N7947851e743e42849c76d07f8cdd1082"
         },
         {
-          "@id": "_:Ne23ad5f060a5442182d0cf2fa7f2fff7"
+          "@id": "_:Nff4408cd9b7947569a3875f5c40f3b3a"
         },
         {
-          "@id": "_:Nf4483b5486ee4b7ebd2ed8cb10f15eda"
+          "@id": "_:N768fbd4110fe46febd619c4c00161bf3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0099"
         },
         {
-          "@id": "edam:topic_0099"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4702420",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0873-9"
-        },
-        "pmcid:PMC4702420"
+        }
       ],
       "sc:description": "RNAseq data processing, evaluation, and prediction tool optimized for Illumina FASTQ reads, and other sequencing platforms like SOLiD or Solexa. Predictions are based on modules which are able to identify protein-protein interactions, miRNA targets and alternatively splicing variants or promoter enriched sites.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3695"
-        },
-        {
-          "@id": "edam:operation_0264"
-        },
-        {
           "@id": "edam:operation_3218"
         },
         {
+          "@id": "edam:operation_3695"
+        },
+        {
           "@id": "edam:operation_3680"
+        },
+        {
+          "@id": "edam:operation_0264"
         },
         {
           "@id": "edam:operation_0415"
@@ -89,26 +93,34 @@
       ],
       "sc:name": "TRAPLINE",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
+        "Windows",
         "Linux"
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "https://www.sbi.uni-rostock.de/TRAPLINE"
     },
     {
-      "@id": "_:N5da82a4da09d49c1b2ae7ff679061f79",
+      "@id": "_:N4ff316fe13ab4f1b8d7d6ce4564fec3e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0928"
+        "@id": "edam:data_3495"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Gene expression profile"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1932"
+        },
+        {
+          "@id": "edam:format_1933"
+        },
+        {
+          "@id": "edam:format_1931"
+        }
+      ],
+      "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:Ne23ad5f060a5442182d0cf2fa7f2fff7",
+      "@id": "_:N7947851e743e42849c76d07f8cdd1082",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -119,7 +131,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Nf4483b5486ee4b7ebd2ed8cb10f15eda",
+      "@id": "_:Nff4408cd9b7947569a3875f5c40f3b3a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2628"
@@ -130,27 +142,15 @@
       "sc:name": "BioGRID interaction ID"
     },
     {
-      "@id": "_:N620e8b9943ed4e03975e24ff8065275b",
+      "@id": "_:N768fbd4110fe46febd619c4c00161bf3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3495"
+        "@id": "edam:data_0928"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1932"
-        },
-        {
-          "@id": "edam:format_1931"
-        },
-        {
-          "@id": "edam:format_1933"
-        }
-      ],
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-015-0873-9",
-      "@type": "sc:CreativeWork"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Gene expression profile"
     }
   ]
 }

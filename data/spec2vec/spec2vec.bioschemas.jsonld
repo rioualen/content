@@ -36,41 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2020.08.11.245928",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/spec2vec",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N53e96ead7f2549c1b3f4e7fbabfd45c0"
+          "@id": "_:N2ca9b9eeed174fa0adcaef037102729a"
         },
         {
-          "@id": "_:N05876f08677e44b4aa1feac4d2dd0eab"
+          "@id": "_:N548428ca230348bb95d75a4ffbcea850"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbd3e07211dd3424f98341c228c49b5cf"
+          "@id": "_:N6c94cc1502aa4d63bab3374340e78fb7"
         },
         {
-          "@id": "_:N78ef6042e2764e30bc012be8cce0d50c"
+          "@id": "_:N430a50bc892a48e5a1bc79f68f3f3bde"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
-        },
-        {
-          "@id": "edam:topic_0218"
-        },
-        {
           "@id": "edam:topic_3172"
         },
         {
+          "@id": "edam:topic_0121"
+        },
+        {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0218"
         }
       ],
       "sc:citation": {
@@ -79,19 +75,19 @@
       "sc:description": "Improved mass spectral similarity scoring through learning of structural relationships.\n\nSpec2vec is a novel spectral similarity score inspired by a natural language processing algorithm -- Word2Vec. Where Word2Vec learns relationships between words in sentences, spec2vec does so for mass fragments and neutral losses in MS/MS spectra. The spectral similarity score is based on spectral embeddings learnt from the fragmental relationships within a large set of spectral data.\n\nAnalysis and benchmarking of mass spectra similarity measures using gnps data set.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3803"
+          "@id": "edam:operation_3801"
         },
         {
-          "@id": "edam:operation_2424"
+          "@id": "edam:operation_3803"
         },
         {
           "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_3801"
+          "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_2424"
         }
       ],
       "sc:license": "Apache-2.0",
@@ -99,7 +95,15 @@
       "sc:url": "https://github.com/iomega/spec2vec"
     },
     {
-      "@id": "_:N53e96ead7f2549c1b3f4e7fbabfd45c0",
+      "@id": "_:N2ca9b9eeed174fa0adcaef037102729a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N548428ca230348bb95d75a4ffbcea850",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -109,24 +113,32 @@
           "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_3651"
+          "@id": "edam:format_4039"
         },
         {
-          "@id": "edam:format_4039"
+          "@id": "edam:format_3651"
         }
       ],
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N05876f08677e44b4aa1feac4d2dd0eab",
+      "@id": "_:N6c94cc1502aa4d63bab3374340e78fb7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_1772"
       },
-      "sc:name": "Mass spectrum"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3751"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Score"
     },
     {
-      "@id": "_:Nbd3e07211dd3424f98341c228c49b5cf",
+      "@id": "_:N430a50bc892a48e5a1bc79f68f3f3bde",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -134,20 +146,8 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N78ef6042e2764e30bc012be8cce0d50c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_3751"
-        }
-      ],
-      "sc:name": "Score"
+      "@id": "https://doi.org/10.1101/2020.08.11.245928",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

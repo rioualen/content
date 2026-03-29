@@ -36,81 +36,77 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkab831",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/metaplatanus",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N87556fba951a4aff8d7993c60403c170"
+        "@id": "_:N271b2df9157041bcb1934fd2aee746ae"
       },
       "bsc:output": [
         {
-          "@id": "_:N44915a8c04074d708564301acf87d6b4"
+          "@id": "_:Nf5c839b63e5e460d92cf87be55f6a769"
         },
         {
-          "@id": "_:Nb0cf0a791de848bc8fded023781d3795"
+          "@id": "_:Na6e5e676b94e4ff3b4ecc5cf87e287ce"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3837"
+          "@id": "edam:topic_3174"
         },
         {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_3837"
         },
         {
           "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC8682757",
         "pubmed:34570223",
         {
           "@id": "https://doi.org/10.1093/nar/gkab831"
-        },
-        "pmcid:PMC8682757"
+        }
       ],
       "sc:description": "MetaPlatanus is a de novo assembler for metagenome (microbiome). The features of this tool are as follows: (1) It can utilize various types of long-range information such as Oxford-Nanopore/PacBio long reads, mate-pairs (jumping libraries), and 10x linked reads (experimental). (2) Coverage depths, k-mer frequencies and results of the binning tool are also employed to extend sequences and correct mis-assemblies, reducing inter-species misassemblies. (3) Contig-assembly, scaffolding, gap-closing and binning are automatically executed at once. (4) MetaPlatanus requires at least one short-read paired-end library.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0310"
+        },
         {
           "@id": "edam:operation_3472"
         },
         {
           "@id": "edam:operation_3192"
-        },
-        {
-          "@id": "edam:operation_0310"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "MetaPlatanus",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
+        "Windows",
         "Linux"
       ],
       "sc:url": "https://github.com/rkajitani/MetaPlatanus"
     },
     {
-      "@id": "_:N44915a8c04074d708564301acf87d6b4",
+      "@id": "_:N271b2df9157041bcb1934fd2aee746ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_1931"
       },
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nb0cf0a791de848bc8fded023781d3795",
+      "@id": "_:Nf5c839b63e5e460d92cf87be55f6a769",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -121,15 +117,19 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N87556fba951a4aff8d7993c60403c170",
+      "@id": "_:Na6e5e676b94e4ff3b4ecc5cf87e287ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1931"
+        "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkab831",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

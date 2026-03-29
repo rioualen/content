@@ -36,27 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bti507",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/secisdesign",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Anke Busch",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Anke Busch"
       ],
       "bsc:input": {
-        "@id": "_:Na203e50a23294c9a91629b28febebec8"
+        "@id": "_:N263ed9b50caa479cb15d1e7b503410ab"
       },
       "bsc:output": {
-        "@id": "_:N2fc38387d57043249267782cf83e75e4"
+        "@id": "_:Nc33625582bf2449382d02a353249d1b0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -70,10 +62,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:15919727",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bti507"
-        },
-        "pubmed:15919727"
+        }
       ],
       "sc:description": "Insert SECIS-elements in coding mRNAs.",
       "sc:featureList": {
@@ -83,8 +75,8 @@
       "sc:name": "SECISDesign web server",
       "sc:operatingSystem": [
         "Mac",
-        "Linux",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:provider": [
         "rnateam",
@@ -97,7 +89,18 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/SECISDesign/"
     },
     {
-      "@id": "_:Na203e50a23294c9a91629b28febebec8",
+      "@id": "_:Nc33625582bf2449382d02a353249d1b0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N263ed9b50caa479cb15d1e7b503410ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -108,15 +111,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N2fc38387d57043249267782cf83e75e4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence"
+      "@id": "https://doi.org/10.1093/bioinformatics/bti507",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
     }
   ]
 }

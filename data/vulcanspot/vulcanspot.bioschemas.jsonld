@@ -36,45 +36,53 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-2373-769X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btz465",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/vulcanSpot",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-2373-769X"
       },
       "bsc:input": {
-        "@id": "_:N63cf2979b3a440c6980d372944f4ba3a"
+        "@id": "_:N78e2a2622a57492286d70b45406c446e"
       },
       "bsc:output": [
         {
-          "@id": "_:N1dc9d94dd5d446d1a6dac3a5edf5e9af"
+          "@id": "_:N2f645c1c1c914b6a8ed728ee8e16b127"
         },
         {
-          "@id": "_:Nf95ec9d3198a43b7a8d7d3eb868b000b"
+          "@id": "_:N9730e371957e4ebfae813e7ab1617d1c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_3053"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
-        "pubmed:31173067",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btz465"
         },
-        "pmcid:PMC6853644"
+        "pmcid:PMC6853644",
+        "pubmed:31173067"
       ],
       "sc:description": "Tool to prioritize therapeutic vulnerabilities in cancer.",
       "sc:featureList": [
@@ -92,13 +100,13 @@
       "sc:license": "APL-1.0",
       "sc:name": "vulcanSpot",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
+        "Windows",
         "Linux"
       ],
       "sc:provider": [
-        "CNIO",
-        "BU_CNIO"
+        "BU_CNIO",
+        "CNIO"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.vulcanspot.org/help"
@@ -107,7 +115,39 @@
       "sc:url": "http://www.vulcanspot.org/"
     },
     {
-      "@id": "_:N63cf2979b3a440c6980d372944f4ba3a",
+      "@id": "_:N2f645c1c1c914b6a8ed728ee8e16b127",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N9730e371957e4ebfae813e7ab1617d1c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0984"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Molecule name"
+    },
+    {
+      "@id": "_:N78e2a2622a57492286d70b45406c446e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -116,46 +156,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene name"
-    },
-    {
-      "@id": "_:N1dc9d94dd5d446d1a6dac3a5edf5e9af",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene name"
-    },
-    {
-      "@id": "_:Nf95ec9d3198a43b7a8d7d3eb868b000b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0984"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Molecule name"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2373-769X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btz465",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

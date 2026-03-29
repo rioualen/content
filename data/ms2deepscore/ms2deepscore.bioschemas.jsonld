@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-3535-9406",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/ms2deepscore",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,18 +47,18 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nf39cded3cec347e98915b648e8d5e8a2"
+          "@id": "_:N91371f84162d4f66a4d68906b3e29867"
         },
         {
-          "@id": "_:N85326d902edc4c7896dd4517c4144375"
+          "@id": "_:N658fc711be1e41f69c72ab856b7aa1ab"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3ee676d9db4c4c2bb46e18711c8642d6"
+          "@id": "_:N5d7d3f4eb8644cf1867a9f9206ea4693"
         },
         {
-          "@id": "_:N6dba42e8fc0f419d8061daa68eb849e9"
+          "@id": "_:N509ae6c36e6e4f23b26450caa32da88f"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -64,16 +68,16 @@
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_3172"
-        },
-        {
           "@id": "edam:topic_3343"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": {
@@ -82,13 +86,13 @@
       "sc:description": "MS2DeepScore is a deep learning similarity measure for mass fragmentation spectrum comparisons. MS2DeepScore provides a Siamese neural network that is trained to predict molecular structural similarities (Tanimoto scores) from pairs of mass spectrometry spectra.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3801"
+        },
+        {
           "@id": "edam:operation_3803"
         },
         {
           "@id": "edam:operation_2424"
-        },
-        {
-          "@id": "edam:operation_3801"
         },
         {
           "@id": "edam:operation_2426"
@@ -99,61 +103,45 @@
       "sc:url": "https://github.com/matchms/ms2deepscore"
     },
     {
-      "@id": "_:Nf39cded3cec347e98915b648e8d5e8a2",
+      "@id": "_:N91371f84162d4f66a4d68906b3e29867",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3651"
+          "@id": "edam:format_4039"
         },
         {
-          "@id": "edam:format_4039"
+          "@id": "edam:format_3651"
         }
       ],
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N85326d902edc4c7896dd4517c4144375",
+      "@id": "_:N658fc711be1e41f69c72ab856b7aa1ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_4039"
         },
         {
           "@id": "edam:format_3651"
         },
         {
-          "@id": "edam:format_4039"
-        },
-        {
           "@id": "edam:format_3244"
-        }
-      ],
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N3ee676d9db4c4c2bb46e18711c8642d6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3751"
         },
         {
           "@id": "edam:format_3464"
         }
       ],
-      "sc:name": "Score"
+      "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N6dba42e8fc0f419d8061daa68eb849e9",
+      "@id": "_:N5d7d3f4eb8644cf1867a9f9206ea4693",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -164,8 +152,20 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "https://orcid.org/0000-0002-3535-9406",
-      "@type": "sc:Person"
+      "@id": "_:N509ae6c36e6e4f23b26450caa32da88f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3751"
+        }
+      ],
+      "sc:name": "Score"
     },
     {
       "@id": "https://doi.org/10.1101/2021.04.18.440324",
