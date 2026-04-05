@@ -36,27 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.analchem.7b01010",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gc-meox-tms",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "RECETOX SpecDatRI",
       "bsc:input": {
-        "@id": "_:N3267090f5f14457c93b25f61ded3cd06"
+        "@id": "_:Na7ca336f4ac5455887de0870a2879d22"
       },
       "bsc:output": {
-        "@id": "_:Ne08b420121b84026b9043d68e6624027"
+        "@id": "_:Nadbb379628ba48ada549675b0b45b16c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3370"
         },
         {
-          "@id": "edam:topic_3370"
+          "@id": "edam:topic_0154"
         },
         {
           "@id": "edam:topic_3172"
@@ -64,10 +60,10 @@
       ],
       "sc:author": "RECETOX SpecDatRI",
       "sc:citation": [
+        "pubmed:28520403",
         {
           "@id": "https://doi.org/10.1021/acs.analchem.7b01010"
-        },
-        "pubmed:28520403"
+        }
       ],
       "sc:description": "This package performs in-silico MeOX + TMS derivatization (as described e.g. in https://doi.org/10.1021/acs.analchem.7b01010):\n\nMethoximation: ketone R(C=O)R' and aldehyde (-HC=O) carbonyl groups are substituted with -C=NOCH3\nTrimethylsilylation: the acidic hydrogen in -OH, -SH, -COOH, -NH2, -NHR, =NH, the hydrogen is substituted with -Si(CH3)3 The substitution doesn't always have to happen; its probability is currently hardcoded in the package. Typically, multiple substitution attempts are run on each input molecule, and all distinct results are gathered.\nKnown limitation is methoximation on cycles which should be broken. This is not implemented yet.",
       "sc:featureList": {
@@ -79,16 +75,16 @@
       "sc:provider": "RECETOX SpecDatRI",
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/RECETOX/gc-meox-tms/blob/master/example/derivatization.ipynb"
+          "@id": "https://github.com/RECETOX/gc-meox-tms/blob/master/README.md"
         },
         {
-          "@id": "https://github.com/RECETOX/gc-meox-tms/blob/master/README.md"
+          "@id": "https://github.com/RECETOX/gc-meox-tms/blob/master/example/derivatization.ipynb"
         }
       ],
       "sc:url": "https://github.com/RECETOX/gc-meox-tms"
     },
     {
-      "@id": "_:N3267090f5f14457c93b25f61ded3cd06",
+      "@id": "_:Nadbb379628ba48ada549675b0b45b16c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
@@ -96,12 +92,16 @@
       "sc:name": "SMILES string"
     },
     {
-      "@id": "_:Ne08b420121b84026b9043d68e6624027",
+      "@id": "_:Na7ca336f4ac5455887de0870a2879d22",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
       },
       "sc:name": "SMILES string"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.analchem.7b01010",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

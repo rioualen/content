@@ -40,10 +40,6 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "http://orcid.org/0000-0002-3170-4890",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/rcas",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,29 +47,32 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N0b4c04950e924051963307deb5210c32"
+          "@id": "_:N88eb8e14b140446bb43dcfe5d37c6787"
         },
         {
-          "@id": "_:N55f287e5df1041b8b86ef7f581290b68"
+          "@id": "_:N6296cbd70e524fa8ac8461bbcd85f102"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na33195df54094fff9c0df622dbae9c21"
+          "@id": "_:N45d2fa5af5b443d88836f7a02d9a5528"
         },
         {
-          "@id": "_:Nb97623c605384159a9b272b32f1e6a0e"
+          "@id": "_:N728da747bfc0431ba8aa7add0b35164b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
         "Library",
+        "Command-line tool",
         "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3053"
+        },
+        {
+          "@id": "edam:topic_3308"
         },
         {
           "@id": "edam:topic_0203"
@@ -82,10 +81,7 @@
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3053"
-        },
-        {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_0659"
@@ -93,16 +89,13 @@
       ],
       "sc:citation": [
         "pmcid:PMC5449606",
+        "pubmed:28334930",
         {
           "@id": "https://doi.org/10.1093/nar/gkx120"
-        },
-        "pubmed:28334930"
+        }
       ],
       "sc:description": "Automated system that provides dynamic genome annotations for custom input files that contain transcriptomic regions, which can be peak regions detected by CLIP-Seq analysis (that detect protein-RNA interactions), RNA modifications (alias the epitranscriptome), CAGE-tag locations, or any other collection of target regions at the level of the transcriptome. It is designed as a reporting tool for the functional analysis of RNA-binding sites detected by high-throughput experiments.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3194"
-        },
         {
           "@id": "edam:operation_3501"
         },
@@ -110,18 +103,21 @@
           "@id": "edam:operation_0362"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_0531"
+          "@id": "edam:operation_3194"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "RCAS",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": [
         {
@@ -135,29 +131,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/RCAS.html"
     },
     {
-      "@id": "_:Na33195df54094fff9c0df622dbae9c21",
+      "@id": "_:N88eb8e14b140446bb43dcfe5d37c6787",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3754"
+        "@id": "edam:data_2012"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3475"
+        "@id": "edam:format_3585"
       },
-      "sc:name": "GO-term enrichment data"
+      "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:Nb97623c605384159a9b272b32f1e6a0e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N0b4c04950e924051963307deb5210c32",
+      "@id": "_:N6296cbd70e524fa8ac8461bbcd85f102",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -168,15 +153,30 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N55f287e5df1041b8b86ef7f581290b68",
+      "@id": "_:N45d2fa5af5b443d88836f7a02d9a5528",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2012"
+        "@id": "edam:data_2048"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3585"
+        "@id": "edam:format_2331"
       },
-      "sc:name": "Sequence coordinates"
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N728da747bfc0431ba8aa7add0b35164b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3754"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "GO-term enrichment data"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-3170-4890",
+      "@type": "sc:Person"
     }
   ]
 }

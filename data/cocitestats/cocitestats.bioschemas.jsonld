@@ -36,50 +36,54 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cocitestats",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BioConductor Package Maintainer",
       "bsc:input": {
-        "@id": "_:N02d8bbd376fb4c91937f0c3b60aaeadd"
+        "@id": "_:Naa1952b4912a42b68fb1e47fd5e3046e"
       },
       "bsc:output": [
         {
-          "@id": "_:N3dcf2fb88334464292dcb9cf08f5eaa5"
+          "@id": "_:N7b593353b76047b7824c214dbb4958b2"
         },
         {
-          "@id": "_:N1d752945a36d4b279d27f45c7f06ab7b"
+          "@id": "_:Na44550cfdc1746b6a97b5d6039a5deca"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0218"
       },
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pmcid:PMC4509590",
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "A collection of software tools for dealing with co-citation data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0305"
+          "@id": "edam:operation_3280"
         },
         {
-          "@id": "edam:operation_3280"
+          "@id": "edam:operation_0305"
         }
       ],
       "sc:license": "CPL-1.0",
       "sc:name": "CoCiteStats",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/CoCiteStats.html"
@@ -88,29 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/CoCiteStats.html"
     },
     {
-      "@id": "_:N02d8bbd376fb4c91937f0c3b60aaeadd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1904"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Locus ID (EntrezGene)"
-    },
-    {
-      "@id": "_:N3dcf2fb88334464292dcb9cf08f5eaa5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N1d752945a36d4b279d27f45c7f06ab7b",
+      "@id": "_:N7b593353b76047b7824c214dbb4958b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0972"
@@ -121,8 +103,26 @@
       "sc:name": "Text mining report"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na44550cfdc1746b6a97b5d6039a5deca",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Naa1952b4912a42b68fb1e47fd5e3046e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1904"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Locus ID (EntrezGene)"
     }
   ]
 }

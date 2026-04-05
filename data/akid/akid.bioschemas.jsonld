@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty545",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/akid",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Luca Parca",
       "bsc:input": {
-        "@id": "_:Nb59ebfeb9b274ad68c79969921df254e"
+        "@id": "_:N1cbb5bc139ab496990c16b34f2c6c71f"
       },
       "bsc:output": {
-        "@id": "_:N8083d8a7c35743b0abce251e2b2bed01"
+        "@id": "_:N265773d537d140598c50f9e69a6717a7"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool"
+        "Command-line tool",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -67,21 +63,21 @@
       ],
       "sc:citation": [
         "pmcid:PMC6361239",
+        "pubmed:30016513",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bty545"
-        },
-        "pubmed:30016513"
+        }
       ],
       "sc:description": "AKID is a Deep Neural Network-based method that identifies kinase-specific phosphorylation events at single-kinase level in any given Eukaryotic proteome without prior functional annotation. It automatically detects kinase domains, their residues responsible for target specificity and finally their target peptides.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0239"
-        },
         {
           "@id": "edam:operation_0417"
         },
         {
           "@id": "edam:operation_0276"
+        },
+        {
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:name": "AKID",
@@ -90,7 +86,7 @@
       "sc:url": "http://akid.bio.uniroma2.it"
     },
     {
-      "@id": "_:N8083d8a7c35743b0abce251e2b2bed01",
+      "@id": "_:N265773d537d140598c50f9e69a6717a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -98,12 +94,16 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nb59ebfeb9b274ad68c79969921df254e",
+      "@id": "_:N1cbb5bc139ab496990c16b34f2c6c71f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
       },
       "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bty545",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

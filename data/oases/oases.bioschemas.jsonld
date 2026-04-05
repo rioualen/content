@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/oases",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -44,45 +48,45 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N001dff6126e74267acb85823ce92efa0"
+          "@id": "_:Nd5f9c0de23194b35ab90147810db6154"
         },
         {
-          "@id": "_:Nd246d5acb14444c3a5ef034f8d03f208"
+          "@id": "_:N614558b179bf44d887d2ee5ec3433a48"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7adf1ef26e3b4f08a7cb2cf6a60c075b"
+          "@id": "_:N4e7ab51b2ca74974996f649918e106d6"
         },
         {
-          "@id": "_:Nc15cc66cd1e343c5b79c004e72fcc75f"
+          "@id": "_:N64549a06b0094312bd2e55ba6c2b988c"
         },
         {
-          "@id": "_:Nd6bec4e903e247358ca424038cae73c6"
+          "@id": "_:N5e0ec04ed85041548a2866e22d8d353e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_3308"
         },
         {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3673"
         },
         {
-          "@id": "edam:topic_3673"
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:citation": [
-        "pubmed:22368243",
+        "pmcid:PMC3324515",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts094"
         },
-        "pmcid:PMC3324515"
+        "pubmed:22368243"
       ],
       "sc:description": "De novo transcriptome assembler designed to produce transcripts from short read sequencing technologies. It uploads a preliminary assembly produced by Velvet, and clusters the contigs into small groups, called loci. It then exploits the paired-end read and long read information, when available, to construct transcript isoforms.",
       "sc:featureList": [
@@ -97,8 +101,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Oases",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/dzerbino/oases/blob/master/README.md"
@@ -106,7 +110,7 @@
       "sc:url": "https://github.com/dzerbino/oases"
     },
     {
-      "@id": "_:N7adf1ef26e3b4f08a7cb2cf6a60c075b",
+      "@id": "_:N4e7ab51b2ca74974996f649918e106d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3181"
@@ -114,7 +118,15 @@
       "sc:name": "Sequence assembly report"
     },
     {
-      "@id": "_:Nc15cc66cd1e343c5b79c004e72fcc75f",
+      "@id": "_:N64549a06b0094312bd2e55ba6c2b988c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N5e0ec04ed85041548a2866e22d8d353e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -122,7 +134,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:Nd6bec4e903e247358ca424038cae73c6",
+      "@id": "_:Nd5f9c0de23194b35ab90147810db6154",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -130,24 +142,12 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:N001dff6126e74267acb85823ce92efa0",
+      "@id": "_:N614558b179bf44d887d2ee5ec3433a48",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
       },
       "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:Nd246d5acb14444c3a5ef034f8d03f208",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

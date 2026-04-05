@@ -36,50 +36,54 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4197",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/salmon",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Rob Patro",
       "bsc:input": [
         {
-          "@id": "_:N9a572c10d30c47c78b27f139f2cb4e62"
+          "@id": "_:Nb31310a7af17494ca79c56924d52625c"
         },
         {
-          "@id": "_:N3f015783814d49cfb202659453a4fd50"
+          "@id": "_:Nc37b848adc354689af89cd77dd1d950c"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3f24396b46fa441b8be95ef2f32ede80"
+        "@id": "_:Nb1a29fd8293f4d668367b996af98d4f5"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3308"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pubmed:28263959",
+        "pmcid:PMC5600148",
         {
           "@id": "https://doi.org/10.1038/nmeth.4197"
-        },
-        "pmcid:PMC5600148",
-        "pubmed:28263959"
+        }
       ],
       "sc:description": "A tool for transcript expression quantification from RNA-seq data",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0236"
+          "@id": "edam:operation_2495"
         },
         {
           "@id": "edam:operation_3800"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_0236"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -92,34 +96,7 @@
       "sc:url": "https://combine-lab.github.io/salmon"
     },
     {
-      "@id": "_:N9a572c10d30c47c78b27f139f2cb4e62",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:N3f015783814d49cfb202659453a4fd50",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3496"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "RNA sequence (raw)"
-    },
-    {
-      "@id": "_:N3f24396b46fa441b8be95ef2f32ede80",
+      "@id": "_:Nb1a29fd8293f4d668367b996af98d4f5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -130,8 +107,31 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.4197",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nb31310a7af17494ca79c56924d52625c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3496"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "RNA sequence (raw)"
+    },
+    {
+      "@id": "_:Nc37b848adc354689af89cd77dd1d950c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Data reference"
     }
   ]
 }

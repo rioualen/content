@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-5980-8002",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/pathfindR",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,49 +47,49 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nad54823c9b9d449c886fc1d5f17cf6e5"
+          "@id": "_:Ne439580fd73548a2bbc89b67d1e238d0"
         },
         {
-          "@id": "_:N21fe182d7ae8446e9378e97ac297422c"
+          "@id": "_:N6b78d42a2860484d816c2c3e15a44e7d"
         },
         {
-          "@id": "_:N3523e8dd66004e3fa5a062dfe9a1a73e"
+          "@id": "_:N9ecf5f2abcd64cfba54ddd0b400fcca5"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na23f94600c7c4de5aa95d8c6d0f5c489"
+          "@id": "_:N982a2d2a53eb451ab4101309ad81f901"
         },
         {
-          "@id": "_:N2fae735027ac4234a7c5a93433503e35"
+          "@id": "_:Nf3870189ef1c42428de28ae5083d221b"
         },
         {
-          "@id": "_:N921e11c8cdab4bad8d6623853852ab49"
+          "@id": "_:N6727cdd5ae374963b3a2fd313b72ffad"
         },
         {
-          "@id": "_:Nf14e8a2ee69a436c9c760f994e021959"
+          "@id": "_:Naea2a6bcb65143acb544e38dd875100d"
         },
         {
-          "@id": "_:N5efd7e82fe714fdb88f5a5acff871a4c"
+          "@id": "_:N3edc16d1441347a5b53b933610027122"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3053"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_0128"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:author": [
@@ -97,17 +101,20 @@
         }
       ],
       "sc:citation": [
-        "pubmed:31608109",
-        {
-          "@id": "https://doi.org/10.3389/fgene.2019.00858"
-        },
         {
           "@id": "https://doi.org/10.1101/272450"
         },
+        {
+          "@id": "https://doi.org/10.3389/fgene.2019.00858"
+        },
+        "pubmed:31608109",
         "pmcid:PMC6773876"
       ],
       "sc:description": "Pathway enrichment analysis enables researchers to uncover mechanisms underlying the phenotype. pathfindR is a tool for pathway enrichment analysis utilizing active subnetworks. It identifies active subnetworks in a protein-protein interaction network using user-provided a list of genes. It performs pathway enrichment analyses on the identified subnetworks. pathfindR also offers functionalities to cluster enriched pathways and identify representative pathways, visualize analysis results and to score the pathways per sample.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0276"
+        },
         {
           "@id": "edam:operation_0337"
         },
@@ -116,18 +123,15 @@
         },
         {
           "@id": "edam:operation_3432"
-        },
-        {
-          "@id": "edam:operation_0276"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "pathfindR",
       "sc:operatingSystem": [
-        "Windows",
+        "Mac",
         "Linux",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://egeulgen.github.io/pathfindR/"
@@ -136,15 +140,7 @@
       "sc:url": "https://github.com/egeulgen/pathfindR"
     },
     {
-      "@id": "_:Na23f94600c7c4de5aa95d8c6d0f5c489",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N2fae735027ac4234a7c5a93433503e35",
+      "@id": "_:Ne439580fd73548a2bbc89b67d1e238d0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -152,15 +148,23 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:N921e11c8cdab4bad8d6623853852ab49",
+      "@id": "_:N6b78d42a2860484d816c2c3e15a44e7d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_1669"
       },
-      "sc:name": "Report"
+      "sc:name": "P-value"
     },
     {
-      "@id": "_:Nf14e8a2ee69a436c9c760f994e021959",
+      "@id": "_:N9ecf5f2abcd64cfba54ddd0b400fcca5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N982a2d2a53eb451ab4101309ad81f901",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -168,7 +172,15 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N5efd7e82fe714fdb88f5a5acff871a4c",
+      "@id": "_:Nf3870189ef1c42428de28ae5083d221b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N6727cdd5ae374963b3a2fd313b72ffad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -179,7 +191,7 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:Nad54823c9b9d449c886fc1d5f17cf6e5",
+      "@id": "_:Naea2a6bcb65143acb544e38dd875100d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -187,7 +199,7 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:N21fe182d7ae8446e9378e97ac297422c",
+      "@id": "_:N3edc16d1441347a5b53b933610027122",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -195,23 +207,11 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N3523e8dd66004e3fa5a062dfe9a1a73e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5980-8002",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.3389/fgene.2019.00858",
+      "@id": "https://doi.org/10.1101/272450",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1101/272450",
+      "@id": "https://doi.org/10.3389/fgene.2019.00858",
       "@type": "sc:CreativeWork"
     },
     {

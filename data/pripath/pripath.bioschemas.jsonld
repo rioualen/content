@@ -36,32 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-023-05187-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pripath",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N037c24ff201c459a8b89d666342d3baa"
+          "@id": "_:N49824348edc1405784ac6e5138d9413e"
         },
         {
-          "@id": "_:N51273e9d2c314bec81e929afa2d6a057"
+          "@id": "_:N13c2fa482d224ea18a844938da1e3e4d"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5784e3fa19ae4ae79b1c8c6b6b04bce5"
+        "@id": "_:Nb1bcc4d50f7242d9a371f3ed730a02f8"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_0602"
-        },
         {
           "@id": "edam:topic_3474"
         },
@@ -69,15 +59,21 @@
           "@id": "edam:topic_0203"
         },
         {
+          "@id": "edam:topic_2640"
+        },
+        {
           "@id": "edam:topic_0769"
+        },
+        {
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC9947447",
         "pubmed:36823571",
         {
           "@id": "https://doi.org/10.1186/s12859-023-05187-2"
-        },
-        "pmcid:PMC9947447"
+        }
       ],
       "sc:description": "PriPath: identifying affected pathways from differential gene expression via grouping, scoring and modeling with an embedded machine learning approach.",
       "sc:featureList": [
@@ -95,14 +91,30 @@
       "sc:license": "CC-BY-4.0",
       "sc:name": "PriPath",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://github.com/malikyousef/PriPath.git"
     },
     {
-      "@id": "_:N5784e3fa19ae4ae79b1c8c6b6b04bce5",
+      "@id": "_:N49824348edc1405784ac6e5138d9413e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2343"
+      },
+      "sc:name": "Pathway ID (KEGG)"
+    },
+    {
+      "@id": "_:N13c2fa482d224ea18a844938da1e3e4d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:Nb1bcc4d50f7242d9a371f3ed730a02f8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -113,20 +125,8 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:N037c24ff201c459a8b89d666342d3baa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:N51273e9d2c314bec81e929afa2d6a057",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2343"
-      },
-      "sc:name": "Pathway ID (KEGG)"
+      "@id": "https://doi.org/10.1186/s12859-023-05187-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

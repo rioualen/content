@@ -44,35 +44,35 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Herbert Braselmann",
       "bsc:input": {
-        "@id": "_:Nbcd76f3d5b8241198e0666cb675caf1c"
+        "@id": "_:Ne16f0d9904204e139abac372b1c9bee6"
       },
       "bsc:output": [
         {
-          "@id": "_:N38a6d1bbf1c24e58a64a635571371e37"
+          "@id": "_:N9fb57875bb794ecbbb66f9d9ecf4893b"
         },
         {
-          "@id": "_:Na57581505dc748b3bb7183ae6b4d07a0"
+          "@id": "_:Na10abe52b5a54f228ab35fd5c7a8301e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": [
+        "pubmed:26537797",
         {
           "@id": "https://doi.org/10.1186/s13014-015-0529-y"
         },
-        "pmcid:PMC4634140",
-        "pubmed:26537797"
+        "pmcid:PMC4634140"
       ],
       "sc:description": "The package provides functions for calculation of linear-quadratic cell survival curves and for ANOVA of experimental 2-way designs along with the colony formation assay.",
       "sc:featureList": {
@@ -81,9 +81,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "CFAssay",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/CFAssay.html"
@@ -92,7 +92,34 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/CFAssay.html"
     },
     {
-      "@id": "_:N38a6d1bbf1c24e58a64a635571371e37",
+      "@id": "_:Ne16f0d9904204e139abac372b1c9bee6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:N9fb57875bb794ecbbb66f9d9ecf4893b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Na10abe52b5a54f228ab35fd5c7a8301e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -106,33 +133,6 @@
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Na57581505dc748b3bb7183ae6b4d07a0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Nbcd76f3d5b8241198e0666cb675caf1c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Matrix"
     }
   ]
 }

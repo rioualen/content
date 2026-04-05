@@ -36,6 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nature11241",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/database/bat035",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1849-1269",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/Banana_Genome_Hub",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,63 +55,63 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nd81a13c0da91421f95954c0f433ac49c"
+          "@id": "_:N5f347d61d82b44e29aec0ba179a757e0"
         },
         {
-          "@id": "_:N88742360c61d4302828360bb49649105"
+          "@id": "_:Nc24cea91625848889f1e3e2cb7c55539"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5616c9f2bfbf4a6abca73ad2b4e59d3b"
+          "@id": "_:N8665b0d7629d4e75ae9c69c3c130d4df"
         },
         {
-          "@id": "_:Nffde33dd77ca439d86711ffaeef1412f"
+          "@id": "_:N5209059ea62e4b7fa1f8345a311d500d"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0797"
-        },
-        {
-          "@id": "edam:topic_3810"
-        },
-        {
           "@id": "edam:topic_3308"
+        },
+        {
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0621"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3810"
+        },
+        {
+          "@id": "edam:topic_0797"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0003-1849-1269"
       },
       "sc:citation": [
-        "pmcid:PMC3662865",
+        {
+          "@id": "https://doi.org/10.1038/nature11241"
+        },
         {
           "@id": "https://doi.org/10.1093/database/bat035"
         },
         "pubmed:22801500",
-        {
-          "@id": "https://doi.org/10.1038/nature11241"
-        },
+        "pmcid:PMC3662865",
         "pubmed:23707967"
       ],
       "sc:description": "A Next-Generation Information System for Musa genomics",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3208"
+        },
+        {
           "@id": "edam:operation_2403"
         },
         {
           "@id": "edam:operation_0338"
-        },
-        {
-          "@id": "edam:operation_3208"
         }
       ],
       "sc:funder": "ANR",
@@ -108,10 +120,10 @@
       "sc:name": "Banana Genome Hub",
       "sc:softwareHelp": [
         {
-          "@id": "https://banana-genome-hub.southgreen.fr/documentation"
+          "@id": "https://banana-genome-hub.southgreen.fr/termofservices"
         },
         {
-          "@id": "https://banana-genome-hub.southgreen.fr/termofservices"
+          "@id": "https://banana-genome-hub.southgreen.fr/documentation"
         },
         {
           "@id": "http://api.tripal.info/api/tripal/2.x"
@@ -121,7 +133,15 @@
       "sc:url": "https://banana-genome-hub.southgreen.fr/"
     },
     {
-      "@id": "_:N5616c9f2bfbf4a6abca73ad2b4e59d3b",
+      "@id": "_:N8665b0d7629d4e75ae9c69c3c130d4df",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N5209059ea62e4b7fa1f8345a311d500d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -129,26 +149,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nffde33dd77ca439d86711ffaeef1412f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nd81a13c0da91421f95954c0f433ac49c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N88742360c61d4302828360bb49649105",
+      "@id": "_:N5f347d61d82b44e29aec0ba179a757e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
@@ -159,16 +160,15 @@
       "sc:name": "Keyword"
     },
     {
-      "@id": "https://doi.org/10.1038/nature11241",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1849-1269",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/database/bat035",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc24cea91625848889f1e3e2cb7c55539",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

@@ -36,38 +36,42 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4628",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cellalign",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ayelet Alpert",
       "bsc:input": [
         {
-          "@id": "_:Ndb9cecb928a141caae49dd81d91ac0d9"
+          "@id": "_:Nf642d3e9d9ff45509fbe7d1a2c46afc0"
         },
         {
-          "@id": "_:N2dd08c08a015400ea767573cf5212fe0"
+          "@id": "_:Ncd5761a8bdcd4ff3a216337f6c3b1dd5"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf5ac67682435458984bbb600a9025bd9"
+        "@id": "_:Nf25823b835624852b9d7a3f5f5564d4a"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3064"
         },
         {
-          "@id": "edam:topic_3064"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_2229"
         }
       ],
       "sc:citation": [
-        "pubmed:29529018",
         {
           "@id": "https://doi.org/10.1038/nmeth.4628"
-        }
+        },
+        "pubmed:29529018"
       ],
       "sc:description": "A method for comparing expression dynamics within and between single-cell differentiation trajectories.",
       "sc:featureList": [
@@ -91,29 +95,7 @@
       "sc:url": "https://github.com/shenorrLab/cellAlign"
     },
     {
-      "@id": "_:Nf5ac67682435458984bbb600a9025bd9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2032"
-      },
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:Ndb9cecb928a141caae49dd81d91ac0d9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N2dd08c08a015400ea767573cf5212fe0",
+      "@id": "_:Nf642d3e9d9ff45509fbe7d1a2c46afc0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -124,8 +106,26 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.4628",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncd5761a8bdcd4ff3a216337f6c3b1dd5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Nf25823b835624852b9d7a3f5f5564d4a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2032"
+      },
+      "sc:name": "Sequence alignment report"
     }
   ]
 }

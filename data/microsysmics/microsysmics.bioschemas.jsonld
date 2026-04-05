@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-8689-2083",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5903-617X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/microSysMics",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -55,17 +47,17 @@
         }
       ],
       "bsc:input": {
-        "@id": "_:N7a2d5a2710af459793d03657f66918ae"
+        "@id": "_:N7f6d826a81464d17acda78deac75e0a7"
       },
       "bsc:output": [
         {
-          "@id": "_:N6d1435c53db94829befea5bd679f961d"
+          "@id": "_:N6288011fee0446f1857ef94c17239cf5"
         },
         {
-          "@id": "_:N0362fb54b7bc46ed965284f667738c23"
+          "@id": "_:N66639697cc1743d08726e5f804c84b0c"
         },
         {
-          "@id": "_:N53c66012e23c4051a6f66991306b6220"
+          "@id": "_:N8c2baac2683146ccadff7b70d2f17933"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -77,31 +69,53 @@
       "sc:description": "This workflow provides an automated microbiome data analysis, starting with sequenced taxonomic markers (such as 16SrRNA) and using the standard QIIME2 toolbox to produce an abundance table and preliminary diversity, phylogeny and taxonomy analysis.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0544"
+        },
+        {
           "@id": "edam:operation_0291"
         },
         {
           "@id": "edam:operation_3460"
-        },
-        {
-          "@id": "edam:operation_0544"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "microSysMics",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "LS2N",
+        "BiRD bioinformatics facility",
         "TENS",
-        "BiRD bioinformatics facility"
+        "LS2N"
       ],
       "sc:url": "https://gitlab.univ-nantes.fr/bird_pipeline_registry/microSysMics"
     },
     {
-      "@id": "_:N6d1435c53db94829befea5bd679f961d",
+      "@id": "_:N6288011fee0446f1857ef94c17239cf5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3272"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Species tree"
+    },
+    {
+      "@id": "_:N66639697cc1743d08726e5f804c84b0c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3707"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Biodiversity data"
+    },
+    {
+      "@id": "_:N8c2baac2683146ccadff7b70d2f17933",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1872"
@@ -117,29 +131,7 @@
       "sc:name": "Taxonomic classification"
     },
     {
-      "@id": "_:N0362fb54b7bc46ed965284f667738c23",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3272"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Species tree"
-    },
-    {
-      "@id": "_:N53c66012e23c4051a6f66991306b6220",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3707"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Biodiversity data"
-    },
-    {
-      "@id": "_:N7a2d5a2710af459793d03657f66918ae",
+      "@id": "_:N7f6d826a81464d17acda78deac75e0a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -148,6 +140,14 @@
         "@id": "edam:format_2545"
       },
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8689-2083",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5903-617X",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -43,28 +43,28 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N90c48ef12a134bf29d2334b0cf791b0d"
+          "@id": "_:N65afbfa4c6b34651ba5c230cb758f44f"
         },
         {
-          "@id": "_:N7b9d3db66fcb4133808fd004d1a3128a"
+          "@id": "_:Ne034028514134909b6ffef6a7eb28dc7"
         },
         {
-          "@id": "_:Ne6f7cf75e97143e18de73e9573b2725e"
+          "@id": "_:Nc0b03c094e824c748a3c6eae8db6d5a4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N872dd40fc3ad447bb30102f77da677ac"
+          "@id": "_:N42ea11d0f66c446986a6cbdfe1b97e6b"
         },
         {
-          "@id": "_:Nd440e2e86dfa4f8ca04052443274e3b8"
+          "@id": "_:N9c4df0af6eeb44e4a4028a0b97c0e1e1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Database portal",
         "Web API",
-        "Web application"
+        "Web application",
+        "Database portal"
       ],
       "sc:applicationSubCategory": [
         {
@@ -75,14 +75,17 @@
         }
       ],
       "sc:citation": [
+        "pubmed:27928056",
         {
           "@id": "https://doi.org/10.1093/nar/gkw1268"
         },
-        "pubmed:27928056",
         "pmcid:PMC5389603"
       ],
       "sc:description": "Database of annotated tandem repeat protein structures.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0224"
+        },
         {
           "@id": "edam:operation_2996"
         },
@@ -90,13 +93,10 @@
           "@id": "edam:operation_2406"
         },
         {
-          "@id": "edam:operation_0570"
-        },
-        {
-          "@id": "edam:operation_0224"
-        },
-        {
           "@id": "edam:operation_0564"
+        },
+        {
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:name": "RepeatsDB",
@@ -113,7 +113,7 @@
       "sc:url": "https://repeatsdb.org/"
     },
     {
-      "@id": "_:N90c48ef12a134bf29d2334b0cf791b0d",
+      "@id": "_:N65afbfa4c6b34651ba5c230cb758f44f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2007"
@@ -124,7 +124,7 @@
       "sc:name": "UniProt keyword"
     },
     {
-      "@id": "_:N7b9d3db66fcb4133808fd004d1a3128a",
+      "@id": "_:Ne034028514134909b6ffef6a7eb28dc7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -132,7 +132,7 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:Ne6f7cf75e97143e18de73e9573b2725e",
+      "@id": "_:Nc0b03c094e824c748a3c6eae8db6d5a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -140,18 +140,7 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N872dd40fc3ad447bb30102f77da677ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nd440e2e86dfa4f8ca04052443274e3b8",
+      "@id": "_:N42ea11d0f66c446986a6cbdfe1b97e6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -162,12 +151,23 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw1268",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9c4df0af6eeb44e4a4028a0b97c0e1e1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence features"
     },
     {
       "@id": "http://orcid.org/0000-0003-4525-7793",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw1268",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

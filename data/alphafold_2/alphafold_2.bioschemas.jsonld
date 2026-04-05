@@ -43,10 +43,10 @@
       "@id": "https://bio.tools/alphafold_2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8231ec136c684739b0742143bf84cb24"
+        "@id": "_:N33581ae1721d403887c51ffd7ce10d62"
       },
       "bsc:output": {
-        "@id": "_:Nd0152710651c4642865a68d4a9345345"
+        "@id": "_:N1e5b4229c15649d7b84a4d72270f56a0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -54,8 +54,8 @@
         "@id": "edam:topic_0130"
       },
       "sc:citation": [
-        "pubmed:34265844",
         "pmcid:PMC8371605",
+        "pubmed:34265844",
         {
           "@id": "https://doi.org/10.1038/s41586-021-03819-2"
         }
@@ -63,39 +63,47 @@
       "sc:description": "AI-guided 3D structure prediction of novel proteins. AlphaFold uses neural networks to predict the tertiary (3D) structure of proteins. AlphaFold accepts an amino acid sequence as an input, which it will then will 'fold' into a 3D model.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0481"
+          "@id": "edam:operation_0480"
         },
         {
           "@id": "edam:operation_0479"
         },
         {
-          "@id": "edam:operation_0480"
+          "@id": "edam:operation_2415"
         },
         {
-          "@id": "edam:operation_2415"
+          "@id": "edam:operation_0481"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "AlphaFold 2",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/deepmind/alphafold"
       },
       "sc:softwareVersion": [
-        "2.1.0",
         "2.0.1",
-        "2.1.2",
-        "2.1.1"
+        "2.1.0",
+        "2.1.1",
+        "2.1.2"
       ],
       "sc:url": "https://github.com/deepmind/alphafold"
     },
     {
-      "@id": "_:N8231ec136c684739b0742143bf84cb24",
+      "@id": "_:N1e5b4229c15649d7b84a4d72270f56a0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N33581ae1721d403887c51ffd7ce10d62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -109,14 +117,6 @@
         }
       ],
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nd0152710651c4642865a68d4a9345345",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:name": "Protein structure"
     }
   ]
 }

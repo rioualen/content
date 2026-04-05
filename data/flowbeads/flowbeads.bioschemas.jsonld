@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowbeads",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nikolas Pontikos",
       "bsc:input": {
-        "@id": "_:Na47ef8a0695f4a0ba29c4eacedcccb4f"
+        "@id": "_:Nbed42fee4bbb4bf9b9ea4b3fda2b44aa"
       },
       "bsc:output": [
         {
-          "@id": "_:Na8beea33b5a64683a82ff7050140f93a"
+          "@id": "_:N5da31528efb5499f8e404a1c9d64cce5"
         },
         {
-          "@id": "_:N4961669c0d5a4e4fa288a1ddd9d25e1c"
+          "@id": "_:N0c75a3d027b64cbf9b2b6d6c98ed8bda"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -67,22 +71,22 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "This package extends flowCore to provide functionality specific to bead data. One of the goals of this package is to automate analysis of bead data for the purpose of normalisation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_3435"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "Artistic-2.0",
@@ -99,37 +103,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowBeads.html"
     },
     {
-      "@id": "_:Na47ef8a0695f4a0ba29c4eacedcccb4f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
-    },
-    {
-      "@id": "_:Na8beea33b5a64683a82ff7050140f93a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N4961669c0d5a4e4fa288a1ddd9d25e1c",
+      "@id": "_:N5da31528efb5499f8e404a1c9d64cce5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -148,8 +122,34 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0c75a3d027b64cbf9b2b6d6c98ed8bda",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nbed42fee4bbb4bf9b9ea4b3fda2b44aa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Experimental measurement"
     }
   ]
 }

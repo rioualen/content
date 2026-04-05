@@ -43,35 +43,35 @@
       "@id": "https://bio.tools/ggsashimi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4c73996eff764f0184b0f85ec84074d8"
+        "@id": "_:Ne951aaa3e6394ff49f576f8822facffd"
       },
       "bsc:output": {
-        "@id": "_:N0b5643a9b60f459cbde8757f4005ec7c"
+        "@id": "_:Nbe9009b71d6043a69940b5fde3852f98"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3320"
-        },
-        {
           "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_3320"
         }
       ],
       "sc:author": [
-        "Diego Garrido",
         "Emilio Palumbo",
+        "Diego Garrido",
         "Alessandra Breschi"
       ],
       "sc:citation": [
+        "pubmed:30118475",
+        "pmcid:PMC6114895",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1006360"
-        },
-        "pmcid:PMC6114895",
-        "pubmed:30118475"
+        }
       ],
       "sc:description": "Command-line tool for the visualization of splicing events across multiple samples",
       "sc:featureList": [
@@ -86,15 +86,26 @@
       "sc:license": "MIT",
       "sc:name": "ggsashimi",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "R. Guigó Lab: Computational Biology of RNA processing @ CRG, Barcelona.",
       "sc:softwareVersion": "1.0.0",
       "sc:url": "https://github.com/guigolab/ggsashimi"
     },
     {
-      "@id": "_:N0b5643a9b60f459cbde8757f4005ec7c",
+      "@id": "_:Ne951aaa3e6394ff49f576f8822facffd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Nbe9009b71d6043a69940b5fde3852f98",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -104,6 +115,9 @@
           "@id": "edam:format_3603"
         },
         {
+          "@id": "edam:format_3508"
+        },
+        {
           "@id": "edam:format_3579"
         },
         {
@@ -111,23 +125,9 @@
         },
         {
           "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3508"
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N4c73996eff764f0184b0f85ec84074d8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence alignment"
     }
   ]
 }

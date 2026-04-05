@@ -36,30 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-8-166",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gosim",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Holger Froehlich",
       "bsc:input": {
-        "@id": "_:N0930de79bdde47198d4ea8d5296802f3"
+        "@id": "_:N4a37c8e9d0a3496b9372870c65a37735"
       },
       "bsc:output": [
         {
-          "@id": "_:N3864f0d6267c4e229cbcae417da474c6"
+          "@id": "_:N3d820181ddb548b49480d7afcf3e2f84"
         },
         {
-          "@id": "_:Nf4cd3ec5bbe54253a81e7af640431f0d"
+          "@id": "_:Nad2a1d38010d4889b26fd94e318c7f92"
         },
         {
-          "@id": "_:N7c6bbac0e9a644e0812937dd5b90ccbd"
+          "@id": "_:Nb567f4cac0b241ef83c38aba019b5f79"
         },
         {
-          "@id": "_:N3747cef3b2b14e70840b573abccac7b5"
+          "@id": "_:N0800ca18e01a465eb90f38370c789eda"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -70,10 +74,10 @@
         }
       ],
       "sc:citation": [
+        "pmcid:PMC1892785",
         {
           "@id": "https://doi.org/10.1186/1471-2105-8-166"
         },
-        "pmcid:PMC1892785",
         "pubmed:17519018"
       ],
       "sc:description": "This package implements several functions useful for computing similarities between GO terms and gene products based on their GO annotation. Moreover it allows for computing a GO enrichment analysis.",
@@ -88,9 +92,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "GOSim",
       "sc:operatingSystem": [
+        "Windows",
         "Linux",
-        "Mac",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/GOSim.html"
@@ -99,7 +103,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GOSim.html"
     },
     {
-      "@id": "_:N0930de79bdde47198d4ea8d5296802f3",
+      "@id": "_:N4a37c8e9d0a3496b9372870c65a37735",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1027"
@@ -110,55 +114,7 @@
       "sc:name": "Gene ID (NCBI)"
     },
     {
-      "@id": "_:N3864f0d6267c4e229cbcae417da474c6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0582"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Ontology"
-    },
-    {
-      "@id": "_:Nf4cd3ec5bbe54253a81e7af640431f0d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N7c6bbac0e9a644e0812937dd5b90ccbd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N3747cef3b2b14e70840b573abccac7b5",
+      "@id": "_:N3d820181ddb548b49480d7afcf3e2f84",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -174,8 +130,52 @@
       "sc:name": "ID list"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-8-166",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nad2a1d38010d4889b26fd94e318c7f92",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Nb567f4cac0b241ef83c38aba019b5f79",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N0800ca18e01a465eb90f38370c789eda",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0582"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Ontology"
     }
   ]
 }

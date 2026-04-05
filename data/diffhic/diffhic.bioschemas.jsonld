@@ -36,65 +36,57 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-3564-4813",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-015-0683-0",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/diffhic",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-3564-4813"
       },
       "bsc:input": {
-        "@id": "_:Naa2a66027ea04e238c27b377f987741b"
+        "@id": "_:N409dcd7ae40849efb0fe8db3fa9cc54a"
       },
       "bsc:output": [
         {
-          "@id": "_:N8bcda5a41dd14b298bcf6ea283eeba43"
+          "@id": "_:Ne91d95d13b3440f585fdc293e0219232"
         },
         {
-          "@id": "_:Ne5ef0ba7a1484eecbb74ebc706b25fc0"
+          "@id": "_:N25cf781be83d4376a056f5eebd510433"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3391"
         },
         {
-          "@id": "edam:topic_3391"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4539688",
+        "pubmed:26283514",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0683-0"
-        },
-        "pmcid:PMC4539688",
-        "pubmed:26283514"
+        }
       ],
       "sc:description": "Detects differential interactions across biological conditions in a Hi-C experiment. Methods are provided for read alignment and data pre-processing into interaction counts. Statistical analysis is based on edgeR and supports normalization and filtering. Several visualization options are also available.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_3435"
         },
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3432"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "diffHic",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/diffHic.html"
@@ -103,18 +95,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/diffHic.html"
     },
     {
-      "@id": "_:Naa2a66027ea04e238c27b377f987741b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N8bcda5a41dd14b298bcf6ea283eeba43",
+      "@id": "_:Ne91d95d13b3440f585fdc293e0219232",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -130,7 +111,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Ne5ef0ba7a1484eecbb74ebc706b25fc0",
+      "@id": "_:N25cf781be83d4376a056f5eebd510433",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2589"
@@ -144,6 +125,25 @@
         }
       ],
       "sc:name": "Hierarchy"
+    },
+    {
+      "@id": "_:N409dcd7ae40849efb0fe8db3fa9cc54a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-3564-4813",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-015-0683-0",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

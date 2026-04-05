@@ -36,6 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-0828-3477",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1711-7961",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.1217111",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.7717/peerj.8214",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0001-8784-2507",
       "@type": "sc:Person"
     },
@@ -52,63 +68,63 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nd8c5eb8107334bfa99b2f145022e2234"
+          "@id": "_:N09e46fad61cb4a63bcf93c4aff695c31"
         },
         {
-          "@id": "_:N61f1a1a4a40f44868822ed05a430c7c8"
+          "@id": "_:Nd013f2a423e54b71bbe9aacba9355880"
         },
         {
-          "@id": "_:N48d1981429874e6888cad24d8608d1b3"
+          "@id": "_:Nf3fe414fe481452aae2e62d43600c972"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7500c1fea795482e8084a987e0b7952f"
+        "@id": "_:N1fb3b7ad598c4a8289810a4ece897360"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
-        "Command-line tool"
+        "Command-line tool",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3175"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3175"
         },
         {
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0003-1711-7961"
       },
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1109/eScience.2018.00064"
-        },
         "pubmed:31934500",
         {
-          "@id": "https://doi.org/10.5281/zenodo.2663307"
+          "@id": "https://doi.org/10.5281/zenodo.1217111"
         },
         {
-          "@id": "https://doi.org/10.5281/zenodo.1217111"
+          "@id": "https://doi.org/10.5281/zenodo.2663307"
         },
         "pmcid:PMC6951283",
         {
           "@id": "https://doi.org/10.7717/peerj.8214"
+        },
+        {
+          "@id": "https://doi.org/10.1109/eScience.2018.00064"
         }
       ],
       "sc:contributor": [
         "Carl Shneider",
+        "Stefan Verhoeven",
         "Jason Maassen",
         {
           "@id": "https://orcid.org/0000-0001-8784-2507"
-        },
-        "Stefan Verhoeven"
+        }
       ],
       "sc:description": "Highly portable parallel workflow to detect structural variants in cancer genomes.",
       "sc:featureList": {
@@ -121,30 +137,19 @@
         "@id": "https://github.com/GooglingTheCancerGenome/sv-callers/blob/master/README.md"
       },
       "sc:softwareVersion": [
-        "1.0.0",
-        "1.2.2",
-        "1.1.1",
         "1.1.2",
         "1.2.1",
-        "1.1.3",
+        "1.0.0",
+        "1.1.0",
+        "1.1.1",
+        "1.2.2",
         "1.2.0",
-        "1.1.0"
+        "1.1.3"
       ],
       "sc:url": "https://www.research-software.nl/software/sv-callers"
     },
     {
-      "@id": "_:Nd8c5eb8107334bfa99b2f145022e2234",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "_:N61f1a1a4a40f44868822ed05a430c7c8",
+      "@id": "_:N09e46fad61cb4a63bcf93c4aff695c31",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -155,7 +160,7 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N48d1981429874e6888cad24d8608d1b3",
+      "@id": "_:Nd013f2a423e54b71bbe9aacba9355880",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -166,7 +171,18 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N7500c1fea795482e8084a987e0b7952f",
+      "@id": "_:Nf3fe414fe481452aae2e62d43600c972",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N1fb3b7ad598c4a8289810a4ece897360",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -177,27 +193,11 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "https://doi.org/10.7717/peerj.8214",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1711-7961",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.5281/zenodo.2663307",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0002-0828-3477",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1109/eScience.2018.00064",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.5281/zenodo.1217111",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "http://orcid.org/0000-0002-9497-7538",
       "@type": "sc:Person"
     },
@@ -44,25 +48,21 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/exparna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "http://orcid.org/0000-0001-8231-3323"
+          "@id": "http://orcid.org/0000-0002-9497-7538"
         },
         {
-          "@id": "http://orcid.org/0000-0002-9497-7538"
+          "@id": "http://orcid.org/0000-0001-8231-3323"
         }
       ],
       "bsc:input": {
-        "@id": "_:N675700f13c4a4ad99e3a67e9100119c7"
+        "@id": "_:N61b3e9e01a684407ba9bc0b48c0317fb"
       },
       "bsc:output": {
-        "@id": "_:Nbabc2cebe12546928fc69f5feabb398d"
+        "@id": "_:Nbd3e1d2517fe4e4281df972298e00e4b"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -70,14 +70,14 @@
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Steffen Heyne",
-        "Rolf Backofen"
+        "Rolf Backofen",
+        "Steffen Heyne"
       ],
       "sc:citation": [
-        "pubmed:19189979",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp065"
         },
+        "pubmed:19189979",
         "pmcid:PMC2722993"
       ],
       "sc:description": "Structure motif based alignment generation.",
@@ -98,23 +98,7 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/#ExpaRNA-download"
     },
     {
-      "@id": "_:N675700f13c4a4ad99e3a67e9100119c7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_2200"
-        }
-      ],
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:Nbabc2cebe12546928fc69f5feabb398d",
+      "@id": "_:Nbd3e1d2517fe4e4281df972298e00e4b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -123,6 +107,22 @@
         "@id": "edam:format_3466"
       },
       "sc:name": "Image"
+    },
+    {
+      "@id": "_:N61b3e9e01a684407ba9bc0b48c0317fb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2200"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "RNA sequence"
     }
   ]
 }

@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nbt1160",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/show_emfit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pierre Nicolas",
       "bsc:input": [
         {
-          "@id": "_:N36c56487627541a09a0d895c28bd86fe"
+          "@id": "_:N7bb660bc15e34d538bb4ae61663b59f0"
         },
         {
-          "@id": "_:Nf70705f4491d47bc85652ab9dd5f3b06"
+          "@id": "_:N11a1a9648ecc426ca810e8b9f0ceba8d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb1feaa0d37a3417e8ff4f416e60d11bb"
+          "@id": "_:N07647ec4e8d544c9a7e08fff6139eeff"
         },
         {
-          "@id": "_:N8a1526fd9a6e49e784cd6cf41dcb22cb"
+          "@id": "_:N4d04edc64c3d4a0f9a925da05335d0fe"
         },
         {
-          "@id": "_:N1d4f0a8e76f648df8ccab88c97a3b343"
+          "@id": "_:N9b81948746014ff5a5ec967a0892e661"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -64,18 +68,18 @@
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
-        "pubmed:16273110",
         {
           "@id": "https://doi.org/10.1038/nbt1160"
-        }
+        },
+        "pubmed:16273110"
       ],
       "sc:description": "This tool enables to fit an Hiden Markov Model on sequences using EM algorithm (learning) and to reconstruct the hidden state path using forward-backward algorithm (segmentation). When used with fixed parameters, it only produces the sequence segmentation with the forward-backward algorithm.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0436"
+          "@id": "edam:operation_2425"
         },
         {
-          "@id": "edam:operation_2425"
+          "@id": "edam:operation_0436"
         },
         {
           "@id": "edam:operation_0361"
@@ -94,23 +98,7 @@
       "sc:url": "http://genome.jouy.inra.fr/ssb/SHOW/"
     },
     {
-      "@id": "_:Nb1feaa0d37a3417e8ff4f416e60d11bb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N8a1526fd9a6e49e784cd6cf41dcb22cb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1364"
-      },
-      "sc:name": "Hidden Markov model"
-    },
-    {
-      "@id": "_:N1d4f0a8e76f648df8ccab88c97a3b343",
+      "@id": "_:N07647ec4e8d544c9a7e08fff6139eeff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -118,15 +106,15 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:N36c56487627541a09a0d895c28bd86fe",
+      "@id": "_:N4d04edc64c3d4a0f9a925da05335d0fe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2044"
+        "@id": "edam:data_1276"
       },
-      "sc:name": "Sequence"
+      "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:Nf70705f4491d47bc85652ab9dd5f3b06",
+      "@id": "_:N9b81948746014ff5a5ec967a0892e661",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1364"
@@ -134,8 +122,20 @@
       "sc:name": "Hidden Markov model"
     },
     {
-      "@id": "https://doi.org/10.1038/nbt1160",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7bb660bc15e34d538bb4ae61663b59f0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N11a1a9648ecc426ca810e8b9f0ceba8d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1364"
+      },
+      "sc:name": "Hidden Markov model"
     }
   ]
 }

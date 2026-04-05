@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/gigascience/giy110",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sequana_coverage",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Cokelaer",
       "bsc:input": {
-        "@id": "_:N5f2cb18b2bd24713a55c77cbf4068238"
+        "@id": "_:N61f42985a4cd43dd9f7362c57adcf9bf"
       },
       "bsc:output": {
-        "@id": "_:N2ae3bb3722fe4f9cbb7dc632615d2cd7"
+        "@id": "_:N8e2d06c65bec4edcbd6a4600deed8056"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -64,11 +60,11 @@
         "Dimitri Desvillechabrol"
       ],
       "sc:citation": [
-        "pubmed:30192951",
-        "pmcid:PMC6275460",
         {
           "@id": "https://doi.org/10.1093/gigascience/giy110"
-        }
+        },
+        "pmcid:PMC6275460",
+        "pubmed:30192951"
       ],
       "sc:description": "Show coverage and interval of confidence to identify under and over represented genomic regions. The tool also creates an HTML report with various images showing the coverage and GC versus coverage plots. It also provides a set of CSV files with low or high coverage regions (as compared to the average coverage).",
       "sc:featureList": {
@@ -78,9 +74,9 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "sequana_coverage",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
         "Bioinformatics and Biostatistics Hub",
@@ -93,26 +89,7 @@
       "sc:url": "http://sequana.readthedocs.io"
     },
     {
-      "@id": "_:N5f2cb18b2bd24713a55c77cbf4068238",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2854"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Position-specific scoring matrix"
-    },
-    {
-      "@id": "_:N2ae3bb3722fe4f9cbb7dc632615d2cd7",
+      "@id": "_:N8e2d06c65bec4edcbd6a4600deed8056",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -121,6 +98,29 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "_:N61f42985a4cd43dd9f7362c57adcf9bf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2854"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Position-specific scoring matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1093/gigascience/giy110",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

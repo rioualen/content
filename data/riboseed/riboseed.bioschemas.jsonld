@@ -36,31 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-9035-2143",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gky212",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/riboSeed",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-9035-2143"
       },
       "bsc:input": {
-        "@id": "_:N31da92e0d4c143ddad21cee1ae0c0c76"
+        "@id": "_:Ncc57aa3f24964a9cad9a23a22a8b89e7"
       },
       "bsc:output": {
-        "@id": "_:N8a6ca39e00b242b283c469f532b0c242"
+        "@id": "_:N8ea17daae689485e8a47ae9ad2fadf93"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Workflow"
+        "Workflow",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0196"
       },
       "sc:citation": [
         "pubmed:29608703",
-        "pmcid:PMC6009695",
         {
           "@id": "https://doi.org/10.1093/nar/gky212"
-        }
+        },
+        "pmcid:PMC6009695"
       ],
       "sc:description": "Prokaryotic genome assembly polisher -- uses targeted subassembly to resolve gaps caused by repeated rDNA operons.",
       "sc:featureList": [
@@ -82,15 +90,7 @@
       "sc:url": "https://github.com/nickp60/riboSeed/"
     },
     {
-      "@id": "_:N8a6ca39e00b242b283c469f532b0c242",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:N31da92e0d4c143ddad21cee1ae0c0c76",
+      "@id": "_:Ncc57aa3f24964a9cad9a23a22a8b89e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1246"
@@ -98,12 +98,12 @@
       "sc:name": "Sequence cluster (nucleic acid)"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gky212",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-9035-2143",
-      "@type": "sc:Person"
+      "@id": "_:N8ea17daae689485e8a47ae9ad2fadf93",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:name": "Sequence assembly"
     }
   ]
 }

@@ -36,26 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ccrepe",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "George Weingart",
-        "Emma Schwager",
-        "Craig Bielski"
+        "Craig Bielski",
+        "Emma Schwager"
       ],
       "bsc:input": {
-        "@id": "_:N5d3084104a2c4b5d9d35ecaec4def2e1"
+        "@id": "_:N19da049a32704b69b933ec0ad68f9496"
       },
       "bsc:output": [
         {
-          "@id": "_:N0ff83be36774406089522fd7d9ff5b66"
+          "@id": "_:N0ce6661beef6412299ff2dee24c4cdef"
         },
         {
-          "@id": "_:N2ed2eb64f86d45b387335a81ac97233b"
+          "@id": "_:Nbcbfcb4e3e684c1aaf79a24cf2555e2c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,37 +61,37 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0091"
-        },
-        {
           "@id": "edam:topic_3174"
         },
         {
           "@id": "edam:topic_2269"
+        },
+        {
+          "@id": "edam:topic_0091"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pmcid:PMC4509590",
         "pubmed:25633503"
       ],
       "sc:description": "The package is designed to assess the significance of general similarity measures in compositional datasets. The package has two functions: ccrepe: Calculates similarity measures, p-values and q-values for relative abundances of bugs in one or two body sites using bootstrap and permutation matrices of the data. nc.score: Calculates species-level co-variation and co-exclusion patterns based on an extension of the checkerboard score to ordinal data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3465"
         },
         {
-          "@id": "edam:operation_3465"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "MIT",
       "sc:name": "ccrepe",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ccrepe.html"
@@ -104,7 +100,34 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ccrepe.html"
     },
     {
-      "@id": "_:N0ff83be36774406089522fd7d9ff5b66",
+      "@id": "_:N19da049a32704b69b933ec0ad68f9496",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N0ce6661beef6412299ff2dee24c4cdef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Statistical estimate score"
+    },
+    {
+      "@id": "_:Nbcbfcb4e3e684c1aaf79a24cf2555e2c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -120,31 +143,8 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N2ed2eb64f86d45b387335a81ac97233b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:N5d3084104a2c4b5d9d35ecaec4def2e1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

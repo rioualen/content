@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/antarna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Robert Kleinkauf",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Robert Kleinkauf"
       ],
       "bsc:input": {
-        "@id": "_:N50ef94940426488ebe83e06a0d8705ca"
+        "@id": "_:N823f249e3c65433fb517b4bfd7148663"
       },
       "bsc:output": {
-        "@id": "_:N82f32fd8f10c4381a60d62c15056edc4"
+        "@id": "_:N2fdf5ad334c14118be70d2c424c18427"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -56,17 +60,17 @@
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Robert Kleinkauf",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Robert Kleinkauf"
       ],
       "sc:citation": [
-        "pmcid:PMC4576691",
-        "pubmed:26023105",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv319"
-        }
+        },
+        "pubmed:26023105",
+        "pmcid:PMC4576691"
       ],
       "sc:description": "Multi-objective sequence design by inverse folding.",
       "sc:featureList": {
@@ -80,8 +84,8 @@
         "Linux"
       ],
       "sc:provider": [
-        "University Freiburg",
-        "rnateam"
+        "rnateam",
+        "University Freiburg"
       ],
       "sc:softwareHelp": {
         "@id": "http://rna.informatik.uni-freiburg.de/AntaRNA/"
@@ -90,18 +94,7 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/AntaRNA/"
     },
     {
-      "@id": "_:N50ef94940426488ebe83e06a0d8705ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0880"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1457"
-      },
-      "sc:name": "RNA secondary structure"
-    },
-    {
-      "@id": "_:N82f32fd8f10c4381a60d62c15056edc4",
+      "@id": "_:N2fdf5ad334c14118be70d2c424c18427",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -112,8 +105,15 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
+      "@id": "_:N823f249e3c65433fb517b4bfd7148663",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0880"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1457"
+      },
+      "sc:name": "RNA secondary structure"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btv319",

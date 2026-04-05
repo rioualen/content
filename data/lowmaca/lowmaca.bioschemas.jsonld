@@ -36,54 +36,50 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-1103-7688",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1186/s12859-016-0935-7",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "http://orcid.org/0000-0001-6371-1334",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-016-0935-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/lowmaca",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "http://orcid.org/0000-0003-1103-7688"
+          "@id": "http://orcid.org/0000-0001-6371-1334"
         },
         {
-          "@id": "http://orcid.org/0000-0001-6371-1334"
+          "@id": "http://orcid.org/0000-0003-1103-7688"
         }
       ],
       "bsc:input": [
         {
-          "@id": "_:Ne5b6a15659094d4586f1bc2fafed7d5a"
+          "@id": "_:N604cc91ac1304f77ac4480d9ad0fd55a"
         },
         {
-          "@id": "_:N36f782b6c29d4f949fc2747c7588834c"
+          "@id": "_:Nb091b6993d094b319627180ced80758d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N014ebc7917df4bf9a2459af1f138abbc"
+          "@id": "_:Nabd3dfc97d6b49b28fcd7316b4b0d148"
         },
         {
-          "@id": "_:N5cd277dc46ec44bea7526bdb34b38fa1"
+          "@id": "_:Na2f41b34d2e548409490a1bd56055df9"
         },
         {
-          "@id": "_:N80c51301cd434cc0882265d0890e2578"
+          "@id": "_:N23440b91d01a45028871d0d6d5ef7568"
         },
         {
-          "@id": "_:Nf6032a0437914772a581def468e14ba0"
+          "@id": "_:Nfbfd56e329f14790b01e3d1f60df237d"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -95,10 +91,10 @@
       ],
       "sc:citation": [
         "pmcid:PMC4748640",
-        "pubmed:26860319",
         {
           "@id": "https://doi.org/10.1186/s12859-016-0935-7"
-        }
+        },
+        "pubmed:26860319"
       ],
       "sc:description": "This package is a simple suite of tools to investigate and analyze the mutation profile of several proteins or PFAM domains via consensus alignment. You can conduct an hypothesis driven exploratory analysis using our package simply providing a set of genes or PFAM domains of your interest.",
       "sc:featureList": [
@@ -126,45 +122,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/LowMACA.html"
     },
     {
-      "@id": "_:N014ebc7917df4bf9a2459af1f138abbc",
+      "@id": "_:N604cc91ac1304f77ac4480d9ad0fd55a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0867"
+        "@id": "edam:data_2295"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Sequence alignment report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene ID"
     },
     {
-      "@id": "_:N5cd277dc46ec44bea7526bdb34b38fa1",
+      "@id": "_:Nb091b6993d094b319627180ced80758d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_1138"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Pfam accession number"
     },
     {
-      "@id": "_:N80c51301cd434cc0882265d0890e2578",
+      "@id": "_:Nabd3dfc97d6b49b28fcd7316b4b0d148",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -174,16 +154,16 @@
           "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3603"
         },
         {
-          "@id": "edam:format_3603"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:Nf6032a0437914772a581def468e14ba0",
+      "@id": "_:Na2f41b34d2e548409490a1bd56055df9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2166"
@@ -202,26 +182,46 @@
       "sc:name": "Sequence composition plot"
     },
     {
-      "@id": "_:Ne5b6a15659094d4586f1bc2fafed7d5a",
+      "@id": "_:N23440b91d01a45028871d0d6d5ef7568",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2295"
+        "@id": "edam:data_0867"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence alignment report"
     },
     {
-      "@id": "_:N36f782b6c29d4f949fc2747c7588834c",
+      "@id": "_:Nfbfd56e329f14790b01e3d1f60df237d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1138"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Pfam accession number"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-1103-7688",
+      "@type": "sc:Person"
     }
   ]
 }

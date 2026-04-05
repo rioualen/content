@@ -36,11 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1111/tpj.12734",
+      "@id": "https://doi.org/10.48550/arXiv.2303.02509",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1111/tpj.70138",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-5876-4391",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1111/tpj.12734",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8915-8626",
       "@type": "sc:Person"
     },
     {
@@ -51,27 +63,30 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N73f965528b014c41b50af7ed7555b997"
+          "@id": "_:N161d64b574ce43bdbbc4542acd7234a0"
         },
         {
-          "@id": "_:N8766ad16e1634f5f8b29b7e79c4ad525"
+          "@id": "_:Ne05c0947565443c486d8dc75aa66d9d3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9bc871f98e914764a89fdfb85a082125"
+          "@id": "_:N7f3171890d5240f9b92b20eab1263162"
         },
         {
-          "@id": "_:Nc7505f4bb1ee45048ea1b1a3f417c078"
+          "@id": "_:Nf3b0786f232648539ea488898358105f"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
+        "Web service",
         "Command-line tool",
-        "Web service"
+        "Script"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0780"
+        },
         {
           "@id": "edam:topic_2229"
         },
@@ -80,33 +95,30 @@
         },
         {
           "@id": "edam:topic_0622"
-        },
-        {
-          "@id": "edam:topic_0780"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-8915-8626"
+          "@id": "https://orcid.org/0000-0002-5876-4391"
         },
         {
-          "@id": "https://orcid.org/0000-0002-5876-4391"
+          "@id": "https://orcid.org/0000-0002-8915-8626"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC12136025",
         {
           "@id": "https://doi.org/10.1111/tpj.70138"
         },
-        "pubmed:40464854",
-        "pmcid:PMC12136025",
+        "pubmed:25438865",
         {
           "@id": "https://doi.org/10.48550/arXiv.2303.02509"
         },
-        "pmcid:PMC4329603",
-        "pubmed:25438865",
         {
           "@id": "https://doi.org/10.1111/tpj.12734"
-        }
+        },
+        "pmcid:PMC4329603",
+        "pubmed:40464854"
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0002-8915-8626"
@@ -114,21 +126,21 @@
       "sc:description": "ASAFind is a software that predicts the intracellular location of proteins in cells with four membrane-bound complex plastids of red algal origin. \nThese plastids evolved via eukaryote-eukaryote endosymbiosis and for example can be found in diatoms and cryptophytes. ASAFind uses protein sequence data and external predictions of signal peptides (by the tools SignalP and TargetP), and predicts plastid proteins, and proteins that are targeted to the periplastidic compartment from these data; optionally, a graphical output can generated.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_2489"
         },
         {
           "@id": "edam:operation_0422"
         },
         {
-          "@id": "edam:operation_2489"
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-SA-4.0",
       "sc:name": "ASAFind",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://asafind.jcu.cz/download-page/"
@@ -137,23 +149,7 @@
       "sc:url": "https://asafind.jcu.cz/"
     },
     {
-      "@id": "_:N9bc871f98e914764a89fdfb85a082125",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nc7505f4bb1ee45048ea1b1a3f417c078",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N73f965528b014c41b50af7ed7555b997",
+      "@id": "_:N161d64b574ce43bdbbc4542acd7234a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -161,7 +157,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N8766ad16e1634f5f8b29b7e79c4ad525",
+      "@id": "_:Ne05c0947565443c486d8dc75aa66d9d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -172,16 +168,20 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "https://orcid.org/0000-0002-8915-8626",
-      "@type": "sc:Person"
+      "@id": "_:N7f3171890d5240f9b92b20eab1263162",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:name": "Protein features"
     },
     {
-      "@id": "https://doi.org/10.48550/arXiv.2303.02509",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1111/tpj.70138",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf3b0786f232648539ea488898358105f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

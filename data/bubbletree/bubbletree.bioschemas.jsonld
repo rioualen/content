@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1102",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bubbletree",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Wei Zhu",
-        "Todd Creasy"
+        "Todd Creasy",
+        "Wei Zhu"
       ],
       "bsc:input": {
-        "@id": "_:Nd3efac5ab22542bb93d0c20e85308181"
+        "@id": "_:N56726f1916064a6f9fea535a97f2845e"
       },
       "bsc:output": [
         {
-          "@id": "_:N11638fb2274740db8f0d0509f1a214ff"
+          "@id": "_:N828edfa7f41a406c89113c671b52183a"
         },
         {
-          "@id": "_:N407cd1206dae40feb3c3e947fce2846d"
+          "@id": "_:Nc584ebc75f514668a977ac7c14538d7e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -67,19 +71,19 @@
         }
       ],
       "sc:citation": [
+        "pubmed:26578606",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1102"
         },
-        "pmcid:PMC4770205",
-        "pubmed:26578606"
+        "pmcid:PMC4770205"
       ],
       "sc:description": "CNV analysis in groups of tumor samples (Publication Pending).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3731"
+          "@id": "edam:operation_3233"
         },
         {
-          "@id": "edam:operation_3233"
+          "@id": "edam:operation_3731"
         },
         {
           "@id": "edam:operation_3227"
@@ -99,39 +103,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/BubbleTree.html"
     },
     {
-      "@id": "_:N11638fb2274740db8f0d0509f1a214ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1622"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3468"
-        }
-      ],
-      "sc:name": "Disease report"
-    },
-    {
-      "@id": "_:N407cd1206dae40feb3c3e947fce2846d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3567"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3468"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Reference sample report"
-    },
-    {
-      "@id": "_:Nd3efac5ab22542bb93d0c20e85308181",
+      "@id": "_:N56726f1916064a6f9fea535a97f2845e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -147,8 +119,36 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1102",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N828edfa7f41a406c89113c671b52183a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1622"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3468"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Disease report"
+    },
+    {
+      "@id": "_:Nc584ebc75f514668a977ac7c14538d7e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3567"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3468"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Reference sample report"
     }
   ]
 }

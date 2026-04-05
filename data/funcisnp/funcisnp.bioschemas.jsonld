@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gks542",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/funcisnp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Simon G. Coetzee",
       "bsc:input": [
         {
-          "@id": "_:Nd4d2d5e5bac247adaf6c33910a247925"
+          "@id": "_:N086256d098e3488097446d8505027216"
         },
         {
-          "@id": "_:N864650e626694b5aabe9423ec69c8aa7"
+          "@id": "_:Ndb072d0bab3e4c6fb0e64a5646bb5595"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb44ef8292eaa40a9b295c9c3dbaa69a2"
+          "@id": "_:Na8c78a865df9452fab4e1bd539e0595c"
         },
         {
-          "@id": "_:N3876a3454c39412fb4ae59dfc89a47c9"
+          "@id": "_:Nba807ae4467e43b0abd1a2f2630fbe1b"
         },
         {
-          "@id": "_:N6bc47ff871334cccb1d44976c35c68a6"
+          "@id": "_:Na60d4b49e9b546aaa53cdaa115dfa058"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -69,40 +65,40 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3673"
+          "@id": "edam:topic_0102"
         },
         {
           "@id": "edam:topic_3517"
         },
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_3169"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_3673"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3467035",
+        "pubmed:22684628",
         {
           "@id": "https://doi.org/10.1093/nar/gks542"
         },
-        "pubmed:22684628"
+        "pmcid:PMC3467035"
       ],
       "sc:description": "It integrates information from GWAS, 1000genomes and chromatin feature to identify functional SNP in coding or non-coding regions.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0488"
+          "@id": "edam:operation_3661"
         },
         {
-          "@id": "edam:operation_3661"
+          "@id": "edam:operation_0488"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "FunciSNP",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/FunciSNP.html"
@@ -111,36 +107,87 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/FunciSNP.html"
     },
     {
-      "@id": "_:Nb44ef8292eaa40a9b295c9c3dbaa69a2",
+      "@id": "_:N086256d098e3488097446d8505027216",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3003"
+        }
+      ],
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:Ndb072d0bab3e4c6fb0e64a5646bb5595",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3475"
+        },
+        {
           "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3508"
         }
       ],
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N3876a3454c39412fb4ae59dfc89a47c9",
+      "@id": "_:Na8c78a865df9452fab4e1bd539e0595c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:Nba807ae4467e43b0abd1a2f2630fbe1b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:Na60d4b49e9b546aaa53cdaa115dfa058",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3003"
+          "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_3003"
         },
         {
           "@id": "edam:format_2330"
@@ -149,55 +196,8 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N6bc47ff871334cccb1d44976c35c68a6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:Nd4d2d5e5bac247adaf6c33910a247925",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N864650e626694b5aabe9423ec69c8aa7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Nucleic acid features"
+      "@id": "https://doi.org/10.1093/nar/gks542",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
