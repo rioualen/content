@@ -36,23 +36,206 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2020.11.27.401018",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/MMseqs2",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:Ndc94983da657480e93f34163de5f87bd"
+        },
+        {
+          "@id": "_:Nadbc4f2993f14805b519acb3f2a66c1a"
+        },
+        {
+          "@id": "_:Nff8fb4145f2949c895a206d7a424e19f"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N30d9bb62fef5479fbcf590177bfa9dac"
+        },
+        {
+          "@id": "_:N2a6d44f22de04f01a1ee5c11e9b32314"
+        },
+        {
+          "@id": "_:Nef5a5f34cf1242569943aaf9e031bfc1"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0637"
+        },
+        {
+          "@id": "edam:topic_0623"
+        },
+        {
+          "@id": "edam:topic_0077"
+        },
+        {
+          "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_3174"
+        },
+        {
+          "@id": "edam:topic_0078"
+        }
+      ],
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1101/079681"
+        },
+        {
+          "@id": "https://doi.org/10.1038/s41467-018-04964-5"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2020.11.27.401018"
+        },
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btab184"
+        },
+        {
+          "@id": "https://doi.org/10.1038/nbt.3988"
+        },
+        "pmcid:PMC6691333",
+        "pubmed:29959318",
+        {
+          "@id": "https://doi.org/10.1101/2024.11.13.623350v1"
+        },
+        "pubmed:29035372",
+        "pubmed:30615063",
+        "pmcid:PMC6026198",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/bty1057"
+        },
+        "pubmed:33734313",
+        {
+          "@id": "https://doi.org/10.1038/s41592-025-02819-8"
+        },
+        "pmcid:PMC8479651"
+      ],
+      "sc:description": "MMseqs2 (Many-against-Many sequence searching) is a software suite to search and cluster huge protein and nucleotide sequence sets. MMseqs2 is open source software implemented in C++ for Linux, MacOS, and (as beta version, via cygwin) Windows. The software is designed to run on multiple cores and servers and exhibits very good scalability. MMseqs2 can run 10000 times faster than BLAST. At 100 times its speed it achieves almost the same sensitivity. It can perform profile searches with the same sensitivity as PSI-BLAST at over 400 times its speed.\n\nMMseqs2 includes Linclust, the first clustering algorithm whose runtime scales linearly With Linclust we clustered 1.6 billion metagenomic sequence fragments in 10 h on a single server to 50% sequence identity.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_0291"
+        },
+        {
+          "@id": "edam:operation_0292"
+        },
+        {
+          "@id": "edam:operation_3460"
+        },
+        {
+          "@id": "edam:operation_0346"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "MIT",
+      "sc:name": "MMseqs2",
+      "sc:operatingSystem": [
+        "Linux",
+        "Mac",
+        "Windows"
+      ],
+      "sc:softwareHelp": [
+        {
+          "@id": "https://github.com/soedinglab/MMseqs2/wiki/Tutorials"
+        },
+        {
+          "@id": "https://github.com/soedinglab/mmseqs2/wiki"
+        },
+        {
+          "@id": "https://github.com/soedinglab/MMseqs2/blob/master/README.md"
+        }
+      ],
+      "sc:url": "https://mmseqs.com"
+    },
+    {
+      "@id": "_:Ndc94983da657480e93f34163de5f87bd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2200"
+        },
+        {
+          "@id": "edam:format_2182"
+        }
+      ],
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "_:Nadbc4f2993f14805b519acb3f2a66c1a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2200"
+        },
+        {
+          "@id": "edam:format_2182"
+        }
+      ],
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "_:Nff8fb4145f2949c895a206d7a424e19f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2200"
+        },
+        {
+          "@id": "edam:format_2182"
+        }
+      ],
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "_:N30d9bb62fef5479fbcf590177bfa9dac",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1235"
+      },
+      "sc:name": "Sequence cluster"
+    },
+    {
+      "@id": "_:N2a6d44f22de04f01a1ee5c11e9b32314",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:Nef5a5f34cf1242569943aaf9e031bfc1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1333"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
       "@id": "https://doi.org/10.1101/2024.11.13.623350v1",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-018-04964-5",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nbt.3988",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty1057",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1101/079681",
       "@type": "sc:CreativeWork"
     },
     {
@@ -64,199 +247,16 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1101/2020.11.27.401018",
+      "@id": "https://doi.org/10.1101/079681",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://bio.tools/MMseqs2",
-      "@type": "sc:SoftwareApplication",
-      "bsc:input": [
-        {
-          "@id": "_:N3cc81834614f40568410f2d0bb44201f"
-        },
-        {
-          "@id": "_:N7013c091385d4ef9b97084e10e393cff"
-        },
-        {
-          "@id": "_:N66db0ff87d60473c8a17713d0bc907ec"
-        }
-      ],
-      "bsc:output": [
-        {
-          "@id": "_:Nba059d15c8aa4d558313640653e36e56"
-        },
-        {
-          "@id": "_:N644f5c2c893a40d680bcfcd4ea47ca58"
-        },
-        {
-          "@id": "_:N57e21b7422f34662a42795a83379532d"
-        }
-      ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Command-line tool",
-      "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0077"
-        },
-        {
-          "@id": "edam:topic_0637"
-        },
-        {
-          "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_0078"
-        },
-        {
-          "@id": "edam:topic_0623"
-        },
-        {
-          "@id": "edam:topic_3174"
-        }
-      ],
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1038/s41592-025-02819-8"
-        },
-        "pubmed:33734313",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/bty1057"
-        },
-        {
-          "@id": "https://doi.org/10.1101/079681"
-        },
-        "pubmed:30615063",
-        "pubmed:29959318",
-        {
-          "@id": "https://doi.org/10.1101/2024.11.13.623350v1"
-        },
-        "pmcid:PMC8479651",
-        "pmcid:PMC6026198",
-        {
-          "@id": "https://doi.org/10.1038/s41467-018-04964-5"
-        },
-        {
-          "@id": "https://doi.org/10.1101/2020.11.27.401018"
-        },
-        "pmcid:PMC6691333",
-        {
-          "@id": "https://doi.org/10.1038/nbt.3988"
-        },
-        "pubmed:29035372",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btab184"
-        }
-      ],
-      "sc:description": "MMseqs2 (Many-against-Many sequence searching) is a software suite to search and cluster huge protein and nucleotide sequence sets. MMseqs2 is open source software implemented in C++ for Linux, MacOS, and (as beta version, via cygwin) Windows. The software is designed to run on multiple cores and servers and exhibits very good scalability. MMseqs2 can run 10000 times faster than BLAST. At 100 times its speed it achieves almost the same sensitivity. It can perform profile searches with the same sensitivity as PSI-BLAST at over 400 times its speed.\n\nMMseqs2 includes Linclust, the first clustering algorithm whose runtime scales linearly With Linclust we clustered 1.6 billion metagenomic sequence fragments in 10 h on a single server to 50% sequence identity.",
-      "sc:featureList": [
-        {
-          "@id": "edam:operation_3460"
-        },
-        {
-          "@id": "edam:operation_0346"
-        },
-        {
-          "@id": "edam:operation_0291"
-        },
-        {
-          "@id": "edam:operation_0292"
-        }
-      ],
-      "sc:isAccessibleForFree": true,
-      "sc:license": "MIT",
-      "sc:name": "MMseqs2",
-      "sc:operatingSystem": [
-        "Linux",
-        "Windows",
-        "Mac"
-      ],
-      "sc:softwareHelp": [
-        {
-          "@id": "https://github.com/soedinglab/mmseqs2/wiki"
-        },
-        {
-          "@id": "https://github.com/soedinglab/MMseqs2/blob/master/README.md"
-        },
-        {
-          "@id": "https://github.com/soedinglab/MMseqs2/wiki/Tutorials"
-        }
-      ],
-      "sc:url": "https://mmseqs.com"
+      "@id": "https://doi.org/10.1038/nbt.3988",
+      "@type": "sc:CreativeWork"
     },
     {
-      "@id": "_:N3cc81834614f40568410f2d0bb44201f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2182"
-        },
-        {
-          "@id": "edam:format_2200"
-        }
-      ],
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:N7013c091385d4ef9b97084e10e393cff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2200"
-        },
-        {
-          "@id": "edam:format_2182"
-        }
-      ],
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:N66db0ff87d60473c8a17713d0bc907ec",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2182"
-        },
-        {
-          "@id": "edam:format_2200"
-        }
-      ],
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:Nba059d15c8aa4d558313640653e36e56",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1333"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N644f5c2c893a40d680bcfcd4ea47ca58",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:N57e21b7422f34662a42795a83379532d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1235"
-      },
-      "sc:name": "Sequence cluster"
+      "@id": "https://doi.org/10.1093/bioinformatics/bty1057",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

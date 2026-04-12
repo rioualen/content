@@ -36,6 +36,111 @@
   },
   "@graph": [
     {
+      "@id": "https://bio.tools/DEPIB",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "Eric Charpentier",
+      "bsc:input": {
+        "@id": "_:N17d17d13522548a18a87d54c753f1b9c"
+      },
+      "bsc:output": [
+        {
+          "@id": "_:N229d7bcb97fe46d6bdb7018e5832e58f"
+        },
+        {
+          "@id": "_:N34379a4719f144fc9b8ee50aed5ac712"
+        },
+        {
+          "@id": "_:Nef55a25005744292b0884cc41cb0afdf"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Workflow",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3308"
+      },
+      "sc:author": [
+        {
+          "@id": "https://orcid.org/0000-0002-8689-2083"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3237-7382"
+        },
+        "Erwan Delage",
+        "Eric Charpentier"
+      ],
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1038/s41419-019-2200-2"
+        },
+        "pmcid:PMC6850038",
+        "pubmed:30977188",
+        {
+          "@id": "https://doi.org/10.1002/stem.3014"
+        },
+        "pmcid:PMC6944699",
+        "pubmed:31907355"
+      ],
+      "sc:contributor": "Damien Vintache",
+      "sc:description": "Analysis pipeline using Snakemake for RNAseq analysis in order to find differentially expressed genes.",
+      "sc:featureList": {
+        "@id": "edam:operation_3800"
+      },
+      "sc:isAccessibleForFree": true,
+      "sc:name": "DEPIB",
+      "sc:provider": "BiRD bioinformatics facility",
+      "sc:softwareVersion": "1.0",
+      "sc:url": "https://gitlab.univ-nantes.fr/bird_pipeline_registry/RNAseq_quantif_pipeline"
+    },
+    {
+      "@id": "_:N229d7bcb97fe46d6bdb7018e5832e58f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N34379a4719f144fc9b8ee50aed5ac712",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "_:Nef55a25005744292b0884cc41cb0afdf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N17d17d13522548a18a87d54c753f1b9c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1931"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
       "@id": "https://doi.org/10.1002/stem.3014",
       "@type": "sc:CreativeWork"
     },
@@ -50,111 +155,6 @@
     {
       "@id": "https://orcid.org/0000-0003-3237-7382",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://bio.tools/DEPIB",
-      "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": "Eric Charpentier",
-      "bsc:input": {
-        "@id": "_:N4b874ca5ccb548c6a3224ca7025101d9"
-      },
-      "bsc:output": [
-        {
-          "@id": "_:N4e0bf7135e16450ab709e173754ce693"
-        },
-        {
-          "@id": "_:N9b5f5c09665640388dde90f719b95a98"
-        },
-        {
-          "@id": "_:N9d39ae1ab6964b2c94e4f23b5852d3b6"
-        }
-      ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Workflow",
-      "sc:applicationSubCategory": {
-        "@id": "edam:topic_3308"
-      },
-      "sc:author": [
-        "Eric Charpentier",
-        {
-          "@id": "https://orcid.org/0000-0003-3237-7382"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-8689-2083"
-        },
-        "Erwan Delage"
-      ],
-      "sc:citation": [
-        "pubmed:31907355",
-        {
-          "@id": "https://doi.org/10.1038/s41419-019-2200-2"
-        },
-        "pmcid:PMC6850038",
-        {
-          "@id": "https://doi.org/10.1002/stem.3014"
-        },
-        "pubmed:30977188",
-        "pmcid:PMC6944699"
-      ],
-      "sc:contributor": "Damien Vintache",
-      "sc:description": "Analysis pipeline using Snakemake for RNAseq analysis in order to find differentially expressed genes.",
-      "sc:featureList": {
-        "@id": "edam:operation_3800"
-      },
-      "sc:isAccessibleForFree": true,
-      "sc:name": "DEPIB",
-      "sc:provider": "BiRD bioinformatics facility",
-      "sc:softwareVersion": "1.0",
-      "sc:url": "https://gitlab.univ-nantes.fr/bird_pipeline_registry/RNAseq_quantif_pipeline"
-    },
-    {
-      "@id": "_:N4b874ca5ccb548c6a3224ca7025101d9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1931"
-      },
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N4e0bf7135e16450ab709e173754ce693",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N9b5f5c09665640388dde90f719b95a98",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N9d39ae1ab6964b2c94e4f23b5852d3b6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Clustered expression profiles"
     }
   ]
 }

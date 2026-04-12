@@ -36,23 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAB547",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/predms",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6e79dcb6e67c4b2d9c27c2998ce4884a"
+          "@id": "_:N5905adb28b874456bee6d4038c4a05b6"
         },
         {
-          "@id": "_:N4c4c40bf532644408d312d1ff51f3b4b"
+          "@id": "_:Nf886ee543ef04bd5bffb97bbc8c7004b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3375"
+        },
         {
           "@id": "edam:topic_3336"
         },
@@ -60,13 +59,10 @@
           "@id": "edam:topic_3373"
         },
         {
-          "@id": "edam:topic_3407"
-        },
-        {
           "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_3375"
+          "@id": "edam:topic_3407"
         }
       ],
       "sc:citation": [
@@ -78,26 +74,34 @@
       "sc:description": "A random Forest model for predicting metabolic stability of drug candidates in human liver microsomes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0452"
-        },
-        {
           "@id": "edam:operation_3929"
         },
         {
           "@id": "edam:operation_0451"
+        },
+        {
+          "@id": "edam:operation_0452"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "PredMS",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
+        "Mac",
         "Linux"
       ],
       "sc:url": "https://predms.netlify.app"
     },
     {
-      "@id": "_:N6e79dcb6e67c4b2d9c27c2998ce4884a",
+      "@id": "_:N5905adb28b874456bee6d4038c4a05b6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2301"
+      },
+      "sc:name": "SMILES string"
+    },
+    {
+      "@id": "_:Nf886ee543ef04bd5bffb97bbc8c7004b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1712"
@@ -105,12 +109,8 @@
       "sc:name": "Chemical structure image"
     },
     {
-      "@id": "_:N4c4c40bf532644408d312d1ff51f3b4b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2301"
-      },
-      "sc:name": "SMILES string"
+      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAB547",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

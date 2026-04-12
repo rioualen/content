@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/acs.jproteome.8b00728.",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/deltamass",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Dmitry Avtonomov",
       "bsc:input": [
         {
-          "@id": "_:N24314c1c642e4886add716ab710aa455"
+          "@id": "_:N211809286cb24cb39e6cf977b0cebdb6"
         },
         {
-          "@id": "_:N7a54b8e5a3ae4d7a8f0983a60e811ceb"
+          "@id": "_:N2610aa163cd2495ea562a73575fc7900"
         }
       ],
       "bsc:output": {
-        "@id": "_:N04f75469ec4b4507841b2a21c74f9ab0"
+        "@id": "_:N4181debf1aa848a29e88e3614c588329"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -77,9 +81,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "DeltaMass",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/chhh/deltamass/blob/master/README.md"
@@ -88,23 +92,31 @@
       "sc:url": "https://github.com/chhh/deltamass"
     },
     {
-      "@id": "_:N24314c1c642e4886add716ab710aa455",
+      "@id": "_:N4181debf1aa848a29e88e3614c588329",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0844"
+      },
+      "sc:name": "Molecular mass"
+    },
+    {
+      "@id": "_:N211809286cb24cb39e6cf977b0cebdb6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3654"
         },
         {
-          "@id": "edam:format_3654"
+          "@id": "edam:format_3244"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N7a54b8e5a3ae4d7a8f0983a60e811ceb",
+      "@id": "_:N2610aa163cd2495ea562a73575fc7900",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -118,18 +130,6 @@
         }
       ],
       "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N04f75469ec4b4507841b2a21c74f9ab0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0844"
-      },
-      "sc:name": "Molecular mass"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jproteome.8b00728.",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

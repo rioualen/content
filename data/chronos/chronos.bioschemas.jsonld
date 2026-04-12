@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv673",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/chronos",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,57 +47,57 @@
         "Anastasios Bezerianos"
       ],
       "bsc:input": {
-        "@id": "_:N91f98f5329a74fd897cd767479dee08e"
+        "@id": "_:N0bd02214c721468ba8cf81f22cdfe154"
       },
       "bsc:output": [
         {
-          "@id": "_:Na6fa813ebc224cd7911864aaa09d7ad7"
+          "@id": "_:N997a7a548c6a49a9a6fc769f9b4917fb"
         },
         {
-          "@id": "_:N366ab6ae003c42d6b4214ba7738ee13d"
+          "@id": "_:N39aaba453e2840bea16a014b994ed3c9"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_3308"
         },
         {
           "@id": "edam:topic_0659"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
+        "pubmed:26568631",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv673"
-        },
-        "pubmed:26568631"
+        }
       ],
       "sc:description": "A package used for efficient unraveling of the inherent dynamic properties of pathways. MicroRNA-mediated subpathway topologies are extracted and evaluated by exploiting the temporal transition and the fold change activity of the linked genes/microRNAs",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_2497"
         },
         {
-          "@id": "edam:operation_2497"
+          "@id": "edam:operation_2495"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "CHRONOS",
       "sc:operatingSystem": [
+        "Mac",
         "Windows",
-        "Linux",
-        "Mac"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/manuals/CHRONOS/man/CHRONOS.pdf"
@@ -102,15 +106,7 @@
       "sc:url": "http://bioconductor.org/packages/CHRONOS/"
     },
     {
-      "@id": "_:N91f98f5329a74fd897cd767479dee08e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:Na6fa813ebc224cd7911864aaa09d7ad7",
+      "@id": "_:N997a7a548c6a49a9a6fc769f9b4917fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -118,7 +114,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N366ab6ae003c42d6b4214ba7738ee13d",
+      "@id": "_:N39aaba453e2840bea16a014b994ed3c9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -126,8 +122,12 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv673",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0bd02214c721468ba8cf81f22cdfe154",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:name": "Gene expression matrix"
     }
   ]
 }

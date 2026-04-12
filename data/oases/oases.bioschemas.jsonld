@@ -36,38 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/oases",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Daniel Zerbino",
-        "Marcel Schulz"
+        "Marcel Schulz",
+        "Daniel Zerbino"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nd5f9c0de23194b35ab90147810db6154"
+          "@id": "_:N9408a3b76a0e41b79449bcaaf59f1b57"
         },
         {
-          "@id": "_:N614558b179bf44d887d2ee5ec3433a48"
+          "@id": "_:Nfff8a89951134780a1b90ddb1b4b3f59"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4e7ab51b2ca74974996f649918e106d6"
+          "@id": "_:N4b2b924ac8934fd9820464317bfd4987"
         },
         {
-          "@id": "_:N64549a06b0094312bd2e55ba6c2b988c"
+          "@id": "_:Na281d41ab3c04a5fb6608427a0d8b1ab"
         },
         {
-          "@id": "_:N5e0ec04ed85041548a2866e22d8d353e"
+          "@id": "_:Na112e31f7aa640c489a09c8f2123a460"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3673"
+        },
         {
           "@id": "edam:topic_3308"
         },
@@ -75,18 +74,15 @@
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3673"
-        },
-        {
           "@id": "edam:topic_0196"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3324515",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts094"
         },
-        "pubmed:22368243"
+        "pubmed:22368243",
+        "pmcid:PMC3324515"
       ],
       "sc:description": "De novo transcriptome assembler designed to produce transcripts from short read sequencing technologies. It uploads a preliminary assembly produced by Velvet, and clusters the contigs into small groups, called loci. It then exploits the paired-end read and long read information, when available, to construct transcript isoforms.",
       "sc:featureList": [
@@ -110,23 +106,7 @@
       "sc:url": "https://github.com/dzerbino/oases"
     },
     {
-      "@id": "_:N4e7ab51b2ca74974996f649918e106d6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3181"
-      },
-      "sc:name": "Sequence assembly report"
-    },
-    {
-      "@id": "_:N64549a06b0094312bd2e55ba6c2b988c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:N5e0ec04ed85041548a2866e22d8d353e",
+      "@id": "_:N4b2b924ac8934fd9820464317bfd4987",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -134,7 +114,15 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:Nd5f9c0de23194b35ab90147810db6154",
+      "@id": "_:Na281d41ab3c04a5fb6608427a0d8b1ab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3181"
+      },
+      "sc:name": "Sequence assembly report"
+    },
+    {
+      "@id": "_:Na112e31f7aa640c489a09c8f2123a460",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -142,12 +130,24 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:N614558b179bf44d887d2ee5ec3433a48",
+      "@id": "_:N9408a3b76a0e41b79449bcaaf59f1b57",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
       },
       "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:Nfff8a89951134780a1b90ddb1b4b3f59",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

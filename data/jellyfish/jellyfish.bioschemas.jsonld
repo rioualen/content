@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr011",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/jellyfish",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Carl Kingsford",
-        "Guillaume Marçais"
+        "Guillaume Marçais",
+        "Carl Kingsford"
       ],
       "bsc:input": {
-        "@id": "_:Nd3bc7ffab63e426c830032b114a45bda"
+        "@id": "_:N6335a54c73c7481f982be657be4d54b2"
       },
       "bsc:output": {
-        "@id": "_:N761cc0010436422497538f911e1642ff"
+        "@id": "_:Ndfef73603bcf43988e93619d9aa4b937"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -59,11 +63,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:21217122",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr011"
         },
-        "pmcid:PMC3051319",
-        "pubmed:21217122"
+        "pmcid:PMC3051319"
       ],
       "sc:description": "A command-line algorithm for counting k-mers in DNA sequence.",
       "sc:featureList": {
@@ -88,23 +92,7 @@
       "sc:url": "http://www.genome.umd.edu/jellyfish.html"
     },
     {
-      "@id": "_:Nd3bc7ffab63e426c830032b114a45bda",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:N761cc0010436422497538f911e1642ff",
+      "@id": "_:Ndfef73603bcf43988e93619d9aa4b937",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -115,8 +103,20 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr011",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N6335a54c73c7481f982be657be4d54b2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "Sequence trace"
     }
   ]
 }

@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv741",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/traser",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "li chen",
       "bsc:input": [
         {
-          "@id": "_:N4f7a4e87e54d4da69eb76de732a10ca2"
+          "@id": "_:N9d19ba6faa0949feb9a6690310579063"
         },
         {
-          "@id": "_:N4e582170284349d1b66b97832ad0c290"
+          "@id": "_:N434e3e264a044b36a8d7fd9851c27dad"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nfee1b621ede24caab5a41cf8180b8d98"
+          "@id": "_:N5cd40466919043aca08d0025695a5677"
         },
         {
-          "@id": "_:Nd0831476eb8e4964b45dc87a56491f96"
+          "@id": "_:N7fd124956ea44503a42f87c9b7000160"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,18 +69,18 @@
           "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_3517"
         },
         {
-          "@id": "edam:topic_3517"
+          "@id": "edam:topic_3053"
         }
       ],
       "sc:citation": [
         "pubmed:26685307",
+        "pmcid:PMC5860183",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv741"
-        },
-        "pmcid:PMC5860183"
+        }
       ],
       "sc:description": "Performs GWAS trait-associated SNP enrichment analyses in genomic intervals using different hypothesis testing approaches, also provides various functionalities to explore and visualize the results.",
       "sc:featureList": {
@@ -85,9 +89,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "traseR",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/traseR.html"
@@ -96,39 +100,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/traseR.html"
     },
     {
-      "@id": "_:N4f7a4e87e54d4da69eb76de732a10ca2",
+      "@id": "_:N5cd40466919043aca08d0025695a5677",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1017"
+        "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2197"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3547"
         }
       ],
-      "sc:name": "Sequence range"
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:N4e582170284349d1b66b97832ad0c290",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2197"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nfee1b621ede24caab5a41cf8180b8d98",
+      "@id": "_:N7fd124956ea44503a42f87c9b7000160",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -144,24 +132,36 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:Nd0831476eb8e4964b45dc87a56491f96",
+      "@id": "_:N9d19ba6faa0949feb9a6690310579063",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_1017"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2197"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3475"
         }
       ],
-      "sc:name": "Plot"
+      "sc:name": "Sequence range"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv741",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N434e3e264a044b36a8d7fd9851c27dad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_2197"
+        }
+      ],
+      "sc:name": "DNA sequence"
     }
   ]
 }

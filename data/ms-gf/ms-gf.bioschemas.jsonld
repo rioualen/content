@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/pr8001244",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ms-gf",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0e7f2ce2b25245098e3fb465734c3d7c"
+          "@id": "_:N88149a7a8b9f4e0191cf863f02e9c569"
         },
         {
-          "@id": "_:N1f35a01bf7754695a940df2d9f3ab2ce"
+          "@id": "_:N7fbe88b0bb5844119c8479044ee793d2"
         },
         {
-          "@id": "_:N747a8e51dd2340dfafb2fc91f06ec9d0"
+          "@id": "_:N7cb4388e555d447697aad0ce05ace1ba"
         },
         {
-          "@id": "_:N9a638226ac254c5299662357b2b0693f"
+          "@id": "_:Naa341a9266d84f88b9f420e25f313b91"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N441b493d46564829879ecba4ec959f2a"
+          "@id": "_:N7e7432e03f2c4e86a1c4148f25348af8"
         },
         {
-          "@id": "_:N67bd9ca0e70b4511a08c76c13b5249bd"
+          "@id": "_:Na5ce9e62718740db84cdc1fbbaa1d308"
         },
         {
-          "@id": "_:Nad0c2d617dba424fb883bf3e20011496"
+          "@id": "_:N2c460e1b7f7e4e54ac95111d8c446e55"
         },
         {
-          "@id": "_:N1ff74ed5fd4441da835bd45971d0a171"
+          "@id": "_:Na82f885c931f41a3a10a2980c1c287f8"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -80,17 +84,14 @@
         }
       ],
       "sc:citation": [
-        "pubmed:25358478",
         {
           "@id": "https://doi.org/10.1021/pr8001244"
         },
+        "pubmed:25358478",
         "pubmed:18597511"
       ],
       "sc:description": "A tool which performs peptide identification by scoring MS/MS spectra against peptides derived from a protein sequence database.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3649"
-        },
         {
           "@id": "edam:operation_3631"
         },
@@ -98,22 +99,25 @@
           "@id": "edam:operation_0335"
         },
         {
-          "@id": "edam:operation_3643"
+          "@id": "edam:operation_3646"
         },
         {
           "@id": "edam:operation_3767"
         },
         {
+          "@id": "edam:operation_3643"
+        },
+        {
           "@id": "edam:operation_3647"
         },
         {
-          "@id": "edam:operation_3646"
+          "@id": "edam:operation_3649"
         }
       ],
       "sc:name": "MS-GF+",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://omics.pnl.gov/software/ms-gf"
@@ -121,29 +125,18 @@
       "sc:url": "http://omics.pnl.gov/software/ms-gf"
     },
     {
-      "@id": "_:N0e7f2ce2b25245098e3fb465734c3d7c",
+      "@id": "_:N7e7432e03f2c4e86a1c4148f25348af8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1233"
+        "@id": "edam:data_1667"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_3475"
       },
-      "sc:name": "Sequence set (protein)"
+      "sc:name": "E-value"
     },
     {
-      "@id": "_:N1f35a01bf7754695a940df2d9f3ab2ce",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3247"
-      },
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N747a8e51dd2340dfafb2fc91f06ec9d0",
+      "@id": "_:Na5ce9e62718740db84cdc1fbbaa1d308",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1667"
@@ -154,7 +147,40 @@
       "sc:name": "E-value"
     },
     {
-      "@id": "_:N9a638226ac254c5299662357b2b0693f",
+      "@id": "_:N2c460e1b7f7e4e54ac95111d8c446e55",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3247"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:Na82f885c931f41a3a10a2980c1c287f8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:N88149a7a8b9f4e0191cf863f02e9c569",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1233"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "_:N7fbe88b0bb5844119c8479044ee793d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3483"
@@ -164,10 +190,10 @@
           "@id": "edam:format_3654"
         },
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3651"
         },
         {
-          "@id": "edam:format_3651"
+          "@id": "edam:format_3244"
         },
         {
           "@id": "edam:format_3652"
@@ -179,18 +205,7 @@
       "sc:name": "Spectrum"
     },
     {
-      "@id": "_:N441b493d46564829879ecba4ec959f2a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1667"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3247"
-      },
-      "sc:name": "E-value"
-    },
-    {
-      "@id": "_:N67bd9ca0e70b4511a08c76c13b5249bd",
+      "@id": "_:N7cb4388e555d447697aad0ce05ace1ba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -201,30 +216,15 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nad0c2d617dba424fb883bf3e20011496",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N1ff74ed5fd4441da835bd45971d0a171",
+      "@id": "_:Naa341a9266d84f88b9f420e25f313b91",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1667"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3475"
+        "@id": "edam:format_3247"
       },
       "sc:name": "E-value"
-    },
-    {
-      "@id": "https://doi.org/10.1021/pr8001244",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

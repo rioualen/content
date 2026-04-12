@@ -36,25 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s41747-020-00150-9",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1007/s10278-021-00512-8",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/denoising-inhomogeneity_correction_tool",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N503b2935fc0c4f2c9b22e6a5c6edebaf"
+          "@id": "_:N21cf60a0112d4e5c87d33b394390b2d8"
         },
         {
-          "@id": "_:N482f2c8a799b49b8a40f191744ea47df"
+          "@id": "_:N30d5068ad30d42e28466e745ace87f94"
         },
         {
-          "@id": "_:Na4860985dbc743ae9e1dd3bd682c49f4"
+          "@id": "_:N2677b34eca7d43439e87e8c97c1ad114"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1f1e3084a6244243a08a66088b125b8b"
+          "@id": "_:Nb082a3d6e56341238bcfab7f6f49a852"
         },
         {
-          "@id": "_:N6e0c8b94f722492fad956ffea2c6c059"
+          "@id": "_:Nbdeda7c8562f4d68b18e3b4fffdbd037"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -63,16 +71,16 @@
         "@id": "edam:topic_0219"
       },
       "sc:citation": [
-        "pmcid:PMC8554919",
-        {
-          "@id": "https://doi.org/10.1007/s10278-021-00512-8"
-        },
-        "pmcid:PMC7125275",
-        "pubmed:34505958",
         {
           "@id": "https://doi.org/10.1186/s41747-020-00150-9"
         },
-        "pubmed:32246291"
+        "pmcid:PMC8554919",
+        "pubmed:32246291",
+        {
+          "@id": "https://doi.org/10.1007/s10278-021-00512-8"
+        },
+        "pubmed:34505958",
+        "pmcid:PMC7125275"
       ],
       "sc:description": "The tool is designed to perform a customisable image pre-processing to reduce noise and inhomogeneity field effect, thus improving image quality and reproducibility of radiomics features. This tool consists of two independent steps: one for denoising using one of the 5 integrated filters (Bilateral Filter, Anisotropic Diffusion Filter (ADF), Curvature Flow Filter (CFF), SUSAN and Non Local Means (NLM)), and another for the ANTs N4 and another for the ANT's N4 bias correction filter. The parameter configuration of this tool has been optimised for TW1, T2W, DWI and DCE sequences in neuroblastoma (NB) and paediatric brain tumours, but it can also be configured with some of their parameters using a JSON parameter configuration file.",
       "sc:featureList": {
@@ -81,9 +89,9 @@
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "Denoising-Inhomogeneity Correction Tool (EUCAIM-SW-015_T-01-01-015)",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -97,7 +105,7 @@
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/4/repositories/denoising_inhomogeneity_correction_tool/artifacts-tab"
     },
     {
-      "@id": "_:N503b2935fc0c4f2c9b22e6a5c6edebaf",
+      "@id": "_:N21cf60a0112d4e5c87d33b394390b2d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -108,18 +116,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N482f2c8a799b49b8a40f191744ea47df",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Na4860985dbc743ae9e1dd3bd682c49f4",
+      "@id": "_:N30d5068ad30d42e28466e745ace87f94",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -130,7 +127,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N1f1e3084a6244243a08a66088b125b8b",
+      "@id": "_:N2677b34eca7d43439e87e8c97c1ad114",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -141,7 +138,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N6e0c8b94f722492fad956ffea2c6c059",
+      "@id": "_:Nb082a3d6e56341238bcfab7f6f49a852",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -152,12 +149,15 @@
       "sc:name": "Image"
     },
     {
-      "@id": "https://doi.org/10.1186/s41747-020-00150-9",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1007/s10278-021-00512-8",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nbdeda7c8562f4d68b18e3b4fffdbd037",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
     }
   ]
 }

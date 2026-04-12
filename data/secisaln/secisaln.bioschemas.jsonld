@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp020",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/secisaln",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Didac Santesmasses & Charles Chapple",
       "bsc:input": {
-        "@id": "_:N57cffe05f36f4f63bc68c74a6597f19c"
+        "@id": "_:Nc4d7a75e0cf44cb59d39ebf577c85736"
       },
       "bsc:output": {
-        "@id": "_:Nc2f57693922546408fb57d28ecf8cd33"
+        "@id": "_:N78a0ef71294148d4bd0fb9f6b49bd241"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -52,11 +56,11 @@
       },
       "sc:author": "Charles Chapple",
       "sc:citation": [
-        "pmcid:PMC2647825",
-        "pubmed:19179357",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp020"
-        }
+        },
+        "pubmed:19179357",
+        "pmcid:PMC2647825"
       ],
       "sc:contributor": "Marco Mariotti",
       "sc:description": "Predict a SECIS element in the query sequence, split it into its constituent parts and align these against a precompiled database of eukaryotic SECIS elements.",
@@ -65,22 +69,14 @@
       },
       "sc:name": "SECISaln",
       "sc:provider": [
-        "crg.eu",
-        "Lab Roderic Guigo Group"
+        "Lab Roderic Guigo Group",
+        "crg.eu"
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://big.crg.cat/services/secisaln"
     },
     {
-      "@id": "_:Nc2f57693922546408fb57d28ecf8cd33",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0869"
-      },
-      "sc:name": "Sequence-profile alignment"
-    },
-    {
-      "@id": "_:N57cffe05f36f4f63bc68c74a6597f19c",
+      "@id": "_:Nc4d7a75e0cf44cb59d39ebf577c85736",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -88,8 +84,12 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp020",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N78a0ef71294148d4bd0fb9f6b49bd241",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0869"
+      },
+      "sc:name": "Sequence-profile alignment"
     }
   ]
 }

@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jproteome.4c00188",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0594-0993",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/stitch-snijderlab",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,68 +43,90 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N72fd61629ef9449fb206d7a7075416d5"
+          "@id": "_:N2ea593220f8346fca5532b0c3769293c"
         },
         {
-          "@id": "_:Ndeea92a9c4db419293b142c743e51c09"
+          "@id": "_:Nf4faa12db59844b8b1f499b2f29c5ccb"
         },
         {
-          "@id": "_:Na093b8e2cc0e48f4bf99908c54b1e647"
+          "@id": "_:N4a4de163b86d480da7f3ca48dec8a27a"
         },
         {
-          "@id": "_:N3d782fdba8bb48529c12c095bf9f2790"
+          "@id": "_:N1f297ca2e1bb4ae4a6dc192757191c2b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na6e5af65a5aa48ec9806fdb7a5deaa5c"
+          "@id": "_:Nbfacf64e7f50458ab912646f81a242d6"
         },
         {
-          "@id": "_:N64dac2a40a90427f888be18230203215"
+          "@id": "_:N967a14bdc4a142cbb1205d194a047fca"
         },
         {
-          "@id": "_:Ne217190108114b44b7e6c6079f52246a"
+          "@id": "_:N80f4370cd17644ffaca1d77264639dcb"
         },
         {
-          "@id": "_:N127ca17bd2d34393bdc70f3adc09503c"
+          "@id": "_:Nfb714707b11c41438ba48b84d7c3e7b4"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:citation": [
-        "pubmed:38932690",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.4c00188"
-        }
+        },
+        "pubmed:38932690"
       ],
       "sc:description": "Stitch is a software tool that performs template-based assembly of proteomics short reads for de novo antibody sequencing and repertoire profiling.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2409"
-        },
-        {
-          "@id": "edam:operation_0310"
+          "@id": "edam:operation_1812"
         },
         {
           "@id": "edam:operation_2425"
         },
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_0310"
+        },
+        {
+          "@id": "edam:operation_2409"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "Stitch",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareVersion": "1.5.0",
       "sc:url": "https://github.com/snijderlab/stitch"
     },
     {
-      "@id": "_:N72fd61629ef9449fb206d7a7075416d5",
+      "@id": "_:N2ea593220f8346fca5532b0c3769293c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1233"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "_:Nf4faa12db59844b8b1f499b2f29c5ccb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N4a4de163b86d480da7f3ca48dec8a27a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -123,40 +137,29 @@
       "sc:name": "Sequence set (protein)"
     },
     {
-      "@id": "_:Ndeea92a9c4db419293b142c743e51c09",
+      "@id": "_:N1f297ca2e1bb4ae4a6dc192757191c2b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
       },
       "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_3752"
+        },
         {
           "@id": "edam:format_1477"
         },
         {
           "@id": "edam:format_1964"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_1929"
         }
       ],
       "sc:name": "Sequence set (protein)"
     },
     {
-      "@id": "_:Na093b8e2cc0e48f4bf99908c54b1e647",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1233"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (protein)"
-    },
-    {
-      "@id": "_:N3d782fdba8bb48529c12c095bf9f2790",
+      "@id": "_:Nbfacf64e7f50458ab912646f81a242d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -167,56 +170,53 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:Na6e5af65a5aa48ec9806fdb7a5deaa5c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N64dac2a40a90427f888be18230203215",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1233"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (protein)"
-    },
-    {
-      "@id": "_:Ne217190108114b44b7e6c6079f52246a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1233"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (protein)"
-    },
-    {
-      "@id": "_:N127ca17bd2d34393bdc70f3adc09503c",
+      "@id": "_:N967a14bdc4a142cbb1205d194a047fca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2331"
+        },
+        {
           "@id": "edam:format_3752"
         },
         {
           "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_2331"
         }
       ],
       "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "_:N80f4370cd17644ffaca1d77264639dcb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1233"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "_:Nfb714707b11c41438ba48b84d7c3e7b4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1233"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jproteome.4c00188",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0594-0993",
+      "@type": "sc:Person"
     }
   ]
 }

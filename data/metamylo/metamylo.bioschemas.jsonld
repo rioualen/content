@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0079722",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metamylo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Christian Delamarche",
       "bsc:input": {
-        "@id": "_:N59745cabccac4bcab5b36191c0006939"
+        "@id": "_:N8250c3ccdcf94a4d881f50c5594e493a"
       },
       "bsc:output": {
-        "@id": "_:N5ea8eeb1ea2e4b6b81e3534cdb3ea6d4"
+        "@id": "_:Nd14b4421b41b4793ac2d7658055cdccc"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -56,16 +60,16 @@
         }
       ],
       "sc:author": [
-        "Mathieu Emily",
         "Christian Delamarche",
+        "Mathieu Emily",
         "Anthony Talvas"
       ],
       "sc:citation": [
         "pubmed:24260292",
-        "pmcid:PMC3834037",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0079722"
-        }
+        },
+        "pmcid:PMC3834037"
       ],
       "sc:description": "Prediction of amyloid fragments.",
       "sc:featureList": {
@@ -74,9 +78,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "MetAmyl",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "GenOuest",
       "sc:softwareHelp": {
@@ -85,7 +89,23 @@
       "sc:url": "http://metamyl.genouest.org"
     },
     {
-      "@id": "_:N59745cabccac4bcab5b36191c0006939",
+      "@id": "_:Nd14b4421b41b4793ac2d7658055cdccc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N8250c3ccdcf94a4d881f50c5594e493a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -94,26 +114,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence set (protein)"
-    },
-    {
-      "@id": "_:N5ea8eeb1ea2e4b6b81e3534cdb3ea6d4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0079722",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

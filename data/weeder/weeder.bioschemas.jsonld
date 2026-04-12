@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/0471250953.bi0211s47",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/weeder",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Federico Zambelli",
-        "Giulio Pavesi"
+        "Giulio Pavesi",
+        "Federico Zambelli"
       ],
       "bsc:input": {
-        "@id": "_:N671bfd65f9dd4dc58e04e7a9ffe62baf"
+        "@id": "_:N44774d3f459b44468823f2ab5733c00c"
       },
       "bsc:output": {
-        "@id": "_:Ne52d1e74fe68479699bc56b9c17b7820"
+        "@id": "_:Nbf0df4e603fe423ba69159b4b547a6ec"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -54,10 +58,10 @@
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
+        "pubmed:25199791",
         {
           "@id": "https://doi.org/10.1002/0471250953.bi0211s47"
-        },
-        "pubmed:25199791"
+        }
       ],
       "sc:description": "De novo motif (transcription factor binding sites) discovery in sequences from coregulated genes of a single species. This is a new release rewritten to be faster and optimized for large ChIP-Seq data.",
       "sc:featureList": {
@@ -66,8 +70,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Weeder",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "ELIXIR-ITA-MILANO",
       "sc:softwareHelp": {
@@ -77,23 +81,7 @@
       "sc:url": "http://www.beaconlab.it/modtools"
     },
     {
-      "@id": "_:Ne52d1e74fe68479699bc56b9c17b7820",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2070"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Sequence motif (nucleic acid)"
-    },
-    {
-      "@id": "_:N671bfd65f9dd4dc58e04e7a9ffe62baf",
+      "@id": "_:N44774d3f459b44468823f2ab5733c00c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -104,8 +92,20 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1002/0471250953.bi0211s47",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nbf0df4e603fe423ba69159b4b547a6ec",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2070"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence motif (nucleic acid)"
     }
   ]
 }

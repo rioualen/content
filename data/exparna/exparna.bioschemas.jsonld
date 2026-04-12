@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "http://orcid.org/0000-0002-9497-7538",
       "@type": "sc:Person"
     },
@@ -52,17 +48,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "http://orcid.org/0000-0002-9497-7538"
+          "@id": "http://orcid.org/0000-0001-8231-3323"
         },
         {
-          "@id": "http://orcid.org/0000-0001-8231-3323"
+          "@id": "http://orcid.org/0000-0002-9497-7538"
         }
       ],
       "bsc:input": {
-        "@id": "_:N61b3e9e01a684407ba9bc0b48c0317fb"
+        "@id": "_:Nff1ba16aa183497da349167cf81fda1f"
       },
       "bsc:output": {
-        "@id": "_:Nbd3e1d2517fe4e4281df972298e00e4b"
+        "@id": "_:N241c7c8cfe4f458cad87579cf73a8f0e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -74,11 +70,11 @@
         "Steffen Heyne"
       ],
       "sc:citation": [
+        "pubmed:19189979",
+        "pmcid:PMC2722993",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp065"
-        },
-        "pubmed:19189979",
-        "pmcid:PMC2722993"
+        }
       ],
       "sc:description": "Structure motif based alignment generation.",
       "sc:featureList": {
@@ -98,7 +94,23 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/#ExpaRNA-download"
     },
     {
-      "@id": "_:Nbd3e1d2517fe4e4281df972298e00e4b",
+      "@id": "_:Nff1ba16aa183497da349167cf81fda1f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2200"
+        }
+      ],
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N241c7c8cfe4f458cad87579cf73a8f0e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -109,20 +121,8 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N61b3e9e01a684407ba9bc0b48c0317fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2200"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "RNA sequence"
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
     }
   ]
 }

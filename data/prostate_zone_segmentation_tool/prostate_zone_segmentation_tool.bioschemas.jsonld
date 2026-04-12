@@ -51,18 +51,18 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N6a7d6f01ddaa41e9ae4dffae74f2866a"
+          "@id": "_:N22b409b647d14e809ee32561440796e0"
         },
         {
-          "@id": "_:Nb64db8c4521743bd93bff88baf152ced"
+          "@id": "_:Ne1afd914ace54fc9a50bf886040f856c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb9de5f64c4e449e6a3e6c3807234b2fe"
+          "@id": "_:Nbf5b9859ec0440b8a089a79b2b5cbdcf"
         },
         {
-          "@id": "_:Nfc361d730eff4e238d1566dbe7ea6eec"
+          "@id": "_:N3c8dbaf6eb1941d187d87e178c104aac"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -77,10 +77,10 @@
         "Nuno Rodrigues"
       ],
       "sc:citation": [
-        "pubmed:38442555",
         {
           "@id": "https://doi.org/10.1016/j.compbiomed.2024.108216"
-        }
+        },
+        "pubmed:38442555"
       ],
       "sc:description": "This tool automatically segments the the prostate into two zones: the central and transition zones (TZ+CZ) and the peripheral zone (PZ). It takes as input a T2-weighted image and produces a segmentation in the same input format.\n\nThree datasets were used to train this model: ProstateX (n=152), Prostate158 (n=119) and ProstateNet (the ProCAncer-I dataset; n=532). We used the T2-weighted images available in each dataset and trained a standard three-class nnU-Net model with three classes: background, peripheral zone and the combination of the transition and central zones as annotated by radiologists. Using 149 cases from the three previously noted datasets, this model achieved DSC=0.81 (95% CI=[0.59, 0.92]) for PZ and 0.87 (95% CI=[0.60, 0.96]) for CZ+TZ. In a clinical validation using ProCAncer-I data, this model achieved, for PZ and TZ+CZ, DSC=0.65 and DSC=0.77, respectively, comparable to the observed between-radiologist DSC for a subset of cases (DSC=0.61 and DSC=0.73, respectively).",
       "sc:featureList": {
@@ -96,68 +96,68 @@
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/4/repositories/champ-prostate-zone-segmentation"
     },
     {
-      "@id": "_:N6a7d6f01ddaa41e9ae4dffae74f2866a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3442"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3548"
-        },
-        {
-          "@id": "edam:format_3549"
-        }
-      ],
-      "sc:name": "MRI image"
-    },
-    {
-      "@id": "_:Nb64db8c4521743bd93bff88baf152ced",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3442"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3548"
-        },
-        {
-          "@id": "edam:format_3549"
-        }
-      ],
-      "sc:name": "MRI image"
-    },
-    {
-      "@id": "_:Nb9de5f64c4e449e6a3e6c3807234b2fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3442"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3549"
-        },
-        {
-          "@id": "edam:format_3548"
-        }
-      ],
-      "sc:name": "MRI image"
-    },
-    {
-      "@id": "_:Nfc361d730eff4e238d1566dbe7ea6eec",
+      "@id": "_:Nbf5b9859ec0440b8a089a79b2b5cbdcf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3549"
+        },
+        {
+          "@id": "edam:format_3548"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N3c8dbaf6eb1941d187d87e178c104aac",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3442"
+      },
+      "sc:encodingFormat": [
+        {
           "@id": "edam:format_3548"
         },
         {
           "@id": "edam:format_3549"
         }
       ],
-      "sc:name": "Image"
+      "sc:name": "MRI image"
+    },
+    {
+      "@id": "_:N22b409b647d14e809ee32561440796e0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3442"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3548"
+        },
+        {
+          "@id": "edam:format_3549"
+        }
+      ],
+      "sc:name": "MRI image"
+    },
+    {
+      "@id": "_:Ne1afd914ace54fc9a50bf886040f856c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3442"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3549"
+        },
+        {
+          "@id": "edam:format_3548"
+        }
+      ],
+      "sc:name": "MRI image"
     }
   ]
 }

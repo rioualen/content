@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/glycob/cwm050",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netcglyc",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Neb2df65def514de0b15e40427171e68e"
+        "@id": "_:Ne3ef666738fd4f3190d19372fc41327a"
       },
       "bsc:output": {
-        "@id": "_:Nfab10b9943f745f8acd076f890378223"
+        "@id": "_:Ned87c48813614f788de9dd3b956e0bfb"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
+        "pubmed:17494086",
         {
           "@id": "https://doi.org/10.1093/glycob/cwm050"
-        },
-        "pubmed:17494086"
+        }
       ],
       "sc:description": "Neural network predictions of C-mannosylation sites in mammalian proteins.",
       "sc:featureList": {
@@ -66,9 +70,9 @@
       "sc:license": "Other",
       "sc:name": "NetCGlyc",
       "sc:operatingSystem": [
-        "Mac",
+        "Linux",
         "Windows",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -78,18 +82,7 @@
       "sc:url": "http://cbs.dtu.dk/services/NetCGlyc/"
     },
     {
-      "@id": "_:Neb2df65def514de0b15e40427171e68e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nfab10b9943f745f8acd076f890378223",
+      "@id": "_:Ned87c48813614f788de9dd3b956e0bfb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -100,8 +93,15 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "https://doi.org/10.1093/glycob/cwm050",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne3ef666738fd4f3190d19372fc41327a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

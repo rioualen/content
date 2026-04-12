@@ -36,44 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.bbapap.2013.02.029",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/xplatcom",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "PD Dr. Martin Eisenacher",
       "bsc:input": [
         {
-          "@id": "_:N1f2fdd99a90e4ea2b7cf55d3f777dd24"
+          "@id": "_:N53f7ebd24cee456aa94313f9fb29e4f2"
         },
         {
-          "@id": "_:N56b9e95eaebd4cef92537a82142e69d6"
+          "@id": "_:Ne1e1f39f315b4f0c8099cdd17f7c8587"
         },
         {
-          "@id": "_:Ndfd80b1055d846f78c76bd0e98e92202"
+          "@id": "_:Ne9527be4b191473b878c202e7226ea51"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N899eb155883c4697908ce214cdba31a4"
+          "@id": "_:N3f3286f86d3644beac1a04824fb42e01"
         },
         {
-          "@id": "_:Nfb7fe3e94260498594efff5872a60368"
+          "@id": "_:Na9a86d3cd34848aa867be53fd820a6e0"
         },
         {
-          "@id": "_:Nf47dc67dbb1d4f729be0e19f6250741d"
+          "@id": "_:N97e7ecc07a83408f8176d690ebf497c3"
         },
         {
-          "@id": "_:Nafa3101b38874569841c5bb5b6c71dcb"
+          "@id": "_:Nca752bb9b3164e66b7f5479cabd50a3e"
         },
         {
-          "@id": "_:N452893d6b19444a78cc0e0a72d562d5e"
+          "@id": "_:N3e051e534e434d17aaca69194cf71883"
         },
         {
-          "@id": "_:Nbd6468fcf9bc45ff89b5f6a04bf41c2a"
+          "@id": "_:Nb50ec7f077b44b65a8f6111b77879606"
         },
         {
-          "@id": "_:N7a0acc8993b0459da32bfb923f99bb68"
+          "@id": "_:N4816f4cba11f457c8469ef8460bc28d7"
         },
         {
-          "@id": "_:N4eeb28000fc94b86a4072aef660aadb6"
+          "@id": "_:N4197dc8602674800a5806bf87add78eb"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -91,13 +95,13 @@
       "sc:description": "It facilitates several steps that frequently occur in the context of multi-OMICS workflows like data conversion, quality control, data comparison, differential/statistical analyses, GO and pathway analyses. In the present version, CrossPlatformCommander enables Integration data obtained from Proteomics and Transcriptomics measurements.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2997"
-        },
-        {
           "@id": "edam:operation_2998"
         },
         {
           "@id": "edam:operation_3659"
+        },
+        {
+          "@id": "edam:operation_2997"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -111,7 +115,7 @@
       "sc:url": "https://www.ruhr-uni-bochum.de/mpc/software/legacy/index.html.en#XPlatCom"
     },
     {
-      "@id": "_:N1f2fdd99a90e4ea2b7cf55d3f777dd24",
+      "@id": "_:N53f7ebd24cee456aa94313f9fb29e4f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -122,7 +126,18 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N56b9e95eaebd4cef92537a82142e69d6",
+      "@id": "_:Ne1e1f39f315b4f0c8099cdd17f7c8587",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Ne9527be4b191473b878c202e7226ea51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -141,18 +156,59 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Ndfd80b1055d846f78c76bd0e98e92202",
+      "@id": "_:N3f3286f86d3644beac1a04824fb42e01",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2976"
+        "@id": "edam:data_1448"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_3752"
       },
-      "sc:name": "Protein sequence"
+      "sc:name": "Comparison matrix (nucleotide)"
     },
     {
-      "@id": "_:N899eb155883c4697908ce214cdba31a4",
+      "@id": "_:Na9a86d3cd34848aa867be53fd820a6e0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N97e7ecc07a83408f8176d690ebf497c3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3754"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "GO-term enrichment data"
+    },
+    {
+      "@id": "_:Nca752bb9b3164e66b7f5479cabd50a3e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3764"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N3e051e534e434d17aaca69194cf71883",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1449"
@@ -163,7 +219,7 @@
       "sc:name": "Comparison matrix (amino acid)"
     },
     {
-      "@id": "_:Nfb7fe3e94260498594efff5872a60368",
+      "@id": "_:Nb50ec7f077b44b65a8f6111b77879606",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2343"
@@ -179,7 +235,7 @@
       "sc:name": "Pathway ID (KEGG)"
     },
     {
-      "@id": "_:Nf47dc67dbb1d4f729be0e19f6250741d",
+      "@id": "_:N4816f4cba11f457c8469ef8460bc28d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -190,18 +246,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nafa3101b38874569841c5bb5b6c71dcb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N452893d6b19444a78cc0e0a72d562d5e",
+      "@id": "_:N4197dc8602674800a5806bf87add78eb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -210,51 +255,6 @@
         "@id": "edam:format_3508"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nbd6468fcf9bc45ff89b5f6a04bf41c2a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3754"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "GO-term enrichment data"
-    },
-    {
-      "@id": "_:N7a0acc8993b0459da32bfb923f99bb68",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1448"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Comparison matrix (nucleotide)"
-    },
-    {
-      "@id": "_:N4eeb28000fc94b86a4072aef660aadb6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3764"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.bbapap.2013.02.029",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

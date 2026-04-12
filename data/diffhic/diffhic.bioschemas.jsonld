@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-3564-4813",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-015-0683-0",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/diffhic",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-3564-4813"
       },
       "bsc:input": {
-        "@id": "_:N409dcd7ae40849efb0fe8db3fa9cc54a"
+        "@id": "_:Nfe5e3a03b8bb45c3b486f95ddab5f889"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne91d95d13b3440f585fdc293e0219232"
+          "@id": "_:N32fd1a45e5c9469d8023724d3185133f"
         },
         {
-          "@id": "_:N25cf781be83d4376a056f5eebd510433"
+          "@id": "_:Nac7b8d8ba7194948840ac4f2ab950827"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -67,26 +75,26 @@
       ],
       "sc:citation": [
         "pmcid:PMC4539688",
-        "pubmed:26283514",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0683-0"
-        }
+        },
+        "pubmed:26283514"
       ],
       "sc:description": "Detects differential interactions across biological conditions in a Hi-C experiment. Methods are provided for read alignment and data pre-processing into interaction counts. Statistical analysis is based on edgeR and supports normalization and filtering. Several visualization options are also available.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "diffHic",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/diffHic.html"
@@ -95,7 +103,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/diffHic.html"
     },
     {
-      "@id": "_:Ne91d95d13b3440f585fdc293e0219232",
+      "@id": "_:Nfe5e3a03b8bb45c3b486f95ddab5f889",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N32fd1a45e5c9469d8023724d3185133f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -111,7 +130,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N25cf781be83d4376a056f5eebd510433",
+      "@id": "_:Nac7b8d8ba7194948840ac4f2ab950827",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2589"
@@ -125,25 +144,6 @@
         }
       ],
       "sc:name": "Hierarchy"
-    },
-    {
-      "@id": "_:N409dcd7ae40849efb0fe8db3fa9cc54a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-3564-4813",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-015-0683-0",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

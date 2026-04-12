@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv335",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/fourcseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Felix A. Klein",
       "bsc:input": [
         {
-          "@id": "_:N8a940dbd271c4ee69ac371a50c82ed9c"
+          "@id": "_:Nfc73af160f1a4c26a7d1dc3e68f1f953"
         },
         {
-          "@id": "_:N664cc8bdf1a84d608a086e12ee2f4803"
+          "@id": "_:Ndf3cd15dd94e4d5da5becfa19d17a9a9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc250a6c57bb94cf8a10cf89549e0234d"
+          "@id": "_:N40519b624cfd47e79950b012be016973"
         },
         {
-          "@id": "_:Nf16dbc8413124a2fb641395ed2c414ee"
+          "@id": "_:N52b676c1883b4315b741fb7f9c5fc03c"
         },
         {
-          "@id": "_:N45353ccebf6a4c78979a9878322f5baf"
+          "@id": "_:N0f16463feab74623b347d27659e61c35"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -67,11 +71,11 @@
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
-        "pubmed:26034064",
-        "pmcid:PMC4576695",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv335"
-        }
+        },
+        "pubmed:26034064",
+        "pmcid:PMC4576695"
       ],
       "sc:description": "R package dedicated to the analysis of (multiplexed) 4C sequencing data. It provides a pipeline to detect specific interactions between DNA elements and identify differential interactions between conditions. The statistical analysis in R starts with individual bam files for each sample as inputs. To obtain these files, the package contains a python script to demultiplex libraries and trim off primer sequences. With a standard alignment software the required bam files can be then be generated.",
       "sc:featureList": {
@@ -80,9 +84,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "FourCSeq",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/FourCSeq.html"
@@ -91,23 +95,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/FourCSeq.html"
     },
     {
-      "@id": "_:Nc250a6c57bb94cf8a10cf89549e0234d",
+      "@id": "_:N40519b624cfd47e79950b012be016973",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Sequence range"
     },
     {
-      "@id": "_:Nf16dbc8413124a2fb641395ed2c414ee",
+      "@id": "_:N52b676c1883b4315b741fb7f9c5fc03c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -123,7 +127,7 @@
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:N45353ccebf6a4c78979a9878322f5baf",
+      "@id": "_:N0f16463feab74623b347d27659e61c35",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -139,7 +143,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N8a940dbd271c4ee69ac371a50c82ed9c",
+      "@id": "_:Nfc73af160f1a4c26a7d1dc3e68f1f953",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -155,7 +159,7 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N664cc8bdf1a84d608a086e12ee2f4803",
+      "@id": "_:Ndf3cd15dd94e4d5da5becfa19d17a9a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -169,10 +173,6 @@
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv335",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

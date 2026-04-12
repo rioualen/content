@@ -36,36 +36,46 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pint",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Olli-Pekka Huovilainen",
       "bsc:input": [
         {
-          "@id": "_:Nc359d8f355e24da6b33509dc4c4aeb31"
+          "@id": "_:N7418d406b5404da4bb76964c18a40441"
         },
         {
-          "@id": "_:Nfbc4f04477d64274892caa178e2dc973"
+          "@id": "_:N7e8312c462b347bd93db6a9341c501d8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9ade508289dc41e9ba397766c8e34e50"
+          "@id": "_:N489a79edf38f423fb04ae2fd27f5010d"
         },
         {
-          "@id": "_:N12217af1dd31420184f3bdfedc78e3ed"
+          "@id": "_:Nd995959fb0b748e88f46bfe3f2b2ad50"
         },
         {
-          "@id": "_:N8792d115fd044db2b7549b8b14702a17"
+          "@id": "_:N8ceafbcee45549a39edb20b9d207ce62"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3518"
+        },
+        {
+          "@id": "edam:topic_3366"
+        },
+        {
+          "@id": "edam:topic_0085"
         },
         {
           "@id": "edam:topic_3053"
@@ -74,21 +84,15 @@
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_3366"
-        },
-        {
-          "@id": "edam:topic_3518"
-        },
-        {
-          "@id": "edam:topic_0085"
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": [
-        "pubmed:25633503",
-        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        }
+        },
+        "pubmed:25633503",
+        "pmcid:PMC4509590"
       ],
       "sc:description": "Pairwise data integration for functional genomics, including tools for DNA/RNA/miRNA dependency screens.",
       "sc:featureList": [
@@ -102,9 +106,9 @@
       "sc:license": "BSD-4-Clause",
       "sc:name": "pint",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/pint.html"
@@ -113,18 +117,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/pint.html"
     },
     {
-      "@id": "_:Nc359d8f355e24da6b33509dc4c4aeb31",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:Nfbc4f04477d64274892caa178e2dc973",
+      "@id": "_:N7418d406b5404da4bb76964c18a40441",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3115"
@@ -135,23 +128,18 @@
       "sc:name": "Microarray metadata"
     },
     {
-      "@id": "_:N9ade508289dc41e9ba397766c8e34e50",
+      "@id": "_:N7e8312c462b347bd93db6a9341c501d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_3112"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N12217af1dd31420184f3bdfedc78e3ed",
+      "@id": "_:N489a79edf38f423fb04ae2fd27f5010d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3111"
@@ -167,7 +155,23 @@
       "sc:name": "Processed microarray data"
     },
     {
-      "@id": "_:N8792d115fd044db2b7549b8b14702a17",
+      "@id": "_:Nd995959fb0b748e88f46bfe3f2b2ad50",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N8ceafbcee45549a39edb20b9d207ce62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -181,10 +185,6 @@
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

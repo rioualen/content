@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkm797",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/4dxpress",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yannick Haudry",
       "bsc:input": [
         {
-          "@id": "_:N20b942695bae47e599d496ed4011f256"
+          "@id": "_:Nfeaffbbc9d1b41bd89ea4fb0ae628823"
         },
         {
-          "@id": "_:N76fc3e66162f4cbf961a1d1616549bb3"
+          "@id": "_:Nf8dbbcb8d1d94638888645f0c4bea21c"
         },
         {
-          "@id": "_:Nbaa016b68f284207a369085110862b1a"
+          "@id": "_:N844d60c1b3c04d33aa54b1e7f167abf1"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5f3be6aadada481da8e29c88446c1ace"
+        "@id": "_:Nc6d79d06ee09443cba5e38fcf828b831"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
@@ -59,10 +63,10 @@
         "@id": "edam:topic_0623"
       },
       "sc:citation": [
+        "pubmed:17916571",
         {
           "@id": "https://doi.org/10.1093/nar/gkm797"
         },
-        "pubmed:17916571",
         "pmcid:PMC2238840"
       ],
       "sc:description": "A platform to query and compare gene expression data during the development of the major model animals (zebrafish, drosophila, medaka, mouse). The high resolution expression data was acquired through whole mount in situ hybridsation-, antibody- or transgenic experiments.",
@@ -71,9 +75,9 @@
       },
       "sc:name": "4DXpress",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL",
       "sc:softwareHelp": {
@@ -82,7 +86,31 @@
       "sc:url": "http://4dx.embl.de/4DXpress"
     },
     {
-      "@id": "_:N5f3be6aadada481da8e29c88446c1ace",
+      "@id": "_:Nfeaffbbc9d1b41bd89ea4fb0ae628823",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:Nf8dbbcb8d1d94638888645f0c4bea21c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1796"
+      },
+      "sc:name": "Gene ID (FlyBase)"
+    },
+    {
+      "@id": "_:N844d60c1b3c04d33aa54b1e7f167abf1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1033"
+      },
+      "sc:name": "Ensembl gene ID"
+    },
+    {
+      "@id": "_:Nc6d79d06ee09443cba5e38fcf828b831",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -91,34 +119,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N20b942695bae47e599d496ed4011f256",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "_:N76fc3e66162f4cbf961a1d1616549bb3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1796"
-      },
-      "sc:name": "Gene ID (FlyBase)"
-    },
-    {
-      "@id": "_:Nbaa016b68f284207a369085110862b1a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1033"
-      },
-      "sc:name": "Ensembl gene ID"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkm797",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

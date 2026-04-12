@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1371/journal.pcbi.0030065",
       "@type": "sc:CreativeWork"
     },
@@ -47,23 +43,23 @@
       "@id": "https://bio.tools/locarna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Sebastian Will",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Sebastian Will"
       ],
       "bsc:input": {
-        "@id": "_:N08fb680d79f84a51822f3a97424a6881"
+        "@id": "_:N521d7b5b0a8e4cd4bd9db81161993fe0"
       },
       "bsc:output": [
         {
-          "@id": "_:N85b0430151df4afbb5b74bef56225cfa"
+          "@id": "_:N4966d0a2d57e43ab8b2f54b62592faff"
         },
         {
-          "@id": "_:N911e3efad03941e090355041a77d9075"
+          "@id": "_:N710d6a1b55014b6cba0e4a821b5d27b3"
         },
         {
-          "@id": "_:N7e43245e0678428891b501df7d11c307"
+          "@id": "_:N482fc4bf5c4e460b972c92ec2a4e4982"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -78,11 +74,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:17432929",
         "pmcid:PMC1851984",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.0030065"
-        },
-        "pubmed:17432929"
+        }
       ],
       "sc:description": "Structure-based multiple alignment of RNAs.",
       "sc:featureList": {
@@ -92,8 +88,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "LocARNA",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "University Freiburg",
       "sc:softwareHelp": {
@@ -103,7 +99,26 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/LocARNA/"
     },
     {
-      "@id": "_:N85b0430151df4afbb5b74bef56225cfa",
+      "@id": "_:N4966d0a2d57e43ab8b2f54b62592faff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1982"
+        }
+      ],
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:N710d6a1b55014b6cba0e4a821b5d27b3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -114,7 +129,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N911e3efad03941e090355041a77d9075",
+      "@id": "_:N482fc4bf5c4e460b972c92ec2a4e4982",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1465"
@@ -125,39 +140,24 @@
       "sc:name": "RNA structure"
     },
     {
-      "@id": "_:N7e43245e0678428891b501df7d11c307",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_1982"
-        }
-      ],
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N08fb680d79f84a51822f3a97424a6881",
+      "@id": "_:N521d7b5b0a8e4cd4bd9db81161993fe0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_2200"
         },
         {
-          "@id": "edam:format_2200"
+          "@id": "edam:format_1929"
         }
       ],
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
     }
   ]
 }

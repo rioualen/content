@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkx237",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/proteins_api",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -48,18 +44,18 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N59c038c8916a4ab8ba2d1f967b55635a"
+          "@id": "_:N9b0abdbbc7aa4d51889649abc00962a6"
         },
         {
-          "@id": "_:N2ccacb33601d4712b616b0f50af195f7"
+          "@id": "_:Ndf457a283ad443f48e349db8a8048757"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Naa9d0a46f55e4cdba9a48c30e208437b"
+          "@id": "_:Nd44600a194a049baa739334af43df839"
         },
         {
-          "@id": "_:N541bfdd5fd004da9be8aaa1b67165f6b"
+          "@id": "_:N73752cbdd1a747fba5e5e7fe4e27dfb3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -68,11 +64,11 @@
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
-        "pmcid:PMC5570157",
-        "pubmed:28383659",
         {
           "@id": "https://doi.org/10.1093/nar/gkx237"
-        }
+        },
+        "pubmed:28383659",
+        "pmcid:PMC5570157"
       ],
       "sc:description": "The Proteins REST API provides access to key biological data from UniProt and data from Large Scale Studies (LSS) mapped to UniProt. The services provide sequence feature annotations from UniProtKB, variation data from UniProtKB and mapped from LSS (1000 Genomes, ExAC and COSMIC), proteomics data mapped from LSS (PeptideAtlas, MaxQB and EPD), antigen sequences mapped from Human Protein Atlas (HPA), proteomes and taxonomy search and retrieval, and reference genome coordinate mappings.",
       "sc:featureList": {
@@ -90,7 +86,26 @@
       "sc:url": "http://www.ebi.ac.uk/proteins/api"
     },
     {
-      "@id": "_:Naa9d0a46f55e4cdba9a48c30e208437b",
+      "@id": "_:Nd44600a194a049baa739334af43df839",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2305"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N73752cbdd1a747fba5e5e7fe4e27dfb3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -100,35 +115,16 @@
           "@id": "edam:format_2305"
         },
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_2332"
         },
         {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_3464"
         }
       ],
       "sc:name": "Data"
     },
     {
-      "@id": "_:N541bfdd5fd004da9be8aaa1b67165f6b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2305"
-        },
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N59c038c8916a4ab8ba2d1f967b55635a",
+      "@id": "_:N9b0abdbbc7aa4d51889649abc00962a6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -136,12 +132,16 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N2ccacb33601d4712b616b0f50af195f7",
+      "@id": "_:Ndf457a283ad443f48e349db8a8048757",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
       },
       "sc:name": "Identifier"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkx237",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr709",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/robustrankaggregation",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Raivo Kolde",
       "bsc:input": {
-        "@id": "_:N3c63a3d49c694bc0ae57ed89376e0eda"
+        "@id": "_:N7c5a2fc4be3349caab85158bebe76296"
       },
       "bsc:output": [
         {
-          "@id": "_:Na913ee332e574ac19345705e95ae5d64"
+          "@id": "_:N9d85995c7b0148efba4681ef95e500b6"
         },
         {
-          "@id": "_:N66a911177d4740c398f7710e28e30d81"
+          "@id": "_:N0e847545114342868cac5dd6913ab961"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,11 +61,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3278763",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr709"
         },
-        "pubmed:22247279"
+        "pubmed:22247279",
+        "pmcid:PMC3278763"
       ],
       "sc:description": "Methods for aggregating ranked lists, especially lists of genes. It implements the Robust Rank Aggregation (RRA) and some other simple algorithms for the task. RRA method uses a probabilistic model for aggregation that isrobust to noise and also facilitates the calculation of significance probabilities for all the elements in the final ranking.",
       "sc:featureList": {
@@ -77,9 +73,9 @@
       },
       "sc:name": "RobustRankAggregation",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "ELIXIR-EE",
       "sc:softwareHelp": {
@@ -89,7 +85,15 @@
       "sc:url": "http://cran.r-project.org/web/packages/RobustRankAggreg/"
     },
     {
-      "@id": "_:Na913ee332e574ac19345705e95ae5d64",
+      "@id": "_:N7c5a2fc4be3349caab85158bebe76296",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2872"
+      },
+      "sc:name": "ID list"
+    },
+    {
+      "@id": "_:N9d85995c7b0148efba4681ef95e500b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -97,7 +101,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N66a911177d4740c398f7710e28e30d81",
+      "@id": "_:N0e847545114342868cac5dd6913ab961",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -105,12 +109,8 @@
       "sc:name": "ID list"
     },
     {
-      "@id": "_:N3c63a3d49c694bc0ae57ed89376e0eda",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2872"
-      },
-      "sc:name": "ID list"
+      "@id": "https://doi.org/10.1093/bioinformatics/btr709",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

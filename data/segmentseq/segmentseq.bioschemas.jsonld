@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr687",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/segmentseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas J. Hardcastle",
       "bsc:input": {
-        "@id": "_:N0b2daf98d5ed4959aacecd74e5c84c41"
+        "@id": "_:N9ea6624473374cc3bad3f7ec184b8825"
       },
       "bsc:output": {
-        "@id": "_:Ncbaee9c2c76d4a35bc7d545561a930a4"
+        "@id": "_:Na653f6bf459142fa85cfa4d9bc22a9cd"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_0102"
         },
         {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_3169"
         }
       ],
       "sc:citation": [
+        "pubmed:22171331",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr687"
-        },
-        "pubmed:22171331"
+        }
       ],
       "sc:description": "This package allows the simultaneous segmentation of data from multiple samples, taking into account replicate data, in order to create a consensus segmentation. This has obvious applications in a number of classes of sequencing experiments, particularly in the discovery of small RNA loci and novel mRNA transcriptome discovery.",
       "sc:featureList": {
@@ -74,9 +78,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "segmentSeq",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/segmentSeq.html"
@@ -85,23 +89,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/segmentSeq.html"
     },
     {
-      "@id": "_:Ncbaee9c2c76d4a35bc7d545561a930a4",
+      "@id": "_:Na653f6bf459142fa85cfa4d9bc22a9cd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N0b2daf98d5ed4959aacecd74e5c84c41",
+      "@id": "_:N9ea6624473374cc3bad3f7ec184b8825",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -110,10 +114,6 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr687",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

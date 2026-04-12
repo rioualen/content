@@ -36,26 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/gigascience/giaa127",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/GigaSOM.jl",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6901d4c929bd4a7982ca9d2ae2485caa"
+        "@id": "_:N29acd4e4ea4b4c6d9ebebca820e037a7"
       },
       "bsc:output": {
-        "@id": "_:N34e99ee377ee4a02867f5f1f3c6bbe8f"
+        "@id": "_:N091d039cbf0b46b78449045285d953ef"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:citation": [
-        "pmcid:PMC7672468",
-        "pubmed:33205814",
         {
           "@id": "https://doi.org/10.1093/gigascience/giaa127"
-        }
+        },
+        "pmcid:PMC7672468",
+        "pubmed:33205814"
       ],
       "sc:description": "Huge-scale, high-performance flow cytometry clustering in Julia",
       "sc:featureList": [
@@ -71,21 +67,29 @@
       "sc:name": "GigaSOM.jl",
       "sc:operatingSystem": [
         "Mac",
-        "Linux",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://git.io/GigaSOM.jl"
+          "@id": "https://lcsb-biocore.github.io/GigaSOM.jl/stable/tutorials/processingFCSData/"
         },
         {
-          "@id": "https://lcsb-biocore.github.io/GigaSOM.jl/stable/tutorials/processingFCSData/"
+          "@id": "http://git.io/GigaSOM.jl"
         }
       ],
       "sc:url": "http://git.io/GigaSOM.jl"
     },
     {
-      "@id": "_:N6901d4c929bd4a7982ca9d2ae2485caa",
+      "@id": "_:N091d039cbf0b46b78449045285d953ef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "_:N29acd4e4ea4b4c6d9ebebca820e037a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -93,12 +97,8 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N34e99ee377ee4a02867f5f1f3c6bbe8f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:name": "Clustered expression profiles"
+      "@id": "https://doi.org/10.1093/gigascience/giaa127",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

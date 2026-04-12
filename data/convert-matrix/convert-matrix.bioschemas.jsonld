@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-8799-8584",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/convert-matrix",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-8799-8584"
       },
       "bsc:input": {
-        "@id": "_:N6ed3f0506dbe4196bcd3c810b91f779c"
+        "@id": "_:N962577b6c82f400f82a764d422d5e060"
       },
       "bsc:output": {
-        "@id": "_:N789a19f9b17644c6a66a8f5c54d59b5a"
+        "@id": "_:Nb71b548719b944479aef4003fc7f45b1"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
+        "Command-line tool",
         "Web service",
-        "Command-line tool"
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3511"
       },
       "sc:author": "Jacques van Helden",
       "sc:citation": [
+        "pmcid:PMC2447775",
+        "pubmed:18495751",
         {
           "@id": "https://doi.org/10.1093/nar/gkn304"
-        },
-        "pubmed:18495751",
-        "pmcid:PMC2447775"
+        }
       ],
       "sc:description": "Inter-conversions between various formats of position-specific scoring matrices (PSSM). The program also performs a statistical analysis of the original matrix to provide different position-specific scores (weight, frequencies, information contents), general statistics (marginal frequencies, total information content), and synthetic descriptions (strict and degenerate consensus).",
       "sc:featureList": {
@@ -71,9 +75,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "convert-matrix",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "RSAT",
       "sc:softwareHelp": {
@@ -83,7 +87,7 @@
       "sc:url": "http://rsat.eu/"
     },
     {
-      "@id": "_:N6ed3f0506dbe4196bcd3c810b91f779c",
+      "@id": "_:N962577b6c82f400f82a764d422d5e060",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2070"
@@ -94,7 +98,7 @@
       "sc:name": "Sequence motif (nucleic acid)"
     },
     {
-      "@id": "_:N789a19f9b17644c6a66a8f5c54d59b5a",
+      "@id": "_:Nb71b548719b944479aef4003fc7f45b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2070"
@@ -107,10 +111,6 @@
     {
       "@id": "https://doi.org/10.1093/nar/gkn304",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-8799-8584",
-      "@type": "sc:Person"
     }
   ]
 }

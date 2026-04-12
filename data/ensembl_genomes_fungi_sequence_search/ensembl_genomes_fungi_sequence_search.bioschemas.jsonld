@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ensembl_genomes_fungi_sequence_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:Ncdc5c7cb6f814504aad17a38d51a1517"
+        "@id": "_:Nbed24bf138da4364950a17db4e9aebd4"
       },
       "bsc:output": [
         {
-          "@id": "_:N5b417ed73f3b4d78b0ac75ec519c5788"
+          "@id": "_:N4273f3fa091840058c4d229be429b7b9"
         },
         {
-          "@id": "_:N75244d5ff8934f1fa8bf772167ef3a87"
+          "@id": "_:N12e1df8da2284b08932da5688bffeb3d"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -61,11 +57,11 @@
       },
       "sc:author": "Ensembl team",
       "sc:citation": [
-        "pubmed:26687719",
+        "pmcid:PMC4702834",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
         },
-        "pmcid:PMC4702834"
+        "pubmed:26687719"
       ],
       "sc:description": "Searches Ensembl Fungi sequences using Exonerate.",
       "sc:featureList": {
@@ -80,17 +76,33 @@
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://fungi.ensembl.org/info/website/help/index.html"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://fungi.ensembl.org/info/website/help/index.html"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://fungi.ensembl.org/Multi/enasearch"
     },
     {
-      "@id": "_:Ncdc5c7cb6f814504aad17a38d51a1517",
+      "@id": "_:N4273f3fa091840058c4d229be429b7b9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N12e1df8da2284b08932da5688bffeb3d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "_:Nbed24bf138da4364950a17db4e9aebd4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -101,20 +113,8 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N5b417ed73f3b4d78b0ac75ec519c5788",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N75244d5ff8934f1fa8bf772167ef3a87",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

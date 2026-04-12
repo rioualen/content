@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkr777",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/chembl_biologicals_blast_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mark Davies",
       "bsc:input": {
-        "@id": "_:N51153c5bf61c4a0292164d6439006ad3"
+        "@id": "_:Nf2a4d38d13b74b3c8b8755f442884405"
       },
       "bsc:output": {
-        "@id": "_:Na56a0c1067f44729a566e5af44fb41e8"
+        "@id": "_:Nfb5ec6a5e83d437ba7a268ed937e16f3"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -57,11 +61,11 @@
       ],
       "sc:author": "ChEMBL Team",
       "sc:citation": [
-        "pmcid:PMC3245175",
-        "pubmed:21948594",
         {
           "@id": "https://doi.org/10.1093/nar/gkr777"
-        }
+        },
+        "pubmed:21948594",
+        "pmcid:PMC3245175"
       ],
       "sc:description": "BLAST search against biological molecules (e.g. mAbs) stored in ChEMBL database.",
       "sc:featureList": {
@@ -69,9 +73,9 @@
       },
       "sc:name": "ChEMBL API",
       "sc:operatingSystem": [
-        "Mac",
+        "Linux",
         "Windows",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -86,15 +90,7 @@
       "sc:url": "https://www.ebi.ac.uk/chembl/compound"
     },
     {
-      "@id": "_:Na56a0c1067f44729a566e5af44fb41e8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0962"
-      },
-      "sc:name": "Small molecule report"
-    },
-    {
-      "@id": "_:N51153c5bf61c4a0292164d6439006ad3",
+      "@id": "_:Nf2a4d38d13b74b3c8b8755f442884405",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -105,8 +101,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkr777",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nfb5ec6a5e83d437ba7a268ed937e16f3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0962"
+      },
+      "sc:name": "Small molecule report"
     }
   ]
 }

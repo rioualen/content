@@ -36,40 +36,44 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/pr2005378",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/amass",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5304886c12a24dbbb0b3ccfa76b38c77"
+          "@id": "_:N653307e197b244fe8f2c80634bdcc694"
         },
         {
-          "@id": "_:Ne0753a8115584a9498c136024323df14"
+          "@id": "_:Nc6606a7b888b4d07ab6f81a1c34adb47"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nce867c72f1664c4ba99a82e6fd929670"
+          "@id": "_:Nbf14a2a072e7438493addf7e2c7c5c5d"
         },
         {
-          "@id": "_:N427bd861a5be404890ad08e1a66b94a0"
+          "@id": "_:N6b0c3091f3554554a6e7c026ef06d89f"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3382"
         },
         {
-          "@id": "edam:topic_3382"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC3190602",
         {
           "@id": "https://doi.org/10.1021/pr2005378"
         },
-        "pubmed:21800894",
-        "pmcid:PMC3190602"
+        "pubmed:21800894"
       ],
       "sc:description": "Series of tools written in C++ that allows you to segment your mass spectrometry imaging dataset into regions with similar molecular signatures. The software allows for user input at each step of the process and returns the regions as well as the associated molecular signatures. It is composed of two dynamic libraries and a series of executables using the libraries as a base.",
       "sc:featureList": [
@@ -91,7 +95,32 @@
       "sc:url": "http://bix.ucsd.edu/AMASS/"
     },
     {
-      "@id": "_:N5304886c12a24dbbb0b3ccfa76b38c77",
+      "@id": "_:N653307e197b244fe8f2c80634bdcc694",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3591"
+        },
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nc6606a7b888b4d07ab6f81a1c34adb47",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -102,57 +131,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Ne0753a8115584a9498c136024323df14",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nce867c72f1664c4ba99a82e6fd929670",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N427bd861a5be404890ad08e1a66b94a0",
+      "@id": "_:Nbf14a2a072e7438493addf7e2c7c5c5d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -168,8 +147,29 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1021/pr2005378",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N6b0c3091f3554554a6e7c026ef06d89f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3591"
+        },
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Image"
     }
   ]
 }
