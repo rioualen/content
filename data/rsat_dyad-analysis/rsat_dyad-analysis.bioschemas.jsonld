@@ -36,51 +36,59 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-8799-8584",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/28.8.1808",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/RSAT_dyad-analysis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-8799-8584"
       },
       "bsc:input": {
-        "@id": "_:Ncf80e359b0214f9092da4e4d683726ea"
+        "@id": "_:Nbb7ee1bb12da4cc18cf42fd7b46a4824"
       },
       "bsc:output": {
-        "@id": "_:N9616cd998b764f76bad9738be8673ab2"
+        "@id": "_:Nc03929ab272a4dcb9e367337de87b110"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
         "Web service",
+        "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0749"
+          "@id": "edam:topic_3511"
         },
         {
           "@id": "edam:topic_0204"
         },
         {
-          "@id": "edam:topic_3511"
+          "@id": "edam:topic_0749"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0002-8799-8584"
       },
       "sc:citation": [
-        "pmcid:PMC102821",
+        "pubmed:10734201",
         {
           "@id": "https://doi.org/10.1093/nar/28.8.1808"
         },
-        "pubmed:10734201"
+        "pmcid:PMC102821"
       ],
       "sc:description": "Detect over- or under-represented dyads (spaced pairs of k-mers) in sequences.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3472"
+          "@id": "edam:operation_0238"
         },
         {
-          "@id": "edam:operation_0238"
+          "@id": "edam:operation_3472"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -95,36 +103,25 @@
       },
       "sc:softwareHelp": [
         {
-          "@id": "https://rsat-doc.github.io/using-RSAT/"
+          "@id": "https://rsa-tools.github.io/installing-RSAT/"
         },
         {
           "@id": "http://teaching.rsat.eu/help.dyad-analysis.html"
+        },
+        {
+          "@id": "https://rsat-doc.github.io/using-RSAT/"
         },
         {
           "@id": "https://teaching.rsat.eu/tutorials/tut_dyad-analysis.html"
         },
         {
           "@id": "http://pedagogix-tagc.univ-mrs.fr/rsat/htmllink.cgi?title=RSAT%20:%20Web%20services%20documentation&file=web_services/RSATWS_documentation.xml"
-        },
-        {
-          "@id": "https://rsa-tools.github.io/installing-RSAT/"
         }
       ],
       "sc:url": "http://teaching.rsat.eu/dyad-analysis_form.cgi"
     },
     {
-      "@id": "_:Ncf80e359b0214f9092da4e4d683726ea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:N9616cd998b764f76bad9738be8673ab2",
+      "@id": "_:Nc03929ab272a4dcb9e367337de87b110",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2070"
@@ -135,12 +132,15 @@
       "sc:name": "Sequence motif (nucleic acid)"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/28.8.1808",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8799-8584",
-      "@type": "sc:Person"
+      "@id": "_:Nbb7ee1bb12da4cc18cf42fd7b46a4824",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
     }
   ]
 }

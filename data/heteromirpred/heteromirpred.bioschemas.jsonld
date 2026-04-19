@@ -36,17 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gks878",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/heteromirpred",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N70510b9c3e3d46b382d7abbc39dcb889"
+        "@id": "_:N274886f9d12f439aa731219615c5a7c2"
       },
       "bsc:output": {
-        "@id": "_:N295b8d3d72d047b0947837964cd875d6"
+        "@id": "_:Nc6e1061f6b2d4cacaea4703aac47d0ce"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -54,11 +50,11 @@
         "@id": "edam:topic_3047"
       },
       "sc:citation": [
-        "pmcid:PMC3592496",
-        "pubmed:23012261",
         {
           "@id": "https://doi.org/10.1093/nar/gks878"
-        }
+        },
+        "pubmed:23012261",
+        "pmcid:PMC3592496"
       ],
       "sc:description": "A heterogeneous ensemble algorithm which is the voting of multi-expert classifiers, SVM, kNN, and RF, in the task of pre-miRNA classification. Our model is trained on both human and plant pre-miRNA data and utilize robustness derivative features which has shown to be well distinquishing both plant and animal pre-miRNA hairpins from other non pre-miRNA hairpin-forming sequences.",
       "sc:featureList": {
@@ -77,7 +73,18 @@
       "sc:url": "http://ncrna-pred.com/premiRNA.html"
     },
     {
-      "@id": "_:N70510b9c3e3d46b382d7abbc39dcb889",
+      "@id": "_:Nc6e1061f6b2d4cacaea4703aac47d0ce",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N274886f9d12f439aa731219615c5a7c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -88,15 +95,8 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N295b8d3d72d047b0947837964cd875d6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
+      "@id": "https://doi.org/10.1093/nar/gks878",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

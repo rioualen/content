@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-0060-6486",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkn840",
       "@type": "sc:CreativeWork"
     },
@@ -48,25 +44,25 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Morten Nielsen",
       "bsc:input": {
-        "@id": "_:Nfada9e6d9b9c44bd9b4507dd174c7be7"
+        "@id": "_:N1335f1c869f649108a3ad2fb3d933a8e"
       },
       "bsc:output": {
-        "@id": "_:N5c73855318024761845f5270a0d26e31"
+        "@id": "_:Nc545ef6859f944cdaf00d64749599018"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3534"
       },
       "sc:citation": [
-        "pubmed:18981051",
         "pmcid:PMC2686430",
         {
           "@id": "https://doi.org/10.1093/nar/gkn840"
-        }
+        },
+        "pubmed:18981051"
       ],
       "sc:contributor": {
         "@id": "http://orcid.org/0000-0003-0060-6486"
@@ -74,18 +70,18 @@
       "sc:description": "Predict binding of peptides to any known MHC molecule using artificial neural networks (ANNs).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2575"
+          "@id": "edam:operation_0416"
         },
         {
-          "@id": "edam:operation_0416"
+          "@id": "edam:operation_2575"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "NetMHCpan",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -95,7 +91,18 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetMHCpan/"
     },
     {
-      "@id": "_:N5c73855318024761845f5270a0d26e31",
+      "@id": "_:N1335f1c869f649108a3ad2fb3d933a8e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Nc545ef6859f944cdaf00d64749599018",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -106,15 +113,8 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nfada9e6d9b9c44bd9b4507dd174c7be7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
+      "@id": "http://orcid.org/0000-0003-0060-6486",
+      "@type": "sc:Person"
     }
   ]
 }

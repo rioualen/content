@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2020.04.07.20056564",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1016/j.ijmedinf.2018.09.015",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1007/s10618-014-0378-6",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2678-8249",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/jamia/ocw010",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1101/2020.04.07.20056564",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0003-2678-8249",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/ehrtemporalvariability",
@@ -63,31 +59,31 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N1ee97584f7a141c7852fb4f989bffb42"
+          "@id": "_:Nb4cc7836a0ae4fd196c7b5aff6b5c2cb"
         },
         {
-          "@id": "_:N89229d0cfc4a43a6b470c892ee27376c"
+          "@id": "_:Nd4ad8fd62e8a4ece97b6ffedaaf18739"
         },
         {
-          "@id": "_:Nb4ae335b5bb846a9b0aa83468bc09dba"
+          "@id": "_:N8c4cbe8a77cc498ebcbe3ded91ff4fc4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N553c8fc88f394323b9b99b4b3aac16f6"
+          "@id": "_:Nc6924bbc402a425f8a73cca1c516ac8a"
         },
         {
-          "@id": "_:N0abe0a88924140558a71127bebc1e96b"
+          "@id": "_:N1335b7befbdb4acfb435be1fb098d537"
         },
         {
-          "@id": "_:N94fadee5ae9d44d1b073e431ec9f5a21"
+          "@id": "_:N208ba52fd5d042f3b0b58448e2ddce57"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
         "Web application",
-        "Library"
+        "Library",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
@@ -108,24 +104,33 @@
       ],
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1016/j.ijmedinf.2018.09.015"
+          "@id": "https://doi.org/10.1007/s10618-014-0378-6"
         },
+        "pubmed:27107447",
         {
           "@id": "https://doi.org/10.1093/jamia/ocw010"
         },
+        "pubmed:30342679",
         {
           "@id": "https://doi.org/10.1101/2020.04.07.20056564"
         },
-        "pubmed:27107447",
-        "pubmed:30342679",
         {
-          "@id": "https://doi.org/10.1007/s10618-014-0378-6"
+          "@id": "https://doi.org/10.1016/j.ijmedinf.2018.09.015"
         }
       ],
       "sc:description": "Functions to delineate temporal dataset shifts in Electronic Health Records through the projection and visualization of dissimilarities among data temporal batches. This is done through the estimation of data statistical distributions over time and their projection in non-parametric statistical manifolds, uncovering the patterns of the data latent temporal variability. EHRtemporalVariability is particularly suitable for multi-modal data and categorical variables with a high number of values, common features of biomedical data where traditional statistical process control or time-series methods may not be appropriate. EHRtemporalVariability allows you to explore and identify dataset shifts through visual analytics formats such as Data Temporal heatmaps and Information Geometric Temporal (IGT) plots. An additional EHRtemporalVariability Shiny app can be used to load and explore the package results and even to allow the use of these functions to those users non-experienced in R coding.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3731"
+          "@id": "edam:operation_2939"
+        },
+        {
+          "@id": "edam:operation_3359"
+        },
+        {
+          "@id": "edam:operation_2238"
+        },
+        {
+          "@id": "edam:operation_3561"
         },
         {
           "@id": "edam:operation_3744"
@@ -134,16 +139,7 @@
           "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_3561"
-        },
-        {
-          "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_2939"
-        },
-        {
-          "@id": "edam:operation_3359"
+          "@id": "edam:operation_3731"
         }
       ],
       "sc:license": "Apache-2.0",
@@ -168,7 +164,42 @@
       "sc:url": "http://github.com/hms-dbmi/EHRtemporalVariability"
     },
     {
-      "@id": "_:N553c8fc88f394323b9b99b4b3aac16f6",
+      "@id": "_:Nb4cc7836a0ae4fd196c7b5aff6b5c2cb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2855"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Distance matrix"
+    },
+    {
+      "@id": "_:Nd4ad8fd62e8a4ece97b6ffedaaf18739",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3861"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3751"
+        }
+      ],
+      "sc:name": "Electronic health record"
+    },
+    {
+      "@id": "_:N8c4cbe8a77cc498ebcbe3ded91ff4fc4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Nc6924bbc402a425f8a73cca1c516ac8a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -176,7 +207,15 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N0abe0a88924140558a71127bebc1e96b",
+      "@id": "_:N1335b7befbdb4acfb435be1fb098d537",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3914"
+      },
+      "sc:name": "Quality control report"
+    },
+    {
+      "@id": "_:N208ba52fd5d042f3b0b58448e2ddce57",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -187,47 +226,8 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:N94fadee5ae9d44d1b073e431ec9f5a21",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3914"
-      },
-      "sc:name": "Quality control report"
-    },
-    {
-      "@id": "_:N1ee97584f7a141c7852fb4f989bffb42",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:N89229d0cfc4a43a6b470c892ee27376c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3861"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3751"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Electronic health record"
-    },
-    {
-      "@id": "_:Nb4ae335b5bb846a9b0aa83468bc09dba",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2855"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Distance matrix"
+      "@id": "https://doi.org/10.1007/s10618-014-0378-6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

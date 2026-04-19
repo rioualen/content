@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkj118",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/treefam",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Fabian Schreiber",
       "bsc:input": {
-        "@id": "_:Nf26bd484ac4745d0846ca4f38a6e3d61"
+        "@id": "_:N337c5f0c28bd4caabfcac2c01a05783b"
       },
       "bsc:output": {
-        "@id": "_:N9cc31d4d368841398b850d159bcda8bb"
+        "@id": "_:N9dee90f2668e40d0908f6aa26bf6c093"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0623"
-        },
-        {
           "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0084"
+        },
+        {
+          "@id": "edam:topic_0623"
         }
       ],
       "sc:author": [
@@ -64,10 +68,10 @@
       ],
       "sc:citation": [
         "pubmed:16381935",
+        "pmcid:PMC1347480",
         {
           "@id": "https://doi.org/10.1093/nar/gkj118"
-        },
-        "pmcid:PMC1347480"
+        }
       ],
       "sc:description": "Search of TreeFam's HMM collection, allows query sequence to be aligned (MAFFT) and inserted into tree (RAxML) to significantly matching models.",
       "sc:featureList": [
@@ -81,31 +85,23 @@
       "sc:name": "TreeFam",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.treefam.org/help"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.treefam.org/help"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.treefam.org/search"
     },
     {
-      "@id": "_:N9cc31d4d368841398b850d159bcda8bb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0858"
-      },
-      "sc:name": "Sequence signature matches"
-    },
-    {
-      "@id": "_:Nf26bd484ac4745d0846ca4f38a6e3d61",
+      "@id": "_:N337c5f0c28bd4caabfcac2c01a05783b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -113,8 +109,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkj118",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9dee90f2668e40d0908f6aa26bf6c093",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0858"
+      },
+      "sc:name": "Sequence signature matches"
     }
   ]
 }

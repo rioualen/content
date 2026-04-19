@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/NAR/GKX249",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/refold",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Dr Liam J. McGuffin",
       "bsc:input": [
         {
-          "@id": "_:N756ef74aedbb4cb7947e7d20ef88e66d"
+          "@id": "_:Neefc99a3a8d04775b24937427af67262"
         },
         {
-          "@id": "_:Nb15c7c628b2941d7b1599492ca400e3d"
+          "@id": "_:Nde48c72f883e43e78fa657dc799f8f27"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3b0a618facf34376bc455fa9480d7c6e"
+          "@id": "_:Nbcd3de95c2e74ee7848557697ff38c11"
         },
         {
-          "@id": "_:Nbb052f49829a4b179572e314ab3e7fa0"
+          "@id": "_:N282421f207ae432d8dbffacc53df7c16"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -61,22 +65,22 @@
         "@id": "edam:topic_0602"
       },
       "sc:citation": [
+        "pubmed:28402475",
+        "pmcid:PMC5570150",
         {
           "@id": "https://doi.org/10.1093/NAR/GKX249"
-        },
-        "pmcid:PMC5570150",
-        "pubmed:28402475"
+        }
       ],
       "sc:description": "Identify and fix likely errors in user supplied 3D models of proteins via successive rounds of refinement.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0302"
+        },
         {
           "@id": "edam:operation_0322"
         },
         {
           "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_0302"
         }
       ],
       "sc:name": "reFOLD",
@@ -86,29 +90,15 @@
       "sc:url": "http://www.reading.ac.uk/bioinf/ReFOLD/"
     },
     {
-      "@id": "_:N756ef74aedbb4cb7947e7d20ef88e66d",
+      "@id": "_:Nbcd3de95c2e74ee7848557697ff38c11",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:Nb15c7c628b2941d7b1599492ca400e3d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:N3b0a618facf34376bc455fa9480d7c6e",
+      "@id": "_:N282421f207ae432d8dbffacc53df7c16",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -119,16 +109,26 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nbb052f49829a4b179572e314ab3e7fa0",
+      "@id": "_:Neefc99a3a8d04775b24937427af67262",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
       },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "https://doi.org/10.1093/NAR/GKX249",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nde48c72f883e43e78fa657dc799f8f27",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein sequence (raw)"
     }
   ]
 }

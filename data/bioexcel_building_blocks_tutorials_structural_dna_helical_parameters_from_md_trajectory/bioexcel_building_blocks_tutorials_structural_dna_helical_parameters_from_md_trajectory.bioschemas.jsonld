@@ -36,12 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0003-0513-0288",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-8291-8071",
@@ -54,17 +54,17 @@
         "@id": "https://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:N5a3f222b56e34b108414fdebb366af7d"
+        "@id": "_:Ne9dfefb3fa9e41d8bea13bd79a8c26e1"
       },
       "bsc:output": [
         {
-          "@id": "_:N17b3e2352f5f411b853e5a31290b08c0"
+          "@id": "_:N93b59447bb404b8987e20e395f282c2a"
         },
         {
-          "@id": "_:N90e2139a93e44a05958dd54810bd5046"
+          "@id": "_:N8814412e37ef49649f5d52cbcfa7fabe"
         },
         {
-          "@id": "_:N39c3c268e950443ea8fa44bc3f07e1ac"
+          "@id": "_:N7f0f0d94b223486b9f268a405e462a0b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -84,16 +84,16 @@
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
         },
-        "pubmed:31506435",
-        "pmcid:PMC6736963"
+        "pmcid:PMC6736963",
+        "pubmed:31506435"
       ],
       "sc:description": "This tutorial aims to illustrate the process of extracting structural and dynamical properties from a DNA MD trajectory helical parameters, step by step, using the BioExcel Building Blocks library (biobb). The particular example used is the Drew Dickerson Dodecamer sequence -CGCGAATTCGCG- (PDB code 1BNA). The trajectory used is a 500ns-long MD simulation taken from the BigNASim database (NAFlex_DDD_II entry).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2481"
+          "@id": "edam:operation_0262"
         },
         {
-          "@id": "edam:operation_0262"
+          "@id": "edam:operation_2481"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -101,8 +101,8 @@
       "sc:name": "BioExcel Building Blocks tutorials: Structural DNA helical parameters from MD trajectory",
       "sc:operatingSystem": [
         "Windows",
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "BioExcel Center of Excellence for Computational Biomolecular Research",
       "sc:softwareHelp": {
@@ -112,29 +112,23 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/dna_helparms"
     },
     {
-      "@id": "_:N17b3e2352f5f411b853e5a31290b08c0",
+      "@id": "_:Ne9dfefb3fa9e41d8bea13bd79a8c26e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0912"
+        "@id": "edam:data_3870"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1637"
-      },
-      "sc:name": "Nucleic acid property"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3650"
+        },
+        {
+          "@id": "edam:format_3878"
+        }
+      ],
+      "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:N90e2139a93e44a05958dd54810bd5046",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3905"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1637"
-      },
-      "sc:name": "Histogram"
-    },
-    {
-      "@id": "_:N39c3c268e950443ea8fa44bc3f07e1ac",
+      "@id": "_:N93b59447bb404b8987e20e395f282c2a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -145,20 +139,26 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N5a3f222b56e34b108414fdebb366af7d",
+      "@id": "_:N8814412e37ef49649f5d52cbcfa7fabe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3870"
+        "@id": "edam:data_3905"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3878"
-        },
-        {
-          "@id": "edam:format_3650"
-        }
-      ],
-      "sc:name": "Trajectory data"
+      "sc:encodingFormat": {
+        "@id": "edam:format_1637"
+      },
+      "sc:name": "Histogram"
+    },
+    {
+      "@id": "_:N7f0f0d94b223486b9f268a405e462a0b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0912"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1637"
+      },
+      "sc:name": "Nucleic acid property"
     }
   ]
 }

@@ -36,54 +36,50 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/humu.22078",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/orphadata",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Marc Hanauer",
       "bsc:input": [
         {
-          "@id": "_:N79c11c2b77574c4e8e2abaab62f2b496"
+          "@id": "_:N6c962df0a17f429db2a9d0f2b2417b6b"
         },
         {
-          "@id": "_:Nd2eb20f9ed384927ac32eec0af689376"
+          "@id": "_:N2df3a887230b4ed3b73f09c524638160"
         },
         {
-          "@id": "_:Nab29144dbe68415386be63cad4b208ae"
+          "@id": "_:N7276dfb5ef394e618634942967fd9ce0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3151d76b4ce8400aaad75467f0014c85"
+          "@id": "_:N1193d5ef0fd24471ab7f443f856cd2da"
         },
         {
-          "@id": "_:Ne807867e6e3c4a80a0ff5b2f505c46f3"
+          "@id": "_:N600fae2e303a466586861500eecdd431"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Database portal",
         "SPARQL endpoint",
+        "Database portal",
         "Web API"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3068"
+        },
         {
           "@id": "edam:topic_3325"
         },
         {
           "@id": "edam:topic_0089"
-        },
-        {
-          "@id": "edam:topic_3068"
         }
       ],
       "sc:citation": [
+        "pubmed:22422702",
         {
           "@id": "https://doi.org/10.1002/humu.22078"
-        },
-        "pubmed:22422702"
+        }
       ],
       "sc:contributor": [
         "Céline Rousselot",
@@ -92,26 +88,26 @@
       "sc:description": "A comprehensive, high-quality and freely-accessible dataset related to rare diseases and orphan drugs, in a reusable format.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0227"
+        },
+        {
           "@id": "edam:operation_0226"
         },
         {
           "@id": "edam:operation_2990"
-        },
-        {
-          "@id": "edam:operation_0227"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-4.0",
       "sc:name": "Orphadata",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:provider": [
-        "Inserm US14",
-        "Orphanet Inserm"
+        "Orphanet Inserm",
+        "Inserm US14"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.orphadata.org/cgi-bin/index.php/"
@@ -119,29 +115,7 @@
       "sc:url": "http://www.orphadata.org/"
     },
     {
-      "@id": "_:N79c11c2b77574c4e8e2abaab62f2b496",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2099"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "Name"
-    },
-    {
-      "@id": "_:Nd2eb20f9ed384927ac32eec0af689376",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "Gene name"
-    },
-    {
-      "@id": "_:Nab29144dbe68415386be63cad4b208ae",
+      "@id": "_:N6c962df0a17f429db2a9d0f2b2417b6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -152,7 +126,40 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N3151d76b4ce8400aaad75467f0014c85",
+      "@id": "_:N2df3a887230b4ed3b73f09c524638160",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2099"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Name"
+    },
+    {
+      "@id": "_:N7276dfb5ef394e618634942967fd9ce0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N1193d5ef0fd24471ab7f443f856cd2da",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2800"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3255"
+      },
+      "sc:name": "Orpha number"
+    },
+    {
+      "@id": "_:N600fae2e303a466586861500eecdd431",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2800"
@@ -163,15 +170,8 @@
       "sc:name": "Orpha number"
     },
     {
-      "@id": "_:Ne807867e6e3c4a80a0ff5b2f505c46f3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2800"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3255"
-      },
-      "sc:name": "Orpha number"
+      "@id": "https://doi.org/10.1002/humu.22078",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

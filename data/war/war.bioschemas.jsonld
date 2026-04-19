@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkn275",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/war",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Stinus Lindgreen",
       "bsc:input": [
         {
-          "@id": "_:N685890440e8b42789def305fed585065"
+          "@id": "_:N200cc32902bf4c15956262e8c6f23584"
         },
         {
-          "@id": "_:N1feadeb9e0ab4a64968110eeb063b312"
+          "@id": "_:N783dfe559bd248bdad1aaaef337991b8"
         }
       ],
       "bsc:output": {
-        "@id": "_:N81df2cc945e34ea89544d5bd452ce21c"
+        "@id": "_:Na5f84429095a45dba3da6122a5d1dbb0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -56,11 +60,11 @@
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:18492721",
+        "pmcid:PMC2447782",
         {
           "@id": "https://doi.org/10.1093/nar/gkn275"
-        },
-        "pmcid:PMC2447782",
-        "pubmed:18492721"
+        }
       ],
       "sc:description": "Easy-to-use webserver that makes it possible to simultaneously use the best methods for aligning and predicting the consensus secondary structure for a set of non-coding RNA sequences.",
       "sc:featureList": [
@@ -74,8 +78,8 @@
       "sc:name": "WAR",
       "sc:operatingSystem": [
         "Windows",
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "binf.ku.dk",
       "sc:softwareHelp": {
@@ -85,7 +89,26 @@
       "sc:url": "http://genome.ku.dk/resources/war/"
     },
     {
-      "@id": "_:N685890440e8b42789def305fed585065",
+      "@id": "_:Na5f84429095a45dba3da6122a5d1dbb0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1961"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N200cc32902bf4c15956262e8c6f23584",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -96,7 +119,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N1feadeb9e0ab4a64968110eeb063b312",
+      "@id": "_:N783dfe559bd248bdad1aaaef337991b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -105,29 +128,6 @@
         "@id": "edam:format_1961"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N81df2cc945e34ea89544d5bd452ce21c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1961"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkn275",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,6 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-1541-042X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2707-7940",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4101-2502",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41587-020-0439-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/nf-core-atacseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,56 +59,56 @@
           "@id": "https://orcid.org/0000-0003-2827-9261"
         },
         {
+          "@id": "https://orcid.org/0000-0003-2707-7940"
+        },
+        {
           "@id": "https://orcid.org/0000-0003-4101-2502"
         },
         {
           "@id": "https://orcid.org/0000-0002-1541-042X"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-2707-7940"
         }
       ],
       "bsc:input": {
-        "@id": "_:Ndc37b6e670844ff7aa1a669a7ad70d4c"
+        "@id": "_:N9e6d5bff53384027bd7b268e5b420ef6"
       },
       "bsc:output": [
         {
-          "@id": "_:Nf78730d297b4487f8f0b9d2f7ad074ec"
+          "@id": "_:Nade73be968ce4c2eadccd03a4bacb6d6"
         },
         {
-          "@id": "_:N9c04b8ef7fb34f24b0e28cd9e20f514a"
+          "@id": "_:Nd0a314405bc44292946d3369fb87b7c3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
-        "Command-line tool"
+        "Command-line tool",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3125"
+          "@id": "edam:topic_0769"
         },
         {
           "@id": "edam:topic_0097"
         },
         {
-          "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_3176"
+          "@id": "edam:topic_3125"
         },
         {
           "@id": "edam:topic_3308"
+        },
+        {
+          "@id": "edam:topic_3176"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0003-2707-7940"
       },
       "sc:citation": [
-        "pubmed:32055031",
         {
           "@id": "https://doi.org/10.1038/s41587-020-0439-x"
-        }
+        },
+        "pubmed:32055031"
       ],
       "sc:description": "nfcore/atacseq is a bioinformatics analysis pipeline used for ATAC-seq data.",
       "sc:featureList": [
@@ -100,16 +116,16 @@
           "@id": "edam:operation_0475"
         },
         {
-          "@id": "edam:operation_0438"
-        },
-        {
           "@id": "edam:operation_0432"
         },
         {
-          "@id": "edam:operation_0279"
+          "@id": "edam:operation_0438"
         },
         {
           "@id": "edam:operation_3900"
+        },
+        {
+          "@id": "edam:operation_0279"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -118,36 +134,25 @@
       "sc:operatingSystem": "Linux",
       "sc:softwareHelp": [
         {
-          "@id": "https://nf-co.re/atacseq"
-        },
-        {
           "@id": "https://nf-co.re/atacseq/usage"
         },
         {
           "@id": "https://github.com/nf-core/atacseq/blob/master/LICENSE"
+        },
+        {
+          "@id": "https://nf-co.re/atacseq"
         }
       ],
       "sc:softwareVersion": [
-        "1.2.1",
-        "1.2.0",
         "1.0.0",
-        "1.1.0"
+        "1.1.0",
+        "1.2.0",
+        "1.2.1"
       ],
       "sc:url": "https://nf-co.re/atacseq"
     },
     {
-      "@id": "_:Nf78730d297b4487f8f0b9d2f7ad074ec",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3006"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N9c04b8ef7fb34f24b0e28cd9e20f514a",
+      "@id": "_:Nade73be968ce4c2eadccd03a4bacb6d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -163,7 +168,18 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:Ndc37b6e670844ff7aa1a669a7ad70d4c",
+      "@id": "_:Nd0a314405bc44292946d3369fb87b7c3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3006"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N9e6d5bff53384027bd7b268e5b420ef6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -174,23 +190,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "https://orcid.org/0000-0003-4101-2502",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41587-020-0439-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2707-7940",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://orcid.org/0000-0003-2827-9261",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1541-042X",
       "@type": "sc:Person"
     }
   ]

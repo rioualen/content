@@ -36,36 +36,44 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkt448",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/0471250953.bi0211s47",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pscanchip",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Federico Zambelli",
-        "Giulio Pavesi"
+        "Giulio Pavesi",
+        "Federico Zambelli"
       ],
       "bsc:input": {
-        "@id": "_:N183873360fbe415eab3d1221273c1746"
+        "@id": "_:Nefa8ff2f1a5e4e648e5ddaceb0a1da9b"
       },
       "bsc:output": {
-        "@id": "_:N0eeb777a9cc94686aa6f76563a2eedb5"
+        "@id": "_:N4c0c8980945a4d0d854ca5560f6d886b"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
         "pmcid:PMC3692095",
-        "pubmed:25199791",
-        {
-          "@id": "https://doi.org/10.1002/0471250953.bi0211s47"
-        },
         {
           "@id": "https://doi.org/10.1093/nar/gkt448"
         },
-        "pubmed:23748563"
+        "pubmed:23748563",
+        {
+          "@id": "https://doi.org/10.1002/0471250953.bi0211s47"
+        },
+        "pubmed:25199791"
       ],
       "sc:description": "Web server that, starting from a collection of genomic regions derived from a ChIP-Seq experiment, scans them using motif descriptors like JASPAR or TRANSFAC position-specific frequency matrices, or descriptors uploaded by users, and it evaluates both motif enrichment and positional bias within the regions according to different measures and criteria.",
       "sc:featureList": {
@@ -75,8 +83,8 @@
       "sc:name": "PscanChIP",
       "sc:operatingSystem": [
         "Windows",
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "ELIXIR-ITA-MILANO",
       "sc:softwareHelp": {
@@ -86,18 +94,7 @@
       "sc:url": "http://www.beaconlab.it/pscan_chip_dev"
     },
     {
-      "@id": "_:N183873360fbe415eab3d1221273c1746",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N0eeb777a9cc94686aa6f76563a2eedb5",
+      "@id": "_:N4c0c8980945a4d0d854ca5560f6d886b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2755"
@@ -108,12 +105,15 @@
       "sc:name": "Transcription factor name"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkt448",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1002/0471250953.bi0211s47",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nefa8ff2f1a5e4e648e5ddaceb0a1da9b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Sequence coordinates"
     }
   ]
 }

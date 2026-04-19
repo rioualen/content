@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13321-016-0115-9",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metfrag",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc311662f3c87451488edfdbb6c536687"
+        "@id": "_:N3e91a956d2684e01bb292c8a19acea8e"
       },
       "bsc:output": {
-        "@id": "_:N5e2bdc35e57244e6b7c6ac61c8f1000b"
+        "@id": "_:N81c1a82d28114fae994d021840f61026"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
@@ -50,11 +54,11 @@
         "@id": "edam:topic_3391"
       },
       "sc:citation": [
-        "pubmed:26834843",
         {
           "@id": "https://doi.org/10.1186/s13321-016-0115-9"
         },
-        "pmcid:PMC4732001"
+        "pmcid:PMC4732001",
+        "pubmed:26834843"
       ],
       "sc:description": "It combines compound database searching and fragmentation prediction for small molecule identification from tandem mass spectrometry data. It supports candidate structure retrieval from the compound databases PubChem, ChemSpider and KEGG or user defined structure data file(SDF). After in silico fragmentation in a combinatorial manner, candidates get filtered and scored on criteria like: occurrence of certain elements/substructures, retention time information and reference information.",
       "sc:featureList": {
@@ -62,9 +66,9 @@
       },
       "sc:name": "MetFrag",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://msbi.ipb-halle.de/MetFragBeta/"
@@ -73,15 +77,7 @@
       "sc:url": "http://msbi.ipb-halle.de/MetFragBeta/"
     },
     {
-      "@id": "_:N5e2bdc35e57244e6b7c6ac61c8f1000b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:Nc311662f3c87451488edfdbb6c536687",
+      "@id": "_:N3e91a956d2684e01bb292c8a19acea8e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -92,8 +88,12 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "https://doi.org/10.1186/s13321-016-0115-9",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N81c1a82d28114fae994d021840f61026",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:name": "Structure"
     }
   ]
 }

@@ -36,61 +36,65 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4303",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/timescape",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Maia Smith",
       "bsc:input": [
         {
-          "@id": "_:N94e544686d90483a93f5902129ce0e96"
+          "@id": "_:N87d95b318bd149e0967dd7f9a821eca1"
         },
         {
-          "@id": "_:N38982232345f49a49f9a708473de8603"
+          "@id": "_:N4a7261f661974253b069584c285190ae"
         }
       ],
       "bsc:output": {
-        "@id": "_:N99eb0003c22b4624b59442fe27d6c544"
+        "@id": "_:N49e8a23f20c34ae9b04d9eb677aba311"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Plug-in",
-        "Library"
+        "Library",
+        "Plug-in"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2229"
+        },
         {
           "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_2229"
         }
       ],
       "sc:citation": [
+        "pubmed:28557980",
         {
           "@id": "https://doi.org/10.1038/nmeth.4303"
-        },
-        "pubmed:28557980"
+        }
       ],
       "sc:description": "a tool from E-scape suite for visualizing clonal dynamics over time.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_2497"
-        },
         {
           "@id": "edam:operation_2426"
         },
         {
           "@id": "edam:operation_0567"
+        },
+        {
+          "@id": "edam:operation_2497"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "TimeScape",
       "sc:operatingSystem": [
-        "Windows",
+        "Mac",
         "Linux",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/release/bioc/manuals/timescape/man/timescape.pdf"
@@ -99,23 +103,7 @@
       "sc:url": "https://bioconductor.org/packages/release/bioc/html/timescape.html"
     },
     {
-      "@id": "_:N99eb0003c22b4624b59442fe27d6c544",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N94e544686d90483a93f5902129ce0e96",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2523"
-      },
-      "sc:name": "Phylogenetic data"
-    },
-    {
-      "@id": "_:N38982232345f49a49f9a708473de8603",
+      "@id": "_:N87d95b318bd149e0967dd7f9a821eca1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -123,8 +111,20 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.4303",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4a7261f661974253b069584c285190ae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2523"
+      },
+      "sc:name": "Phylogenetic data"
+    },
+    {
+      "@id": "_:N49e8a23f20c34ae9b04d9eb677aba311",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

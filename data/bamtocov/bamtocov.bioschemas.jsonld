@@ -36,11 +36,15 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2021.11.12.466787",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0001-7619-281X",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1101/2021.11.12.466787",
+      "@id": "https://doi.org/10.1093/bioinformatics/btac125",
       "@type": "sc:CreativeWork"
     },
     {
@@ -51,14 +55,14 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N0c8078ea4e9a42e1a7649ed1ce1faa0e"
+          "@id": "_:N629d974dd27948f299ce54c01b581fd0"
         },
         {
-          "@id": "_:N1f625ac3f0bb4475923b59214c6c5303"
+          "@id": "_:N7ff1292a2b174a7d9bee2160581e2112"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nfd49f9e32bd64a1ab34e54324dabb4aa"
+        "@id": "_:N7a0c9462dba44c8cb4e2fba82e8b36b3"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -67,13 +71,13 @@
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1101/2021.11.12.466787"
-        },
-        "pmcid:PMC9048650",
-        {
           "@id": "https://doi.org/10.1093/bioinformatics/btac125"
         },
-        "pubmed:35199151"
+        {
+          "@id": "https://doi.org/10.1101/2021.11.12.466787"
+        },
+        "pubmed:35199151",
+        "pmcid:PMC9048650"
       ],
       "sc:description": "Tools to extract coverage informations from BAM (and CRAM) files, based on the covtobed algorithm that supports stranded coverage and physical coverage, input from streams and uses a memory-efficient algorithm.",
       "sc:featureList": {
@@ -93,18 +97,23 @@
       "sc:url": "https://telatin.github.io/bamtocov/"
     },
     {
-      "@id": "_:N0c8078ea4e9a42e1a7649ed1ce1faa0e",
+      "@id": "_:N7a0c9462dba44c8cb4e2fba82e8b36b3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3583"
+        },
+        {
+          "@id": "edam:format_3005"
+        }
+      ],
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N1f625ac3f0bb4475923b59214c6c5303",
+      "@id": "_:N629d974dd27948f299ce54c01b581fd0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -120,24 +129,15 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:Nfd49f9e32bd64a1ab34e54324dabb4aa",
+      "@id": "_:N7ff1292a2b174a7d9bee2160581e2112",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3005"
-        },
-        {
-          "@id": "edam:format_3583"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
       "sc:name": "Annotation track"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btac125",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0003-0160-9312",

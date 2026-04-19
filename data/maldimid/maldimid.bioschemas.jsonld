@@ -36,29 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/pmic.202300005",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/maldimid",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nfef0474e3be94fadb23a2183ef7b0b75"
+          "@id": "_:Ncc18796e0a60443ab9195a8f5678fa7d"
         },
         {
-          "@id": "_:N255a7519b1f44f7786df4e1047839768"
+          "@id": "_:Nbc4e65587d1e4b76a390bd836e54ebb6"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Library"
+        "Library",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_3360"
         },
@@ -66,10 +59,13 @@
           "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -81,10 +77,10 @@
       "sc:description": "R package and Shiny app for more specific identification of MALDI imaging proteolytic peaks using LC-MS/MS-based proteomic biomarker discovery data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3767"
+          "@id": "edam:operation_3643"
         },
         {
-          "@id": "edam:operation_3643"
+          "@id": "edam:operation_3767"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -98,7 +94,15 @@
       "sc:url": "https://biosciences.shinyapps.io/Maldimid"
     },
     {
-      "@id": "_:Nfef0474e3be94fadb23a2183ef7b0b75",
+      "@id": "_:Ncc18796e0a60443ab9195a8f5678fa7d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nbc4e65587d1e4b76a390bd836e54ebb6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -106,12 +110,8 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N255a7519b1f44f7786df4e1047839768",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1002/pmic.202300005",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

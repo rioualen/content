@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bamsignals",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Alessandro Mammana",
       "bsc:input": {
-        "@id": "_:Nb794b9b2932e41efb21ee4505bd5f863"
+        "@id": "_:N1784f35d747c4e3dada03fdc286af4b5"
       },
       "bsc:output": {
-        "@id": "_:Ne2338750f69641c1a8d9cebd1ea59505"
+        "@id": "_:N336a7bd3ad5844c7957bd069624d6d2d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4509590",
+        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "This package allows to efficiently obtain count vectors from indexed bam files. It counts the number of reads in given genomic ranges and it computes reads profiles and coverage profiles. It also handles paired-end data.",
       "sc:featureList": {
@@ -87,7 +83,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/bamsignals.html"
     },
     {
-      "@id": "_:Ne2338750f69641c1a8d9cebd1ea59505",
+      "@id": "_:N1784f35d747c4e3dada03fdc286af4b5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N336a7bd3ad5844c7957bd069624d6d2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
@@ -98,15 +105,8 @@
       "sc:name": "Sequence alignment report"
     },
     {
-      "@id": "_:Nb794b9b2932e41efb21ee4505bd5f863",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

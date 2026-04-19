@@ -36,36 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1074/mcp.M115.055897",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "http://orcid.org/0000-0002-8285-7766",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1074/mcp.M115.055897",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/msqrob",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Lieven Clement",
         {
           "@id": "http://orcid.org/0000-0002-8285-7766"
-        }
+        },
+        "Lieven Clement"
       ],
       "bsc:input": [
         {
-          "@id": "_:N18f27262c6404e34819dfc3d492e1295"
+          "@id": "_:N66df26145b1140fa8284eab0d8c9ebd7"
         },
         {
-          "@id": "_:N98864aeee90444fd8f81c79d63ea1820"
+          "@id": "_:Nbbc0f7bcb71d43439ebb20a2dba7ae22"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9344c0e4da7a42f7845e6c740d43c1da"
+          "@id": "_:N80ba681dc050400e9a0248e3cd7eb6ec"
         },
         {
-          "@id": "_:Nf64f600924ef44a2b2d0b96ba42e9691"
+          "@id": "_:N954690a71c7040f3abc990ef58ac7f6f"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -77,28 +77,28 @@
         "@id": "http://orcid.org/0000-0002-8285-7766"
       },
       "sc:citation": [
+        "pubmed:26566788",
+        "pmcid:PMC4739679",
         {
           "@id": "https://doi.org/10.1074/mcp.M115.055897"
-        },
-        "pubmed:26566788",
-        "pmcid:PMC4739679"
+        }
       ],
       "sc:description": "Allows a user to do quantitative protein-level statistical inference on label-free LC-MS proteomics data. Fold changes, p values and false discovery rates are estimated.The app allows for an easy-to-use graphical user interface starting from MaxQuant search results that requires no programming skills.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3664"
+          "@id": "edam:operation_3741"
         },
         {
           "@id": "edam:operation_3658"
         },
         {
-          "@id": "edam:operation_3741"
-        },
-        {
-          "@id": "edam:operation_3659"
+          "@id": "edam:operation_3664"
         },
         {
           "@id": "edam:operation_3435"
+        },
+        {
+          "@id": "edam:operation_3659"
         }
       ],
       "sc:funder": "Agentschap Innoveren en Ondernemen - Flemish Government",
@@ -106,9 +106,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "MSqRob",
       "sc:operatingSystem": [
-        "Linux",
+        "Windows",
         "Mac",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/statOmics/MSqRob"
@@ -116,18 +116,31 @@
       "sc:url": "https://github.com/ludgergoeminne/MSqRob"
     },
     {
-      "@id": "_:N18f27262c6404e34819dfc3d492e1295",
+      "@id": "_:N80ba681dc050400e9a0248e3cd7eb6ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0857"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence search results"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3468"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     },
     {
-      "@id": "_:N98864aeee90444fd8f81c79d63ea1820",
+      "@id": "_:N954690a71c7040f3abc990ef58ac7f6f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N66df26145b1140fa8284eab0d8c9ebd7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
@@ -143,28 +156,15 @@
       "sc:name": "Experiment report"
     },
     {
-      "@id": "_:N9344c0e4da7a42f7845e6c740d43c1da",
+      "@id": "_:Nbbc0f7bcb71d43439ebb20a2dba7ae22",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_0857"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3468"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nf64f600924ef44a2b2d0b96ba42e9691",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
       },
-      "sc:name": "Plot"
+      "sc:name": "Sequence search results"
     }
   ]
 }

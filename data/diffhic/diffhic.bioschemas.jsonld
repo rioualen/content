@@ -36,28 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-3564-4813",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-015-0683-0",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/diffhic",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-3564-4813"
       },
       "bsc:input": {
-        "@id": "_:Nfe5e3a03b8bb45c3b486f95ddab5f889"
+        "@id": "_:Nc89bc3dab3244ce7810ceb16492e9c3b"
       },
       "bsc:output": [
         {
-          "@id": "_:N32fd1a45e5c9469d8023724d3185133f"
+          "@id": "_:Nfbe7c893e3eb49f1b1e8bef4d4e30d6b"
         },
         {
-          "@id": "_:Nac7b8d8ba7194948840ac4f2ab950827"
+          "@id": "_:N9fe6832778a64bac836f45d330ae3498"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -75,10 +67,10 @@
       ],
       "sc:citation": [
         "pmcid:PMC4539688",
+        "pubmed:26283514",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0683-0"
-        },
-        "pubmed:26283514"
+        }
       ],
       "sc:description": "Detects differential interactions across biological conditions in a Hi-C experiment. Methods are provided for read alignment and data pre-processing into interaction counts. Statistical analysis is based on edgeR and supports normalization and filtering. Several visualization options are also available.",
       "sc:featureList": [
@@ -92,9 +84,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "diffHic",
       "sc:operatingSystem": [
-        "Linux",
+        "Windows",
         "Mac",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/diffHic.html"
@@ -103,7 +95,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/diffHic.html"
     },
     {
-      "@id": "_:Nfe5e3a03b8bb45c3b486f95ddab5f889",
+      "@id": "_:Nfbe7c893e3eb49f1b1e8bef4d4e30d6b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2589"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2333"
+        }
+      ],
+      "sc:name": "Hierarchy"
+    },
+    {
+      "@id": "_:N9fe6832778a64bac836f45d330ae3498",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2333"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nc89bc3dab3244ce7810ceb16492e9c3b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -114,36 +138,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N32fd1a45e5c9469d8023724d3185133f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2333"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
+      "@id": "http://orcid.org/0000-0002-3564-4813",
+      "@type": "sc:Person"
     },
     {
-      "@id": "_:Nac7b8d8ba7194948840ac4f2ab950827",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2589"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2333"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Hierarchy"
+      "@id": "https://doi.org/10.1186/s12859-015-0683-0",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

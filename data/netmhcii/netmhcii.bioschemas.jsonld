@@ -36,39 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-10-296",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/netmhcii",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:Nf19de0e820d7436d9595c270c33c651e"
+        "@id": "_:N78467b35da324e7b89d1846fe1bbee00"
       },
       "bsc:output": {
-        "@id": "_:N8350a9316a6a4cecb0a345b0a57debdd"
+        "@id": "_:Naf4b2d551f014d8b8c8ec1b54adad822"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3534"
       },
       "sc:citation": [
-        "pubmed:19765293",
-        "pmcid:PMC2753847",
         {
           "@id": "https://doi.org/10.1186/1471-2105-10-296"
-        }
+        },
+        "pmcid:PMC2753847",
+        "pubmed:19765293"
       ],
       "sc:description": "Predict binding of peptides to HLA-DR, HLA-DQ, HLA-DP and mouse MHC class II alleles using articial neuron networks.",
       "sc:featureList": [
@@ -94,7 +86,18 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetMHCII/"
     },
     {
-      "@id": "_:Nf19de0e820d7436d9595c270c33c651e",
+      "@id": "_:Naf4b2d551f014d8b8c8ec1b54adad822",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N78467b35da324e7b89d1846fe1bbee00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -105,15 +108,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N8350a9316a6a4cecb0a345b0a57debdd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Protein features"
+      "@id": "https://doi.org/10.1186/1471-2105-10-296",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
     }
   ]
 }

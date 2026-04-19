@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-9708-6722",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/limmarp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,14 +47,14 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N068cda2b7b9c4e6ab629ff6e8e604a8e"
+          "@id": "_:N2e5deb042fc440de8bbbd3b29fead263"
         },
         {
-          "@id": "_:N877aef4c5a9e4762b2ed6eeec2a86b87"
+          "@id": "_:Nabcaefbf33cf4d92ac13ac898df71c52"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nd5b0e5c046e9449788073e231371dfca"
+        "@id": "_:Naaaec2f980174a3caf33f6a21f6c56dd"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -62,17 +66,17 @@
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
-        "pubmed:23875961",
         {
           "@id": "https://doi.org/10.1021/pr400045u"
-        }
+        },
+        "pubmed:23875961"
       ],
       "sc:description": "Shiny app to determine differentially regulated features in data with few replicates and presence of missing values.",
       "sc:featureList": {
@@ -81,8 +85,8 @@
       "sc:name": "LimmaRP",
       "sc:operatingSystem": [
         "Windows",
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "bmb.sdu.dk",
       "sc:softwareHelp": {
@@ -92,23 +96,7 @@
       "sc:url": "http://computproteomics.bmb.sdu.dk/Apps/LimmaRP/"
     },
     {
-      "@id": "_:N068cda2b7b9c4e6ab629ff6e8e604a8e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N877aef4c5a9e4762b2ed6eeec2a86b87",
+      "@id": "_:N2e5deb042fc440de8bbbd3b29fead263",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -124,17 +112,33 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:Nd5b0e5c046e9449788073e231371dfca",
+      "@id": "_:Nabcaefbf33cf4d92ac13ac898df71c52",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Naaaec2f980174a3caf33f6a21f6c56dd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_3475"
         }
       ],
       "sc:name": "P-value"
@@ -142,10 +146,6 @@
     {
       "@id": "https://doi.org/10.1021/pr400045u",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-9708-6722",
-      "@type": "sc:Person"
     }
   ]
 }

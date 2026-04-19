@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts438",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ibbig",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Aedin Culhane",
       "bsc:input": {
-        "@id": "_:N40400c774ab542ad8da543054f370ecf"
+        "@id": "_:N0a9f36c9609f4c7db2ccd3f850995398"
       },
       "bsc:output": [
         {
-          "@id": "_:N1f075cbcac0b4126bc25f7ff361be9cf"
+          "@id": "_:N0cc5bc3145dc4fd69c1118e055f514d5"
         },
         {
-          "@id": "_:Nb488e4316bf5485dad2d44b8c7556fca"
+          "@id": "_:Nc38fa703096a4f38bf80b3ad14f70a59"
         },
         {
-          "@id": "_:Nbca654b3ea7b4e1a8c387ce85512a1b4"
+          "@id": "_:Na2a17ddca85d4a6494fff91b9bc39cc1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -60,10 +64,10 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3473"
         }
       ],
       "sc:citation": [
@@ -76,17 +80,17 @@
       "sc:description": "A bi-clustering algorithm which is optimizes for binary data analysis. It is applied to meta-gene set analysis of large numbers of gene expression datasets. The iterative algorithm extracts groups of phenotypes from multiple studies that are associated with similar gene sets. The tool does not require prior knowledge of the number or scale of clusters and allows discovery of clusters with diverse sizes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0313"
+          "@id": "edam:operation_3224"
         },
         {
-          "@id": "edam:operation_3224"
+          "@id": "edam:operation_0313"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "iBBiG",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -96,18 +100,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/iBBiG.html"
     },
     {
-      "@id": "_:N40400c774ab542ad8da543054f370ecf",
+      "@id": "_:N0cc5bc3145dc4fd69c1118e055f514d5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2082"
+        "@id": "edam:data_1772"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Matrix"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Score"
     },
     {
-      "@id": "_:N1f075cbcac0b4126bc25f7ff361be9cf",
+      "@id": "_:Nc38fa703096a4f38bf80b3ad14f70a59",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -123,7 +132,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nb488e4316bf5485dad2d44b8c7556fca",
+      "@id": "_:Na2a17ddca85d4a6494fff91b9bc39cc1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -139,24 +148,15 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nbca654b3ea7b4e1a8c387ce85512a1b4",
+      "@id": "_:N0a9f36c9609f4c7db2ccd3f850995398",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_2082"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts438",
-      "@type": "sc:CreativeWork"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Matrix"
     }
   ]
 }

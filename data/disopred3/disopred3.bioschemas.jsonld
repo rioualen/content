@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu744",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/disopred3",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ncb51277d057342ffad1b38f9c29e284a"
+          "@id": "_:N0781da0132234d4da87283372ee74cf8"
         },
         {
-          "@id": "_:N95dfeaffaf1a4b36a21688a8dea45f5e"
+          "@id": "_:Nda26455c27d844ddbc561b14ca334e7c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3474"
       },
       "sc:citation": [
-        "pubmed:25391399",
         "pmcid:PMC4380029",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu744"
-        }
+        },
+        "pubmed:25391399"
       ],
       "sc:description": "DISOPRED3 represents the latest release of our successful machine-learning based approach to the detection of intrinsically disordered regions.",
       "sc:featureList": {
@@ -77,7 +73,15 @@
       "sc:url": "http://bioinf.cs.ucl.ac.uk/disopred"
     },
     {
-      "@id": "_:Ncb51277d057342ffad1b38f9c29e284a",
+      "@id": "_:N0781da0132234d4da87283372ee74cf8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1526"
+      },
+      "sc:name": "Protein globularity"
+    },
+    {
+      "@id": "_:Nda26455c27d844ddbc561b14ca334e7c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2969"
@@ -85,12 +89,8 @@
       "sc:name": "Sequence image"
     },
     {
-      "@id": "_:N95dfeaffaf1a4b36a21688a8dea45f5e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1526"
-      },
-      "sc:name": "Protein globularity"
+      "@id": "https://doi.org/10.1093/bioinformatics/btu744",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
