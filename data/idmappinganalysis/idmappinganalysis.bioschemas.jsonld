@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/idmappinganalysis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,15 +47,15 @@
         "Alex Lisovich"
       ],
       "bsc:input": {
-        "@id": "_:N5b09f0880eb347b99d9e850bb0328d11"
+        "@id": "_:N5acb5f07898d4f7c8c824ad9607eb422"
       },
       "bsc:output": {
-        "@id": "_:Nf400f7f06917422a951b5f9253761f6c"
+        "@id": "_:Nb7bd4fb79850459f86504b0e71c80ffb"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -62,11 +66,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pmcid:PMC4509590"
+        "pubmed:25633503"
       ],
       "sc:description": "Identifier mapping performance analysis.",
       "sc:featureList": {
@@ -75,9 +79,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "IdMappingAnalysis",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/IdMappingAnalysis.html"
@@ -86,23 +90,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/IdMappingAnalysis.html"
     },
     {
-      "@id": "_:Nf400f7f06917422a951b5f9253761f6c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N5b09f0880eb347b99d9e850bb0328d11",
+      "@id": "_:N5acb5f07898d4f7c8c824ad9607eb422",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -113,8 +101,20 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nb7bd4fb79850459f86504b0e71c80ffb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

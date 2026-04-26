@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-0657-5166",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkq1104",
       "@type": "sc:CreativeWork"
     },
@@ -47,24 +51,24 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N9ef8bc79b096449d96d709cf870f5116"
+          "@id": "_:N31310958f7564534b4fe398e0646934d"
         },
         {
-          "@id": "_:Ne885c5d9b1f34bdfa0a0978213492678"
+          "@id": "_:Nd52414e17763449c8f96ef4cd43f7afd"
         },
         {
-          "@id": "_:N4ef6075076ef4c72a054feccb1278292"
+          "@id": "_:N06dc956f44a64c1883d48d0cf123d0d2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N43a5675027ef4920abb25db09e516dc6"
+          "@id": "_:Nc1b3bddc604048eca2606acb05b21f33"
         },
         {
-          "@id": "_:Nb67d73a337544208874d554a8d82fca2"
+          "@id": "_:N7991d7f5682244e4be675ae28d0063d8"
         },
         {
-          "@id": "_:N6299c93fb3fd4b5586701887678edd71"
+          "@id": "_:Na68c5d4c90e045d993a34d24154de041"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -73,11 +77,11 @@
         "@id": "edam:topic_0601"
       },
       "sc:citation": [
-        "pmcid:PMC3013696",
         "pubmed:21062810",
         {
           "@id": "https://doi.org/10.1093/nar/gkq1104"
-        }
+        },
+        "pmcid:PMC3013696"
       ],
       "sc:description": "Experimentally verified phosphorylation sites in eukaryotic proteins.",
       "sc:featureList": {
@@ -85,9 +89,9 @@
       },
       "sc:name": "PhosphoELM database",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://phospho.elm.eu.org/help.html"
@@ -95,23 +99,40 @@
       "sc:url": "http://phospho.elm.eu.org/"
     },
     {
-      "@id": "_:N9ef8bc79b096449d96d709cf870f5116",
+      "@id": "_:Nc1b3bddc604048eca2606acb05b21f33",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1096"
+        "@id": "edam:data_2071"
       },
-      "sc:name": "Sequence accession (protein)"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence motif (protein)"
     },
     {
-      "@id": "_:Ne885c5d9b1f34bdfa0a0978213492678",
+      "@id": "_:N7991d7f5682244e4be675ae28d0063d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2775"
+        "@id": "edam:data_2071"
       },
-      "sc:name": "Kinase name"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence motif (protein)"
     },
     {
-      "@id": "_:N4ef6075076ef4c72a054feccb1278292",
+      "@id": "_:Na68c5d4c90e045d993a34d24154de041",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2071"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence motif (protein)"
+    },
+    {
+      "@id": "_:N31310958f7564534b4fe398e0646934d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1009"
@@ -119,41 +140,20 @@
       "sc:name": "Protein name"
     },
     {
-      "@id": "_:N43a5675027ef4920abb25db09e516dc6",
+      "@id": "_:Nd52414e17763449c8f96ef4cd43f7afd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2071"
+        "@id": "edam:data_2775"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Sequence motif (protein)"
+      "sc:name": "Kinase name"
     },
     {
-      "@id": "_:Nb67d73a337544208874d554a8d82fca2",
+      "@id": "_:N06dc956f44a64c1883d48d0cf123d0d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2071"
+        "@id": "edam:data_1096"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Sequence motif (protein)"
-    },
-    {
-      "@id": "_:N6299c93fb3fd4b5586701887678edd71",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2071"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Sequence motif (protein)"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-0657-5166",
-      "@type": "sc:Person"
+      "sc:name": "Sequence accession (protein)"
     }
   ]
 }

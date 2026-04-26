@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/transeq-ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Naee74c997462435191dfa86fadb8c95d"
+        "@id": "_:N95f5219c178e495398df95a26295b299"
       },
       "bsc:output": {
-        "@id": "_:Nf0fc5e59a1844432abe19cf2b25f9b27"
+        "@id": "_:N12f38530d2d3434ea367d17a4c21789f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
         "Web service",
-        "Web application"
+        "Web application",
+        "Web API"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "EMBOSS",
       "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
         "pubmed:35412617",
-        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        }
+        "pmcid:PMC9252731"
       ],
       "sc:description": "Transeq translates nucleic acid sequences to their corresponding peptide sequences. It can translate to the three forward and three reverse frames, and output multiple frame translations at once.",
       "sc:featureList": {
@@ -71,35 +75,27 @@
       },
       "sc:name": "transeq (EBI)",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
-        {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
-        },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
           "@id": "https://emboss.sourceforge.net/"
+        },
+        {
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/st/emboss_transeq"
     },
     {
-      "@id": "_:Naee74c997462435191dfa86fadb8c95d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nf0fc5e59a1844432abe19cf2b25f9b27",
+      "@id": "_:N12f38530d2d3434ea367d17a4c21789f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -107,11 +103,15 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N95f5219c178e495398df95a26295b299",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     }
   ]

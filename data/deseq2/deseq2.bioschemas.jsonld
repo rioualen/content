@@ -43,10 +43,10 @@
       "@id": "https://bio.tools/deseq2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf35debefe9544d1386590e1006bec14b"
+        "@id": "_:Nc4fc5c87ec9d436d9adffd794d66875e"
       },
       "bsc:output": {
-        "@id": "_:N88760c9ab75c480faa6140159dd44084"
+        "@id": "_:N71f3265f56e54e588bc56d15215e7db2"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -54,16 +54,16 @@
         "@id": "edam:topic_3170"
       },
       "sc:author": [
+        "Simon Anders",
         "Michael Love",
-        "Wolfgang Huber",
-        "Simon Anders"
+        "Wolfgang Huber"
       ],
       "sc:citation": [
-        "pubmed:25516281",
         "pmcid:PMC4302049",
         {
           "@id": "https://doi.org/10.1186/s13059-014-0550-8"
-        }
+        },
+        "pubmed:25516281"
       ],
       "sc:description": "R/Bioconductor package for differential gene expression analysis based on the negative binomial distribution. Estimate variance-mean dependence in count data from high-throughput sequencing assays and test for differential expression based on a model using the negative binomial distribution.",
       "sc:featureList": [
@@ -78,9 +78,9 @@
       "sc:license": "LGPL-2.1",
       "sc:name": "DESeq2",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": "hdhub",
       "sc:softwareHelp": {
@@ -90,18 +90,7 @@
       "sc:url": "http://bioconductor.org/packages/DESeq2/"
     },
     {
-      "@id": "_:Nf35debefe9544d1386590e1006bec14b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3917"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Count matrix"
-    },
-    {
-      "@id": "_:N88760c9ab75c480faa6140159dd44084",
+      "@id": "_:N71f3265f56e54e588bc56d15215e7db2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -110,6 +99,17 @@
         "@id": "edam:format_3751"
       },
       "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:Nc4fc5c87ec9d436d9adffd794d66875e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3917"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Count matrix"
     }
   ]
 }

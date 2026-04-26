@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl567",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gostats",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BioConductor Package Maintainer",
       "bsc:input": [
         {
-          "@id": "_:N1120dbcdb362437a8f13e2a6fbfa1ac9"
+          "@id": "_:Nc04cfdaf4baf4e3f9692ac695a6cfd8c"
         },
         {
-          "@id": "_:N2dae37d1ec574d879385a4481333950f"
+          "@id": "_:N6f56edd6f8ba4870bfadf3779f489014"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3aabf6cd5cba44d18d11b82eeffe308b"
+          "@id": "_:N781bd8642d834e34833a1e42d4391c0d"
         },
         {
-          "@id": "_:Nd450e75e5077426f901b2b6a14317aa0"
+          "@id": "_:N64fe58cd0d9a4a0eb6430cdb500a8c65"
         },
         {
-          "@id": "_:N859d77b5ae8c46fdb9e87ac8e821e396"
+          "@id": "_:N2a4925a9cab24e14a8ae97458fb8d2d5"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -76,10 +72,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:17098774",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btl567"
-        },
-        "pubmed:17098774"
+        }
       ],
       "sc:description": "A set of tools for interacting with GO and microarray data. A variety of basic manipulation tools for graphs, hypothesis testing and other simple calculations.",
       "sc:featureList": {
@@ -88,9 +84,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "GOstats",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/GOstats.html"
@@ -99,45 +95,26 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GOstats.html"
     },
     {
-      "@id": "_:N3aabf6cd5cba44d18d11b82eeffe308b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nd450e75e5077426f901b2b6a14317aa0",
+      "@id": "_:N781bd8642d834e34833a1e42d4391c0d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2331"
         },
         {
           "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_2331"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Score"
     },
     {
-      "@id": "_:N859d77b5ae8c46fdb9e87ac8e821e396",
+      "@id": "_:N64fe58cd0d9a4a0eb6430cdb500a8c65",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -156,36 +133,59 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N1120dbcdb362437a8f13e2a6fbfa1ac9",
+      "@id": "_:N2a4925a9cab24e14a8ae97458fb8d2d5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0582"
+        "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2195"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2331"
         }
       ],
-      "sc:name": "Ontology"
+      "sc:name": "Report"
     },
     {
-      "@id": "_:N2dae37d1ec574d879385a4481333950f",
+      "@id": "_:Nc04cfdaf4baf4e3f9692ac695a6cfd8c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2195"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N6f56edd6f8ba4870bfadf3779f489014",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0582"
+      },
+      "sc:encodingFormat": [
+        {
           "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_2195"
         }
       ],
-      "sc:name": "Gene expression data"
+      "sc:name": "Ontology"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btl567",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -40,23 +40,19 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/picard_reordersam",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Nd4dbf05a555741b287ea9aec5bc7dd27"
+          "@id": "_:Ndf32ff76bd70449bb62cb3fd0b4b37f7"
         },
         {
-          "@id": "_:N939b2820ec8c46b8a04605446d72ab46"
+          "@id": "_:N6ca4b6e5493e435dbbcf270c6a781cde"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3f6f75c7fdcf471bb4d6aa10500efcc3"
+        "@id": "_:Nafe052f588b14a1c8d691ed11b733329"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -64,13 +60,13 @@
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
         "pmcid:PMC4987906",
-        "pubmed:27137889",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
+        },
+        "pubmed:27137889",
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Reorder SAM/BAM to match contig ordering in a particular reference file. Note that this is not the same as sorting as done by the SortSam tool, which sorts by either coordinate values or query name. The ordering in ReorderSam is based on exact name matching of contigs/chromosomes. Reads that are mapped to a contig that is not in the new reference file are not included in the output.",
@@ -79,9 +75,9 @@
       },
       "sc:name": "picard_reordersam",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://broadinstitute.github.io/picard/command-line-overview.html#ReorderSam"
@@ -90,23 +86,7 @@
       "sc:url": "https://broadinstitute.github.io/picard/"
     },
     {
-      "@id": "_:Nd4dbf05a555741b287ea9aec5bc7dd27",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_2573"
-        }
-      ],
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N939b2820ec8c46b8a04605446d72ab46",
+      "@id": "_:Ndf32ff76bd70449bb62cb3fd0b4b37f7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -117,7 +97,23 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N3f6f75c7fdcf471bb4d6aa10500efcc3",
+      "@id": "_:N6ca4b6e5493e435dbbcf270c6a781cde",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2573"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Nafe052f588b14a1c8d691ed11b733329",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -126,6 +122,10 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

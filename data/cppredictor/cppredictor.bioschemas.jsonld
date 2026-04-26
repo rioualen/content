@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bty753",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cppredictor",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -44,28 +48,28 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nde7c9c890dc24efb92e0ffd5c4bad92b"
+          "@id": "_:N7cd26aac2dee4074b8d20f0bec4339ed"
         },
         {
-          "@id": "_:Ne259e671beca43529ed23332195359bd"
+          "@id": "_:Ndf75902ec4f444569de687516cbf12b9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1e8212d9bea44dcb90bd9465da609f02"
+          "@id": "_:N60b368f810514f2e9b1a0ae0cd6d2e4f"
         },
         {
-          "@id": "_:N6837566fe52942bc8fcc7add5caee91c"
+          "@id": "_:Nbb3577a022bc40fda848fba4473936df"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0099"
+          "@id": "edam:topic_0097"
         },
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_0099"
         }
       ],
       "sc:author": [
@@ -74,22 +78,22 @@
       ],
       "sc:citation": [
         "pubmed:29067038",
-        "pubmed:30169571",
         "pmcid:PMC5641303",
         {
           "@id": "https://doi.org/10.3389/fgene.2017.00147"
         },
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bty753"
-        }
+        },
+        "pubmed:30169571"
       ],
       "sc:description": "Template-based predictor of RNA secondary structure. It takes a template RNA secondary structure(s) and a query RNA sequence(s) and generates secondary structure of the query sequence(s) using the provided structure(s) as a template(s). Biological reliability of the generated structures is evaluated in form of z-scores.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_0278"
         },
         {
-          "@id": "edam:operation_0278"
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:funder": "Czech Science Foundation",
@@ -106,23 +110,45 @@
           "@id": "http://cppredictor.elixir-czech.cz/documentation/help.html"
         },
         {
-          "@id": "http://cppredictor.elixir-czech.cz/documentation/"
+          "@id": "http://cppredictor.elixir-czech.cz/documentation/usecases.html"
+        },
+        {
+          "@id": "http://cppredictor.elixir-czech.cz/documentation/example.html"
         },
         {
           "@id": "http://cppredictor.elixir-czech.cz/documentation/terms.html"
         },
         {
-          "@id": "http://cppredictor.elixir-czech.cz/documentation/usecases.html"
-        },
-        {
-          "@id": "http://cppredictor.elixir-czech.cz/documentation/example.html"
+          "@id": "http://cppredictor.elixir-czech.cz/documentation/"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "http://cppredictor.elixir-czech.cz/"
     },
     {
-      "@id": "_:N1e8212d9bea44dcb90bd9465da609f02",
+      "@id": "_:N7cd26aac2dee4074b8d20f0bec4339ed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:Ndf75902ec4f444569de687516cbf12b9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0880"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1457"
+      },
+      "sc:name": "RNA secondary structure"
+    },
+    {
+      "@id": "_:N60b368f810514f2e9b1a0ae0cd6d2e4f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -138,7 +164,7 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:N6837566fe52942bc8fcc7add5caee91c",
+      "@id": "_:Nbb3577a022bc40fda848fba4473936df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0880"
@@ -148,10 +174,10 @@
           "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_1457"
+          "@id": "edam:format_3604"
         },
         {
-          "@id": "edam:format_3604"
+          "@id": "edam:format_1457"
         },
         {
           "@id": "edam:format_3464"
@@ -160,33 +186,7 @@
       "sc:name": "RNA secondary structure"
     },
     {
-      "@id": "_:Nde7c9c890dc24efb92e0ffd5c4bad92b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0880"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1457"
-      },
-      "sc:name": "RNA secondary structure"
-    },
-    {
-      "@id": "_:Ne259e671beca43529ed23332195359bd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "RNA sequence"
-    },
-    {
       "@id": "https://doi.org/10.3389/fgene.2017.00147",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty753",
       "@type": "sc:CreativeWork"
     }
   ]

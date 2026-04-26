@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41587-020-00777-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/vamb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na17be489db374647baf7217bd75b7fa9"
+          "@id": "_:N27369fd691114ccbbe59e2b527ef6f8e"
         },
         {
-          "@id": "_:N3248d28dc6ba4da7bf4beb1eab7cd66c"
+          "@id": "_:N4112924d955d47a6bafa72fdda01a413"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -59,17 +63,17 @@
           "@id": "edam:topic_3174"
         },
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_0605"
         },
         {
-          "@id": "edam:topic_0605"
+          "@id": "edam:topic_3474"
         }
       ],
       "sc:citation": [
-        "pubmed:33398153",
         {
           "@id": "https://doi.org/10.1038/s41587-020-00777-4"
-        }
+        },
+        "pubmed:33398153"
       ],
       "sc:description": "Improved metagenome binning and assembly using deep variational autoencoders.\n\nVamb is a metagenomic binner which feeds sequence composition information from a contig catalogue and co-abundance information from BAM files into a variational autoencoder and clusters the latent representation.",
       "sc:featureList": {
@@ -85,18 +89,7 @@
       "sc:url": "https://github.com/RasmussenLab/vamb"
     },
     {
-      "@id": "_:Na17be489db374647baf7217bd75b7fa9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N3248d28dc6ba4da7bf4beb1eab7cd66c",
+      "@id": "_:N27369fd691114ccbbe59e2b527ef6f8e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -107,8 +100,15 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1038/s41587-020-00777-4",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4112924d955d47a6bafa72fdda01a413",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

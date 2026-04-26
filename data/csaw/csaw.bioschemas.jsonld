@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-3564-4813",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/csaw",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-3564-4813"
       },
       "bsc:input": {
-        "@id": "_:N5bea45b6510e40e7a5a4e38257b47859"
+        "@id": "_:Nca4bb3ce3b024d329587c06b093a6663"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb4d000345d754366a8440fda4e4eb3db"
+          "@id": "_:N95b20128b611460595c86069690e2859"
         },
         {
-          "@id": "_:N7e1747bb0fed4deaaa6c365ebd5dd81d"
+          "@id": "_:N711f3276d6dd459dbe0fb07074366c9a"
         },
         {
-          "@id": "_:Ne82d6db62beb4b519059fb429306afc3"
+          "@id": "_:Nd938a0c37ac045839d3a204e5683f52b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,21 +69,21 @@
           "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_3511"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": [
         {
           "@id": "https://doi.org/10.1093/nar/gku351"
         },
-        "pubmed:24852250",
-        "pmcid:PMC4066778"
+        "pmcid:PMC4066778",
+        "pubmed:24852250"
       ],
       "sc:description": "Detection of differentially bound regions in ChIP-seq data with sliding windows, with methods for normalization and proper FDR control.",
       "sc:featureList": {
@@ -88,9 +92,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "csaw",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/csaw.html"
@@ -99,7 +103,42 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/csaw.html"
     },
     {
-      "@id": "_:Nb4d000345d754366a8440fda4e4eb3db",
+      "@id": "_:Nca4bb3ce3b024d329587c06b093a6663",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3327"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N95b20128b611460595c86069690e2859",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N711f3276d6dd459dbe0fb07074366c9a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
@@ -118,66 +157,27 @@
       "sc:name": "Sequence alignment report"
     },
     {
-      "@id": "_:N7e1747bb0fed4deaaa6c365ebd5dd81d",
+      "@id": "_:Nd938a0c37ac045839d3a204e5683f52b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
-        },
-        {
           "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:Ne82d6db62beb4b519059fb429306afc3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N5bea45b6510e40e7a5a4e38257b47859",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3327"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gku351",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-3564-4813",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.3389/fmolb.2019.00025",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/Anncolvar",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Vojtech Spiwok",
       "bsc:input": {
-        "@id": "_:N321e7cf2d9114515a28dfbd27160f05a"
+        "@id": "_:Nb018c937d4c642a482077ce37b7fd063"
       },
       "bsc:output": {
-        "@id": "_:Nbed650240b2e4ef9a0a26b36ff389281"
+        "@id": "_:N6c8c11cae5404f3981f2167936f06598"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -51,11 +55,11 @@
         "@id": "edam:topic_3892"
       },
       "sc:citation": [
+        "pmcid:PMC6482212",
         "pubmed:31058167",
         {
           "@id": "https://doi.org/10.3389/fmolb.2019.00025"
-        },
-        "pmcid:PMC6482212"
+        }
       ],
       "sc:description": "Anncolvar builds a feed-forward neural network for approximation of a collective variable of a molecular system. Molecular simulations are slow due to fact that a studied system tends to stay in local energy minima. Methods such as metadynamics address this problem by application of artificial forces acting on collective variables. Collective variables are some descriptors of the state of the molecular system. For example, when simulation binding of a ligand to protein it is possible to use their distance as a collective variable and by applying force onto this collective variable you can accelerate binding and unbinding. However, some sophisticated collective variables are difficult to calculate. For this purpose we developed Anncolvar to approximate such collective variables using artificial neural network.",
       "sc:featureList": {
@@ -74,27 +78,16 @@
         }
       ],
       "sc:softwareVersion": [
-        "v0.5",
         "v0.3",
         "v0.6",
+        "v0.5",
         "v0.4",
         "v0.2"
       ],
       "sc:url": "https://github.com/spiwokv/anncolvar"
     },
     {
-      "@id": "_:N321e7cf2d9114515a28dfbd27160f05a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3867"
-      },
-      "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:Nbed650240b2e4ef9a0a26b36ff389281",
+      "@id": "_:N6c8c11cae5404f3981f2167936f06598",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2087"
@@ -105,8 +98,15 @@
       "sc:name": "Molecular property"
     },
     {
-      "@id": "https://doi.org/10.3389/fmolb.2019.00025",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nb018c937d4c642a482077ce37b7fd063",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3867"
+      },
+      "sc:name": "Trajectory data"
     }
   ]
 }

@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-016-0892-1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/4pipe4",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Francisco Pina Martins",
       "bsc:input": {
-        "@id": "_:N1b111706328e4b72a5be3287c40fdf27"
+        "@id": "_:N0b5f23ba6d2c41208840cf695fb1b196"
       },
       "bsc:output": {
-        "@id": "_:Na4762d9ed8c04390b7a50b432855987c"
+        "@id": "_:N0c69e6c3c6da4b0eb67958f6fa164891"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_2885"
         },
         {
           "@id": "edam:topic_0077"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:26787189",
+        "pmcid:PMC4719533",
         {
           "@id": "https://doi.org/10.1186/s12859-016-0892-1"
-        },
-        "pubmed:26787189",
-        "pmcid:PMC4719533"
+        }
       ],
       "sc:description": "A pipeline with emphasis on SNP detection. It will detect SNPs in NGS data where no reference sequence nor strain information is available.",
       "sc:featureList": {
@@ -83,7 +87,23 @@
       "sc:url": "https://github.com/StuntsPT/4Pipe4"
     },
     {
-      "@id": "_:Na4762d9ed8c04390b7a50b432855987c",
+      "@id": "_:N0b5f23ba6d2c41208840cf695fb1b196",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3284"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N0c69e6c3c6da4b0eb67958f6fa164891",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -92,26 +112,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N1b111706328e4b72a5be3287c40fdf27",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3284"
-        }
-      ],
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-016-0892-1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

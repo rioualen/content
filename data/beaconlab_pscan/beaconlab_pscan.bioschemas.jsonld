@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkp464",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/beaconlab_pscan",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Federico Zambelli",
-        "Giulio Pavesi"
+        "Giulio Pavesi",
+        "Federico Zambelli"
       ],
       "bsc:input": {
-        "@id": "_:Nda550d0431d7456e8671d4165ae586a5"
+        "@id": "_:Necc5fc3edfe3487f9bc0d428643b7b05"
       },
       "bsc:output": [
         {
-          "@id": "_:N09dfe4990a9f4608bf9b9f1633d26fba"
+          "@id": "_:N5a01fae7f77d478eab259b5562cbbf08"
         },
         {
-          "@id": "_:Ndf5ea8a62a474e0ea596748066129a6a"
+          "@id": "_:N1ad88945f5904b8cbfb17792bd670ec8"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -67,11 +71,11 @@
         }
       ],
       "sc:citation": [
+        "pmcid:PMC2703934",
+        "pubmed:19487240",
         {
           "@id": "https://doi.org/10.1093/nar/gkp464"
-        },
-        "pmcid:PMC2703934",
-        "pubmed:19487240"
+        }
       ],
       "sc:description": "Software tool that scans a set of sequences (e.g. promoters) from co-regulated or co-expressed genes with motifs describing the binding specificity of known transcription factors and assesses which motifs are significantly over- or under-represented, providing thus hints on which transcription factors could be common regulators of the genes studied, together with the location of their candidate binding sites in the sequences",
       "sc:featureList": {
@@ -80,9 +84,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Pscan",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:provider": "ELIXIR-ITA-MILANO",
       "sc:softwareHelp": {
@@ -92,7 +96,7 @@
       "sc:url": "http://www.beaconlab.it/pscan"
     },
     {
-      "@id": "_:Nda550d0431d7456e8671d4165ae586a5",
+      "@id": "_:Necc5fc3edfe3487f9bc0d428643b7b05",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -103,18 +107,7 @@
       "sc:name": "Gene ID"
     },
     {
-      "@id": "_:N09dfe4990a9f4608bf9b9f1633d26fba",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:Ndf5ea8a62a474e0ea596748066129a6a",
+      "@id": "_:N5a01fae7f77d478eab259b5562cbbf08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2755"
@@ -125,8 +118,15 @@
       "sc:name": "Transcription factor name"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkp464",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N1ad88945f5904b8cbfb17792bd670ec8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid features"
     }
   ]
 }

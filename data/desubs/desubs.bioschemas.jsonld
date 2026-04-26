@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw544",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/desubs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Anastasios Bezerianos",
-        "Panos Balomenos"
+        "Panos Balomenos",
+        "Anastasios Bezerianos"
       ],
       "bsc:input": {
-        "@id": "_:N220b94a5b0f04fb2a072c31b4320332e"
+        "@id": "_:N6bdd59daf99f48b5bc2a953f43eec801"
       },
       "bsc:output": [
         {
-          "@id": "_:Nec02982702a64721be55a9c708d5c375"
+          "@id": "_:N71242671caad4dfebf82c1ab8823f41b"
         },
         {
-          "@id": "_:N0198e689f57148b89c174459a7073d01"
+          "@id": "_:N0714769f121f492bbe835c99cbb8b088"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_2259"
         },
         {
           "@id": "edam:topic_3308"
@@ -82,19 +78,19 @@
       "sc:description": "A network-based systems biology package that extracts disease-perturbed subpathways within a pathway network as recorded by RNA-seq experiments. It contains framework covering a broad range of operation modes at all stages of the subpathway analysis, enabling a case-specific approach. The operation modes refer to the pathway network construction and processing, the subpathway extraction, visualization and enrichment analysis with regard to various biological and pharmacological features.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2497"
+          "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_2497"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "DEsubs",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/manuals/DEsubs/man/DEsubs.pdf"
@@ -103,15 +99,7 @@
       "sc:url": "http://bioconductor.org/packages/DEsubs/"
     },
     {
-      "@id": "_:Nec02982702a64721be55a9c708d5c375",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N0198e689f57148b89c174459a7073d01",
+      "@id": "_:N71242671caad4dfebf82c1ab8823f41b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -119,12 +107,24 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N220b94a5b0f04fb2a072c31b4320332e",
+      "@id": "_:N0714769f121f492bbe835c99cbb8b088",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N6bdd59daf99f48b5bc2a953f43eec801",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
       },
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw544",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

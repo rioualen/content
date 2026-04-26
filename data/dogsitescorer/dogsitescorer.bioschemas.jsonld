@@ -36,25 +36,17 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts310",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1021/ci100241y",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dogsitescorer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N395daa7c32094e0aa1ca6d66cdfff7ea"
+        "@id": "_:N3135d22d318e43dba60f49c1e3e82193"
       },
       "bsc:output": [
         {
-          "@id": "_:N0bc525d0e45641eea6255429befa31cc"
+          "@id": "_:Na8ce7f7086354145b26d3824a189adcb"
         },
         {
-          "@id": "_:N25b155493efd4369bac9006fb3ee6479"
+          "@id": "_:Nad5fe6c555d649c490369ce090bae311"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -71,11 +63,11 @@
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts310"
         },
+        "pubmed:22628523",
+        "pubmed:20945875",
         {
           "@id": "https://doi.org/10.1021/ci100241y"
-        },
-        "pubmed:20945875",
-        "pubmed:22628523"
+        }
       ],
       "sc:description": "Automated pocket detection and analysis tool enabling the identification of potential binding pockets and subpockets in protein structures. Additionally, global properties, describing size, shape and chemical features of the predicted (sub)pockets, are calculated. Per default, a simple druggability score is provided for each (sub)pocket, based on a linear combination of the three descriptors describing volume, hydrophobicity and enclosure.",
       "sc:featureList": {
@@ -83,9 +75,9 @@
       },
       "sc:name": "DoGSiteScorer",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "University of Hamburg - Center for Bioinformatics",
       "sc:softwareHelp": {
@@ -94,7 +86,18 @@
       "sc:url": "http://proteinsplus.zbh.uni-hamburg.de/#dogsite"
     },
     {
-      "@id": "_:N0bc525d0e45641eea6255429befa31cc",
+      "@id": "_:N3135d22d318e43dba60f49c1e3e82193",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Na8ce7f7086354145b26d3824a189adcb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0897"
@@ -105,7 +108,7 @@
       "sc:name": "Protein property"
     },
     {
-      "@id": "_:N25b155493efd4369bac9006fb3ee6479",
+      "@id": "_:Nad5fe6c555d649c490369ce090bae311",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2878"
@@ -116,15 +119,12 @@
       "sc:name": "Protein structural motif"
     },
     {
-      "@id": "_:N395daa7c32094e0aa1ca6d66cdfff7ea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
+      "@id": "https://doi.org/10.1093/bioinformatics/bts310",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1021/ci100241y",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

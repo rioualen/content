@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-7336-8071",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1186/1471-2164-14-336",
       "@type": "sc:CreativeWork"
     },
@@ -44,16 +48,16 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "Wikum Dinalankara",
-        "Bahman Afsari",
         {
           "@id": "http://orcid.org/0000-0002-7336-8071"
-        }
+        },
+        "Bahman Afsari"
       ],
       "bsc:input": {
-        "@id": "_:Na6039250e92249cc98739b96068df79e"
+        "@id": "_:Na9e498e43b234d1292f50d0fff4f6159"
       },
       "bsc:output": {
-        "@id": "_:N7f9ee1cc38ab4913aba55fd87b7cf017"
+        "@id": "_:N7982a919fecd45d08af058cd1ce997f3"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -69,8 +73,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3662649",
         "pubmed:23682826",
+        "pmcid:PMC3662649",
         {
           "@id": "https://doi.org/10.1186/1471-2164-14-336"
         }
@@ -82,9 +86,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "switchBox",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/switchBox.html"
@@ -93,18 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/switchBox.html"
     },
     {
-      "@id": "_:Na6039250e92249cc98739b96068df79e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N7f9ee1cc38ab4913aba55fd87b7cf017",
+      "@id": "_:N7982a919fecd45d08af058cd1ce997f3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -115,8 +108,15 @@
       "sc:name": "Score"
     },
     {
-      "@id": "http://orcid.org/0000-0002-7336-8071",
-      "@type": "sc:Person"
+      "@id": "_:Na9e498e43b234d1292f50d0fff4f6159",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene expression data"
     }
   ]
 }

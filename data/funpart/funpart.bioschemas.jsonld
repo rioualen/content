@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41419-021-04075-y",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/funpart",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Antonio del Sol",
       "bsc:input": {
-        "@id": "_:Na0c3dd003eb047f89b5d8cca65306baa"
+        "@id": "_:N76630e9da5cc4dbaaf3ccd606199a0db"
       },
       "bsc:output": [
         {
-          "@id": "_:N956791b4a6594f7290b20e2cad08d835"
+          "@id": "_:N97aab301e2e04ccbbe3707aa8faf9360"
         },
         {
-          "@id": "_:N853a5af2aae24d1ca41a44bd535c6329"
+          "@id": "_:Nc9cfc4b69b22414f954b442e0d2830bb"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -61,11 +65,11 @@
         }
       ],
       "sc:citation": [
+        "pmcid:PMC8370971",
+        "pubmed:34404761",
         {
           "@id": "https://doi.org/10.1038/s41419-021-04075-y"
-        },
-        "pubmed:34404761",
-        "pmcid:PMC8370971"
+        }
       ],
       "sc:description": "FunPart is a computational tool that partitions heterogeneous cell populations into functionally distinct subpopulations and simultaneously identifies modules of functionally relevant set of genes for each of them.",
       "sc:featureList": [
@@ -79,29 +83,13 @@
       "sc:name": "FunPart",
       "sc:operatingSystem": [
         "Windows",
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://github.com/BarlierC/FunPart"
     },
     {
-      "@id": "_:N956791b4a6594f7290b20e2cad08d835",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3779"
-      },
-      "sc:name": "Annotated text"
-    },
-    {
-      "@id": "_:N853a5af2aae24d1ca41a44bd535c6329",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:name": "Clustered expression profiles"
-    },
-    {
-      "@id": "_:Na0c3dd003eb047f89b5d8cca65306baa",
+      "@id": "_:N76630e9da5cc4dbaaf3ccd606199a0db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -112,8 +100,20 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "https://doi.org/10.1038/s41419-021-04075-y",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N97aab301e2e04ccbbe3707aa8faf9360",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "_:Nc9cfc4b69b22414f954b442e0d2830bb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3779"
+      },
+      "sc:name": "Annotated text"
     }
   ]
 }

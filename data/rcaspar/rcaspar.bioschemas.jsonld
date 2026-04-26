@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rcaspar",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,39 +47,39 @@
         "Douaa Mugahid"
       ],
       "bsc:input": {
-        "@id": "_:Nc6072fcd5fb4487b8c1cc7f0b9e4234e"
+        "@id": "_:N0963f4c8a60445bb94c18395d6231060"
       },
       "bsc:output": {
-        "@id": "_:N10c3396555b641e2a2c4cf437e1a97e2"
+        "@id": "_:N0aa89f3c7857452aa6a7e027d18018bd"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3518"
-        },
-        {
-          "@id": "edam:topic_0203"
-        },
-        {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_3518"
+        },
+        {
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": [
-        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pmcid:PMC4509590"
+        "pubmed:25633503"
       ],
       "sc:description": "The package is the R-version of the C-based software \\bold{CASPAR}. It is meant to help predict survival times in the presence of high-dimensional explanatory covariates. The model is a piecewise baseline hazard Cox regression model with an Lq-norm based prior that selects for the most important regression coefficients, and in turn the most relevant covariates for survival analysis.",
       "sc:featureList": {
@@ -84,9 +88,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "RCASPAR",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/RCASPAR.html"
@@ -95,28 +99,17 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/RCASPAR.html"
     },
     {
-      "@id": "_:N10c3396555b641e2a2c4cf437e1a97e2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nc6072fcd5fb4487b8c1cc7f0b9e4234e",
+      "@id": "_:N0963f4c8a60445bb94c18395d6231060",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3111"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1639"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_1639"
         },
         {
           "@id": "edam:format_1638"
@@ -125,8 +118,15 @@
       "sc:name": "Processed microarray data"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0aa89f3c7857452aa6a7e027d18018bd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

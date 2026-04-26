@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-0060-6486",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkn840",
       "@type": "sc:CreativeWork"
     },
@@ -44,25 +48,25 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Morten Nielsen",
       "bsc:input": {
-        "@id": "_:N1335f1c869f649108a3ad2fb3d933a8e"
+        "@id": "_:N584b4a542511437fa44c2e386b0b3b87"
       },
       "bsc:output": {
-        "@id": "_:Nc545ef6859f944cdaf00d64749599018"
+        "@id": "_:N2cae3ec621d441889a6178f95d6bb9cc"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3534"
       },
       "sc:citation": [
-        "pmcid:PMC2686430",
+        "pubmed:18981051",
         {
           "@id": "https://doi.org/10.1093/nar/gkn840"
         },
-        "pubmed:18981051"
+        "pmcid:PMC2686430"
       ],
       "sc:contributor": {
         "@id": "http://orcid.org/0000-0003-0060-6486"
@@ -70,10 +74,10 @@
       "sc:description": "Predict binding of peptides to any known MHC molecule using artificial neural networks (ANNs).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0416"
+          "@id": "edam:operation_2575"
         },
         {
-          "@id": "edam:operation_2575"
+          "@id": "edam:operation_0416"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -91,18 +95,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetMHCpan/"
     },
     {
-      "@id": "_:N1335f1c869f649108a3ad2fb3d933a8e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nc545ef6859f944cdaf00d64749599018",
+      "@id": "_:N2cae3ec621d441889a6178f95d6bb9cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -113,8 +106,15 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "http://orcid.org/0000-0003-0060-6486",
-      "@type": "sc:Person"
+      "@id": "_:N584b4a542511437fa44c2e386b0b3b87",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

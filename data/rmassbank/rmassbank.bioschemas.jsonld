@@ -44,24 +44,24 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "RMassBank at Eawag",
       "bsc:input": {
-        "@id": "_:N87a441ad631d45dc98e44e956347bba2"
+        "@id": "_:N61189f9d24d348e2bae0004df4ea3dff"
       },
       "bsc:output": {
-        "@id": "_:Nbe0e4f3b04474ec1a71a3d0a9c27e864"
+        "@id": "_:N60f8c1bd7e2345ecba4e0f18070738c0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3172"
       },
       "sc:citation": [
-        "pubmed:23303751",
         {
           "@id": "https://doi.org/10.1002/jms.3131"
-        }
+        },
+        "pubmed:23303751"
       ],
       "sc:description": "Workflow to process tandem MS files and build MassBank records. Functions include automated extraction of tandem MS spectra, formula assignment to tandem MS fragments, recalibration of tandem MS spectra with assigned fragments, spectrum cleanup, automated retrieval of compound information from Internet databases, and export to MassBank records.",
       "sc:featureList": {
@@ -71,8 +71,8 @@
       "sc:name": "RMassBank",
       "sc:operatingSystem": [
         "Windows",
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/RMassBank.html"
@@ -81,18 +81,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/RMassBank.html"
     },
     {
-      "@id": "_:Nbe0e4f3b04474ec1a71a3d0a9c27e864",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3245"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N87a441ad631d45dc98e44e956347bba2",
+      "@id": "_:N61189f9d24d348e2bae0004df4ea3dff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0957"
@@ -101,6 +90,17 @@
         "@id": "edam:format_2332"
       },
       "sc:name": "Database metadata"
+    },
+    {
+      "@id": "_:N60f8c1bd7e2345ecba4e0f18070738c0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3245"
+      },
+      "sc:name": "Mass spectrometry data"
     }
   ]
 }

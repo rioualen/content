@@ -36,6 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-5315-8325",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkaa530",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1101/757062",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/DeepCLIP",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,24 +55,24 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N4bb4f64ea8aa460ea5f77b37b620a228"
+          "@id": "_:N189b708e112e4ae09f41c4ac7f662a54"
         },
         {
-          "@id": "_:N4efce19551e64aee8ae8f5cac575cbf0"
+          "@id": "_:N2409f05e42c941a2a0c4354ffbf89af4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N23dcad2d465644ce86f0f05d2fa5fe97"
+          "@id": "_:N6d62c309c3a04f7585eafc1c94050caf"
         },
         {
-          "@id": "_:Nb1b5fc3b3a1141f8967e72ae2ec6a8e7"
+          "@id": "_:N1c32a980036b4f47a113ac92e3c5a6db"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool"
+        "Command-line tool",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -75,30 +87,30 @@
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-5315-8325"
-        },
-        {
           "@id": "https://orcid.org/0000-0001-8076-5035"
         },
-        "Alexander Gulliver Bjørnholt Grønning"
+        "Alexander Gulliver Bjørnholt Grønning",
+        {
+          "@id": "https://orcid.org/0000-0002-5315-8325"
+        }
       ],
       "sc:citation": [
         "pmcid:PMC7367176",
         {
+          "@id": "https://doi.org/10.1101/757062"
+        },
+        {
           "@id": "https://doi.org/10.1093/nar/gkaa530"
         },
-        "pubmed:32558887",
-        {
-          "@id": "https://doi.org/10.1101/757062"
-        }
+        "pubmed:32558887"
       ],
       "sc:description": "Predicting the effect of mutations on protein-RNA binding with Deep Learning | This repository contains all DeepCLIP Python code | A context-aware neural network for modeling and predicting protein binding to nucleic acids using only sequence input | DeepCLIP is a neural network with shallow convolutional layers connected to a bidirectional LSTM layer",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0441"
+          "@id": "edam:operation_3901"
         },
         {
-          "@id": "edam:operation_3901"
+          "@id": "edam:operation_0441"
         },
         {
           "@id": "edam:operation_3902"
@@ -114,7 +126,23 @@
       "sc:url": "https://deepclip.compbio.sdu.dk"
     },
     {
-      "@id": "_:N23dcad2d465644ce86f0f05d2fa5fe97",
+      "@id": "_:N6d62c309c3a04f7585eafc1c94050caf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N1c32a980036b4f47a113ac92e3c5a6db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -125,23 +153,7 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:Nb1b5fc3b3a1141f8967e72ae2ec6a8e7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N4bb4f64ea8aa460ea5f77b37b620a228",
+      "@id": "_:N189b708e112e4ae09f41c4ac7f662a54",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -152,7 +164,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N4efce19551e64aee8ae8f5cac575cbf0",
+      "@id": "_:N2409f05e42c941a2a0c4354ffbf89af4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -163,19 +175,7 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkaa530",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1101/757062",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0001-8076-5035",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5315-8325",
       "@type": "sc:Person"
     }
   ]

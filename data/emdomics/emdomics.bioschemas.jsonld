@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv634",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/emdomics",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Daniel Schmolze",
-        "Sadhika Malladi"
+        "Sadhika Malladi",
+        "Daniel Schmolze"
       ],
       "bsc:input": {
-        "@id": "_:N9dc81948ba0641cfa0d325f248be18a8"
+        "@id": "_:Nc441ed3f7f5f418cb0e977edbeb3ad6f"
       },
       "bsc:output": [
         {
-          "@id": "_:N61c80b0c111a4c589ea4491ea4b622fd"
+          "@id": "_:Nd214132773e147ca9db3d3224d0fdfd9"
         },
         {
-          "@id": "_:N7a89b187a17348149246b98fc4730251"
+          "@id": "_:Nc08c6ab4f059425a99dab1682bf56ebd"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -60,24 +64,24 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_2269"
-        },
-        {
           "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3518"
+        },
+        {
+          "@id": "edam:topic_3168"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv634"
         },
-        "pmcid:PMC4743632",
-        "pubmed:26515818"
+        "pubmed:26515818",
+        "pmcid:PMC4743632"
       ],
       "sc:description": "Algorithm used to perform a supervised multi-class analysis to measure the magnitude and statistical significance of observed continuous genomics data between groups. Traditional methods use significance tests based on summary statistics of the distributions. This approach lacks power to identify differences between groups with high levels of intra-group heterogeneity. The algorithm transforms one distribution into another, providing the overall difference in shape between two distributions.",
       "sc:featureList": {
@@ -86,9 +90,9 @@
       "sc:license": "MIT",
       "sc:name": "EMDomics",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/EMDomics.html"
@@ -97,39 +101,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/EMDomics.html"
     },
     {
-      "@id": "_:N61c80b0c111a4c589ea4491ea4b622fd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N7a89b187a17348149246b98fc4730251",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N9dc81948ba0641cfa0d325f248be18a8",
+      "@id": "_:Nc441ed3f7f5f418cb0e977edbeb3ad6f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -145,8 +117,36 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv634",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nd214132773e147ca9db3d3224d0fdfd9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nc08c6ab4f059425a99dab1682bf56ebd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Score"
     }
   ]
 }

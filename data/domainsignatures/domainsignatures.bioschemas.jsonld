@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-9-3",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/domainsignatures",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Florian Hahne",
       "bsc:input": [
         {
-          "@id": "_:N963e1f9b282943d2aa05f636fd93494e"
+          "@id": "_:N963fee9c31ba421f8fd931508090872a"
         },
         {
-          "@id": "_:N1dada8083a8e407b9413cec2e5e1d2b1"
+          "@id": "_:Nadc4e395a5a24b9b965787b22479daab"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5152a0a9ca0d4bf199bcf1aabc5ab841"
+          "@id": "_:N637d528c0e9643b3a5496507ed3055cd"
         },
         {
-          "@id": "_:N102f83d127e343edb0dc2516c76235a5"
+          "@id": "_:N3847e75f2e524d1f981ba29a23bcdc39"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -73,11 +69,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2245903",
-        "pubmed:18177498",
         {
           "@id": "https://doi.org/10.1186/1471-2105-9-3"
-        }
+        },
+        "pmcid:PMC2245903",
+        "pubmed:18177498"
       ],
       "sc:description": "Find significantly enriched gene classifications in a list of functionally undescribed genes based on their InterPro domain structure.",
       "sc:featureList": [
@@ -102,7 +98,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/domainsignatures.html"
     },
     {
-      "@id": "_:N5152a0a9ca0d4bf199bcf1aabc5ab841",
+      "@id": "_:N963fee9c31ba421f8fd931508090872a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1904"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Locus ID (EntrezGene)"
+    },
+    {
+      "@id": "_:Nadc4e395a5a24b9b965787b22479daab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1355"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein signature"
+    },
+    {
+      "@id": "_:N637d528c0e9643b3a5496507ed3055cd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -118,42 +136,24 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N102f83d127e343edb0dc2516c76235a5",
+      "@id": "_:N3847e75f2e524d1f981ba29a23bcdc39",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N963e1f9b282943d2aa05f636fd93494e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1355"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein signature"
-    },
-    {
-      "@id": "_:N1dada8083a8e407b9413cec2e5e1d2b1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1904"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Locus ID (EntrezGene)"
+      "@id": "https://doi.org/10.1186/1471-2105-9-3",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

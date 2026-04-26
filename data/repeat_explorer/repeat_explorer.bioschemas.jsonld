@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-11-378",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/bioinformatics/btt054",
       "@type": "sc:CreativeWork"
     },
@@ -44,10 +48,10 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Petr Novak",
       "bsc:input": {
-        "@id": "_:N131def02abee4ea3abf19a6a6749ce05"
+        "@id": "_:N9295e7a5d4cb491abf22892ed3c46755"
       },
       "bsc:output": {
-        "@id": "_:N12a942df56e04f91a52f2dcf4a52c555"
+        "@id": "_:Naeeead3017d84f84b766d4078c369e34"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -69,14 +73,14 @@
       ],
       "sc:citation": [
         "pubmed:20633259",
-        "pubmed:23376349",
         "pmcid:PMC2912890",
+        {
+          "@id": "https://doi.org/10.1186/1471-2105-11-378"
+        },
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt054"
         },
-        {
-          "@id": "https://doi.org/10.1186/1471-2105-11-378"
-        }
+        "pubmed:23376349"
       ],
       "sc:contributor": "Czech Academy of Sciences",
       "sc:description": "RepeatExplorer is a computational pipeline designed to identify and characterize repetitive DNA elements in next-generation sequencing data from plant and animal genomes. It employs graph-based clustering of sequence reads to identify repetitive elements and several additional programs that aid in their annotation and quantification.",
@@ -101,24 +105,13 @@
         "@id": "http://repeatexplorer.org"
       },
       "sc:softwareVersion": [
-        "0.3.7 (command line)",
-        "2.3.7 (Galaxy server)"
+        "2.3.7 (Galaxy server)",
+        "0.3.7 (command line)"
       ],
       "sc:url": "http://repeatexplorer.org"
     },
     {
-      "@id": "_:N12a942df56e04f91a52f2dcf4a52c555",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2310"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N131def02abee4ea3abf19a6a6749ce05",
+      "@id": "_:N9295e7a5d4cb491abf22892ed3c46755",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -134,8 +127,15 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-11-378",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Naeeead3017d84f84b766d4078c369e34",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2310"
+      },
+      "sc:name": "Sequence search results"
     }
   ]
 }

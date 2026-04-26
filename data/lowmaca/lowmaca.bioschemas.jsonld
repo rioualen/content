@@ -36,50 +36,42 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-016-0935-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-6371-1334",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/lowmaca",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "http://orcid.org/0000-0001-6371-1334"
+          "@id": "http://orcid.org/0000-0003-1103-7688"
         },
         {
-          "@id": "http://orcid.org/0000-0003-1103-7688"
+          "@id": "http://orcid.org/0000-0001-6371-1334"
         }
       ],
       "bsc:input": [
         {
-          "@id": "_:N705cc99807ff4f3b80473d0b38b6efb8"
+          "@id": "_:N7d241b7cdc5d4d03a9921829b872a9a8"
         },
         {
-          "@id": "_:N5a88dc22881342a681cd3d6b2fbcc6bf"
+          "@id": "_:N0d8ede0b138b450d9cb0318c3056c958"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na525b1fdf23344aaa3441a9958b8c738"
+          "@id": "_:Ncec23e147ec14138b5fe16d3bc17aa68"
         },
         {
-          "@id": "_:Na9d4715d37d54774acbcde16f0a750d5"
+          "@id": "_:N7f11aff4339a4d05aa876a0c1cb7709d"
         },
         {
-          "@id": "_:N0150ff4492e74db4a699f158336df2b7"
+          "@id": "_:N881fa5da85594b76a6c4b898290d9c88"
         },
         {
-          "@id": "_:Nd8e5bff8bc594a7d83f79fb56179f895"
+          "@id": "_:N4ab43ef516fe4361a815801ed72547e3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -90,11 +82,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:26860319",
+        "pmcid:PMC4748640",
         {
           "@id": "https://doi.org/10.1186/s12859-016-0935-7"
         },
-        "pmcid:PMC4748640"
+        "pubmed:26860319"
       ],
       "sc:description": "This package is a simple suite of tools to investigate and analyze the mutation profile of several proteins or PFAM domains via consensus alignment. You can conduct an hypothesis driven exploratory analysis using our package simply providing a set of genes or PFAM domains of your interest.",
       "sc:featureList": [
@@ -111,9 +103,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "LowMACA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/LowMACA.html"
@@ -122,7 +114,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/LowMACA.html"
     },
     {
-      "@id": "_:Na525b1fdf23344aaa3441a9958b8c738",
+      "@id": "_:N7d241b7cdc5d4d03a9921829b872a9a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1138"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Pfam accession number"
+    },
+    {
+      "@id": "_:N0d8ede0b138b450d9cb0318c3056c958",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2295"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene ID"
+    },
+    {
+      "@id": "_:Ncec23e147ec14138b5fe16d3bc17aa68",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
@@ -141,7 +155,7 @@
       "sc:name": "Sequence alignment report"
     },
     {
-      "@id": "_:Na9d4715d37d54774acbcde16f0a750d5",
+      "@id": "_:N7f11aff4339a4d05aa876a0c1cb7709d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -160,36 +174,17 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N0150ff4492e74db4a699f158336df2b7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1384"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Sequence alignment (protein)"
-    },
-    {
-      "@id": "_:Nd8e5bff8bc594a7d83f79fb56179f895",
+      "@id": "_:N881fa5da85594b76a6c4b898290d9c88",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2166"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3603"
         },
         {
-          "@id": "edam:format_3603"
+          "@id": "edam:format_3547"
         },
         {
           "@id": "edam:format_2330"
@@ -198,30 +193,35 @@
       "sc:name": "Sequence composition plot"
     },
     {
-      "@id": "_:N705cc99807ff4f3b80473d0b38b6efb8",
+      "@id": "_:N4ab43ef516fe4361a815801ed72547e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2295"
+        "@id": "edam:data_1384"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID"
-    },
-    {
-      "@id": "_:N5a88dc22881342a681cd3d6b2fbcc6bf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1138"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Pfam accession number"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence alignment (protein)"
     },
     {
       "@id": "http://orcid.org/0000-0003-1103-7688",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-6371-1334",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-016-0935-7",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

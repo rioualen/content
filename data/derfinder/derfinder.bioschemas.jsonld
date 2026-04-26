@@ -39,16 +39,16 @@
       "@id": "https://bio.tools/derfinder",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Leonardo Collado-Torres",
         {
           "@id": "http://orcid.org/0000-0002-2873-2671"
-        }
+        },
+        "Leonardo Collado-Torres"
       ],
       "bsc:input": {
-        "@id": "_:N717f0b5439f84e0488750e44be1c7f2f"
+        "@id": "_:N49dbb633c33d4d258e863c8eb226e77e"
       },
       "bsc:output": {
-        "@id": "_:N27ce6384b53c4a75aeedda6113aa69da"
+        "@id": "_:Nfa1396d9c024428395d1c34a588e7db6"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -59,11 +59,11 @@
         "@id": "edam:topic_3170"
       },
       "sc:citation": [
-        "pmcid:PMC4059460",
+        "pubmed:24398039",
         {
           "@id": "https://doi.org/10.1093/biostatistics/kxt053"
         },
-        "pubmed:24398039"
+        "pmcid:PMC4059460"
       ],
       "sc:description": "This package provides functions for annotation-agnostic differential expression analysis of RNA-seq data. Two implementations of the DER Finder approach are included in this package: (1) single base-level F-statistics and (2) DER identification at the expressed regions-level. The DER Finder approach can also be used to identify differentially bounded ChIP-seq peaks.",
       "sc:featureList": [
@@ -77,9 +77,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "derfinder",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/derfinder.html"
@@ -88,23 +88,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/derfinder.html"
     },
     {
-      "@id": "_:N717f0b5439f84e0488750e44be1c7f2f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3496"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3006"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "RNA sequence (raw)"
-    },
-    {
-      "@id": "_:N27ce6384b53c4a75aeedda6113aa69da",
+      "@id": "_:Nfa1396d9c024428395d1c34a588e7db6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -115,12 +99,28 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1093/biostatistics/kxt053",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N49dbb633c33d4d258e863c8eb226e77e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3496"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3006"
+        }
+      ],
+      "sc:name": "RNA sequence (raw)"
     },
     {
       "@id": "http://orcid.org/0000-0002-2873-2671",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/biostatistics/kxt053",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

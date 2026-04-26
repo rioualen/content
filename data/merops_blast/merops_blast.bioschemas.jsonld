@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1118",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/merops_blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "MEROPS group",
       "bsc:input": [
         {
-          "@id": "_:N9a35204264604cf0a8e5829e3bf5cd43"
+          "@id": "_:Nc4a964310e9c4086860118d6bb98de67"
         },
         {
-          "@id": "_:Na51638173820428bb5120a467bd75d7b"
+          "@id": "_:Nd349cd38b2da4d909c550f3b857282b1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5563aaf772644437b6b0d5683af6e70b"
+          "@id": "_:Nd62a3ba2b30946858685e3e8c8c59f81"
         },
         {
-          "@id": "_:N5c69830f81724d3b93de71df867e0715"
+          "@id": "_:Ne9f8c8c6ca3a4b88b22d14c3a154e0c0"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -70,11 +74,11 @@
         "MEROPS group"
       ],
       "sc:citation": [
-        "pubmed:26527717",
         "pmcid:PMC4702814",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1118"
-        }
+        },
+        "pubmed:26527717"
       ],
       "sc:contributor": "NCBI",
       "sc:description": "Search MEROPS sequences with BLAST.",
@@ -83,9 +87,9 @@
       },
       "sc:name": "MEROPS Blast",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": [
         "Sanger Institute",
@@ -93,25 +97,17 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://merops.sanger.ac.uk/about/special_features.shtml#BLAST"
         },
         {
-          "@id": "http://merops.sanger.ac.uk/about/special_features.shtml#BLAST"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://merops.sanger.ac.uk/cgi-bin/blast/submitblast/merops/advanced"
     },
     {
-      "@id": "_:N9a35204264604cf0a8e5829e3bf5cd43",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Na51638173820428bb5120a467bd75d7b",
+      "@id": "_:Nc4a964310e9c4086860118d6bb98de67",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -119,15 +115,15 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N5563aaf772644437b6b0d5683af6e70b",
+      "@id": "_:Nd349cd38b2da4d909c550f3b857282b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0857"
+        "@id": "edam:data_2976"
       },
-      "sc:name": "Sequence search results"
+      "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N5c69830f81724d3b93de71df867e0715",
+      "@id": "_:Nd62a3ba2b30946858685e3e8c8c59f81",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -135,8 +131,12 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1118",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne9f8c8c6ca3a4b88b22d14c3a154e0c0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
     }
   ]
 }

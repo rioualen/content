@@ -40,10 +40,10 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Panagiotis Moulos",
       "bsc:input": {
-        "@id": "_:Nd6519b1c86d7455e86368ffb16b27bb0"
+        "@id": "_:N20c4d90b0df14eb3bf0f75fbc8fec2ff"
       },
       "bsc:output": {
-        "@id": "_:N8c0606b3a9674eeebf1b21e9f73b9ac8"
+        "@id": "_:Nf42ca31e64a44d6693f986ec03676aaa"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -52,30 +52,30 @@
       },
       "sc:citation": [
         "pmcid:PMC4344485",
-        "pubmed:25452340",
         {
           "@id": "https://doi.org/10.1093/nar/gku1273"
-        }
+        },
+        "pubmed:25452340"
       ],
       "sc:description": "Provides an interface to several normalization and statistical testing packages for RNA-Seq gene expression data. Additionally, it creates several diagnostic plots, performs meta-analysis by combinining the results of several statistical tests and reports the results in an interactive way.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3800"
+        },
         {
           "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_0314"
-        },
-        {
-          "@id": "edam:operation_3800"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "metaseqR",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.bioconductor.org/packages/release/bioc/manuals/metaseqR/man/metaseqR.pdf"
@@ -83,23 +83,7 @@
       "sc:url": "https://www.bioconductor.org/packages/release/bioc/html/metaseqR.html"
     },
     {
-      "@id": "_:Nd6519b1c86d7455e86368ffb16b27bb0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3751"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N8c0606b3a9674eeebf1b21e9f73b9ac8",
+      "@id": "_:Nf42ca31e64a44d6693f986ec03676aaa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -107,6 +91,22 @@
       "sc:encodingFormat": {
         "@id": "edam:format_2331"
       },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N20c4d90b0df14eb3bf0f75fbc8fec2ff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3751"
+        }
+      ],
       "sc:name": "Gene expression matrix"
     },
     {

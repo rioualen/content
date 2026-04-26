@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv031",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/assign",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ying Shen",
       "bsc:input": [
         {
-          "@id": "_:Nc224d2073f86458cbb9ba9ad03a245f2"
+          "@id": "_:N6191228383d54eedb07df133073c461b"
         },
         {
-          "@id": "_:Nfd1e72765410434bb29c3c22c7436ea7"
+          "@id": "_:N05114995bbd7494da3fed8121e6c1a2d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7e32c8d09a444cda8f11c70b0eb617c3"
+          "@id": "_:N8835a3afbed4490e8bd712877425cff5"
         },
         {
-          "@id": "_:N918783b438524ec2808203f55b2b001e"
+          "@id": "_:Nea5003a6135f4e81be71dbfca2061e9b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -73,11 +69,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25617415",
         "pmcid:PMC4443674",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv031"
-        },
-        "pubmed:25617415"
+        }
       ],
       "sc:description": "Tool to evaluate the pathway deregulation/activation status in patient samples. It employs a Bayesian factor analysis approach to adapt predetermined pathway signatures derived from knowledge-based literatures or from perturbation experiments to the cell-/tissue-specific pathway signatures. The deregulation/activation level of each context-specific pathway is quantified to a score, which represents the extent to which a patient sample encompasses the pathway deregulation/activation signature.",
       "sc:featureList": {
@@ -86,9 +82,9 @@
       "sc:license": "MIT",
       "sc:name": "ASSIGN",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ASSIGN.html"
@@ -97,7 +93,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ASSIGN.html"
     },
     {
-      "@id": "_:Nc224d2073f86458cbb9ba9ad03a245f2",
+      "@id": "_:N6191228383d54eedb07df133073c461b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -113,7 +109,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nfd1e72765410434bb29c3c22c7436ea7",
+      "@id": "_:N05114995bbd7494da3fed8121e6c1a2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -129,7 +125,18 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N7e32c8d09a444cda8f11c70b0eb617c3",
+      "@id": "_:N8835a3afbed4490e8bd712877425cff5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Nea5003a6135f4e81be71dbfca2061e9b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -140,15 +147,8 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N918783b438524ec2808203f55b2b001e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Pathway or network"
+      "@id": "https://doi.org/10.1093/bioinformatics/btv031",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

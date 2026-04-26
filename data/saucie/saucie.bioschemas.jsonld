@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41592-019-0576-7",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/SAUCIE",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N58b0a3d29b61475a9fda795192d90e2a"
+        "@id": "_:N6ebc09714ce54b32859e57b1191bb469"
       },
       "bsc:output": {
-        "@id": "_:N27e31134755f41a1aa22e1065b1a9e67"
+        "@id": "_:N571ec81e74f443f9babafcc75f8f27a3"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -51,21 +55,24 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
-        "pubmed:31591579",
-        "pmcid:PMC10164410",
         {
           "@id": "https://doi.org/10.1038/s41592-019-0576-7"
-        }
+        },
+        "pubmed:31591579",
+        "pmcid:PMC10164410"
       ],
       "sc:description": "SAUCIE is a python object that loads data from a numpy matrix and produces numpy matrix output for the reconstruction, visualization, and/or clusters.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3557"
+        },
         {
           "@id": "edam:operation_3432"
         },
@@ -74,18 +81,15 @@
         },
         {
           "@id": "edam:operation_3664"
-        },
-        {
-          "@id": "edam:operation_3557"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "SAUCIE",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/KrishnaswamyLab/SAUCIE/blob/master/README.md"
@@ -93,7 +97,7 @@
       "sc:url": "https://github.com/KrishnaswamyLab/SAUCIE/"
     },
     {
-      "@id": "_:N58b0a3d29b61475a9fda795192d90e2a",
+      "@id": "_:N6ebc09714ce54b32859e57b1191bb469",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -104,7 +108,7 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:N27e31134755f41a1aa22e1065b1a9e67",
+      "@id": "_:N571ec81e74f443f9babafcc75f8f27a3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -113,10 +117,6 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Matrix"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41592-019-0576-7",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

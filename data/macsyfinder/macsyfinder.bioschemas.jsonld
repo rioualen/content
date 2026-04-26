@@ -36,8 +36,16 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.24072/pcjournal.250",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1371/journal.pone.0110726",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5231-3346",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/macsyfinder",
@@ -50,30 +58,30 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nd3a11b71833c4b9e8e5fdc08b745fef7"
+          "@id": "_:N4ead4a7d35284a3491df47b0caed2abb"
         },
         {
-          "@id": "_:N67e7d7788b7b48118c7104da9b890b83"
+          "@id": "_:N81524d079e314a6eba4f28c2527cd820"
         },
         {
-          "@id": "_:N166af3c6a1ae48149ee4c320332a097d"
+          "@id": "_:N2fbac1c0d8d24dc29bfbe64419597759"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbe16e24c3b3a4103a1fc7dd030dfb54b"
+          "@id": "_:N2c6040c3e5aa4710a265345a09f87d27"
         },
         {
-          "@id": "_:Nd90110ebdb8a48718af6acb367ee2af3"
+          "@id": "_:N51b16cfc873444989e4c301f98c1dbfa"
         },
         {
-          "@id": "_:N553071c8e0ee422c87c8ce0d532a588d"
+          "@id": "_:Ne6edc10302204cba90604fdb97c01c4c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0085"
@@ -83,11 +91,11 @@
         {
           "@id": "https://doi.org/10.24072/pcjournal.250"
         },
+        "pmcid:PMC4201578",
+        "pubmed:25330359",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0110726"
-        },
-        "pubmed:25330359",
-        "pmcid:PMC4201578"
+        }
       ],
       "sc:description": "Program to model and detect macromolecular systems, genetic pathways... in protein datasets. In prokaryotes, these systems have often evolutionarily conserved properties: they are made of conserved components, and are encoded in compact loci (conserved genetic architecture). The user models these systems to reflect these conserved features, and to allow their efficient detection.",
       "sc:featureList": [
@@ -110,9 +118,6 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0110726"
-        },
-        {
           "@id": "https://macsyfinder.readthedocs.io/en/latest/"
         },
         {
@@ -123,47 +128,56 @@
         },
         {
           "@id": "https://macsyfinder.readthedocs.io/en/latest/developer_guide/index.html"
+        },
+        {
+          "@id": "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0110726"
         }
       ],
       "sc:softwareVersion": [
-        "2.1.2",
-        "2.1.3",
-        "1.0.2",
-        "2.1.1",
+        "2.0",
         "2.1.4",
-        "2.0"
+        "2.1.2",
+        "2.1.1",
+        "2.1.3",
+        "1.0.2"
       ],
       "sc:url": "https://github.com/gem-pasteur/macsyfinder"
     },
     {
-      "@id": "_:Nd3a11b71833c4b9e8e5fdc08b745fef7",
+      "@id": "_:N2c6040c3e5aa4710a265345a09f87d27",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0869"
+        "@id": "edam:data_2048"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3329"
+        "@id": "edam:format_3475"
       },
-      "sc:name": "Sequence-profile alignment"
+      "sc:name": "Report"
     },
     {
-      "@id": "_:N67e7d7788b7b48118c7104da9b890b83",
+      "@id": "_:N51b16cfc873444989e4c301f98c1dbfa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2886"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_2200"
-        }
-      ],
-      "sc:name": "Protein sequence record"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Report"
     },
     {
-      "@id": "_:N166af3c6a1ae48149ee4c320332a097d",
+      "@id": "_:Ne6edc10302204cba90604fdb97c01c4c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N4ead4a7d35284a3491df47b0caed2abb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -174,45 +188,31 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "_:Nbe16e24c3b3a4103a1fc7dd030dfb54b",
+      "@id": "_:N81524d079e314a6eba4f28c2527cd820",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_0869"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3475"
+        "@id": "edam:format_3329"
       },
-      "sc:name": "Report"
+      "sc:name": "Sequence-profile alignment"
     },
     {
-      "@id": "_:Nd90110ebdb8a48718af6acb367ee2af3",
+      "@id": "_:N2fbac1c0d8d24dc29bfbe64419597759",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_2886"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N553071c8e0ee422c87c8ce0d532a588d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.24072/pcjournal.250",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5231-3346",
-      "@type": "sc:Person"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2200"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "Protein sequence record"
     }
   ]
 }
