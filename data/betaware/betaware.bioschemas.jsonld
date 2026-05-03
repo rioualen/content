@@ -36,7 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-7359-0633",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1186/1748-7188-4-13",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts728",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr549",
       "@type": "sc:CreativeWork"
     },
     {
@@ -47,19 +59,19 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Na38823d9036d4740809c4f73e35479cf"
+          "@id": "_:Ne7bb7f42bddf4d3090b30851e2d6176b"
         },
         {
-          "@id": "_:N20e7697327a249c7886dea551b0dee71"
+          "@id": "_:Nff9f9246948b43d9936984631c0416a8"
         }
       ],
       "bsc:output": {
-        "@id": "_:N964072d8ad204a52bb2b4c912422376d"
+        "@id": "_:N1fe10aaa94ce4b999b2a590e1056d343"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -76,6 +88,8 @@
         {
           "@id": "https://doi.org/10.1186/1748-7188-4-13"
         },
+        "pubmed:23297037",
+        "pmcid:PMC2776008",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts728"
         },
@@ -83,17 +97,15 @@
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr549"
         },
-        "pubmed:21967762",
-        "pmcid:PMC2776008",
-        "pubmed:23297037"
+        "pubmed:21967762"
       ],
       "sc:description": "A software package for the analysis of TransMembrane Î²-barrel proteins.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0269"
+          "@id": "edam:operation_0267"
         },
         {
-          "@id": "edam:operation_0267"
+          "@id": "edam:operation_0269"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -101,23 +113,42 @@
       "sc:name": "BetAware",
       "sc:operatingSystem": [
         "Windows",
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": [
         {
-          "@id": "https://busca.biocomp.unibo.it/betaware/method/"
+          "@id": "https://github.com/BolognaBiocomp/betaware"
         },
         {
-          "@id": "https://github.com/BolognaBiocomp/betaware"
+          "@id": "https://busca.biocomp.unibo.it/betaware/method/"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "https://busca.biocomp.unibo.it/betaware"
     },
     {
-      "@id": "_:N964072d8ad204a52bb2b4c912422376d",
+      "@id": "_:Ne7bb7f42bddf4d3090b30851e2d6176b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0889"
+      },
+      "sc:name": "Structural profile"
+    },
+    {
+      "@id": "_:Nff9f9246948b43d9936984631c0416a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:N1fe10aaa94ce4b999b2a590e1056d343",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -131,37 +162,6 @@
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:Na38823d9036d4740809c4f73e35479cf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:N20e7697327a249c7886dea551b0dee71",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0889"
-      },
-      "sc:name": "Structural profile"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts728",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr549",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7359-0633",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -36,28 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-1064-6895",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41598-018-33731-1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/UVP",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nfe10d1816ca74f19a598884a9c7f790e"
+          "@id": "_:N10015e6a62194e1d8b0c7e59e929d1f3"
         },
         {
-          "@id": "_:Nbcc3b11d72c14682bac2b30e1a47fdce"
+          "@id": "_:N7e0a7a3d1b2844828ba836ddf090a3c2"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
-        "Command-line tool"
+        "Command-line tool",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
@@ -72,10 +64,10 @@
       },
       "sc:citation": [
         "pubmed:30337678",
-        "pmcid:PMC6194142",
         {
           "@id": "https://doi.org/10.1038/s41598-018-33731-1"
-        }
+        },
+        "pmcid:PMC6194142"
       ],
       "sc:description": "The Unified Variant Pipeline (UVP) is used to identify variants and assign lineage from Mycobacterium tuberculosis sequence data.",
       "sc:featureList": [
@@ -90,17 +82,28 @@
       "sc:license": "MIT",
       "sc:name": "UVP",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareVersion": [
-        "2.7.0",
-        "2.6.0"
+        "2.6.0",
+        "2.7.0"
       ],
       "sc:url": "https://github.com/CPTR-ReSeqTB/UVP"
     },
     {
-      "@id": "_:Nfe10d1816ca74f19a598884a9c7f790e",
+      "@id": "_:N10015e6a62194e1d8b0c7e59e929d1f3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N7e0a7a3d1b2844828ba836ddf090a3c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -111,15 +114,12 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nbcc3b11d72c14682bac2b30e1a47fdce",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
+      "@id": "https://orcid.org/0000-0003-1064-6895",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-018-33731-1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

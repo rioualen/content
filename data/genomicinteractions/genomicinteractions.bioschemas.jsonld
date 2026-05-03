@@ -43,29 +43,29 @@
       "@id": "https://bio.tools/genomicinteractions",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Liz Ing-Simmons",
-        "Malcolm Perry"
+        "Malcolm Perry",
+        "Liz Ing-Simmons"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nb9d713c5487540b283ea8c35f56ce7c2"
+          "@id": "_:N8866fa8cd45640d591b5b29e3a12e011"
         },
         {
-          "@id": "_:N290a5146574a4e3991067acef76a624d"
+          "@id": "_:N6f743ec55e7c408a8ed2642dd8558e80"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc4d3972944d04802b68e9135182f81df"
+          "@id": "_:N2a0a84598f034ba6a8074b774ea56dc9"
         },
         {
-          "@id": "_:N94206d857bc9400799f2936c11013fc2"
+          "@id": "_:Nf3cc7aaaf21b4c87871cc48ec0bcfc4a"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -76,11 +76,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:26576536",
+        "pmcid:PMC4650858",
         {
           "@id": "https://doi.org/10.1186/s12864-015-2140-x"
-        },
-        "pubmed:26576536",
-        "pmcid:PMC4650858"
+        }
       ],
       "sc:description": "R package for handling Genomic interaction data, such as ChIA-PET/Hi-C, annotating genomic features with interaction information and producing various plots/statistics.",
       "sc:featureList": [
@@ -94,8 +94,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "GenomicInteractions",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
+        "Windows",
         "Linux"
       ],
       "sc:softwareHelp": {
@@ -105,7 +105,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GenomicInteractions.html"
     },
     {
-      "@id": "_:Nc4d3972944d04802b68e9135182f81df",
+      "@id": "_:N2a0a84598f034ba6a8074b774ea56dc9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nf3cc7aaaf21b4c87871cc48ec0bcfc4a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -121,34 +137,7 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N94206d857bc9400799f2936c11013fc2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nb9d713c5487540b283ea8c35f56ce7c2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N290a5146574a4e3991067acef76a624d",
+      "@id": "_:N8866fa8cd45640d591b5b29e3a12e011",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -157,6 +146,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence range"
+    },
+    {
+      "@id": "_:N6f743ec55e7c408a8ed2642dd8558e80",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Feature table"
     }
   ]
 }

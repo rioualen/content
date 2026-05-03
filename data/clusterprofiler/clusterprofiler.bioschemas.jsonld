@@ -36,29 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-6485-8781",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1089/omi.2011.0118",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/clusterprofiler",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-6485-8781"
       },
       "bsc:input": {
-        "@id": "_:N0eeceee59f03468a9bf35edb82efd4f2"
+        "@id": "_:Nf06f183fb43548a3895a42c04c1bcaa1"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd213bd092fa84b5caa6b08b15a35786c"
+          "@id": "_:Nf738a6bbac774898929dcaaf627d56a2"
         },
         {
-          "@id": "_:N22712fbe44b34b65ac84533d7e072d66"
+          "@id": "_:N40b7ae273b264efd98b47115315572d2"
         },
         {
-          "@id": "_:N156af9eb97ea42b6bc1874578d96ee9c"
+          "@id": "_:N22caa9b75aad4dc5a1fbd70795e9d962"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -69,27 +77,27 @@
         }
       ],
       "sc:citation": [
-        "pubmed:22455463",
         {
           "@id": "https://doi.org/10.1089/omi.2011.0118"
         },
+        "pubmed:22455463",
         "pmcid:PMC3339379"
       ],
       "sc:description": "This package implements methods to analyze and visualize functional profiles (GO and KEGG) of gene and gene clusters.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Artistic-2.0",
       "sc:name": "clusterProfiler",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
+        "Windows",
         "Linux"
       ],
       "sc:softwareHelp": {
@@ -99,29 +107,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/clusterProfiler.html"
     },
     {
-      "@id": "_:N0eeceee59f03468a9bf35edb82efd4f2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1027"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID (NCBI)"
-    },
-    {
-      "@id": "_:Nd213bd092fa84b5caa6b08b15a35786c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N22712fbe44b34b65ac84533d7e072d66",
+      "@id": "_:Nf738a6bbac774898929dcaaf627d56a2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -132,7 +118,18 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N156af9eb97ea42b6bc1874578d96ee9c",
+      "@id": "_:N40b7ae273b264efd98b47115315572d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N22caa9b75aad4dc5a1fbd70795e9d962",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0862"
@@ -143,12 +140,15 @@
       "sc:name": "Dotplot"
     },
     {
-      "@id": "https://doi.org/10.1089/omi.2011.0118",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-6485-8781",
-      "@type": "sc:Person"
+      "@id": "_:Nf06f183fb43548a3895a42c04c1bcaa1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1027"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene ID (NCBI)"
     }
   ]
 }

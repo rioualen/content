@@ -36,39 +36,47 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/humu.21047",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "http://orcid.org/0000-0002-2323-0963",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-12-s4-s3",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/ws_snps_and_go",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Rita Casadio",
         {
           "@id": "http://orcid.org/0000-0002-2323-0963"
-        }
+        },
+        "Rita Casadio"
       ],
       "bsc:input": [
         {
-          "@id": "_:N2ef31c79cfc645df9b20e1a65707d78d"
+          "@id": "_:N2f26e7dc59ae436284e4e316189e52f1"
         },
         {
-          "@id": "_:Na4e4a335d8f04e7da3edf5a0e8af1e27"
+          "@id": "_:Nf8bfd0a855f94749993e7092aeb36872"
         },
         {
-          "@id": "_:Nb9ce34653cde44ecba77b51d0f679f91"
+          "@id": "_:N20466c29a56e436dafaaed0961b4f6b2"
         },
         {
-          "@id": "_:N50c61cc5c72240a9ae40de2f19e1580e"
+          "@id": "_:N48431f7b4f37468a8648c1cc032221c9"
         }
       ],
       "bsc:output": {
-        "@id": "_:N326025bc3ef447c78239f61ff31ca4b5"
+        "@id": "_:N5c672cda08f146bfb13bb7c9c3816233"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -85,14 +93,14 @@
         "@id": "http://orcid.org/0000-0002-2323-0963"
       },
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1002/humu.21047"
-        },
-        "pubmed:19514061",
-        "pubmed:21992054",
         "pmcid:PMC3194195",
+        "pubmed:21992054",
         {
           "@id": "https://doi.org/10.1186/1471-2105-12-s4-s3"
+        },
+        "pubmed:19514061",
+        {
+          "@id": "https://doi.org/10.1002/humu.21047"
         }
       ],
       "sc:description": "A web server for predicting disease associated variations from protein sequence and structure.",
@@ -102,9 +110,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "WS-SNPs-and-GO",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -114,7 +122,7 @@
       "sc:url": "http://snps.biofold.org/snps-and-go"
     },
     {
-      "@id": "_:N2ef31c79cfc645df9b20e1a65707d78d",
+      "@id": "_:N2f26e7dc59ae436284e4e316189e52f1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1176"
@@ -125,29 +133,7 @@
       "sc:name": "GO concept ID"
     },
     {
-      "@id": "_:Na4e4a335d8f04e7da3edf5a0e8af1e27",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1467"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein chain"
-    },
-    {
-      "@id": "_:Nb9ce34653cde44ecba77b51d0f679f91",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1127"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "PDB ID"
-    },
-    {
-      "@id": "_:N50c61cc5c72240a9ae40de2f19e1580e",
+      "@id": "_:Nf8bfd0a855f94749993e7092aeb36872",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2209"
@@ -158,7 +144,29 @@
       "sc:name": "Mutation ID"
     },
     {
-      "@id": "_:N326025bc3ef447c78239f61ff31ca4b5",
+      "@id": "_:N20466c29a56e436dafaaed0961b4f6b2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1127"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "PDB ID"
+    },
+    {
+      "@id": "_:N48431f7b4f37468a8648c1cc032221c9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1467"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein chain"
+    },
+    {
+      "@id": "_:N5c672cda08f146bfb13bb7c9c3816233",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1622"
@@ -167,14 +175,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Disease report"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-12-s4-s3",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1002/humu.21047",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

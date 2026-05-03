@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nbt1160",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/show_emfit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pierre Nicolas",
       "bsc:input": [
         {
-          "@id": "_:Nb7671d40a01a40028ed04f5cba86f36e"
+          "@id": "_:N213273ff650742b5af913a750ffd78a0"
         },
         {
-          "@id": "_:Nfbe17b5fdd1646aa870352cb176c90f9"
+          "@id": "_:N8037f1c3ce3c40c4a9f98ede90f98077"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb66371dfb71b4c0ab1247d8c30207350"
+          "@id": "_:N7fce2e2f65ab427b8ac963594687aeb6"
         },
         {
-          "@id": "_:Na408989022c04847b64fcc6d2c74da01"
+          "@id": "_:N4a308ece21434ebe954c1b206db34565"
         },
         {
-          "@id": "_:N82cf860fe3cf4af9ae00bb871e2dafbd"
+          "@id": "_:N002c69dad7dd4426a081cbbae67595b5"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -64,10 +68,10 @@
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
-        "pubmed:16273110",
         {
           "@id": "https://doi.org/10.1038/nbt1160"
-        }
+        },
+        "pubmed:16273110"
       ],
       "sc:description": "This tool enables to fit an Hiden Markov Model on sequences using EM algorithm (learning) and to reconstruct the hidden state path using forward-backward algorithm (segmentation). When used with fixed parameters, it only produces the sequence segmentation with the forward-backward algorithm.",
       "sc:featureList": [
@@ -75,10 +79,10 @@
           "@id": "edam:operation_2425"
         },
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_0436"
         },
         {
-          "@id": "edam:operation_0436"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:name": "show_emfit",
@@ -94,39 +98,7 @@
       "sc:url": "http://genome.jouy.inra.fr/ssb/SHOW/"
     },
     {
-      "@id": "_:Nb66371dfb71b4c0ab1247d8c30207350",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:Na408989022c04847b64fcc6d2c74da01",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1364"
-      },
-      "sc:name": "Hidden Markov model"
-    },
-    {
-      "@id": "_:N82cf860fe3cf4af9ae00bb871e2dafbd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:Nb7671d40a01a40028ed04f5cba86f36e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1364"
-      },
-      "sc:name": "Hidden Markov model"
-    },
-    {
-      "@id": "_:Nfbe17b5fdd1646aa870352cb176c90f9",
+      "@id": "_:N213273ff650742b5af913a750ffd78a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -134,8 +106,36 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1038/nbt1160",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8037f1c3ce3c40c4a9f98ede90f98077",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1364"
+      },
+      "sc:name": "Hidden Markov model"
+    },
+    {
+      "@id": "_:N7fce2e2f65ab427b8ac963594687aeb6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N4a308ece21434ebe954c1b206db34565",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1364"
+      },
+      "sc:name": "Hidden Markov model"
+    },
+    {
+      "@id": "_:N002c69dad7dd4426a081cbbae67595b5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:name": "Statistical estimate score"
     }
   ]
 }

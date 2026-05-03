@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3255",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/DIA-Umpire",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chih-Chiang Tsou",
       "bsc:input": [
         {
-          "@id": "_:N5ec11b8ef9e64188861e527ef9ec5e87"
+          "@id": "_:N21a836acc9fa431da38de8869f044274"
         },
         {
-          "@id": "_:N2d578cc87f954b2f8c064dec2af063cc"
+          "@id": "_:Ne2bcb36ab7124aa5886dff0e5ffb5b3d"
         },
         {
-          "@id": "_:Nbe2d93d4b08a471daf477f7cc6efdec0"
+          "@id": "_:N5ddf714fffa3455989c6edfb23c8d303"
         },
         {
-          "@id": "_:N109c60eaa52b4f389653a22a3a0d391e"
+          "@id": "_:N97b0eb62805246dca8c13eb6d79d55af"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf114b254b6c54e0da67a5de39741c0f0"
+          "@id": "_:N5877279fa9ec43b3956b8c87262b2343"
         },
         {
-          "@id": "_:N7114f203407f47edbab0451b33833df6"
+          "@id": "_:N7b4ea8007e1540b39c3201d09bb31700"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -72,25 +76,22 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4399776",
+        "pubmed:25599550",
         {
           "@id": "https://doi.org/10.1038/nmeth.3255"
         },
-        "pubmed:25599550"
+        "pmcid:PMC4399776"
       ],
       "sc:description": "DIA-Umpire is an open source Java program for computational analysis of data independent acquisition (DIA) mass spectrometry-based proteomics data. It enables untargeted peptide and protein identification and quantitation using DIA data, and also incorporates targeted extraction to reduce the number of cases of missing quantitation.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3215"
+        },
         {
           "@id": "edam:operation_3633"
         },
         {
           "@id": "edam:operation_3649"
-        },
-        {
-          "@id": "edam:operation_3801"
-        },
-        {
-          "@id": "edam:operation_3860"
         },
         {
           "@id": "edam:operation_3627"
@@ -102,16 +103,19 @@
           "@id": "edam:operation_3630"
         },
         {
-          "@id": "edam:operation_3215"
+          "@id": "edam:operation_3801"
+        },
+        {
+          "@id": "edam:operation_3860"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "DIA-Umpire",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://sourceforge.net/projects/diaumpire/files/Manual/"
@@ -120,34 +124,7 @@
       "sc:url": "https://sourceforge.net/projects/diaumpire/"
     },
     {
-      "@id": "_:N5ec11b8ef9e64188861e527ef9ec5e87",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:N2d578cc87f954b2f8c064dec2af063cc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:Nbe2d93d4b08a471daf477f7cc6efdec0",
+      "@id": "_:N21a836acc9fa431da38de8869f044274",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -158,7 +135,18 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N109c60eaa52b4f389653a22a3a0d391e",
+      "@id": "_:Ne2bcb36ab7124aa5886dff0e5ffb5b3d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "_:N5ddf714fffa3455989c6edfb23c8d303",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -174,18 +162,23 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Nf114b254b6c54e0da67a5de39741c0f0",
+      "@id": "_:N97b0eb62805246dca8c13eb6d79d55af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3651"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3654"
+        },
+        {
+          "@id": "edam:format_3651"
+        }
+      ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N7114f203407f47edbab0451b33833df6",
+      "@id": "_:N5877279fa9ec43b3956b8c87262b2343",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -196,8 +189,15 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3255",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7b4ea8007e1540b39c3201d09bb31700",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3651"
+      },
+      "sc:name": "Mass spectrometry spectra"
     }
   ]
 }

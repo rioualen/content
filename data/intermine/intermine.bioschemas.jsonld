@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku301",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/bioinformatics/bts577",
       "@type": "sc:CreativeWork"
     },
@@ -43,17 +47,17 @@
       "@id": "https://bio.tools/intermine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na6e72ffc13394518a227fd6224e0fc08"
+        "@id": "_:N3b1cd7e59c0c4fd5acdf165c4030843e"
       },
       "bsc:output": {
-        "@id": "_:N4ad3a12d32324e4e8c4606ce29ee9ac0"
+        "@id": "_:N1824ae42bd82490caaf850bb8c5fc751"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Web API",
+        "Database portal",
         "Command-line tool",
-        "Database portal"
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -64,16 +68,16 @@
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gku301"
-        },
+        "pubmed:23023984",
+        "pmcid:PMC4086141",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
         },
-        "pmcid:PMC4086141",
-        "pmcid:PMC3516146",
-        "pubmed:24753429",
-        "pubmed:23023984"
+        {
+          "@id": "https://doi.org/10.1093/nar/gku301"
+        },
+        "pubmed:24753429"
       ],
       "sc:contributor": [
         "BBSRC",
@@ -93,37 +97,26 @@
       "sc:license": "LGPL-2.1",
       "sc:name": "InterMine",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": [
-        "gen.cam.ac.uk",
-        "University of Cambridge"
+        "University of Cambridge",
+        "gen.cam.ac.uk"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://intermine.org/intermine-user-docs"
+          "@id": "http://intermine.org/im-docs"
         },
         {
-          "@id": "http://intermine.org/im-docs"
+          "@id": "http://intermine.org/intermine-user-docs"
         }
       ],
       "sc:softwareVersion": "5.0.0",
       "sc:url": "http://www.intermine.org"
     },
     {
-      "@id": "_:Na6e72ffc13394518a227fd6224e0fc08",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N4ad3a12d32324e4e8c4606ce29ee9ac0",
+      "@id": "_:N1824ae42bd82490caaf850bb8c5fc751",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -134,8 +127,15 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gku301",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N3b1cd7e59c0c4fd5acdf165c4030843e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

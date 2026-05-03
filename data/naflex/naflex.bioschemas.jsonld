@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkt378",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/naflex",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:N127d7d8d71bc4c90906212680f7e208a"
+        "@id": "_:N11c14817d2ba425bb63efdb6064563c8"
       },
       "bsc:output": {
-        "@id": "_:Ncb33b44c7c0e4c75a9e88334eb7f3ef0"
+        "@id": "_:N41cf92a4e7ce443ab7c00df276177e93"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
@@ -57,10 +65,10 @@
       },
       "sc:citation": [
         "pubmed:23685436",
-        "pmcid:PMC3692121",
         {
           "@id": "https://doi.org/10.1093/nar/gkt378"
-        }
+        },
+        "pmcid:PMC3692121"
       ],
       "sc:description": "Nucleic Acids flexibility analysis portal.",
       "sc:featureList": [
@@ -77,8 +85,8 @@
       "sc:name": "NAFlex",
       "sc:operatingSystem": "Linux",
       "sc:provider": [
-        "IRB-Barcelona",
-        "ub.edu"
+        "ub.edu",
+        "IRB-Barcelona"
       ],
       "sc:softwareHelp": [
         {
@@ -92,7 +100,15 @@
       "sc:url": "http://mmb.irbbarcelona.org/NAFlex/"
     },
     {
-      "@id": "_:N127d7d8d71bc4c90906212680f7e208a",
+      "@id": "_:N41cf92a4e7ce443ab7c00df276177e93",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2086"
+      },
+      "sc:name": "Nucleic acid structure data"
+    },
+    {
+      "@id": "_:N11c14817d2ba425bb63efdb6064563c8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -106,22 +122,6 @@
         }
       ],
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Ncb33b44c7c0e4c75a9e88334eb7f3ef0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2086"
-      },
-      "sc:name": "Nucleic acid structure data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt378",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
     }
   ]
 }

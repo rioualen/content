@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-015-0555-7",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sominaclust",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N35793d296b2d4fe8a84b8e830d7091ec"
+        "@id": "_:Ncac5a804e8f2458981e35020c5aaadc2"
       },
       "bsc:output": {
-        "@id": "_:N3db373168e744b4f8a5b879607a1479a"
+        "@id": "_:Nddae5466411d42e3b4a8bf942af0f87f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -50,11 +54,11 @@
         "@id": "edam:topic_2640"
       },
       "sc:citation": [
-        "pubmed:25903787",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0555-7"
         },
-        "pmcid:PMC4410004"
+        "pmcid:PMC4410004",
+        "pubmed:25903787"
       ],
       "sc:description": "Detection of cancer genes based on somatic mutation patterns of inactivation and clustering.",
       "sc:featureList": {
@@ -62,8 +66,8 @@
       },
       "sc:name": "SomInaClust",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -73,15 +77,7 @@
       "sc:url": "http://bioinformatics.intec.ugent.be/sominaclust"
     },
     {
-      "@id": "_:N35793d296b2d4fe8a84b8e830d7091ec",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2538"
-      },
-      "sc:name": "Mutation identifier"
-    },
-    {
-      "@id": "_:N3db373168e744b4f8a5b879607a1479a",
+      "@id": "_:Nddae5466411d42e3b4a8bf942af0f87f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1246"
@@ -89,8 +85,12 @@
       "sc:name": "Sequence cluster (nucleic acid)"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0555-7",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncac5a804e8f2458981e35020c5aaadc2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2538"
+      },
+      "sc:name": "Mutation identifier"
     }
   ]
 }

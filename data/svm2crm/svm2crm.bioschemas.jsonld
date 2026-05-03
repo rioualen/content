@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/svm2crm",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Guidantonio Malagoli Tagliazucchi",
       "bsc:input": {
-        "@id": "_:Nee43289d834d46129063e988f8365b77"
+        "@id": "_:N565dfcd57ed743c4832037d63fea6197"
       },
       "bsc:output": {
-        "@id": "_:N455f58f4266d42449ca825548f24c381"
+        "@id": "_:N3c29967e6b184025b5b5ab6db3676bfd"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -58,11 +54,11 @@
         "@id": "edam:topic_3169"
       },
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "Detection of cis-regulatory elements using svm implemented in LiblineaR.",
       "sc:featureList": {
@@ -71,9 +67,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "SVM2CRM",
       "sc:operatingSystem": [
-        "Windows",
+        "Mac",
         "Linux",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SVM2CRM.html"
@@ -82,7 +78,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SVM2CRM.html"
     },
     {
-      "@id": "_:Nee43289d834d46129063e988f8365b77",
+      "@id": "_:N3c29967e6b184025b5b5ab6db3676bfd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N565dfcd57ed743c4832037d63fea6197",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -93,15 +100,8 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N455f58f4266d42449ca825548f24c381",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Feature table"
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

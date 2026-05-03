@@ -43,18 +43,18 @@
       "@id": "https://bio.tools/emdomics",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Sadhika Malladi",
-        "Daniel Schmolze"
+        "Daniel Schmolze",
+        "Sadhika Malladi"
       ],
       "bsc:input": {
-        "@id": "_:Nc441ed3f7f5f418cb0e977edbeb3ad6f"
+        "@id": "_:Nf1f95d01e7254a5ead63b8fe0d99dc53"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd214132773e147ca9db3d3224d0fdfd9"
+          "@id": "_:Nc78521e455214b2cbd6b7dd312fa952c"
         },
         {
-          "@id": "_:Nc08c6ab4f059425a99dab1682bf56ebd"
+          "@id": "_:Nf62cbd0a7ac646dd8c209986230a0912"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -64,24 +64,24 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
-        },
-        {
-          "@id": "edam:topic_3518"
-        },
-        {
           "@id": "edam:topic_3168"
         },
         {
+          "@id": "edam:topic_0203"
+        },
+        {
           "@id": "edam:topic_2269"
+        },
+        {
+          "@id": "edam:topic_3518"
         }
       ],
       "sc:citation": [
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv634"
         },
-        "pubmed:26515818",
-        "pmcid:PMC4743632"
+        "pmcid:PMC4743632",
+        "pubmed:26515818"
       ],
       "sc:description": "Algorithm used to perform a supervised multi-class analysis to measure the magnitude and statistical significance of observed continuous genomics data between groups. Traditional methods use significance tests based on summary statistics of the distributions. This approach lacks power to identify differences between groups with high levels of intra-group heterogeneity. The algorithm transforms one distribution into another, providing the overall difference in shape between two distributions.",
       "sc:featureList": {
@@ -90,9 +90,9 @@
       "sc:license": "MIT",
       "sc:name": "EMDomics",
       "sc:operatingSystem": [
-        "Linux",
+        "Mac",
         "Windows",
-        "Mac"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/EMDomics.html"
@@ -101,23 +101,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/EMDomics.html"
     },
     {
-      "@id": "_:Nc441ed3f7f5f418cb0e977edbeb3ad6f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2058"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:Nd214132773e147ca9db3d3224d0fdfd9",
+      "@id": "_:Nc78521e455214b2cbd6b7dd312fa952c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -133,7 +117,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nc08c6ab4f059425a99dab1682bf56ebd",
+      "@id": "_:Nf62cbd0a7ac646dd8c209986230a0912",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -147,6 +131,22 @@
         }
       ],
       "sc:name": "Score"
+    },
+    {
+      "@id": "_:Nf1f95d01e7254a5ead63b8fe0d99dc53",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2058"
+        }
+      ],
+      "sc:name": "Gene expression profile"
     }
   ]
 }

@@ -36,56 +36,52 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt200",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cssp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chandler Zuo",
       "bsc:input": [
         {
-          "@id": "_:Neb037edbfff74ffaa3ce087e756e5521"
+          "@id": "_:Nfb0d78d74338488dbeab6db58a94c058"
         },
         {
-          "@id": "_:N6969fc591ad04753ac1e99e6eb33a8dd"
+          "@id": "_:N60ae0e3103ff4fd394698fe258ccec2c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbcdef6b76d76423393301a1856b4434c"
+          "@id": "_:N9749782f613c4051a9a35935dc4a5613"
         },
         {
-          "@id": "_:N998216726ed244eda155d991d66fa3ec"
+          "@id": "_:Nc33efca34bcd463e95c6c2b7863d1118"
         },
         {
-          "@id": "_:N9c0454cbc909472cafcd34f6eaa8484b"
+          "@id": "_:N81e8b2e0ae58431ea6bade1acb669024"
         },
         {
-          "@id": "_:Nf1730f06397e4323bbd27f746441d3a6"
+          "@id": "_:N7fd84361045b4653980dc048c5cee615"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_2269"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_3169"
         }
       ],
       "sc:citation": [
-        "pubmed:23665773",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt200"
         },
+        "pubmed:23665773",
         "pmcid:PMC3957067"
       ],
       "sc:description": "Power computation for ChIP-Seq data based on Bayesian estimation for local poisson counting process.",
@@ -100,9 +96,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "CSSP",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/CSSP.html"
@@ -111,23 +107,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/CSSP.html"
     },
     {
-      "@id": "_:Nbcdef6b76d76423393301a1856b4434c",
+      "@id": "_:Nfb0d78d74338488dbeab6db58a94c058",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1669"
+        "@id": "edam:data_1772"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "P-value"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
     },
     {
-      "@id": "_:N998216726ed244eda155d991d66fa3ec",
+      "@id": "_:N60ae0e3103ff4fd394698fe258ccec2c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence alignment report"
+    },
+    {
+      "@id": "_:N9749782f613c4051a9a35935dc4a5613",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -143,58 +145,56 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N9c0454cbc909472cafcd34f6eaa8484b",
+      "@id": "_:Nc33efca34bcd463e95c6c2b7863d1118",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N81e8b2e0ae58431ea6bade1acb669024",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nf1730f06397e4323bbd27f746441d3a6",
+      "@id": "_:N7fd84361045b4653980dc048c5cee615",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:Neb037edbfff74ffaa3ce087e756e5521",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:N6969fc591ad04753ac1e99e6eb33a8dd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
+      "@id": "https://doi.org/10.1093/bioinformatics/btt200",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

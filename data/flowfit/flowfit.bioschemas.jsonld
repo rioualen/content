@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu127",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowfit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Davide Rambaldi",
       "bsc:input": {
-        "@id": "_:N528dd28a179247fbbde5c18a256da9cb"
+        "@id": "_:Nf2f095763bf64d658b4703d1d5eb0bae"
       },
       "bsc:output": [
         {
-          "@id": "_:N0690e0b88aa24001ac412e7166a01cdf"
+          "@id": "_:N06411f21e3d343b1adad471504cd61f8"
         },
         {
-          "@id": "_:N4e5b16a37a6c4b07a8abd783e886007f"
+          "@id": "_:N9134b37ee7f444f9a4a3780d1a6aafd2"
         },
         {
-          "@id": "_:N1870a9e70837466688d664a19ca95d05"
+          "@id": "_:N98e3d51d011c4448b05279ff8c931635"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -60,28 +64,28 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_3361"
         },
         {
           "@id": "edam:topic_3306"
         },
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_3071"
         }
       ],
       "sc:citation": [
-        "pubmed:24681909",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu127"
-        }
+        },
+        "pubmed:24681909"
       ],
       "sc:description": "This package estimate the proliferation of a cell population in cell-tracking dye studies. The package uses an R implementation of the Levenberg-Marquardt algorithm (minpack.lm) to fit a set of peaks (corresponding to different generations of cells) over the proliferation-tracking dye distribution in a FACS experiment.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3214"
+          "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_3214"
         },
         {
           "@id": "edam:operation_0337"
@@ -90,9 +94,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "flowFit",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/flowFit.html"
@@ -101,23 +105,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowFit.html"
     },
     {
-      "@id": "_:N0690e0b88aa24001ac412e7166a01cdf",
+      "@id": "_:Nf2f095763bf64d658b4703d1d5eb0bae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_3108"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N4e5b16a37a6c4b07a8abd783e886007f",
+      "@id": "_:N06411f21e3d343b1adad471504cd61f8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -133,7 +132,7 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N1870a9e70837466688d664a19ca95d05",
+      "@id": "_:N9134b37ee7f444f9a4a3780d1a6aafd2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -149,19 +148,20 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N528dd28a179247fbbde5c18a256da9cb",
+      "@id": "_:N98e3d51d011c4448b05279ff8c931635",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3108"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu127",
-      "@type": "sc:CreativeWork"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

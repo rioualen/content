@@ -36,41 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/patchwork_protein",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N84d70dd11b34405ab2f92c9bd960adce"
+          "@id": "_:N9af6f93dc9e946c0b195328356b3b20d"
         },
         {
-          "@id": "_:N82d0648ec9e04f2f86fe8bee3bffda41"
+          "@id": "_:N0f0fc9d3188a4e4f9c3a58ad908220a0"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0130"
+          "@id": "edam:topic_0601"
         },
         {
           "@id": "edam:topic_0128"
         },
         {
-          "@id": "edam:topic_0601"
+          "@id": "edam:topic_0130"
         },
         {
           "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
-        "pubmed:35438792",
         "pmcid:PMC9252814",
         {
           "@id": "https://doi.org/10.1093/nar/gkac252"
-        }
+        },
+        "pubmed:35438792"
       ],
       "sc:description": "patcHwork is a user-friendly web-server that identifies amino acids of proteins that undergo a charge-shift when the pH assumes two user-defined values. For sequence functionality, users may submit a FASTA file with up to ten thousand amino acid sequences (max 20MB). For structure functionality, users may submit a single 3D structure (PDB) file or a zip file with multiple PDB files (max 20MB) for batch processing.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0394"
+        },
         {
           "@id": "edam:operation_1839"
         },
@@ -79,22 +86,19 @@
         },
         {
           "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_0394"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "patcHwork",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:url": "https://patchwork.biologie.uni-freiburg.de/"
     },
     {
-      "@id": "_:N84d70dd11b34405ab2f92c9bd960adce",
+      "@id": "_:N9af6f93dc9e946c0b195328356b3b20d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -105,7 +109,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N82d0648ec9e04f2f86fe8bee3bffda41",
+      "@id": "_:N0f0fc9d3188a4e4f9c3a58ad908220a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -114,10 +118,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nbt1160",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/show_simul",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pierre Nicolas",
       "bsc:input": [
         {
-          "@id": "_:N93d318ddbd90431ca27afed506dff6d9"
+          "@id": "_:N5ab427340b6b43498760273988d72fdc"
         },
         {
-          "@id": "_:N898e0b16a7864f9986af70929a93ccb1"
+          "@id": "_:N2ee4679f91ec476cbacf539c8ff4e197"
         }
       ],
       "bsc:output": {
-        "@id": "_:N2a3aecfc1ea54193b0ece88c3002d928"
+        "@id": "_:N9f6f157e99144c4c9e2ffa71958573ed"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -56,10 +60,10 @@
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
-        "pubmed:16273110",
         {
           "@id": "https://doi.org/10.1038/nbt1160"
-        }
+        },
+        "pubmed:16273110"
       ],
       "sc:description": "This tool enables to simulate a hidden state sequence and a DNA sequence under a specified Hidden Markov Model.",
       "sc:featureList": {
@@ -78,23 +82,7 @@
       "sc:url": "http://genome.jouy.inra.fr/ssb/SHOW/"
     },
     {
-      "@id": "_:N93d318ddbd90431ca27afed506dff6d9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1249"
-      },
-      "sc:name": "Sequence length"
-    },
-    {
-      "@id": "_:N898e0b16a7864f9986af70929a93ccb1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1364"
-      },
-      "sc:name": "Hidden Markov model"
-    },
-    {
-      "@id": "_:N2a3aecfc1ea54193b0ece88c3002d928",
+      "@id": "_:N9f6f157e99144c4c9e2ffa71958573ed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -102,8 +90,20 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1038/nbt1160",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N5ab427340b6b43498760273988d72fdc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1364"
+      },
+      "sc:name": "Hidden Markov model"
+    },
+    {
+      "@id": "_:N2ee4679f91ec476cbacf539c8ff4e197",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1249"
+      },
+      "sc:name": "Sequence length"
     }
   ]
 }
