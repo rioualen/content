@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btx145",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gdsfmt",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-1390-0708"
       },
       "bsc:input": {
-        "@id": "_:N225e9233680d435fb31d0933256935da"
+        "@id": "_:N54f7fc8b7cac4a5eb367c6fc88086ee6"
       },
       "bsc:output": {
-        "@id": "_:N4ab604b7ba29487cb3f72297809fa0c0"
+        "@id": "_:N7529e735e1cd4f5db72f63787cda267a"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -56,10 +60,10 @@
         "@id": "edam:topic_3071"
       },
       "sc:citation": [
+        "pubmed:28334390",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btx145"
         },
-        "pubmed:28334390",
         "pmcid:PMC5860110"
       ],
       "sc:description": "This package provides a high-level R interface to CoreArray Genomic Data Structure (GDS) data files, which are portable across platforms with hierarchical structure to store multiple scalable array-oriented data sets with metadata information. It is suited for large-scale datasets, especially for data which are much larger than the available random-access memory. It offers efficient operations designed for integers of less than 8 bits (single genetic/genomic variant fewer bits than a byte).",
@@ -80,7 +84,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gdsfmt.html"
     },
     {
-      "@id": "_:N225e9233680d435fb31d0933256935da",
+      "@id": "_:N7529e735e1cd4f5db72f63787cda267a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2921"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N54f7fc8b7cac4a5eb367c6fc88086ee6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -91,28 +111,8 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N4ab604b7ba29487cb3f72297809fa0c0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2921"
-        }
-      ],
-      "sc:name": "Nucleic acid features"
-    },
-    {
       "@id": "http://orcid.org/0000-0002-1390-0708",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx145",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

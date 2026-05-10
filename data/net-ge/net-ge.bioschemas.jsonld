@@ -36,41 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-1838-8918",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2164-16-s8-s6",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/net-ge",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
           "@id": "http://orcid.org/0000-0002-1838-8918"
         },
-        "Pier Luigi Martelli",
-        "Samuele Bovo"
+        "Samuele Bovo",
+        "Pier Luigi Martelli"
       ],
       "bsc:input": {
-        "@id": "_:Ndf8cb32489dd4fb0983c76399a10696a"
+        "@id": "_:Nf7d1b1ef8db045eba6e3ef195e17c7b9"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc78a83e90aab4b7ea1fff7b187299327"
+          "@id": "_:N77a97f0be7f44a2681f740d98e6d6cd1"
         },
         {
-          "@id": "_:N8aa5e42fc75c4ee8bb0f29c5abae3034"
+          "@id": "_:N428b312d783843139ef3c63f100cd011"
         },
         {
-          "@id": "_:N33d5f9b21df042fb896a70935840f30d"
+          "@id": "_:Nc9aa88f108654c828cbd325bc980cb6c"
         },
         {
-          "@id": "_:Ncaafe09b04ac4141ba4902ef8aab5a30"
+          "@id": "_:N9bea4fd44c324fbd88bbbdecb421bd86"
         },
         {
-          "@id": "_:N47450f0a23d84f189e2e39758a62f185"
+          "@id": "_:Ndfa128b5f4ea402baa3a5d3f29c09b2b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -80,8 +72,8 @@
       },
       "sc:author": "Samuele Bovo",
       "sc:citation": [
-        "pmcid:PMC4480278",
         "pubmed:26110971",
+        "pmcid:PMC4480278",
         {
           "@id": "https://doi.org/10.1186/1471-2164-16-s8-s6"
         }
@@ -89,18 +81,18 @@
       "sc:description": "Network-based enrichment analysis of gene sets.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3501"
+          "@id": "edam:operation_3083"
         },
         {
-          "@id": "edam:operation_3083"
+          "@id": "edam:operation_3501"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "NET-GE",
       "sc:operatingSystem": [
+        "Windows",
         "Linux",
-        "Mac",
-        "Windows"
+        "Mac"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -110,10 +102,10 @@
       "sc:url": "http://net-ge.biocomp.unibo.it/"
     },
     {
-      "@id": "_:Nc78a83e90aab4b7ea1fff7b187299327",
+      "@id": "_:N77a97f0be7f44a2681f740d98e6d6cd1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2343"
+        "@id": "edam:data_1155"
       },
       "sc:encodingFormat": [
         {
@@ -123,26 +115,58 @@
           "@id": "edam:format_2331"
         }
       ],
-      "sc:name": "Pathway ID (KEGG)"
+      "sc:name": "Pathway ID (reactome)"
     },
     {
-      "@id": "_:N8aa5e42fc75c4ee8bb0f29c5abae3034",
+      "@id": "_:N428b312d783843139ef3c63f100cd011",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1176"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "GO concept ID"
+    },
+    {
+      "@id": "_:Nc9aa88f108654c828cbd325bc980cb6c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2343"
+      },
+      "sc:encodingFormat": [
+        {
           "@id": "edam:format_2331"
         },
         {
           "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "GO concept ID"
+      "sc:name": "Pathway ID (KEGG)"
     },
     {
-      "@id": "_:N33d5f9b21df042fb896a70935840f30d",
+      "@id": "_:N9bea4fd44c324fbd88bbbdecb421bd86",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Ndfa128b5f4ea402baa3a5d3f29c09b2b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -153,39 +177,7 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:Ncaafe09b04ac4141ba4902ef8aab5a30",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N47450f0a23d84f189e2e39758a62f185",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1155"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Pathway ID (reactome)"
-    },
-    {
-      "@id": "_:Ndf8cb32489dd4fb0983c76399a10696a",
+      "@id": "_:Nf7d1b1ef8db045eba6e3ef195e17c7b9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -194,6 +186,14 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2164-16-s8-s6",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-1838-8918",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -36,27 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkh340",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/muscle",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Robert Edgar",
       "bsc:input": [
         {
-          "@id": "_:N1160b02026434f1ab436902492bdddc4"
+          "@id": "_:Nfbfdffc63592463083c03045ba30512f"
         },
         {
-          "@id": "_:Na6864b4eb7994d9a8fadd919bc644886"
+          "@id": "_:N899215ac7048457b9d35585ac6890c51"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7e8a8cf5cdef46c3a219e102d33dbf36"
+        "@id": "_:N78447311470d4fd8b9625bb5b7245a82"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -68,21 +60,21 @@
       },
       "sc:author": "Robert Edgar",
       "sc:citation": [
-        "pmcid:PMC390337",
+        {
+          "@id": "https://doi.org/10.1186/1471-2105-5-113"
+        },
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         },
-        {
-          "@id": "https://doi.org/10.1101/2021.06.20.449169"
-        },
-        "pubmed:15318951",
+        "pmcid:PMC390337",
+        "pubmed:15034147",
+        "pmcid:PMC517706",
         {
           "@id": "https://doi.org/10.1093/nar/gkh340"
         },
-        "pmcid:PMC517706",
-        "pubmed:15034147",
+        "pubmed:15318951",
         {
-          "@id": "https://doi.org/10.1186/1471-2105-5-113"
+          "@id": "https://doi.org/10.1101/2021.06.20.449169"
         }
       ],
       "sc:description": "This tool performs multiple sequence alignments of nucleotide or amino acid sequences.",
@@ -93,29 +85,54 @@
       "sc:license": "Other",
       "sc:name": "MUSCLE",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
-        {
-          "@id": "https://www.ebi.ac.uk/seqdb/confluence/display/WEBSERVICES/muscle_rest"
-        },
-        {
-          "@id": "https://www.drive5.com/muscle/manual/"
-        },
         {
           "@id": "http://bioconductor.org/packages/release/bioc/html/muscle.html"
         },
         {
           "@id": "https://www.drive5.com/muscle/manual/install.html"
+        },
+        {
+          "@id": "https://www.drive5.com/muscle/manual/"
+        },
+        {
+          "@id": "https://www.ebi.ac.uk/seqdb/confluence/display/WEBSERVICES/muscle_rest"
         }
       ],
       "sc:softwareVersion": "5",
       "sc:url": "https://www.drive5.com/muscle/"
     },
     {
-      "@id": "_:N1160b02026434f1ab436902492bdddc4",
+      "@id": "_:N78447311470d4fd8b9625bb5b7245a82",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1947"
+        },
+        {
+          "@id": "edam:format_1997"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Nfbfdffc63592463083c03045ba30512f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -125,7 +142,7 @@
           "@id": "edam:format_1936"
         },
         {
-          "@id": "edam:format_1948"
+          "@id": "edam:format_1927"
         },
         {
           "@id": "edam:format_1929"
@@ -134,29 +151,23 @@
           "@id": "edam:format_1935"
         },
         {
-          "@id": "edam:format_1997"
+          "@id": "edam:format_1948"
         },
         {
-          "@id": "edam:format_1927"
+          "@id": "edam:format_1997"
         }
       ],
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Na6864b4eb7994d9a8fadd919bc644886",
+      "@id": "_:N899215ac7048457b9d35585ac6890c51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1936"
-        },
-        {
           "@id": "edam:format_1948"
-        },
-        {
-          "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_1935"
@@ -165,35 +176,24 @@
           "@id": "edam:format_1997"
         },
         {
+          "@id": "edam:format_1936"
+        },
+        {
           "@id": "edam:format_1927"
-        }
-      ],
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N7e8a8cf5cdef46c3a219e102d33dbf36",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_1997"
-        },
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1947"
         },
         {
           "@id": "edam:format_1929"
         }
       ],
-      "sc:name": "Sequence alignment"
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkh340",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1101/2021.06.20.449169",

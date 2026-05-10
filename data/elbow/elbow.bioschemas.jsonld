@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/elbow",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,17 +47,17 @@
         "Xiangli Zhang"
       ],
       "bsc:input": {
-        "@id": "_:N3039a3cc60cc4ddea7faf5aa2ba38b1c"
+        "@id": "_:Nf9d44e9e4cad4b11bc73e986c2f64142"
       },
       "bsc:output": [
         {
-          "@id": "_:N516539e66f6a40a28c71fa3d20e82bb1"
+          "@id": "_:Nfc6be00959ac4d7699f8e2286fc20088"
         },
         {
-          "@id": "_:N43122ee2dea74a2b8f6fdac30ea9afb4"
+          "@id": "_:N943071bde89442a3bf015ca03dc63c93"
         },
         {
-          "@id": "_:N6eb073d30c4e4b1aace4e1e74df94b31"
+          "@id": "_:N8be5dc2151484fcfa2b4d98b85edae50"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -69,18 +73,18 @@
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4509590",
+        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "FC test that uses cluster analysis and pattern recognition to set cut off limits that are derived directly from intrareplicate variance. It provides the same consistency as fold testing in cross platform analysis and has lower FP and FN rates than standard fold testing. It provides a null value based on initial condition replicates and gives error bounds for results to allow better evaluation of significance.",
       "sc:featureList": {
@@ -99,39 +103,34 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ELBOW.html"
     },
     {
-      "@id": "_:N516539e66f6a40a28c71fa3d20e82bb1",
+      "@id": "_:Nf9d44e9e4cad4b11bc73e986c2f64142",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_0928"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N43122ee2dea74a2b8f6fdac30ea9afb4",
+      "@id": "_:Nfc6be00959ac4d7699f8e2286fc20088",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N6eb073d30c4e4b1aace4e1e74df94b31",
+      "@id": "_:N943071bde89442a3bf015ca03dc63c93",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -147,19 +146,20 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N3039a3cc60cc4ddea7faf5aa2ba38b1c",
+      "@id": "_:N8be5dc2151484fcfa2b4d98b85edae50",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0928"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

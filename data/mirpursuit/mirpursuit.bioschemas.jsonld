@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/1873-3468.12746",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "http://orcid.org/0000-0002-3794-4262",
       "@type": "sc:Person"
     },
@@ -50,10 +54,10 @@
         "@id": "http://orcid.org/0000-0002-3794-4262"
       },
       "bsc:input": {
-        "@id": "_:N7b292d3966264906a58f3f152d44f770"
+        "@id": "_:N7cc96f3ecda1463693d237fdba6be863"
       },
       "bsc:output": {
-        "@id": "_:Na2a4c60dfe2a4a56a025b3545d9edb86"
+        "@id": "_:Nf690548fd4b8438ead85205bc2c69e0d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
@@ -61,15 +65,15 @@
         "@id": "edam:topic_0659"
       },
       "sc:citation": [
+        "pubmed:28686301",
+        {
+          "@id": "https://doi.org/10.1093/nar/gks1195"
+        },
+        "pubmed:23193287",
         {
           "@id": "https://doi.org/10.1002/1873-3468.12746"
         },
-        "pubmed:28686301",
-        "pmcid:PMC3531190",
-        "pubmed:23193287",
-        {
-          "@id": "https://doi.org/10.1093/nar/gks1195"
-        }
+        "pmcid:PMC3531190"
       ],
       "sc:description": "A pipeline for automated analyses of small RNAs in non-model plants",
       "sc:featureList": [
@@ -83,8 +87,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "miRPursuit",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/forestbiotech-lab/miRPursuit/blob/master/README.md"
@@ -93,7 +97,23 @@
       "sc:url": "https://github.com/forestbiotech-lab/miRPursuit"
     },
     {
-      "@id": "_:Na2a4c60dfe2a4a56a025b3545d9edb86",
+      "@id": "_:N7cc96f3ecda1463693d237fdba6be863",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3496"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "RNA sequence (raw)"
+    },
+    {
+      "@id": "_:Nf690548fd4b8438ead85205bc2c69e0d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -102,26 +122,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N7b292d3966264906a58f3f152d44f770",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3496"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1930"
-        }
-      ],
-      "sc:name": "RNA sequence (raw)"
-    },
-    {
-      "@id": "https://doi.org/10.1002/1873-3468.12746",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/envisionquery",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -44,45 +48,45 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nf510fdcef5ad469d822289ce8c742e42"
+          "@id": "_:Nb5c1ecf3dbfc4415939540a64229542c"
         },
         {
-          "@id": "_:Nea17ec63047f4a22976b70f54d4dbc15"
+          "@id": "_:Nc04b66ac1a0f4aa28f967fdd3d0d3bec"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na06164fc8755443bb94469ce43e96eae"
+          "@id": "_:Ne3b0dd0a21684a9a9d6a10bb2b24d8fb"
         },
         {
-          "@id": "_:N87cf4b019e2d4ef6a184f3c36e6ad8cd"
+          "@id": "_:Ned8a7d91770c4fe4ab7efd8086026189"
         },
         {
-          "@id": "_:Nf00bed67d132449c93503f2e6c8827c4"
+          "@id": "_:N91724989e5db417d878562d37d9b0c84"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0091"
       },
       "sc:citation": [
+        "pmcid:PMC4509590",
+        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "Tools to retrieve data from ENVISION, the database for annotation, visualization and integrated discovery portal.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3282"
         },
         {
-          "@id": "edam:operation_3282"
+          "@id": "edam:operation_2422"
         }
       ],
       "sc:license": "GPL-2.0",
@@ -99,39 +103,55 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ENVISIONQuery.html"
     },
     {
-      "@id": "_:Na06164fc8755443bb94469ce43e96eae",
+      "@id": "_:Nb5c1ecf3dbfc4415939540a64229542c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2332"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:Nc04b66ac1a0f4aa28f967fdd3d0d3bec",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:Ne3b0dd0a21684a9a9d6a10bb2b24d8fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N87cf4b019e2d4ef6a184f3c36e6ad8cd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:Nf00bed67d132449c93503f2e6c8827c4",
+      "@id": "_:Ned8a7d91770c4fe4ab7efd8086026189",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2291"
@@ -147,23 +167,7 @@
       "sc:name": "UniProt ID"
     },
     {
-      "@id": "_:Nf510fdcef5ad469d822289ce8c742e42",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:Nea17ec63047f4a22976b70f54d4dbc15",
+      "@id": "_:N91724989e5db417d878562d37d9b0c84",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -177,10 +181,6 @@
         }
       ],
       "sc:name": "Identifier"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

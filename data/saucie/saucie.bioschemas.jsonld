@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41592-019-0576-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/SAUCIE",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na3438d92abcd4f8ab7c9531f55fbbbb4"
+        "@id": "_:N7e8ada69724043639d213685dbf2d03f"
       },
       "bsc:output": {
-        "@id": "_:N4429b118e0dd4538b7363ac29f448b2f"
+        "@id": "_:N2e54e24928cc41cdaeac21f069ba73b2"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -62,22 +58,22 @@
         }
       ],
       "sc:citation": [
-        "pubmed:31591579",
         "pmcid:PMC10164410",
         {
           "@id": "https://doi.org/10.1038/s41592-019-0576-7"
-        }
+        },
+        "pubmed:31591579"
       ],
       "sc:description": "SAUCIE is a python object that loads data from a numpy matrix and produces numpy matrix output for the reconstruction, visualization, and/or clusters.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0337"
+        },
         {
           "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_3664"
-        },
-        {
-          "@id": "edam:operation_0337"
         },
         {
           "@id": "edam:operation_3557"
@@ -97,7 +93,7 @@
       "sc:url": "https://github.com/KrishnaswamyLab/SAUCIE/"
     },
     {
-      "@id": "_:N4429b118e0dd4538b7363ac29f448b2f",
+      "@id": "_:N7e8ada69724043639d213685dbf2d03f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -108,7 +104,7 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:Na3438d92abcd4f8ab7c9531f55fbbbb4",
+      "@id": "_:N2e54e24928cc41cdaeac21f069ba73b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -117,6 +113,10 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41592-019-0576-7",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

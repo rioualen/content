@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp120",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     },
@@ -45,21 +49,21 @@
       "biotools:primaryContact": "Daehwan Kim",
       "bsc:input": [
         {
-          "@id": "_:Nbf324685bcf9404db8fcb5d3dbd5c486"
+          "@id": "_:N5539b5dd62574e83bbee9f27ad718a06"
         },
         {
-          "@id": "_:N674496d37a5a462489c3bad60bc2f916"
+          "@id": "_:N735de3bf6bb6470aa4b69a9597d7374c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N34cb4bab8de447d480ed418d740fd9c0"
+          "@id": "_:N80d628212df549a4ad9962ed88950bd5"
         },
         {
-          "@id": "_:N1dd3d871fd2b493d96778c5dd540a8c7"
+          "@id": "_:N082e03483b644f648816e7b18c42dc00"
         },
         {
-          "@id": "_:N03b8b95dc3cc43f28fc95c31e54c0950"
+          "@id": "_:N6215efd6f6294290b6c5bcaa5d730847"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -76,22 +80,22 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2672628",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp120"
         },
-        "pubmed:19289445",
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        }
+        },
+        "pubmed:19289445",
+        "pmcid:PMC2672628"
       ],
       "sc:description": "Program that aligns RNA-Seq reads to a genome in order to identify exon-exon splice junctions. It is built on the ultrafast short read mapping program Bowtie. A stable SAMtools version is now packaged with the program.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0433"
+          "@id": "edam:operation_3198"
         },
         {
-          "@id": "edam:operation_3198"
+          "@id": "edam:operation_0433"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -107,31 +111,18 @@
       "sc:url": "http://ccb.jhu.edu/software/tophat/index.shtml"
     },
     {
-      "@id": "_:Nbf324685bcf9404db8fcb5d3dbd5c486",
+      "@id": "_:N80d628212df549a4ad9962ed88950bd5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1234"
+        "@id": "edam:data_3002"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1930"
-        }
-      ],
-      "sc:name": "Sequence set (nucleic acid)"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N674496d37a5a462489c3bad60bc2f916",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2749"
-      },
-      "sc:name": "Genome identifier"
-    },
-    {
-      "@id": "_:N34cb4bab8de447d480ed418d740fd9c0",
+      "@id": "_:N082e03483b644f648816e7b18c42dc00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -142,7 +133,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N1dd3d871fd2b493d96778c5dd540a8c7",
+      "@id": "_:N6215efd6f6294290b6c5bcaa5d730847",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -153,19 +144,28 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N03b8b95dc3cc43f28fc95c31e54c0950",
+      "@id": "_:N5539b5dd62574e83bbee9f27ad718a06",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3002"
+        "@id": "edam:data_2749"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
+      "sc:name": "Genome identifier"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp120",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N735de3bf6bb6470aa4b69a9597d7374c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "Sequence set (nucleic acid)"
     }
   ]
 }

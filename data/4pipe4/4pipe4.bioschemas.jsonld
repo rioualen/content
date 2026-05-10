@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-016-0892-1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/4pipe4",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Francisco Pina Martins",
       "bsc:input": {
-        "@id": "_:Na33f47dcfcf64646ab01ab63578c1f5f"
+        "@id": "_:N0040a0fbf4df455b9065d29af7e6a5fb"
       },
       "bsc:output": {
-        "@id": "_:Nae28ea7c270a48b697b9d9792c49f1cf"
+        "@id": "_:Ne0bdab48a8524beb8793e37d3c8dd173"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0080"
+        },
+        {
           "@id": "edam:topic_0077"
         },
         {
           "@id": "edam:topic_2885"
-        },
-        {
-          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
-        "pubmed:26787189",
         "pmcid:PMC4719533",
         {
           "@id": "https://doi.org/10.1186/s12859-016-0892-1"
-        }
+        },
+        "pubmed:26787189"
       ],
       "sc:description": "A pipeline with emphasis on SNP detection. It will detect SNPs in NGS data where no reference sequence nor strain information is available.",
       "sc:featureList": {
@@ -73,8 +77,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "4Pipe4",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/StuntsPT/4Pipe4/"
@@ -83,23 +87,7 @@
       "sc:url": "https://github.com/StuntsPT/4Pipe4"
     },
     {
-      "@id": "_:Na33f47dcfcf64646ab01ab63578c1f5f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3284"
-        }
-      ],
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:Nae28ea7c270a48b697b9d9792c49f1cf",
+      "@id": "_:Ne0bdab48a8524beb8793e37d3c8dd173",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -110,8 +98,20 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-016-0892-1",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0040a0fbf4df455b9065d29af7e6a5fb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3284"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence set (nucleic acid)"
     }
   ]
 }

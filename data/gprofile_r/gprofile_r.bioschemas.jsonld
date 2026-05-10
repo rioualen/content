@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw199",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gprofile_r",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Jüri Reimand",
-        "Jaak Vilo"
+        "Jaak Vilo",
+        "Jüri Reimand"
       ],
       "bsc:input": [
         {
-          "@id": "_:N9de4e5385d0244d69d3a233821bb0cd5"
+          "@id": "_:N7d8ffa26b4144c3d96ad36fb4393138d"
         },
         {
-          "@id": "_:N58a3b581db254ab29379828f4a81192a"
+          "@id": "_:Nff98c380cf164702b6b88e06aa3c5bcc"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ndedeba69bf014e3fbd1bb0619c8a16a1"
+        "@id": "_:Nb526e2c3b597406d9ad861eb851f7e46"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Suite",
-        "Library"
+        "Library",
+        "Suite"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0602"
@@ -69,15 +73,15 @@
           "@id": "edam:topic_1775"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0089"
         }
       ],
       "sc:citation": [
-        "pubmed:27098042",
+        "pmcid:PMC4987867",
         {
           "@id": "https://doi.org/10.1093/nar/gkw199"
         },
-        "pmcid:PMC4987867"
+        "pubmed:27098042"
       ],
       "sc:description": "gProfileR performs functional enrichment analysis, gene identifier conversion and mapping homologous genes across related organisms via the 'g:Profiler' toolkit. The tool performs statistical enrichment analysis to find over-representation of information like Gene Ontology terms, biological pathways, regulatory DNA elements, human disease gene annotations, and protein-protein interaction networks. The basic input is a list of genes.",
       "sc:featureList": [
@@ -85,13 +89,13 @@
           "@id": "edam:operation_3672"
         },
         {
+          "@id": "edam:operation_2497"
+        },
+        {
           "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_2422"
-        },
-        {
-          "@id": "edam:operation_2497"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -109,29 +113,7 @@
       "sc:url": "https://cran.r-project.org/web/packages/gProfileR/index.html"
     },
     {
-      "@id": "_:N9de4e5385d0244d69d3a233821bb0cd5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N58a3b581db254ab29379828f4a81192a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2295"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "Gene ID"
-    },
-    {
-      "@id": "_:Ndedeba69bf014e3fbd1bb0619c8a16a1",
+      "@id": "_:Nb526e2c3b597406d9ad861eb851f7e46",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -142,8 +124,26 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw199",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7d8ffa26b4144c3d96ad36fb4393138d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Nff98c380cf164702b6b88e06aa3c5bcc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2295"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Gene ID"
     }
   ]
 }

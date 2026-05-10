@@ -36,36 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0513-0288",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bioexcel_building_blocks_tutorials_protein_md_setup_amber_version",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:N2252db7fe21e4813b0f0c44e9d266adb"
+        "@id": "_:N243d96afc992487bb64e7a829e2dca84"
       },
       "bsc:output": [
         {
-          "@id": "_:N27650e8e5fed4322ae83c68e4a5266ed"
+          "@id": "_:Ndd95be5639094002969d6961e9a18f98"
         },
         {
-          "@id": "_:Na4837f473a4a41869eb9efb006002640"
+          "@id": "_:Nff1fe102a17f4d63911fb1ee2985dbf3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0176"
         },
         {
           "@id": "edam:topic_0081"
         },
         {
-          "@id": "edam:topic_0176"
+          "@id": "edam:topic_2814"
         }
       ],
       "sc:author": [
@@ -77,14 +89,20 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC6736963",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
         },
-        "pubmed:31506435"
+        "pubmed:31506435",
+        "pmcid:PMC6736963"
       ],
       "sc:description": "This tutorial aims to illustrate the process of setting up a simulation system containing a protein, step by step, using the BioExcel Building Blocks library (biobb) wrapping the AmberTools utility from the AMBER package. The particular example used is the Lysozyme protein (PDB code 1AKI).",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2406"
+        },
+        {
+          "@id": "edam:operation_0477"
+        },
         {
           "@id": "edam:operation_3890"
         },
@@ -93,12 +111,6 @@
         },
         {
           "@id": "edam:operation_0570"
-        },
-        {
-          "@id": "edam:operation_2406"
-        },
-        {
-          "@id": "edam:operation_0477"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -117,18 +129,7 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/amber_md_setup"
     },
     {
-      "@id": "_:N2252db7fe21e4813b0f0c44e9d266adb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N27650e8e5fed4322ae83c68e4a5266ed",
+      "@id": "_:Ndd95be5639094002969d6961e9a18f98",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3872"
@@ -139,7 +140,7 @@
       "sc:name": "Topology data"
     },
     {
-      "@id": "_:Na4837f473a4a41869eb9efb006002640",
+      "@id": "_:Nff1fe102a17f4d63911fb1ee2985dbf3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -155,16 +156,15 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0513-0288",
-      "@type": "sc:Person"
+      "@id": "_:N243d96afc992487bb64e7a829e2dca84",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
     }
   ]
 }

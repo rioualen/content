@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pfamscan_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": [
         {
-          "@id": "_:N8a686c60c82f45229bb4e332e507b0e9"
+          "@id": "_:Na67868e3decc49c992e1803f2822a171"
         },
         {
-          "@id": "_:N5a37ed3b5d874f8989ca87211384a4a4"
+          "@id": "_:Nc9d9bf40ef4e449eb00da2830043edb9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5f248d7b22444fafbd5b1324ad0b6017"
+          "@id": "_:N1b5831e488474f5abb996fe4bb13252d"
         },
         {
-          "@id": "_:N11173064785b4fd0b3ea674094d75ccf"
+          "@id": "_:N9e61fa533a67425f8ca0d13fa84ca0b1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -62,29 +66,29 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0623"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0623"
         }
       ],
       "sc:author": "Rob Finn",
       "sc:citation": [
-        "pmcid:PMC11223882",
-        {
-          "@id": "https://doi.org/10.1186/1471-2105-8-298"
-        },
-        "pubmed:38597606",
-        "pubmed:35412617",
-        "pmcid:PMC9252731",
         "pmcid:PMC2025603",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkae241"
+        },
+        "pmcid:PMC11223882",
+        "pubmed:17688688",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkae241"
+          "@id": "https://doi.org/10.1186/1471-2105-8-298"
         },
-        "pubmed:17688688"
+        "pubmed:38597606",
+        "pmcid:PMC9252731",
+        "pubmed:35412617"
       ],
       "sc:description": "PfamScan is used to search a FASTA sequence against a library of Pfam HMM.",
       "sc:featureList": {
@@ -92,17 +96,17 @@
       },
       "sc:name": "PfamScan (EBI)",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+          "@id": "http://xfam.org/"
         },
         {
-          "@id": "http://xfam.org/"
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
@@ -112,31 +116,7 @@
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/pfa/pfamscan"
     },
     {
-      "@id": "_:N5f248d7b22444fafbd5b1324ad0b6017",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N11173064785b4fd0b3ea674094d75ccf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0858"
-      },
-      "sc:name": "Sequence signature matches"
-    },
-    {
-      "@id": "_:N8a686c60c82f45229bb4e332e507b0e9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1364"
-      },
-      "sc:name": "Hidden Markov model"
-    },
-    {
-      "@id": "_:N5a37ed3b5d874f8989ca87211384a4a4",
+      "@id": "_:Na67868e3decc49c992e1803f2822a171",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -144,15 +124,35 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc9d9bf40ef4e449eb00da2830043edb9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1364"
+      },
+      "sc:name": "Hidden Markov model"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N1b5831e488474f5abb996fe4bb13252d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "_:N9e61fa533a67425f8ca0d13fa84ca0b1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0858"
+      },
+      "sc:name": "Sequence signature matches"
     },
     {
       "@id": "https://doi.org/10.1186/1471-2105-8-298",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     }
   ]

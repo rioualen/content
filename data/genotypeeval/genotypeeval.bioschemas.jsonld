@@ -36,44 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genotypeeval",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jennifer Tom",
       "bsc:input": [
         {
-          "@id": "_:N49cbee2ac2b946289ca957493aca90a4"
+          "@id": "_:N36f236ff8e034ace9bdb38353633dd8a"
         },
         {
-          "@id": "_:Nd0a86120928a462ea9b3d3ee80035288"
+          "@id": "_:N4d0da05edc30478fafa17fc0fcd82f02"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3ad5da589252456abfe0ca8dcdbd7787"
+          "@id": "_:N85d02f64763f478a913c7e338fd1b12c"
         },
         {
-          "@id": "_:N0b6a42df4ab249c2b7eeeba905397fd3"
+          "@id": "_:Ndbae6f2dd34e47edbda341d9a20d98d6"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3572"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4509590",
+        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "Takes in a gVCF or VCF and reports metrics to assess quality of calls.",
       "sc:featureList": {
@@ -92,23 +96,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/genotypeeval.html"
     },
     {
-      "@id": "_:N49cbee2ac2b946289ca957493aca90a4",
+      "@id": "_:N85d02f64763f478a913c7e338fd1b12c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3498"
+        "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3016"
+          "@id": "edam:format_3547"
         },
         {
           "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Sequence variations"
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:Nd0a86120928a462ea9b3d3ee80035288",
+      "@id": "_:Ndbae6f2dd34e47edbda341d9a20d98d6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence report"
+    },
+    {
+      "@id": "_:N36f236ff8e034ace9bdb38353633dd8a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -124,40 +144,20 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N3ad5da589252456abfe0ca8dcdbd7787",
+      "@id": "_:N4d0da05edc30478fafa17fc0fcd82f02",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2955"
+        "@id": "edam:data_3498"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3016"
         },
         {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N0b6a42df4ab249c2b7eeeba905397fd3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
           "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
         }
       ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Sequence variations"
     }
   ]
 }

@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp191",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ep3",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf77d89b6f7214e95a43a16ea7be013e1"
+        "@id": "_:N3d9d8b3bd0794ff7874c3bcfa68a948d"
       },
       "bsc:output": {
-        "@id": "_:Nac9da5429c0e4758815b724e0466935d"
+        "@id": "_:N74cc3835321548d195abe12b2ea66708"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3511"
       },
       "sc:citation": [
-        "pubmed:19478005",
-        "pmcid:PMC2687945",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp191"
-        }
+        },
+        "pubmed:19478005",
+        "pmcid:PMC2687945"
       ],
       "sc:description": "Identification of the core region of a eukaryotic gene promoter.",
       "sc:featureList": {
@@ -69,9 +65,9 @@
       },
       "sc:name": "EP3",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -81,7 +77,15 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/software/details/EP3"
     },
     {
-      "@id": "_:Nf77d89b6f7214e95a43a16ea7be013e1",
+      "@id": "_:N74cc3835321548d195abe12b2ea66708",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2070"
+      },
+      "sc:name": "Sequence motif (nucleic acid)"
+    },
+    {
+      "@id": "_:N3d9d8b3bd0794ff7874c3bcfa68a948d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2749"
@@ -92,12 +96,8 @@
       "sc:name": "Genome identifier"
     },
     {
-      "@id": "_:Nac9da5429c0e4758815b724e0466935d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2070"
-      },
-      "sc:name": "Sequence motif (nucleic acid)"
+      "@id": "https://doi.org/10.1093/bioinformatics/btp191",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

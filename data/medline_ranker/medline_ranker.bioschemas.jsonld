@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkp353",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/medline_ranker",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jean Fred Fontaine",
       "bsc:input": [
         {
-          "@id": "_:Nfbce1181282a4c378d247945f4ae6897"
+          "@id": "_:N55c6a2393cc04890b0aee5da4cc74307"
         },
         {
-          "@id": "_:N7848c0703eef4ad582b6cb222caaf565"
+          "@id": "_:N03ad86762cdf488080e51e6827cca163"
         }
       ],
       "bsc:output": {
-        "@id": "_:N537c5afb16fc4e289552d2f580f26ad4"
+        "@id": "_:N20fbc7c914404a9c96ab07a6150a411c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0218"
       },
       "sc:citation": [
+        "pubmed:19429696",
         "pmcid:PMC2703945",
         {
           "@id": "https://doi.org/10.1093/nar/gkp353"
-        },
-        "pubmed:19429696"
+        }
       ],
       "sc:description": "This web server offers a flexible and fast statistical ranking of PubMed abstracts for topics of interest without expert knowledge.",
       "sc:featureList": [
@@ -76,30 +80,14 @@
       ],
       "sc:name": "Medline Ranker",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:url": "http://cbdm.uni-mainz.de/medlineranker"
     },
     {
-      "@id": "_:Nfbce1181282a4c378d247945f4ae6897",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1088"
-      },
-      "sc:name": "Article ID"
-    },
-    {
-      "@id": "_:N7848c0703eef4ad582b6cb222caaf565",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0968"
-      },
-      "sc:name": "Keyword"
-    },
-    {
-      "@id": "_:N537c5afb16fc4e289552d2f580f26ad4",
+      "@id": "_:N20fbc7c914404a9c96ab07a6150a411c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0972"
@@ -107,8 +95,20 @@
       "sc:name": "Text mining report"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkp353",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N55c6a2393cc04890b0aee5da4cc74307",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0968"
+      },
+      "sc:name": "Keyword"
+    },
+    {
+      "@id": "_:N03ad86762cdf488080e51e6827cca163",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1088"
+      },
+      "sc:name": "Article ID"
     }
   ]
 }

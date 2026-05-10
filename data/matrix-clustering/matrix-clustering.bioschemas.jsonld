@@ -36,42 +36,38 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/065565",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/matrix-clustering",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Jacques van Helden",
         "Morgane Thomas-Chollier",
+        "Jacques van Helden",
         "Jaime Castro-Mondragon"
       ],
       "bsc:input": {
-        "@id": "_:N815e0a3c187c4b84add281af66359c4b"
+        "@id": "_:N87d040886cc841e78d90e1d631a5e0ef"
       },
       "bsc:output": [
         {
-          "@id": "_:Nf78d6d008e1f47ecb4940a0027324b1c"
+          "@id": "_:Ncebf4a7b337d4f5da420b4a688a60416"
         },
         {
-          "@id": "_:Nd4f9537bc2de4c61886a5acb2de2d67e"
+          "@id": "_:N83b8db24e81f4827a60d5e57931cea67"
         },
         {
-          "@id": "_:Ne33255efabd84a6c9e21569dc0a88a93"
+          "@id": "_:Nfd008a7f7fe547c2bd21c9181f996f89"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3511"
+          "@id": "edam:topic_3125"
         },
         {
-          "@id": "edam:topic_3125"
+          "@id": "edam:topic_3511"
         }
       ],
       "sc:author": "Jaime Castro-Mondragon",
@@ -79,9 +75,9 @@
         "@id": "https://doi.org/10.1101/065565"
       },
       "sc:contributor": [
-        "Jacques van Helden",
+        "Denis Thieffry",
         "Morgane Thomas-Chollier",
-        "Denis Thieffry"
+        "Jacques van Helden"
       ],
       "sc:description": "Taking as input one or several sets of position-specific scoring matrices, this program applies hierarchical clustering to identify clusters of similar motifs. It produces a set of trees (one per cluster) and builds branch motifs at each node of each tree by merging the matrices of all descendent nodes.",
       "sc:featureList": [
@@ -105,7 +101,15 @@
       "sc:url": "http://rsat.eu/"
     },
     {
-      "@id": "_:Nf78d6d008e1f47ecb4940a0027324b1c",
+      "@id": "_:Ncebf4a7b337d4f5da420b4a688a60416",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1246"
+      },
+      "sc:name": "Sequence cluster (nucleic acid)"
+    },
+    {
+      "@id": "_:N83b8db24e81f4827a60d5e57931cea67",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1361"
@@ -116,15 +120,7 @@
       "sc:name": "Position frequency matrix"
     },
     {
-      "@id": "_:Nd4f9537bc2de4c61886a5acb2de2d67e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1246"
-      },
-      "sc:name": "Sequence cluster (nucleic acid)"
-    },
-    {
-      "@id": "_:Ne33255efabd84a6c9e21569dc0a88a93",
+      "@id": "_:Nfd008a7f7fe547c2bd21c9181f996f89",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -132,20 +128,24 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N815e0a3c187c4b84add281af66359c4b",
+      "@id": "_:N87d040886cc841e78d90e1d631a5e0ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1361"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1419"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_1419"
         }
       ],
       "sc:name": "Position frequency matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1101/065565",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,30 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-4935-3312",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9963-6057",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/AMICI",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
+          "@id": "https://orcid.org/0000-0002-4935-3312"
+        },
+        {
           "@id": "https://orcid.org/0000-0001-9963-6057"
         },
-        "Fabian Fröhlich",
-        {
-          "@id": "https://orcid.org/0000-0002-4935-3312"
-        }
+        "Fabian Fröhlich"
       ],
       "bsc:input": {
-        "@id": "_:Nb73a937838b345c485d5cfb1b1c7c1c5"
+        "@id": "_:Nab5d585dc7ca4e9aa82855e4c0fd0bed"
       },
       "bsc:output": {
-        "@id": "_:Nddb5ead1e07d48edbb7d82c80bd7be1d"
+        "@id": "_:N2183dd3445694132a0bfd96c73455183"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
@@ -74,27 +66,27 @@
       ],
       "sc:citation": [
         "pubmed:33821950",
+        "pmcid:PMC8545331",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btab227"
-        },
-        "pmcid:PMC8545331"
+        }
       ],
       "sc:description": "AMICI provides a multi-language (Python, C++, Matlab) interface for the SUNDIALS solvers CVODES (for ordinary differential equations) and IDAS (for algebraic differential equations). AMICI allows the user to read differential equation models specified as SBML or PySB and automatically compiles such models into .mex simulation files (Matlab), C++ executables or Python modules.\n\nBeyond forward integration, the compiled simulation file also allows for forward sensitivity analysis, steady state sensitivity analysis and adjoint sensitivity analysis for likelihood-based output functions.\n\nThe interface was designed to provide routines for efficient gradient computation in parameter estimation of biochemical reaction models but it is also applicable to a wider range of differential equation constrained optimization problems.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_3562"
         },
         {
-          "@id": "edam:operation_3562"
+          "@id": "edam:operation_2426"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "AMICI",
       "sc:operatingSystem": [
+        "Windows",
         "Linux",
-        "Mac",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://amici.readthedocs.io/en/latest/"
@@ -102,7 +94,7 @@
       "sc:url": "https://github.com/AMICI-dev/AMICI"
     },
     {
-      "@id": "_:Nddb5ead1e07d48edbb7d82c80bd7be1d",
+      "@id": "_:N2183dd3445694132a0bfd96c73455183",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -113,7 +105,7 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:Nb73a937838b345c485d5cfb1b1c7c1c5",
+      "@id": "_:Nab5d585dc7ca4e9aa82855e4c0fd0bed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -127,6 +119,14 @@
         }
       ],
       "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9963-6057",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4935-3312",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btab227",

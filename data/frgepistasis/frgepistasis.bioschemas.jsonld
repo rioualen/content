@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-6043-1756",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1101/gr.161760.113",
       "@type": "sc:CreativeWork"
     },
@@ -51,22 +47,22 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N73d055b2d5b94690bdecf3982fc90981"
+          "@id": "_:N9ea9d2d258d241fe878ae3c0463522ff"
         },
         {
-          "@id": "_:N9a257d296f9c4d769712a1a60b25d4ac"
+          "@id": "_:Nc5341904696a4ff29bd9eceae18b3e8d"
         },
         {
-          "@id": "_:N9047898e224d4dcebd2481a6392f356a"
+          "@id": "_:N84cbecc6154e42c596568ee31c9a73d2"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nb7141f37f03041ff9523987f19e2be04"
+        "@id": "_:N1d5034b2985f4cb4940a06073442ea04"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -77,11 +73,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4032862",
-        "pubmed:24803592",
         {
           "@id": "https://doi.org/10.1101/gr.161760.113"
-        }
+        },
+        "pubmed:24803592",
+        "pmcid:PMC4032862"
       ],
       "sc:description": "A Tool for Epistasis Analysis Based on Functional Regression Model.",
       "sc:featureList": [
@@ -95,9 +91,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "FRGEpistasis",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/FRGEpistasis.html"
@@ -106,7 +102,73 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/FRGEpistasis.html"
     },
     {
-      "@id": "_:Nb7141f37f03041ff9523987f19e2be04",
+      "@id": "_:N9ea9d2d258d241fe878ae3c0463522ff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1017"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3286"
+        },
+        {
+          "@id": "edam:format_3285"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Sequence range"
+    },
+    {
+      "@id": "_:Nc5341904696a4ff29bd9eceae18b3e8d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0955"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3286"
+        },
+        {
+          "@id": "edam:format_3285"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Data index"
+    },
+    {
+      "@id": "_:N84cbecc6154e42c596568ee31c9a73d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0920"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3286"
+        },
+        {
+          "@id": "edam:format_3285"
+        }
+      ],
+      "sc:name": "Genotype/phenotype report"
+    },
+    {
+      "@id": "_:N1d5034b2985f4cb4940a06073442ea04",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -117,70 +179,8 @@
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:N73d055b2d5b94690bdecf3982fc90981",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1017"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3286"
-        },
-        {
-          "@id": "edam:format_3285"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Sequence range"
-    },
-    {
-      "@id": "_:N9a257d296f9c4d769712a1a60b25d4ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0955"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3286"
-        },
-        {
-          "@id": "edam:format_3285"
-        }
-      ],
-      "sc:name": "Data index"
-    },
-    {
-      "@id": "_:N9047898e224d4dcebd2481a6392f356a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0920"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3285"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3286"
-        }
-      ],
-      "sc:name": "Genotype/phenotype report"
+      "@id": "http://orcid.org/0000-0002-6043-1756",
+      "@type": "sc:Person"
     }
   ]
 }

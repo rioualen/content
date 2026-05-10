@@ -36,6 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkaa1058",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts327",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku982",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkx1071",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mobidb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,49 +63,49 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N5bbe04d7212041f6a620832c2785a7d6"
+          "@id": "_:N59e420caa9b04dc6959672e4a1bc5482"
         },
         {
-          "@id": "_:N47a216e811714bb5964c8815c7769cf1"
+          "@id": "_:N0d13ee38f5ce4eb68c7272feedbdba1b"
         }
       ],
       "bsc:output": {
-        "@id": "_:Neef9ad29b5d34a99bb0ad50aef02ba4f"
+        "@id": "_:Naf9e3810b74f471a96686276188db8c4"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Database portal",
         "Web application",
+        "Database portal",
         "Web API"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_3538"
         },
         {
-          "@id": "edam:topic_3538"
+          "@id": "edam:topic_2814"
         }
       ],
       "sc:citation": [
-        "pubmed:33237329",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkx1071"
-        },
         "pmcid:PMC4384034",
+        "pubmed:33237329",
         {
           "@id": "https://doi.org/10.1093/nar/gkaa1058"
         },
-        "pmcid:PMC7779018",
         "pubmed:29136219",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts327"
         },
         "pubmed:22661649",
         "pubmed:25361972",
-        "pmcid:PMC5753340",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkx1071"
+        },
         {
           "@id": "https://doi.org/10.1093/nar/gku982"
-        }
+        },
+        "pmcid:PMC5753340",
+        "pmcid:PMC7779018"
       ],
       "sc:description": "Database of protein disorder and mobility annotations.",
       "sc:featureList": [
@@ -100,24 +120,40 @@
       "sc:license": "CC-BY-4.0",
       "sc:name": "MobiDB",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "University of Padua, Department of Biomedical Sciences, BioComputing UP lab",
       "sc:softwareHelp": [
         {
-          "@id": "https://mobidb.org/help/apidoc"
+          "@id": "https://mobidb.org/about/mobidb"
         },
         {
-          "@id": "https://mobidb.org/about/mobidb"
+          "@id": "https://mobidb.org/help/apidoc"
         }
       ],
       "sc:softwareVersion": "5",
       "sc:url": "https://mobidb.org/"
     },
     {
-      "@id": "_:N5bbe04d7212041f6a620832c2785a7d6",
+      "@id": "_:Naf9e3810b74f471a96686276188db8c4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N59e420caa9b04dc6959672e4a1bc5482",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2007"
@@ -128,48 +164,12 @@
       "sc:name": "UniProt keyword"
     },
     {
-      "@id": "_:N47a216e811714bb5964c8815c7769cf1",
+      "@id": "_:N0d13ee38f5ce4eb68c7272feedbdba1b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
       },
       "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Neef9ad29b5d34a99bb0ad50aef02ba4f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkx1071",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkaa1058",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts327",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku982",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

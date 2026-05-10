@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku359",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/coprarna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -45,26 +49,26 @@
         }
       ],
       "bsc:input": {
-        "@id": "_:Nc00ae751e2bb456d84dac52c72c89555"
+        "@id": "_:Ne1d0c93716ed4b91a4866e2b5c313317"
       },
       "bsc:output": [
         {
-          "@id": "_:N1ad9cba5388941b88e7075868ba925cf"
+          "@id": "_:Nf19c2f6027d842b799442e12b3c4adac"
         },
         {
-          "@id": "_:N853f73d4d0f2493699b9f2dab3b9c908"
+          "@id": "_:N3cca83d470764668bcc47f3fca375208"
         },
         {
-          "@id": "_:Nec014ec48dc147bbaf2483ab3dd39107"
+          "@id": "_:Ne10edecc45b6401e8e45552aa74dd15f"
         },
         {
-          "@id": "_:Nf2486e5659fb46879e8c89e960fcff66"
+          "@id": "_:N983137178d1145a3a17fc7b0f6f12bfa"
         },
         {
-          "@id": "_:N8214ff636d464e499c6375e4e7dc563e"
+          "@id": "_:Nc2744812650244a49d73f41f6ecbddf2"
         },
         {
-          "@id": "_:N6191fd9ab31d431d97cb750c60b52b4d"
+          "@id": "_:Nd660196d69484dfd94f7d52fbf9390e1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -73,16 +77,16 @@
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Patrick Wright",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Patrick Wright"
       ],
       "sc:citation": [
-        "pubmed:24838564",
         {
           "@id": "https://doi.org/10.1093/nar/gku359"
         },
+        "pubmed:24838564",
         "pmcid:PMC4086077"
       ],
       "sc:description": "sRNA target prediction boosted by comparative information.",
@@ -93,8 +97,8 @@
       "sc:name": "CopraRNA web server",
       "sc:operatingSystem": [
         "Mac",
-        "Linux",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:provider": [
         "University Freiburg",
@@ -107,23 +111,26 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/CopraRNA/"
     },
     {
-      "@id": "_:N1ad9cba5388941b88e7075868ba925cf",
+      "@id": "_:Nf19c2f6027d842b799442e12b3c4adac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0872"
+        "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1910"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3508"
         }
       ],
-      "sc:name": "Phylogenetic tree"
+      "sc:name": "Image"
     },
     {
-      "@id": "_:N853f73d4d0f2493699b9f2dab3b9c908",
+      "@id": "_:N3cca83d470764668bcc47f3fca375208",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -134,7 +141,18 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nec014ec48dc147bbaf2483ab3dd39107",
+      "@id": "_:Ne10edecc45b6401e8e45552aa74dd15f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N983137178d1145a3a17fc7b0f6f12bfa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -150,17 +168,33 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nf2486e5659fb46879e8c89e960fcff66",
+      "@id": "_:Nc2744812650244a49d73f41f6ecbddf2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1910"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:Nd660196d69484dfd94f7d52fbf9390e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3508"
         },
         {
           "@id": "edam:format_3466"
@@ -169,37 +203,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N8214ff636d464e499c6375e4e7dc563e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N6191fd9ab31d431d97cb750c60b52b4d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3466"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nc00ae751e2bb456d84dac52c72c89555",
+      "@id": "_:Ne1d0c93716ed4b91a4866e2b5c313317",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -212,10 +216,6 @@
     {
       "@id": "http://orcid.org/0000-0001-8231-3323",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku359",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bth374",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/randfold",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf8824e6223324d1ca871932bc2bb57ad"
+        "@id": "_:N74380ed375da4277bae841bb1fc9a7bb"
       },
       "bsc:output": {
-        "@id": "_:Nb2470674ba49448dbe53d244c9a1f7ed"
+        "@id": "_:N275b5bd3f26f49abb6533b871073141e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -50,10 +54,10 @@
         "@id": "edam:topic_0659"
       },
       "sc:citation": [
+        "pubmed:15217813",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bth374"
-        },
-        "pubmed:15217813"
+        }
       ],
       "sc:description": "Secondary structure calculation of non-coding RNA sequences.",
       "sc:featureList": {
@@ -61,9 +65,9 @@
       },
       "sc:name": "Randfold",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -73,7 +77,15 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/software/details/Randfold"
     },
     {
-      "@id": "_:Nb2470674ba49448dbe53d244c9a1f7ed",
+      "@id": "_:N74380ed375da4277bae841bb1fc9a7bb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N275b5bd3f26f49abb6533b871073141e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1708"
@@ -82,18 +94,6 @@
         "@id": "edam:format_2076"
       },
       "sc:name": "RNA secondary structure image"
-    },
-    {
-      "@id": "_:Nf8824e6223324d1ca871932bc2bb57ad",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bth374",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

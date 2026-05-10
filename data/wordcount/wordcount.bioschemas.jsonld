@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,17 +44,13 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/wordcount",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N99ae624a31c54391907dcf4a1f641204"
+        "@id": "_:N04654068cc6a4e77bb09167291f7c2de"
       },
       "bsc:output": {
-        "@id": "_:N7a6c3dbc826e44d58fc989af0838b16e"
+        "@id": "_:N8fa075e466034321b1b5b838d64d0b60"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -73,19 +69,19 @@
         }
       ],
       "sc:contributor": [
-        "UK MRC",
-        "EMBOSS Contributors",
         "UK BBSRC",
-        "Wellcome Trust"
+        "Wellcome Trust",
+        "EMBOSS Contributors",
+        "UK MRC"
       ],
       "sc:description": "Count and extract unique words in molecular sequence(s).",
       "sc:featureList": {
         "@id": "edam:operation_0236"
       },
       "sc:funder": [
-        "UK MRC",
         "UK BBSRC",
-        "Wellcome Trust"
+        "Wellcome Trust",
+        "UK MRC"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
@@ -96,25 +92,33 @@
         "Windows"
       ],
       "sc:provider": [
-        "EMBL-EBI",
-        "EMBOSS"
+        "EMBOSS",
+        "EMBL-EBI"
       ],
       "sc:softwareHelp": [
+        {
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+        },
         {
           "@id": "http://emboss.open-bio.org/rel/rel6/apps/wordcount.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/wordcount.html"
     },
     {
-      "@id": "_:N7a6c3dbc826e44d58fc989af0838b16e",
+      "@id": "_:N04654068cc6a4e77bb09167291f7c2de",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N8fa075e466034321b1b5b838d64d0b60",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1261"
@@ -122,12 +126,8 @@
       "sc:name": "Sequence composition report"
     },
     {
-      "@id": "_:N99ae624a31c54391907dcf4a1f641204",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0074092",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gomodo",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N777add2796164f67ab60ceddc7deb6c6"
+          "@id": "_:Nc27670aea37f420a82a9d6a11997e772"
         },
         {
-          "@id": "_:Nf02a88821f2b4421b408a2468e668a52"
+          "@id": "_:Ned6c4b91c534411592fb7dd937b08b8e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_0082"
         },
         {
-          "@id": "edam:topic_0082"
+          "@id": "edam:topic_0128"
         }
       ],
       "sc:citation": [
-        "pubmed:24058518",
         "pmcid:PMC3772745",
+        "pubmed:24058518",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0074092"
         }
@@ -70,10 +66,10 @@
       "sc:description": "This webtool performs automatic homology modeling and ligand docking of GPCR receptors. It uses HHsearch package 1.5.1 for performing sequence alignment. Only GPCR templates are chosen to build 3D model of given sequence by using Modeller 9.20. The obtained 3D model can be then docked with ligands uploaded by users with both Autodock VINA or HADDOCK. Binding pockets can be predicted by the FPOCKET, and structural alignment of models needed for VINA docking is performed by LOVOALIGN. This webtool is built by the Applied Bioinformatics Group at the Department of Biotechnology, University of Verona and by the Institute for Computational Biomedicine (INM-9/IAS-5) of the Forschungszentrum Jülich GmbH and RWTH Aachen University.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0482"
+          "@id": "edam:operation_0474"
         },
         {
-          "@id": "edam:operation_0474"
+          "@id": "edam:operation_0482"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -85,7 +81,18 @@
       "sc:url": "https://gomodo.grs.kfa-juelich.de/php/about.php"
     },
     {
-      "@id": "_:N777add2796164f67ab60ceddc7deb6c6",
+      "@id": "_:Nc27670aea37f420a82a9d6a11997e772",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1915"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Ned6c4b91c534411592fb7dd937b08b8e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -96,15 +103,8 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nf02a88821f2b4421b408a2468e668a52",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1915"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1371/journal.pone.0074092",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
