@@ -36,35 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7522-4007",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/pia",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7522-4007"
       },
       "bsc:input": {
-        "@id": "_:N194137d3a3ca4c03b261c71784b8f23e"
+        "@id": "_:N7d46a058ee0d4dbc86564b61ea2cf974"
       },
       "bsc:output": [
         {
-          "@id": "_:Nfa0832065c454eeabe8c2645024849b5"
+          "@id": "_:Nbdf0740cf8d24e52b4e55f2d78b5041d"
         },
         {
-          "@id": "_:N168fe29690654218af1749dc8fefd8b7"
+          "@id": "_:Nb40ec7ecc1d647f09e79c362493f59ef"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Workflow",
         "Command-line tool",
+        "Workflow",
+        "Library",
         "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3120"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3120"
         },
         {
           "@id": "edam:topic_3520"
@@ -74,31 +78,31 @@
         "@id": "http://orcid.org/0000-0001-7522-4007"
       },
       "sc:citation": [
+        "pubmed:25938255",
+        "pubmed:30474983",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.5b00121"
         },
-        "pubmed:25938255",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.8b00723"
-        },
-        "pubmed:30474983"
+        }
       ],
       "sc:description": "The main focus lays on the integrated inference algorithms, concluding the proteins from a set of identified spectra. But it also allows you to integrate results of various search engines, inspect your peptide spectrum matches, calculate FDR values across different results and visualize the correspondence between PSMs, peptides and proteins.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3767"
+          "@id": "edam:operation_3649"
         },
         {
-          "@id": "edam:operation_3649"
+          "@id": "edam:operation_3767"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "PIA - Protein Inference Algorithms",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CUBiMed.RUB",
       "sc:softwareHelp": {
@@ -108,66 +112,35 @@
       "sc:url": "https://github.com/medbioinf/pia"
     },
     {
-      "@id": "_:N194137d3a3ca4c03b261c71784b8f23e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3711"
-        },
-        {
-          "@id": "edam:format_3702"
-        },
-        {
-          "@id": "edam:format_3713"
-        },
-        {
-          "@id": "edam:format_3681"
-        },
-        {
-          "@id": "edam:format_3684"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3247"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:Nfa0832065c454eeabe8c2645024849b5",
+      "@id": "_:Nbdf0740cf8d24e52b4e55f2d78b5041d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3765"
-        },
-        {
-          "@id": "edam:format_3764"
-        },
-        {
           "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3681"
+          "@id": "edam:format_3765"
         },
         {
           "@id": "edam:format_2206"
         },
         {
           "@id": "edam:format_3247"
+        },
+        {
+          "@id": "edam:format_3681"
+        },
+        {
+          "@id": "edam:format_3764"
         }
       ],
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N168fe29690654218af1749dc8fefd8b7",
+      "@id": "_:Nb40ec7ecc1d647f09e79c362493f59ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0989"
@@ -180,7 +153,7 @@
           "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3681"
+          "@id": "edam:format_3765"
         },
         {
           "@id": "edam:format_2206"
@@ -189,21 +162,48 @@
           "@id": "edam:format_3247"
         },
         {
-          "@id": "edam:format_3765"
+          "@id": "edam:format_3681"
         }
       ],
       "sc:name": "Protein identifier"
     },
     {
-      "@id": "http://orcid.org/0000-0001-7522-4007",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jproteome.8b00723",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7d46a058ee0d4dbc86564b61ea2cf974",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3247"
+        },
+        {
+          "@id": "edam:format_3713"
+        },
+        {
+          "@id": "edam:format_3681"
+        },
+        {
+          "@id": "edam:format_3711"
+        },
+        {
+          "@id": "edam:format_3684"
+        },
+        {
+          "@id": "edam:format_3702"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
     },
     {
       "@id": "https://doi.org/10.1021/acs.jproteome.5b00121",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jproteome.8b00723",
       "@type": "sc:CreativeWork"
     }
   ]

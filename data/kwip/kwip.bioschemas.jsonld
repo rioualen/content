@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/JOURNAL.PCBI.1005727",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/kwip",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Kevin Murray",
       "bsc:input": {
-        "@id": "_:N519504789a7b4b118b7b96a8416b77a4"
+        "@id": "_:N6036ff9ac10e4c27858625ad4a14b191"
       },
       "bsc:output": {
-        "@id": "_:N4973c5779bca4029a0a012e4723e8a0d"
+        "@id": "_:N279dd209b5b142c6806f6a65067dee2a"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
-        },
-        {
           "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0797"
+        },
+        {
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": [
         "pmcid:PMC5600398",
-        "pubmed:28873405",
         {
           "@id": "https://doi.org/10.1371/JOURNAL.PCBI.1005727"
-        }
+        },
+        "pubmed:28873405"
       ],
       "sc:description": "The k-mer weighted inner product (kWIP) is a method for a de novo estimator of genetic similarity without the need of reference genome.",
       "sc:featureList": [
@@ -90,7 +86,18 @@
       "sc:url": "https://github.com/kdmurray91/kwip"
     },
     {
-      "@id": "_:N519504789a7b4b118b7b96a8416b77a4",
+      "@id": "_:N279dd209b5b142c6806f6a65067dee2a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0870"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Sequence distance matrix"
+    },
+    {
+      "@id": "_:N6036ff9ac10e4c27858625ad4a14b191",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0848"
@@ -101,15 +108,8 @@
       "sc:name": "Raw sequence"
     },
     {
-      "@id": "_:N4973c5779bca4029a0a012e4723e8a0d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0870"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Sequence distance matrix"
+      "@id": "https://doi.org/10.1371/JOURNAL.PCBI.1005727",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

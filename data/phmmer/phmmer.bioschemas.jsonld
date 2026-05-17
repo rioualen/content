@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-8626-2148",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkv397",
       "@type": "sc:CreativeWork"
     },
@@ -44,33 +48,29 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "http://orcid.org/0000-0001-8626-2148",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/phmmer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-8626-2148"
       },
       "bsc:input": {
-        "@id": "_:N2d1816274f3f4762ac260a4c84f0ccd0"
+        "@id": "_:N491ce5449a044568a46b17461e2f51a4"
       },
       "bsc:output": [
         {
-          "@id": "_:N930635fcd955455381a322092bc08aff"
+          "@id": "_:N62f49a949ecd4d43a37909c2cf65764b"
         },
         {
-          "@id": "_:Nece3ca99fb204e5d81150822905c93f0"
+          "@id": "_:Ndecc1bc2882041b796d36836e6e41dba"
         },
         {
-          "@id": "_:N4dc60bb3b0664fec94603bc66383749d"
+          "@id": "_:N884e093eb2cd4692b68520bbe52f6b0a"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool"
+        "Command-line tool",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -81,30 +81,30 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25943547",
         "pubmed:27256311",
+        "pmcid:PMC5013910",
         {
           "@id": "https://doi.org/10.1093/nar/gkv397"
         },
-        "pmcid:PMC4489315",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw305"
         },
-        "pmcid:PMC5013910",
-        "pubmed:25943547"
+        "pmcid:PMC4489315"
       ],
       "sc:description": "Search a protein sequence against a protein database using HMMER.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_3460"
         },
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_0224"
         },
         {
           "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0292"
         }
       ],
       "sc:name": "PHMMER",
@@ -119,31 +119,7 @@
       "sc:url": "https://www.ebi.ac.uk/metagenomics/sequence-search/search/phmmer"
     },
     {
-      "@id": "_:N930635fcd955455381a322092bc08aff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2085"
-      },
-      "sc:name": "Structure report"
-    },
-    {
-      "@id": "_:Nece3ca99fb204e5d81150822905c93f0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1394"
-      },
-      "sc:name": "Alignment score or penalty"
-    },
-    {
-      "@id": "_:N4dc60bb3b0664fec94603bc66383749d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:N2d1816274f3f4762ac260a4c84f0ccd0",
+      "@id": "_:N491ce5449a044568a46b17461e2f51a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -152,6 +128,30 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Text"
+    },
+    {
+      "@id": "_:N62f49a949ecd4d43a37909c2cf65764b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:Ndecc1bc2882041b796d36836e6e41dba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2085"
+      },
+      "sc:name": "Structure report"
+    },
+    {
+      "@id": "_:N884e093eb2cd4692b68520bbe52f6b0a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1394"
+      },
+      "sc:name": "Alignment score or penalty"
     }
   ]
 }

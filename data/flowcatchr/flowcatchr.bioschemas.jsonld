@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/flowcatchr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Federico Marini",
       "bsc:input": {
-        "@id": "_:Na9822ac49cd64603895b5a8f3ce570e6"
+        "@id": "_:Na67322c345de4c9aa05b91a38adc84a2"
       },
       "bsc:output": [
         {
-          "@id": "_:Neb240e9c43c443328dcfdd9c90f72436"
+          "@id": "_:Ne3893a87497b4c769543a90702374d8e"
         },
         {
-          "@id": "_:N00fcaedb3e884e6ebdbecc7ef3ba130f"
+          "@id": "_:N434d33f9902548c2a4de22a191d12205"
         },
         {
-          "@id": "_:N126cc0e79cf24cb7b8e83410811ee0fe"
+          "@id": "_:N98f1a1479ad84b9d90f95a057360f476"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -71,11 +67,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4509590",
-        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        }
+        },
+        "pmcid:PMC4509590",
+        "pubmed:25633503"
       ],
       "sc:description": "Set of tools to analyze in vivo microscopy imaging data, focused on tracking flowing blood cells. It guides the steps from segmentation to calculation of features, filtering out particles not of interest, providing also a set of utilities to help checking the quality of the performed operations (e.g. how good the segmentation was). It allows investigating the issue of tracking flowing cells such as in blood vessels, to categorize the particles in flowing, rolling and adherent.",
       "sc:featureList": {
@@ -84,9 +80,9 @@
       "sc:license": "BSD-4-Clause",
       "sc:name": "flowcatchR",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/flowcatchR.html"
@@ -95,7 +91,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowcatchR.html"
     },
     {
-      "@id": "_:Neb240e9c43c443328dcfdd9c90f72436",
+      "@id": "_:Ne3893a87497b4c769543a90702374d8e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3449"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Cell migration track image"
+    },
+    {
+      "@id": "_:N434d33f9902548c2a4de22a191d12205",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -111,23 +123,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N00fcaedb3e884e6ebdbecc7ef3ba130f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3449"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Cell migration track image"
-    },
-    {
-      "@id": "_:N126cc0e79cf24cb7b8e83410811ee0fe",
+      "@id": "_:N98f1a1479ad84b9d90f95a057360f476",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -143,7 +139,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Na9822ac49cd64603895b5a8f3ce570e6",
+      "@id": "_:Na67322c345de4c9aa05b91a38adc84a2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3449"
@@ -156,13 +152,17 @@
           "@id": "edam:format_3579"
         },
         {
-          "@id": "edam:format_3591"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3591"
         }
       ],
       "sc:name": "Cell migration track image"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

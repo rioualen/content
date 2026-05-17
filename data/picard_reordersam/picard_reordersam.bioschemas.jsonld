@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     },
     {
@@ -45,14 +45,14 @@
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N12a6b5fb6117481580dc533a9d31e423"
+          "@id": "_:N7474287d8702422d922af9d2231d2522"
         },
         {
-          "@id": "_:N3b20ddfadc0645cfbf8e873e2ca9b574"
+          "@id": "_:Nb6bec85468db49b39076bfd22517b4d3"
         }
       ],
       "bsc:output": {
-        "@id": "_:N43c2a9b04cca46dd88eb05b8b12671e7"
+        "@id": "_:N865ca75aaa7640a980ec6fe65e9b58d6"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -61,12 +61,12 @@
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         "pmcid:PMC4987906",
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        },
         "pubmed:27137889"
       ],
       "sc:description": "Reorder SAM/BAM to match contig ordering in a particular reference file. Note that this is not the same as sorting as done by the SortSam tool, which sorts by either coordinate values or query name. The ordering in ReorderSam is based on exact name matching of contigs/chromosomes. Reads that are mapped to a contig that is not in the new reference file are not included in the output.",
@@ -86,34 +86,7 @@
       "sc:url": "https://broadinstitute.github.io/picard/"
     },
     {
-      "@id": "_:N12a6b5fb6117481580dc533a9d31e423",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N3b20ddfadc0645cfbf8e873e2ca9b574",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2573"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N43c2a9b04cca46dd88eb05b8b12671e7",
+      "@id": "_:N865ca75aaa7640a980ec6fe65e9b58d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -124,7 +97,34 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@id": "_:N7474287d8702422d922af9d2231d2522",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_2573"
+        }
+      ],
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Nb6bec85468db49b39076bfd22517b4d3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     }
   ]

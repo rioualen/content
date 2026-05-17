@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/17.12.1093",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/lucy",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -44,18 +48,18 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N886858e9199c44969c8da07f22f180f7"
+          "@id": "_:Nfebf1734b33b4538a4114b9890373005"
         },
         {
-          "@id": "_:N763f4776e2b34ec9aff8011b0110d728"
+          "@id": "_:N01fcb9d48fd14d2ca042ad922f104b2f"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7585f3642fbd4317be98e6721603767e"
+          "@id": "_:N9f1d6502b7e74bf8b3e7471800e865eb"
         },
         {
-          "@id": "_:N41f2c67ce7ba445da1f911ad19d2875e"
+          "@id": "_:N99d6b53cfe61437c80c47d7391a3e227"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -72,13 +76,13 @@
       "sc:description": "A program for DNA sequence quality trimming and vector removal. Its purpose is to process DNA sequence data acquired from DNA sequencers to prepare the data for downstream processing applications such as genome assembly.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3218"
+        },
+        {
           "@id": "edam:operation_3192"
         },
         {
           "@id": "edam:operation_3219"
-        },
-        {
-          "@id": "edam:operation_3218"
         }
       ],
       "sc:license": "GPL-2.0",
@@ -91,15 +95,23 @@
       "sc:url": "https://sourceforge.net/projects/lucy/"
     },
     {
-      "@id": "_:N7585f3642fbd4317be98e6721603767e",
+      "@id": "_:Nfebf1734b33b4538a4114b9890373005",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
+        "@id": "edam:data_3497"
       },
-      "sc:name": "DNA sequence"
+      "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:N41f2c67ce7ba445da1f911ad19d2875e",
+      "@id": "_:N01fcb9d48fd14d2ca042ad922f104b2f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3497"
+      },
+      "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "_:N9f1d6502b7e74bf8b3e7471800e865eb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -107,24 +119,12 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N886858e9199c44969c8da07f22f180f7",
+      "@id": "_:N99d6b53cfe61437c80c47d7391a3e227",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3497"
+        "@id": "edam:data_3494"
       },
-      "sc:name": "DNA sequence (raw)"
-    },
-    {
-      "@id": "_:N763f4776e2b34ec9aff8011b0110d728",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3497"
-      },
-      "sc:name": "DNA sequence (raw)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/17.12.1093",
-      "@type": "sc:CreativeWork"
+      "sc:name": "DNA sequence"
     }
   ]
 }

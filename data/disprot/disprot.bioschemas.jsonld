@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkab1082",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/disprot",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,28 +43,28 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N724fa2bffa484e89adb41e6b7fd33f13"
+          "@id": "_:N6c177433fb8c4d91996130eac58b0b76"
         },
         {
-          "@id": "_:Nce775b2452664997a49498593d83de4d"
+          "@id": "_:Nd291e95540b442f99ca592fc51ed4c71"
         },
         {
-          "@id": "_:N69d045cee500446a8e990e2e7374a520"
+          "@id": "_:Ndf6f130b842c43eeb469b35628a7fa27"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nde784bcb333d44a9869da7e84774b5fe"
+          "@id": "_:N33db9a1e9d114344a9ec1c818cdaea58"
         },
         {
-          "@id": "_:Nfa45310e98a742a5b0a2697f9f9df09a"
+          "@id": "_:Na5b084abc771409bb0d89cd2119ef28b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Database portal",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3538"
@@ -96,9 +88,9 @@
       "sc:license": "CC-BY-NC-1.0",
       "sc:name": "Database of protein disorder (DisProt)",
       "sc:operatingSystem": [
+        "Windows",
         "Linux",
-        "Mac",
-        "Windows"
+        "Mac"
       ],
       "sc:provider": "University of Padua, Department of Biomedical Sciences, BioComputing UP lab",
       "sc:softwareHelp": {
@@ -108,31 +100,23 @@
       "sc:url": "https://disprot.org/"
     },
     {
-      "@id": "_:N724fa2bffa484e89adb41e6b7fd33f13",
+      "@id": "_:N33db9a1e9d114344a9ec1c818cdaea58",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2723"
+        "@id": "edam:data_1277"
       },
-      "sc:name": "Protein ID (DisProt)"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nce775b2452664997a49498593d83de4d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N69d045cee500446a8e990e2e7374a520",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1009"
-      },
-      "sc:name": "Protein name"
-    },
-    {
-      "@id": "_:Nde784bcb333d44a9869da7e84774b5fe",
+      "@id": "_:Na5b084abc771409bb0d89cd2119ef28b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
@@ -148,20 +132,36 @@
       "sc:name": "Protein structure report"
     },
     {
-      "@id": "_:Nfa45310e98a742a5b0a2697f9f9df09a",
+      "@id": "_:N6c177433fb8c4d91996130eac58b0b76",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1277"
+        "@id": "edam:data_2723"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3464"
-        }
-      ],
-      "sc:name": "Protein features"
+      "sc:name": "Protein ID (DisProt)"
+    },
+    {
+      "@id": "_:Nd291e95540b442f99ca592fc51ed4c71",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Ndf6f130b842c43eeb469b35628a7fa27",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1009"
+      },
+      "sc:name": "Protein name"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkab1082",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,52 +36,56 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr404",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/preda",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Francesco Ferrari",
       "bsc:input": [
         {
-          "@id": "_:N29ca2bd302f84f93abca8edbd4436992"
+          "@id": "_:N2c8e78abd49241c69448534dd8745320"
         },
         {
-          "@id": "_:N72bf4d8b35ac40cf9b633280af2e8e9f"
+          "@id": "_:N1e0f9fc8244d4d79a0c140dd172d18b8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf4c9cebbd1844f99a6e26b11d67f9ee8"
+          "@id": "_:N13244c6fcc664b129f0770efba154d0b"
         },
         {
-          "@id": "_:Na077ad222cb548dfb45a8eafd9291533"
+          "@id": "_:N40b7b084b6354cd2ad067ac11ae09c9f"
         },
         {
-          "@id": "_:Nf798c759d33c4f68ad26c8faf1bc75f5"
+          "@id": "_:Ne49bd83507d2431a8b28e4a36f3c7036"
         },
         {
-          "@id": "_:N523c62c771a34f4e9e09721eed307494"
+          "@id": "_:Nf04ffa235afd4ceaabb47db4f6c576af"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_0085"
         },
         {
-          "@id": "edam:topic_0085"
+          "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_3055"
         }
       ],
       "sc:citation": [
+        "pubmed:21742634",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr404"
-        },
-        "pubmed:21742634"
+        }
       ],
       "sc:description": "Package for the position related analysis of quantitative functional genomics data.",
       "sc:featureList": {
@@ -91,8 +95,8 @@
       "sc:name": "PREDA",
       "sc:operatingSystem": [
         "Windows",
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/PREDA.html"
@@ -101,39 +105,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/PREDA.html"
     },
     {
-      "@id": "_:Nf4c9cebbd1844f99a6e26b11d67f9ee8",
+      "@id": "_:N2c8e78abd49241c69448534dd8745320",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_3112"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Na077ad222cb548dfb45a8eafd9291533",
+      "@id": "_:N1e0f9fc8244d4d79a0c140dd172d18b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:Nf798c759d33c4f68ad26c8faf1bc75f5",
+      "@id": "_:N13244c6fcc664b129f0770efba154d0b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2166"
@@ -149,7 +143,23 @@
       "sc:name": "Sequence composition plot"
     },
     {
-      "@id": "_:N523c62c771a34f4e9e09721eed307494",
+      "@id": "_:N40b7b084b6354cd2ad067ac11ae09c9f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Ne49bd83507d2431a8b28e4a36f3c7036",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1288"
@@ -165,30 +175,20 @@
       "sc:name": "Genome map"
     },
     {
-      "@id": "_:N29ca2bd302f84f93abca8edbd4436992",
+      "@id": "_:Nf04ffa235afd4ceaabb47db4f6c576af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
       "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N72bf4d8b35ac40cf9b633280af2e8e9f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr404",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,28 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-8839-411X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8134-5929",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/napari-kics",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-8134-5929"
       },
       "bsc:input": {
-        "@id": "_:N658c9aa0e05749599f7c6e0bd63c6ecf"
+        "@id": "_:N435ce17bf3e94597b10e0a0445fd63c7"
       },
       "bsc:output": [
         {
-          "@id": "_:N46e704d326104027b675e3deb25f8fb6"
+          "@id": "_:N4977ed05f7764482839b68e246c8b333"
         },
         {
-          "@id": "_:N61662c7845d0407a8c04d0a2864235ff"
+          "@id": "_:Nade4debce7b14a60a7e36668f454ac07"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -66,10 +58,10 @@
         "@id": "edam:topic_0196"
       },
       "sc:author": [
-        "Alexandr Dibrov",
         {
           "@id": "https://orcid.org/0000-0001-8839-411X"
-        }
+        },
+        "Alexandr Dibrov"
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0002-8134-5929"
@@ -77,24 +69,43 @@
       "sc:description": "A plugin to estimate chromosome sizes from karyotype images.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3443"
+          "@id": "edam:operation_3180"
         },
         {
-          "@id": "edam:operation_3180"
+          "@id": "edam:operation_3443"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "napari-kics",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareVersion": "0.0.3.rc2",
       "sc:url": "https://github.com/mpicbg-csbd/napari-kics"
     },
     {
-      "@id": "_:N46e704d326104027b675e3deb25f8fb6",
+      "@id": "_:N4977ed05f7764482839b68e246c8b333",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3591"
+        },
+        {
+          "@id": "edam:format_3604"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nade4debce7b14a60a7e36668f454ac07",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -105,26 +116,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N61662c7845d0407a8c04d0a2864235ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3604"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N658c9aa0e05749599f7c6e0bd63c6ecf",
+      "@id": "_:N435ce17bf3e94597b10e0a0445fd63c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -133,6 +125,14 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8839-411X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8134-5929",
+      "@type": "sc:Person"
     }
   ]
 }

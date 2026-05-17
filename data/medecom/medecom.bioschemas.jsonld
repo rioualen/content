@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13059-017-1182-6",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/medecom",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pavlo Lutsik",
       "bsc:input": {
-        "@id": "_:Nf23187efbee24d609076994effdeabd7"
+        "@id": "_:Nd31058da6ff9410cb09f5328337f301c"
       },
       "bsc:output": [
         {
-          "@id": "_:N104b18d5cd9449759eaacab5395106a9"
+          "@id": "_:N9bd50f08064a4314aa0817d462de9a42"
         },
         {
-          "@id": "_:N082925a5143744758b41c881b8115d57"
+          "@id": "_:N71e4654aa14e4aa58c780a58088d7846"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -75,10 +71,10 @@
         "Martin Slawski"
       ],
       "sc:citation": [
-        "pubmed:28340624",
         {
           "@id": "https://doi.org/10.1186/s13059-017-1182-6"
         },
+        "pubmed:28340624",
         "pmcid:PMC5366155"
       ],
       "sc:description": "Computational method for decomposition of heterogeneous DNA methylomes. It applies matrix factorization with biologically motivated constratints and regularization to discover and quantify latent components in methylomes of multi-cellual samples.",
@@ -88,13 +84,13 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "MeDeCom",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": [
+        "hdhub",
         "Walter lab",
-        "Hein Lab",
-        "hdhub"
+        "Hein Lab"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/lutsik/MeDeCom/blob/master/README"
@@ -103,7 +99,26 @@
       "sc:url": "http://public.genetik.uni-sb.de/medecom/"
     },
     {
-      "@id": "_:N104b18d5cd9449759eaacab5395106a9",
+      "@id": "_:N9bd50f08064a4314aa0817d462de9a42",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N71e4654aa14e4aa58c780a58088d7846",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -114,26 +129,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N082925a5143744758b41c881b8115d57",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3604"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nf23187efbee24d609076994effdeabd7",
+      "@id": "_:Nd31058da6ff9410cb09f5328337f301c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -142,6 +138,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13059-017-1182-6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

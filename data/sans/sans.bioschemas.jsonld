@@ -36,26 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13015-020-00164-3",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sans",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Neae8eacfa400465ea4ac4095a9bdc55d"
+          "@id": "_:N361d3b27670b430faf40107a9e1e4a67"
         },
         {
-          "@id": "_:N14701cb78fa04d50afa01dfc2efa1899"
+          "@id": "_:Nfdc6fc66923b4a219e9f982512368f60"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5b7535cdff8f40d7badaefb9851e9225"
+          "@id": "_:N668798c927824468bf7a0143888fea09"
         },
         {
-          "@id": "_:N3958df2cd43d49d4acdf781776835f38"
+          "@id": "_:Ncf7a7b36b70048dda6b97df27491f6ae"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -70,10 +66,10 @@
       ],
       "sc:citation": [
         "pubmed:32280365",
+        "pmcid:PMC7137503",
         {
           "@id": "https://doi.org/10.1186/s13015-020-00164-3"
-        },
-        "pmcid:PMC7137503"
+        }
       ],
       "sc:description": "SANS is a freely available command line tool for phylogenetic \nreconstruction. It is alignment- and reference-free, and accepts \n(multiple) FASTA or FASTQ files containing complete genomes, assembled \ncontigs, or raw reads as input. Sequence segments (in terms of k-mers) \nthat are shared by a set of genomes are used as indicators for \nphylogenetic splits. Splits are combined, weighted, filtered and output \nin tab separated format or Newick format. They can visualized as a phylogenetic tree or \nnetwork using existing tools such as SplitsTree. SANS is implemented in \nC++.",
       "sc:featureList": {
@@ -92,18 +88,29 @@
       "sc:url": "https://gitlab.ub.uni-bielefeld.de/gi/sans"
     },
     {
-      "@id": "_:N5b7535cdff8f40d7badaefb9851e9225",
+      "@id": "_:N361d3b27670b430faf40107a9e1e4a67",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3272"
+        "@id": "edam:data_1234"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1910"
+        "@id": "edam:format_1919"
       },
-      "sc:name": "Species tree"
+      "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:N3958df2cd43d49d4acdf781776835f38",
+      "@id": "_:Nfdc6fc66923b4a219e9f982512368f60",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1919"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N668798c927824468bf7a0143888fea09",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -114,26 +121,19 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:Neae8eacfa400465ea4ac4095a9bdc55d",
+      "@id": "_:Ncf7a7b36b70048dda6b97df27491f6ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1234"
+        "@id": "edam:data_3272"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1919"
+        "@id": "edam:format_1910"
       },
-      "sc:name": "Sequence set (nucleic acid)"
+      "sc:name": "Species tree"
     },
     {
-      "@id": "_:N14701cb78fa04d50afa01dfc2efa1899",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1919"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
+      "@id": "https://doi.org/10.1186/s13015-020-00164-3",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

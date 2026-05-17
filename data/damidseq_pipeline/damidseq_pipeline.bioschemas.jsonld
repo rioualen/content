@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv386",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/damidseq_pipeline",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Owen Marshall",
       "bsc:input": {
-        "@id": "_:N412dea745da74948b2699595ad46275b"
+        "@id": "_:Naa23477d7d6747e69b76fa77866c3724"
       },
       "bsc:output": {
-        "@id": "_:N956305349b224dc2986c61b54f02a7c1"
+        "@id": "_:N56e3c9a399994b9c86eeecde109c2023"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Workflow"
+        "Workflow",
+        "Script"
       ],
       "sc:applicationSubCategory": [
         {
@@ -62,8 +66,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4595905",
         "pubmed:26112292",
+        "pmcid:PMC4595905",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv386"
         }
@@ -71,13 +75,13 @@
       "sc:description": "Single script that automatically handles sequence alignment, read extension, binned counts, normalisation, pseudocount addition and final ratio file generation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3222"
         },
         {
           "@id": "edam:operation_3798"
         },
         {
-          "@id": "edam:operation_3222"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "GPL-2.0",
@@ -92,7 +96,23 @@
       "sc:url": "http://owenjm.github.io/damidseq_pipeline/"
     },
     {
-      "@id": "_:N956305349b224dc2986c61b54f02a7c1",
+      "@id": "_:Naa23477d7d6747e69b76fa77866c3724",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:N56e3c9a399994b9c86eeecde109c2023",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -106,26 +126,6 @@
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N412dea745da74948b2699595ad46275b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv386",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

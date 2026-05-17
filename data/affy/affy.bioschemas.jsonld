@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-5282-3250",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/affy",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Rafael A. Irizarry",
       "bsc:input": {
-        "@id": "_:N67eade4540174069bd7d5882725b026c"
+        "@id": "_:N6d3087592db240f6bd5a0f58d092eaba"
       },
       "bsc:output": {
-        "@id": "_:Nc2ce2e65983c47288f6878ebf9f8d60f"
+        "@id": "_:N427509a55d314e4ebbd26afd6471d409"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -66,11 +62,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:27605027",
-        "pmcid:PMC5003452",
         {
           "@id": "https://doi.org/10.3390/microarrays3010001"
-        }
+        },
+        "pubmed:27605027",
+        "pmcid:PMC5003452"
       ],
       "sc:contributor": {
         "@id": "http://orcid.org/0000-0001-5282-3250"
@@ -83,8 +79,8 @@
       "sc:name": "affy",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/affy.html"
@@ -93,18 +89,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/affy.html"
     },
     {
-      "@id": "_:N67eade4540174069bd7d5882725b026c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:Nc2ce2e65983c47288f6878ebf9f8d60f",
+      "@id": "_:N427509a55d314e4ebbd26afd6471d409",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -115,8 +100,23 @@
       "sc:name": "Report"
     },
     {
+      "@id": "_:N6d3087592db240f6bd5a0f58d092eaba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
       "@id": "https://doi.org/10.3390/microarrays3010001",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-5282-3250",
+      "@type": "sc:Person"
     }
   ]
 }

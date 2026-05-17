@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkr777",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gpcr_sarfari_small_molecule_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mark Davies",
       "bsc:input": {
-        "@id": "_:N64944c4ea9954fcdaed75d466203f435"
+        "@id": "_:N724ab36f0a524343936c1e3a084b280e"
       },
       "bsc:output": {
-        "@id": "_:Ne8fb94eac7f34a8e820bf14395fd54c0"
+        "@id": "_:N987b09b45515447e9d03910058873f4f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -57,10 +53,10 @@
       "sc:author": "ChEMBL Team",
       "sc:citation": [
         "pmcid:PMC3245175",
-        "pubmed:21948594",
         {
           "@id": "https://doi.org/10.1093/nar/gkr777"
-        }
+        },
+        "pubmed:21948594"
       ],
       "sc:description": "Search against small molecules stored in GPCR SARfari database.",
       "sc:featureList": {
@@ -68,24 +64,32 @@
       },
       "sc:name": "GPCR SARfari Small Molecule Search",
       "sc:operatingSystem": [
+        "Mac",
         "Windows",
-        "Linux",
-        "Mac"
+        "Linux"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "https://www.ebi.ac.uk/chembl/sarfari/gpcrsarfari/compound"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "https://www.ebi.ac.uk/chembl/sarfari/gpcrsarfari/compound"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/chembl/sarfari/gpcrsarfari/compound"
     },
     {
-      "@id": "_:N64944c4ea9954fcdaed75d466203f435",
+      "@id": "_:N987b09b45515447e9d03910058873f4f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0962"
+      },
+      "sc:name": "Small molecule report"
+    },
+    {
+      "@id": "_:N724ab36f0a524343936c1e3a084b280e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3490"
@@ -93,12 +97,8 @@
       "sc:name": "Chemical structure sketch"
     },
     {
-      "@id": "_:Ne8fb94eac7f34a8e820bf14395fd54c0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0962"
-      },
-      "sc:name": "Small molecule report"
+      "@id": "https://doi.org/10.1093/nar/gkr777",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

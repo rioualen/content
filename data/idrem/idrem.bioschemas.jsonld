@@ -41,45 +41,45 @@
       "biotools:primaryContact": "Jun Ding",
       "bsc:input": [
         {
-          "@id": "_:Nb8355c6ba28943e38d1ded0a68a2d73c"
+          "@id": "_:N9fbfa778b9fa4fc9b9a187a19e36b813"
         },
         {
-          "@id": "_:N376bdc59657b46248c649c39ae325250"
+          "@id": "_:N0b6e90c63e9a49ff857a526782a79791"
         },
         {
-          "@id": "_:N7be85d2cdc5245edaf3fa38949d59f9b"
+          "@id": "_:N0b83cafb9a5d47109187622a2a79eefe"
         }
       ],
       "bsc:output": {
-        "@id": "_:N2c5780e2abd4498e9647fbd51778015a"
+        "@id": "_:Nda1c394763a04c52a955a2c7c6c75c3e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_1775"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_1775"
+          "@id": "edam:topic_3473"
         }
       ],
       "sc:citation": [
+        "pubmed:29538379",
+        "pmcid:PMC5868853",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1006019"
-        },
-        "pmcid:PMC5868853",
-        "pubmed:29538379"
+        }
       ],
       "sc:description": "An interactive version of DREM software, which enables to integrate static protein-DNA interaction data with different types of time series data for reconstructing dynamic regulatory networks. It also allows users to interactively visualize a gene, TF, path or model-centric view of each of these data types, their interactions and their impact on the resulting model.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3083"
+          "@id": "edam:operation_3439"
         },
         {
           "@id": "edam:operation_3664"
@@ -88,16 +88,16 @@
           "@id": "edam:operation_3672"
         },
         {
-          "@id": "edam:operation_3439"
+          "@id": "edam:operation_3083"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "iDREM",
       "sc:operatingSystem": [
+        "Windows",
         "Linux",
-        "Mac",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/phoenixding/idrem/blob/master/UserManual.pdf"
@@ -105,7 +105,50 @@
       "sc:url": "https://github.com/phoenixding/idrem"
     },
     {
-      "@id": "_:N2c5780e2abd4498e9647fbd51778015a",
+      "@id": "_:N9fbfa778b9fa4fc9b9a187a19e36b813",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N0b6e90c63e9a49ff857a526782a79791",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0954"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3326"
+      },
+      "sc:name": "Database cross-mapping"
+    },
+    {
+      "@id": "_:N0b83cafb9a5d47109187622a2a79eefe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Nda1c394763a04c52a955a2c7c6c75c3e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -119,49 +162,6 @@
         }
       ],
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Nb8355c6ba28943e38d1ded0a68a2d73c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N376bdc59657b46248c649c39ae325250",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N7be85d2cdc5245edaf3fa38949d59f9b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0954"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3326"
-      },
-      "sc:name": "Database cross-mapping"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pcbi.1006019",

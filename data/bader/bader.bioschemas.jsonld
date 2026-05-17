@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bader",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Andreas Neudecker",
       "bsc:input": {
-        "@id": "_:N9a3c6de218854187b60c2cace2907393"
+        "@id": "_:Na9bd5791e37648789c1033e77f60ca83"
       },
       "bsc:output": {
-        "@id": "_:N2c794c6066ee42169e2b3dbc08cb88e4"
+        "@id": "_:N6d9c6ca42b164f4895f274c4d01d8382"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -72,18 +68,18 @@
       "sc:description": "For RNA sequencing count data, this tool fits a Bayesian hierarchical model. Its algorithm returns the posterior probability of differential expression for each gene between two groups A and B. The joint posterior distribution of the variables in the model can be returned in the form of posterior samples, which can be used for further down-stream analyses such as gene set enrichment.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3563"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3563"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "BADER",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/BADER.html"
@@ -92,7 +88,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/BADER.html"
     },
     {
-      "@id": "_:N9a3c6de218854187b60c2cace2907393",
+      "@id": "_:N6d9c6ca42b164f4895f274c4d01d8382",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Na9bd5791e37648789c1033e77f60ca83",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2084"
@@ -103,15 +110,8 @@
       "sc:name": "Nucleic acid report"
     },
     {
-      "@id": "_:N2c794c6066ee42169e2b3dbc08cb88e4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
