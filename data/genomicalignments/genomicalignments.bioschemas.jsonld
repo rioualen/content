@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1003118",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genomicalignments",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BioConductor Package Maintainer",
       "bsc:input": [
         {
-          "@id": "_:N723de280918443c59fbf9472afcfe90c"
+          "@id": "_:N2110ead0916a464fadb161cddbd540bb"
         },
         {
-          "@id": "_:Ncc9c005806c44e49935066b2a148ad90"
+          "@id": "_:Nb806ff64e2e740bf9261290ca71f5384"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0023b95809914ab9b5d83d8426359d61"
+          "@id": "_:N6966571f08774dc999d6d17ef10edd6c"
         },
         {
-          "@id": "_:Nfdbfa93bf6d94da3bef8d14bbe65367a"
+          "@id": "_:N43d47203de4d46c1987163db3f31e100"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:23950696",
         "pmcid:PMC3738458",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
-        },
-        "pubmed:23950696"
+        }
       ],
       "sc:description": "Provides efficient containers for storing and manipulating short genomic alignments (typically obtained by aligning short reads to a reference genome). This includes read counting, computing the coverage, junction detection, and working with the nucleotide content of the alignments.",
       "sc:featureList": [
@@ -85,8 +89,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "GenomicAlignments",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -96,26 +100,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GenomicAlignments.html"
     },
     {
-      "@id": "_:N723de280918443c59fbf9472afcfe90c",
+      "@id": "_:N6966571f08774dc999d6d17ef10edd6c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1921"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence alignment report"
+    },
+    {
+      "@id": "_:N43d47203de4d46c1987163db3f31e100",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2573"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2306"
-        },
-        {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_1921"
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Ncc9c005806c44e49935066b2a148ad90",
+      "@id": "_:N2110ead0916a464fadb161cddbd540bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -125,49 +142,32 @@
           "@id": "edam:format_2573"
         },
         {
-          "@id": "edam:format_2306"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_2306"
         }
       ],
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N0023b95809914ab9b5d83d8426359d61",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_1921"
-        }
-      ],
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:Nfdbfa93bf6d94da3bef8d14bbe65367a",
+      "@id": "_:Nb806ff64e2e740bf9261290ca71f5384",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1921"
+          "@id": "edam:format_2306"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2573"
+        },
+        {
+          "@id": "edam:format_2572"
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1003118",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

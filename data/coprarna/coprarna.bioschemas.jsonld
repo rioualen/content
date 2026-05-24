@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gku359",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/coprarna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -49,26 +45,26 @@
         "Patrick Wright"
       ],
       "bsc:input": {
-        "@id": "_:Nf52fea52f1604c70906d7a871bc6b4d3"
+        "@id": "_:N88e2c3cd73804c13ad7ffba9a02ac404"
       },
       "bsc:output": [
         {
-          "@id": "_:Nba4359edcfaa40f7926e0eda8b577dae"
+          "@id": "_:Nbe51eac459d64f18875aad5bd354feab"
         },
         {
-          "@id": "_:Nf5a0d845f34b4fb19f6e17c7337d4139"
+          "@id": "_:Nbd1040f69a284adbae2ac73bab990dee"
         },
         {
-          "@id": "_:N0922629c2908443d92e400dcbee6e845"
+          "@id": "_:Nb0e299ef28174f048795b3a99438f955"
         },
         {
-          "@id": "_:N4cc3fee7367e4b80818ea1738e0ce424"
+          "@id": "_:N7762fd9b8130488596ff21bcbd75c370"
         },
         {
-          "@id": "_:Nfedb6cacc20a46b195ba9a352fa3890c"
+          "@id": "_:Ndb62ee8bff0d4025b4428e40b4e0dc9d"
         },
         {
-          "@id": "_:N69d4e981437b4c4b9936893134f0c4d8"
+          "@id": "_:N058115d3f10c4d2da6e5155905e8f87c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -77,17 +73,17 @@
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Patrick Wright",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Patrick Wright"
       ],
       "sc:citation": [
+        "pubmed:24838564",
+        "pmcid:PMC4086077",
         {
           "@id": "https://doi.org/10.1093/nar/gku359"
-        },
-        "pmcid:PMC4086077",
-        "pubmed:24838564"
+        }
       ],
       "sc:description": "sRNA target prediction boosted by comparative information.",
       "sc:featureList": {
@@ -96,9 +92,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "CopraRNA web server",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": [
         "University Freiburg",
@@ -111,42 +107,83 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/CopraRNA/"
     },
     {
-      "@id": "_:Nba4359edcfaa40f7926e0eda8b577dae",
+      "@id": "_:Nbe51eac459d64f18875aad5bd354feab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:Nbd1040f69a284adbae2ac73bab990dee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3547"
+        },
+        {
           "@id": "edam:format_3508"
         },
         {
           "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nf5a0d845f34b4fb19f6e17c7337d4139",
+      "@id": "_:Nb0e299ef28174f048795b3a99438f955",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1910"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_1910"
         }
       ],
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N0922629c2908443d92e400dcbee6e845",
+      "@id": "_:N7762fd9b8130488596ff21bcbd75c370",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3466"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Ndb62ee8bff0d4025b4428e40b4e0dc9d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N058115d3f10c4d2da6e5155905e8f87c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -162,48 +199,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N4cc3fee7367e4b80818ea1738e0ce424",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:Nfedb6cacc20a46b195ba9a352fa3890c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N69d4e981437b4c4b9936893134f0c4d8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:Nf52fea52f1604c70906d7a871bc6b4d3",
+      "@id": "_:N88e2c3cd73804c13ad7ffba9a02ac404",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -216,6 +212,10 @@
     {
       "@id": "http://orcid.org/0000-0001-8231-3323",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku359",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

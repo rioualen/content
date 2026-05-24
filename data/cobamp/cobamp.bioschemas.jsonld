@@ -36,42 +36,46 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-9604-9586",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/CoBAMP",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-9604-9586"
       },
       "bsc:input": {
-        "@id": "_:N6ad42557271d4ad8af7b244b9289c63a"
+        "@id": "_:Nc42c5e3754714c829a23efbaf1bbb6e7"
       },
       "bsc:output": {
-        "@id": "_:Nf1f4350c0ee345e891bd0331ed837274"
+        "@id": "_:Nf9fcdb3d80b648308fec896015cbec08"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
+        "Script",
         "Library",
-        "Script"
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0602"
         },
         {
+          "@id": "edam:topic_2259"
+        },
+        {
           "@id": "edam:topic_3070"
         },
         {
           "@id": "edam:topic_0092"
-        },
-        {
-          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
-        "pubmed:31359031",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btz598"
-        }
+        },
+        "pubmed:31359031"
       ],
       "sc:description": "CoBAMP (Constraint-Based Analysis of Metabolic Pathways) is a Python package containing pathway analysis methods for use with constraint-based metabolic models. The main purpose is to provide a framework that is both modular and flexible enough to be integrated in other packages (such as cobrapy, framed or cameo) that already implement generic data structures for metabolic models.",
       "sc:featureList": {
@@ -82,8 +86,8 @@
       "sc:name": "CoBAMP",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
@@ -97,15 +101,7 @@
       "sc:url": "https://github.com/BioSystemsUM/cobamp"
     },
     {
-      "@id": "_:Nf1f4350c0ee345e891bd0331ed837274",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N6ad42557271d4ad8af7b244b9289c63a",
+      "@id": "_:Nc42c5e3754714c829a23efbaf1bbb6e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -116,8 +112,12 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "https://orcid.org/0000-0001-9604-9586",
-      "@type": "sc:Person"
+      "@id": "_:Nf9fcdb3d80b648308fec896015cbec08",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:name": "Pathway or network"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btz598",

@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1003118",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genomicranges",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BioConductor Package Maintainer",
       "bsc:input": {
-        "@id": "_:Ne572e348aa914f9a956e7f21b7864f89"
+        "@id": "_:N1e85cef7d79141cd9c2dd805617546a8"
       },
       "bsc:output": {
-        "@id": "_:N6ee90b3f349f4acaba1255e1a1f2267f"
+        "@id": "_:N71fa96780a774a198c1ba517c279871b"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3071"
         }
       ],
       "sc:citation": [
+        "pubmed:23950696",
         "pmcid:PMC3738458",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
-        },
-        "pubmed:23950696"
+        }
       ],
       "sc:description": "This package defines general purpose containers for storing and manipulating genomic intervals and variables defined along a genome. More specialized containers for representing and manipulating short alignments against a reference genome, or a matrix-like summarization of an experiment, are defined in the GenomicAlignments and SummarizedExperiment packages respectively.",
       "sc:featureList": [
@@ -77,8 +81,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "GenomicRanges",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -88,18 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GenomicRanges.html"
     },
     {
-      "@id": "_:Ne572e348aa914f9a956e7f21b7864f89",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N6ee90b3f349f4acaba1255e1a1f2267f",
+      "@id": "_:N71fa96780a774a198c1ba517c279871b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -110,8 +103,15 @@
       "sc:name": "Sequence range"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1003118",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N1e85cef7d79141cd9c2dd805617546a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid features"
     }
   ]
 }

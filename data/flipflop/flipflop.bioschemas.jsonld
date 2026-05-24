@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu317",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/flipflop",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Elsa Bernard",
       "bsc:input": {
-        "@id": "_:Ncad9fe605687469ab91bc31936629819"
+        "@id": "_:N9b452d59875c46008f4197ebd1e9b872"
       },
       "bsc:output": {
-        "@id": "_:Nc2f73f7aeb104b2e8c0425b7716a452c"
+        "@id": "_:N6ff8e3c52d664d47817e513b2787b634"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -56,54 +52,65 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3512"
+          "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_3320"
         },
         {
           "@id": "edam:topic_0099"
         },
         {
-          "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_3320"
+          "@id": "edam:topic_3512"
         }
       ],
       "sc:citation": [
+        "pubmed:24813214",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu317"
         },
-        "pubmed:24813214",
         "pmcid:PMC4147886"
       ],
       "sc:description": "Discovers which isoforms of a gene are expressed in a given sample together with their abundances, based on RNA-Seq read data. It takes an alignment file in SAM format as input, and it can also discover transcripts from several samples simultaneously, increasing statistical power.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3680"
+          "@id": "edam:operation_2499"
         },
         {
-          "@id": "edam:operation_2499"
+          "@id": "edam:operation_3680"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "flipflop",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://projects.cbio.mines-paristech.fr/flipflop/"
+          "@id": "http://bioconductor.org/packages/release/bioc/html/flipflop.html"
         },
         {
-          "@id": "http://bioconductor.org/packages/release/bioc/html/flipflop.html"
+          "@id": "http://projects.cbio.mines-paristech.fr/flipflop/"
         }
       ],
       "sc:softwareVersion": "1.12.0",
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flipflop.html"
     },
     {
-      "@id": "_:Nc2f73f7aeb104b2e8c0425b7716a452c",
+      "@id": "_:N9b452d59875c46008f4197ebd1e9b872",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N6ff8e3c52d664d47817e513b2787b634",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -114,15 +121,8 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:Ncad9fe605687469ab91bc31936629819",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Sequence alignment"
+      "@id": "https://doi.org/10.1093/bioinformatics/btu317",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

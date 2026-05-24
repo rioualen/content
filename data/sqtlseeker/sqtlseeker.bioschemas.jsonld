@@ -36,11 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41467-020-20578-2",
+      "@id": "https://doi.org/10.1038/ncomms5698",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1038/ncomms5698",
+      "@id": "https://doi.org/10.1038/s41467-020-20578-2",
       "@type": "sc:CreativeWork"
     },
     {
@@ -48,17 +48,17 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf66022a6e3d745b38175a6092939d4eb"
+          "@id": "_:N456b43a6085c43f9baee07870e541066"
         },
         {
-          "@id": "_:N78875419395f438184bda06f39d5acc7"
+          "@id": "_:Nf31af1c2f5a4493ebf5d4e3b2d94374e"
         },
         {
-          "@id": "_:Nf350565295284a50b77e3a09053f77a1"
+          "@id": "_:N71ab8976eaf24e16a30bbc24c2b1d9cc"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nd4d4d112788e40389afd155653058702"
+        "@id": "_:N4c6b87f7caf64057b107812dd1b78932"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -78,16 +78,16 @@
       ],
       "sc:author": "Diego Garrido",
       "sc:citation": [
-        "pubmed:25140736",
-        "pubmed:33526779",
         {
           "@id": "https://doi.org/10.1038/s41467-020-20578-2"
         },
-        "pmcid:PMC4143934",
+        "pubmed:25140736",
+        "pubmed:33526779",
+        "pmcid:PMC7851174",
         {
           "@id": "https://doi.org/10.1038/ncomms5698"
         },
-        "pmcid:PMC7851174"
+        "pmcid:PMC4143934"
       ],
       "sc:description": "Nextflow pipeline for splicing quantitative trait loci (sQTL) mapping based on sQTLseekeR2.\nThe pipeline performs the following analysis steps: 1) Index the genotype file, 2) Preprocess the transcript expression data, 3) Test for association between splicing ratios (a multivariate phenotype) and genetic variants in cis (nominal pass), 4) Obtain an empirical P-value for each phenotype (permutation pass, optional), 5) Control for multiple testing.",
       "sc:featureList": [
@@ -102,15 +102,15 @@
       "sc:license": "GPL-3.0",
       "sc:name": "sqtlseeker2-nf",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "R. Guigó Lab: Computational Biology of RNA processing @ CRG, Barcelona.",
       "sc:softwareVersion": "1.0.0",
       "sc:url": "https://github.com/guigolab/sqtlseeker2-nf"
     },
     {
-      "@id": "_:Nf66022a6e3d745b38175a6092939d4eb",
+      "@id": "_:N456b43a6085c43f9baee07870e541066",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -121,18 +121,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N78875419395f438184bda06f39d5acc7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:Nf350565295284a50b77e3a09053f77a1",
+      "@id": "_:Nf31af1c2f5a4493ebf5d4e3b2d94374e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -143,7 +132,18 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Nd4d4d112788e40389afd155653058702",
+      "@id": "_:N71ab8976eaf24e16a30bbc24c2b1d9cc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N4c6b87f7caf64057b107812dd1b78932",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"

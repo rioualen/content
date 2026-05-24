@@ -36,7 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,10 +48,10 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N185f3f2e18ee40c8a5c8b0fa6c4d06ad"
+        "@id": "_:N933621d1e4ea43a5853f6311e53fed62"
       },
       "bsc:output": {
-        "@id": "_:N16d1ef17ed6e4c3291ac0ebcc6f605da"
+        "@id": "_:N4d6b3f72920b4de290681638b344c7f9"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -60,18 +64,18 @@
       "sc:author": "EMBOSS",
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
-        {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
-        "pubmed:38597606",
-        "pmcid:PMC9252731",
         "pmcid:PMC11223882",
+        "pubmed:38597606",
+        "pubmed:35412617",
         {
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
-        "pubmed:35412617"
+        "pmcid:PMC9252731",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        }
       ],
       "sc:description": "Draw a threshold dotplot of two sequences.",
       "sc:featureList": {
@@ -79,35 +83,27 @@
       },
       "sc:name": "dotmatcher (EBI)",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
-        {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
         {
           "@id": "https://emboss.sourceforge.net/"
         },
         {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+        },
+        {
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/seqstats/emboss_dotmatcher"
     },
     {
-      "@id": "_:N185f3f2e18ee40c8a5c8b0fa6c4d06ad",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:N16d1ef17ed6e4c3291ac0ebcc6f605da",
+      "@id": "_:N4d6b3f72920b4de290681638b344c7f9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0862"
@@ -115,11 +111,15 @@
       "sc:name": "Dotplot"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N933621d1e4ea43a5853f6311e53fed62",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     }
   ]

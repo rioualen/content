@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3258",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/aquaria",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Seán O'Donoghue",
-        "Andrea Schafferhans"
+        "Andrea Schafferhans",
+        "Seán O'Donoghue"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nd54fa238014a4818aba4e0720301ff9b"
+          "@id": "_:N60b1643d93ac4b548b9de323af93fa52"
         },
         {
-          "@id": "_:N3a9bb1e99055442b8b1af3cafb1490e3"
+          "@id": "_:Ncfd6ccebb7a247b7b5079d19f571c792"
         },
         {
-          "@id": "_:N168ddcd9d7fb4671a73210391b7b2fce"
+          "@id": "_:Nbceec8d6a56a417fa151d3cd3d1ae69f"
         }
       ],
       "bsc:output": {
-        "@id": "_:N251995be70ac494db193806dc0da2a4a"
+        "@id": "_:N1d086f4163664b3cb6dcf0518552bec0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -63,20 +67,20 @@
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3510"
+        },
+        {
           "@id": "edam:topic_0082"
         },
         {
           "@id": "edam:topic_2814"
-        },
-        {
-          "@id": "edam:topic_3510"
         }
       ],
       "sc:author": [
-        "Andrea Schafferhans",
         "Seán I O'Donoghue",
         "Christian Stolte",
-        "Kenneth S Sabir"
+        "Kenneth S Sabir",
+        "Andrea Schafferhans"
       ],
       "sc:citation": [
         {
@@ -85,19 +89,25 @@
         "pubmed:25633501"
       ],
       "sc:contributor": [
-        "Vivian Ho",
-        "Maria Kalemanov",
-        "Benjamin Wellmann",
         "Burkhard Rost",
-        "Nelson Perdigão",
+        "Vivian Ho",
         "Fabian A Buske",
-        "CSIRO's OCE Science Leader program and its Computational and Simulation Sciences platform",
         "Manfred Roos",
-        "Julian Heinrich",
-        "Alexander von Humboldt Foundation"
+        "Benjamin Wellmann",
+        "CSIRO's OCE Science Leader program and its Computational and Simulation Sciences platform",
+        "Nelson Perdigão",
+        "Alexander von Humboldt Foundation",
+        "Maria Kalemanov",
+        "Julian Heinrich"
       ],
       "sc:description": "Simplifying the generation of insight from protein structures through structure visualisation, annotated with protein features; loads sequence-to-structure alignments from the PSSH2 database, sequence features from UniProt and Interpro and user defined features on demand from JSON files; there is also a WebAPI (see ...).",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0474"
+        },
+        {
+          "@id": "edam:operation_0564"
+        },
         {
           "@id": "edam:operation_0339"
         },
@@ -106,12 +116,6 @@
         },
         {
           "@id": "edam:operation_0338"
-        },
-        {
-          "@id": "edam:operation_0564"
-        },
-        {
-          "@id": "edam:operation_0474"
         }
       ],
       "sc:funder": [
@@ -122,16 +126,16 @@
       "sc:license": "GPL-2.0",
       "sc:name": "Aquaria",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": [
-        "RostLab",
-        "School of Molecular Bioscience, The University of Sydney",
+        "Division of Genomics and Epigenetics, Garvan Institute of Medical Research, Sydney",
         "Department for Bioinformatics and Computational Biology, Technische Universität München",
+        "RostLab",
         "Digital Productivity, Commonwealth Scientific and Industrial Research Organisation (CSIRO), Sydney",
-        "Division of Genomics and Epigenetics, Garvan Institute of Medical Research, Sydney"
+        "School of Molecular Bioscience, The University of Sydney"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.youtube.com/watch?v=FAQ3yVGYSzY&feature=youtu.be"
@@ -140,18 +144,7 @@
       "sc:url": "http://aquaria.ws"
     },
     {
-      "@id": "_:Nd54fa238014a4818aba4e0720301ff9b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1096"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1963"
-      },
-      "sc:name": "Sequence accession (protein)"
-    },
-    {
-      "@id": "_:N3a9bb1e99055442b8b1af3cafb1490e3",
+      "@id": "_:N60b1643d93ac4b548b9de323af93fa52",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1869"
@@ -162,7 +155,18 @@
       "sc:name": "Organism identifier"
     },
     {
-      "@id": "_:N168ddcd9d7fb4671a73210391b7b2fce",
+      "@id": "_:Ncfd6ccebb7a247b7b5079d19f571c792",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1096"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1963"
+      },
+      "sc:name": "Sequence accession (protein)"
+    },
+    {
+      "@id": "_:Nbceec8d6a56a417fa151d3cd3d1ae69f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1063"
@@ -173,7 +177,7 @@
       "sc:name": "Sequence identifier"
     },
     {
-      "@id": "_:N251995be70ac494db193806dc0da2a4a",
+      "@id": "_:N1d086f4163664b3cb6dcf0518552bec0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0893"
@@ -182,10 +186,6 @@
         "@id": "edam:format_3464"
       },
       "sc:name": "Sequence-structure alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3258",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts363",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cnorfeeder",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "F.Eduati",
       "bsc:input": [
         {
-          "@id": "_:Ncaae9750b1794264ada247d425c86cf4"
+          "@id": "_:Nea8360dbc78c4fca8ccaf83191b759d8"
         },
         {
-          "@id": "_:N9bb5ea9a7b894f84aa69303920557a3c"
+          "@id": "_:N7cf7f3113c224fb3b5f2bc27421eb8ee"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3329cea2ede4417595c1f28cb4a9812e"
+        "@id": "_:Nf5739d17a48e42a99251c672f7d39507"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -60,10 +64,10 @@
       },
       "sc:citation": [
         "pmcid:PMC3436796",
-        "pubmed:22734019",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts363"
-        }
+        },
+        "pubmed:22734019"
       ],
       "sc:description": "This package integrates literature-constrained and data-driven methods to infer signalling networks from perturbation experiments. It permits to extends a given network with links derived from the data via various inference methods and uses information on physical interactions of proteins to guide and validate the integration of links.",
       "sc:featureList": [
@@ -77,9 +81,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "CNORfeeder",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/CNORfeeder.html"
@@ -88,7 +92,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/CNORfeeder.html"
     },
     {
-      "@id": "_:N3329cea2ede4417595c1f28cb4a9812e",
+      "@id": "_:Nea8360dbc78c4fca8ccaf83191b759d8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0905"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Protein interaction raw data"
+    },
+    {
+      "@id": "_:N7cf7f3113c224fb3b5f2bc27421eb8ee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Nf5739d17a48e42a99251c672f7d39507",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
@@ -102,42 +138,6 @@
         }
       ],
       "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "_:Ncaae9750b1794264ada247d425c86cf4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N9bb5ea9a7b894f84aa69303920557a3c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0905"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Protein interaction raw data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts363",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

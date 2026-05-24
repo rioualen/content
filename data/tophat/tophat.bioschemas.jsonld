@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp120",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     },
@@ -45,45 +49,45 @@
       "biotools:primaryContact": "Daehwan Kim",
       "bsc:input": [
         {
-          "@id": "_:N5ada48d78c4844778f19e8237088aeeb"
+          "@id": "_:N4fb0a321612c4d93933b00086373aebf"
         },
         {
-          "@id": "_:Nb2ed0d4dbb27441b97b2f0e7ac871151"
+          "@id": "_:Nfb7e559bbeb343bc853b87d070dece86"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf5e22306153141509c5dd8427cc634b1"
+          "@id": "_:N18a0a96dca6b4343b9676352775f5e90"
         },
         {
-          "@id": "_:N6041bcddf608479ca0c87a13c6a6056d"
+          "@id": "_:N6659a46221da4afc8ae1156662a7c59c"
         },
         {
-          "@id": "_:N837bf4e4e86f4691928cc3dde250fdbc"
+          "@id": "_:N33a78bc5a6994ef1b4cf63c8912c3a48"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3170"
+        },
+        {
           "@id": "edam:topic_3325"
         },
         {
           "@id": "edam:topic_0102"
-        },
-        {
-          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
-        "pubmed:19289445",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btp120"
-        },
+        "pmcid:PMC2672628",
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         },
-        "pmcid:PMC2672628"
+        "pubmed:19289445",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btp120"
+        }
       ],
       "sc:description": "Program that aligns RNA-Seq reads to a genome in order to identify exon-exon splice junctions. It is built on the ultrafast short read mapping program Bowtie. A stable SAMtools version is now packaged with the program.",
       "sc:featureList": [
@@ -97,8 +101,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "TopHat",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://ccb.jhu.edu/software/tophat/manual.shtml"
@@ -107,7 +111,7 @@
       "sc:url": "http://ccb.jhu.edu/software/tophat/index.shtml"
     },
     {
-      "@id": "_:Nf5e22306153141509c5dd8427cc634b1",
+      "@id": "_:N18a0a96dca6b4343b9676352775f5e90",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -118,7 +122,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N6041bcddf608479ca0c87a13c6a6056d",
+      "@id": "_:N6659a46221da4afc8ae1156662a7c59c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -129,7 +133,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N837bf4e4e86f4691928cc3dde250fdbc",
+      "@id": "_:N33a78bc5a6994ef1b4cf63c8912c3a48",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -140,7 +144,15 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N5ada48d78c4844778f19e8237088aeeb",
+      "@id": "_:N4fb0a321612c4d93933b00086373aebf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2749"
+      },
+      "sc:name": "Genome identifier"
+    },
+    {
+      "@id": "_:Nfb7e559bbeb343bc853b87d070dece86",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -154,18 +166,6 @@
         }
       ],
       "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:Nb2ed0d4dbb27441b97b2f0e7ac871151",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2749"
-      },
-      "sc:name": "Genome identifier"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp120",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

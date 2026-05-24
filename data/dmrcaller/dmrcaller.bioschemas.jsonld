@@ -40,35 +40,35 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nicolae Radu Zabet",
       "bsc:input": {
-        "@id": "_:N4660296a0f4848d29062c3f7135e30b5"
+        "@id": "_:Naffed10093bb4efe81999aa1739f9c65"
       },
       "bsc:output": [
         {
-          "@id": "_:N1e06161cff3a47069338989d46db70ca"
+          "@id": "_:Nfb5559ad9ec840ff95513d549df78660"
         },
         {
-          "@id": "_:N1769714ce41247cabfa409cb346b7e93"
+          "@id": "_:N74556a54e0d24f7b9d7a9ca3e9f54cdc"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_3295"
         },
         {
-          "@id": "edam:topic_3295"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
-        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pmcid:PMC4509590"
+        "pmcid:PMC4509590",
+        "pubmed:25633503"
       ],
       "sc:description": "Uses Bisulfite sequencing data in two conditions and identifies differentially methylated regions between the conditions in CG and non-CG context. The input is the CX report files produced by Bismark and the output is a list of DMRs stored as GRanges objects.",
       "sc:featureList": {
@@ -77,9 +77,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "DMRcaller",
       "sc:operatingSystem": [
-        "Linux",
+        "Windows",
         "Mac",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/DMRcaller.html"
@@ -88,39 +88,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/DMRcaller.html"
     },
     {
-      "@id": "_:N1e06161cff3a47069338989d46db70ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1017"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2078"
-        }
-      ],
-      "sc:name": "Sequence range"
-    },
-    {
-      "@id": "_:N1769714ce41247cabfa409cb346b7e93",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2078"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N4660296a0f4848d29062c3f7135e30b5",
+      "@id": "_:Naffed10093bb4efe81999aa1739f9c65",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -129,6 +97,38 @@
         "@id": "edam:format_1920"
       },
       "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:Nfb5559ad9ec840ff95513d549df78660",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2078"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N74556a54e0d24f7b9d7a9ca3e9f54cdc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1017"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2078"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Sequence range"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth.3252",

@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/ac300006b",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/proteomedigestsim",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N01e3508510bf4630bebbe5c8369d3621"
+        "@id": "_:N23af748a1b0f4f5eb8c1f3ec1e4e61c8"
       },
       "bsc:output": {
-        "@id": "_:Nf41e4ef7e48b457b9dd82ad9c415496f"
+        "@id": "_:Nffaa642afc0345c69b512ee3b06b5a36"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -51,20 +55,20 @@
           "@id": "edam:topic_0137"
         },
         {
+          "@id": "edam:topic_3520"
+        },
+        {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_0123"
-        },
-        {
-          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pubmed:22324799",
         {
           "@id": "https://doi.org/10.1021/ac300006b"
-        },
-        "pubmed:22324799"
+        }
       ],
       "sc:description": "R classes for prediction of proteome coverage based on iterative digestion by MED-FASP or similar.",
       "sc:featureList": {
@@ -72,9 +76,9 @@
       },
       "sc:name": "ProteomeDigestSim",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/jgmeyerucsd/ProteomeDigestSim"
@@ -82,7 +86,18 @@
       "sc:url": "https://github.com/jgmeyerucsd/ProteomeDigestSim"
     },
     {
-      "@id": "_:N01e3508510bf4630bebbe5c8369d3621",
+      "@id": "_:Nffaa642afc0345c69b512ee3b06b5a36",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1238"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Proteolytic digest"
+    },
+    {
+      "@id": "_:N23af748a1b0f4f5eb8c1f3ec1e4e61c8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -96,21 +111,6 @@
         }
       ],
       "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:Nf41e4ef7e48b457b9dd82ad9c415496f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1238"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Proteolytic digest"
-    },
-    {
-      "@id": "https://doi.org/10.1021/ac300006b",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

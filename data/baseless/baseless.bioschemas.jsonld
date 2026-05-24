@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioadv/vbad017",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/baseless",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7d000bf68fa04b4d85d6c31b5466047a"
+        "@id": "_:N8f18000f69914564aefffdffe697d1e1"
       },
       "bsc:output": {
-        "@id": "_:N24142711e75a4c488afded2da6dd95a2"
+        "@id": "_:Nf44822481eb04531b1e73e4ebc2568cc"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_3174"
@@ -57,23 +61,23 @@
           "@id": "edam:topic_0097"
         },
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_0621"
         }
       ],
       "sc:citation": [
+        "pubmed:36818730",
         {
           "@id": "https://doi.org/10.1093/bioadv/vbad017"
         },
-        "pubmed:36818730",
         "pmcid:PMC9936955"
       ],
       "sc:description": "Lightweight detection of sequences in raw MinION data. BaseLess reduces your MinION sequencing device to a simple species detector. As a trade-off, it runs on inexpensive computational hardware like single-board computers. The neural network it uses is a composite of many smaller networks, each detecting a different k-mer, thus reconfiguration of baseLess to detect a different sequence amounts to combining different smaller networks.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2481"
+          "@id": "edam:operation_3185"
         },
         {
-          "@id": "edam:operation_3185"
+          "@id": "edam:operation_2481"
         },
         {
           "@id": "edam:operation_3198"
@@ -90,7 +94,15 @@
       "sc:url": "https://github.com/cvdelannoy/baseLess"
     },
     {
-      "@id": "_:N7d000bf68fa04b4d85d6c31b5466047a",
+      "@id": "_:Nf44822481eb04531b1e73e4ebc2568cc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3743"
+      },
+      "sc:name": "Ordination plot"
+    },
+    {
+      "@id": "_:N8f18000f69914564aefffdffe697d1e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -99,18 +111,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N24142711e75a4c488afded2da6dd95a2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3743"
-      },
-      "sc:name": "Ordination plot"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioadv/vbad017",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

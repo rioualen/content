@@ -36,49 +36,45 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr404",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/preda",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Francesco Ferrari",
       "bsc:input": [
         {
-          "@id": "_:N2c8e78abd49241c69448534dd8745320"
+          "@id": "_:N97e8c51562d0441da98d161e56f63f75"
         },
         {
-          "@id": "_:N1e0f9fc8244d4d79a0c140dd172d18b8"
+          "@id": "_:N2d439a23a27a40f08e7182137c35ba7a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N13244c6fcc664b129f0770efba154d0b"
+          "@id": "_:Ne7bb0b0631b84dc3a41a2b30d8ea21ec"
         },
         {
-          "@id": "_:N40b7b084b6354cd2ad067ac11ae09c9f"
+          "@id": "_:Nc1b9eba89f7446f985a92ef311ef9d1b"
         },
         {
-          "@id": "_:Ne49bd83507d2431a8b28e4a36f3c7036"
+          "@id": "_:N2a69683702c74eec94c89a828bab4f15"
         },
         {
-          "@id": "_:Nf04ffa235afd4ceaabb47db4f6c576af"
+          "@id": "_:N50ba7b2af15c4fcfbd54f7562401d679"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3055"
+        },
         {
           "@id": "edam:topic_0085"
         },
         {
           "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_3055"
         }
       ],
       "sc:citation": [
@@ -94,9 +90,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "PREDA",
       "sc:operatingSystem": [
-        "Windows",
+        "Mac",
         "Linux",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/PREDA.html"
@@ -105,18 +101,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/PREDA.html"
     },
     {
-      "@id": "_:N2c8e78abd49241c69448534dd8745320",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N1e0f9fc8244d4d79a0c140dd172d18b8",
+      "@id": "_:N97e8c51562d0441da98d161e56f63f75",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -127,39 +112,18 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N13244c6fcc664b129f0770efba154d0b",
+      "@id": "_:N2d439a23a27a40f08e7182137c35ba7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2166"
+        "@id": "edam:data_3112"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Sequence composition plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N40b7b084b6354cd2ad067ac11ae09c9f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Ne49bd83507d2431a8b28e4a36f3c7036",
+      "@id": "_:Ne7bb0b0631b84dc3a41a2b30d8ea21ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1288"
@@ -175,20 +139,56 @@
       "sc:name": "Genome map"
     },
     {
-      "@id": "_:Nf04ffa235afd4ceaabb47db4f6c576af",
+      "@id": "_:Nc1b9eba89f7446f985a92ef311ef9d1b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N2a69683702c74eec94c89a828bab4f15",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2166"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Sequence composition plot"
+    },
+    {
+      "@id": "_:N50ba7b2af15c4fcfbd54f7562401d679",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr404",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

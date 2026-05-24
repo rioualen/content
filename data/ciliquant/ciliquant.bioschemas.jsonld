@@ -36,15 +36,111 @@
   },
   "@graph": [
     {
+      "@id": "https://bio.tools/ciliquant",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:Na5d0b07b44784c369dfcffd534130386"
+        },
+        {
+          "@id": "_:Ne10548334e344d35b7866d94728781ec"
+        }
+      ],
+      "bsc:output": {
+        "@id": "_:Na92c29915e574a36bac3e3d471ee052f"
+      },
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3320"
+        },
+        {
+          "@id": "edam:topic_0659"
+        }
+      ],
+      "sc:author": {
+        "@id": "https://orcid.org/0000-0003-1791-2359"
+      },
+      "sc:contributor": [
+        {
+          "@id": "https://orcid.org/0000-0001-7772-4259"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8144-4639"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7821-9684"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4610-4599"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6274-0184"
+        }
+      ],
+      "sc:description": "This tool separates junction reads based on their linear or circular origin. Only non-ambiguous junction reads are used to compare the relative linear and circular transcript abundance.\nTogether with the circ fraction (circ/(circ+lin)), a 95% confidence interval is provided.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_2995"
+        },
+        {
+          "@id": "edam:operation_2441"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "BSD-3-Clause",
+      "sc:name": "CiLiQuant",
+      "sc:operatingSystem": [
+        "Linux",
+        "Windows",
+        "Mac"
+      ],
+      "sc:softwareHelp": {
+        "@id": "https://github.com/OncoRNALab/CiLiQuant"
+      },
+      "sc:url": "https://github.com/OncoRNALab/CiLiQuant"
+    },
+    {
+      "@id": "_:Na5d0b07b44784c369dfcffd534130386",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3210"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Genome index"
+    },
+    {
+      "@id": "_:Ne10548334e344d35b7866d94728781ec",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Na92c29915e574a36bac3e3d471ee052f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:name": "Feature table"
+    },
+    {
       "@id": "https://orcid.org/0000-0003-1791-2359",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0001-7772-4259",
+      "@id": "https://orcid.org/0000-0001-6274-0184",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0001-6274-0184",
+      "@id": "https://orcid.org/0000-0001-7772-4259",
       "@type": "sc:Person"
     },
     {
@@ -58,102 +154,6 @@
     {
       "@id": "https://orcid.org/0000-0002-4610-4599",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://bio.tools/ciliquant",
-      "@type": "sc:SoftwareApplication",
-      "bsc:input": [
-        {
-          "@id": "_:Ndc6040d24de2482ca2cb90de65ecba66"
-        },
-        {
-          "@id": "_:N7a43ff592ee047b781e34c6af401b94b"
-        }
-      ],
-      "bsc:output": {
-        "@id": "_:Na6d1b98c643f4d3a8794d89a90874bf1"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Command-line tool",
-      "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0659"
-        },
-        {
-          "@id": "edam:topic_3320"
-        }
-      ],
-      "sc:author": {
-        "@id": "https://orcid.org/0000-0003-1791-2359"
-      },
-      "sc:contributor": [
-        {
-          "@id": "https://orcid.org/0000-0001-7772-4259"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-4610-4599"
-        },
-        {
-          "@id": "https://orcid.org/0000-0001-6274-0184"
-        },
-        {
-          "@id": "https://orcid.org/0000-0001-7821-9684"
-        },
-        {
-          "@id": "https://orcid.org/0000-0001-8144-4639"
-        }
-      ],
-      "sc:description": "This tool separates junction reads based on their linear or circular origin. Only non-ambiguous junction reads are used to compare the relative linear and circular transcript abundance.\nTogether with the circ fraction (circ/(circ+lin)), a 95% confidence interval is provided.",
-      "sc:featureList": [
-        {
-          "@id": "edam:operation_2441"
-        },
-        {
-          "@id": "edam:operation_2995"
-        }
-      ],
-      "sc:isAccessibleForFree": true,
-      "sc:license": "BSD-3-Clause",
-      "sc:name": "CiLiQuant",
-      "sc:operatingSystem": [
-        "Windows",
-        "Linux",
-        "Mac"
-      ],
-      "sc:softwareHelp": {
-        "@id": "https://github.com/OncoRNALab/CiLiQuant"
-      },
-      "sc:url": "https://github.com/OncoRNALab/CiLiQuant"
-    },
-    {
-      "@id": "_:Ndc6040d24de2482ca2cb90de65ecba66",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N7a43ff592ee047b781e34c6af401b94b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3210"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Genome index"
-    },
-    {
-      "@id": "_:Na6d1b98c643f4d3a8794d89a90874bf1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:name": "Feature table"
     }
   ]
 }

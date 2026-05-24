@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkr367",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkac240",
       "@type": "sc:CreativeWork"
     },
@@ -48,23 +44,27 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1093/nar/gkr367",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/hmmer_phmmer_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": [
         {
-          "@id": "_:N8d23c8c4fc5341b7a8a2f6aa679abc35"
+          "@id": "_:N15ace83a780246dcabb09792d1f7580b"
         },
         {
-          "@id": "_:N27cc356c05234187a6e2d42b2743bc0b"
+          "@id": "_:N7636c09ca30140eeb48c2e766eabe17a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8cd534bd04694280b59b7daa32765787"
+          "@id": "_:N553d0a8b7982422fad12d0f01ac99ac5"
         },
         {
-          "@id": "_:N8b52c513f0f049e5be91ee441f6d561f"
+          "@id": "_:Nd732925b982f4041a97a31cf546ca475"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -74,32 +74,32 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0623"
+          "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0160"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0623"
         }
       ],
       "sc:author": "Sean Eddy",
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkr367"
-        },
-        "pubmed:21593126",
-        "pmcid:PMC3125773",
-        {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
         "pubmed:38597606",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkr367"
+        },
+        "pubmed:35412617",
+        "pmcid:PMC3125773",
         "pmcid:PMC9252731",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        },
         "pmcid:PMC11223882",
-        "pubmed:35412617"
+        "pubmed:21593126"
       ],
       "sc:description": "HMMER3 phmmer is used to search one or more sequences against a sequence database.",
       "sc:featureList": {
@@ -108,50 +108,26 @@
       "sc:name": "HMMER phmmer (EBI)",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "http://hmmer.org/"
         },
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/pfa/hmmer3_phmmer"
     },
     {
-      "@id": "_:N8d23c8c4fc5341b7a8a2f6aa679abc35",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1364"
-      },
-      "sc:name": "Hidden Markov model"
-    },
-    {
-      "@id": "_:N27cc356c05234187a6e2d42b2743bc0b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:N8cd534bd04694280b59b7daa32765787",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N8b52c513f0f049e5be91ee441f6d561f",
+      "@id": "_:N553d0a8b7982422fad12d0f01ac99ac5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -160,6 +136,30 @@
         "@id": "edam:format_2066"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Nd732925b982f4041a97a31cf546ca475",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "_:N15ace83a780246dcabb09792d1f7580b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N7636c09ca30140eeb48c2e766eabe17a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1364"
+      },
+      "sc:name": "Hidden Markov model"
     }
   ]
 }

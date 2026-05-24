@@ -44,32 +44,32 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ryan Peckner",
       "bsc:input": {
-        "@id": "_:Nb98f5597b12045a3a8eb733c8c9d1981"
+        "@id": "_:N11618f765c4d42e485c20aafac62182c"
       },
       "bsc:output": {
-        "@id": "_:N38c05ec6939544e6b8cfa4e3985944c9"
+        "@id": "_:N2cf578edfbde4901b0437baea476638c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0078"
-        },
         {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3047"
+        },
+        {
+          "@id": "edam:topic_0078"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC5924490",
         {
           "@id": "https://doi.org/10.1038/nmeth.4643"
         },
-        "pmcid:PMC5924490",
         "pubmed:29608554"
       ],
       "sc:description": "An algorithm for the targeted analysis of data-independent acquisition (DIA) mass spectrometry proteomics experiments.",
@@ -85,7 +85,15 @@
       "sc:url": "https://github.com/rpeckner-broad/Specter"
     },
     {
-      "@id": "_:N38c05ec6939544e6b8cfa4e3985944c9",
+      "@id": "_:N11618f765c4d42e485c20aafac62182c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3483"
+      },
+      "sc:name": "Spectrum"
+    },
+    {
+      "@id": "_:N2cf578edfbde4901b0437baea476638c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -94,14 +102,6 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nb98f5597b12045a3a8eb733c8c9d1981",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3483"
-      },
-      "sc:name": "Spectrum"
     }
   ]
 }

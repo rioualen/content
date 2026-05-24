@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.3c00336",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dogsite3",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbcad69f3498149bba0e556b9653678cd"
+        "@id": "_:N56552fc9d6e240ff99e67de12623c230"
       },
       "bsc:output": {
-        "@id": "_:N4b188c34a49a45478a54f39cb58bae6d"
+        "@id": "_:Ndae2f718930848aaa932b9a8495452a5"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web service"
+        "Web service",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -67,25 +63,33 @@
       "sc:description": "DoGSite3 was developed for predicting robust and reliable small molecule binding sites and computing their geometrical and chemical descriptors. It is based on the grid-based DoGSite algorithm for predicting pockets and their sub-pockets. The new tool is largely rotation- and translation-invariant due to a normalization procedure before binding site prediction. Known ligands in the structure can be used to bias the grid by sufficiently buried ligand fragments. The output encompasses novel chemical binding site descriptors considering solvent accessibility. Compared to its predecessor, it shows increased robustness through comprehensive parameter optimization. DoGSite3 runs finish within seconds.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3897"
+          "@id": "edam:operation_0420"
         },
         {
-          "@id": "edam:operation_0420"
+          "@id": "edam:operation_3897"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "DoGSite3",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
       "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/dogsite3.html"
     },
     {
-      "@id": "_:Nbcad69f3498149bba0e556b9653678cd",
+      "@id": "_:Ndae2f718930848aaa932b9a8495452a5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N56552fc9d6e240ff99e67de12623c230",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -93,12 +97,8 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N4b188c34a49a45478a54f39cb58bae6d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:name": "Protein features"
+      "@id": "https://doi.org/10.1021/acs.jcim.3c00336",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bioexcel_building_blocks_tutorials_protein-ligand_complex_md_setup",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:N1e0c0ce3fbbf4ab29763ce14a51fdefd"
+        "@id": "_:N20b3d13ca458432bae27eac92a98d037"
       },
       "bsc:output": [
         {
-          "@id": "_:Nafd21036ddc6473f8298d1592dd92801"
+          "@id": "_:Nd4144bfcf7214f26b802e4b2b2b13fbf"
         },
         {
-          "@id": "_:N37129e5480644ce38ea03066b9eba30a"
+          "@id": "_:N7e9dfd23826f4e7a8a40155821dcfaf1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -71,21 +79,21 @@
       ],
       "sc:citation": [
         "pubmed:31506435",
+        "pmcid:PMC6736963",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
-        },
-        "pmcid:PMC6736963"
+        }
       ],
       "sc:description": "This tutorial aims to illustrate the process of setting up a simulation system containing a protein in complex with a ligand, step by step, using the BioExcel Building Blocks library (biobb). The particular example used is the T4 lysozyme L99A/M102Q protein (PDB code 3HTB), in complex with the 2-propylphenol small molecule (3-letter Code JZ4).",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2480"
+        },
         {
           "@id": "edam:operation_2406"
         },
         {
           "@id": "edam:operation_2476"
-        },
-        {
-          "@id": "edam:operation_2480"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -93,8 +101,8 @@
       "sc:name": "BioExcel Building Blocks tutorials: Protein-Ligand Complex MD Setup (Gromacs Version)",
       "sc:operatingSystem": [
         "Mac",
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:provider": "BioExcel Centre of Excellence",
       "sc:softwareHelp": {
@@ -104,7 +112,23 @@
       "sc:url": "http://mmb.irbbarcelona.org/biobb/availability/tutorials/protein-complex_md_setup"
     },
     {
-      "@id": "_:Nafd21036ddc6473f8298d1592dd92801",
+      "@id": "_:Nd4144bfcf7214f26b802e4b2b2b13fbf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3872"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3880"
+        },
+        {
+          "@id": "edam:format_3883"
+        }
+      ],
+      "sc:name": "Topology data"
+    },
+    {
+      "@id": "_:N7e9dfd23826f4e7a8a40155821dcfaf1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -115,23 +139,7 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:N37129e5480644ce38ea03066b9eba30a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3872"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3883"
-        },
-        {
-          "@id": "edam:format_3880"
-        }
-      ],
-      "sc:name": "Topology data"
-    },
-    {
-      "@id": "_:N1e0c0ce3fbbf4ab29763ce14a51fdefd",
+      "@id": "_:N20b3d13ca458432bae27eac92a98d037",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
@@ -140,14 +148,6 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein-ligand complex"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

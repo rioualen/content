@@ -36,11 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/25.17.3389",
+      "@id": "https://doi.org/10.1093/nar/gkac240",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/25.17.3389",
       "@type": "sc:CreativeWork"
     },
     {
@@ -48,40 +52,40 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N5bbf353cf53848709c0b14aca9a93768"
+        "@id": "_:Nf0814fd662354d61af7a433f67f25a52"
       },
       "bsc:output": [
         {
-          "@id": "_:N71da1679b4e74a5aa5dd326253ae624b"
+          "@id": "_:N7a63b080fec64081941c95f1984cff6c"
         },
         {
-          "@id": "_:Ncac4ede533a9417e902c483a50c3c8f2"
+          "@id": "_:N9ded2384b5f842aa8d6a22337732cb77"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web service"
+        "Web service",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
-        "pubmed:35412617",
         "pmcid:PMC11223882",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/25.17.3389"
-        },
-        "pmcid:PMC146917",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
         "pubmed:38597606",
+        {
+          "@id": "https://doi.org/10.1093/nar/25.17.3389"
+        },
+        "pubmed:35412617",
+        "pmcid:PMC146917",
+        "pubmed:9254694",
         "pmcid:PMC9252731",
-        "pubmed:9254694"
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        }
       ],
       "sc:description": "Iterative protein sequence similarity search based on BLAST: search with a custom, position-specific, scoring matrix which can help find distant evolutionary relationships.",
       "sc:featureList": {
@@ -89,38 +93,30 @@
       },
       "sc:name": "PSI-BLAST (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
+        "Mac",
         "Linux"
       ],
       "sc:provider": [
-        "NCBI",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "NCBI"
       ],
       "sc:softwareHelp": [
-        {
-          "@id": "https://blast.ncbi.nlm.nih.gov/"
-        },
         {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+        },
+        {
+          "@id": "https://blast.ncbi.nlm.nih.gov/"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/sss/psiblast"
     },
     {
-      "@id": "_:N5bbf353cf53848709c0b14aca9a93768",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N71da1679b4e74a5aa5dd326253ae624b",
+      "@id": "_:N7a63b080fec64081941c95f1984cff6c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2854"
@@ -128,7 +124,7 @@
       "sc:name": "Position-specific scoring matrix"
     },
     {
-      "@id": "_:Ncac4ede533a9417e902c483a50c3c8f2",
+      "@id": "_:N9ded2384b5f842aa8d6a22337732cb77",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -136,8 +132,12 @@
       "sc:name": "Sequence search results"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf0814fd662354d61af7a433f67f25a52",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
     }
   ]
 }

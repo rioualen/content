@@ -36,51 +36,62 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/pr500202e",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/rcm.9088",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ms_amanda",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N07c0d468479b4d049a95a6c5445a4c7f"
+          "@id": "_:N4b068986ff164b9e8f5f0c89112768d9"
         },
         {
-          "@id": "_:N59242181288f4f06bc55cc361a323038"
+          "@id": "_:Ne08f8714e6cc4630900b90dac8dbe2df"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0f2648a62bad43999934fb3123e71a12"
+        "@id": "_:N8c0e6d5e318d4d699f7cbf59ae64d15c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Plug-in",
-        "Command-line tool"
+        "Command-line tool",
+        "Plug-in"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0601"
         },
         {
-          "@id": "edam:topic_0601"
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1021/pr500202e"
-        },
-        "pmcid:PMC8244010",
+        "pubmed:24909410",
+        "pmcid:PMC6079931",
         {
           "@id": "https://doi.org/10.1002/rcm.9088"
         },
-        "pubmed:24909410",
-        "pmcid:PMC4119474",
-        "pubmed:29863353",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.7b00836"
         },
-        "pmcid:PMC6079931",
+        "pmcid:PMC4119474",
+        "pmcid:PMC8244010",
+        "pubmed:29863353",
+        {
+          "@id": "https://doi.org/10.1021/pr500202e"
+        },
         "pubmed:33759252"
       ],
       "sc:description": "MS Amanda is a scoring system to identify peptides out of tandem mass spectrometry data using a database of known proteins. It is especially designed for high resolution and high accuracy tandem mass spectra.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3646"
+        },
         {
           "@id": "edam:operation_3645"
         },
@@ -89,18 +100,15 @@
         },
         {
           "@id": "edam:operation_3767"
-        },
-        {
-          "@id": "edam:operation_3646"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Freeware",
       "sc:name": "MS Amanda",
       "sc:operatingSystem": [
+        "Windows",
         "Linux",
-        "Mac",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://ms.imp.ac.at/?file=Manual%20MS%20Amanda%20for%20PD1.4.pdf"
@@ -108,7 +116,23 @@
       "sc:url": "https://ms.imp.ac.at/?action=ms-amanda"
     },
     {
-      "@id": "_:N07c0d468479b4d049a95a6c5445a4c7f",
+      "@id": "_:N4b068986ff164b9e8f5f0c89112768d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3651"
+        }
+      ],
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:Ne08f8714e6cc4630900b90dac8dbe2df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -119,23 +143,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N59242181288f4f06bc55cc361a323038",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3244"
-        }
-      ],
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N0f2648a62bad43999934fb3123e71a12",
+      "@id": "_:N8c0e6d5e318d4d699f7cbf59ae64d15c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -151,15 +159,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "https://doi.org/10.1021/pr500202e",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1021/acs.jproteome.7b00836",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1002/rcm.9088",
       "@type": "sc:CreativeWork"
     }
   ]

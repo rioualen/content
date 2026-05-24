@@ -43,10 +43,10 @@
       "@id": "https://bio.tools/clustalo_ws_jabaws",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8e7960b9e16a4212a6c6409245729a9d"
+        "@id": "_:N11ae5ea316274eddbd15f8c3ccd9a802"
       },
       "bsc:output": {
-        "@id": "_:N84f2b75228264bd18615d20e7eff15e7"
+        "@id": "_:N5db27926b0624289ae2430a9f918cef2"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
@@ -54,11 +54,11 @@
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
-        "pubmed:21593132",
         "pmcid:PMC3129525",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr304"
-        }
+        },
+        "pubmed:21593132"
       ],
       "sc:description": "JABAWS stands for JAva Bioinformatics Analysis Web Services. It is a collection of web services for bioinformatics, and currently provides services that make it easy to access well-known multiple sequence alignment and protein disorder prediction programs from Jalview.",
       "sc:featureList": {
@@ -67,33 +67,22 @@
       "sc:name": "ClustalO WS (jabaws)",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.compbio.dundee.ac.uk/jabaws/full_javadoc/compbio/ws/server/ClustalOWS.html"
+          "@id": "http://www.compbio.dundee.ac.uk/jabaws/man_about.html"
         },
         {
-          "@id": "http://www.compbio.dundee.ac.uk/jabaws/man_about.html"
+          "@id": "http://www.compbio.dundee.ac.uk/jabaws/full_javadoc/compbio/ws/server/ClustalOWS.html"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.compbio.dundee.ac.uk/jabaws"
     },
     {
-      "@id": "_:N8e7960b9e16a4212a6c6409245729a9d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N84f2b75228264bd18615d20e7eff15e7",
+      "@id": "_:N5db27926b0624289ae2430a9f918cef2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -102,6 +91,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N11ae5ea316274eddbd15f8c3ccd9a802",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

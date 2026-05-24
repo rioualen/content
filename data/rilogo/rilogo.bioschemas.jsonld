@@ -40,31 +40,35 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "http://orcid.org/0000-0003-4964-0685",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/rilogo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-4964-0685"
       },
       "bsc:input": {
-        "@id": "_:N81cc27a51d504a68a434c366c524c763"
+        "@id": "_:N7789da058b7e42bbbf5a35497b31b3b0"
       },
       "bsc:output": {
-        "@id": "_:Nc8b92c5f95884a06a622d49bbc221a7c"
+        "@id": "_:Nf570494f19f74b1189cb1e3912a26737"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
       },
       "sc:author": "Peter Menzel",
       "sc:citation": [
-        "pubmed:22826541",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts461"
-        }
+        },
+        "pubmed:22826541"
       ],
       "sc:description": "Command line program and web server to create an RNA-RNA interaction logo from a pair of RNA sequences or alignments.",
       "sc:featureList": [
@@ -78,9 +82,9 @@
       "sc:license": "LGPL-2.1",
       "sc:name": "RILogo",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "binf.ku.dk",
       "sc:softwareHelp": {
@@ -90,15 +94,7 @@
       "sc:url": "http://rth.dk/resources/rilogo/"
     },
     {
-      "@id": "_:Nc8b92c5f95884a06a622d49bbc221a7c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1708"
-      },
-      "sc:name": "RNA secondary structure image"
-    },
-    {
-      "@id": "_:N81cc27a51d504a68a434c366c524c763",
+      "@id": "_:N7789da058b7e42bbbf5a35497b31b3b0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0881"
@@ -106,8 +102,12 @@
       "sc:name": "Secondary structure alignment (RNA)"
     },
     {
-      "@id": "http://orcid.org/0000-0003-4964-0685",
-      "@type": "sc:Person"
+      "@id": "_:Nf570494f19f74b1189cb1e3912a26737",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1708"
+      },
+      "sc:name": "RNA secondary structure image"
     }
   ]
 }

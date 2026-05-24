@@ -44,30 +44,30 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Edwin van Leeuwen",
       "bsc:input": {
-        "@id": "_:Nfcfdf2b486f84c479c4abe19a3eae2a9"
+        "@id": "_:N1dc98d88444a4e83b06611fb746b10e9"
       },
       "bsc:output": {
-        "@id": "_:N47811796c8a7419b94695e32fc00e736"
+        "@id": "_:N5891bdec321241ae99e2607bea81ac47"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
-        },
-        {
           "@id": "edam:topic_0781"
         },
         {
           "@id": "edam:topic_3305"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
-        "pubmed:29155812",
-        "pmcid:PMC5714397",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1005838"
-        }
+        },
+        "pubmed:29155812",
+        "pmcid:PMC5714397"
       ],
       "sc:description": "Code for reconstructing influenza dynamics from surveillance data using evidence synthesis techniques.",
       "sc:featureList": [
@@ -75,18 +75,18 @@
           "@id": "edam:operation_2497"
         },
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_2423"
         },
         {
-          "@id": "edam:operation_2423"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "fluEvidenceSynthesis",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -95,7 +95,15 @@
       "sc:url": "https://github.com/MJomaba/flu-evidence-synthesis"
     },
     {
-      "@id": "_:Nfcfdf2b486f84c479c4abe19a3eae2a9",
+      "@id": "_:N5891bdec321241ae99e2607bea81ac47",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N1dc98d88444a4e83b06611fb746b10e9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2042"
@@ -104,14 +112,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Evidence"
-    },
-    {
-      "@id": "_:N47811796c8a7419b94695e32fc00e736",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
     }
   ]
 }

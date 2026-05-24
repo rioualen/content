@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-0513-0288",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/bioexcel_building_blocks_tutorials_amber_constant_ph_md_setup",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:N02edf34e09ae459fb8c04be7e0a6c0ef"
+        "@id": "_:N319432979d834415aebdf9f28dc06222"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb2bbcacefd674eb491520d6851cf833e"
+          "@id": "_:Ncaf52fd15297407cabbc6e07e689a901"
         },
         {
-          "@id": "_:Nad714cb0b59f42b18b2d7393f610cb30"
+          "@id": "_:N729877842c464f40906d51be8fc56310"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -64,18 +68,18 @@
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-8291-8071"
+          "@id": "https://orcid.org/0000-0003-0513-0288"
         },
         {
-          "@id": "https://orcid.org/0000-0003-0513-0288"
+          "@id": "https://orcid.org/0000-0002-8291-8071"
         }
       ],
       "sc:citation": [
-        "pubmed:31506435",
+        "pmcid:PMC6736963",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
         },
-        "pmcid:PMC6736963"
+        "pubmed:31506435"
       ],
       "sc:description": "This tutorial aims to illustrate the process of setting up a simulation system to run constant pH Molecular Dynamics simulations with AMBER, step by step, using the BioExcel Building Blocks library (biobb) wrapping the AmberTools utility from the AMBER package. The particular example used is the Bovine Pancreatic Trypsin Inhibitor (BPTI) protein (PDB code 6PTI).",
       "sc:featureList": [
@@ -90,8 +94,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks tutorials: AMBER Constant pH MD setup",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
+        "Windows",
         "Mac"
       ],
       "sc:provider": "BioExcel Center of Excellence for Computational Biomolecular Research",
@@ -102,34 +106,7 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/amber_md_setup_ph"
     },
     {
-      "@id": "_:Nb2bbcacefd674eb491520d6851cf833e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3650"
-        },
-        {
-          "@id": "edam:format_3878"
-        }
-      ],
-      "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:Nad714cb0b59f42b18b2d7393f610cb30",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3881"
-      },
-      "sc:name": "Topology data"
-    },
-    {
-      "@id": "_:N02edf34e09ae459fb8c04be7e0a6c0ef",
+      "@id": "_:N319432979d834415aebdf9f28dc06222",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -140,8 +117,31 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "https://orcid.org/0000-0003-0513-0288",
-      "@type": "sc:Person"
+      "@id": "_:Ncaf52fd15297407cabbc6e07e689a901",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3878"
+        },
+        {
+          "@id": "edam:format_3650"
+        }
+      ],
+      "sc:name": "Trajectory data"
+    },
+    {
+      "@id": "_:N729877842c464f40906d51be8fc56310",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3881"
+      },
+      "sc:name": "Topology data"
     },
     {
       "@id": "https://orcid.org/0000-0002-8291-8071",

@@ -36,17 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nbt1001-946",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/xpress",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N31b923ca96914513989b96c19bbdba62"
+        "@id": "_:N7ced9697dced4cb7a182250f241aeab4"
       },
       "bsc:output": {
-        "@id": "_:Nc76a8452347c447cafb1472914c05706"
+        "@id": "_:N95d24d31e5c14cc18cc3feb5de7d1a49"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -62,29 +58,29 @@
         }
       ],
       "sc:citation": [
+        "pubmed:11581660",
         "pmcid:PMC1444949",
         {
           "@id": "https://doi.org/10.1038/nbt1001-946"
-        },
-        "pubmed:11581660"
+        }
       ],
       "sc:description": "Calculates relative abundances from ICAT, cICAT, SILAC and other N-14/N-15 experiments.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3635"
-        },
         {
           "@id": "edam:operation_3630"
         },
         {
           "@id": "edam:operation_3705"
+        },
+        {
+          "@id": "edam:operation_3635"
         }
       ],
       "sc:name": "XPRESS",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://tools.proteomecenter.org/wiki/index.php?title=Software:XPRESS"
@@ -92,7 +88,18 @@
       "sc:url": "http://tools.proteomecenter.org/XPRESS.php"
     },
     {
-      "@id": "_:Nc76a8452347c447cafb1472914c05706",
+      "@id": "_:N7ced9697dced4cb7a182250f241aeab4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3655"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:N95d24d31e5c14cc18cc3feb5de7d1a49",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -103,15 +110,8 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N31b923ca96914513989b96c19bbdba62",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3655"
-      },
-      "sc:name": "Peptide identification"
+      "@id": "https://doi.org/10.1038/nbt1001-946",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

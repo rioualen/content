@@ -36,11 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3389/fgene.2020.00675",
+      "@id": "https://doi.org/10.1093/bioinformatics/btab073",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btab073",
+      "@id": "http://orcid.org/0000-0002-8886-7797",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fgene.2020.00675",
       "@type": "sc:CreativeWork"
     },
     {
@@ -48,30 +52,30 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jiří Vohradský",
       "bsc:input": {
-        "@id": "_:Nead63a7d58e34b9980c86e14039ee72c"
+        "@id": "_:N1a69f74da0e8412eaff79006631319b5"
       },
       "bsc:output": {
-        "@id": "_:N3626807c7b05411fb9408b0ae311b46b"
+        "@id": "_:N620e3d8f61c24542b0d38259484737ff"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0659"
       },
       "sc:author": "Marek Schwarz",
       "sc:citation": [
-        "pubmed:33523120",
-        "pmcid:PMC7401326",
         "pubmed:32849767",
         {
           "@id": "https://doi.org/10.3389/fgene.2020.00675"
         },
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btab073"
-        }
+        },
+        "pmcid:PMC7401326",
+        "pubmed:33523120"
       ],
       "sc:contributor": {
         "@id": "http://orcid.org/0000-0002-8886-7797"
@@ -84,8 +88,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "rboAnalyzer",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": [
         {
@@ -99,7 +103,23 @@
       "sc:url": "http://rboanalyzer.elixir-czech.cz/"
     },
     {
-      "@id": "_:Nead63a7d58e34b9980c86e14039ee72c",
+      "@id": "_:N620e3d8f61c24542b0d38259484737ff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Sequence report"
+    },
+    {
+      "@id": "_:N1a69f74da0e8412eaff79006631319b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -108,26 +128,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N3626807c7b05411fb9408b0ae311b46b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-8886-7797",
-      "@type": "sc:Person"
     }
   ]
 }

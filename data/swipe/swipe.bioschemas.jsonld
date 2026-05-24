@@ -36,45 +36,41 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-12-221",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/swipe",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9aa26f94d0a84be986ac91a16cb2a25f"
+          "@id": "_:N8c1e157f60314adc9a80c8056e19ff42"
         },
         {
-          "@id": "_:N7556e408fe5a4b5197b8fd35818faed7"
+          "@id": "_:Ndb62999c9a9e494cbfbe6c8c34072bfd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N89295d69a2964da6be1be3ccb8b2a30d"
+          "@id": "_:N6b3af0eef5e14b42847c185b0cb02687"
         },
         {
-          "@id": "_:N0d78ff005236438b9898e53bf8127378"
+          "@id": "_:N7fd008669847411ab3ea3bb07bbd4cfb"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3047"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3047"
         }
       ],
       "sc:author": "Torbjørn Rognes",
       "sc:citation": [
+        "pubmed:21631914",
+        "pmcid:PMC3120707",
         {
           "@id": "https://doi.org/10.1186/1471-2105-12-221"
-        },
-        "pmcid:PMC3120707",
-        "pubmed:21631914"
+        }
       ],
       "sc:description": "Tool for performing rapid local alignment searches in amino acid or nucleotide sequence databases. It is a highly optimized implementation of the Smith-Waterman algoritm using SIMD parallel computing technology available on common CPUs.",
       "sc:featureList": {
@@ -87,25 +83,17 @@
       "sc:provider": "UiO",
       "sc:softwareHelp": [
         {
-          "@id": "http://dna.uio.no/swipe/"
+          "@id": "http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-221"
         },
         {
-          "@id": "http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-221"
+          "@id": "http://dna.uio.no/swipe/"
         }
       ],
       "sc:softwareVersion": "2.0.5",
       "sc:url": "http://dna.uio.no/swipe"
     },
     {
-      "@id": "_:N9aa26f94d0a84be986ac91a16cb2a25f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N7556e408fe5a4b5197b8fd35818faed7",
+      "@id": "_:N8c1e157f60314adc9a80c8056e19ff42",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -113,7 +101,23 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N89295d69a2964da6be1be3ccb8b2a30d",
+      "@id": "_:Ndb62999c9a9e494cbfbe6c8c34072bfd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N6b3af0eef5e14b42847c185b0cb02687",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1384"
+      },
+      "sc:name": "Sequence alignment (protein)"
+    },
+    {
+      "@id": "_:N7fd008669847411ab3ea3bb07bbd4cfb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -121,12 +125,8 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N0d78ff005236438b9898e53bf8127378",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1384"
-      },
-      "sc:name": "Sequence alignment (protein)"
+      "@id": "https://doi.org/10.1186/1471-2105-12-221",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

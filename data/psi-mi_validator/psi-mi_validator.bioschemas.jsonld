@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/pmic.200900189",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/psi-mi_validator",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Marine Dumousseau",
       "bsc:input": {
-        "@id": "_:Nee86c58f0c654df2a10a83f2d2e93d7e"
+        "@id": "_:Nee26fc902b2a40e8ba3df34acd430e58"
       },
       "bsc:output": {
-        "@id": "_:Nf4f7ce0269c447039b8a09d0deac4009"
+        "@id": "_:N671a3b8a8e6640a782424f8982a90390"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -52,10 +56,10 @@
       },
       "sc:author": "IntAct team",
       "sc:citation": [
-        "pubmed:19834897",
         {
           "@id": "https://doi.org/10.1002/pmic.200900189"
-        }
+        },
+        "pubmed:19834897"
       ],
       "sc:description": "Validate files in PSI-MI XML 2.5 and PSI-PAR format, and generate a table with error messages.",
       "sc:featureList": {
@@ -63,24 +67,35 @@
       },
       "sc:name": "PSI-MI Validator",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/intact/validator/start.xhtml"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/intact/validator/start.xhtml"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/intact/validator/start.xhtml"
     },
     {
-      "@id": "_:Nee86c58f0c654df2a10a83f2d2e93d7e",
+      "@id": "_:N671a3b8a8e6640a782424f8982a90390",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nee26fc902b2a40e8ba3df34acd430e58",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0906"
@@ -94,21 +109,6 @@
         }
       ],
       "sc:name": "Protein interaction data"
-    },
-    {
-      "@id": "_:Nf4f7ce0269c447039b8a09d0deac4009",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.1002/pmic.200900189",
-      "@type": "sc:CreativeWork"
     }
   ]
 }
