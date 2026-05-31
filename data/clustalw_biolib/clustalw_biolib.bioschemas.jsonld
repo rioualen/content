@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/clustalw_biolib",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3fa30cd9eb9d4cc2b184bc715ce5021e"
+        "@id": "_:N12b27be55ed1417380746486f6bed49d"
       },
       "bsc:output": {
-        "@id": "_:N1dbf8cfbf06549d2969cab65ab07549a"
+        "@id": "_:N28f0acff9cef43b0a3b60539e22f8e23"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Bioinformatics portal",
         "Web API",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -60,10 +64,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:17846036",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btm404"
-        },
-        "pubmed:17846036"
+        }
       ],
       "sc:description": "ClustalW is a general purpose multiple sequence alignment program for DNA or proteins",
       "sc:featureList": {
@@ -84,7 +88,29 @@
       "sc:url": "https://biolib.com/bio-utils/clustalw/"
     },
     {
-      "@id": "_:N3fa30cd9eb9d4cc2b184bc715ce5021e",
+      "@id": "_:N28f0acff9cef43b0a3b60539e22f8e23",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1997"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1949"
+        },
+        {
+          "@id": "edam:format_1982"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N12b27be55ed1417380746486f6bed49d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -93,32 +119,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N1dbf8cfbf06549d2969cab65ab07549a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1997"
-        },
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1949"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

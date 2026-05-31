@@ -36,27 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/clustalw2_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Ncaa2cab7ba324890af23e7e709d04251"
+        "@id": "_:N1f0cda772de34424a20a267d99f94333"
       },
       "bsc:output": {
-        "@id": "_:Ncbddba6fcdd440018e6a310624bd4518"
+        "@id": "_:N6c9f9ea75f714857a40d63849bf24817"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -64,14 +56,14 @@
       "sc:author": "Des Higgins",
       "sc:citation": [
         "pubmed:17846036",
-        "pubmed:35412617",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btm404"
+        },
         "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btm404"
-        }
+        "pubmed:35412617"
       ],
       "sc:description": "General purpose global multiple sequence alignment program for DNA or proteins.",
       "sc:featureList": {
@@ -102,7 +94,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/msa/clustalw2/"
     },
     {
-      "@id": "_:Ncaa2cab7ba324890af23e7e709d04251",
+      "@id": "_:N1f0cda772de34424a20a267d99f94333",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -110,12 +102,20 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Ncbddba6fcdd440018e6a310624bd4518",
+      "@id": "_:N6c9f9ea75f714857a40d63849bf24817",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,15 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkae241",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts240",
       "@type": "sc:CreativeWork"
     },
     {
@@ -52,40 +44,40 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nbb1d3c4e3b6c42d797dafaa6fa86457e"
+        "@id": "_:N0462ba6092b24713bccbcbe72dc5e07f"
       },
       "bsc:output": [
         {
-          "@id": "_:N0551546c0de3460ab8e32c6224be4947"
+          "@id": "_:N66765fbd89574de695efe372fb47256b"
         },
         {
-          "@id": "_:N072c1537b8a14478868ab7c48d1f3f24"
+          "@id": "_:N9887ad09ea84485695a5735e00e68ca4"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "Bill Pearson",
       "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1093/nar/gkae241"
+        },
         "pubmed:35412617",
         "pmcid:PMC3371869",
+        "pmcid:PMC11223882",
+        "pubmed:22539666",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/bts240"
+        },
         "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/bts240"
-        },
-        "pmcid:PMC11223882",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkae241"
-        },
-        "pubmed:22539666",
         "pubmed:38597606"
       ],
       "sc:description": "Iterative protein sequence similarity search based on Smith & Waterman algorithm with PSI-BLAST profile construction : find distantly related protein sequences.",
@@ -94,9 +86,9 @@
       },
       "sc:name": "PSI-Search (EBI)",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": [
         "University of Virginia",
@@ -104,28 +96,20 @@
       ],
       "sc:softwareHelp": [
         {
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+        },
+        {
           "@id": "https://github.com/wrpearson/fasta36"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
-        {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/sss/psisearch"
     },
     {
-      "@id": "_:N0551546c0de3460ab8e32c6224be4947",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N072c1537b8a14478868ab7c48d1f3f24",
+      "@id": "_:N66765fbd89574de695efe372fb47256b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2854"
@@ -133,12 +117,28 @@
       "sc:name": "Position-specific scoring matrix"
     },
     {
-      "@id": "_:Nbb1d3c4e3b6c42d797dafaa6fa86457e",
+      "@id": "_:N9887ad09ea84485695a5735e00e68ca4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "_:N0462ba6092b24713bccbcbe72dc5e07f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

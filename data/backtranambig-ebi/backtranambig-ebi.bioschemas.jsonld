@@ -36,11 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
       "@type": "sc:CreativeWork"
     },
     {
@@ -48,35 +52,35 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N055b14d0379a42559181f2ced89795dd"
+        "@id": "_:N051f76016a334b2cb2e8fc3bc82da67a"
       },
       "bsc:output": {
-        "@id": "_:N8aa0dea616cf4d3e8b3cef904b450cc0"
+        "@id": "_:N08bbeee7854d43a1b7d2c41ba5e64c2f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web API",
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "EMBOSS",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        },
         "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        "pmcid:PMC11223882",
+        "pubmed:38597606",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
-        "pubmed:38597606",
-        "pubmed:35412617"
+        "pubmed:35412617",
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
+        "pmcid:PMC11223882"
       ],
       "sc:description": "Back-translate a protein sequence to ambiguous nucleotide sequence. It reads a protein sequence and writes the nucleic acid sequence it could have come from. It does this by using nucleotide ambiguity codes that represent all possible codons for each amino acid.",
       "sc:featureList": {
@@ -84,9 +88,9 @@
       },
       "sc:name": "backtranambig (EBI)",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -94,25 +98,17 @@
           "@id": "https://emboss.sourceforge.net/"
         },
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/jdispatcher/st/emboss_backtranambig/"
     },
     {
-      "@id": "_:N055b14d0379a42559181f2ced89795dd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N8aa0dea616cf4d3e8b3cef904b450cc0",
+      "@id": "_:N08bbeee7854d43a1b7d2c41ba5e64c2f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -120,8 +116,12 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N051f76016a334b2cb2e8fc3bc82da67a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
     }
   ]
 }

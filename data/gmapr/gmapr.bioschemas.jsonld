@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/978-1-4939-3578-9_15",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gmapr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Michael Lawrence",
       "bsc:input": [
         {
-          "@id": "_:N6673c17ddf5d4a23b61f5ad8d8733890"
+          "@id": "_:N779b89ff8ab64c8b9de53bc95b5d2ae4"
         },
         {
-          "@id": "_:Ne185d4f7277047979d9aca6752f96453"
+          "@id": "_:N7e2098bec47f49138a42c0ce5c69f37a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd8f6bb0031364b7c9064d02c9955b050"
+          "@id": "_:N29461d5f45104393bb958a8e1bf47d6f"
         },
         {
-          "@id": "_:N45b3ad640a3f4d48ba339ee457525e57"
+          "@id": "_:Nf81a3e334eef4175b209a2f0b9960298"
         },
         {
-          "@id": "_:N34c82d69d4294e75aba07b3485947d46"
+          "@id": "_:N2e5459dd5b744e5ba5c50a3441ba2e6e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -69,33 +65,33 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pubmed:27008021",
         {
           "@id": "https://doi.org/10.1007/978-1-4939-3578-9_15"
-        },
-        "pubmed:27008021"
+        }
       ],
       "sc:description": "GSNAP and GMAP are a pair of tools to align short-read data. This package provides convenience methods to work with GMAP and GSNAP from within R. In addition, it provides methods to tally alignment results on a per-nucleotide basis using the bam_tally tool.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3198"
+          "@id": "edam:operation_2478"
         },
         {
-          "@id": "edam:operation_2478"
+          "@id": "edam:operation_3198"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "gmapR",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/gmapR.html"
@@ -104,39 +100,77 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gmapR.html"
     },
     {
-      "@id": "_:Nd8f6bb0031364b7c9064d02c9955b050",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:N45b3ad640a3f4d48ba339ee457525e57",
+      "@id": "_:N779b89ff8ab64c8b9de53bc95b5d2ae4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_1930"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2572"
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N34c82d69d4294e75aba07b3485947d46",
+      "@id": "_:N7e2098bec47f49138a42c0ce5c69f37a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N29461d5f45104393bb958a8e1bf47d6f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Sequence alignment report"
+    },
+    {
+      "@id": "_:Nf81a3e334eef4175b209a2f0b9960298",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N2e5459dd5b744e5ba5c50a3441ba2e6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -152,42 +186,8 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N6673c17ddf5d4a23b61f5ad8d8733890",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Ne185d4f7277047979d9aca6752f96453",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1930"
-        }
-      ],
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "@id": "https://doi.org/10.1007/978-1-4939-3578-9_15",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

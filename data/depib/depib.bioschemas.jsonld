@@ -36,33 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41419-019-2200-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3237-7382",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1002/stem.3014",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/DEPIB",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Eric Charpentier",
       "bsc:input": {
-        "@id": "_:N31fa8dc2b0654b67a271bd5da5f1bb7b"
+        "@id": "_:N4198f3bb0b4a4d5f919d6d1d1d01b083"
       },
       "bsc:output": [
         {
-          "@id": "_:N91b89f4cbe0b4545b4159230bb347afb"
+          "@id": "_:Nd9e37baf1997401b919417efb950931e"
         },
         {
-          "@id": "_:N840ebfff31334f16a164168ccef8869d"
+          "@id": "_:N76f355ffc76e43339ae4d9b533c91d26"
         },
         {
-          "@id": "_:Ne0e26f140c1447d38b02d0ce23a8188b"
+          "@id": "_:N4dba0d2e0a474a68acae9a1836bf2de4"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -71,26 +59,26 @@
         "@id": "edam:topic_3308"
       },
       "sc:author": [
-        "Eric Charpentier",
-        "Erwan Delage",
+        {
+          "@id": "https://orcid.org/0000-0002-8689-2083"
+        },
         {
           "@id": "https://orcid.org/0000-0003-3237-7382"
         },
-        {
-          "@id": "https://orcid.org/0000-0002-8689-2083"
-        }
+        "Erwan Delage",
+        "Eric Charpentier"
       ],
       "sc:citation": [
-        "pmcid:PMC6944699",
-        "pmcid:PMC6850038",
-        "pubmed:30977188",
+        {
+          "@id": "https://doi.org/10.1002/stem.3014"
+        },
         "pubmed:31907355",
+        "pmcid:PMC6944699",
+        "pubmed:30977188",
         {
           "@id": "https://doi.org/10.1038/s41419-019-2200-2"
         },
-        {
-          "@id": "https://doi.org/10.1002/stem.3014"
-        }
+        "pmcid:PMC6850038"
       ],
       "sc:contributor": "Damien Vintache",
       "sc:description": "Analysis pipeline using Snakemake for RNAseq analysis in order to find differentially expressed genes.",
@@ -104,18 +92,23 @@
       "sc:url": "https://gitlab.univ-nantes.fr/bird_pipeline_registry/RNAseq_quantif_pipeline"
     },
     {
-      "@id": "_:N91b89f4cbe0b4545b4159230bb347afb",
+      "@id": "_:Nd9e37baf1997401b919417efb950931e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_3768"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Clustered expression profiles"
     },
     {
-      "@id": "_:N840ebfff31334f16a164168ccef8869d",
+      "@id": "_:N76f355ffc76e43339ae4d9b533c91d26",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -126,23 +119,18 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Ne0e26f140c1447d38b02d0ce23a8188b",
+      "@id": "_:N4dba0d2e0a474a68acae9a1836bf2de4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3768"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Clustered expression profiles"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     },
     {
-      "@id": "_:N31fa8dc2b0654b67a271bd5da5f1bb7b",
+      "@id": "_:N4198f3bb0b4a4d5f919d6d1d1d01b083",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -155,6 +143,18 @@
     {
       "@id": "https://orcid.org/0000-0002-8689-2083",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3237-7382",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1002/stem.3014",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41419-019-2200-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

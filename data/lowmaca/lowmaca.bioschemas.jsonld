@@ -36,36 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-016-0935-7",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-1103-7688",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-6371-1334",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/lowmaca",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "http://orcid.org/0000-0003-1103-7688"
+          "@id": "http://orcid.org/0000-0001-6371-1334"
         },
         {
-          "@id": "http://orcid.org/0000-0001-6371-1334"
+          "@id": "http://orcid.org/0000-0003-1103-7688"
         }
       ],
       "bsc:input": [
         {
-          "@id": "_:Nb02d42bad6144877ae4cc1b61421f026"
+          "@id": "_:Ncf5fd5652b95435ea5e5bf4986fcc04a"
         },
         {
-          "@id": "_:N9b9c6bc508dd48b1b3dc62e74b2cb071"
+          "@id": "_:N61500ffccb6a4887983a6ac7f8cc45f1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc5d262e4d7f74e86a13a080549d09bb3"
+          "@id": "_:Nc76b80cb0dc74422b3bc69e159a7c603"
         },
         {
-          "@id": "_:N77c6fd52f3094c6196869a2bc83ad04f"
+          "@id": "_:N39f431a31fc843eb8101dad0f79dd14d"
         },
         {
-          "@id": "_:Naf8989abeeb041799a3aa66b8ae3586b"
+          "@id": "_:N865c3c66e9624ca1ad1bfb7e5f1ec7d4"
         },
         {
-          "@id": "_:Nf7ff66e7f6cd412986bae921b73f3b7d"
+          "@id": "_:N1799b62ed4224473a7485c92cb4bbee4"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -75,17 +87,17 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:26860319",
         {
           "@id": "https://doi.org/10.1186/s12859-016-0935-7"
         },
-        "pubmed:26860319",
         "pmcid:PMC4748640"
       ],
       "sc:description": "This package is a simple suite of tools to investigate and analyze the mutation profile of several proteins or PFAM domains via consensus alignment. You can conduct an hypothesis driven exploratory analysis using our package simply providing a set of genes or PFAM domains of your interest.",
@@ -103,9 +115,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "LowMACA",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/LowMACA.html"
@@ -114,29 +126,45 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/LowMACA.html"
     },
     {
-      "@id": "_:Nb02d42bad6144877ae4cc1b61421f026",
+      "@id": "_:Nc76b80cb0dc74422b3bc69e159a7c603",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2295"
+        "@id": "edam:data_2166"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Sequence composition plot"
     },
     {
-      "@id": "_:N9b9c6bc508dd48b1b3dc62e74b2cb071",
+      "@id": "_:N39f431a31fc843eb8101dad0f79dd14d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1138"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Pfam accession number"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:Nc5d262e4d7f74e86a13a080549d09bb3",
+      "@id": "_:N865c3c66e9624ca1ad1bfb7e5f1ec7d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
@@ -155,73 +183,45 @@
       "sc:name": "Sequence alignment report"
     },
     {
-      "@id": "_:N77c6fd52f3094c6196869a2bc83ad04f",
+      "@id": "_:N1799b62ed4224473a7485c92cb4bbee4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3547"
+        },
+        {
           "@id": "edam:format_3603"
         },
         {
           "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:Naf8989abeeb041799a3aa66b8ae3586b",
+      "@id": "_:Ncf5fd5652b95435ea5e5bf4986fcc04a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_2295"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene ID"
     },
     {
-      "@id": "_:Nf7ff66e7f6cd412986bae921b73f3b7d",
+      "@id": "_:N61500ffccb6a4887983a6ac7f8cc45f1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2166"
+        "@id": "edam:data_1138"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Sequence composition plot"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-016-0935-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-6371-1334",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-1103-7688",
-      "@type": "sc:Person"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Pfam accession number"
     }
   ]
 }

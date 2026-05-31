@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jproteome.3c00486",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/Sage-proteomics",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N94aa10cad0a2435dafcfe5340c3decd9"
+          "@id": "_:N552c7eef695f4bbeada6d9eba3e00f33"
         },
         {
-          "@id": "_:Nd578dc987c3941ba8dcf668199e770f9"
+          "@id": "_:N7e410cdee9054201b58f58cf516730a9"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0af6bdeba4604ab1991bdd1746f44ed7"
+        "@id": "_:Nf79afdaaa96b46929ed3c13e59bc06c4"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
-        "pubmed:37819886",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.3c00486"
-        }
+        },
+        "pubmed:37819886"
       ],
       "sc:description": "Sage is a proteomics database search engine to match tandem mass spectra to peptides. Sage also performs retention time prediction, quantificaiton and FDR control.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2428"
+        },
         {
           "@id": "edam:operation_3633"
         },
         {
           "@id": "edam:operation_3631"
-        },
-        {
-          "@id": "edam:operation_2428"
         }
       ],
       "sc:license": "MIT",
@@ -80,7 +76,18 @@
       "sc:url": "https://github.com/lazear/sage"
     },
     {
-      "@id": "_:N94aa10cad0a2435dafcfe5340c3decd9",
+      "@id": "_:Nf79afdaaa96b46929ed3c13e59bc06c4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:N552c7eef695f4bbeada6d9eba3e00f33",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -91,7 +98,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nd578dc987c3941ba8dcf668199e770f9",
+      "@id": "_:N7e410cdee9054201b58f58cf516730a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -102,15 +109,8 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N0af6bdeba4604ab1991bdd1746f44ed7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Peptide identification"
+      "@id": "https://doi.org/10.1021/acs.jproteome.3c00486",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

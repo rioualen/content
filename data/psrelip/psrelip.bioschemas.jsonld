@@ -39,23 +39,26 @@
       "@id": "https://bio.tools/psrelip",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9221e0208b7a41f1aee9203afa2cb14e"
+        "@id": "_:Nfe49e56707e946be8e950411624579e4"
       },
       "bsc:output": [
         {
-          "@id": "_:N3b90b29b806b41aa98bab02b99a9ec2d"
+          "@id": "_:N4823fba3024d442c9b64f44c92b871e9"
         },
         {
-          "@id": "_:N8f4dd25714554f699164619442e1c7cc"
+          "@id": "_:N8c8f6141286f4338a24c1e5ecc832480"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
         "Command-line tool",
-        "Desktop application"
+        "Desktop application",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3500"
+        },
         {
           "@id": "edam:topic_0769"
         },
@@ -63,32 +66,29 @@
           "@id": "edam:topic_3517"
         },
         {
-          "@id": "edam:topic_0199"
-        },
-        {
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_3500"
+          "@id": "edam:topic_0199"
         }
       ],
       "sc:citation": [
-        "pubmed:37020193",
-        "pmcid:PMC10074814",
         {
           "@id": "https://doi.org/10.1186/s12859-023-05169-4"
-        }
+        },
+        "pubmed:37020193",
+        "pmcid:PMC10074814"
       ],
       "sc:description": "Integrated pipeline for analysis and visualization of population structure and relatedness based on genome-wide genetic variant data.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_2939"
-        },
         {
           "@id": "edam:operation_3197"
         },
         {
           "@id": "edam:operation_3891"
+        },
+        {
+          "@id": "edam:operation_2939"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -98,15 +98,23 @@
       "sc:url": "https://github.com/solelena/PSReliP"
     },
     {
-      "@id": "_:N3b90b29b806b41aa98bab02b99a9ec2d",
+      "@id": "_:Nfe49e56707e946be8e950411624579e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3914"
+        "@id": "edam:data_3498"
       },
-      "sc:name": "Quality control report"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3016"
+        },
+        {
+          "@id": "edam:format_3020"
+        }
+      ],
+      "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N8f4dd25714554f699164619442e1c7cc",
+      "@id": "_:N4823fba3024d442c9b64f44c92b871e9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -114,20 +122,12 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N9221e0208b7a41f1aee9203afa2cb14e",
+      "@id": "_:N8c8f6141286f4338a24c1e5ecc832480",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3498"
+        "@id": "edam:data_3914"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3020"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence variations"
+      "sc:name": "Quality control report"
     },
     {
       "@id": "https://doi.org/10.1186/s12859-023-05169-4",

@@ -36,29 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-6807-7029",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2020.03.28.013003",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/deeplc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "CompOmics",
       "bsc:input": {
-        "@id": "_:N6e41df6fc8614f968479f16e5d2b9118"
+        "@id": "_:N5668b96bddbe4184bdadb5d8b671c396"
       },
       "bsc:output": {
-        "@id": "_:N5e96938f0e2641adbbcacd89ce9099b3"
+        "@id": "_:N44030ff3936144ca94fd7e874f5ef454"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0121"
+        },
         {
           "@id": "edam:topic_0123"
         },
         {
           "@id": "edam:topic_3474"
-        },
-        {
-          "@id": "edam:topic_0121"
         }
       ],
       "sc:author": {
@@ -75,9 +83,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "DeepLC",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://compomics.github.io/projects/DeepLC"
@@ -85,18 +93,7 @@
       "sc:url": "http://compomics.github.io/projects/DeepLC"
     },
     {
-      "@id": "_:N5e96938f0e2641adbbcacd89ce9099b3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2979"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Peptide property"
-    },
-    {
-      "@id": "_:N6e41df6fc8614f968479f16e5d2b9118",
+      "@id": "_:N5668b96bddbe4184bdadb5d8b671c396",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -107,12 +104,15 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "http://orcid.org/0000-0001-6807-7029",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2020.03.28.013003",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N44030ff3936144ca94fd7e874f5ef454",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2979"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Peptide property"
     }
   ]
 }

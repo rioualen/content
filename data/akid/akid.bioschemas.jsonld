@@ -36,52 +36,48 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty545",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/akid",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Luca Parca",
       "bsc:input": {
-        "@id": "_:Nfaedf64164214cc0be01375ee84c2e8b"
+        "@id": "_:N536a71695aad4287bd91e000f5ebb985"
       },
       "bsc:output": {
-        "@id": "_:N402722038c234260a8689f7ed8f74866"
+        "@id": "_:N85bea986da9a46cc81d6dc15089b3bf9"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web service"
+        "Web service",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3510"
         },
         {
-          "@id": "edam:topic_3510"
+          "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0601"
         }
       ],
       "sc:citation": [
+        "pubmed:30016513",
+        "pmcid:PMC6361239",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bty545"
-        },
-        "pmcid:PMC6361239",
-        "pubmed:30016513"
+        }
       ],
       "sc:description": "AKID is a Deep Neural Network-based method that identifies kinase-specific phosphorylation events at single-kinase level in any given Eukaryotic proteome without prior functional annotation. It automatically detects kinase domains, their residues responsible for target specificity and finally their target peptides.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0239"
-        },
         {
           "@id": "edam:operation_0417"
         },
         {
           "@id": "edam:operation_0276"
+        },
+        {
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:name": "AKID",
@@ -90,7 +86,15 @@
       "sc:url": "http://akid.bio.uniroma2.it"
     },
     {
-      "@id": "_:Nfaedf64164214cc0be01375ee84c2e8b",
+      "@id": "_:N85bea986da9a46cc81d6dc15089b3bf9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N536a71695aad4287bd91e000f5ebb985",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -98,12 +102,8 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N402722038c234260a8689f7ed8f74866",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:name": "Protein features"
+      "@id": "https://doi.org/10.1093/bioinformatics/bty545",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/coverageview",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ernesto Lowy",
       "bsc:input": [
         {
-          "@id": "_:N01766a195d3340aaacfbd53fde8a32f7"
+          "@id": "_:Na512a396069c4ec8bb95d1b07c1b7aa4"
         },
         {
-          "@id": "_:Na65050b209ea4db3aa42e82bf3e307cc"
+          "@id": "_:N1ae87aaf550f497d927214a015891fe5"
         },
         {
-          "@id": "_:N7379159b76734f75a3d79fd0e20537f0"
+          "@id": "_:Ncbd370d0d89d48cbaec23c4878e3c488"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4307a666b21a4e689d2e1c20d342ee3f"
+          "@id": "_:Neea49f1a92b44169a63ab4b218115a24"
         },
         {
-          "@id": "_:N3c5c3d81f3b04d6daa26a7a413728ea5"
+          "@id": "_:Nea87b09cbe2749708584927413bf5c60"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -69,6 +65,9 @@
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0092"
+        },
+        {
           "@id": "edam:topic_3511"
         },
         {
@@ -76,17 +75,14 @@
         },
         {
           "@id": "edam:topic_3295"
-        },
-        {
-          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": [
-        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pmcid:PMC4509590"
+        "pmcid:PMC4509590",
+        "pubmed:25633503"
       ],
       "sc:description": "This package provides a framework for the visualization of genome coverage profiles. It can be used for ChIP-seq experiments, but it can be also used for genome-wide nucleosome positioning experiments or other experiment types where it is important to have a framework in order to inspect how the coverage distributed across the genome.",
       "sc:featureList": [
@@ -100,9 +96,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "CoverageView",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/CoverageView.html"
@@ -111,64 +107,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/CoverageView.html"
     },
     {
-      "@id": "_:N01766a195d3340aaacfbd53fde8a32f7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3006"
-        }
-      ],
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:Na65050b209ea4db3aa42e82bf3e307cc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3006"
-        },
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N7379159b76734f75a3d79fd0e20537f0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3006"
-        },
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N4307a666b21a4e689d2e1c20d342ee3f",
+      "@id": "_:Neea49f1a92b44169a63ab4b218115a24",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -179,7 +118,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N3c5c3d81f3b04d6daa26a7a413728ea5",
+      "@id": "_:Nea87b09cbe2749708584927413bf5c60",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -188,6 +127,67 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:Na512a396069c4ec8bb95d1b07c1b7aa4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3006"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N1ae87aaf550f497d927214a015891fe5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3006"
+        },
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3003"
+        }
+      ],
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:Ncbd370d0d89d48cbaec23c4878e3c488",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3006"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

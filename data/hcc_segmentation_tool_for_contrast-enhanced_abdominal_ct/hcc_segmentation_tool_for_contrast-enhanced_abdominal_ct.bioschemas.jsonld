@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-1887-0157",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/hcc_segmentation_tool_for_contrast-enhanced_abdominal_ct",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,18 +47,18 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N71368da6c034496aba8a51847fe9aa35"
+          "@id": "_:N3c02ad2499874158a4f3357e11bbc094"
         },
         {
-          "@id": "_:Nf47def4f268540b7bbf99e2c6f250065"
+          "@id": "_:Naddb8ba5bb804676bd39388342aaf36e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N320a86eccb844d6991b6f7adf44bfea9"
+          "@id": "_:Nfcf2594f235f45a0a7b70cdb9e78562c"
         },
         {
-          "@id": "_:N227ee31810324e699de6f48e52a5a5fa"
+          "@id": "_:N696250a97e7b4c23812a242bf52e90f6"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -63,11 +67,11 @@
         "@id": "edam:topic_3063"
       },
       "sc:author": [
-        "Nuno Rodrigues",
         "Teresa Sotto-Mayor",
         {
           "@id": "https://orcid.org/0000-0002-1887-0157"
-        }
+        },
+        "Nuno Rodrigues"
       ],
       "sc:description": "Features an nnU-Net based segmentation tool capable of performing HCC segmentation for both arterial and portal venous phase in polyphasic contrast-enhanced abdominal CT.\n\nPlease be mindful that the usage instructions below are for the image in the EUCAIM Harbor.",
       "sc:featureList": {
@@ -83,39 +87,7 @@
       "sc:url": "https://github.com/josegcpa/nnunet_serve"
     },
     {
-      "@id": "_:N320a86eccb844d6991b6f7adf44bfea9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3548"
-        },
-        {
-          "@id": "edam:format_3549"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N227ee31810324e699de6f48e52a5a5fa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3549"
-        },
-        {
-          "@id": "edam:format_3548"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N71368da6c034496aba8a51847fe9aa35",
+      "@id": "_:N3c02ad2499874158a4f3357e11bbc094",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3442"
@@ -131,7 +103,7 @@
       "sc:name": "MRI image"
     },
     {
-      "@id": "_:Nf47def4f268540b7bbf99e2c6f250065",
+      "@id": "_:Naddb8ba5bb804676bd39388342aaf36e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3442"
@@ -147,8 +119,36 @@
       "sc:name": "MRI image"
     },
     {
-      "@id": "https://orcid.org/0000-0002-1887-0157",
-      "@type": "sc:Person"
+      "@id": "_:Nfcf2594f235f45a0a7b70cdb9e78562c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3549"
+        },
+        {
+          "@id": "edam:format_3548"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N696250a97e7b4c23812a242bf52e90f6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3549"
+        },
+        {
+          "@id": "edam:format_3548"
+        }
+      ],
+      "sc:name": "Image"
     }
   ]
 }

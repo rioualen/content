@@ -36,8 +36,85 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "https://bio.tools/backtranseq-ebi",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "Job Dispatcher",
+      "bsc:input": {
+        "@id": "_:Na70181a28ab44f54892a9592e27cacb1"
+      },
+      "bsc:output": {
+        "@id": "_:Nee22a36b0cd844ab8ecc5f08ad964d2a"
+      },
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Web API",
+        "Web application",
+        "Web service"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3489"
+        },
+        {
+          "@id": "edam:topic_0080"
+        }
+      ],
+      "sc:author": "EMBOSS",
+      "sc:citation": [
+        "pmcid:PMC9252731",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        },
+        {
+          "@id": "https://doi.org/10.1093/nar/gkae241"
+        },
+        "pubmed:38597606",
+        "pubmed:35412617",
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
+        "pmcid:PMC11223882"
+      ],
+      "sc:description": "Back-translate a protein sequence to a nucleotide sequence, using codon frequency.It reads a protein sequence and writes the nucleic acid sequence it is most likely to have come from.",
+      "sc:featureList": {
+        "@id": "edam:operation_0371"
+      },
+      "sc:name": "backtranseq (EBI)",
+      "sc:operatingSystem": [
+        "Mac",
+        "Linux",
+        "Windows"
+      ],
+      "sc:provider": "EMBL-EBI",
+      "sc:softwareHelp": [
+        {
+          "@id": "https://emboss.sourceforge.net/"
+        },
+        {
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+        },
+        {
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+        }
+      ],
+      "sc:softwareVersion": "1",
+      "sc:url": "http://www.ebi.ac.uk/jdispatcher/st/emboss_backtranseq/"
+    },
+    {
+      "@id": "_:Na70181a28ab44f54892a9592e27cacb1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nee22a36b0cd844ab8ecc5f08ad964d2a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:name": "Nucleic acid sequence"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkae241",
@@ -48,85 +125,8 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://bio.tools/backtranseq-ebi",
-      "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": "Job Dispatcher",
-      "bsc:input": {
-        "@id": "_:N8568634d413d40acba017d9a5d9b43f3"
-      },
-      "bsc:output": {
-        "@id": "_:Nb5c33392ac6c495f8913e0cfacd39e6a"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": [
-        "Web application",
-        "Web API",
-        "Web service"
-      ],
-      "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_3489"
-        }
-      ],
-      "sc:author": "EMBOSS",
-      "sc:citation": [
-        "pmcid:PMC9252731",
-        "pmcid:PMC11223882",
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkae241"
-        },
-        "pubmed:38597606",
-        "pubmed:35412617",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        }
-      ],
-      "sc:description": "Back-translate a protein sequence to a nucleotide sequence, using codon frequency.It reads a protein sequence and writes the nucleic acid sequence it is most likely to have come from.",
-      "sc:featureList": {
-        "@id": "edam:operation_0371"
-      },
-      "sc:name": "backtranseq (EBI)",
-      "sc:operatingSystem": [
-        "Windows",
-        "Mac",
-        "Linux"
-      ],
-      "sc:provider": "EMBL-EBI",
-      "sc:softwareHelp": [
-        {
-          "@id": "https://emboss.sourceforge.net/"
-        },
-        {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
-        },
-        {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        }
-      ],
-      "sc:softwareVersion": "1",
-      "sc:url": "http://www.ebi.ac.uk/jdispatcher/st/emboss_backtranseq/"
-    },
-    {
-      "@id": "_:N8568634d413d40acba017d9a5d9b43f3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nb5c33392ac6c495f8913e0cfacd39e6a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:name": "Nucleic acid sequence"
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

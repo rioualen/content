@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-3251-026X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-024-05858-8",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pychelator",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,29 +51,29 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N9b9f27685b21452a90bdeb1b55a872a5"
+          "@id": "_:N2499915d5cb2405f8f609a51711e508a"
         },
         {
-          "@id": "_:N2cf3cef1832e4f1c8699ba607ad61618"
+          "@id": "_:N9bc91a1593d24b23a1707d021378501e"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne8e688eaa2ca4c898522a5f9f3fb328c"
+        "@id": "_:N0e0605b840ff4aa1b2c7753ec1496ec7"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Web application"
+        "Web application",
+        "Script"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3292"
       },
       "sc:citation": [
-        "pmcid:PMC11253343",
-        "pubmed:39014298",
         {
           "@id": "https://doi.org/10.1186/s12859-024-05858-8"
-        }
+        },
+        "pubmed:39014298",
+        "pmcid:PMC11253343"
       ],
       "sc:description": "PyChelator is a Python-based Colab and web application for metal chelator calculations, taking into account pH, temperature, and ionic strength. The build-in constants can be used for EGTA and ATP as chelators, together with Calcium and Magnesium as metals. Additionally, user-defined constants can be used to calculate other metals and chelators. PyChelator offers enhanced user experience and customization options, based on the well-established and widely used Maxchelator framework.  \nThe Python code in a Google Colaboratory notebook makes the PyChelator functionalities readily available to the Python-using scientific community for further development.",
       "sc:featureList": {
@@ -81,29 +89,7 @@
       "sc:url": "https://amrutelab.github.io/PyChelator/"
     },
     {
-      "@id": "_:N9b9f27685b21452a90bdeb1b55a872a5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2140"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Concentration"
-    },
-    {
-      "@id": "_:N2cf3cef1832e4f1c8699ba607ad61618",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Experimental measurement"
-    },
-    {
-      "@id": "_:Ne8e688eaa2ca4c898522a5f9f3fb328c",
+      "@id": "_:N0e0605b840ff4aa1b2c7753ec1496ec7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -119,12 +105,26 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-024-05858-8",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2499915d5cb2405f8f609a51711e508a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2140"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Concentration"
     },
     {
-      "@id": "https://orcid.org/0000-0003-3251-026X",
-      "@type": "sc:Person"
+      "@id": "_:N9bc91a1593d24b23a1707d021378501e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Experimental measurement"
     }
   ]
 }

@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.2658",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metagenomeseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Joseph N. Paulson",
       "bsc:input": [
         {
-          "@id": "_:Nce2a23e1186145fb8867cd287ae31210"
+          "@id": "_:N41c8dd28471f4763b83b3ff044db64c1"
         },
         {
-          "@id": "_:N5892b4cccc1f490c9ff9f4abcd35801c"
+          "@id": "_:N97599744d55b413385ec90dfdf14dc43"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ncc61591d2b0b4b349ec57a61f12f85ff"
+          "@id": "_:N2d2e6899fc7a4682904f70dee02c02e3"
         },
         {
-          "@id": "_:N8af0f18cdf2041e592a08f1223fd1a19"
+          "@id": "_:N6a86a98bc02a4ef29cd00fe45212ceef"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -69,27 +73,27 @@
         }
       ],
       "sc:citation": [
-        "pubmed:24076764",
         {
           "@id": "https://doi.org/10.1038/nmeth.2658"
         },
+        "pubmed:24076764",
         "pmcid:PMC4010126"
       ],
       "sc:description": "Designed to determine features (be it Operational Taxanomic Unit (OTU), species, etc.) that are differentially abundant between two or more groups of multiple samples. It is designed to address the effects of both normalization and under-sampling of microbial communities on disease association detection and the testing of feature correlations.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0564"
+          "@id": "edam:operation_2238"
         },
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_0564"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "metagenomeSeq",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/metagenomeSeq.html"
@@ -98,55 +102,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/metagenomeSeq.html"
     },
     {
-      "@id": "_:Ncc61591d2b0b4b349ec57a61f12f85ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N8af0f18cdf2041e592a08f1223fd1a19",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nce2a23e1186145fb8867cd287ae31210",
+      "@id": "_:N41c8dd28471f4763b83b3ff044db64c1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3746"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_3746"
         }
       ],
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N5892b4cccc1f490c9ff9f4abcd35801c",
+      "@id": "_:N97599744d55b413385ec90dfdf14dc43",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -162,8 +134,36 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.2658",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2d2e6899fc7a4682904f70dee02c02e3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N6a86a98bc02a4ef29cd00fe45212ceef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

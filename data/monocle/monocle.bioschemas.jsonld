@@ -40,59 +40,55 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.4402",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/monocle",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-8105-4347"
       },
       "bsc:input": {
-        "@id": "_:N3f568b26c19745a8a6062fc6d7a8282b"
+        "@id": "_:N3c530e39054d4bed8b26feac6c8953d2"
       },
       "bsc:output": {
-        "@id": "_:Nce99bff92de3435a9a121e87ef02b446"
+        "@id": "_:N2fdfe8334a654f68928eacdc2492b1dc"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2229"
-        },
-        {
-          "@id": "edam:topic_3519"
-        },
         {
           "@id": "edam:topic_3170"
         },
         {
+          "@id": "edam:topic_2229"
+        },
+        {
           "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_3519"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC5764547",
+        "pubmed:28114287",
+        "pubmed:28825705",
         {
           "@id": "https://doi.org/10.1038/nmeth.4150"
         },
         {
           "@id": "https://doi.org/10.1038/nmeth.4402"
         },
-        "pmcid:PMC5764547",
-        "pubmed:28825705",
-        "pubmed:28114287",
         "pmcid:PMC5330805"
       ],
       "sc:description": "This tool performs differential expression and time-series analysis for single-cell expression experiments. It orders individual cells according to progress through a biological process, without knowing ahead of time which genes define progress through that process. It also performs differential expression analysis, clustering, visualization, and other useful tasks on single cell expression data. It is designed to work with RNA-Seq and qPCR data, but could be used with other types as well.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3439"
+          "@id": "edam:operation_3562"
         },
         {
-          "@id": "edam:operation_3562"
+          "@id": "edam:operation_3439"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -115,18 +111,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/monocle.html"
     },
     {
-      "@id": "_:N3f568b26c19745a8a6062fc6d7a8282b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1213"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:Nce99bff92de3435a9a121e87ef02b446",
+      "@id": "_:N2fdfe8334a654f68928eacdc2492b1dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1713"
@@ -137,7 +122,22 @@
       "sc:name": "Fate map"
     },
     {
+      "@id": "_:N3c530e39054d4bed8b26feac6c8953d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1213"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
       "@id": "https://doi.org/10.1038/nmeth.4150",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.4402",
       "@type": "sc:CreativeWork"
     }
   ]

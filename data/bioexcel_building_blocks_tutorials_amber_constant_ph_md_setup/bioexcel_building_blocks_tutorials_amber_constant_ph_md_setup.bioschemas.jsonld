@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://orcid.org/0000-0003-0513-0288",
       "@type": "sc:Person"
     },
@@ -46,14 +50,14 @@
         "@id": "https://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:N319432979d834415aebdf9f28dc06222"
+        "@id": "_:N528a4f51ad344e5ba14e07d7882c74b1"
       },
       "bsc:output": [
         {
-          "@id": "_:Ncaf52fd15297407cabbc6e07e689a901"
+          "@id": "_:Nb2af98dbb2f845a1b8f36e4aca53ee27"
         },
         {
-          "@id": "_:N729877842c464f40906d51be8fc56310"
+          "@id": "_:Ncb996e6bed2a46799044c0cba940da23"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -68,10 +72,10 @@
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0003-0513-0288"
+          "@id": "https://orcid.org/0000-0002-8291-8071"
         },
         {
-          "@id": "https://orcid.org/0000-0002-8291-8071"
+          "@id": "https://orcid.org/0000-0003-0513-0288"
         }
       ],
       "sc:citation": [
@@ -84,19 +88,19 @@
       "sc:description": "This tutorial aims to illustrate the process of setting up a simulation system to run constant pH Molecular Dynamics simulations with AMBER, step by step, using the BioExcel Building Blocks library (biobb) wrapping the AmberTools utility from the AMBER package. The particular example used is the Bovine Pancreatic Trypsin Inhibitor (BPTI) protein (PDB code 6PTI).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2476"
+          "@id": "edam:operation_0477"
         },
         {
-          "@id": "edam:operation_0477"
+          "@id": "edam:operation_2476"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks tutorials: AMBER Constant pH MD setup",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "BioExcel Center of Excellence for Computational Biomolecular Research",
       "sc:softwareHelp": {
@@ -106,7 +110,7 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/amber_md_setup_ph"
     },
     {
-      "@id": "_:N319432979d834415aebdf9f28dc06222",
+      "@id": "_:N528a4f51ad344e5ba14e07d7882c74b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -117,7 +121,18 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Ncaf52fd15297407cabbc6e07e689a901",
+      "@id": "_:Nb2af98dbb2f845a1b8f36e4aca53ee27",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3881"
+      },
+      "sc:name": "Topology data"
+    },
+    {
+      "@id": "_:Ncb996e6bed2a46799044c0cba940da23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -131,21 +146,6 @@
         }
       ],
       "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:N729877842c464f40906d51be8fc56310",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3881"
-      },
-      "sc:name": "Topology data"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1038/s41597-019-0177-4",

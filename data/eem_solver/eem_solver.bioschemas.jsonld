@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/jcc.20344",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/eem_solver",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Radka Svobodová Vařeková",
       "bsc:input": {
-        "@id": "_:N36b1ea733bc2474489177999eccd7617"
+        "@id": "_:Ndfeace1456ad46c0ae05c92cc58d341e"
       },
       "bsc:output": {
-        "@id": "_:Nc5bd2031fd8f438797b285b07fa2ec59"
+        "@id": "_:N0647fbe8e4b241208f8d26bf57185ec2"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2258"
+          "@id": "edam:topic_3332"
         },
         {
-          "@id": "edam:topic_3332"
+          "@id": "edam:topic_2258"
         }
       ],
       "sc:citation": [
-        "pubmed:16381078",
         {
           "@id": "https://doi.org/10.1002/jcc.20344"
-        }
+        },
+        "pubmed:16381078"
       ],
       "sc:description": "Calculates partial atomic charges for small organic molecules, drug-like molecules. The tool is deprecated, we recommend the use of AtomicChargeCalculator.",
       "sc:featureList": {
@@ -72,17 +68,17 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "EEM Solver",
       "sc:operatingSystem": [
-        "Mac",
+        "Linux",
         "Windows",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "ELIXIR-CZ",
       "sc:softwareHelp": [
         {
-          "@id": "http://onlinelibrary.wiley.com/enhanced/exportCitation/doi/10.1002/jcc.20344"
+          "@id": "http://www.ncbr.muni.cz/~n19n/eem_abeem/manual.htm"
         },
         {
-          "@id": "http://www.ncbr.muni.cz/~n19n/eem_abeem/manual.htm"
+          "@id": "http://onlinelibrary.wiley.com/enhanced/exportCitation/doi/10.1002/jcc.20344"
         },
         {
           "@id": "http://www.ncbr.muni.cz/~n19n/eem_abeem/licence.htm"
@@ -92,7 +88,15 @@
       "sc:url": "http://ncbr.muni.cz/~svobodova/eem_abeem"
     },
     {
-      "@id": "_:Nc5bd2031fd8f438797b285b07fa2ec59",
+      "@id": "_:Ndfeace1456ad46c0ae05c92cc58d341e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N0647fbe8e4b241208f8d26bf57185ec2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1917"
@@ -103,12 +107,8 @@
       "sc:name": "Atomic property"
     },
     {
-      "@id": "_:N36b1ea733bc2474489177999eccd7617",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1463"
-      },
-      "sc:name": "Small molecule structure"
+      "@id": "https://doi.org/10.1002/jcc.20344",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/pr800162c",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pred-lipo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pantelis Bagos",
       "bsc:input": {
-        "@id": "_:N30a7b9ea667a499fa570b3e80ef1a4bd"
+        "@id": "_:Naf0aab0e84414cbe9fccc5881c4cb0ee"
       },
       "bsc:output": {
-        "@id": "_:N496df5fbd1e4480990c3067cdaa15ce0"
+        "@id": "_:Nef8328f20db945efaa269e8b92cb2b38"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0820"
         },
         {
-          "@id": "edam:topic_0820"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
-        "pubmed:19367716",
         {
           "@id": "https://doi.org/10.1021/pr800162c"
-        }
+        },
+        "pubmed:19367716"
       ],
       "sc:description": "PRED-SIGNAL is a tool that takes a Gram-positive bacteria protein sequence as input and predicts the probability of it being a lipoprotein signal peptides",
       "sc:featureList": [
@@ -76,8 +72,8 @@
       ],
       "sc:name": "PRED-LIPO",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
+        "Linux",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,7 +83,18 @@
       "sc:url": "http://www.compgen.org/tools/PRED-LIPO"
     },
     {
-      "@id": "_:N30a7b9ea667a499fa570b3e80ef1a4bd",
+      "@id": "_:Nef8328f20db945efaa269e8b92cb2b38",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence report"
+    },
+    {
+      "@id": "_:Naf0aab0e84414cbe9fccc5881c4cb0ee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -98,15 +105,8 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N496df5fbd1e4480990c3067cdaa15ce0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence report"
+      "@id": "https://doi.org/10.1021/pr800162c",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

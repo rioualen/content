@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1005598",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/diffusion",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Daniel E. Carlin",
       "bsc:input": {
-        "@id": "_:Nd86d0ff73d714169a9748420cca2797a"
+        "@id": "_:N47c5d8d03be84374bb5c2e1a6c4471ff"
       },
       "bsc:output": {
-        "@id": "_:N40f1b83dacb4434aa0833dcfdeaae1d3"
+        "@id": "_:Nd75da80c2e3143e9b1d24d8d0a641e10"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0602"
+        },
+        {
           "@id": "edam:topic_1775"
         },
         {
           "@id": "edam:topic_0625"
-        },
-        {
-          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
@@ -72,9 +68,6 @@
       "sc:description": "A Cytoscape application for network propagation for finding new genes that are most relevant to a disease state.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3439"
-        },
-        {
           "@id": "edam:operation_3562"
         },
         {
@@ -82,15 +75,18 @@
         },
         {
           "@id": "edam:operation_3672"
+        },
+        {
+          "@id": "edam:operation_3439"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "Diffusion",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/idekerlab/heat-diffusion"
@@ -98,7 +94,18 @@
       "sc:url": "http://apps.cytoscape.org/apps/Diffusion"
     },
     {
-      "@id": "_:N40f1b83dacb4434aa0833dcfdeaae1d3",
+      "@id": "_:N47c5d8d03be84374bb5c2e1a6c4471ff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1025"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene identifier"
+    },
+    {
+      "@id": "_:Nd75da80c2e3143e9b1d24d8d0a641e10",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -109,15 +116,8 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nd86d0ff73d714169a9748420cca2797a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1025"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene identifier"
+      "@id": "https://doi.org/10.1371/journal.pcbi.1005598",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

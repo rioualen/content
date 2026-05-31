@@ -36,26 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/ncomms11257",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/kaiju",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Anders Krogh",
-        "Peter Menzel"
+        "Peter Menzel",
+        "Anders Krogh"
       ],
       "bsc:input": {
-        "@id": "_:N60f024d541bf455f9178d424bd9b2fd0"
+        "@id": "_:N673eb19b75bc4a5fb4e75b8614d70e87"
       },
       "bsc:output": {
-        "@id": "_:N7b4953f8abcd4fc39ecd76710418e0fb"
+        "@id": "_:Nec442675651e48d8bde52915d1005325"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3174"
@@ -65,11 +61,11 @@
         "Anders Krogh"
       ],
       "sc:citation": [
-        "pubmed:27071849",
         {
           "@id": "https://doi.org/10.1038/ncomms11257"
         },
-        "pmcid:PMC4833860"
+        "pmcid:PMC4833860",
+        "pubmed:27071849"
       ],
       "sc:contributor": "Kim Lee Ng",
       "sc:description": "Program for the taxonomic assignment of high-throughput sequencing reads, e.g., Illumina or Roche/454, from whole-genome sequencing of metagenomic DNA. Reads are directly assigned to taxa using the NCBI taxonomy and a reference database of protein sequences from Bacteria, Archaea, Fungi, microbial eukaryotes and viruses.",
@@ -94,7 +90,23 @@
       "sc:url": "http://kaiju.binf.ku.dk"
     },
     {
-      "@id": "_:N7b4953f8abcd4fc39ecd76710418e0fb",
+      "@id": "_:N673eb19b75bc4a5fb4e75b8614d70e87",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2975"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "Nucleic acid sequence (raw)"
+    },
+    {
+      "@id": "_:Nec442675651e48d8bde52915d1005325",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -105,20 +117,8 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N60f024d541bf455f9178d424bd9b2fd0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2975"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1930"
-        }
-      ],
-      "sc:name": "Nucleic acid sequence (raw)"
+      "@id": "https://doi.org/10.1038/ncomms11257",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

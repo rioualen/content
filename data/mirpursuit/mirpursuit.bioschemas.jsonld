@@ -36,16 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/1873-3468.12746",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-3794-4262",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gks1195",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mirpursuit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-3794-4262"
       },
       "bsc:input": {
-        "@id": "_:N06823fd0ae58471296d43069750109d9"
+        "@id": "_:N6157d77c4d9846059037907fe4c5004c"
       },
       "bsc:output": {
-        "@id": "_:N725a6c586b694a8fa09d4a9ecb8dacb9"
+        "@id": "_:Nc8021cab58c1427a9a31f008366ef3da"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
@@ -53,30 +65,30 @@
         "@id": "edam:topic_0659"
       },
       "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1093/nar/gks1195"
+        },
         "pubmed:28686301",
-        "pmcid:PMC3531190",
         {
           "@id": "https://doi.org/10.1002/1873-3468.12746"
         },
-        "pubmed:23193287",
-        {
-          "@id": "https://doi.org/10.1093/nar/gks1195"
-        }
+        "pmcid:PMC3531190",
+        "pubmed:23193287"
       ],
       "sc:description": "A pipeline for automated analyses of small RNAs in non-model plants",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2424"
+          "@id": "edam:operation_0361"
         },
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_2424"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "miRPursuit",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/forestbiotech-lab/miRPursuit/blob/master/README.md"
@@ -85,7 +97,18 @@
       "sc:url": "https://github.com/forestbiotech-lab/miRPursuit"
     },
     {
-      "@id": "_:N06823fd0ae58471296d43069750109d9",
+      "@id": "_:Nc8021cab58c1427a9a31f008366ef3da",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N6157d77c4d9846059037907fe4c5004c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3496"
@@ -99,29 +122,6 @@
         }
       ],
       "sc:name": "RNA sequence (raw)"
-    },
-    {
-      "@id": "_:N725a6c586b694a8fa09d4a9ecb8dacb9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gks1195",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-3794-4262",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1002/1873-3468.12746",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

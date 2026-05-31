@@ -36,72 +36,76 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/S12859-021-04042-6",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pignon",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ndeee18cf9b72413c88d3bb6fbaeb704e"
+          "@id": "_:Na960c0cf7de14b0eb86ae71cadfbebc6"
         },
         {
-          "@id": "_:Naaa6dbcc54b74c0c80c907ef2ae4d308"
+          "@id": "_:N9abb70c6213a416ba2c1cdf47bed5c02"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ncac3a7173c924886ae3acbac10c55cae"
+        "@id": "_:Nb3c8c1108be84cc181c134377a367a23"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
-        },
-        {
-          "@id": "edam:topic_0080"
-        },
-        {
           "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_0128"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC8178832",
-        "pubmed:34088263",
         {
           "@id": "https://doi.org/10.1186/S12859-021-04042-6"
-        }
+        },
+        "pmcid:PMC8178832",
+        "pubmed:34088263"
       ],
       "sc:description": "PIGNON is a protein-protein interaction (PPI)-guided functional enrichment analysis for quantitative proteomics. This algorithm measures the clustering of proteins with a shared Gene Ontology (GO) annotation within the provided PPI network weighted with quantitative proteomics data. The significance of this clustering measure is then estimated from a normal distribution approximated from a Monte Carlo Sampling Distribution. To correct for multiple hypothesis testing, we assess the false discovery rate at various thresholds against a null model.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3799"
+          "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_2949"
         },
         {
-          "@id": "edam:operation_2949"
+          "@id": "edam:operation_3799"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "PIGNON",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:url": "https://github.com/LavalleeAdamLab/PIGNON"
     },
     {
-      "@id": "_:Ncac3a7173c924886ae3acbac10c55cae",
+      "@id": "_:Nb3c8c1108be84cc181c134377a367a23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3932"
@@ -112,15 +116,7 @@
       "sc:name": "Q-value"
     },
     {
-      "@id": "_:Ndeee18cf9b72413c88d3bb6fbaeb704e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2628"
-      },
-      "sc:name": "BioGRID interaction ID"
-    },
-    {
-      "@id": "_:Naaa6dbcc54b74c0c80c907ef2ae4d308",
+      "@id": "_:Na960c0cf7de14b0eb86ae71cadfbebc6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2302"
@@ -128,8 +124,12 @@
       "sc:name": "STRING ID"
     },
     {
-      "@id": "https://doi.org/10.1186/S12859-021-04042-6",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9abb70c6213a416ba2c1cdf47bed5c02",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2628"
+      },
+      "sc:name": "BioGRID interaction ID"
     }
   ]
 }
