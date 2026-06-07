@@ -36,8 +36,86 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
+      "@id": "https://bio.tools/isochore",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": {
+        "@id": "_:N7dca0401c7124dfdb1a40976a4547362"
+      },
+      "bsc:output": {
+        "@id": "_:N7979340123114cdd837bc71ca9b681b7"
+      },
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_0157"
+      },
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
+        {
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
+        },
+        {
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
+        }
+      ],
+      "sc:contributor": [
+        "Wellcome Trust",
+        "EMBOSS Contributors",
+        "UK MRC",
+        "UK BBSRC"
+      ],
+      "sc:description": "Plot isochores in DNA sequences.",
+      "sc:featureList": {
+        "@id": "edam:operation_0430"
+      },
+      "sc:funder": [
+        "UK MRC",
+        "UK BBSRC",
+        "Wellcome Trust"
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "GPL-3.0",
+      "sc:name": "isochore",
+      "sc:operatingSystem": [
+        "Linux",
+        "Windows",
+        "Mac"
+      ],
+      "sc:provider": [
+        "EMBOSS",
+        "EMBL-EBI"
+      ],
+      "sc:softwareHelp": [
+        {
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/isochore.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+        }
+      ],
+      "sc:softwareVersion": "r6",
+      "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/isochore.html"
+    },
+    {
+      "@id": "_:N7979340123114cdd837bc71ca9b681b7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N7dca0401c7124dfdb1a40976a4547362",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2887"
+      },
+      "sc:name": "Nucleic acid sequence record"
     },
     {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
@@ -48,86 +126,8 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://bio.tools/isochore",
-      "@type": "sc:SoftwareApplication",
-      "bsc:input": {
-        "@id": "_:N9fc5953c27744238a8a9da4df73e5ff0"
-      },
-      "bsc:output": {
-        "@id": "_:N5f8bac8f5a9e4edf8042515880400902"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Command-line tool",
-      "sc:applicationSubCategory": {
-        "@id": "edam:topic_0157"
-      },
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
-        },
-        {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
-        },
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        }
-      ],
-      "sc:contributor": [
-        "EMBOSS Contributors",
-        "UK MRC",
-        "Wellcome Trust",
-        "UK BBSRC"
-      ],
-      "sc:description": "Plot isochores in DNA sequences.",
-      "sc:featureList": {
-        "@id": "edam:operation_0430"
-      },
-      "sc:funder": [
-        "UK MRC",
-        "Wellcome Trust",
-        "UK BBSRC"
-      ],
-      "sc:isAccessibleForFree": true,
-      "sc:license": "GPL-3.0",
-      "sc:name": "isochore",
-      "sc:operatingSystem": [
-        "Mac",
-        "Linux",
-        "Windows"
-      ],
-      "sc:provider": [
-        "EMBOSS",
-        "EMBL-EBI"
-      ],
-      "sc:softwareHelp": [
-        {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/isochore.html"
-        }
-      ],
-      "sc:softwareVersion": "r6",
-      "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/isochore.html"
-    },
-    {
-      "@id": "_:N5f8bac8f5a9e4edf8042515880400902",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N9fc5953c27744238a8a9da4df73e5ff0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2887"
-      },
-      "sc:name": "Nucleic acid sequence record"
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

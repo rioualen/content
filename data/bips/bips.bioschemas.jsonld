@@ -36,13 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-9539-2606",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gks553",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bips",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc28979d078f342e9be4b285ae4b14297"
+        "@id": "_:N635642226bfc4b43b25523897c95186b"
       },
       "bsc:output": {
-        "@id": "_:N26d8a5a003c24a7da2e504c5347b189a"
+        "@id": "_:Nc925a61ccb6e40ebb89e1c25f2087f34"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
@@ -54,10 +62,10 @@
       },
       "sc:citation": [
         "pubmed:22689642",
+        "pmcid:PMC3394316",
         {
           "@id": "https://doi.org/10.1093/nar/gks553"
-        },
-        "pmcid:PMC3394316"
+        }
       ],
       "sc:description": "The web server where you can predict putative interactions between proteins based on homologs found in Protein-Protein interaction databases. It relies on data integrated in BIANA. You just need to insert your sequences of interest or list of protein identifiers, and the tool will infer interactions based on homology. Predicted partners can be restricted to proteins added in your list or to the complete BIANA database.",
       "sc:featureList": {
@@ -65,9 +73,9 @@
       },
       "sc:name": "BIPS",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "upf.edu",
       "sc:softwareHelp": {
@@ -77,7 +85,15 @@
       "sc:url": "http://sbi.imim.es/BIPS.php"
     },
     {
-      "@id": "_:Nc28979d078f342e9be4b285ae4b14297",
+      "@id": "_:Nc925a61ccb6e40ebb89e1c25f2087f34",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N635642226bfc4b43b25523897c95186b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -86,22 +102,6 @@
         "@id": "edam:format_1218"
       },
       "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:N26d8a5a003c24a7da2e504c5347b189a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gks553",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-9539-2606",
-      "@type": "sc:Person"
     }
   ]
 }

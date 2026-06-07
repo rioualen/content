@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku847",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mam-pipeline",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Neb9e9dae5de241158dd12f64768e7140"
+        "@id": "_:N068799cb78994622b97def0d0ff84a03"
       },
       "bsc:output": {
-        "@id": "_:Nd02c6e5ea7c44008a33a49b8db46a0db"
+        "@id": "_:N3fdfb0d31fd14d289138278eb68d22fe"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -50,11 +54,11 @@
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:25237057",
+        "pmcid:PMC4227762",
         {
           "@id": "https://doi.org/10.1093/nar/gku847"
-        },
-        "pubmed:25237057",
-        "pmcid:PMC4227762"
+        }
       ],
       "sc:description": "Monoallelic DNA-methylation pipeline for enrichment-based sequencing technologies.",
       "sc:featureList": {
@@ -62,9 +66,9 @@
       },
       "sc:name": "MAM-pipeline",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -74,7 +78,15 @@
       "sc:url": "http://www.biobix.be/mam/"
     },
     {
-      "@id": "_:Nd02c6e5ea7c44008a33a49b8db46a0db",
+      "@id": "_:N068799cb78994622b97def0d0ff84a03",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3497"
+      },
+      "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "_:N3fdfb0d31fd14d289138278eb68d22fe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1893"
@@ -83,18 +95,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Locus ID"
-    },
-    {
-      "@id": "_:Neb9e9dae5de241158dd12f64768e7140",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3497"
-      },
-      "sc:name": "DNA sequence (raw)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku847",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

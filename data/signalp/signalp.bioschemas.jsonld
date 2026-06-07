@@ -36,26 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.1701",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-9412-9643",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/signalp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-9412-9643"
       },
       "bsc:input": {
-        "@id": "_:Nc7a0f4bf37b1445f96b282daaba26e8b"
+        "@id": "_:N45df404128b24b4892e83665fb109636"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc38ef2bfef1540a897350fe474007b80"
+          "@id": "_:N8cdf3d93f6424c98a72ce4c4c3bfa739"
         },
         {
-          "@id": "_:N60d1af1a68914a64b7d6a7189c93bb97"
+          "@id": "_:N2ace504233e64208b7b34f149497a680"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3510"
@@ -65,10 +73,10 @@
         "TN Petersen"
       ],
       "sc:citation": [
-        "pubmed:21959131",
         {
           "@id": "https://doi.org/10.1038/nmeth.1701"
-        }
+        },
+        "pubmed:21959131"
       ],
       "sc:description": "Prediction of the presence and location of signal peptide cleavage sites in amino acid sequences from different organisms.",
       "sc:featureList": [
@@ -83,8 +91,8 @@
       "sc:license": "Other",
       "sc:name": "SignalP",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -94,18 +102,15 @@
       "sc:url": "http://cbs.dtu.dk/services/SignalP/"
     },
     {
-      "@id": "_:Nc7a0f4bf37b1445f96b282daaba26e8b",
+      "@id": "_:N8cdf3d93f6424c98a72ce4c4c3bfa739",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2044"
+        "@id": "edam:data_2955"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
+      "sc:name": "Sequence report"
     },
     {
-      "@id": "_:Nc38ef2bfef1540a897350fe474007b80",
+      "@id": "_:N2ace504233e64208b7b34f149497a680",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -116,20 +121,15 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N60d1af1a68914a64b7d6a7189c93bb97",
+      "@id": "_:N45df404128b24b4892e83665fb109636",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2955"
+        "@id": "edam:data_2044"
       },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.1701",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-9412-9643",
-      "@type": "sc:Person"
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku1040",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pombase_motif_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "PomBase",
       "bsc:input": {
-        "@id": "_:Na0a3fb13d1504a39adb6387f1b00c604"
+        "@id": "_:N1f9c9d14dd374575932b94310ceeb467"
       },
       "bsc:output": {
-        "@id": "_:Nfb22c4407ec744de98f380c94f4c04a4"
+        "@id": "_:N4a1466bb317e49b48ba1cc760185fe2e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -52,11 +56,11 @@
       },
       "sc:author": "Kim Rutherford",
       "sc:citation": [
+        "pmcid:PMC4383888",
         "pubmed:25361970",
         {
           "@id": "https://doi.org/10.1093/nar/gku1040"
-        },
-        "pmcid:PMC4383888"
+        }
       ],
       "sc:description": "Search PomBase protein set for a given motif.",
       "sc:featureList": {
@@ -69,8 +73,8 @@
         "Mac"
       ],
       "sc:provider": [
-        "Sanger Institute",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "Sanger Institute"
       ],
       "sc:softwareHelp": [
         {
@@ -84,15 +88,7 @@
       "sc:url": "https://www.pombase.org/motif_search"
     },
     {
-      "@id": "_:Na0a3fb13d1504a39adb6387f1b00c604",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1352"
-      },
-      "sc:name": "Regular expression"
-    },
-    {
-      "@id": "_:Nfb22c4407ec744de98f380c94f4c04a4",
+      "@id": "_:N4a1466bb317e49b48ba1cc760185fe2e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -100,8 +96,12 @@
       "sc:name": "Sequence search results"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gku1040",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N1f9c9d14dd374575932b94310ceeb467",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1352"
+      },
+      "sc:name": "Regular expression"
     }
   ]
 }

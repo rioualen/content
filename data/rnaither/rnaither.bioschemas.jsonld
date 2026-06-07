@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp014",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rnaither",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Lars Kaderali",
       "bsc:input": {
-        "@id": "_:Nd4f3e3f2392e4ba08bae02d727a8dc39"
+        "@id": "_:N3f9297bc61ab442386d43ee28f523bf8"
       },
       "bsc:output": {
-        "@id": "_:N3eeb952a1b7b45b68802e5b3501f6c2e"
+        "@id": "_:N70d97514c0054dfaad5e16a2d93447b8"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3316"
       },
       "sc:citation": [
-        "pubmed:19168909",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp014"
-        }
+        },
+        "pubmed:19168909"
       ],
       "sc:description": "This tool analyzes cell-based RNAi screens, including quality assessment, customizable normalization and statistical tests, leading to lists of significant genes and biological processes.",
       "sc:featureList": {
@@ -71,9 +67,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "RNAither",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/RNAither.html"
@@ -82,7 +78,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/RNAither.html"
     },
     {
-      "@id": "_:N3eeb952a1b7b45b68802e5b3501f6c2e",
+      "@id": "_:N3f9297bc61ab442386d43ee28f523bf8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2078"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N70d97514c0054dfaad5e16a2d93447b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -93,15 +100,8 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nd4f3e3f2392e4ba08bae02d727a8dc39",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2078"
-      },
-      "sc:name": "RNA sequence"
+      "@id": "https://doi.org/10.1093/bioinformatics/btp014",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,12 +36,16 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/database/baaa113",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-3093-5873",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1093/database/baaa113",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0002-3597-8557",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/pybravo",
@@ -50,19 +54,19 @@
         "@id": "https://orcid.org/0000-0002-3597-8557"
       },
       "bsc:input": {
-        "@id": "_:N7f3434b672c449428694b6b43c2ad0b4"
+        "@id": "_:Nc0d3cf9c411f44ce90db2ede50aa7138"
       },
       "bsc:output": {
-        "@id": "_:Ncdba97ca55dc4db8bc130c04c953abd1"
+        "@id": "_:N704889f7204f45e4baf456d4ed7ed991"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_2259"
         },
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:author": [
@@ -74,10 +78,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:33459761",
         {
           "@id": "https://doi.org/10.1093/database/baaa113"
         },
-        "pubmed:33459761",
         "pmcid:PMC7812716"
       ],
       "sc:description": "From a list of genes, pyBRAvo produces upstream regulation or signaling networks. pyBRAvo internally leverages the BioPAX ontolgy, the PathwayCommons knowledge graph, and the SPARQL semantic web query language. pyBRAvo can be used through either a Jupyter notebook, or a command line interface.",
@@ -94,18 +98,7 @@
       "sc:url": "https://github.com/pyBRAvo/pyBRAvo"
     },
     {
-      "@id": "_:N7f3434b672c449428694b6b43c2ad0b4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "_:Ncdba97ca55dc4db8bc130c04c953abd1",
+      "@id": "_:N704889f7204f45e4baf456d4ed7ed991",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -116,8 +109,15 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "https://orcid.org/0000-0002-3597-8557",
-      "@type": "sc:Person"
+      "@id": "_:Nc0d3cf9c411f44ce90db2ede50aa7138",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Gene symbol"
     }
   ]
 }

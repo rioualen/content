@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv701",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rcellminer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,14 +47,14 @@
         "Augustin Luna"
       ],
       "bsc:input": {
-        "@id": "_:N92dcbf973738408797be7d5bb0a412e2"
+        "@id": "_:N7487c61794a1474abbdd641ecbcbca64"
       },
       "bsc:output": [
         {
-          "@id": "_:Nfa3cca0ef0a24571add9d17c1c6bfcb8"
+          "@id": "_:N193614d989124ec1b3432982d2d4b60d"
         },
         {
-          "@id": "_:N6e836300f3914767a0060a75cc1872b9"
+          "@id": "_:N6fd947bf72d945f8902ad0eafba198a3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -59,6 +63,9 @@
         "Command-line tool"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0622"
+        },
         {
           "@id": "edam:topic_3365"
         },
@@ -70,17 +77,14 @@
         },
         {
           "@id": "edam:topic_3373"
-        },
-        {
-          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4907377",
-        "pubmed:26635141",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv701"
-        }
+        },
+        "pmcid:PMC4907377",
+        "pubmed:26635141"
       ],
       "sc:description": "The NCI-60 cancer cell line panel has been used over the course of several decades as an anti-cancer drug screen. Thousands of compounds have been tested on the NCI-60, which have been extensively characterized by many platforms for gene and protein expression, copy number, mutation, and others (Reinhold, et al., 2012). The purpose of this project has been to integrate data from multiple platforms used to analyze the NCI-60 and to provide a powerful suite of tools for exploration of NCI-60 data.",
       "sc:featureList": {
@@ -100,29 +104,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/rcellminer.html"
     },
     {
-      "@id": "_:Nfa3cca0ef0a24571add9d17c1c6bfcb8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0993"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Drug identifier"
-    },
-    {
-      "@id": "_:N6e836300f3914767a0060a75cc1872b9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2899"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Drug name"
-    },
-    {
-      "@id": "_:N92dcbf973738408797be7d5bb0a412e2",
+      "@id": "_:N7487c61794a1474abbdd641ecbcbca64",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0990"
@@ -133,8 +115,26 @@
       "sc:name": "Compound name"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv701",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N193614d989124ec1b3432982d2d4b60d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2899"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Drug name"
+    },
+    {
+      "@id": "_:N6fd947bf72d945f8902ad0eafba198a3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0993"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Drug identifier"
     }
   ]
 }

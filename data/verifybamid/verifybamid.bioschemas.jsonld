@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.ajhg.2012.09.004",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/verifybamid",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -48,14 +44,14 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N1994ab50523a4ef3b0e780f8dd79ae1b"
+          "@id": "_:Nfb68a8a3f0b64c44ab58a05bac8b2ba1"
         },
         {
-          "@id": "_:N00e45d31d66744bc9d7aa60cf6d54a4b"
+          "@id": "_:N430e80b495c7458fafa668a0e06cab9e"
         }
       ],
       "bsc:output": {
-        "@id": "_:N573db984ce4f414f82a89a671f5a5ae9"
+        "@id": "_:Nfc0897268b904d948e3d6a579aed27f8"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -68,11 +64,11 @@
         }
       ],
       "sc:citation": [
+        "pmcid:PMC3487130",
+        "pubmed:23103226",
         {
           "@id": "https://doi.org/10.1016/j.ajhg.2012.09.004"
-        },
-        "pmcid:PMC3487130",
-        "pubmed:23103226"
+        }
       ],
       "sc:description": "Software that verifies whether the reads in particular file match previously known genotypes for an individual (or group of individuals), and checks whether the reads are contaminated as a mixture of two samples. It can detect sample contamination and swaps when external genotypes are available. When external genotypes are not available, it still robustly detects sample swaps.",
       "sc:featureList": {
@@ -96,7 +92,7 @@
       "sc:url": "http://genome.sph.umich.edu/wiki/VerifyBamID"
     },
     {
-      "@id": "_:N573db984ce4f414f82a89a671f5a5ae9",
+      "@id": "_:Nfc0897268b904d948e3d6a579aed27f8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -104,7 +100,18 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N1994ab50523a4ef3b0e780f8dd79ae1b",
+      "@id": "_:Nfb68a8a3f0b64c44ab58a05bac8b2ba1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N430e80b495c7458fafa668a0e06cab9e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -115,15 +122,8 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N00e45d31d66744bc9d7aa60cf6d54a4b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "@id": "https://doi.org/10.1016/j.ajhg.2012.09.004",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

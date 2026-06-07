@@ -36,21 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-3237-7382",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41419-019-2200-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8689-2083",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/DEPIB",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Eric Charpentier",
       "bsc:input": {
-        "@id": "_:N4198f3bb0b4a4d5f919d6d1d1d01b083"
+        "@id": "_:Na9ed5cb2f150402fa6117db35274ef00"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd9e37baf1997401b919417efb950931e"
+          "@id": "_:N7a3ad3dbcfa94e428521118f58c7947e"
         },
         {
-          "@id": "_:N76f355ffc76e43339ae4d9b533c91d26"
+          "@id": "_:Nf9498fb4d27944bf848c1a6d8da3fa1f"
         },
         {
-          "@id": "_:N4dba0d2e0a474a68acae9a1836bf2de4"
+          "@id": "_:N75e0137db9de43ddadacb11474c99492"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -59,26 +71,26 @@
         "@id": "edam:topic_3308"
       },
       "sc:author": [
-        {
-          "@id": "https://orcid.org/0000-0002-8689-2083"
-        },
+        "Erwan Delage",
         {
           "@id": "https://orcid.org/0000-0003-3237-7382"
         },
-        "Erwan Delage",
-        "Eric Charpentier"
+        "Eric Charpentier",
+        {
+          "@id": "https://orcid.org/0000-0002-8689-2083"
+        }
       ],
       "sc:citation": [
         {
           "@id": "https://doi.org/10.1002/stem.3014"
         },
-        "pubmed:31907355",
-        "pmcid:PMC6944699",
-        "pubmed:30977188",
         {
           "@id": "https://doi.org/10.1038/s41419-019-2200-2"
         },
-        "pmcid:PMC6850038"
+        "pmcid:PMC6850038",
+        "pubmed:31907355",
+        "pmcid:PMC6944699",
+        "pubmed:30977188"
       ],
       "sc:contributor": "Damien Vintache",
       "sc:description": "Analysis pipeline using Snakemake for RNAseq analysis in order to find differentially expressed genes.",
@@ -92,34 +104,7 @@
       "sc:url": "https://gitlab.univ-nantes.fr/bird_pipeline_registry/RNAseq_quantif_pipeline"
     },
     {
-      "@id": "_:Nd9e37baf1997401b919417efb950931e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Clustered expression profiles"
-    },
-    {
-      "@id": "_:N76f355ffc76e43339ae4d9b533c91d26",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N4dba0d2e0a474a68acae9a1836bf2de4",
+      "@id": "_:N7a3ad3dbcfa94e428521118f58c7947e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -130,7 +115,34 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N4198f3bb0b4a4d5f919d6d1d1d01b083",
+      "@id": "_:Nf9498fb4d27944bf848c1a6d8da3fa1f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N75e0137db9de43ddadacb11474c99492",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "_:Na9ed5cb2f150402fa6117db35274ef00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -141,19 +153,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "https://orcid.org/0000-0002-8689-2083",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3237-7382",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1002/stem.3014",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41419-019-2200-2",
       "@type": "sc:CreativeWork"
     }
   ]

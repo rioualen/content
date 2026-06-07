@@ -36,27 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/picardgcbiasmetrics",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N8f84f0af91be4976bc2edb05b1f74a61"
+          "@id": "_:N2088ab2cd7d4420a99707af4cfe58da3"
         },
         {
-          "@id": "_:Nf906311907b349ed8456675dc1322461"
+          "@id": "_:N1788e9e4b37047639c518fb0f6f78f66"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0e20a258a3994739948d4892dd4ae593"
+        "@id": "_:Nb7d958804ae143ed9c628ba24339bb3d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -64,13 +56,13 @@
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
-        "pubmed:27137889",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
-        },
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         },
+        {
+          "@id": "https://doi.org/10.1093/nar/gkw343"
+        },
+        "pubmed:27137889",
         "pmcid:PMC4987906"
       ],
       "sc:description": "This Galaxy tool uses Picard to report detailed metrics about reads that fall within windows of a certain GC bin on the reference genome.",
@@ -79,9 +71,9 @@
       },
       "sc:name": "picardgcbiasmetrics",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://broadinstitute.github.io/picard/command-line-overview.html#CollectGcBiasMetrics"
@@ -90,18 +82,23 @@
       "sc:url": "https://broadinstitute.github.io/picard/"
     },
     {
-      "@id": "_:N0e20a258a3994739948d4892dd4ae593",
+      "@id": "_:N2088ab2cd7d4420a99707af4cfe58da3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_0006"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2573"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Data"
     },
     {
-      "@id": "_:N8f84f0af91be4976bc2edb05b1f74a61",
+      "@id": "_:N1788e9e4b37047639c518fb0f6f78f66",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -112,20 +109,23 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nf906311907b349ed8456675dc1322461",
+      "@id": "_:Nb7d958804ae143ed9c628ba24339bb3d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0006"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_2573"
-        }
-      ],
-      "sc:name": "Data"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

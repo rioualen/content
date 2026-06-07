@@ -36,43 +36,43 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.mri.2023.03.012",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0001-5242-6060",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.mri.2023.03.012",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/n4_bias_filter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd17619d779ec42238135386c171e0e0e"
+          "@id": "_:N0e1ffb3c12cd4aa19ff0a0e529bbc1c2"
         },
         {
-          "@id": "_:N7ee5ec9115034bae8aeb9fcd75fe794f"
+          "@id": "_:N7554e6053c4d4015a2eb89d5ab4e5096"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd4b68430325f4889991c1e3773a1e7d2"
+          "@id": "_:Ndecfea53fe3a46acba50af58fcf265f0"
         },
         {
-          "@id": "_:Nc2968045b7604b7892a0602f2e738154"
+          "@id": "_:N5237045e1fb347efa4d3cf11e808d254"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:author": {
@@ -87,18 +87,18 @@
       "sc:description": "The tool is designed to perform image pre-processing to reduce the bias field effect, improving the quality of the image. Two main functionalities are offered: (1) Apply N4 filter to image/images (either with the default parameters values or with parameters values defined by the user) (2) Find the optimal configuration of the N4 filter for specific image/images by measuring the Full Width at Half Maximum (FWHM) of the periprostatic fat distribution.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3443"
         },
         {
-          "@id": "edam:operation_3443"
+          "@id": "edam:operation_3695"
         }
       ],
       "sc:license": "EUPL-1.1",
       "sc:name": "N4 Bias Filter",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
@@ -112,7 +112,7 @@
       "sc:url": "https://cbml-gitlab.ics.forth.gr/adovrou/n4biasfilter/-/tree/eucaim?ref_type=heads"
     },
     {
-      "@id": "_:Nd17619d779ec42238135386c171e0e0e",
+      "@id": "_:N0e1ffb3c12cd4aa19ff0a0e529bbc1c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -123,7 +123,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N7ee5ec9115034bae8aeb9fcd75fe794f",
+      "@id": "_:N7554e6053c4d4015a2eb89d5ab4e5096",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -134,18 +134,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nd4b68430325f4889991c1e3773a1e7d2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nc2968045b7604b7892a0602f2e738154",
+      "@id": "_:Ndecfea53fe3a46acba50af58fcf265f0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -154,6 +143,17 @@
         "@id": "edam:format_3620"
       },
       "sc:name": "Text"
+    },
+    {
+      "@id": "_:N5237045e1fb347efa4d3cf11e808d254",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
     }
   ]
 }

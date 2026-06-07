@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/ncomms13642",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/igdiscover",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb6a20fb3d0de49d9931206bbb31c6eda"
+        "@id": "_:Nf80e8a85e238416198ce33a48ecac2f2"
       },
       "bsc:output": [
         {
-          "@id": "_:N8388cbb35a7f4b89bfdfe2ee09fecf4f"
+          "@id": "_:N2cf2cf0585bf4d539f049643ff08a471"
         },
         {
-          "@id": "_:Nf9cad9f4e42b4d99811c4349fe0b30e4"
+          "@id": "_:Naffb049fa1514514b9d4e2f379795532"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -55,11 +59,11 @@
         "@id": "edam:topic_0097"
       },
       "sc:citation": [
-        "pubmed:27995928",
         {
           "@id": "https://doi.org/10.1038/ncomms13642"
         },
-        "pmcid:PMC5187446"
+        "pmcid:PMC5187446",
+        "pubmed:27995928"
       ],
       "sc:description": "Analyzes antibody repertoires and discovers new V genes from high-throughput sequencing reads. Heavy chains, kappa and lambda light chains are supported (to discover VH, VK and VL genes).",
       "sc:featureList": [
@@ -74,8 +78,8 @@
       "sc:license": "MIT",
       "sc:name": "IgDiscover",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://docs.igdiscover.se/"
@@ -84,15 +88,23 @@
       "sc:url": "http://igdiscover.se/"
     },
     {
-      "@id": "_:N8388cbb35a7f4b89bfdfe2ee09fecf4f",
+      "@id": "_:Nf80e8a85e238416198ce33a48ecac2f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0928"
+        "@id": "edam:data_3496"
       },
-      "sc:name": "Gene expression profile"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "RNA sequence (raw)"
     },
     {
-      "@id": "_:Nf9cad9f4e42b4d99811c4349fe0b30e4",
+      "@id": "_:N2cf2cf0585bf4d539f049643ff08a471",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -100,24 +112,12 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nb6a20fb3d0de49d9931206bbb31c6eda",
+      "@id": "_:Naffb049fa1514514b9d4e2f379795532",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3496"
+        "@id": "edam:data_0928"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1930"
-        }
-      ],
-      "sc:name": "RNA sequence (raw)"
-    },
-    {
-      "@id": "https://doi.org/10.1038/ncomms13642",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Gene expression profile"
     }
   ]
 }

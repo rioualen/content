@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-015-0763-1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/topaseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ivana Ihnatova",
       "bsc:input": [
         {
-          "@id": "_:N44762d5734a9430abd70c421aa7d610a"
+          "@id": "_:Na9b2bf2d2f1d454aaa80d4e151c3378f"
         },
         {
-          "@id": "_:N7982b04347e04d038f1fdd49b9b149c4"
+          "@id": "_:N414a25157b364af39d03a33327d308c4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd034c4cfffba47078fb805d181fde52c"
+          "@id": "_:Nd7211d5658e94763b09a7ac409339768"
         },
         {
-          "@id": "_:Nc4ccb338a4404aefa755e15a79edb47d"
+          "@id": "_:N5e4ead369db84ecb9bc5502b18d146e3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -62,20 +66,20 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3308"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
-        "pubmed:26514335",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0763-1"
         },
+        "pubmed:26514335",
         "pmcid:PMC4625615"
       ],
       "sc:description": "Implementation of seven methods for topology-based pathway analysis of both RNASeq and microarray data: SPIA, DEGraph, TopologyGSA, TAPPA, PRS, PWEA and a visualization tool for a single pathway.",
@@ -85,9 +89,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "ToPASeq",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ToPASeq.html"
@@ -96,45 +100,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ToPASeq.html"
     },
     {
-      "@id": "_:Nd034c4cfffba47078fb805d181fde52c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:Nc4ccb338a4404aefa755e15a79edb47d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N44762d5734a9430abd70c421aa7d610a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2013"
-        },
-        {
-          "@id": "edam:format_2058"
-        }
-      ],
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N7982b04347e04d038f1fdd49b9b149c4",
+      "@id": "_:Na9b2bf2d2f1d454aaa80d4e151c3378f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -150,8 +116,42 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0763-1",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N414a25157b364af39d03a33327d308c4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2058"
+        },
+        {
+          "@id": "edam:format_2013"
+        }
+      ],
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Nd7211d5658e94763b09a7ac409339768",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Statistical estimate score"
+    },
+    {
+      "@id": "_:N5e4ead369db84ecb9bc5502b18d146e3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
@@ -48,22 +44,26 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cons",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8590f5c0a6bf4ab08f22f735e559ac59"
+          "@id": "_:N39ad50b988294f48a9bd3e2a186d671b"
         },
         {
-          "@id": "_:N94b5d17ad0c54055baac7c428f417f33"
+          "@id": "_:N8132a6a788544739a9df1a02796de562"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N840808afb7f446cc8cf4c5d6ab9c356a"
+          "@id": "_:N29cc15d9bcf34cea8a84ebf78b8d09fe"
         },
         {
-          "@id": "_:N46b468327f1846be829c274fe918b417"
+          "@id": "_:N307aa7dd5ee34013a26b169d2968b663"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -83,27 +83,27 @@
         }
       ],
       "sc:contributor": [
-        "UK MRC",
         "Wellcome Trust",
+        "EMBOSS Contributors",
         "UK BBSRC",
-        "EMBOSS Contributors"
+        "UK MRC"
       ],
       "sc:description": "Create a consensus sequence from a multiple alignment.",
       "sc:featureList": {
         "@id": "edam:operation_0448"
       },
       "sc:funder": [
+        "UK BBSRC",
         "UK MRC",
-        "Wellcome Trust",
-        "UK BBSRC"
+        "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "cons",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": [
         "EMBOSS",
@@ -111,28 +111,20 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
-        },
-        {
           "@id": "http://emboss.open-bio.org/rel/rel6/apps/cons.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/cons.html"
     },
     {
-      "@id": "_:N8590f5c0a6bf4ab08f22f735e559ac59",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0874"
-      },
-      "sc:name": "Comparison matrix"
-    },
-    {
-      "@id": "_:N94b5d17ad0c54055baac7c428f417f33",
+      "@id": "_:N39ad50b988294f48a9bd3e2a186d671b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -140,20 +132,28 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N840808afb7f446cc8cf4c5d6ab9c356a",
+      "@id": "_:N8132a6a788544739a9df1a02796de562",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0848"
+        "@id": "edam:data_0874"
       },
-      "sc:name": "Raw sequence"
+      "sc:name": "Comparison matrix"
     },
     {
-      "@id": "_:N46b468327f1846be829c274fe918b417",
+      "@id": "_:N29cc15d9bcf34cea8a84ebf78b8d09fe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
       },
       "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N307aa7dd5ee34013a26b169d2968b663",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0848"
+      },
+      "sc:name": "Raw sequence"
     }
   ]
 }

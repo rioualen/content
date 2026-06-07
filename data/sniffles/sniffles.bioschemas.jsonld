@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41592-018-0001-7",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sniffles",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Fritz J Sedlazeck",
       "bsc:input": {
-        "@id": "_:N83d445d575214c95a867b410725ac102"
+        "@id": "_:Nef7b59862e884ddfb4772fe1a979f627"
       },
       "bsc:output": {
-        "@id": "_:N3412ef326c594f21a5b459665cff47ca"
+        "@id": "_:N661bae9a2cc5419e89a776ddce80603d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -56,11 +60,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:29713083",
-        "pmcid:PMC5990442",
         {
           "@id": "https://doi.org/10.1038/s41592-018-0001-7"
-        }
+        },
+        "pmcid:PMC5990442",
+        "pubmed:29713083"
       ],
       "sc:description": "An algorithm for structural variation detection from third generation sequencing alignment.",
       "sc:featureList": [
@@ -75,9 +79,9 @@
       "sc:license": "MIT",
       "sc:name": "Sniffles",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/fritzsedlazeck/Sniffles/wiki"
@@ -85,18 +89,7 @@
       "sc:url": "https://github.com/fritzsedlazeck/Sniffles"
     },
     {
-      "@id": "_:N3412ef326c594f21a5b459665cff47ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N83d445d575214c95a867b410725ac102",
+      "@id": "_:Nef7b59862e884ddfb4772fe1a979f627",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -107,8 +100,15 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "https://doi.org/10.1038/s41592-018-0001-7",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N661bae9a2cc5419e89a776ddce80603d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
     }
   ]
 }

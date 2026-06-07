@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkj148",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genskew",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nceeb4a2b120a44d0a52767c0943afd95"
+        "@id": "_:N68eeccfac3664f199b084263ac49f8af"
       },
       "bsc:output": [
         {
-          "@id": "_:Naf13dac9ed62432385bee922d7347eea"
+          "@id": "_:N397e704e653d416d8cb7101fa7068c3b"
         },
         {
-          "@id": "_:N3854f1056ce54ef99bdfa20ea84775d9"
+          "@id": "_:N707a69d420cf433e9b72ba78f7295421"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -58,11 +62,11 @@
         "@id": "edam:topic_0622"
       },
       "sc:citation": [
-        "pubmed:16381839",
-        "pmcid:PMC1347510",
         {
           "@id": "https://doi.org/10.1093/nar/gkj148"
-        }
+        },
+        "pubmed:16381839",
+        "pmcid:PMC1347510"
       ],
       "sc:description": "G+C skew plot of microbial genomes.",
       "sc:featureList": {
@@ -71,9 +75,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "GenSkew",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": "AT-CUBE",
       "sc:softwareHelp": {
@@ -83,23 +87,7 @@
       "sc:url": "http://genskew.csb.univie.ac.at/"
     },
     {
-      "@id": "_:Naf13dac9ed62432385bee922d7347eea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N3854f1056ce54ef99bdfa20ea84775d9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nceeb4a2b120a44d0a52767c0943afd95",
+      "@id": "_:N68eeccfac3664f199b084263ac49f8af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -107,8 +95,20 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkj148",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N397e704e653d416d8cb7101fa7068c3b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N707a69d420cf433e9b72ba78f7295421",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

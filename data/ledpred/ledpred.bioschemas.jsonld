@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv705",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ledpred",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Aitor Gonzalez",
       "bsc:input": [
         {
-          "@id": "_:Ne0b9e343327f41b38bcbd17c7ca65f9b"
+          "@id": "_:N4a3562e0e49f4784b734a4a83906da29"
         },
         {
-          "@id": "_:Ned5953bd139b4de5bb84dc93732fd090"
+          "@id": "_:Na294a634205f47b3a97c99eff6f5eecf"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N48103599e90d442a9f4f233f82b059d0"
+          "@id": "_:Nc5dfc48c84024033b9298542b51c5145"
         },
         {
-          "@id": "_:N8874564f82734d8cb42730ddf1a54dec"
+          "@id": "_:N2f17470772a94f64bff746052fed03f6"
         },
         {
-          "@id": "_:N037b698310ec4b40981e8e63cedcb049"
+          "@id": "_:N9d8362de2a6b42a682db5ef0855af431"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -91,9 +87,9 @@
       "sc:license": "MIT",
       "sc:name": "LedPred",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/LedPred.html"
@@ -102,23 +98,45 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/LedPred.html"
     },
     {
-      "@id": "_:N48103599e90d442a9f4f233f82b059d0",
+      "@id": "_:N4a3562e0e49f4784b734a4a83906da29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_2854"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3005"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3033"
         }
       ],
-      "sc:name": "Score"
+      "sc:name": "Position-specific scoring matrix"
     },
     {
-      "@id": "_:N8874564f82734d8cb42730ddf1a54dec",
+      "@id": "_:Na294a634205f47b3a97c99eff6f5eecf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3005"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:Nc5dfc48c84024033b9298542b51c5145",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -134,10 +152,26 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N037b698310ec4b40981e8e63cedcb049",
+      "@id": "_:N2f17470772a94f64bff746052fed03f6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N9d8362de2a6b42a682db5ef0855af431",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
       },
       "sc:encodingFormat": [
         {
@@ -147,45 +181,11 @@
           "@id": "edam:format_3547"
         }
       ],
-      "sc:name": "Plot"
+      "sc:name": "Score"
     },
     {
-      "@id": "_:Ne0b9e343327f41b38bcbd17c7ca65f9b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2854"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3005"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Position-specific scoring matrix"
-    },
-    {
-      "@id": "_:Ned5953bd139b4de5bb84dc93732fd090",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3005"
-        }
-      ],
-      "sc:name": "Nucleic acid features"
+      "@id": "https://doi.org/10.1093/bioinformatics/btv705",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2164-16-s7-s14",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/xbseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yuanhang Liu",
       "bsc:input": [
         {
-          "@id": "_:N308e53f474b74539bd7ecb4eef35dcf2"
+          "@id": "_:N22b27b1782d2428199babd73553e25a6"
         },
         {
-          "@id": "_:N50d8b49bfb4a4c75a1b1e7c687f149e0"
+          "@id": "_:N500d3526dc1d4aae8a5a568ea444856b"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf0a18ffd3c0a422f8ab309694ff19b29"
+        "@id": "_:N080f56bd6f4c4bf3a077d914aa8703dd"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -69,10 +65,10 @@
       ],
       "sc:citation": [
         "pubmed:26099631",
+        "pmcid:PMC4474535",
         {
           "@id": "https://doi.org/10.1186/1471-2164-16-s7-s14"
-        },
-        "pmcid:PMC4474535"
+        }
       ],
       "sc:description": "This algorithm establishes an statistical model based on the assumption that observed signals are the convolution of true expression signals and sequencing noises. The mapped reads in non-exonic regions are considered as sequencing noises that follow a Poisson distribution. Given measureable observed and noise signals from RNA-seq data, true expression signals can be identified, assuming that they are governed by the negative binomial distribution.",
       "sc:featureList": [
@@ -97,7 +93,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/XBSeq.html"
     },
     {
-      "@id": "_:Nf0a18ffd3c0a422f8ab309694ff19b29",
+      "@id": "_:N080f56bd6f4c4bf3a077d914aa8703dd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -108,7 +104,23 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N308e53f474b74539bd7ecb4eef35dcf2",
+      "@id": "_:N22b27b1782d2428199babd73553e25a6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2306"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N500d3526dc1d4aae8a5a568ea444856b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -124,20 +136,8 @@
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "_:N50d8b49bfb4a4c75a1b1e7c687f149e0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2306"
-        }
-      ],
-      "sc:name": "Sequence alignment"
+      "@id": "https://doi.org/10.1186/1471-2164-16-s7-s14",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

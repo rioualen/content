@@ -43,10 +43,10 @@
       "@id": "https://bio.tools/pirsf",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8775e03746974b4097543d1ffe3ad960"
+        "@id": "_:N6746aebf97b94e67a8fef2dec33c7493"
       },
       "bsc:output": {
-        "@id": "_:Nad5cfbc292654152b0e56e8fa5ae826a"
+        "@id": "_:N7f57649846af44c09539e68c9521f5a2"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
@@ -59,11 +59,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC308831",
-        "pubmed:14681371",
         {
           "@id": "https://doi.org/10.1093/nar/gkh097"
-        }
+        },
+        "pubmed:14681371",
+        "pmcid:PMC308831"
       ],
       "sc:description": "Non-overlapping clustering of UniProtKB sequences into a hierarchical order to reflect their evolutionary relationships. The classification system is based on whole proteins rather than on the component domains therefore, it allows annotation of generic biochemical and specific biological functions, as well as classification of proteins without well-defined domains.",
       "sc:featureList": {
@@ -71,9 +71,9 @@
       },
       "sc:name": "PIRSF whole-protein classification database",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://pir.georgetown.edu/pirwww/support/help.shtml"
@@ -81,7 +81,15 @@
       "sc:url": "http://pir.georgetown.edu/pirwww/dbinfo/pirsf.shtml"
     },
     {
-      "@id": "_:Nad5cfbc292654152b0e56e8fa5ae826a",
+      "@id": "_:N6746aebf97b94e67a8fef2dec33c7493",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1136"
+      },
+      "sc:name": "PIRSF ID"
+    },
+    {
+      "@id": "_:N7f57649846af44c09539e68c9521f5a2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0907"
@@ -90,14 +98,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Protein family report"
-    },
-    {
-      "@id": "_:N8775e03746974b4097543d1ffe3ad960",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1136"
-      },
-      "sc:name": "PIRSF ID"
     }
   ]
 }

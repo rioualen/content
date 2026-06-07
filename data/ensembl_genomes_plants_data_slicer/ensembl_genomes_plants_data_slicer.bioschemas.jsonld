@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ensembl_genomes_plants_data_slicer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": [
         {
-          "@id": "_:N287f09fcb1184085b49d8c0662fd586d"
+          "@id": "_:N5d3f311c447a4dfea54af6fd76deaaad"
         },
         {
-          "@id": "_:N8b0ccbf50bb34be7847127955e6b758d"
+          "@id": "_:N18aef879ec0048ae819fb2036a43fb4f"
         },
         {
-          "@id": "_:N8ff663cc4f7e4ebfaade3225f5537a40"
+          "@id": "_:N6af2fc1f2a5d40e59023d25783d92dea"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -57,11 +61,11 @@
       },
       "sc:author": "Ensembl Genomes team",
       "sc:citation": [
-        "pmcid:PMC4702834",
+        "pubmed:26687719",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
         },
-        "pubmed:26687719"
+        "pmcid:PMC4702834"
       ],
       "sc:description": "Get a subset of data from a BAM | VCF file.",
       "sc:featureList": {
@@ -69,24 +73,40 @@
       },
       "sc:name": "Ensembl Genomes Plants data slicer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://plants.ensembl.org/info/website/help/index.html"
         },
         {
-          "@id": "http://plants.ensembl.org/info/website/help/index.html"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://plants.ensembl.org/tools.html"
     },
     {
-      "@id": "_:N287f09fcb1184085b49d8c0662fd586d",
+      "@id": "_:N5d3f311c447a4dfea54af6fd76deaaad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3016"
+        },
+        {
+          "@id": "edam:format_2572"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N18aef879ec0048ae819fb2036a43fb4f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -102,23 +122,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N8b0ccbf50bb34be7847127955e6b758d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N8ff663cc4f7e4ebfaade3225f5537a40",
+      "@id": "_:N6af2fc1f2a5d40e59023d25783d92dea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -132,10 +136,6 @@
         }
       ],
       "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

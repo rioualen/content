@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-016-1083-9",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowvs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ariful Azad",
       "bsc:input": [
         {
-          "@id": "_:N3181c81f3de64aa2a4c910dc75157875"
+          "@id": "_:Na9f23c3fe78a4d33932b995ce79b4b36"
         },
         {
-          "@id": "_:Ndb3c1802e13a4019b6727ade3a70ada9"
+          "@id": "_:N6e2a3a07638b4d389bf33258c291577a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3232ef3f0f97462d8559a40e237d2e43"
+          "@id": "_:N979fea902c5c438289c7cf0e956d6582"
         },
         {
-          "@id": "_:Nb8112745e0704aeb8ffe6bb02c0ba7e5"
+          "@id": "_:Neded2b2f68e1498a916c9703f9493ea4"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -68,18 +72,18 @@
           "@id": "edam:topic_3306"
         },
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_2269"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3361"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4964071",
+        "pubmed:27465477",
         {
           "@id": "https://doi.org/10.1186/s12859-016-1083-9"
-        },
-        "pmcid:PMC4964071",
-        "pubmed:27465477"
+        }
       ],
       "sc:description": "Per-channel variance stabilization from a collection of flow cytometry samples by Bertlett test for homogeneity of variances. The approach is applicable to microarrays data as well.",
       "sc:featureList": {
@@ -88,8 +92,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "flowVS",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
+        "Windows",
         "Mac"
       ],
       "sc:softwareHelp": {
@@ -99,18 +103,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowVS.html"
     },
     {
-      "@id": "_:N3181c81f3de64aa2a4c910dc75157875",
+      "@id": "_:N979fea902c5c438289c7cf0e956d6582",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3108"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:Ndb3c1802e13a4019b6727ade3a70ada9",
+      "@id": "_:Neded2b2f68e1498a916c9703f9493ea4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Na9f23c3fe78a4d33932b995ce79b4b36",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -121,40 +146,15 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N3232ef3f0f97462d8559a40e237d2e43",
+      "@id": "_:N6e2a3a07638b4d389bf33258c291577a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_3108"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nb8112745e0704aeb8ffe6bb02c0ba7e5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-016-1083-9",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Experimental measurement"
     }
   ]
 }

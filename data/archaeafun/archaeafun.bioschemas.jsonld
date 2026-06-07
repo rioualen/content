@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-0316-5866",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1110/ps.0225102",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/archaeafun",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-0316-5866"
       },
       "bsc:input": {
-        "@id": "_:Nb680b38780ce46a98146c7634702ed71"
+        "@id": "_:Nc519f542a51a4c8489f35ef925752f5c"
       },
       "bsc:output": [
         {
-          "@id": "_:N40e51d50ede64dd49680683944e2dede"
+          "@id": "_:N4aecdf4244334befadd754542a3b6036"
         },
         {
-          "@id": "_:N335943d9563b468da39a259d8bfa368d"
+          "@id": "_:Nf0a4f19ca9264d36bd7b14d140924485"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -59,10 +67,10 @@
       },
       "sc:citation": [
         "pmcid:PMC2373754",
-        "pubmed:12441387",
         {
           "@id": "https://doi.org/10.1110/ps.0225102"
-        }
+        },
+        "pubmed:12441387"
       ],
       "sc:description": "Ab initio predictions of enzyme class (if any) from sequence.",
       "sc:featureList": {
@@ -72,46 +80,24 @@
       "sc:license": "Other",
       "sc:name": "ArchaeaFun",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.cbs.dtu.dk/services/ArchaeaFun/"
+          "@id": "http://www.cbs.dtu.dk/services/ArchaeaFun/instructions.php"
         },
         {
-          "@id": "http://www.cbs.dtu.dk/services/ArchaeaFun/instructions.php"
+          "@id": "http://www.cbs.dtu.dk/services/ArchaeaFun/"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "http://cbs.dtu.dk/services/ArchaeaFun/"
     },
     {
-      "@id": "_:N40e51d50ede64dd49680683944e2dede",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N335943d9563b468da39a259d8bfa368d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2305"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:Nb680b38780ce46a98146c7634702ed71",
+      "@id": "_:Nc519f542a51a4c8489f35ef925752f5c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -122,12 +108,26 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://orcid.org/0000-0003-0316-5866",
-      "@type": "sc:Person"
+      "@id": "_:N4aecdf4244334befadd754542a3b6036",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2305"
+      },
+      "sc:name": "Protein features"
     },
     {
-      "@id": "https://doi.org/10.1110/ps.0225102",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf0a4f19ca9264d36bd7b14d140924485",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Sequence report"
     }
   ]
 }

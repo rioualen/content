@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1351",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/reactome_small_molecule_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Janna Hastings",
       "bsc:input": {
-        "@id": "_:N4737d08966b34dbaae33e93887937142"
+        "@id": "_:Nc636536e137142c0ae52dc94535f89dc"
       },
       "bsc:output": {
-        "@id": "_:N4c865200d39849d19c480e32f6c23a66"
+        "@id": "_:Nb87eabdc113346e38a9efb837a36cff0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2258"
+          "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_2258"
         }
       ],
       "sc:author": "ChEBI team",
       "sc:citation": [
         "pubmed:26656494",
-        "pmcid:PMC4702931",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1351"
-        }
+        },
+        "pmcid:PMC4702931"
       ],
       "sc:description": "Launch a search in the ChEBI database of small molecules (also used by RHEA).",
       "sc:featureList": {
@@ -69,9 +73,9 @@
       },
       "sc:name": "Reactome Small Molecule Search",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": [
         "OICR",
@@ -79,25 +83,17 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/chebi/userManualForward.do#Advanced%20Search"
         },
         {
-          "@id": "http://www.ebi.ac.uk/chebi/userManualForward.do#Advanced%20Search"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.reactome.org/cgi-bin/small_molecule_search?DB=gk_current"
     },
     {
-      "@id": "_:N4737d08966b34dbaae33e93887937142",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3490"
-      },
-      "sc:name": "Chemical structure sketch"
-    },
-    {
-      "@id": "_:N4c865200d39849d19c480e32f6c23a66",
+      "@id": "_:Nb87eabdc113346e38a9efb837a36cff0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0962"
@@ -105,8 +101,12 @@
       "sc:name": "Small molecule report"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1351",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc636536e137142c0ae52dc94535f89dc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3490"
+      },
+      "sc:name": "Chemical structure sketch"
     }
   ]
 }

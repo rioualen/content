@@ -36,36 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2020.05.14.087353",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1777-9084",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5352-069X",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/nanoclust",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-1777-9084"
       },
       "bsc:input": {
-        "@id": "_:Nc16c20e1ea7c4717a8314ee3fff8b09f"
+        "@id": "_:N3c3eef4387844df7bd405e336bc037bf"
       },
       "bsc:output": [
         {
-          "@id": "_:N01f898ebde8f4ae18b03e46de32f31dc"
+          "@id": "_:N986ceff0297b48ccbf1698b5278a9bc8"
         },
         {
-          "@id": "_:N9464187f7cca400d82a58d3654c6c849"
+          "@id": "_:Nf6ddd71eb5fa4cb0a689a2bc21b09fc1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
-        },
-        {
           "@id": "edam:topic_0769"
         },
         {
-          "@id": "edam:topic_0637"
+          "@id": "edam:topic_3174"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3168"
+        },
+        {
+          "@id": "edam:topic_0637"
         }
       ],
       "sc:author": {
@@ -75,21 +87,21 @@
         "@id": "https://doi.org/10.1101/2020.05.14.087353"
       },
       "sc:contributor": [
+        "Laura Ciuffreda",
         {
           "@id": "https://orcid.org/0000-0001-5352-069X"
-        },
-        "Laura Ciuffreda"
+        }
       ],
       "sc:description": "A species-level analysis of 16S rRNA nanopore sequencing data based on de novo clustering and consensus building.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3644"
-        },
         {
           "@id": "edam:operation_3460"
         },
         {
           "@id": "edam:operation_3432"
+        },
+        {
+          "@id": "edam:operation_3644"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -101,26 +113,7 @@
       "sc:url": "https://github.com/genomicsITER/NanoCLUST"
     },
     {
-      "@id": "_:N01f898ebde8f4ae18b03e46de32f31dc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1246"
-      },
-      "sc:name": "Sequence cluster (nucleic acid)"
-    },
-    {
-      "@id": "_:N9464187f7cca400d82a58d3654c6c849",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:Nc16c20e1ea7c4717a8314ee3fff8b09f",
+      "@id": "_:N3c3eef4387844df7bd405e336bc037bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -131,16 +124,23 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "https://orcid.org/0000-0003-1777-9084",
-      "@type": "sc:Person"
+      "@id": "_:N986ceff0297b48ccbf1698b5278a9bc8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Taxonomy"
     },
     {
-      "@id": "https://orcid.org/0000-0001-5352-069X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2020.05.14.087353",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf6ddd71eb5fa4cb0a689a2bc21b09fc1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1246"
+      },
+      "sc:name": "Sequence cluster (nucleic acid)"
     }
   ]
 }

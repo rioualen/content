@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-12-221",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/swipe",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0167db8126d84e9590e2befbbbb7924d"
+          "@id": "_:N58a43fd357524289ba6b10cb41657a54"
         },
         {
-          "@id": "_:Ne67a636765c847d09bcc8d149f9f5476"
+          "@id": "_:N84075349000649abaf50ba7e34251ffa"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3e9131ba78fc4fafa265cda1d2a593b0"
+          "@id": "_:Nac577093169447d1864eb9ad7f601d75"
         },
         {
-          "@id": "_:N52a536ed8fe24243abaf9323802c731b"
+          "@id": "_:Ne0626d69c46049c392abe6feeb768257"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -67,10 +71,10 @@
       "sc:author": "Torbjørn Rognes",
       "sc:citation": [
         "pmcid:PMC3120707",
-        "pubmed:21631914",
         {
           "@id": "https://doi.org/10.1186/1471-2105-12-221"
-        }
+        },
+        "pubmed:21631914"
       ],
       "sc:description": "Tool for performing rapid local alignment searches in amino acid or nucleotide sequence databases. It is a highly optimized implementation of the Smith-Waterman algoritm using SIMD parallel computing technology available on common CPUs.",
       "sc:featureList": {
@@ -83,33 +87,17 @@
       "sc:provider": "UiO",
       "sc:softwareHelp": [
         {
-          "@id": "http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-221"
+          "@id": "http://dna.uio.no/swipe/"
         },
         {
-          "@id": "http://dna.uio.no/swipe/"
+          "@id": "http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-221"
         }
       ],
       "sc:softwareVersion": "2.0.5",
       "sc:url": "http://dna.uio.no/swipe"
     },
     {
-      "@id": "_:N0167db8126d84e9590e2befbbbb7924d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:Ne67a636765c847d09bcc8d149f9f5476",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N3e9131ba78fc4fafa265cda1d2a593b0",
+      "@id": "_:Nac577093169447d1864eb9ad7f601d75",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -117,7 +105,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N52a536ed8fe24243abaf9323802c731b",
+      "@id": "_:Ne0626d69c46049c392abe6feeb768257",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -125,8 +113,20 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-12-221",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N58a43fd357524289ba6b10cb41657a54",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N84075349000649abaf50ba7e34251ffa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:name": "Nucleic acid sequence"
     }
   ]
 }

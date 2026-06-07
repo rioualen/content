@@ -36,46 +36,38 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/978-3-540-69828-9_12",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkaa793",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bgee",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb749c0006c4346cd98b2d933532d5080"
+          "@id": "_:Nfb60c257ce564258b5ed34d2b543b820"
         },
         {
-          "@id": "_:N423f437012694c0a97c14bb00dd273cc"
+          "@id": "_:N2db5cb2fc2d7427e94ccb5a056ce93da"
         },
         {
-          "@id": "_:N7be7f1ad600e4ac8a4ab10e77c2f239f"
+          "@id": "_:N3321c7591b7a4d0d81397e488caacc6c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nde491682e6ea45ad827944cdfbe4fdef"
+          "@id": "_:N22e486e1cd344d769bca45d73ad08877"
         },
         {
-          "@id": "_:Nf283742e5a1f4a798b83060ed91c052e"
+          "@id": "_:N3c71fc6f0fc644b0846c6616b1044ebd"
         },
         {
-          "@id": "_:N0b8f1977e63f48538d76ec5dd663723a"
+          "@id": "_:N92ae7128015e46dabddafcf39e6337c3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0797"
         },
         {
-          "@id": "edam:topic_0797"
+          "@id": "edam:topic_3308"
         },
         {
           "@id": "edam:topic_0085"
@@ -83,12 +75,12 @@
       ],
       "sc:citation": [
         "pmcid:PMC7778977",
-        {
-          "@id": "https://doi.org/10.1007/978-3-540-69828-9_12"
-        },
         "pubmed:33037820",
         {
           "@id": "https://doi.org/10.1093/nar/gkaa793"
+        },
+        {
+          "@id": "https://doi.org/10.1007/978-3-540-69828-9_12"
         }
       ],
       "sc:description": "A database to retrieve and compare gene expression patterns between animal species. Bgee first maps heterogeneous expression data (bulk RNA-Seq, scRNA-Seq, Affymetrix, in situ hybridization, and EST data) on anatomical and developmental ontologies.  Then, in order to perform automated cross species comparisons, homology relationships across anatomical ontologies, and comparison criteria between developmental ontologies, are designed.",
@@ -98,9 +90,9 @@
       "sc:license": "CC0-1.0",
       "sc:name": "Bgee",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
       "sc:softwareHelp": {
@@ -109,39 +101,15 @@
       "sc:url": "https://www.bgee.org/"
     },
     {
-      "@id": "_:Nb749c0006c4346cd98b2d933532d5080",
+      "@id": "_:N22e486e1cd344d769bca45d73ad08877",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1033"
+        "@id": "edam:data_2603"
       },
-      "sc:name": "Ensembl gene ID"
+      "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N423f437012694c0a97c14bb00dd273cc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:name": "Gene name"
-    },
-    {
-      "@id": "_:N7be7f1ad600e4ac8a4ab10e77c2f239f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Nde491682e6ea45ad827944cdfbe4fdef",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:Nf283742e5a1f4a798b83060ed91c052e",
+      "@id": "_:N3c71fc6f0fc644b0846c6616b1044ebd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -149,12 +117,44 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N0b8f1977e63f48538d76ec5dd663723a",
+      "@id": "_:N92ae7128015e46dabddafcf39e6337c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_0928"
       },
-      "sc:name": "Gene expression data"
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Nfb60c257ce564258b5ed34d2b543b820",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1033"
+      },
+      "sc:name": "Ensembl gene ID"
+    },
+    {
+      "@id": "_:N2db5cb2fc2d7427e94ccb5a056ce93da",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N3321c7591b7a4d0d81397e488caacc6c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-3-540-69828-9_12",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkaa793",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

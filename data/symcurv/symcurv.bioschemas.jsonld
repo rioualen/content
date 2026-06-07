@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nsmb.1658",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkt707",
       "@type": "sc:CreativeWork"
     },
@@ -48,10 +52,10 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Sonja Althammer",
       "bsc:input": {
-        "@id": "_:N1ba5bc42aeb546f99c5b89de6ca2bf57"
+        "@id": "_:Ncf41dbb2db0048109b1bcbe586a22237"
       },
       "bsc:output": {
-        "@id": "_:Naed29354a0cb44958c98da9487c532e6"
+        "@id": "_:N9141b3c1f50c4be0a7a94c79feb833c7"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -59,24 +63,24 @@
         "@id": "edam:topic_0160"
       },
       "sc:author": [
-        "Christoforos Nikolau",
-        "Sonja Althammer"
+        "Sonja Althammer",
+        "Christoforos Nikolau"
       ],
       "sc:citation": [
-        "pmcid:PMC2994855",
-        "pubmed:21073701",
-        "pubmed:23935120",
-        "pmcid:PMC3814376",
         {
           "@id": "https://doi.org/10.1093/nar/gkt707"
         },
+        "pmcid:PMC3814376",
+        "pubmed:23935120",
+        "pmcid:PMC2994855",
+        {
+          "@id": "https://doi.org/10.1038/nsmb.1658"
+        },
+        "pubmed:21073701",
         {
           "@id": "https://doi.org/10.1186/1756-8935-3-20"
         },
-        "pubmed:19684599",
-        {
-          "@id": "https://doi.org/10.1038/nsmb.1658"
-        }
+        "pubmed:19684599"
       ],
       "sc:description": "SymCurv is a computational ab initio method for nucleosome positioning prediction. It is based on the structural property of natural nucleosome forming sequences, to be symmetrically curved around a local minimum of curvature.",
       "sc:featureList": {
@@ -84,12 +88,12 @@
       },
       "sc:name": "SymCurv",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "Lab Roderic Guigo Group",
-        "crg.eu"
+        "crg.eu",
+        "Lab Roderic Guigo Group"
       ],
       "sc:softwareHelp": {
         "@id": "http://genome.crg.es/SymCurv/tutorial.html"
@@ -98,7 +102,15 @@
       "sc:url": "http://genome.crg.es/cgi-bin/SymCurv/SymCurv.pl"
     },
     {
-      "@id": "_:Naed29354a0cb44958c98da9487c532e6",
+      "@id": "_:Ncf41dbb2db0048109b1bcbe586a22237",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N9141b3c1f50c4be0a7a94c79feb833c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -107,18 +119,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N1ba5bc42aeb546f99c5b89de6ca2bf57",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nsmb.1658",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-6742-3911",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/mendelian",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
+        "Filip Van Nieuwerburgh",
         {
           "@id": "http://orcid.org/0000-0001-6742-3911"
-        },
-        "Filip Van Nieuwerburgh"
+        }
       ],
       "bsc:input": {
-        "@id": "_:N65df20d9add94029b126007743a85783"
+        "@id": "_:N6d5e68c6f77247ad9e8309050a4333ff"
       },
       "bsc:output": [
         {
-          "@id": "_:Necc31d8e12f94df1a6a31e2dfda73417"
+          "@id": "_:Nd2bf6e7ae3674c31bff854aaccd4ac2c"
         },
         {
-          "@id": "_:N1fe52403216b4578a0664078adbd4c0c"
+          "@id": "_:N6e5cd7dc42b9492ab7ed8e0cca15c3d1"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -66,11 +70,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4656174",
-        "pubmed:26597515",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0822-7"
-        }
+        },
+        "pubmed:26597515",
+        "pmcid:PMC4656174"
       ],
       "sc:description": "R-package for heuristic variant filtering.",
       "sc:featureList": {
@@ -80,9 +84,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "Mendelian",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -91,7 +95,23 @@
       "sc:url": "https://github.com/BartBroeckx/Mendelian"
     },
     {
-      "@id": "_:N65df20d9add94029b126007743a85783",
+      "@id": "_:Nd2bf6e7ae3674c31bff854aaccd4ac2c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N6e5cd7dc42b9492ab7ed8e0cca15c3d1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0916"
+      },
+      "sc:name": "Gene report"
+    },
+    {
+      "@id": "_:N6d5e68c6f77247ad9e8309050a4333ff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -100,26 +120,6 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:Necc31d8e12f94df1a6a31e2dfda73417",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N1fe52403216b4578a0664078adbd4c0c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-6742-3911",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1186/s12859-015-0822-7",
