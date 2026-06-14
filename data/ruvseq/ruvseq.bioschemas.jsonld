@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/978-1-4939-6934-0_17",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ruvseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Davide Risso",
       "bsc:input": {
-        "@id": "_:N1153a1b00f4149e4995190bb696264a7"
+        "@id": "_:N20ac01198a854e3f9a643daba3e547ab"
       },
       "bsc:output": {
-        "@id": "_:N1812d0c560c343b08eac2051d8c55efa"
+        "@id": "_:N597b90d668814b3395f12bf45bd7713a"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -63,10 +59,10 @@
         }
       ],
       "sc:citation": [
-        "pubmed:28456989",
         {
           "@id": "https://doi.org/10.1007/978-1-4939-6934-0_17"
-        }
+        },
+        "pubmed:28456989"
       ],
       "sc:description": "This package implements the remove unwanted variation (RUV) methods for the normalization of RNA-Seq read counts between samples.",
       "sc:featureList": {
@@ -75,9 +71,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "RUVSeq",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/RUVSeq.html"
@@ -86,7 +82,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/RUVSeq.html"
     },
     {
-      "@id": "_:N1812d0c560c343b08eac2051d8c55efa",
+      "@id": "_:N20ac01198a854e3f9a643daba3e547ab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1919"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N597b90d668814b3395f12bf45bd7713a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -97,15 +104,8 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N1153a1b00f4149e4995190bb696264a7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1919"
-      },
-      "sc:name": "RNA sequence"
+      "@id": "https://doi.org/10.1007/978-1-4939-6934-0_17",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

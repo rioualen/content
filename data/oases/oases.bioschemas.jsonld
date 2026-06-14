@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/oases",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -44,29 +48,26 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N4b1c99bc106c4a2d840c82e872540d6e"
+          "@id": "_:N554041e80fc14d0d8785edb72c06be49"
         },
         {
-          "@id": "_:N724e8d23290f482c8f84b6a92a28efbd"
+          "@id": "_:N80eb2bf5638c4c759e0ffc69b1daf667"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9b088e8b764340bb903d4280291ebf53"
+          "@id": "_:Ne1205500e70944c880bda0a0aaea74e5"
         },
         {
-          "@id": "_:N245f00e4224e4983b272786c11da4062"
+          "@id": "_:N4667504d5f1e4b8d9412f0fe838b63e2"
         },
         {
-          "@id": "_:N9ee8b9061a5a4d899d9bc59a3e9cf886"
+          "@id": "_:N26174be006bb4d78a8fbdb8e96a2f65f"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3170"
-        },
         {
           "@id": "edam:topic_0196"
         },
@@ -75,22 +76,25 @@
         },
         {
           "@id": "edam:topic_3673"
+        },
+        {
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3324515",
-        "pubmed:22368243",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts094"
-        }
+        },
+        "pmcid:PMC3324515",
+        "pubmed:22368243"
       ],
       "sc:description": "De novo transcriptome assembler designed to produce transcripts from short read sequencing technologies. It uploads a preliminary assembly produced by Velvet, and clusters the contigs into small groups, called loci. It then exploits the paired-end read and long read information, when available, to construct transcript isoforms.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3258"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3258"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -106,31 +110,7 @@
       "sc:url": "https://github.com/dzerbino/oases"
     },
     {
-      "@id": "_:N4b1c99bc106c4a2d840c82e872540d6e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:N724e8d23290f482c8f84b6a92a28efbd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:N9b088e8b764340bb903d4280291ebf53",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N245f00e4224e4983b272786c11da4062",
+      "@id": "_:Ne1205500e70944c880bda0a0aaea74e5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3181"
@@ -138,7 +118,7 @@
       "sc:name": "Sequence assembly report"
     },
     {
-      "@id": "_:N9ee8b9061a5a4d899d9bc59a3e9cf886",
+      "@id": "_:N4667504d5f1e4b8d9412f0fe838b63e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -146,8 +126,28 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N26174be006bb4d78a8fbdb8e96a2f65f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N554041e80fc14d0d8785edb72c06be49",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N80eb2bf5638c4c759e0ffc69b1daf667",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:name": "Sequence assembly"
     }
   ]
 }

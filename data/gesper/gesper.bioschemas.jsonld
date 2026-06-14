@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13059-015-0783-1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gesper",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Fabian Schmich",
       "bsc:input": {
-        "@id": "_:Neb39e9755dd44a0894ef67f444ae9973"
+        "@id": "_:Nedc89296c92e4fb396e13f7b22b203cf"
       },
       "bsc:output": [
         {
-          "@id": "_:Nf108d451e5a449039291b882db05b598"
+          "@id": "_:N67d6ca1cb9044b21bfb8119e18961135"
         },
         {
-          "@id": "_:N4bf780a9180a45f5b6f5bcec8ac725ca"
+          "@id": "_:N5f05b9957f5c45f6ac4d261df0159bdd"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -57,18 +61,18 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3523"
         },
         {
-          "@id": "edam:topic_3523"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:26445817",
+        "pmcid:PMC4597449",
         {
           "@id": "https://doi.org/10.1186/s13059-015-0783-1"
-        },
-        "pubmed:26445817",
-        "pmcid:PMC4597449"
+        }
       ],
       "sc:description": "Estimates gene-specific phenotypes from off-target confounded RNAi screens. The phenotype of each siRNA is modeled based on on-targeted and off-targeted genes, using a regularized linear regression model.",
       "sc:featureList": [
@@ -82,9 +86,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "gespeR",
       "sc:operatingSystem": [
+        "Linux",
         "Windows",
-        "Mac",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/gespeR.html"
@@ -93,34 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gespeR.html"
     },
     {
-      "@id": "_:Neb39e9755dd44a0894ef67f444ae9973",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:Nf108d451e5a449039291b882db05b598",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N4bf780a9180a45f5b6f5bcec8ac725ca",
+      "@id": "_:N67d6ca1cb9044b21bfb8119e18961135",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -136,8 +113,31 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.1186/s13059-015-0783-1",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N5f05b9957f5c45f6ac4d261df0159bdd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Nedc89296c92e4fb396e13f7b22b203cf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression data"
     }
   ]
 }

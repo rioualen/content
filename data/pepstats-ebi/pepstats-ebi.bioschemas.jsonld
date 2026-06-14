@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     },
@@ -44,23 +48,19 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pepstats-ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N377311f539c0477392fa1303c797d33d"
+        "@id": "_:N045104b5b78643edb43126e34e48ea62"
       },
       "bsc:output": {
-        "@id": "_:Nc98bc1c566be4e9a8c0f510980ef0d88"
+        "@id": "_:N31d3c1453a6942d289e4e3124a46701d"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0123"
@@ -68,17 +68,17 @@
       "sc:author": "EMBOSS",
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
+        "pmcid:PMC11223882",
+        "pubmed:38597606",
         "pubmed:35412617",
         "pmcid:PMC9252731",
-        "pmcid:PMC11223882",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
-        "pubmed:38597606",
         {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+          "@id": "https://doi.org/10.1093/nar/gkac240"
         }
       ],
       "sc:description": "Calculate statistics of protein properties.",
@@ -87,40 +87,40 @@
       },
       "sc:name": "pepstats (EBI)",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+        },
+        {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "https://emboss.sourceforge.net/"
-        },
-        {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/seqstats/emboss_pepstats"
     },
     {
-      "@id": "_:Nc98bc1c566be4e9a8c0f510980ef0d88",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0897"
-      },
-      "sc:name": "Protein property"
-    },
-    {
-      "@id": "_:N377311f539c0477392fa1303c797d33d",
+      "@id": "_:N045104b5b78643edb43126e34e48ea62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N31d3c1453a6942d289e4e3124a46701d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0897"
+      },
+      "sc:name": "Protein property"
     }
   ]
 }

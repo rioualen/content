@@ -44,27 +44,27 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Tomi Suomi",
       "bsc:input": {
-        "@id": "_:N3f93e66b00ca4f1f929bf62317e96012"
+        "@id": "_:Nace893bff71f405fa605fcaad42bf105"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb54c4463b7a04940a2dea71846163124"
+          "@id": "_:N88996def92754aa2bdf0aec87143f256"
         },
         {
-          "@id": "_:N70930dc844c74a25af6d9a3944a11ea1"
+          "@id": "_:N54e0c81498ac47d6b879a6b0051852c8"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_3520"
         },
         {
           "@id": "edam:topic_0203"
@@ -82,18 +82,18 @@
       "sc:description": "Calculates Probe-level Expression Change Averages to identify differential expression in Affymetrix gene expression microarray studies or in proteomic studies using peptide-level mesurements respectively.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3741"
         },
         {
-          "@id": "edam:operation_3741"
+          "@id": "edam:operation_3223"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "PECA",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/PECA.html"
@@ -102,7 +102,48 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/PECA.html"
     },
     {
-      "@id": "_:Nb54c4463b7a04940a2dea71846163124",
+      "@id": "_:Nace893bff71f405fa605fcaad42bf105",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3110"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_1638"
+        },
+        {
+          "@id": "edam:format_1639"
+        },
+        {
+          "@id": "edam:format_1637"
+        }
+      ],
+      "sc:name": "Raw microarray data"
+    },
+    {
+      "@id": "_:N88996def92754aa2bdf0aec87143f256",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N54e0c81498ac47d6b879a6b0051852c8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3111"
@@ -119,47 +160,6 @@
         }
       ],
       "sc:name": "Processed microarray data"
-    },
-    {
-      "@id": "_:N70930dc844c74a25af6d9a3944a11ea1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N3f93e66b00ca4f1f929bf62317e96012",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3110"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1639"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_1638"
-        },
-        {
-          "@id": "edam:format_1637"
-        }
-      ],
-      "sc:name": "Raw microarray data"
     }
   ]
 }

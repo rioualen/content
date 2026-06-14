@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv008",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowbin",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Kieran O'Neill",
       "bsc:input": {
-        "@id": "_:Nc29cb2a999c24955ad362db47e174552"
+        "@id": "_:N84120aa8532e47c795cf61b94cf6ac07"
       },
       "bsc:output": [
         {
-          "@id": "_:N206481c00218423bb459d8c9250a3f6f"
+          "@id": "_:Nea4ea93e067c46a4b38151424a80e78d"
         },
         {
-          "@id": "_:N8db5639f9b034dfa8791fc9a0e206f37"
+          "@id": "_:N2b88521c69364ae4bf3288931b5bb8aa"
         },
         {
-          "@id": "_:Nbd046d25072d4336859e823adbeee4b4"
+          "@id": "_:N2eb3bce234344df8aade13329f41142e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -60,10 +64,10 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_3306"
         },
         {
-          "@id": "edam:topic_3306"
+          "@id": "edam:topic_3071"
         },
         {
           "@id": "edam:topic_3361"
@@ -79,13 +83,13 @@
       "sc:description": "Software to combine flow cytometry data that has been multiplexed into multiple tubes with common markers between them, by establishing common bins across tubes in terms of the common markers, then determining expression within each tube for each bin in terms of the tube-specific markers.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2409"
+        },
+        {
           "@id": "edam:operation_2424"
         },
         {
           "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_2409"
         }
       ],
       "sc:license": "Artistic-2.0",
@@ -102,18 +106,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowBin.html"
     },
     {
-      "@id": "_:Nc29cb2a999c24955ad362db47e174552",
+      "@id": "_:Nea4ea93e067c46a4b38151424a80e78d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3108"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:N206481c00218423bb459d8c9250a3f6f",
+      "@id": "_:N2b88521c69364ae4bf3288931b5bb8aa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N2eb3bce234344df8aade13329f41142e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -129,40 +154,15 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N8db5639f9b034dfa8791fc9a0e206f37",
+      "@id": "_:N84120aa8532e47c795cf61b94cf6ac07",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_3108"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nbd046d25072d4336859e823adbeee4b4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv008",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Experimental measurement"
     }
   ]
 }

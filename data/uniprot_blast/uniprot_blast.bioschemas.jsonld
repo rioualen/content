@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gku989",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/uniprot_blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Xavier Watkins",
       "bsc:input": {
-        "@id": "_:Nea1b81a1237e43a0a35cb323f7b15e60"
+        "@id": "_:N75e22a7d9a2f44d38634d304f9181bf6"
       },
       "bsc:output": {
-        "@id": "_:N0c851cb2b57e429d84821f1699571f90"
+        "@id": "_:N3b0fa7d20c0c4e8585975de53fb73b1b"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -56,30 +52,30 @@
       },
       "sc:author": "Xavier Watkins",
       "sc:citation": [
-        "pmcid:PMC4384041",
-        "pubmed:25348405",
         {
           "@id": "https://doi.org/10.1093/nar/gku989"
-        }
+        },
+        "pmcid:PMC4384041",
+        "pubmed:25348405"
       ],
       "sc:description": "Search UniProt sequences with BLAST.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0346"
         }
       ],
       "sc:name": "UniProt BLAST",
       "sc:operatingSystem": [
-        "Mac",
+        "Windows",
         "Linux",
-        "Windows"
+        "Mac"
       ],
       "sc:provider": [
-        "NCBI",
         "EMBL-EBI",
+        "NCBI",
         "UniProt Consortium"
       ],
       "sc:softwareHelp": [
@@ -94,7 +90,15 @@
       "sc:url": "http://www.uniprot.org/blast/"
     },
     {
-      "@id": "_:N0c851cb2b57e429d84821f1699571f90",
+      "@id": "_:N75e22a7d9a2f44d38634d304f9181bf6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N3b0fa7d20c0c4e8585975de53fb73b1b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -102,12 +106,8 @@
       "sc:name": "Sequence search results"
     },
     {
-      "@id": "_:Nea1b81a1237e43a0a35cb323f7b15e60",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1093/nar/gku989",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

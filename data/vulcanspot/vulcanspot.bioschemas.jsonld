@@ -36,53 +36,45 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-2373-769X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btz465",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/vulcanSpot",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-2373-769X"
       },
       "bsc:input": {
-        "@id": "_:N7cf92193580c424289c08fd4514484f9"
+        "@id": "_:N848e2f1237154332bb587cd341b1e485"
       },
       "bsc:output": [
         {
-          "@id": "_:N934e277436a5464eaea40938ab5fda88"
+          "@id": "_:Ne23a2ed8d5a04a1e98cac101b22a9390"
         },
         {
-          "@id": "_:N132af077e3334897b83854f29a4d006b"
+          "@id": "_:Nb1cae553fcef45718b2e32e6abfd6902"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
         "Database portal",
+        "Web API",
         "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2640"
+        },
         {
           "@id": "edam:topic_0154"
         },
         {
           "@id": "edam:topic_3053"
-        },
-        {
-          "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": [
         "pubmed:31173067",
+        "pmcid:PMC6853644",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btz465"
-        },
-        "pmcid:PMC6853644"
+        }
       ],
       "sc:description": "Tool to prioritize therapeutic vulnerabilities in cancer.",
       "sc:featureList": [
@@ -90,10 +82,10 @@
           "@id": "edam:operation_3501"
         },
         {
-          "@id": "edam:operation_0463"
+          "@id": "edam:operation_3196"
         },
         {
-          "@id": "edam:operation_3196"
+          "@id": "edam:operation_0463"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -105,8 +97,8 @@
         "Mac"
       ],
       "sc:provider": [
-        "BU_CNIO",
-        "CNIO"
+        "CNIO",
+        "BU_CNIO"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.vulcanspot.org/help"
@@ -115,7 +107,39 @@
       "sc:url": "http://www.vulcanspot.org/"
     },
     {
-      "@id": "_:N7cf92193580c424289c08fd4514484f9",
+      "@id": "_:Ne23a2ed8d5a04a1e98cac101b22a9390",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0984"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Molecule name"
+    },
+    {
+      "@id": "_:Nb1cae553fcef45718b2e32e6abfd6902",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N848e2f1237154332bb587cd341b1e485",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -126,36 +150,12 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:N934e277436a5464eaea40938ab5fda88",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0984"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Molecule name"
+      "@id": "https://doi.org/10.1093/bioinformatics/btz465",
+      "@type": "sc:CreativeWork"
     },
     {
-      "@id": "_:N132af077e3334897b83854f29a4d006b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene name"
+      "@id": "https://orcid.org/0000-0003-2373-769X",
+      "@type": "sc:Person"
     }
   ]
 }

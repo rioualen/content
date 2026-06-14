@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-6485-8781",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1093/bioinformatics/btv145",
       "@type": "sc:CreativeWork"
     },
@@ -46,37 +50,37 @@
         "@id": "http://orcid.org/0000-0002-6485-8781"
       },
       "bsc:input": {
-        "@id": "_:N4b58276c63f749cdb5b759fe1527cb5b"
+        "@id": "_:Nd43aa849e418451b97a6fe98ae24ccb2"
       },
       "bsc:output": [
         {
-          "@id": "_:N5e8676bbcf86443b8a7af5367e60df1c"
+          "@id": "_:Nf883a3f7a2eb4b66bae110dcced9eb02"
         },
         {
-          "@id": "_:N4b2951f1c2eb4430b1c9977cbe9ba97c"
+          "@id": "_:N1ef353ff06214d50abfd1c2ae45fa259"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3473"
+        },
         {
           "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_0092"
-        },
-        {
-          "@id": "edam:topic_3473"
         }
       ],
       "sc:citation": [
+        "pubmed:25765347",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv145"
-        },
-        "pubmed:25765347"
+        }
       ],
       "sc:description": "This package implements functions to retrieve the nearest genes around the peak, annotate the genomic region of the peak, statistical methods for estimating the significance of overlap among ChIP peak data sets, and incorporate GEO database to compare the own dataset with those deposited in database. The comparison can be used to infer cooperative regulation and thus can be used to generate hypotheses.",
       "sc:featureList": [
@@ -84,13 +88,13 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_0256"
-        },
-        {
           "@id": "edam:operation_0361"
         },
         {
           "@id": "edam:operation_0337"
+        },
+        {
+          "@id": "edam:operation_0256"
         }
       ],
       "sc:license": "Artistic-2.0",
@@ -107,7 +111,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ChIPseeker.html"
     },
     {
-      "@id": "_:N5e8676bbcf86443b8a7af5367e60df1c",
+      "@id": "_:Nd43aa849e418451b97a6fe98ae24ccb2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2078"
+        },
+        {
+          "@id": "edam:format_3003"
+        }
+      ],
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:Nf883a3f7a2eb4b66bae110dcced9eb02",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -118,7 +138,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N4b2951f1c2eb4430b1c9977cbe9ba97c",
+      "@id": "_:N1ef353ff06214d50abfd1c2ae45fa259",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -127,26 +147,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N4b58276c63f749cdb5b759fe1527cb5b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2078"
-        }
-      ],
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-6485-8781",
-      "@type": "sc:Person"
     }
   ]
 }

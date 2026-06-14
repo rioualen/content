@@ -36,19 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-2218-6833",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.12688/f1000research.8987.2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/edger",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Aaron Lun",
         "Yunshun Chen",
+        "Aaron Lun",
         {
           "@id": "http://orcid.org/0000-0002-2218-6833"
         },
@@ -56,14 +48,14 @@
         "Gordon Smyth"
       ],
       "bsc:input": {
-        "@id": "_:N07b8eb6a69a44c4090a68e9b569322e8"
+        "@id": "_:N3686c217663c433da1c7e41a0aaacb45"
       },
       "bsc:output": [
         {
-          "@id": "_:Nee260542bb5949569ba21917ffcce8ef"
+          "@id": "_:N4abdbd3eebd44d438f0610a8ff786b29"
         },
         {
-          "@id": "_:Nb588ef6e07ff4d2a9799952eaea08517"
+          "@id": "_:N5916a9138c7848399849e4192d11cb15"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -73,31 +65,31 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3053"
-        },
-        {
           "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_3053"
         }
       ],
       "sc:citation": [
         "pubmed:27508061",
-        "pmcid:PMC4934518",
+        {
+          "@id": "https://doi.org/10.12688/f1000research.8987.2"
+        },
+        {
+          "@id": "https://doi.org/10.1093/nar/gks042"
+        },
+        "pmcid:PMC2796818",
+        "pmcid:PMC3378882",
         "pubmed:22287627",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp616"
         },
-        {
-          "@id": "https://doi.org/10.12688/f1000research.8987.2"
-        },
-        "pmcid:PMC2796818",
-        {
-          "@id": "https://doi.org/10.1093/nar/gks042"
-        },
-        "pmcid:PMC3378882",
-        "pubmed:19910308"
+        "pubmed:19910308",
+        "pmcid:PMC4934518"
       ],
       "sc:description": "Differential expression analysis of RNA-seq expression profiles with biological replication. Implements a range of statistical methodology based on the negative binomial distributions, including empirical Bayes estimation, exact tests, generalized linear models and quasi-likelihood tests. As well as RNA-seq, it be applied to differential signal analysis of other types of genomic data that produce counts, including ChIP-seq, SAGE and CAGE.",
       "sc:featureList": {
@@ -106,9 +98,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "edgeR",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/edgeR.html"
@@ -117,39 +109,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/edgeR.html"
     },
     {
-      "@id": "_:Nee260542bb5949569ba21917ffcce8ef",
+      "@id": "_:N4abdbd3eebd44d438f0610a8ff786b29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nb588ef6e07ff4d2a9799952eaea08517",
+      "@id": "_:N5916a9138c7848399849e4192d11cb15",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N07b8eb6a69a44c4090a68e9b569322e8",
+      "@id": "_:N3686c217663c433da1c7e41a0aaacb45",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -160,12 +152,20 @@
       "sc:name": "Sequence"
     },
     {
+      "@id": "https://doi.org/10.12688/f1000research.8987.2",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gks042",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btp616",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-2218-6833",
+      "@type": "sc:Person"
     }
   ]
 }

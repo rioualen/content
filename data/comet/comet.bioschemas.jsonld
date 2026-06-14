@@ -36,24 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/s13361-015-1179-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/pmic.201200439",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/comet",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Comet's Google group",
       "bsc:input": [
         {
-          "@id": "_:Ne9056abcac47436ab195804b72258fca"
+          "@id": "_:N68eb6cf3a8884d3792fad7646f4a59ce"
         },
         {
-          "@id": "_:N6a0b3182a71c4cc88233ca5b84b7e7a9"
+          "@id": "_:Nda1bf357702b4e8e8389d4a0ce3cffaf"
         }
       ],
       "bsc:output": {
-        "@id": "_:N4b8675ac24fc486684fd4c2c7f3079fd"
+        "@id": "_:Nfd81bbf1e2c54c608902a550c50231e1"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -64,15 +72,15 @@
         }
       ],
       "sc:citation": [
-        "pubmed:23148064",
-        "pubmed:26115965",
         {
           "@id": "https://doi.org/10.1007/s13361-015-1179-x"
         },
-        "pmcid:PMC4607604",
         {
           "@id": "https://doi.org/10.1002/pmic.201200439"
-        }
+        },
+        "pubmed:26115965",
+        "pmcid:PMC4607604",
+        "pubmed:23148064"
       ],
       "sc:description": "Comet is an open source tandem mass spectrometry (MS/MS) sequence database search tool.",
       "sc:featureList": {
@@ -82,9 +90,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "Comet",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:provider": "lumc.nl",
       "sc:softwareHelp": [
@@ -96,51 +104,32 @@
         }
       ],
       "sc:softwareVersion": [
-        "2016.01.2",
-        "2023.01.2"
+        "2023.01.2",
+        "2016.01.2"
       ],
       "sc:url": "http://comet-ms.sourceforge.net/"
     },
     {
-      "@id": "_:N4b8675ac24fc486684fd4c2c7f3079fd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3655"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3247"
-        }
-      ],
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:Ne9056abcac47436ab195804b72258fca",
+      "@id": "_:N68eb6cf3a8884d3792fad7646f4a59ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3654"
-        },
-        {
           "@id": "edam:format_3244"
         },
         {
           "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N6a0b3182a71c4cc88233ca5b84b7e7a9",
+      "@id": "_:Nda1bf357702b4e8e8389d4a0ce3cffaf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -151,12 +140,23 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1007/s13361-015-1179-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1002/pmic.201200439",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nfd81bbf1e2c54c608902a550c50231e1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3655"
+        },
+        {
+          "@id": "edam:format_3247"
+        }
+      ],
+      "sc:name": "Peptide identification"
     }
   ]
 }

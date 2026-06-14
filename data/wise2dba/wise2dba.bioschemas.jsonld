@@ -36,24 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1101/gr.9.9.815",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/wise2dba",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nc345bb6564a945c382f83a48b9ced5ab"
+        "@id": "_:N72c4f9e3571845da9dc0a6f4b309e29e"
       },
       "bsc:output": [
         {
-          "@id": "_:N4471f3a9d08e45ada93536d2f1c09e7d"
+          "@id": "_:N4c6dad5713b14672b88fc71b88ecaa3d"
         },
         {
-          "@id": "_:Nc60a426450af4827832b9be6b73d99d1"
+          "@id": "_:N2b310fc50caa49969768c0053fb52c29"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -61,15 +69,15 @@
       "sc:author": "Ewan Birney",
       "sc:citation": [
         "pubmed:10508839",
-        "pmcid:PMC310816",
+        "pubmed:35412617",
+        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1101/gr.9.9.815"
         },
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        "pubmed:35412617",
-        "pmcid:PMC9252731"
+        "pmcid:PMC310816"
       ],
       "sc:description": "Align two sequences assuming the sequences share colinear conserved blocks separated by gaps.",
       "sc:featureList": [
@@ -82,40 +90,24 @@
       ],
       "sc:name": "Wise2DBA (EBI)",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/Tools/psa/wise2dba/"
         },
         {
-          "@id": "http://www.ebi.ac.uk/Tools/psa/wise2dba/"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "Retired",
       "sc:url": "http://www.ebi.ac.uk/Tools/psa/wise2dba/"
     },
     {
-      "@id": "_:N4471f3a9d08e45ada93536d2f1c09e7d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "_:Nc60a426450af4827832b9be6b73d99d1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1381"
-      },
-      "sc:name": "Sequence alignment (pair)"
-    },
-    {
-      "@id": "_:Nc345bb6564a945c382f83a48b9ced5ab",
+      "@id": "_:N72c4f9e3571845da9dc0a6f4b309e29e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -123,12 +115,20 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4c6dad5713b14672b88fc71b88ecaa3d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1381"
+      },
+      "sc:name": "Sequence alignment (pair)"
     },
     {
-      "@id": "https://doi.org/10.1101/gr.9.9.815",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2b310fc50caa49969768c0053fb52c29",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
     }
   ]
 }

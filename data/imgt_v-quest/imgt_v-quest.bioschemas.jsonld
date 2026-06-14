@@ -36,7 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkh412",
+      "@id": "https://doi.org/10.1101/pdb.prot5633",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkn316",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,17 +48,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Marie-Paule Lefranc",
       "bsc:input": {
-        "@id": "_:Nb61a73d605f74c2b8bb400f8b7d20917"
+        "@id": "_:N4c9bbf669e234feaafbe5030d092aa52"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne77372393434403ca0edbfd50d8ffa76"
+          "@id": "_:N8b5c570964e6468d8675871bd2b14212"
         },
         {
-          "@id": "_:N1e5f5916dc8740258c2ebb6a30d6d86b"
+          "@id": "_:Ne349d9b0e7354c77807c2e361b8290f6"
         },
         {
-          "@id": "_:N98c59f051b68447182e10660638b4e66"
+          "@id": "_:Nefb899d1f01642acb5c277fc8016a79a"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -67,43 +71,43 @@
           "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_3930"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3930"
         }
       ],
       "sc:citation": [
+        "pubmed:18503082",
+        "pmcid:PMC441550",
         "pubmed:15215425",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkh412"
-        },
+        "pubmed:25378316",
         {
           "@id": "https://doi.org/10.1093/nar/gku1056"
         },
         "pmcid:PMC2447746",
-        "pubmed:25378316",
+        "pmcid:PMC4383898",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkh412"
+        },
         {
           "@id": "https://doi.org/10.1101/pdb.prot5633"
         },
-        "pmcid:PMC4383898",
         "pubmed:21632778",
-        "pmcid:PMC441550",
         {
           "@id": "https://doi.org/10.1093/nar/gkn316"
-        },
-        "pubmed:18503082"
+        }
       ],
       "sc:description": "IMGT/V-QUEST is the IMGT® tool for nucleotide sequence alignment and analysis of immunoglobulin (IG) or antibody and T cell receptor (TR) variable domains, integrates IMGT/JunctionAnalysis, IMGT/Automat and IMGT/Collier-de-Perles.\nAnalysis is based on the IMGT-ONTOLOGY concepts.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0292"
-        },
         {
           "@id": "edam:operation_0448"
         },
         {
           "@id": "edam:operation_3192"
+        },
+        {
+          "@id": "edam:operation_0292"
         },
         {
           "@id": "edam:operation_0258"
@@ -112,25 +116,52 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "IMGT V-QUEST",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:softwareHelp": [
+        {
+          "@id": "http://www.imgt.org/IMGT_vquest/data_releases"
+        },
         {
           "@id": "http://www.imgt.org/IMGT_vquest/user_guide"
         },
         {
           "@id": "http://www.imgt.org/IMGT_vquest/program_versions"
-        },
-        {
-          "@id": "http://www.imgt.org/IMGT_vquest/data_releases"
         }
       ],
       "sc:url": "http://www.imgt.org/IMGT_vquest"
     },
     {
-      "@id": "_:Ne77372393434403ca0edbfd50d8ffa76",
+      "@id": "_:N4c9bbf669e234feaafbe5030d092aa52",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N8b5c570964e6468d8675871bd2b14212",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Ne349d9b0e7354c77807c2e361b8290f6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -146,61 +177,30 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:N1e5f5916dc8740258c2ebb6a30d6d86b",
+      "@id": "_:Nefb899d1f01642acb5c277fc8016a79a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
-        },
-        {
           "@id": "edam:format_2331"
         },
         {
           "@id": "edam:format_3620"
+        },
+        {
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:N98c59f051b68447182e10660638b4e66",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nb61a73d605f74c2b8bb400f8b7d20917",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkn316",
+      "@id": "https://doi.org/10.1093/nar/gkh412",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gku1056",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1101/pdb.prot5633",
       "@type": "sc:CreativeWork"
     }
   ]

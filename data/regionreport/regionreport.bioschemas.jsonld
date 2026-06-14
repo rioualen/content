@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw852",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/regionreport",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Leonardo Collado-Torres",
       "bsc:input": {
-        "@id": "_:N39d683e8a0bb432e900654d90a2ff77c"
+        "@id": "_:N9c87aeb471a64bc98728b5f21b39b5a8"
       },
       "bsc:output": {
-        "@id": "_:Nb73e83ba94c64835bce90f08a2575f83"
+        "@id": "_:N3ed2b2db12174326989cb9f607917512"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3170"
       },
       "sc:citation": [
+        "pubmed:27694310",
         {
           "@id": "https://doi.org/10.1093/nar/gkw852"
         },
-        "pmcid:PMC5314792",
-        "pubmed:27694310"
+        "pmcid:PMC5314792"
       ],
       "sc:description": "Generate HTML or PDF reports to explore a set of regions such as the results from annotation-agnostic expression analysis of RNA-seq data at base-pair resolution performed by derfinder. You can also create reports for DESeq2 or edgeR results.",
       "sc:featureList": {
@@ -71,9 +67,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "regionReport",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/regionReport.html"
@@ -82,23 +78,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/regionReport.html"
     },
     {
-      "@id": "_:Nb73e83ba94c64835bce90f08a2575f83",
+      "@id": "_:N3ed2b2db12174326989cb9f607917512",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2331"
+          "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_2331"
         }
       ],
       "sc:name": "Report"
     },
     {
-      "@id": "_:N39d683e8a0bb432e900654d90a2ff77c",
+      "@id": "_:N9c87aeb471a64bc98728b5f21b39b5a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -107,6 +103,10 @@
         "@id": "edam:format_2078"
       },
       "sc:name": "Sequence range"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw852",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

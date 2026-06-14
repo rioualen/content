@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/netchop",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N4c21b897b3224d9cbc470fd169ccdf57"
+        "@id": "_:Nc85728b3d3e44eb784d6fc83a9b87da3"
       },
       "bsc:output": {
-        "@id": "_:Nd56717b027fe473d867d42fd7ff342f5"
+        "@id": "_:Nd9c106ac63d34a86a1a4af96b3e84a35"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
         "Web service",
+        "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3510"
       },
       "sc:citation": [
-        "pubmed:15744535",
         {
           "@id": "https://doi.org/10.1007/s00251-005-0781-7"
-        }
+        },
+        "pubmed:15744535"
       ],
       "sc:description": "Neural network predictions for cleavage sites of the human proteasome.",
       "sc:featureList": {
@@ -78,18 +82,7 @@
       "sc:url": "http://cbs.dtu.dk/services/NetChop/"
     },
     {
-      "@id": "_:N4c21b897b3224d9cbc470fd169ccdf57",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nd56717b027fe473d867d42fd7ff342f5",
+      "@id": "_:Nd9c106ac63d34a86a1a4af96b3e84a35",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -100,12 +93,19 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "https://doi.org/10.1007/s00251-005-0781-7",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc85728b3d3e44eb784d6fc83a9b87da3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     },
     {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1007/s00251-005-0781-7",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     },
@@ -44,49 +48,45 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/genewise",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": [
         {
-          "@id": "_:Ne1cb75e91ef54390890132b64410a2b9"
+          "@id": "_:Ndb716df6b27848cbbdf0b2b6e3c51366"
         },
         {
-          "@id": "_:N9254b642d5ef4423b6b682d6c1879a41"
+          "@id": "_:N3829825fcec04197a9fc50e386bbec41"
         }
       ],
       "bsc:output": {
-        "@id": "_:N617167b818a243149a5692487194ba91"
+        "@id": "_:N2553c930219f4401a13852660bbfe60f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "Ewan Birney",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkae241"
-        },
+        "pmcid:PMC11223882",
+        "pubmed:10779496",
         "pubmed:38597606",
-        "pmcid:PMC310858",
         {
           "@id": "https://doi.org/10.1101/gr.10.4.547"
         },
-        "pubmed:10779496",
+        "pubmed:35412617",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkae241"
+        },
+        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        "pubmed:35412617",
-        "pmcid:PMC9252731",
-        "pmcid:PMC11223882"
+        "pmcid:PMC310858"
       ],
       "sc:description": "Compare a protein sequence to a genomic DNA sequence, allowing for introns and frameshifting errors.",
       "sc:featureList": [
@@ -99,17 +99,17 @@
       ],
       "sc:name": "GeneWise (EBI)",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "https://www.ebi.ac.uk/~birney/wise2/"
@@ -119,15 +119,15 @@
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/psa/genewise"
     },
     {
-      "@id": "_:Ne1cb75e91ef54390890132b64410a2b9",
+      "@id": "_:N2553c930219f4401a13852660bbfe60f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
+        "@id": "edam:data_1381"
       },
-      "sc:name": "DNA sequence"
+      "sc:name": "Sequence alignment (pair)"
     },
     {
-      "@id": "_:N9254b642d5ef4423b6b682d6c1879a41",
+      "@id": "_:Ndb716df6b27848cbbdf0b2b6e3c51366",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -135,12 +135,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N617167b818a243149a5692487194ba91",
+      "@id": "_:N3829825fcec04197a9fc50e386bbec41",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1381"
+        "@id": "edam:data_3494"
       },
-      "sc:name": "Sequence alignment (pair)"
+      "sc:name": "DNA sequence"
     }
   ]
 }

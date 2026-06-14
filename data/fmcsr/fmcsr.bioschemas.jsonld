@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt475",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fmcsr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Girke",
       "bsc:input": {
-        "@id": "_:Nf8d88d367a5b4012947d298937168d54"
+        "@id": "_:Nca54a1c8aac646a0ba4a6c4a7fb5ee4e"
       },
       "bsc:output": [
         {
-          "@id": "_:N897c34855b9d4608bf86e003c0fa07e0"
+          "@id": "_:Nbf794136d77247da86c3f9a7c6ca14e9"
         },
         {
-          "@id": "_:Nd9b8477a48f1491aa0b400605057fa25"
+          "@id": "_:Nad7faa03fca54e539f932bfde1ecd1f4"
         },
         {
-          "@id": "_:Ne63d5c3402234987a9af656067e7b5f2"
+          "@id": "_:Nc5c6256d5b754746a4f1afc19c38c1d5"
         },
         {
-          "@id": "_:Nd9475b6c17fc41c5a15d5067d6545e6e"
+          "@id": "_:N61605c61713048728885e5d4e4cb0ed4"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -82,18 +78,18 @@
       "sc:description": "This package introduces an efficient maximum common substructure (MCS) algorithm combined with a novel matching strategy that allows for atom and/or bond mismatches in the substructures shared among two small molecules. The output flexible MCSs (FMCSs) are often larger than strict MCSs, resulting in the identification of more common features in their source structures, as well as a higher sensitivity in finding compounds with weak structural similarities.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2483"
+          "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_2483"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "fmcsR",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/fmcsR.html"
@@ -102,71 +98,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/fmcsR.html"
     },
     {
-      "@id": "_:N897c34855b9d4608bf86e003c0fa07e0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1712"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Chemical structure image"
-    },
-    {
-      "@id": "_:Nd9b8477a48f1491aa0b400605057fa25",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Ne63d5c3402234987a9af656067e7b5f2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:Nd9475b6c17fc41c5a15d5067d6545e6e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2856"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Structural distance matrix"
-    },
-    {
-      "@id": "_:Nf8d88d367a5b4012947d298937168d54",
+      "@id": "_:Nca54a1c8aac646a0ba4a6c4a7fb5ee4e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -175,6 +107,74 @@
         "@id": "edam:format_2033"
       },
       "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nbf794136d77247da86c3f9a7c6ca14e9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2856"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Structural distance matrix"
+    },
+    {
+      "@id": "_:Nad7faa03fca54e539f932bfde1ecd1f4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:Nc5c6256d5b754746a4f1afc19c38c1d5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1712"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Chemical structure image"
+    },
+    {
+      "@id": "_:N61605c61713048728885e5d4e4cb0ed4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt475",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr011",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/jellyfish",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Carl Kingsford",
-        "Guillaume Marçais"
+        "Guillaume Marçais",
+        "Carl Kingsford"
       ],
       "bsc:input": {
-        "@id": "_:Nee22393b1fc147019a9ccaa04c00d880"
+        "@id": "_:N9412f22fa8c1456ea4f4ac326630865b"
       },
       "bsc:output": {
-        "@id": "_:N582aca2a5653448b9af5828cfb79222c"
+        "@id": "_:N0a73a2396f2a473fb99dcd31a30b855e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
         "pubmed:21217122",
-        "pmcid:PMC3051319",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr011"
-        }
+        },
+        "pmcid:PMC3051319"
       ],
       "sc:description": "A command-line algorithm for counting k-mers in DNA sequence.",
       "sc:featureList": {
@@ -88,7 +92,23 @@
       "sc:url": "http://www.genome.umd.edu/jellyfish.html"
     },
     {
-      "@id": "_:N582aca2a5653448b9af5828cfb79222c",
+      "@id": "_:N9412f22fa8c1456ea4f4ac326630865b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N0a73a2396f2a473fb99dcd31a30b855e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -97,26 +117,6 @@
         "@id": "edam:format_3665"
       },
       "sc:name": "Count matrix"
-    },
-    {
-      "@id": "_:Nee22393b1fc147019a9ccaa04c00d880",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr011",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

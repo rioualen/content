@@ -36,29 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/organismdbi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Biocore Data Team",
       "bsc:input": [
         {
-          "@id": "_:Na53a368cc1ca4eada96d931bbc7c79f2"
+          "@id": "_:N04da1ca19a2146f0881eaf6810b5cf85"
         },
         {
-          "@id": "_:Ndd43b93ab43b4409bf51f6787338b293"
+          "@id": "_:Nf272dc823a164bb58006f95921bbbeef"
         },
         {
-          "@id": "_:N804286c75845472c9198b4ae33c15a9e"
+          "@id": "_:N6c31167615a7496682c0de8901b81338"
         },
         {
-          "@id": "_:N03018cdb4cef40bb95d335f2da45c739"
+          "@id": "_:N72993d2004a1404988666ac90b42f9e2"
         }
       ],
       "bsc:output": {
-        "@id": "_:N768c5da6db0746eca4e65f8cc49fff5d"
+        "@id": "_:N2c3e1419645e443da799674fc8aac5c6"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -67,29 +63,29 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_3489"
         },
         {
-          "@id": "edam:topic_3489"
+          "@id": "edam:topic_3473"
         }
       ],
       "sc:citation": [
-        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pmcid:PMC4509590"
+        "pmcid:PMC4509590",
+        "pubmed:25633503"
       ],
       "sc:description": "The package enables a simple unified interface to several annotation packages each of which has its own schema by taking advantage of the fact that each of these packages implements a select methods.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3561"
+          "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_0361"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3561"
         },
         {
           "@id": "edam:operation_2421"
@@ -109,7 +105,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/OrganismDbi.html"
     },
     {
-      "@id": "_:Na53a368cc1ca4eada96d931bbc7c79f2",
+      "@id": "_:N2c3e1419645e443da799674fc8aac5c6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:N04da1ca19a2146f0881eaf6810b5cf85",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2909"
@@ -125,63 +132,56 @@
       "sc:name": "Organism name"
     },
     {
-      "@id": "_:Ndd43b93ab43b4409bf51f6787338b293",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1056"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Database name"
-    },
-    {
-      "@id": "_:N804286c75845472c9198b4ae33c15a9e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1025"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Gene identifier"
-    },
-    {
-      "@id": "_:N03018cdb4cef40bb95d335f2da45c739",
+      "@id": "_:Nf272dc823a164bb58006f95921bbbeef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0989"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Protein identifier"
     },
     {
-      "@id": "_:N768c5da6db0746eca4e65f8cc49fff5d",
+      "@id": "_:N6c31167615a7496682c0de8901b81338",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2080"
+        "@id": "edam:data_1025"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Gene identifier"
+    },
+    {
+      "@id": "_:N72993d2004a1404988666ac90b42f9e2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1056"
       },
-      "sc:name": "Database search results"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Database name"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
