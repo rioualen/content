@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btx159",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metcirc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Naake",
       "bsc:input": {
-        "@id": "_:N17496dbb1e144731aee8343e15f620fb"
+        "@id": "_:N56497e9a4f04426583c8cf85c9f4fefc"
       },
       "bsc:output": [
         {
-          "@id": "_:N6fbe1e2b75424f36bec0ef360f81a65a"
+          "@id": "_:N9fc5b356389141c8bee96a44169530e7"
         },
         {
-          "@id": "_:N7fd807222135478486930085b1f88dc8"
+          "@id": "_:N6c8927be672642afb3aa9cce908a0874"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2259"
+        },
         {
           "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_0602"
-        },
-        {
-          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
@@ -75,24 +79,24 @@
       "sc:description": "This tool comprises a workflow to interactively explore metabolomics data by creating MSP or calculating m/z values and the similarity between precursors.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3432"
-        },
-        {
-          "@id": "edam:operation_3694"
-        },
-        {
           "@id": "edam:operation_3925"
         },
         {
+          "@id": "edam:operation_3432"
+        },
+        {
           "@id": "edam:operation_3801"
+        },
+        {
+          "@id": "edam:operation_3694"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "MetCirc",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
@@ -107,29 +111,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/MetCirc.html"
     },
     {
-      "@id": "_:N6fbe1e2b75424f36bec0ef360f81a65a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2855"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Distance matrix"
-    },
-    {
-      "@id": "_:N7fd807222135478486930085b1f88dc8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N17496dbb1e144731aee8343e15f620fb",
+      "@id": "_:N56497e9a4f04426583c8cf85c9f4fefc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -145,8 +127,26 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx159",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9fc5b356389141c8bee96a44169530e7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2855"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Distance matrix"
+    },
+    {
+      "@id": "_:N6c8927be672642afb3aa9cce908a0874",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

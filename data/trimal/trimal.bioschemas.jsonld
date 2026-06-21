@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp348",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/trimal",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Salvador Capella-Gutierrez",
       "bsc:input": {
-        "@id": "_:N8c89b93b6a9b492d88c985baa7a70dfc"
+        "@id": "_:N90a62bf5a06049cb9a7680d271760474"
       },
       "bsc:output": [
         {
-          "@id": "_:N5904245487104dd49e9cd9cb1a532b0f"
+          "@id": "_:N83422d01be4d44c5b9d410b819dbb551"
         },
         {
-          "@id": "_:Nfc0867d5b9c64fb6b1b12d2f9211bfdf"
+          "@id": "_:N313dfba00b6c45b3969eb7a3af28b9ce"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
-        },
-        {
           "@id": "edam:topic_0160"
         },
         {
           "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2712344",
-        "pubmed:19505945",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp348"
-        }
+        },
+        "pubmed:19505945",
+        "pmcid:PMC2712344"
       ],
       "sc:description": "Tool for the automated removal of spurious sequences or poorly aligned regions from a multiple sequence alignment.",
       "sc:featureList": {
@@ -78,25 +82,47 @@
       "sc:name": "trimAl",
       "sc:operatingSystem": [
         "Mac",
-        "Linux",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://trimal.readthedocs.io"
+          "@id": "http://trimal.cgenomics.org/"
         },
         {
-          "@id": "http://trimal.cgenomics.org/"
+          "@id": "https://trimal.readthedocs.io"
         }
       ],
       "sc:softwareVersion": [
-        "1.5.1",
-        "2.0-RC"
+        "2.0-RC",
+        "1.5.1"
       ],
       "sc:url": "https://trimal.readthedocs.io"
     },
     {
-      "@id": "_:N5904245487104dd49e9cd9cb1a532b0f",
+      "@id": "_:N83422d01be4d44c5b9d410b819dbb551",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1997"
+        },
+        {
+          "@id": "edam:format_1998"
+        }
+      ],
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:N313dfba00b6c45b3969eb7a3af28b9ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -107,38 +133,12 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nfc0867d5b9c64fb6b1b12d2f9211bfdf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1997"
-        },
-        {
-          "@id": "edam:format_1998"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N8c89b93b6a9b492d88c985baa7a70dfc",
+      "@id": "_:N90a62bf5a06049cb9a7680d271760474",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp348",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

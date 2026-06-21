@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-3185-7456",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/gatk-lodn",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Gastone Castellani",
-        "Ítalo Faria do Valle",
         {
           "@id": "http://orcid.org/0000-0003-3185-7456"
-        }
+        },
+        "Gastone Castellani",
+        "Ítalo Faria do Valle"
       ],
       "bsc:input": {
-        "@id": "_:N11b8ba59b7994d0ca133f1a4bb3e83f9"
+        "@id": "_:N10b2512cb6cf498bb110d208348dc59e"
       },
       "bsc:output": {
-        "@id": "_:N542fbd15ea28490c9dcf682f50a0ef31"
+        "@id": "_:N122e704b5efd4d14beaf09d81811d7f6"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -61,10 +57,10 @@
         "@id": "edam:topic_2533"
       },
       "sc:citation": [
-        "pmcid:PMC5123378",
         {
           "@id": "https://doi.org/10.1186/s12859-016-1190-7"
         },
+        "pmcid:PMC5123378",
         "pubmed:28185561"
       ],
       "sc:description": "This method increases specificity and sensitivity of GATK results for mutation detection.",
@@ -75,24 +71,13 @@
       "sc:license": "Apache-1.0",
       "sc:name": "GATK-LODn",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://bitbucket.org/BBDA-UNIBO/wes-pipeline"
     },
     {
-      "@id": "_:N11b8ba59b7994d0ca133f1a4bb3e83f9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:N542fbd15ea28490c9dcf682f50a0ef31",
+      "@id": "_:N122e704b5efd4d14beaf09d81811d7f6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -103,8 +88,23 @@
       "sc:name": "Sequence variations"
     },
     {
+      "@id": "_:N10b2512cb6cf498bb110d208348dc59e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
       "@id": "https://doi.org/10.1186/s12859-016-1190-7",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-3185-7456",
+      "@type": "sc:Person"
     }
   ]
 }

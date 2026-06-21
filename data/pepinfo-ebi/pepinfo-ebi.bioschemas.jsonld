@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     },
@@ -52,10 +48,10 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N34c48a554036472c9d7a5e7c498be841"
+        "@id": "_:N703c9b986cbd425fa30b3bb8da4c2e9b"
       },
       "bsc:output": {
-        "@id": "_:N454d4f7234f2427589f68e3195fd5a26"
+        "@id": "_:N298cc0591d574f00be05be086e5bdef1"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -67,19 +63,19 @@
       },
       "sc:author": "EMBOSS",
       "sc:citation": [
-        "pubmed:35412617",
-        "pmcid:PMC9252731",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkae241"
-        },
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        },
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
+        "pubmed:35412617",
+        "pubmed:38597606",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkae241"
+        },
+        "pmcid:PMC9252731",
         "pmcid:PMC11223882",
-        "pubmed:38597606"
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        }
       ],
       "sc:description": "Plot amino acid properties of a protein sequence in parallel.",
       "sc:featureList": {
@@ -88,26 +84,34 @@
       "sc:name": "pepinfo (EBI)",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
+        {
+          "@id": "https://emboss.sourceforge.net/"
+        },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
-        },
-        {
-          "@id": "https://emboss.sourceforge.net/"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/jdispatcher/seqstats/emboss_pepinfo/"
     },
     {
-      "@id": "_:N34c48a554036472c9d7a5e7c498be841",
+      "@id": "_:N298cc0591d574f00be05be086e5bdef1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0897"
+      },
+      "sc:name": "Protein property"
+    },
+    {
+      "@id": "_:N703c9b986cbd425fa30b3bb8da4c2e9b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -115,12 +119,8 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N454d4f7234f2427589f68e3195fd5a26",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0897"
-      },
-      "sc:name": "Protein property"
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

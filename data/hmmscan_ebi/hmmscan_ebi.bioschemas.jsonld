@@ -36,72 +36,64 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkr367",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/hmmscan_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nb6787621d86e4b35900783694bebd1cd"
+        "@id": "_:N7098b22c0fcc415b9a89732b2929aac2"
       },
       "bsc:output": [
         {
-          "@id": "_:N237b622b64744f92b8b6356a0c78a00a"
+          "@id": "_:Nd3985d7dc08440a1bbeb214f97e532d4"
         },
         {
-          "@id": "_:N5d8b03c0d8814b3c8214d0daa3184484"
+          "@id": "_:N7b5eddee1706428ab75153ea0844d5bb"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_0623"
         },
         {
-          "@id": "edam:topic_0623"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:author": "Sean Eddy",
       "sc:citation": [
-        "pubmed:35412617",
         "pmcid:PMC9252731",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
         "pubmed:21593126",
         {
           "@id": "https://doi.org/10.1093/nar/gkr367"
         },
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        },
+        "pubmed:35412617",
         "pmcid:PMC3125773"
       ],
       "sc:description": "Scan a protein sequence against a database of HMM profiles (e.g. TreeFam or Pfam-A).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_0239"
         },
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_3092"
         }
       ],
       "sc:name": "hmmscan (EBI)",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:provider": [
-        "HHMI",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "HHMI"
       ],
       "sc:softwareHelp": [
         {
@@ -115,15 +107,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/pfa/hmmer_hmmscan/"
     },
     {
-      "@id": "_:N237b622b64744f92b8b6356a0c78a00a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0858"
-      },
-      "sc:name": "Sequence signature matches"
-    },
-    {
-      "@id": "_:N5d8b03c0d8814b3c8214d0daa3184484",
+      "@id": "_:Nd3985d7dc08440a1bbeb214f97e532d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -131,12 +115,28 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nb6787621d86e4b35900783694bebd1cd",
+      "@id": "_:N7b5eddee1706428ab75153ea0844d5bb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0858"
+      },
+      "sc:name": "Sequence signature matches"
+    },
+    {
+      "@id": "_:N7098b22c0fcc415b9a89732b2929aac2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkr367",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

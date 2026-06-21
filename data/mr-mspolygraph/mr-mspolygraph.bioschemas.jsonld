@@ -36,22 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/pr101130b",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr523",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mr-mspolygraph",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc01629bccda04a6b96e14079389957a4"
+          "@id": "_:Ned5ad2ab7f2a4a44954edcfefac02967"
         },
         {
-          "@id": "_:Nb11a2a81bec649d5814677371c1e6763"
+          "@id": "_:N4f33a0e2933d4a959aca478c93c9c446"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N83dab2e3446647158e7315f3b7969473"
+          "@id": "_:Ned68345518474a5abbcfe0c2ba29bb2c"
         },
         {
-          "@id": "_:N5b17bcbbfe0d435ea920a63112973551"
+          "@id": "_:Ne0e61bd4bece495fb308be3facc8194d"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,15 +73,15 @@
         }
       ],
       "sc:citation": [
-        "pubmed:21926122",
-        "pubmed:21391700",
+        {
+          "@id": "https://doi.org/10.1021/pr101130b"
+        },
         "pmcid:PMC3198583",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr523"
         },
-        {
-          "@id": "https://doi.org/10.1021/pr101130b"
-        }
+        "pubmed:21391700",
+        "pubmed:21926122"
       ],
       "sc:description": "MR-MSPOLYGRAPH is a MapReduce based implementation for parallelizing peptide identification from mass spectrometry data",
       "sc:featureList": [
@@ -81,13 +89,13 @@
           "@id": "edam:operation_3647"
         },
         {
+          "@id": "edam:operation_3801"
+        },
+        {
           "@id": "edam:operation_3646"
         },
         {
           "@id": "edam:operation_3631"
-        },
-        {
-          "@id": "edam:operation_3801"
         }
       ],
       "sc:name": "MR-MSPOLYGRAPH",
@@ -98,29 +106,7 @@
       "sc:url": "http://compbio.eecs.wsu.edu/"
     },
     {
-      "@id": "_:Nc01629bccda04a6b96e14079389957a4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3652"
-      },
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:Nb11a2a81bec649d5814677371c1e6763",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1233"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (protein)"
-    },
-    {
-      "@id": "_:N83dab2e3446647158e7315f3b7969473",
+      "@id": "_:Ned68345518474a5abbcfe0c2ba29bb2c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -131,7 +117,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N5b17bcbbfe0d435ea920a63112973551",
+      "@id": "_:Ne0e61bd4bece495fb308be3facc8194d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -142,12 +128,26 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "https://doi.org/10.1021/pr101130b",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ned5ad2ab7f2a4a44954edcfefac02967",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3652"
+      },
+      "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr523",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4f33a0e2933d4a959aca478c93c9c446",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1233"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (protein)"
     }
   ]
 }

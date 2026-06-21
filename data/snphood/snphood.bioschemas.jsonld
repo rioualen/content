@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw127",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/snphood",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Christian Arnold",
       "bsc:input": {
-        "@id": "_:N1310aa158da44062b02f47204060c2a9"
+        "@id": "_:N8dffa166c83c480a9dd6d6693eb94c8e"
       },
       "bsc:output": [
         {
-          "@id": "_:N5f7d752b8a3d404c8355819fe8b71ad4"
+          "@id": "_:N0326a842bca24f3982c26253824e90e6"
         },
         {
-          "@id": "_:N003492733aac4d0a83a2a7855fd96cc3"
+          "@id": "_:N8a47ec143d224e94b7af7b5d4f35a827"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -64,11 +68,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4965630",
+        "pubmed:27153574",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw127"
         },
-        "pubmed:27153574"
+        "pmcid:PMC4965630"
       ],
       "sc:description": "This R package investigates and visualizes the local neighborhood of a set of SNPs of interest for NGS data such as chromatin marks or TF binding sites from ChIP-Seq or RNA-Seq experiments. It comprises a set of easy-to-use functions to extract, normalize and summarize reads for a genomic region.",
       "sc:featureList": [
@@ -83,8 +87,8 @@
       "sc:name": "SNPhood",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SNPhood.html"
@@ -93,29 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SNPhood.html"
     },
     {
-      "@id": "_:N5f7d752b8a3d404c8355819fe8b71ad4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N003492733aac4d0a83a2a7855fd96cc3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N1310aa158da44062b02f47204060c2a9",
+      "@id": "_:N8dffa166c83c480a9dd6d6693eb94c8e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -131,8 +113,26 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw127",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0326a842bca24f3982c26253824e90e6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N8a47ec143d224e94b7af7b5d4f35a827",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

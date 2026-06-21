@@ -36,12 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-0610-3441",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAA553",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jprot.2017.05.022",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0610-3441",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/unipept_cli",
@@ -51,18 +55,18 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nad985889787142b79ca1cc339f1099af"
+          "@id": "_:N70a3815cedf04c1681938fdc182f2453"
         },
         {
-          "@id": "_:N9849fd08d0a24ddc83bf8b5b277e024a"
+          "@id": "_:N983a3385c21b46c1acf92f0bac4c8fdc"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbce61cc490e5423b9d7b89ee41ded0a1"
+          "@id": "_:N3357b3eedb3e49aab53ec7bbfb4a2472"
         },
         {
-          "@id": "_:N5d6bd2f1fa5e4b918f237db47619bee2"
+          "@id": "_:Ncc2fe52e08f544719687c240008bb364"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -71,10 +75,10 @@
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
-        "pubmed:28552653",
         {
           "@id": "https://doi.org/10.1016/j.jprot.2017.05.022"
         },
+        "pubmed:28552653",
         "pubmed:32492134",
         {
           "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAA553"
@@ -94,87 +98,65 @@
       "sc:name": "Unipept CLI",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://unipept.ugent.be/clidocs"
       },
       "sc:softwareVersion": [
-        "2.2.1",
-        "1.3.0"
+        "1.3.0",
+        "2.2.1"
       ],
       "sc:url": "https://unipept.ugent.be/clidocs"
     },
     {
-      "@id": "_:Nad985889787142b79ca1cc339f1099af",
+      "@id": "_:N70a3815cedf04c1681938fdc182f2453",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1179"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1964"
+        },
+        {
+          "@id": "edam:format_2200"
+        }
+      ],
+      "sc:name": "NCBI taxonomy ID"
+    },
+    {
+      "@id": "_:N983a3385c21b46c1acf92f0bac4c8fdc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1964"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1964"
         }
       ],
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:N9849fd08d0a24ddc83bf8b5b277e024a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1179"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1964"
-        },
-        {
-          "@id": "edam:format_2200"
-        }
-      ],
-      "sc:name": "NCBI taxonomy ID"
-    },
-    {
-      "@id": "_:Nbce61cc490e5423b9d7b89ee41ded0a1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1179"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2200"
-        }
-      ],
-      "sc:name": "NCBI taxonomy ID"
-    },
-    {
-      "@id": "_:N5d6bd2f1fa5e4b918f237db47619bee2",
+      "@id": "_:N3357b3eedb3e49aab53ec7bbfb4a2472",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3752"
+        },
+        {
           "@id": "edam:format_3464"
         },
         {
           "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_3752"
         },
         {
           "@id": "edam:format_2200"
@@ -183,8 +165,26 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "https://doi.org/10.1016/j.jprot.2017.05.022",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncc2fe52e08f544719687c240008bb364",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1179"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2200"
+        },
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "NCBI taxonomy ID"
     }
   ]
 }

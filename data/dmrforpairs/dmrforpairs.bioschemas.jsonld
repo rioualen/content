@@ -36,45 +36,41 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-2528-8077",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/dmrforpairs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-2528-8077"
       },
       "bsc:input": {
-        "@id": "_:Ne85e2614fe9146a190d7b466343ba961"
+        "@id": "_:Nc2c3c57ba0114505baaf6905fdb3fca4"
       },
       "bsc:output": [
         {
-          "@id": "_:Naedfcc722acd4915b69ac4725df999b4"
+          "@id": "_:N8b13066b2c864779a7424746b865b9a4"
         },
         {
-          "@id": "_:Nc0e7a2996bce444eae0e17dd6ab06b25"
+          "@id": "_:N8bc0f8cb8e6d4998b98be1ea1fe21296"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0160"
-        },
         {
           "@id": "edam:topic_3518"
         },
         {
           "@id": "edam:topic_3295"
+        },
+        {
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4046028",
         "pubmed:24884391",
+        "pmcid:PMC4046028",
         {
           "@id": "https://doi.org/10.1186/1471-2105-15-141"
         }
@@ -82,17 +78,17 @@
       "sc:description": "This tool compares n>=2 unique samples regarding their methylation profile in either single CpG locus or region based analysis, defining regions of interest as genomic ranges with sufficient probes located in close proximity to each other. Probes in one region are optionally annotated to the same functional classes and differential methylation is evaluated by comparing the methylation values within each region between individual samples.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3204"
+          "@id": "edam:operation_0256"
         },
         {
-          "@id": "edam:operation_0256"
+          "@id": "edam:operation_3204"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "DMRforPairs",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
+        "Linux",
         "Mac"
       ],
       "sc:softwareHelp": {
@@ -102,20 +98,31 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/DMRforPairs.html"
     },
     {
-      "@id": "_:Naedfcc722acd4915b69ac4725df999b4",
+      "@id": "_:Nc2c3c57ba0114505baaf6905fdb3fca4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1920"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N8b13066b2c864779a7424746b865b9a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3508"
+        },
+        {
           "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3508"
         },
         {
           "@id": "edam:format_2331"
@@ -124,7 +131,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nc0e7a2996bce444eae0e17dd6ab06b25",
+      "@id": "_:N8bc0f8cb8e6d4998b98be1ea1fe21296",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -137,24 +144,17 @@
           "@id": "edam:format_3603"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_2331"
+          "@id": "edam:format_3508"
         }
       ],
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:Ne85e2614fe9146a190d7b466343ba961",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1920"
-      },
-      "sc:name": "Nucleic acid features"
+      "@id": "http://orcid.org/0000-0002-2528-8077",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1186/1471-2105-15-141",

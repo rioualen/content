@@ -36,40 +36,44 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13244-021-01081-8",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dicomseg_converter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4752dc9d92b740f9b7b1e03ef8c3e396"
+          "@id": "_:N2b2475a7202c4c778bf6dc94c8952625"
         },
         {
-          "@id": "_:N9fd612397ef14642a5f15770dd154d35"
+          "@id": "_:Nb9aef713ad4c4d14b9760dfca181f4ea"
         },
         {
-          "@id": "_:Nbb87f62c26924378ba37bf2198e06d06"
+          "@id": "_:N8df5abe63b9049caa188c0f301bbb640"
         },
         {
-          "@id": "_:Ne497e26573274996a5f37aabe12675e1"
+          "@id": "_:Nced83baf6abd426fa4ee712a65056dd3"
         },
         {
-          "@id": "_:N2c20c31950c34d1893744112979e9445"
+          "@id": "_:N0ecf35f88b4f41a6b954f98460b631a5"
         },
         {
-          "@id": "_:N5f182b07bf17437b83027d14b70e7441"
+          "@id": "_:N7b4ce5df7631410c8ee27baeedc78a90"
         },
         {
-          "@id": "_:N60cb6f32229447d4bda13354d29dc3f6"
+          "@id": "_:Nfa07f85a06824bcd90b048a5f2046a8f"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne51afc4c4fd3471da591224d7632e816"
+          "@id": "_:Nbb74be2fa55944aea645dde540fde6fd"
         },
         {
-          "@id": "_:N403c02011c14457db7894e74fb4ae3f5"
+          "@id": "_:Nadc66f72550f441f855e10130e1eddb9"
         },
         {
-          "@id": "_:Nb7d1a04957694045aca814a5187f08db"
+          "@id": "_:N1b70b1e764ed414d8f1e4b889d6f8eb6"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -87,18 +91,18 @@
       "sc:description": "This repository provides tools for segmentation files conversion in DicomSEG, with a primary focus on: DICOM RTSTRUCT to DICOM SEG: A Python script (rtstruct/rtstruct2dcmseg.py) converts DICOM Radiotherapy Structure Set (RTSTRUCT) files, along with their referenced DICOM image series, into DICOM Segmentation (SEG) objects. It can also optionally convert the individual Regions of Interest (ROIs) defined in the RTSTRUCT into separate NIfTI (.nii.gz) files. Nifti Conversions via dcmqi and Custom Scripts: The Docker image built from this repository also includes command-line tools from dcmqi (DICOM Quantitative Imaging Toolkit) and custom Python scripts for various conversions, such as: ITK image formats (NIfTI, NRRD) to/from DICOM SEG. DICOM series to NIfTI. DICOM SEG to NIfTI (custom alternative).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0226"
+          "@id": "edam:operation_3553"
         },
         {
-          "@id": "edam:operation_3553"
+          "@id": "edam:operation_0226"
         }
       ],
       "sc:license": "Apache-2.0",
       "sc:name": "Annotation Seg Converter",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/marver17/DICOMSEG_Converter"
@@ -107,29 +111,7 @@
       "sc:url": "https://github.com/marver17/DICOMSEG_Converter"
     },
     {
-      "@id": "_:Ne51afc4c4fd3471da591224d7632e816",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N403c02011c14457db7894e74fb4ae3f5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nb7d1a04957694045aca814a5187f08db",
+      "@id": "_:Nbb74be2fa55944aea645dde540fde6fd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -140,7 +122,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N4752dc9d92b740f9b7b1e03ef8c3e396",
+      "@id": "_:Nadc66f72550f441f855e10130e1eddb9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -151,7 +133,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N9fd612397ef14642a5f15770dd154d35",
+      "@id": "_:N1b70b1e764ed414d8f1e4b889d6f8eb6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -162,7 +144,18 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nbb87f62c26924378ba37bf2198e06d06",
+      "@id": "_:N2b2475a7202c4c778bf6dc94c8952625",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3549"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nb9aef713ad4c4d14b9760dfca181f4ea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -173,7 +166,29 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Ne497e26573274996a5f37aabe12675e1",
+      "@id": "_:N8df5abe63b9049caa188c0f301bbb640",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nced83baf6abd426fa4ee712a65056dd3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N0ecf35f88b4f41a6b954f98460b631a5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -181,18 +196,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N2c20c31950c34d1893744112979e9445",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3549"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N5f182b07bf17437b83027d14b70e7441",
+      "@id": "_:N7b4ce5df7631410c8ee27baeedc78a90",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -203,7 +207,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N60cb6f32229447d4bda13354d29dc3f6",
+      "@id": "_:Nfa07f85a06824bcd90b048a5f2046a8f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -212,10 +216,6 @@
         "@id": "edam:format_3548"
       },
       "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s13244-021-01081-8",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

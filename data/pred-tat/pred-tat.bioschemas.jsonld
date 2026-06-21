@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq530",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pred-tat",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pantelis Bagos",
       "bsc:input": {
-        "@id": "_:N7b27991e64f449e99e8f5e5d57a3243f"
+        "@id": "_:Nafffdf44083442baac9f440fa04d2878"
       },
       "bsc:output": {
-        "@id": "_:N1847ceb6b139487cbfb43aeae65aa867"
+        "@id": "_:N44582dc7a41f41e28d4874555e52fc82"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -51,16 +55,13 @@
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
+        "pubmed:20847219",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btq530"
-        },
-        "pubmed:20847219"
+        }
       ],
       "sc:description": "PRED-TAT is a tool that takes a protein sequence as input and discriminating Sec from Tat signal peptides and predicting their cleavage sites.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0269"
-        },
         {
           "@id": "edam:operation_0418"
         },
@@ -68,14 +69,17 @@
           "@id": "edam:operation_0422"
         },
         {
+          "@id": "edam:operation_0269"
+        },
+        {
           "@id": "edam:operation_0270"
         }
       ],
       "sc:name": "PRED-TAT",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.compgen.org/tools/PRED-TAT"
@@ -84,18 +88,7 @@
       "sc:url": "http://www.compgen.org/tools/PRED-TAT"
     },
     {
-      "@id": "_:N1847ceb6b139487cbfb43aeae65aa867",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N7b27991e64f449e99e8f5e5d57a3243f",
+      "@id": "_:Nafffdf44083442baac9f440fa04d2878",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -106,8 +99,15 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq530",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N44582dc7a41f41e28d4874555e52fc82",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence report"
     }
   ]
 }

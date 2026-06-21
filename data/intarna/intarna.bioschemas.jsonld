@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gku359",
       "@type": "sc:CreativeWork"
     },
@@ -43,29 +47,29 @@
       "@id": "https://bio.tools/intarna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Patrick Wright",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Patrick Wright"
       ],
       "bsc:input": {
-        "@id": "_:Nca053f544fcf4af38c7f68d8393edfa6"
+        "@id": "_:N5694bf6826b6460a94d80692c1911bca"
       },
       "bsc:output": [
         {
-          "@id": "_:N105d4275ab7a44cb862726ce44b16e35"
+          "@id": "_:N264fc746e40f419fbcda87cf4f731a21"
         },
         {
-          "@id": "_:N5fa8cc6ad06648d49f2aa237d2b61e44"
+          "@id": "_:N79268b7150344b0f872508d1014b5409"
         },
         {
-          "@id": "_:N8fb54fb321064d699f9a42e0cb0fe8ed"
+          "@id": "_:N934ca6346fb34c2b91fb69e40a933c67"
         },
         {
-          "@id": "_:Ne2aaae04f4b74b66b5aec999a7ef4939"
+          "@id": "_:N90035f305a674e008a6cb00b7aa711a4"
         },
         {
-          "@id": "_:N8e090655ce5c498eb933f0b99c607380"
+          "@id": "_:Nf189d6489bdd488a9efef54a9cfb5dde"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -76,10 +80,10 @@
       "sc:author": "Patrick Wright",
       "sc:citation": [
         "pubmed:24838564",
+        "pmcid:PMC4086077",
         {
           "@id": "https://doi.org/10.1093/nar/gku359"
-        },
-        "pmcid:PMC4086077"
+        }
       ],
       "sc:description": "sRNA target prediction.",
       "sc:featureList": {
@@ -89,12 +93,12 @@
       "sc:name": "IntaRNA - RNA-RNA interaction",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
-        "rnateam",
-        "University Freiburg"
+        "University Freiburg",
+        "rnateam"
       ],
       "sc:softwareHelp": {
         "@id": "http://rna.informatik.uni-freiburg.de/Help.jsp"
@@ -103,7 +107,7 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/IntaRNA/"
     },
     {
-      "@id": "_:N105d4275ab7a44cb862726ce44b16e35",
+      "@id": "_:N264fc746e40f419fbcda87cf4f731a21",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -114,61 +118,42 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N5fa8cc6ad06648d49f2aa237d2b61e44",
+      "@id": "_:N79268b7150344b0f872508d1014b5409",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3508"
+        },
+        {
           "@id": "edam:format_3547"
         },
         {
           "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3508"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:N8fb54fb321064d699f9a42e0cb0fe8ed",
+      "@id": "_:N934ca6346fb34c2b91fb69e40a933c67",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
         {
           "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3508"
         }
       ],
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Ne2aaae04f4b74b66b5aec999a7ef4939",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3466"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N8e090655ce5c498eb933f0b99c607380",
+      "@id": "_:N90035f305a674e008a6cb00b7aa711a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -179,7 +164,26 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nca053f544fcf4af38c7f68d8393edfa6",
+      "@id": "_:Nf189d6489bdd488a9efef54a9cfb5dde",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N5694bf6826b6460a94d80692c1911bca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -188,10 +192,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -36,33 +36,41 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-014-0404-0",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/exparna-p",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
+        "Christina Otto",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        },
-        "Christina Otto"
+        }
       ],
       "bsc:input": {
-        "@id": "_:Nafd1ec6ad6464fff9789ed4f8ee85ee8"
+        "@id": "_:N9dbff893edf54373bdb277fe64ecc65a"
       },
       "bsc:output": [
         {
-          "@id": "_:N5f9859f0d4434896813886bba56bf19c"
+          "@id": "_:Na5be6ad314354db4b0b61001a817a9fe"
         },
         {
-          "@id": "_:N10548f44f8894113a3c08b28df2c4c27"
+          "@id": "_:N123e78b704bc4e1d9511d8bf54a2bac6"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0097"
         },
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": [
@@ -70,11 +78,11 @@
         "Rolf Backofen"
       ],
       "sc:citation": [
-        "pubmed:25551362",
         "pmcid:PMC4302096",
         {
           "@id": "https://doi.org/10.1186/s12859-014-0404-0"
-        }
+        },
+        "pubmed:25551362"
       ],
       "sc:description": "Simultaneous exact pattern matching and folding of RNAs.",
       "sc:featureList": {
@@ -84,12 +92,12 @@
       "sc:license": "GPL-3.0",
       "sc:name": "ExpaRNA-P",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": [
-        "rnateam",
-        "University Freiburg"
+        "University Freiburg",
+        "rnateam"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.bioinf.uni-freiburg.de/Software/ExpaRNA-P/"
@@ -98,34 +106,7 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/ExpaRNA-P/"
     },
     {
-      "@id": "_:Nafd1ec6ad6464fff9789ed4f8ee85ee8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2200"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N5f9859f0d4434896813886bba56bf19c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3466"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N10548f44f8894113a3c08b28df2c4c27",
+      "@id": "_:Na5be6ad314354db4b0b61001a817a9fe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -136,12 +117,31 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
+      "@id": "_:N123e78b704bc4e1d9511d8bf54a2bac6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3466"
+      },
+      "sc:name": "Image"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-014-0404-0",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9dbff893edf54373bdb277fe64ecc65a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2200"
+        }
+      ],
+      "sc:name": "RNA sequence"
     }
   ]
 }

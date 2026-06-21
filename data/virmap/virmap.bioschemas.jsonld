@@ -36,17 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41467-018-05658-8",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/virmap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N303e05cffe80442c9b087abdfc319052"
+        "@id": "_:N2ff21e697f304abebc4a0acb95e51bdb"
       },
       "bsc:output": {
-        "@id": "_:N46e9e9afb0944f9e98513f645175589f"
+        "@id": "_:N274457925bad4178b7f56be13dab5440"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -59,22 +55,22 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC6086868",
         {
           "@id": "https://doi.org/10.1038/s41467-018-05658-8"
         },
-        "pubmed:30097567"
+        "pubmed:30097567",
+        "pmcid:PMC6086868"
       ],
       "sc:description": "VirMAP a tool that merge nucleotide and protein information to taxonomically classify viral reconstructions independent of genome coverage or read overlap",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_0232"
         },
         {
           "@id": "edam:operation_3460"
         },
         {
-          "@id": "edam:operation_0232"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -88,7 +84,15 @@
       "sc:url": "https://github.com/cmmr/VirMAP"
     },
     {
-      "@id": "_:N303e05cffe80442c9b087abdfc319052",
+      "@id": "_:N274457925bad4178b7f56be13dab5440",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N2ff21e697f304abebc4a0acb95e51bdb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -96,12 +100,8 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:N46e9e9afb0944f9e98513f645175589f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:name": "Taxonomy"
+      "@id": "https://doi.org/10.1038/s41467-018-05658-8",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

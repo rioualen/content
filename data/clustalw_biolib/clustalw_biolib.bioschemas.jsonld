@@ -43,17 +43,17 @@
       "@id": "https://bio.tools/clustalw_biolib",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N2cf426ddf7bb4a35919ed8e01eb0c3e9"
+        "@id": "_:Na98f7681e7a74f8bb32c364bba79eab9"
       },
       "bsc:output": {
-        "@id": "_:N19a39995319048b6a8d04b8490774117"
+        "@id": "_:Na99548084bbc468f8fd19cc9c61fccba"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
+        "Command-line tool",
         "Bioinformatics portal",
-        "Web API",
-        "Command-line tool"
+        "Web API"
       ],
       "sc:applicationSubCategory": [
         {
@@ -64,10 +64,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:17846036",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btm404"
-        },
-        "pubmed:17846036"
+        }
       ],
       "sc:description": "ClustalW is a general purpose multiple sequence alignment program for DNA or proteins",
       "sc:featureList": {
@@ -78,8 +78,8 @@
       "sc:name": "ClustalW (BioLib)",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.clustal.org/clustal2/"
@@ -88,7 +88,29 @@
       "sc:url": "https://biolib.com/bio-utils/clustalw/"
     },
     {
-      "@id": "_:N2cf426ddf7bb4a35919ed8e01eb0c3e9",
+      "@id": "_:Na99548084bbc468f8fd19cc9c61fccba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1997"
+        },
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1949"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Na98f7681e7a74f8bb32c364bba79eab9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -97,28 +119,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N19a39995319048b6a8d04b8490774117",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1949"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1997"
-        }
-      ],
-      "sc:name": "Sequence alignment"
     }
   ]
 }

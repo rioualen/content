@@ -36,59 +36,55 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13059-015-0783-1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gesper",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Fabian Schmich",
       "bsc:input": {
-        "@id": "_:Nedc89296c92e4fb396e13f7b22b203cf"
+        "@id": "_:N7215178c07394695b798419c26e08ef6"
       },
       "bsc:output": [
         {
-          "@id": "_:N67d6ca1cb9044b21bfb8119e18961135"
+          "@id": "_:N5b93b75cfff04c5f9640fd6fd0c1b891"
         },
         {
-          "@id": "_:N5f05b9957f5c45f6ac4d261df0159bdd"
+          "@id": "_:Nfa645f252f4f4efda7b61558ff86fdbb"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3523"
+          "@id": "edam:topic_2269"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3523"
         }
       ],
       "sc:citation": [
         "pubmed:26445817",
-        "pmcid:PMC4597449",
         {
           "@id": "https://doi.org/10.1186/s13059-015-0783-1"
-        }
+        },
+        "pmcid:PMC4597449"
       ],
       "sc:description": "Estimates gene-specific phenotypes from off-target confounded RNAi screens. The phenotype of each siRNA is modeled based on on-targeted and off-targeted genes, using a regularized linear regression model.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2423"
+          "@id": "edam:operation_3659"
         },
         {
-          "@id": "edam:operation_3659"
+          "@id": "edam:operation_2423"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "gespeR",
       "sc:operatingSystem": [
-        "Linux",
+        "Mac",
         "Windows",
-        "Mac"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/gespeR.html"
@@ -97,23 +93,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gespeR.html"
     },
     {
-      "@id": "_:N67d6ca1cb9044b21bfb8119e18961135",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N5f05b9957f5c45f6ac4d261df0159bdd",
+      "@id": "_:N5b93b75cfff04c5f9640fd6fd0c1b891",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -129,7 +109,23 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:Nedc89296c92e4fb396e13f7b22b203cf",
+      "@id": "_:Nfa645f252f4f4efda7b61558ff86fdbb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N7215178c07394695b798419c26e08ef6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -138,6 +134,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13059-015-0783-1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

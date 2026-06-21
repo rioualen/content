@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/variantfiltering",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Robert Castelo",
       "bsc:input": [
         {
-          "@id": "_:N010a53eb9bb54746abab76905ecf9075"
+          "@id": "_:N44ba43c11b8d4461afc29cdc6334d25d"
         },
         {
-          "@id": "_:N11131f8e718d45f2bba81cb9c9f44688"
+          "@id": "_:N782c7703126e41ce8a1a96524ec3a530"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2885"
       },
       "sc:citation": [
-        "pmcid:PMC4509590",
-        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        }
+        },
+        "pmcid:PMC4509590",
+        "pubmed:25633503"
       ],
       "sc:description": "Filter genetic variants using different criteria such as inheritance model, amino acid change consequence, minor allele frequencies across human populations, splice site strength, conservation, etc.",
       "sc:featureList": [
@@ -68,21 +72,21 @@
           "@id": "edam:operation_3661"
         },
         {
-          "@id": "edam:operation_3225"
-        },
-        {
           "@id": "edam:operation_3208"
         },
         {
           "@id": "edam:operation_3202"
+        },
+        {
+          "@id": "edam:operation_3225"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "VariantFiltering",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/VariantFiltering.html"
@@ -91,18 +95,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/VariantFiltering.html"
     },
     {
-      "@id": "_:N010a53eb9bb54746abab76905ecf9075",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N11131f8e718d45f2bba81cb9c9f44688",
+      "@id": "_:N44ba43c11b8d4461afc29cdc6334d25d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -113,8 +106,15 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N782c7703126e41ce8a1a96524ec3a530",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
     }
   ]
 }

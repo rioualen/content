@@ -43,14 +43,20 @@
       "@id": "https://bio.tools/deepallodriver",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7fbe95bd88194c23a147028d68d76943"
+        "@id": "_:N10079a22cdee4a2c99cc8c7962fb394b"
       },
       "bsc:output": {
-        "@id": "_:N7bcef07db252436d9df089cf1e63e60e"
+        "@id": "_:N6526517e39ad46fc8a5e32a9b677681c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0199"
+        },
+        {
+          "@id": "edam:topic_3676"
+        },
         {
           "@id": "edam:topic_2640"
         },
@@ -58,29 +64,23 @@
           "@id": "edam:topic_0749"
         },
         {
-          "@id": "edam:topic_3676"
-        },
-        {
           "@id": "edam:topic_3336"
-        },
-        {
-          "@id": "edam:topic_0199"
         }
       ],
       "sc:citation": [
-        "pubmed:37078611",
         "pmcid:PMC10320081",
         {
           "@id": "https://doi.org/10.1093/nar/gkad295"
-        }
+        },
+        "pubmed:37078611"
       ],
       "sc:description": "Deep learning-based strategy to predict cancer driver mutations.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3227"
+          "@id": "edam:operation_4009"
         },
         {
-          "@id": "edam:operation_4009"
+          "@id": "edam:operation_3227"
         },
         {
           "@id": "edam:operation_0331"
@@ -89,14 +89,22 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "DeepAlloDriver",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://mdl.shsmu.edu.cn/DeepAlloDriver"
     },
     {
-      "@id": "_:N7fbe95bd88194c23a147028d68d76943",
+      "@id": "_:N6526517e39ad46fc8a5e32a9b677681c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N10079a22cdee4a2c99cc8c7962fb394b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -105,14 +113,6 @@
         "@id": "edam:format_3008"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N7bcef07db252436d9df089cf1e63e60e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:name": "Score"
     }
   ]
 }

@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btn021",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowviz",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mike Jiang",
       "bsc:input": {
-        "@id": "_:N95d2e86b04894848b2471a8ae7dc37dc"
+        "@id": "_:Ne72233ff726d41e3b7e5813496ce7ece"
       },
       "bsc:output": {
-        "@id": "_:Nd234b45642fd44b4974cb26093123a00"
+        "@id": "_:Nc444fda30ba144119eff8f8f1ffa7429"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -59,11 +63,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2768483",
-        "pubmed:18245128",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btn021"
-        }
+        },
+        "pubmed:18245128",
+        "pmcid:PMC2768483"
       ],
       "sc:description": "Provides visualization tools for flow cytometry data.",
       "sc:featureList": {
@@ -72,9 +76,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "flowViz",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/flowViz.html"
@@ -83,18 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowViz.html"
     },
     {
-      "@id": "_:Nd234b45642fd44b4974cb26093123a00",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N95d2e86b04894848b2471a8ae7dc37dc",
+      "@id": "_:Ne72233ff726d41e3b7e5813496ce7ece",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -105,8 +98,15 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btn021",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc444fda30ba144119eff8f8f1ffa7429",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

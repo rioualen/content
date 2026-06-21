@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2164-13-s7-s6",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/snptree",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0bb5e7c77a024631b871c5c17b993136"
+        "@id": "_:N44ec930e614149ceb89220be90b0931a"
       },
       "bsc:output": {
-        "@id": "_:N6111f7a9a64e48878df277d6741d1646"
+        "@id": "_:N79ea045b9b764af9b9dfa166cc63ac55"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -55,11 +59,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3521233",
-        "pubmed:23281601",
         {
           "@id": "https://doi.org/10.1186/1471-2164-13-s7-s6"
-        }
+        },
+        "pubmed:23281601",
+        "pmcid:PMC3521233"
       ],
       "sc:description": "SNPs phylogenetic tree from assembled genomes or sets of reads.",
       "sc:featureList": {
@@ -69,9 +73,9 @@
       "sc:license": "Other",
       "sc:name": "snpTree",
       "sc:operatingSystem": [
-        "Linux",
+        "Mac",
         "Windows",
-        "Mac"
+        "Linux"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -81,7 +85,23 @@
       "sc:url": "http://cge.cbs.dtu.dk/services/snpTree/"
     },
     {
-      "@id": "_:N6111f7a9a64e48878df277d6741d1646",
+      "@id": "_:N44ec930e614149ceb89220be90b0931a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2546"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N79ea045b9b764af9b9dfa166cc63ac55",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -90,26 +110,6 @@
         "@id": "edam:format_2006"
       },
       "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N0bb5e7c77a024631b871c5c17b993136",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_2546"
-        }
-      ],
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2164-13-s7-s6",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

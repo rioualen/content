@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gky328",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/unres",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -48,14 +44,14 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N96fc70d232234de798276703aebb9795"
+          "@id": "_:N1edff07880c44fbc8f6f9503d7d3d752"
         },
         {
-          "@id": "_:Nfe306d89fdab49559fad20b21b892429"
+          "@id": "_:N6fd92c7d4c1046a981c9fd13e34a2498"
         }
       ],
       "bsc:output": {
-        "@id": "_:N696769e833d540f7ac822b912a1726db"
+        "@id": "_:N4a5beb7bb40c4aeaad3594cacc9d59c5"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -64,26 +60,26 @@
           "@id": "edam:topic_0736"
         },
         {
-          "@id": "edam:topic_0593"
+          "@id": "edam:topic_0176"
         },
         {
-          "@id": "edam:topic_0176"
+          "@id": "edam:topic_0593"
         }
       ],
       "sc:citation": [
         "pmcid:PMC6031057",
+        "pubmed:29718313",
         {
           "@id": "https://doi.org/10.1093/nar/gky328"
-        },
-        "pubmed:29718313"
+        }
       ],
       "sc:description": "A server implementation of the UNRES package for coarse-grained simulations of protein structures with the physics-based UNRES model. It can be used in simulations, including those aimed at protein-structure prediction, without ancillary information from structural databases; however, the implementation includes the possibility of using restraints. Local energy minimization, canonical molecular dynamics simulations, replica exchange and multiplexed replica exchange molecular dynamics simulations can be run",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2476"
+          "@id": "edam:operation_0476"
         },
         {
-          "@id": "edam:operation_0476"
+          "@id": "edam:operation_2476"
         }
       ],
       "sc:name": "UNRES server",
@@ -93,15 +89,18 @@
       "sc:url": "http://unres-server.chem.ug.edu.pl/"
     },
     {
-      "@id": "_:N696769e833d540f7ac822b912a1726db",
+      "@id": "_:N1edff07880c44fbc8f6f9503d7d3d752",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1537"
+        "@id": "edam:data_1127"
       },
-      "sc:name": "Protein structure report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N96fc70d232234de798276703aebb9795",
+      "@id": "_:N6fd92c7d4c1046a981c9fd13e34a2498",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -112,15 +111,16 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nfe306d89fdab49559fad20b21b892429",
+      "@id": "_:N4a5beb7bb40c4aeaad3594cacc9d59c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1127"
+        "@id": "edam:data_1537"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "PDB ID"
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gky328",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
