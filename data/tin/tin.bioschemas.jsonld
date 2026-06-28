@@ -36,38 +36,42 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.4137/cin.s31363",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/tin",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Bjarne Johannessen",
       "bsc:input": {
-        "@id": "_:Nf9c4adf70fc248b99048f8359d5d57a4"
+        "@id": "_:N3f6664fb0022426ebd8cb2cd8843d826"
       },
       "bsc:output": [
         {
-          "@id": "_:N9ab7cad5abb946eaa2f334a45776687a"
+          "@id": "_:Na5eba883eb0348fda656d596910a94cb"
         },
         {
-          "@id": "_:N966a71d70a24404bbe57d8645db5d9af"
+          "@id": "_:N982276ad12e04313bb7ab9420af2984c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": [
+        "pubmed:26448683",
         {
           "@id": "https://doi.org/10.4137/cin.s31363"
         },
-        "pubmed:26448683",
         "pmcid:PMC4578549"
       ],
       "sc:description": "This package implements a set of tools for transcriptome instability analysis based on exon expression profiles. Deviating exon usage is studied in the context of splicing factors to analyse to what degree transcriptome instability is correlated to splicing factor expression. In the transcriptome instability correlation analysis, the data is compared to both random permutations of alternative splicing scores and expression of random gene sets.",
@@ -77,9 +81,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "TIN",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/TIN.html"
@@ -88,29 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/TIN.html"
     },
     {
-      "@id": "_:Nf9c4adf70fc248b99048f8359d5d57a4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1638"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N9ab7cad5abb946eaa2f334a45776687a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N966a71d70a24404bbe57d8645db5d9af",
+      "@id": "_:Na5eba883eb0348fda656d596910a94cb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -121,8 +103,26 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.4137/cin.s31363",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N982276ad12e04313bb7ab9420af2984c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N3f6664fb0022426ebd8cb2cd8843d826",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1638"
+      },
+      "sc:name": "Gene expression data"
     }
   ]
 }

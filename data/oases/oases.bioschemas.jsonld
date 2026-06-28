@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/oases",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -48,21 +44,21 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nc20c41fa0958487aa7be8b6a2a90c8b5"
+          "@id": "_:N423d0c6845e2415dbf6ac26850f459e0"
         },
         {
-          "@id": "_:Nbbb8712d810f429da2dfed281343b3e5"
+          "@id": "_:N7c4d36a6aca44d45896173ff3c8aef6e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4c0945723a6f4de899da3d1742c56708"
+          "@id": "_:Na40aed71436b478bb7e609f908f1680a"
         },
         {
-          "@id": "_:N3bd63d9d5cd64300af99c3700658521e"
+          "@id": "_:N1ddbea68ac55413b8d5d89dbf9e026a4"
         },
         {
-          "@id": "_:Nbce0432ba75c432da4211e5bf92167b8"
+          "@id": "_:N513ad8406d3a4738b03208f51f353c2c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -72,29 +68,29 @@
           "@id": "edam:topic_0196"
         },
         {
-          "@id": "edam:topic_3170"
-        },
-        {
           "@id": "edam:topic_3673"
         },
         {
           "@id": "edam:topic_3308"
+        },
+        {
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
-        "pubmed:22368243",
-        "pmcid:PMC3324515",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts094"
-        }
+        },
+        "pubmed:22368243",
+        "pmcid:PMC3324515"
       ],
       "sc:description": "De novo transcriptome assembler designed to produce transcripts from short read sequencing technologies. It uploads a preliminary assembly produced by Velvet, and clusters the contigs into small groups, called loci. It then exploits the paired-end read and long read information, when available, to construct transcript isoforms.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3258"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3258"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -110,7 +106,15 @@
       "sc:url": "https://github.com/dzerbino/oases"
     },
     {
-      "@id": "_:N4c0945723a6f4de899da3d1742c56708",
+      "@id": "_:Na40aed71436b478bb7e609f908f1680a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N1ddbea68ac55413b8d5d89dbf9e026a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -118,15 +122,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N3bd63d9d5cd64300af99c3700658521e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:Nbce0432ba75c432da4211e5bf92167b8",
+      "@id": "_:N513ad8406d3a4738b03208f51f353c2c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3181"
@@ -134,7 +130,7 @@
       "sc:name": "Sequence assembly report"
     },
     {
-      "@id": "_:Nc20c41fa0958487aa7be8b6a2a90c8b5",
+      "@id": "_:N423d0c6845e2415dbf6ac26850f459e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -142,12 +138,16 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:Nbbb8712d810f429da2dfed281343b3e5",
+      "@id": "_:N7c4d36a6aca44d45896173ff3c8aef6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
       },
       "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,56 +36,60 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1002566",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/panr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Xin Wang",
       "bsc:input": [
         {
-          "@id": "_:Nfa6f0e92b2ab4f7888d6fc6d7839e809"
+          "@id": "_:Nce70469b526740bd96b3ce0f94bbfaa1"
         },
         {
-          "@id": "_:N3ae30b8b5b4b44c7b3de25c3a879b059"
+          "@id": "_:N7a7b57933cd54e14bc9c41de972235ae"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N11b35b24caa04fc588824f2ed8f453c6"
+          "@id": "_:Nd7021767ecf04468b9d24e3f896354f2"
         },
         {
-          "@id": "_:N0c22ec5d705c466d81addcfee1582bf6"
+          "@id": "_:N5d8abc96c70c4aae9f3f1d258d675f5e"
         },
         {
-          "@id": "_:N8d09f00fb4534188bb8c7c8d42d5acaa"
+          "@id": "_:N1abe50990d014c1eab4fc9f5515b30a8"
         },
         {
-          "@id": "_:N34e862431b4f41ce8cc998886993b669"
+          "@id": "_:Nf9e246292c9c481b84a61f1c0f12857b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2229"
-        },
-        {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_3523"
         },
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_3523"
+          "@id": "edam:topic_2259"
+        },
+        {
+          "@id": "edam:topic_2229"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3386165",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1002566"
         },
-        "pubmed:22761558"
+        "pubmed:22761558",
+        "pmcid:PMC3386165"
       ],
       "sc:description": "This package provides S4 classes and methods for inferring functional gene networks with edges encoding posterior beliefs of gene association types and nodes encoding perturbation effects.",
       "sc:featureList": [
@@ -99,9 +103,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "PANR",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/PANR.html"
@@ -110,26 +114,45 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/PANR.html"
     },
     {
-      "@id": "_:N11b35b24caa04fc588824f2ed8f453c6",
+      "@id": "_:Nd7021767ecf04468b9d24e3f896354f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
-        },
-        {
           "@id": "edam:format_2013"
         },
         {
           "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N0c22ec5d705c466d81addcfee1582bf6",
+      "@id": "_:N5d8abc96c70c4aae9f3f1d258d675f5e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:N1abe50990d014c1eab4fc9f5515b30a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -148,56 +171,26 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N8d09f00fb4534188bb8c7c8d42d5acaa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:N34e862431b4f41ce8cc998886993b669",
+      "@id": "_:Nf9e246292c9c481b84a61f1c0f12857b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2013"
+        },
+        {
           "@id": "edam:format_3033"
         },
         {
           "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2013"
         }
       ],
       "sc:name": "Score"
     },
     {
-      "@id": "_:Nfa6f0e92b2ab4f7888d6fc6d7839e809",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Experimental measurement"
-    },
-    {
-      "@id": "_:N3ae30b8b5b4b44c7b3de25c3a879b059",
+      "@id": "_:Nce70469b526740bd96b3ce0f94bbfaa1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3111"
@@ -208,8 +201,15 @@
       "sc:name": "Processed microarray data"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1002566",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7a7b57933cd54e14bc9c41de972235ae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Experimental measurement"
     }
   ]
 }

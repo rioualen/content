@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
@@ -44,38 +48,38 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nf03a8e5ff2374250997d38548053f4e4"
+        "@id": "_:N398a50061a7549309c514819dc3283e6"
       },
       "bsc:output": {
-        "@id": "_:Ne032d1a4ae2d4ecca35edcd45dc008b3"
+        "@id": "_:Nd91af6443a9545749d0de31603649edb"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Web service",
         "Web API",
-        "Web application",
-        "Web service"
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "EMBOSS",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        },
+        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        "pubmed:35412617",
-        "pmcid:PMC9252731"
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
+        "pubmed:35412617"
       ],
       "sc:description": "Six frame nucleotide sequence translation, with ORF finding. The tool reads a DNA sequence and outputs the three forward and (optionally) three reverse translations in a visual manner.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0436"
+          "@id": "edam:operation_0371"
         },
         {
-          "@id": "edam:operation_0371"
+          "@id": "edam:operation_0436"
         }
       ],
       "sc:name": "sixpack (EBI)",
@@ -87,28 +91,20 @@
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
-        },
-        {
           "@id": "https://emboss.sourceforge.net/"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+        },
+        {
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/st/emboss_sixpack"
     },
     {
-      "@id": "_:Nf03a8e5ff2374250997d38548053f4e4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:Ne032d1a4ae2d4ecca35edcd45dc008b3",
+      "@id": "_:Nd91af6443a9545749d0de31603649edb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -116,8 +112,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N398a50061a7549309c514819dc3283e6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:name": "Nucleic acid sequence"
     }
   ]
 }

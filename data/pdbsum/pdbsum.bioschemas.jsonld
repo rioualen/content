@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-5528-0087",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkt940",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pdbsum",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-5528-0087"
       },
       "bsc:input": {
-        "@id": "_:N0864965e65304e83bd4edbce69d6faf5"
+        "@id": "_:N70bac7dfe3634d3b9776246118c8eec9"
       },
       "bsc:output": {
-        "@id": "_:N377056db41ee4acd95fb819a68f4e9e5"
+        "@id": "_:N86b97b9a5b5949f8bb486236b4d5887b"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
@@ -53,11 +61,11 @@
         "@id": "edam:topic_2814"
       },
       "sc:citation": [
+        "pubmed:24153109",
         {
           "@id": "https://doi.org/10.1093/nar/gkt940"
         },
-        "pmcid:PMC3965036",
-        "pubmed:24153109"
+        "pmcid:PMC3965036"
       ],
       "sc:description": "At-a-glance overview of every macromolecular structure deposited in the Protein Data Bank (PDB), giving schematic diagrams of the molecules in each structure and of the interactions between them.",
       "sc:featureList": {
@@ -65,9 +73,9 @@
       },
       "sc:name": "PDBsum overview of macromolecular structures",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/pdbsum/GetPage.pl?pdbcode=n/a&template=doc_about.html"
@@ -75,7 +83,15 @@
       "sc:url": "https://www.ebi.ac.uk/pdbsum/"
     },
     {
-      "@id": "_:N377056db41ee4acd95fb819a68f4e9e5",
+      "@id": "_:N70bac7dfe3634d3b9776246118c8eec9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1127"
+      },
+      "sc:name": "PDB ID"
+    },
+    {
+      "@id": "_:N86b97b9a5b5949f8bb486236b4d5887b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2085"
@@ -84,22 +100,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Structure report"
-    },
-    {
-      "@id": "_:N0864965e65304e83bd4edbce69d6faf5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1127"
-      },
-      "sc:name": "PDB ID"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-5528-0087",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt940",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

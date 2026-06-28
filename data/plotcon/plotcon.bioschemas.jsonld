@@ -36,8 +36,99 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
+      "@id": "https://bio.tools/plotcon",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:N2aaad91a05b34c76a24b8bfec0cf0c25"
+        },
+        {
+          "@id": "_:N05133beb2313474687915b4930af1839"
+        }
+      ],
+      "bsc:output": {
+        "@id": "_:Ne89dee1e5994434db7ee802bdf4c7f4f"
+      },
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_0097"
+      },
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
+        {
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
+        },
+        {
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
+        }
+      ],
+      "sc:contributor": [
+        "UK MRC",
+        "UK BBSRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
+      ],
+      "sc:description": "Plot conservation of a sequence alignment.",
+      "sc:featureList": {
+        "@id": "edam:operation_0448"
+      },
+      "sc:funder": [
+        "UK BBSRC",
+        "Wellcome Trust",
+        "UK MRC"
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "GPL-3.0",
+      "sc:name": "plotcon",
+      "sc:operatingSystem": [
+        "Windows",
+        "Linux",
+        "Mac"
+      ],
+      "sc:provider": [
+        "EMBOSS",
+        "EMBL-EBI"
+      ],
+      "sc:softwareHelp": [
+        {
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/plotcon.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+        }
+      ],
+      "sc:softwareVersion": "r6",
+      "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/plotcon.html"
+    },
+    {
+      "@id": "_:N2aaad91a05b34c76a24b8bfec0cf0c25",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0874"
+      },
+      "sc:name": "Comparison matrix"
+    },
+    {
+      "@id": "_:N05133beb2313474687915b4930af1839",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Ne89dee1e5994434db7ee802bdf4c7f4f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2161"
+      },
+      "sc:name": "Sequence similarity plot"
     },
     {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
@@ -48,99 +139,8 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://bio.tools/plotcon",
-      "@type": "sc:SoftwareApplication",
-      "bsc:input": [
-        {
-          "@id": "_:N0065a9131a094c26a99f95eea116285c"
-        },
-        {
-          "@id": "_:Nab4cf39e9d2349d18f99150cd2635346"
-        }
-      ],
-      "bsc:output": {
-        "@id": "_:Nde6b7f5901a045fa851e65fa5481fc46"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Command-line tool",
-      "sc:applicationSubCategory": {
-        "@id": "edam:topic_0097"
-      },
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
-        },
-        {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
-        },
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        }
-      ],
-      "sc:contributor": [
-        "EMBOSS Contributors",
-        "UK MRC",
-        "UK BBSRC",
-        "Wellcome Trust"
-      ],
-      "sc:description": "Plot conservation of a sequence alignment.",
-      "sc:featureList": {
-        "@id": "edam:operation_0448"
-      },
-      "sc:funder": [
-        "Wellcome Trust",
-        "UK MRC",
-        "UK BBSRC"
-      ],
-      "sc:isAccessibleForFree": true,
-      "sc:license": "GPL-3.0",
-      "sc:name": "plotcon",
-      "sc:operatingSystem": [
-        "Linux",
-        "Mac",
-        "Windows"
-      ],
-      "sc:provider": [
-        "EMBOSS",
-        "EMBL-EBI"
-      ],
-      "sc:softwareHelp": [
-        {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/plotcon.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
-        }
-      ],
-      "sc:softwareVersion": "r6",
-      "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/plotcon.html"
-    },
-    {
-      "@id": "_:Nde6b7f5901a045fa851e65fa5481fc46",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2161"
-      },
-      "sc:name": "Sequence similarity plot"
-    },
-    {
-      "@id": "_:N0065a9131a094c26a99f95eea116285c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0874"
-      },
-      "sc:name": "Comparison matrix"
-    },
-    {
-      "@id": "_:Nab4cf39e9d2349d18f99150cd2635346",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

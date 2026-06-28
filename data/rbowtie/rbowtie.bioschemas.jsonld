@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rbowtie",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Michael Stadler",
       "bsc:input": {
-        "@id": "_:Ncc0443402f264b8cb240a95d6e31c03e"
+        "@id": "_:Ne5768f88def64dc39121b55f0fc14521"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne3ba528ea2e44deeb4cc6d5ed8744eb1"
+          "@id": "_:N27fc0f98d139477a92ff1538bcee697b"
         },
         {
-          "@id": "_:N39edbc2a157240e38fbeeab406d09d38"
+          "@id": "_:N6b94172dfbae49a6910aa30c0f8e4df7"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -64,11 +68,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4509590",
-        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        }
+        },
+        "pubmed:25633503",
+        "pmcid:PMC4509590"
       ],
       "sc:description": "This package provides an R wrapper around the popular bowtie short read aligner and around SpliceMap, a de novo splice junction discovery and alignment tool. The package is used by the QuasR bioconductor package. We recommend to use QuasR instead of using this package directly.",
       "sc:featureList": [
@@ -82,9 +86,9 @@
       "sc:license": "Artistic-1.0",
       "sc:name": "Rbowtie",
       "sc:operatingSystem": [
+        "Mac",
         "Windows",
-        "Linux",
-        "Mac"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/Rbowtie.html"
@@ -93,18 +97,26 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Rbowtie.html"
     },
     {
-      "@id": "_:Ne3ba528ea2e44deeb4cc6d5ed8744eb1",
+      "@id": "_:Ne5768f88def64dc39121b55f0fc14521",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1957"
+        },
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N39edbc2a157240e38fbeeab406d09d38",
+      "@id": "_:N27fc0f98d139477a92ff1538bcee697b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
@@ -115,27 +127,15 @@
       "sc:name": "Sequence alignment report"
     },
     {
-      "@id": "_:Ncc0443402f264b8cb240a95d6e31c03e",
+      "@id": "_:N6b94172dfbae49a6910aa30c0f8e4df7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1957"
-        },
-        {
-          "@id": "edam:format_1930"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
       "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

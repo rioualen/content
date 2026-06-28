@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/methtargetedngs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Muhammad Ahmer Jamil",
       "bsc:input": {
-        "@id": "_:N20b2ff345aa844c2a2f3bb7819028df3"
+        "@id": "_:N0fbf191ec29948a4acf44ec06b1e8066"
       },
       "bsc:output": {
-        "@id": "_:N988acee06cf94c9fa3633d2d9b7b86a0"
+        "@id": "_:N5d405e18cb2b4c3e997e5e75c207eca3"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -63,11 +59,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pmcid:PMC4509590",
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "Perform step by step methylation analysis of Next Generation Sequencing data.",
       "sc:featureList": {
@@ -77,8 +73,8 @@
       "sc:name": "MethTargetedNGS",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/MethTargetedNGS.html"
@@ -87,7 +83,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/MethTargetedNGS.html"
     },
     {
-      "@id": "_:N988acee06cf94c9fa3633d2d9b7b86a0",
+      "@id": "_:N0fbf191ec29948a4acf44ec06b1e8066",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1921"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N5d405e18cb2b4c3e997e5e75c207eca3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -98,15 +105,8 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N20b2ff345aa844c2a2f3bb7819028df3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1921"
-      },
-      "sc:name": "Sequence alignment"
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

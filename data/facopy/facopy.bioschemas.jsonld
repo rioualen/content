@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-13-192",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/facopy",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "David Mosen-Ansorena",
       "bsc:input": [
         {
-          "@id": "_:N449817da418848ae833d828b5d8fc328"
+          "@id": "_:N5a9b4da65e964f938b20690d5216d824"
         },
         {
-          "@id": "_:Nc856fee4f38247e4b136d9996e938139"
+          "@id": "_:N35e8d9ec18b7474190cdb795485b46f4"
         },
         {
-          "@id": "_:N780bf97954c64475a52df26d53a86176"
+          "@id": "_:N4d7bc60bfe4d49bb8b8c7748b91f5c37"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0095a9e2c4314dc6abb7d949810c585b"
+          "@id": "_:N204513df0a084ae893e537e10202063b"
         },
         {
-          "@id": "_:Nb18ca183d3404e2783cfe903d47cb8ac"
+          "@id": "_:N6ea39ed2374446dda5eb9b4d155e9c5e"
         },
         {
-          "@id": "_:N240519f5c90f463db9f42bf49a57e801"
+          "@id": "_:N521cb77d3f4d4da88e67b4272accc39b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -68,21 +72,21 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3298"
-        },
-        {
           "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_0199"
+        },
+        {
+          "@id": "edam:topic_3298"
         }
       ],
       "sc:citation": [
         {
           "@id": "https://doi.org/10.1186/1471-2105-13-192"
         },
-        "pmcid:PMC3472297",
-        "pubmed:22870940"
+        "pubmed:22870940",
+        "pmcid:PMC3472297"
       ],
       "sc:description": "Package for fine-tuned cancer CNA association modeling. Association is measured directly at the genomic features of interest and, in the case of genes, downstream gene-set enrichment analysis can be performed thanks to novel internal processing of the data. The software opens a way to systematically scrutinize the differences in CNA distribution across tumoral phenotypes, such as those that relate to tumor type, location and progression.",
       "sc:featureList": [
@@ -96,9 +100,9 @@
       "sc:license": "CC-BY-NC-4.0",
       "sc:name": "facopy",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/facopy.html"
@@ -107,55 +111,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/facopy.html"
     },
     {
-      "@id": "_:N0095a9e2c4314dc6abb7d949810c585b",
+      "@id": "_:N5a9b4da65e964f938b20690d5216d824",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1920"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:Nb18ca183d3404e2783cfe903d47cb8ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N240519f5c90f463db9f42bf49a57e801",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2353"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Ontology data"
-    },
-    {
-      "@id": "_:N449817da418848ae833d828b5d8fc328",
+      "@id": "_:N35e8d9ec18b7474190cdb795485b46f4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -171,7 +143,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:Nc856fee4f38247e4b136d9996e938139",
+      "@id": "_:N4d7bc60bfe4d49bb8b8c7748b91f5c37",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -187,24 +159,52 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N780bf97954c64475a52df26d53a86176",
+      "@id": "_:N204513df0a084ae893e537e10202063b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N6ea39ed2374446dda5eb9b4d155e9c5e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1920"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-13-192",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N521cb77d3f4d4da88e67b4272accc39b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2353"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Ontology data"
     }
   ]
 }

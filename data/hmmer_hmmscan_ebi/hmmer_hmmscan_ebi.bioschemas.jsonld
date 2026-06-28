@@ -36,7 +36,15 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkr367",
       "@type": "sc:CreativeWork"
     },
     {
@@ -45,50 +53,50 @@
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": [
         {
-          "@id": "_:N077d5b0e446d4119bfc4e81d1d2c0396"
+          "@id": "_:Ncdd293ff018f4135bfcf7421186d1e52"
         },
         {
-          "@id": "_:Na4b78a625a8a4cac9aee1b7977da1424"
+          "@id": "_:N18bfbcdc60904cb9a74a5e7917a2e429"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1472c82c153448bfadfa431599b3f73a"
+          "@id": "_:N6242c62d4f824e8f965ba746fa81c4c7"
         },
         {
-          "@id": "_:N9f4ef32a7d674c1fbf579fab2aadb2da"
+          "@id": "_:N626544f527884f8ebbf0ccf47028bd11"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web service"
+        "Web service",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0080"
+        },
         {
           "@id": "edam:topic_0623"
         },
         {
           "@id": "edam:topic_0160"
-        },
-        {
-          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": "Sean Eddy",
       "sc:citation": [
+        "pubmed:21593126",
+        "pubmed:35412617",
+        "pmcid:PMC3125773",
+        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        "pmcid:PMC3125773",
         "pubmed:38597606",
-        "pubmed:35412617",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
-        "pmcid:PMC9252731",
         "pmcid:PMC11223882",
-        "pubmed:21593126",
         {
           "@id": "https://doi.org/10.1093/nar/gkr367"
         }
@@ -99,35 +107,43 @@
       },
       "sc:name": "HMMER hmmscan (EBI)",
       "sc:operatingSystem": [
+        "Mac",
         "Windows",
-        "Linux",
-        "Mac"
+        "Linux"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
+        {
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+        },
         {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "http://hmmer.org/"
-        },
-        {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/pfa/hmmer3_hmmscan"
     },
     {
-      "@id": "_:N1472c82c153448bfadfa431599b3f73a",
+      "@id": "_:Ncdd293ff018f4135bfcf7421186d1e52",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0857"
+        "@id": "edam:data_1364"
       },
-      "sc:name": "Sequence search results"
+      "sc:name": "Hidden Markov model"
     },
     {
-      "@id": "_:N9f4ef32a7d674c1fbf579fab2aadb2da",
+      "@id": "_:N18bfbcdc60904cb9a74a5e7917a2e429",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N6242c62d4f824e8f965ba746fa81c4c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -138,28 +154,12 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N077d5b0e446d4119bfc4e81d1d2c0396",
+      "@id": "_:N626544f527884f8ebbf0ccf47028bd11",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0849"
+        "@id": "edam:data_0857"
       },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Na4b78a625a8a4cac9aee1b7977da1424",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1364"
-      },
-      "sc:name": "Hidden Markov model"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkr367",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Sequence search results"
     }
   ]
 }

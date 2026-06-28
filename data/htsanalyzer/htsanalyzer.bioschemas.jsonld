@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr028",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "http://orcid.org/0000-0002-5122-2418",
       "@type": "sc:Person"
     },
@@ -47,24 +51,24 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nc6424b2ea4b443a0bbc4813810c199a1"
+          "@id": "_:Nc8b1b80bcade458395984d2ab4211a79"
         },
         {
-          "@id": "_:N53fc5c5f667443589a279edf46cc889e"
+          "@id": "_:Nfc4b961d923044a79e140947f768fc6d"
         },
         {
-          "@id": "_:Nf6120aa3b68a4800b95d0fc429645672"
+          "@id": "_:N995602745ab14cc395a8ccf14594e6a5"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1f4d0cd65ae641a794d7135f6d4f1d53"
+          "@id": "_:Na7f22d920b274034afa0a5329fd93f0c"
         },
         {
-          "@id": "_:N784ea01030234cc59cce82029da4c488"
+          "@id": "_:N54a89a1bc53f48b9996ea3a734d00b2b"
         },
         {
-          "@id": "_:Nde147055d620441288aaba2c3255cb44"
+          "@id": "_:Ncaec1402a9274635bb07df7e4e9c3e72"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -74,40 +78,40 @@
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0602"
+        },
+        {
           "@id": "edam:topic_0085"
         },
         {
           "@id": "edam:topic_3523"
-        },
-        {
-          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
         "pmcid:PMC3051329",
-        "pubmed:21258062",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr028"
-        }
+        },
+        "pubmed:21258062"
       ],
       "sc:description": "This package provides classes and methods for gene set over-representation, enrichment and network analyses on high-throughput screens. A pipeline is also specifically designed for cellHTS2 object to perform integrative network analyses of high-throughput RNA interference screens. The users can build their own analysis pipeline for their own data set based on this package.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0533"
+          "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_3224"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_0533"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "HTSanalyzeR",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/HTSanalyzeR.html"
@@ -116,7 +120,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/HTSanalyzeR.html"
     },
     {
-      "@id": "_:Nc6424b2ea4b443a0bbc4813810c199a1",
+      "@id": "_:Nc8b1b80bcade458395984d2ab4211a79",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -127,18 +131,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N53fc5c5f667443589a279edf46cc889e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "ID list"
-    },
-    {
-      "@id": "_:Nf6120aa3b68a4800b95d0fc429645672",
+      "@id": "_:Nfc4b961d923044a79e140947f768fc6d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -149,7 +142,56 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N1f4d0cd65ae641a794d7135f6d4f1d53",
+      "@id": "_:N995602745ab14cc395a8ccf14594e6a5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "ID list"
+    },
+    {
+      "@id": "_:Na7f22d920b274034afa0a5329fd93f0c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N54a89a1bc53f48b9996ea3a734d00b2b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Ncaec1402a9274635bb07df7e4e9c3e72",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -166,48 +208,6 @@
         }
       ],
       "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N784ea01030234cc59cce82029da4c488",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nde147055d620441288aaba2c3255cb44",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr028",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

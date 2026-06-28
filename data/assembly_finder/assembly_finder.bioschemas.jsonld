@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0009-0007-9322-1281",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/assembly_finder",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4465a9276aee4286a6e89b467eff0a88"
+          "@id": "_:Nfda84060ed15420aa13fca8eea1425a7"
         },
         {
-          "@id": "_:N6c54f65e036f4d1bbca24ca1325117fb"
+          "@id": "_:Nb2e10ba49f2d4a30b43d5f5376b2069a"
         },
         {
-          "@id": "_:N1b8e5dfdf19847d8801e24cd591cc653"
+          "@id": "_:N6864881674eb494781fbe8cb1bea29d1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N31661a8ca3ae40899674ab10384221ac"
+          "@id": "_:Nec2c3d5efb274f1aa1106fd51455e443"
         },
         {
-          "@id": "_:N7e2333671168471b90748335ae7e0e38"
+          "@id": "_:N3bdf3b1928574ed087e23c92197e6cd0"
         },
         {
-          "@id": "_:Nbcdd9dc86e254bcc889cc496a37e15fd"
+          "@id": "_:N8982b55c7f0141f6905607d23cf7f8a9"
         },
         {
-          "@id": "_:Ncc7b0e3d7b354f67b11dcb862948aca8"
+          "@id": "_:Nee409b48cee744e8a04bee7f47ad7f6c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -83,24 +87,68 @@
       "sc:license": "MIT",
       "sc:name": "assembly_finder",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
-        {
-          "@id": "https://metagenlab.github.io/assembly_finder/#usage"
-        },
         {
           "@id": "https://metagenlab.github.io/assembly_finder/#installation"
         },
         {
           "@id": "https://metagenlab.github.io/assembly_finder/"
+        },
+        {
+          "@id": "https://metagenlab.github.io/assembly_finder/#usage"
         }
       ],
       "sc:url": "https://github.com/metagenlab/assembly_finder"
     },
     {
-      "@id": "_:N4465a9276aee4286a6e89b467eff0a88",
+      "@id": "_:Nec2c3d5efb274f1aa1106fd51455e443",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Sequence report"
+    },
+    {
+      "@id": "_:N3bdf3b1928574ed087e23c92197e6cd0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N8982b55c7f0141f6905607d23cf7f8a9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:Nee409b48cee744e8a04bee7f47ad7f6c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3181"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Sequence assembly report"
+    },
+    {
+      "@id": "_:Nfda84060ed15420aa13fca8eea1425a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3266"
@@ -116,7 +164,23 @@
       "sc:name": "Sequence assembly ID"
     },
     {
-      "@id": "_:N6c54f65e036f4d1bbca24ca1325117fb",
+      "@id": "_:Nb2e10ba49f2d4a30b43d5f5376b2069a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1179"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_1964"
+        }
+      ],
+      "sc:name": "NCBI taxonomy ID"
+    },
+    {
+      "@id": "_:N6864881674eb494781fbe8cb1bea29d1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2909"
@@ -130,70 +194,6 @@
         }
       ],
       "sc:name": "Organism name"
-    },
-    {
-      "@id": "_:N1b8e5dfdf19847d8801e24cd591cc653",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1179"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1964"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "NCBI taxonomy ID"
-    },
-    {
-      "@id": "_:N31661a8ca3ae40899674ab10384221ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N7e2333671168471b90748335ae7e0e38",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:Nbcdd9dc86e254bcc889cc496a37e15fd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:Ncc7b0e3d7b354f67b11dcb862948aca8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3181"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Sequence assembly report"
-    },
-    {
-      "@id": "https://orcid.org/0009-0007-9322-1281",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-014-0371-5",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fastliquidassociation",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Tina Gunderson",
       "bsc:input": {
-        "@id": "_:N62e6d503c2d548aba704d64bb7987d2d"
+        "@id": "_:N91c59ddd5fc74970945a9671338092d1"
       },
       "bsc:output": [
         {
-          "@id": "_:N1329488735a94b6aa3698e8b17ac189e"
+          "@id": "_:Ne8a62829e6474fb1b6368ff155db71e1"
         },
         {
-          "@id": "_:N7db98077f3734f58854215cc5eab98fa"
+          "@id": "_:N6cfc81f2b4ac40a7a24fea3900a0d3c3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -71,27 +67,27 @@
         }
       ],
       "sc:citation": [
-        "pubmed:25431229",
         {
           "@id": "https://doi.org/10.1186/s12859-014-0371-5"
         },
+        "pubmed:25431229",
         "pmcid:PMC4255454"
       ],
       "sc:description": "This package extends the function of the LiquidAssociation package for genome-wide application. It integrates a screening method into the LA analysis to reduce the number of triplets to be examined for a high LA value and provides code for use in subsequent significance analyses.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3463"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3463"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "fastLiquidAssociation",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/fastLiquidAssociation.html"
@@ -100,7 +96,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/fastLiquidAssociation.html"
     },
     {
-      "@id": "_:N1329488735a94b6aa3698e8b17ac189e",
+      "@id": "_:N91c59ddd5fc74970945a9671338092d1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Ne8a62829e6474fb1b6368ff155db71e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -111,7 +118,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N7db98077f3734f58854215cc5eab98fa",
+      "@id": "_:N6cfc81f2b4ac40a7a24fea3900a0d3c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -122,15 +129,8 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N62e6d503c2d548aba704d64bb7987d2d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Gene expression profile"
+      "@id": "https://doi.org/10.1186/s12859-014-0371-5",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

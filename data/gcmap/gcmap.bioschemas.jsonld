@@ -45,29 +45,32 @@
       "biotools:primaryContact": "Thomas Sandmann",
       "bsc:input": [
         {
-          "@id": "_:N6e57761c4d7c48018f5bf7572e7a7519"
+          "@id": "_:N09b44c2de2d9445b9155e1799b994f39"
         },
         {
-          "@id": "_:N48b5a05e8f844967a13cd197cd113f64"
+          "@id": "_:Ncd5d1149e5e44eb3ac2a91000e11eec3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N85bd4ad0090a44bcab6d676848ab4a37"
+          "@id": "_:N0088e1b62a5d41edab89e17c2848b8a1"
         },
         {
-          "@id": "_:Nc00f4c66add64c2d84f4b7e8a73e7722"
+          "@id": "_:N7ad6561f886e462db07d941817d719de"
         },
         {
-          "@id": "_:N46c5596da1ef4cf58ac4715dc444d681"
+          "@id": "_:N3ba2308bf96740eca3082c891d263342"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3518"
+        },
         {
           "@id": "edam:topic_3170"
         },
@@ -75,33 +78,30 @@
           "@id": "edam:topic_2269"
         },
         {
-          "@id": "edam:topic_3518"
-        },
-        {
           "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
+        "pubmed:24132929",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt592"
-        },
-        "pubmed:24132929"
+        }
       ],
       "sc:description": "Toolkit for comparing differential gene expression profiles through gene set enrichment analysis. Starting from normalized microarray or RNA-seq gene expression values the package performs differential expression analysis. Supplying a simple list of gene identifiers, global differential expression profiles or data from complete experiments as input, users can use a unified set of well-known gene set enrichment analysis methods to retrieve experiments with similar changes in gene expression.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_2436"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "gCMAP",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/gCMAP.html"
@@ -110,29 +110,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gCMAP.html"
     },
     {
-      "@id": "_:N6e57761c4d7c48018f5bf7572e7a7519",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:N48b5a05e8f844967a13cd197cd113f64",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N85bd4ad0090a44bcab6d676848ab4a37",
+      "@id": "_:N0088e1b62a5d41edab89e17c2848b8a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -148,7 +126,23 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nc00f4c66add64c2d84f4b7e8a73e7722",
+      "@id": "_:N7ad6561f886e462db07d941817d719de",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N3ba2308bf96740eca3082c891d263342",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -164,20 +158,26 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N46c5596da1ef4cf58ac4715dc444d681",
+      "@id": "_:N09b44c2de2d9445b9155e1799b994f39",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1636"
+        "@id": "edam:data_0842"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Heat map"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:Ncd5d1149e5e44eb3ac2a91000e11eec3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression profile"
     }
   ]
 }

@@ -36,54 +36,50 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1352",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/censor",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N716fe352d6da401f8438dcf58f275ec5"
+        "@id": "_:N525f07a1d2bd4baebe36a82f2f045697"
       },
       "bsc:output": {
-        "@id": "_:Na047c8294ae0485cbaa6b436ee265e83"
+        "@id": "_:Nbc7f58cd55ed44e3882d8c26c9cbf0a9"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0157"
       },
       "sc:author": "Oleksiy Kohany",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
         "pubmed:35412617",
+        "pubmed:26673705",
+        "pmcid:PMC4702932",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1352"
         },
         "pmcid:PMC9252731",
-        "pubmed:26673705",
-        "pmcid:PMC4702932"
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        }
       ],
       "sc:description": "Protein and nucleotide sequence repeat identification and masking. Screens query sequences against a reference collection of repeats and \"censors\" (masks) homologous portions with masking symbols, as well as generating a report classifying all found repeats.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0368"
+          "@id": "edam:operation_0379"
         },
         {
-          "@id": "edam:operation_0379"
+          "@id": "edam:operation_0368"
         }
       ],
       "sc:name": "CENSOR (EBI)",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "GIRI",
@@ -101,15 +97,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/so/censor/"
     },
     {
-      "@id": "_:N716fe352d6da401f8438dcf58f275ec5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Na047c8294ae0485cbaa6b436ee265e83",
+      "@id": "_:Nbc7f58cd55ed44e3882d8c26c9cbf0a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -117,7 +105,19 @@
       "sc:name": "Nucleic acid features"
     },
     {
+      "@id": "_:N525f07a1d2bd4baebe36a82f2f045697",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv1352",
       "@type": "sc:CreativeWork"
     }
   ]

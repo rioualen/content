@@ -36,7 +36,15 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,14 +52,14 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N0bfc7ed8e46f4181b6549776ebeec8d4"
+        "@id": "_:Nfbee8be7019143c68047a91b58b08163"
       },
       "bsc:output": [
         {
-          "@id": "_:N3fe3dc30544b4163bc905045b684a2e5"
+          "@id": "_:Nd77ac2ab2db54c94b3674961cb84814b"
         },
         {
-          "@id": "_:N5627217c19904ae7973649d7fcbc3c75"
+          "@id": "_:N02c71fd40ae2491580556752f7fdef62"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -61,27 +69,27 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_0084"
         },
         {
-          "@id": "edam:topic_0084"
+          "@id": "edam:topic_3293"
         }
       ],
       "sc:author": "Des Higgins",
       "sc:citation": [
-        "pmcid:PMC9252731",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkae241"
+        },
+        "pubmed:38597606",
         "pmcid:PMC11223882",
+        "pubmed:17846036",
+        "pubmed:35412617",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btm404"
         },
-        "pubmed:17846036",
+        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
-        "pubmed:35412617",
-        "pubmed:38597606",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkae241"
         }
       ],
       "sc:description": "Phylogenetic tree generation using the ClustalW2 program.",
@@ -90,35 +98,27 @@
       },
       "sc:name": "Simple Phylogeny (EBI)",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+          "@id": "http://www.clustal.org/clustal2/"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.clustal.org/clustal2/"
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/phylogeny/simple_phylogeny"
     },
     {
-      "@id": "_:N0bfc7ed8e46f4181b6549776ebeec8d4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N3fe3dc30544b4163bc905045b684a2e5",
+      "@id": "_:Nd77ac2ab2db54c94b3674961cb84814b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -126,7 +126,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N5627217c19904ae7973649d7fcbc3c75",
+      "@id": "_:N02c71fd40ae2491580556752f7fdef62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1442"
@@ -134,12 +134,12 @@
       "sc:name": "Phylogenetic tree distances"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nfbee8be7019143c68047a91b58b08163",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

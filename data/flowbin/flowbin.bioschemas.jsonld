@@ -36,56 +36,60 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv008",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowbin",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Kieran O'Neill",
       "bsc:input": {
-        "@id": "_:N2728b2b2151642018dd88fe63dd6adb5"
+        "@id": "_:Neab3552c623e4f6c87e6640f03bc6f2f"
       },
       "bsc:output": [
         {
-          "@id": "_:Ncdf5bb71d3e2424ebfa23be213c1eeb2"
+          "@id": "_:Ncf71826a5182478b8fb72bce0cd6dee1"
         },
         {
-          "@id": "_:N62d438dbbe1e4ac68fa46051c80c5892"
+          "@id": "_:N05dea155bdda4df89de59213ebee97b8"
         },
         {
-          "@id": "_:N604aa69271a7459daf3a14d7f8d56862"
+          "@id": "_:N94a127753a6a4939bb218c1111051975"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3361"
-        },
         {
           "@id": "edam:topic_3306"
         },
         {
           "@id": "edam:topic_3071"
+        },
+        {
+          "@id": "edam:topic_3361"
         }
       ],
       "sc:citation": [
-        "pubmed:25600947",
-        "pmcid:PMC4426837",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv008"
-        }
+        },
+        "pmcid:PMC4426837",
+        "pubmed:25600947"
       ],
       "sc:description": "Software to combine flow cytometry data that has been multiplexed into multiple tubes with common markers between them, by establishing common bins across tubes in terms of the common markers, then determining expression within each tube for each bin in terms of the tube-specific markers.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0337"
-        },
         {
           "@id": "edam:operation_2424"
         },
         {
           "@id": "edam:operation_2409"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "Artistic-2.0",
@@ -102,50 +106,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowBin.html"
     },
     {
-      "@id": "_:N2728b2b2151642018dd88fe63dd6adb5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
-    },
-    {
-      "@id": "_:Ncdf5bb71d3e2424ebfa23be213c1eeb2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N62d438dbbe1e4ac68fa46051c80c5892",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N604aa69271a7459daf3a14d7f8d56862",
+      "@id": "_:Ncf71826a5182478b8fb72bce0cd6dee1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -161,8 +122,47 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv008",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N05dea155bdda4df89de59213ebee97b8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N94a127753a6a4939bb218c1111051975",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Neab3552c623e4f6c87e6640f03bc6f2f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Experimental measurement"
     }
   ]
 }

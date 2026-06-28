@@ -45,14 +45,14 @@
       "biotools:primaryContact": "Jittisak Senachak",
       "bsc:input": [
         {
-          "@id": "_:N67e5154160814aa3bdf9573cf9d9fcc3"
+          "@id": "_:N808b6a14fe9244f98abe3099f8547125"
         },
         {
-          "@id": "_:N93e216f27a9746819a5d2e4953c8aba2"
+          "@id": "_:N35301b9f5f3d496e80e4d11545b55721"
         }
       ],
       "bsc:output": {
-        "@id": "_:N9dad5ccaa2a447c5a5e869229c3107f6"
+        "@id": "_:Nbfc057ff3f8045549845b33b39d261e4"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -61,18 +61,18 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4518644",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0676-z"
         },
-        "pubmed:26220682"
+        "pubmed:26220682",
+        "pmcid:PMC4518644"
       ],
       "sc:description": "A Spirulina proteome database and web-based tools for the analysis of protein-protein interactions at the metabolic level in Spirulina (Arthrospira) platensis C1.",
       "sc:featureList": [
@@ -91,9 +91,9 @@
         "Windows"
       ],
       "sc:provider": [
-        "King Mongkut's University of Technology (Thonburi)",
         "KMUTT",
-        "National Center for Genetic Engineering and Biotechnology"
+        "National Center for Genetic Engineering and Biotechnology",
+        "King Mongkut's University of Technology (Thonburi)"
       ],
       "sc:softwareHelp": {
         "@id": "http://spirpro.sbi.kmutt.ac.th/"
@@ -101,15 +101,23 @@
       "sc:url": "http://spirpro.sbi.kmutt.ac.th"
     },
     {
-      "@id": "_:N67e5154160814aa3bdf9573cf9d9fcc3",
+      "@id": "_:Nbfc057ff3f8045549845b33b39d261e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2343"
+        "@id": "edam:data_2600"
       },
-      "sc:name": "Pathway ID (KEGG)"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2332"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N93e216f27a9746819a5d2e4953c8aba2",
+      "@id": "_:N808b6a14fe9244f98abe3099f8547125",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2099"
@@ -117,20 +125,12 @@
       "sc:name": "Name"
     },
     {
-      "@id": "_:N9dad5ccaa2a447c5a5e869229c3107f6",
+      "@id": "_:N35301b9f5f3d496e80e4d11545b55721",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2600"
+        "@id": "edam:data_2343"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "Pathway or network"
+      "sc:name": "Pathway ID (KEGG)"
     }
   ]
 }

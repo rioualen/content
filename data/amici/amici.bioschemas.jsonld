@@ -36,22 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btab227",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9963-6057",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4935-3312",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/AMICI",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "Fabian Fröhlich",
         {
-          "@id": "https://orcid.org/0000-0002-4935-3312"
+          "@id": "https://orcid.org/0000-0001-9963-6057"
         },
         {
-          "@id": "https://orcid.org/0000-0001-9963-6057"
+          "@id": "https://orcid.org/0000-0002-4935-3312"
         }
       ],
       "bsc:input": {
-        "@id": "_:N33ab191305c4463b93c1474920bb3179"
+        "@id": "_:N1d48a4b0044e47b184b1b322d6fe784c"
       },
       "bsc:output": {
-        "@id": "_:N0080e6d2a8ca4617aa74c96caa8523dd"
+        "@id": "_:Nfa15402a808f4283ba3849a945a5244b"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
@@ -65,8 +77,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC8545331",
         "pubmed:33821950",
+        "pmcid:PMC8545331",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btab227"
         }
@@ -74,19 +86,19 @@
       "sc:description": "AMICI provides a multi-language (Python, C++, Matlab) interface for the SUNDIALS solvers CVODES (for ordinary differential equations) and IDAS (for algebraic differential equations). AMICI allows the user to read differential equation models specified as SBML or PySB and automatically compiles such models into .mex simulation files (Matlab), C++ executables or Python modules.\n\nBeyond forward integration, the compiled simulation file also allows for forward sensitivity analysis, steady state sensitivity analysis and adjoint sensitivity analysis for likelihood-based output functions.\n\nThe interface was designed to provide routines for efficient gradient computation in parameter estimation of biochemical reaction models but it is also applicable to a wider range of differential equation constrained optimization problems.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3562"
+          "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_3562"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "AMICI",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://amici.readthedocs.io/en/latest/"
@@ -94,23 +106,7 @@
       "sc:url": "https://github.com/AMICI-dev/AMICI"
     },
     {
-      "@id": "_:N33ab191305c4463b93c1474920bb3179",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_4015"
-        },
-        {
-          "@id": "edam:format_2585"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N0080e6d2a8ca4617aa74c96caa8523dd",
+      "@id": "_:Nfa15402a808f4283ba3849a945a5244b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -121,16 +117,20 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btab227",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-4935-3312",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9963-6057",
-      "@type": "sc:Person"
+      "@id": "_:N1d48a4b0044e47b184b1b322d6fe784c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2585"
+        },
+        {
+          "@id": "edam:format_4015"
+        }
+      ],
+      "sc:name": "Pathway or network"
     }
   ]
 }

@@ -36,18 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-5186-0735",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6173-7255",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty721",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ImaGEO",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -55,49 +43,49 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N685b9f9fdbf44caea92aa5138fb53985"
+          "@id": "_:N81abde4142c343dfadcc6ee09add5d79"
         },
         {
-          "@id": "_:Nb7674376e31b4787b5dc6389cdec4c8c"
+          "@id": "_:N9976c3a1316441148dec7bba936b03b5"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7ae3809326cf4a78ba372de125060536"
+          "@id": "_:N279c57f1199347c6bb29bcea4230ecac"
         },
         {
-          "@id": "_:Nd13715be15634257935ca0e282a26ebe"
+          "@id": "_:N10c3416d1bf04d0d8b06096cc6b8d245"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0002-5186-0735"
       },
       "sc:citation": [
-        "pubmed:30137226",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bty721"
-        }
+        },
+        "pubmed:30137226"
       ],
       "sc:description": "ImaGEO is a web tool for gene expression Meta-Analysis that implements a complete and comprehensive meta-analysis workflow starting from Gene Expression Omnibus (GEO) dataset identifiers. The application integrates GEO datasets, applies different meta-analysis techniques and provides functional analysis results in an easy-to-use environment. ImaGEO is a powerful and useful resource that allows researchers to integrate and perform meta-analysis of GEO datasets to lead robust findings for biomarker discovery studies.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3435"
         },
         {
           "@id": "edam:operation_0531"
@@ -107,33 +95,30 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ImaGEO",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://imageo.genyo.es"
     },
     {
-      "@id": "_:N685b9f9fdbf44caea92aa5138fb53985",
+      "@id": "_:N279c57f1199347c6bb29bcea4230ecac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1964"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nb7674376e31b4787b5dc6389cdec4c8c",
+      "@id": "_:N10c3416d1bf04d0d8b06096cc6b8d245",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N81abde4142c343dfadcc6ee09add5d79",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1147"
@@ -141,20 +126,35 @@
       "sc:name": "GEO accession number"
     },
     {
-      "@id": "_:N7ae3809326cf4a78ba372de125060536",
+      "@id": "_:N9976c3a1316441148dec7bba936b03b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
       },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_1964"
+        }
+      ],
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nd13715be15634257935ca0e282a26ebe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:name": "Heat map"
+      "@id": "https://doi.org/10.1093/bioinformatics/bty721",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6173-7255",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5186-0735",
+      "@type": "sc:Person"
     }
   ]
 }

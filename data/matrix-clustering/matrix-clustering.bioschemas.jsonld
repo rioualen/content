@@ -43,22 +43,22 @@
       "@id": "https://bio.tools/matrix-clustering",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Morgane Thomas-Chollier",
+        "Jaime Castro-Mondragon",
         "Jacques van Helden",
-        "Jaime Castro-Mondragon"
+        "Morgane Thomas-Chollier"
       ],
       "bsc:input": {
-        "@id": "_:N92dc15c52046469fa8044a6feb27ac3c"
+        "@id": "_:N5b5d53bcbabd414da19b1dcef0e7c576"
       },
       "bsc:output": [
         {
-          "@id": "_:N2038d6f0ba73480ea8a9566423afbd5d"
+          "@id": "_:Na38cb0647b8d4b90a228ca9907f34be7"
         },
         {
-          "@id": "_:Nebc0619cdf104410aab8cef2ef151832"
+          "@id": "_:N0858de20f7844436865b3e993560c2e9"
         },
         {
-          "@id": "_:N32880ac5ff9a432cbad13a4171f59523"
+          "@id": "_:N1f413ba172e34d89a2cd7a550af788d2"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -68,10 +68,10 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3125"
+          "@id": "edam:topic_3511"
         },
         {
-          "@id": "edam:topic_3511"
+          "@id": "edam:topic_3125"
         }
       ],
       "sc:author": "Jaime Castro-Mondragon",
@@ -79,9 +79,9 @@
         "@id": "https://doi.org/10.1101/065565"
       },
       "sc:contributor": [
-        "Morgane Thomas-Chollier",
+        "Denis Thieffry",
         "Jacques van Helden",
-        "Denis Thieffry"
+        "Morgane Thomas-Chollier"
       ],
       "sc:description": "Taking as input one or several sets of position-specific scoring matrices, this program applies hierarchical clustering to identify clusters of similar motifs. It produces a set of trees (one per cluster) and builds branch motifs at each node of each tree by merging the matrices of all descendent nodes.",
       "sc:featureList": [
@@ -105,7 +105,34 @@
       "sc:url": "http://rsat.eu/"
     },
     {
-      "@id": "_:N92dc15c52046469fa8044a6feb27ac3c",
+      "@id": "_:Na38cb0647b8d4b90a228ca9907f34be7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N0858de20f7844436865b3e993560c2e9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1246"
+      },
+      "sc:name": "Sequence cluster (nucleic acid)"
+    },
+    {
+      "@id": "_:N1f413ba172e34d89a2cd7a550af788d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1361"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Position frequency matrix"
+    },
+    {
+      "@id": "_:N5b5d53bcbabd414da19b1dcef0e7c576",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1361"
@@ -119,33 +146,6 @@
         }
       ],
       "sc:name": "Position frequency matrix"
-    },
-    {
-      "@id": "_:N2038d6f0ba73480ea8a9566423afbd5d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1361"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Position frequency matrix"
-    },
-    {
-      "@id": "_:Nebc0619cdf104410aab8cef2ef151832",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1246"
-      },
-      "sc:name": "Sequence cluster (nucleic acid)"
-    },
-    {
-      "@id": "_:N32880ac5ff9a432cbad13a4171f59523",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
     }
   ]
 }

@@ -36,41 +36,45 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.12688/F1000RESEARCH.53926.2",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pegs",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8358b9da950a4834b2a680a68c6706d1"
+          "@id": "_:N360f04a0a7594259af154b54677e6028"
         },
         {
-          "@id": "_:N98d095baa59149dfb51b4e558853288b"
+          "@id": "_:N80fd7e6482bf495e9e75d7c5ffb8b1f6"
         },
         {
-          "@id": "_:Nb72a7b2b574841ebb486385aa10c101c"
+          "@id": "_:N6dc8adc7fe6647f4a2deaaa64ec3942a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na5d2bddc1a324081a710e13713f5fd4c"
+          "@id": "_:N45b42c0659064d2fbcc784969a78446e"
         },
         {
-          "@id": "_:Ndd3708e6dfa14e89ad269d6551ca5588"
+          "@id": "_:Nbe3a7034e1384a4d83dd5009abf55736"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0204"
-        },
-        {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_0204"
         },
         {
           "@id": "edam:topic_3173"
+        },
+        {
+          "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_0749"
@@ -78,10 +82,10 @@
       ],
       "sc:citation": [
         "pmcid:PMC8406447",
-        "pubmed:34504687",
         {
           "@id": "https://doi.org/10.12688/F1000RESEARCH.53926.2"
-        }
+        },
+        "pubmed:34504687"
       ],
       "sc:description": "PEGS (Peak-set Enrichment of Gene-Sets) is a Python bioinformatics utility for calculating enrichments of gene cluster enrichments from peak data at different genomic distances.",
       "sc:featureList": [
@@ -99,14 +103,30 @@
       "sc:license": "Not licensed",
       "sc:name": "PEGS",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://pegs.readthedocs.io/en/latest/"
     },
     {
-      "@id": "_:N8358b9da950a4834b2a680a68c6706d1",
+      "@id": "_:N45b42c0659064d2fbcc784969a78446e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:name": "Statistical estimate score"
+    },
+    {
+      "@id": "_:Nbe3a7034e1384a4d83dd5009abf55736",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N360f04a0a7594259af154b54677e6028",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -117,7 +137,15 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "_:N98d095baa59149dfb51b4e558853288b",
+      "@id": "_:N80fd7e6482bf495e9e75d7c5ffb8b1f6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1235"
+      },
+      "sc:name": "Sequence cluster"
+    },
+    {
+      "@id": "_:N6dc8adc7fe6647f4a2deaaa64ec3942a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2085"
@@ -126,34 +154,6 @@
         "@id": "edam:format_3003"
       },
       "sc:name": "Structure report"
-    },
-    {
-      "@id": "_:Nb72a7b2b574841ebb486385aa10c101c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1235"
-      },
-      "sc:name": "Sequence cluster"
-    },
-    {
-      "@id": "_:Na5d2bddc1a324081a710e13713f5fd4c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Ndd3708e6dfa14e89ad269d6551ca5588",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "https://doi.org/10.12688/F1000RESEARCH.53926.2",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

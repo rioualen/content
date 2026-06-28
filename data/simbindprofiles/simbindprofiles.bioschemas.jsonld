@@ -36,37 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/simbindprofiles",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Bettina Fischer",
       "bsc:input": {
-        "@id": "_:N190285c60be8426f84a41de88ff72c46"
+        "@id": "_:N4c55d1ebe3aa41cc8bb0467ad68e12ec"
       },
       "bsc:output": {
-        "@id": "_:Nf556fb6fd6ac4adaa9dcd44d1b3fcb58"
+        "@id": "_:Nefab7fffd44846ed8f3cfe1158a09bf2"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_3125"
         },
         {
-          "@id": "edam:topic_3125"
+          "@id": "edam:topic_3518"
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pmcid:PMC4509590",
         "pubmed:25633503"
       ],
       "sc:description": "This tool identifies common and unique binding regions in genome tiling array data. It does not rely on peak calling, but directly compares binding profiles processed on the same array platform. It also implements a simple threshold approach, thus allowing retrieval of commonly and differentially bound regions between datasets as well as events of compensation and increased binding.",
@@ -77,8 +73,8 @@
       "sc:name": "SimBindProfiles",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SimBindProfiles.html"
@@ -87,7 +83,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SimBindProfiles.html"
     },
     {
-      "@id": "_:Nf556fb6fd6ac4adaa9dcd44d1b3fcb58",
+      "@id": "_:N4c55d1ebe3aa41cc8bb0467ad68e12ec",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3117"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Microarray hybridisation data"
+    },
+    {
+      "@id": "_:Nefab7fffd44846ed8f3cfe1158a09bf2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -98,15 +105,8 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N190285c60be8426f84a41de88ff72c46",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3117"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Microarray hybridisation data"
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13059-016-0974-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pombase_vep",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N194f1619b5f34b2d87673cd1f8fd8552"
+        "@id": "_:N77f1efb76a3f48d8b198f7c9d12b9ba8"
       },
       "bsc:output": {
-        "@id": "_:Nf725132dd7e147c28085c0add136fce2"
+        "@id": "_:N49828f058c7f436c93b1987d4b9ce557"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -52,11 +56,11 @@
       },
       "sc:author": "Ensembl team",
       "sc:citation": [
-        "pmcid:PMC4893825",
         "pubmed:27268795",
         {
           "@id": "https://doi.org/10.1186/s13059-016-0974-4"
-        }
+        },
+        "pmcid:PMC4893825"
       ],
       "sc:description": "Upload a set of SNPs in our standard format and export a file containing consequence types.",
       "sc:featureList": {
@@ -64,40 +68,24 @@
       },
       "sc:name": "PomBase VEP",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.pombase.org/documentation"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.pombase.org/documentation"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://genomebrowser.pombase.org/tools.html"
     },
     {
-      "@id": "_:Nf725132dd7e147c28085c0add136fce2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N194f1619b5f34b2d87673cd1f8fd8552",
+      "@id": "_:N77f1efb76a3f48d8b198f7c9d12b9ba8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -113,8 +101,20 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "https://doi.org/10.1186/s13059-016-0974-4",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N49828f058c7f436c93b1987d4b9ce557",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

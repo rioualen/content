@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1110/ps.051745906",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gpcrhmm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na3c16735843f424e9b182d3982b535ef"
+        "@id": "_:N2eea68760eee4746a600175248d1378a"
       },
       "bsc:output": {
-        "@id": "_:Nb901420d23ed415f9c54777fd82f0955"
+        "@id": "_:N46c7c4ea6a71424aa40854656f1ac5da"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web application"
+        "Web application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
         "pubmed:16452613",
+        "pmcid:PMC2249772",
         {
           "@id": "https://doi.org/10.1110/ps.051745906"
-        },
-        "pmcid:PMC2249772"
+        }
       ],
       "sc:description": "A hidden Markov model for GPCR detection.",
       "sc:featureList": {
@@ -65,9 +69,9 @@
       },
       "sc:name": "GPCRHMM",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:provider": "bils.se",
       "sc:softwareHelp": {
@@ -77,15 +81,7 @@
       "sc:url": "http://gpcrhmm.sbc.su.se/"
     },
     {
-      "@id": "_:Na3c16735843f424e9b182d3982b535ef",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nb901420d23ed415f9c54777fd82f0955",
+      "@id": "_:N46c7c4ea6a71424aa40854656f1ac5da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -93,8 +89,12 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "https://doi.org/10.1110/ps.051745906",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2eea68760eee4746a600175248d1378a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
     }
   ]
 }

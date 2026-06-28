@@ -36,46 +36,46 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr108",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0002-0274-5669",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr108",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/memloci",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
+        "Andrea Pierleoni",
         {
           "@id": "https://orcid.org/0000-0002-0274-5669"
-        },
-        "Andrea Pierleoni"
+        }
       ],
       "bsc:input": {
-        "@id": "_:Nd1184bb0efcf462dba336f00c627d69a"
+        "@id": "_:N379793ef8dcb4f8a84ba818582dcbef0"
       },
       "bsc:output": {
-        "@id": "_:Nd9f75a99a53c4306a3540199a1f13b25"
+        "@id": "_:Nbd41423df3794ddaa3d8451b02fbef2c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0621"
-        },
-        {
           "@id": "edam:topic_0820"
         },
         {
           "@id": "edam:topic_0140"
+        },
+        {
+          "@id": "edam:topic_0621"
         }
       ],
       "sc:citation": [
-        "pubmed:21367869",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr108"
-        }
+        },
+        "pubmed:21367869"
       ],
       "sc:description": "Predictor for the subcellular localization of proteins associated or inserted in eukaryotes membranes.",
       "sc:featureList": {
@@ -84,9 +84,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "MemLoci",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -96,18 +96,7 @@
       "sc:url": "https://mu2py.biocomp.unibo.it/memloci"
     },
     {
-      "@id": "_:Nd1184bb0efcf462dba336f00c627d69a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:Nd9f75a99a53c4306a3540199a1f13b25",
+      "@id": "_:Nbd41423df3794ddaa3d8451b02fbef2c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -116,6 +105,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N379793ef8dcb4f8a84ba818582dcbef0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence (raw)"
     }
   ]
 }

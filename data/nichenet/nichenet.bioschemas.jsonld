@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.immuni.2019.08.017",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1038/s41592-019-0667-5",
       "@type": "sc:CreativeWork"
     },
@@ -43,56 +47,56 @@
       "@id": "https://bio.tools/NicheNet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd5effed829b148aa8d2cde9fb9ea9c92"
+        "@id": "_:N369f8c99f9564e0a8ef0e2d50bb43d5e"
       },
       "bsc:output": [
         {
-          "@id": "_:N6053876a09dc44acb45a0c48a55cc54d"
+          "@id": "_:N85a433dac9e9400bb2c794f6475b5762"
         },
         {
-          "@id": "_:N3f2ca447c1f24742a4318a62982b27b7"
+          "@id": "_:Nf92ce59540684f8284b5780f6df88c37"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_3308"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
-        "pubmed:31819264",
-        "pmcid:PMC6876284",
-        {
-          "@id": "https://doi.org/10.1038/s41592-019-0667-5"
-        },
-        "pubmed:31561945",
         {
           "@id": "https://doi.org/10.1016/j.immuni.2019.08.017"
+        },
+        "pubmed:31561945",
+        "pmcid:PMC6876284",
+        "pubmed:31819264",
+        {
+          "@id": "https://doi.org/10.1038/s41592-019-0667-5"
         }
       ],
       "sc:description": "A computational method to study intercellular communication. It uses human or mouse gene expression data of interacting cells in order to predict ligand-receptor interactions that might drive gene expression changes in cells of interest.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2428"
+        },
+        {
           "@id": "edam:operation_2497"
         },
         {
           "@id": "edam:operation_2423"
-        },
-        {
-          "@id": "edam:operation_2428"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "NicheNet",
       "sc:operatingSystem": [
+        "Mac",
         "Windows",
-        "Linux",
-        "Mac"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/saeyslab/nichenetr/blob/master/vignettes/ligand_activity_geneset.md"
@@ -101,29 +105,7 @@
       "sc:url": "https://github.com/saeyslab/nichenetr"
     },
     {
-      "@id": "_:Nd5effed829b148aa8d2cde9fb9ea9c92",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N6053876a09dc44acb45a0c48a55cc54d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N3f2ca447c1f24742a4318a62982b27b7",
+      "@id": "_:N85a433dac9e9400bb2c794f6475b5762",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -134,8 +116,26 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.1016/j.immuni.2019.08.017",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf92ce59540684f8284b5780f6df88c37",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N369f8c99f9564e0a8ef0e2d50bb43d5e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression matrix"
     }
   ]
 }

@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty622",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/SPUTNIK",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Paolo Inglese",
       "bsc:input": [
         {
-          "@id": "_:N95b0efc95e3c48459cec933e757e2670"
+          "@id": "_:N6eca4f131f13457d8f21667ace45e81e"
         },
         {
-          "@id": "_:Nb49d937e11714b3db8efb9f7b79ee914"
+          "@id": "_:N224fceb41d634012a44819946637c9e3"
         }
       ],
       "bsc:output": {
-        "@id": "_:N97093efe007f4e9d84dab76c86698b12"
+        "@id": "_:N3769c59286104d7999d912e889f4e7c7"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
@@ -65,11 +61,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC6298046",
-        "pubmed:30010780",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bty622"
-        }
+        },
+        "pubmed:30010780",
+        "pmcid:PMC6298046"
       ],
       "sc:description": "R package for filtering of spatially related peaks in mass spectrometry imaging data.",
       "sc:featureList": [
@@ -84,14 +80,25 @@
       "sc:license": "GPL-3.0",
       "sc:name": "SPUTNIK",
       "sc:operatingSystem": [
+        "Mac",
         "Windows",
-        "Linux",
-        "Mac"
+        "Linux"
       ],
       "sc:url": "https://github.com/paoloinglese/SPUTNIK"
     },
     {
-      "@id": "_:N95b0efc95e3c48459cec933e757e2670",
+      "@id": "_:N6eca4f131f13457d8f21667ace45e81e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3682"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N224fceb41d634012a44819946637c9e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -101,19 +108,19 @@
           "@id": "edam:format_3592"
         },
         {
+          "@id": "edam:format_3603"
+        },
+        {
           "@id": "edam:format_3591"
         },
         {
           "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3603"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nb49d937e11714b3db8efb9f7b79ee914",
+      "@id": "_:N3769c59286104d7999d912e889f4e7c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -124,15 +131,8 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N97093efe007f4e9d84dab76c86698b12",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3682"
-      },
-      "sc:name": "Mass spectrometry data"
+      "@id": "https://doi.org/10.1093/bioinformatics/bty622",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty545",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/akid",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Luca Parca",
       "bsc:input": {
-        "@id": "_:Nec32c21aede245d18126a5e00b066fd0"
+        "@id": "_:N9c6eb11741fc465791b6a0fc78c00271"
       },
       "bsc:output": {
-        "@id": "_:Nbeb1811afcd542a5bbda6361adf99089"
+        "@id": "_:Ne2edd97047e64a35ae60f3e0b2af0af8"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool"
+        "Command-line tool",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3510"
+        },
         {
           "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0601"
-        },
-        {
-          "@id": "edam:topic_3510"
         }
       ],
       "sc:citation": [
@@ -78,10 +74,10 @@
           "@id": "edam:operation_0239"
         },
         {
-          "@id": "edam:operation_0417"
+          "@id": "edam:operation_0276"
         },
         {
-          "@id": "edam:operation_0276"
+          "@id": "edam:operation_0417"
         }
       ],
       "sc:name": "AKID",
@@ -90,7 +86,15 @@
       "sc:url": "http://akid.bio.uniroma2.it"
     },
     {
-      "@id": "_:Nbeb1811afcd542a5bbda6361adf99089",
+      "@id": "_:N9c6eb11741fc465791b6a0fc78c00271",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:Ne2edd97047e64a35ae60f3e0b2af0af8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -98,12 +102,8 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nec32c21aede245d18126a5e00b066fd0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:name": "Protein sequence (raw)"
+      "@id": "https://doi.org/10.1093/bioinformatics/bty545",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

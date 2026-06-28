@@ -43,30 +43,30 @@
       "@id": "https://bio.tools/asapratio",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N64b0ed54933f49e495e15a5e95905a6d"
+        "@id": "_:Ncf68a820115648169307628e748e683c"
       },
       "bsc:output": [
         {
-          "@id": "_:N63da1a334e8c4d609254c9f5afaf5722"
+          "@id": "_:N1faa675d7186403f8feb188b4ea7124b"
         },
         {
-          "@id": "_:N0ae2958ce6c1441f815e4203287c6b42"
+          "@id": "_:N83f8c46090c24415b756bbc64bb74c34"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Desktop application"
+        "Desktop application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2269"
-        },
         {
           "@id": "edam:topic_3520"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
@@ -78,19 +78,13 @@
       "sc:description": "Statistical analysis of protein ratios from ICAT, cICAT or SILAC experiments.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3632"
-        },
-        {
-          "@id": "edam:operation_3658"
-        },
-        {
           "@id": "edam:operation_3630"
         },
         {
-          "@id": "edam:operation_0314"
+          "@id": "edam:operation_3705"
         },
         {
-          "@id": "edam:operation_3705"
+          "@id": "edam:operation_3635"
         },
         {
           "@id": "edam:operation_3741"
@@ -99,7 +93,13 @@
           "@id": "edam:operation_3638"
         },
         {
-          "@id": "edam:operation_3635"
+          "@id": "edam:operation_0314"
+        },
+        {
+          "@id": "edam:operation_3632"
+        },
+        {
+          "@id": "edam:operation_3658"
         }
       ],
       "sc:name": "ASAPRatio",
@@ -110,7 +110,18 @@
       "sc:url": "http://tools.proteomecenter.org/ASAPRatio.php"
     },
     {
-      "@id": "_:N63da1a334e8c4d609254c9f5afaf5722",
+      "@id": "_:Ncf68a820115648169307628e748e683c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3655"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:N1faa675d7186403f8feb188b4ea7124b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -126,31 +137,20 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N0ae2958ce6c1441f815e4203287c6b42",
+      "@id": "_:N83f8c46090c24415b756bbc64bb74c34",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3747"
+          "@id": "edam:format_3655"
         },
         {
-          "@id": "edam:format_3655"
+          "@id": "edam:format_3747"
         }
       ],
       "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N64b0ed54933f49e495e15a5e95905a6d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3655"
-      },
-      "sc:name": "Peptide identification"
     }
   ]
 }
