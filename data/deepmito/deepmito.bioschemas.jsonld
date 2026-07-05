@@ -47,10 +47,10 @@
       "@id": "https://bio.tools/DeepMito",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N47bdd063f1174497818e9b023597cf49"
+        "@id": "_:N62aa6ced9eb5423f84a58f4d643be7ad"
       },
       "bsc:output": {
-        "@id": "_:Ncbd7bd16b3da4abda2ceefc366730ef0"
+        "@id": "_:N71ff18c8f06f4d949046f776c49ec9d8"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -61,24 +61,24 @@
         "@id": "edam:topic_0140"
       },
       "sc:citation": [
-        "pmcid:PMC7493403",
         "pubmed:31218353",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btz512"
+        },
         "pubmed:32938368",
         {
           "@id": "https://doi.org/10.1186/s12859-020-03617-z"
         },
-        "pmcid:PMC6956790",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btz512"
-        }
+        "pmcid:PMC7493403",
+        "pmcid:PMC6956790"
       ],
       "sc:description": "Predictor of protein sub-mitochondrial localization based on deep learning",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2489"
+          "@id": "edam:operation_3672"
         },
         {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_2489"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -86,8 +86,8 @@
       "sc:name": "DeepMito",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/BolognaBiocomp/deepmito"
@@ -96,18 +96,7 @@
       "sc:url": "http://busca.biocomp.unibo.it/deepmito"
     },
     {
-      "@id": "_:N47bdd063f1174497818e9b023597cf49",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2200"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:Ncbd7bd16b3da4abda2ceefc366730ef0",
+      "@id": "_:N71ff18c8f06f4d949046f776c49ec9d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -116,6 +105,17 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Sequence report"
+    },
+    {
+      "@id": "_:N62aa6ced9eb5423f84a58f4d643be7ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2200"
+      },
+      "sc:name": "Protein sequence (raw)"
     }
   ]
 }

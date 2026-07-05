@@ -36,11 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-7848-8216",
+      "@id": "https://orcid.org/0000-0001-8718-7493",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0001-8718-7493",
+      "@id": "https://orcid.org/0000-0002-7848-8216",
       "@type": "sc:Person"
     },
     {
@@ -48,10 +48,10 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "SoluProt team",
       "bsc:input": {
-        "@id": "_:N7b61a553d6004ded9883191d7f10de09"
+        "@id": "_:Na219ac5460de4748a676df81e474fe58"
       },
       "bsc:output": {
-        "@id": "_:Nb0371bd0aee94195ae98faf8e3944662"
+        "@id": "_:N70c57616afc1401d93c9399dbfd2d88e"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -60,32 +60,32 @@
           "@id": "edam:topic_0123"
         },
         {
-          "@id": "edam:topic_0121"
-        },
-        {
           "@id": "edam:topic_0078"
         },
         {
           "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:author": [
-        "Martin Marusiak",
         {
           "@id": "https://orcid.org/0000-0002-3321-9629"
-        }
+        },
+        "Martin Marusiak"
       ],
       "sc:contributor": [
         {
           "@id": "https://orcid.org/0000-0002-6803-0340"
         },
         {
+          "@id": "https://orcid.org/0000-0001-8718-7493"
+        },
+        {
           "@id": "https://orcid.org/0000-0002-7848-8216"
         },
-        "Tomas Martinek",
-        {
-          "@id": "https://orcid.org/0000-0001-8718-7493"
-        }
+        "Tomas Martinek"
       ],
       "sc:description": "SoluProt is a web application for prediction of soluble protein expression in Escherichia coli.\n\nSoluProt is one of the latest additions to the family of solubility predictors based on machine learning. The training set is based on the TargetTrack database, which was carefully filtered to keep only targets expressed in Escherichia coli. The negative and positive samples were balanced and equalized for the protein lengths. The independent validation set is derived from the NESG dataset.\n\nThe predictor is in its current version based on random forest regression model and employs 36 sequence-based features, e.g., amino acid content, predicted disorder, alpha-helix and beta-sheet content, sequence identity to PDB and several aggregated physico-chemical properties. SoluProt currently achieves accuracy 58.2%, higher than other comparable tools, and is a subject of further active development.",
       "sc:featureList": {
@@ -95,30 +95,22 @@
       "sc:license": "Proprietary",
       "sc:name": "SoluProt",
       "sc:operatingSystem": [
-        "Mac",
+        "Linux",
         "Windows",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": [
-        "Brno University of Technology, Brno, Czech Republic",
         "Loschmidt Laboratories",
-        "International Centre for Clinical Research, Brno, Czech Republic",
         "Masaryk University, Brno, Czech Republic",
+        "Brno University of Technology, Brno, Czech Republic",
+        "International Centre for Clinical Research, Brno, Czech Republic",
         "ELIXIR-CZ"
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "https://loschmidt.chemi.muni.cz/soluprot/"
     },
     {
-      "@id": "_:Nb0371bd0aee94195ae98faf8e3944662",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1524"
-      },
-      "sc:name": "Protein solubility"
-    },
-    {
-      "@id": "_:N7b61a553d6004ded9883191d7f10de09",
+      "@id": "_:Na219ac5460de4748a676df81e474fe58",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -127,6 +119,14 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N70c57616afc1401d93c9399dbfd2d88e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1524"
+      },
+      "sc:name": "Protein solubility"
     },
     {
       "@id": "https://orcid.org/0000-0002-6803-0340",

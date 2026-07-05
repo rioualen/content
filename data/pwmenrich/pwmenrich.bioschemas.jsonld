@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pwmenrich",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Robert Stojnic",
       "bsc:input": {
-        "@id": "_:N674b3e8f32634102a78774e4706e3411"
+        "@id": "_:N6a87974773b045a782865a0ce1569f5e"
       },
       "bsc:output": [
         {
-          "@id": "_:N9b60f9f05e9f46148cb2b904eeccba40"
+          "@id": "_:N71053cafa8294094845658d77bc710e0"
         },
         {
-          "@id": "_:N3d67115fc7e8455eaeaea004a2f4a9f2"
+          "@id": "_:N91701f57d1684d8683275402f27abf12"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_3511"
         },
         {
-          "@id": "edam:topic_3511"
+          "@id": "edam:topic_0097"
         }
       ],
       "sc:citation": [
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        "pmcid:PMC4509590",
+        "pubmed:25633503"
       ],
       "sc:description": "A toolkit of high-level functions for DNA motif scanning and enrichment analysis built upon Biostrings. The main functionality is PWM enrichment analysis of already known PWMs (e.g. from databases such as MotifDb), but the package also implements high-level functions for PWM scanning and visualisation. The package does not perform \"de novo\" motif discovery, but is instead focused on using motifs that are either experimentally derived or computationally constructed by other tools.",
       "sc:featureList": [
@@ -86,8 +90,8 @@
       "sc:name": "PWMEnrich",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/PWMEnrich.html"
@@ -96,18 +100,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/PWMEnrich.html"
     },
     {
-      "@id": "_:N9b60f9f05e9f46148cb2b904eeccba40",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N3d67115fc7e8455eaeaea004a2f4a9f2",
+      "@id": "_:N71053cafa8294094845658d77bc710e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -118,7 +111,18 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N674b3e8f32634102a78774e4706e3411",
+      "@id": "_:N91701f57d1684d8683275402f27abf12",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N6a87974773b045a782865a0ce1569f5e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -127,10 +131,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

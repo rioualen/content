@@ -36,22 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkab831",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metaplatanus",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc124305f83aa4246b58d2cb0ce334df6"
+        "@id": "_:N7852b80c2ffa44109b6bd368f5a3d23c"
       },
       "bsc:output": [
         {
-          "@id": "_:N8fe344cd3d674a499d5c6e96ed2d0d17"
+          "@id": "_:Nd30f39f31fb14256bb39b28c1f2f71fc"
         },
         {
-          "@id": "_:N7c144a33a3a349a59886e93b4d2aa6e4"
+          "@id": "_:N36f643b5ac4c4632884d54a340852534"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3837"
+        },
         {
           "@id": "edam:topic_0102"
         },
@@ -60,16 +67,13 @@
         },
         {
           "@id": "edam:topic_3174"
-        },
-        {
-          "@id": "edam:topic_3837"
         }
       ],
       "sc:citation": [
-        "pubmed:34570223",
         {
           "@id": "https://doi.org/10.1093/nar/gkab831"
         },
+        "pubmed:34570223",
         "pmcid:PMC8682757"
       ],
       "sc:description": "MetaPlatanus is a de novo assembler for metagenome (microbiome). The features of this tool are as follows: (1) It can utilize various types of long-range information such as Oxford-Nanopore/PacBio long reads, mate-pairs (jumping libraries), and 10x linked reads (experimental). (2) Coverage depths, k-mer frequencies and results of the binning tool are also employed to extend sequences and correct mis-assemblies, reducing inter-species misassemblies. (3) Contig-assembly, scaffolding, gap-closing and binning are automatically executed at once. (4) MetaPlatanus requires at least one short-read paired-end library.",
@@ -89,35 +93,13 @@
       "sc:name": "MetaPlatanus",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:url": "https://github.com/rkajitani/MetaPlatanus"
     },
     {
-      "@id": "_:N8fe344cd3d674a499d5c6e96ed2d0d17",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N7c144a33a3a349a59886e93b4d2aa6e4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nc124305f83aa4246b58d2cb0ce334df6",
+      "@id": "_:N7852b80c2ffa44109b6bd368f5a3d23c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -128,8 +110,26 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkab831",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nd30f39f31fb14256bb39b28c1f2f71fc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N36f643b5ac4c4632884d54a340852534",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

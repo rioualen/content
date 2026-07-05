@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1752-0509-8-47",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/networkbma",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ka Yee Yeung",
       "bsc:input": {
-        "@id": "_:Nb3da8bbc35aa4e4ba8fdd2c9b40376b2"
+        "@id": "_:N2689e5c590124901848bf41f3dfed841"
       },
       "bsc:output": [
         {
-          "@id": "_:N98c2043e8563446aa808a840130fb5ac"
+          "@id": "_:N72d154b545cd416eb9cb7e08265ff2ee"
         },
         {
-          "@id": "_:N6bdf57a79b8d40208cc71e426e5276ed"
+          "@id": "_:N68d1c75ed9d143479a2952ac3ffd1bf8"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -67,27 +71,27 @@
         }
       ],
       "sc:citation": [
-        "pubmed:24742092",
-        "pmcid:PMC4006459",
         {
           "@id": "https://doi.org/10.1186/1752-0509-8-47"
-        }
+        },
+        "pubmed:24742092",
+        "pmcid:PMC4006459"
       ],
       "sc:description": "An extension of Bayesian Model Averaging (BMA) for network construction using time series gene expression data. Includes assessment functions and sample test data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3565"
+          "@id": "edam:operation_3083"
         },
         {
-          "@id": "edam:operation_3083"
+          "@id": "edam:operation_3565"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "networkBMA",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/networkBMA.html"
@@ -96,18 +100,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/networkBMA.html"
     },
     {
-      "@id": "_:N98c2043e8563446aa808a840130fb5ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N6bdf57a79b8d40208cc71e426e5276ed",
+      "@id": "_:N72d154b545cd416eb9cb7e08265ff2ee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -118,7 +111,18 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nb3da8bbc35aa4e4ba8fdd2c9b40376b2",
+      "@id": "_:N68d1c75ed9d143479a2952ac3ffd1bf8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N2689e5c590124901848bf41f3dfed841",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -127,10 +131,6 @@
         "@id": "edam:format_3033"
       },
       "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1752-0509-8-47",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

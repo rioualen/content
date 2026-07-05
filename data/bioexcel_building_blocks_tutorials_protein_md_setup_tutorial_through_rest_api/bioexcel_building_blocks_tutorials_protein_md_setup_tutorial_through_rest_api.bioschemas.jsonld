@@ -44,14 +44,14 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Genís Bayarri",
       "bsc:input": {
-        "@id": "_:Ndf23618deee845d0ae39d90824902e2b"
+        "@id": "_:N19dc357f399e43af984c7c55448157d9"
       },
       "bsc:output": [
         {
-          "@id": "_:N818e040785714c9aaad946a01e3b13e9"
+          "@id": "_:Nfe40de1d119e43718d53b82a5a5b2b56"
         },
         {
-          "@id": "_:N933a7df89f244d59a8293a4e5ecd4339"
+          "@id": "_:N19e09c1b68354b2d88efeec7b94be36e"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -61,53 +61,75 @@
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0176"
+        },
+        {
           "@id": "edam:topic_0081"
         },
         {
           "@id": "edam:topic_2814"
-        },
-        {
-          "@id": "edam:topic_0176"
         }
       ],
       "sc:author": "Genís Bayarri",
       "sc:citation": [
+        "pubmed:31506435",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
         },
-        "pmcid:PMC6736963",
-        "pubmed:31506435"
+        "pmcid:PMC6736963"
       ],
       "sc:description": "This tutorial aims to illustrate the process of setting up a simulation system containing a protein, step by step, using the BioExcel Building Blocks (biobb) REST API. The particular example used is the Lysozyme protein (PDB code 1AKI).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0477"
+          "@id": "edam:operation_2476"
         },
         {
-          "@id": "edam:operation_2476"
+          "@id": "edam:operation_0477"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks tutorials: Protein MD Setup tutorial through REST API",
       "sc:operatingSystem": [
-        "Linux",
         "Mac",
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://biobb-wf-md-setup-api.readthedocs.io/en/latest/index.html"
+          "@id": "http://mmb.irbbarcelona.org/biobb-api/rest"
         },
         {
-          "@id": "http://mmb.irbbarcelona.org/biobb-api/rest"
+          "@id": "https://biobb-wf-md-setup-api.readthedocs.io/en/latest/index.html"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "https://mmb.irbbarcelona.org/biobb/availability/tutorials/rest-api"
     },
     {
-      "@id": "_:N818e040785714c9aaad946a01e3b13e9",
+      "@id": "_:N19dc357f399e43af984c7c55448157d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nfe40de1d119e43718d53b82a5a5b2b56",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3910"
+      },
+      "sc:name": "Trajectory data"
+    },
+    {
+      "@id": "_:N19e09c1b68354b2d88efeec7b94be36e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3872"
@@ -121,28 +143,6 @@
         }
       ],
       "sc:name": "Topology data"
-    },
-    {
-      "@id": "_:N933a7df89f244d59a8293a4e5ecd4339",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3910"
-      },
-      "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:Ndf23618deee845d0ae39d90824902e2b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
     }
   ]
 }

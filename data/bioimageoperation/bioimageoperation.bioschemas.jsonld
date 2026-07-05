@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-9704-2925",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/bioimageoperation",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-9704-2925"
       },
       "bsc:input": {
-        "@id": "_:N31d50c359fc745c7940a0a4b6b0babaa"
+        "@id": "_:N8114e13ec3094463b5032ce21ca80df1"
       },
       "bsc:output": {
-        "@id": "_:N5e4d5069b7bf48868e905b0c37b77449"
+        "@id": "_:N82fb41cf5ad44434851e78cc2779f1a3"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -83,16 +79,24 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://joostdefolter.info/ant-research"
+          "@id": "https://github.com/folterj/BioImageOperation"
         },
         {
-          "@id": "https://github.com/folterj/BioImageOperation"
+          "@id": "https://joostdefolter.info/ant-research"
         }
       ],
       "sc:url": "https://joostdefolter.info"
     },
     {
-      "@id": "_:N31d50c359fc745c7940a0a4b6b0babaa",
+      "@id": "_:N82fb41cf5ad44434851e78cc2779f1a3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N8114e13ec3094463b5032ce21ca80df1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
@@ -100,12 +104,8 @@
       "sc:name": "Raw image"
     },
     {
-      "@id": "_:N5e4d5069b7bf48868e905b0c37b77449",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
+      "@id": "https://orcid.org/0000-0001-9704-2925",
+      "@type": "sc:Person"
     }
   ]
 }

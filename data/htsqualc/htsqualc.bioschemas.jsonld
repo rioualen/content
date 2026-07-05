@@ -36,38 +36,42 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/S41598-021-98124-3",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/htsqualc",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9a74d47cf223459abb6ac8df90ccae5f"
+        "@id": "_:Nc87a8929c89e4902bc5de830b8b3d9e4"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb1d61b3b0a97444382a816fea948dbea"
+          "@id": "_:Ncf66f60b804449ebbdd7372708a5d1d1"
         },
         {
-          "@id": "_:N6847f1e742964bb1a16371ff5791f141"
+          "@id": "_:N7f7892df7c4f4498bb8fafc9feac84a9"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3572"
-        },
-        {
           "@id": "edam:topic_3070"
         },
         {
           "@id": "edam:topic_3168"
+        },
+        {
+          "@id": "edam:topic_3572"
         }
       ],
       "sc:citation": [
-        "pubmed:34548573",
         "pmcid:PMC8455540",
         {
           "@id": "https://doi.org/10.1038/S41598-021-98124-3"
-        }
+        },
+        "pubmed:34548573"
       ],
       "sc:description": "HTSQualC is a flexible and one-step quality control software for high-throughput sequencing data analysis.",
       "sc:featureList": [
@@ -75,48 +79,24 @@
           "@id": "edam:operation_3192"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3218"
         },
         {
-          "@id": "edam:operation_3218"
+          "@id": "edam:operation_3695"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "HTSQualC",
       "sc:operatingSystem": [
-        "Mac",
+        "Linux",
         "Windows",
-        "Linux"
+        "Mac"
       ],
       "sc:url": "https://github.com/reneshbedre/HTSQualC"
     },
     {
-      "@id": "_:Nb1d61b3b0a97444382a816fea948dbea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N6847f1e742964bb1a16371ff5791f141",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:N9a74d47cf223459abb6ac8df90ccae5f",
+      "@id": "_:Nc87a8929c89e4902bc5de830b8b3d9e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -127,8 +107,28 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1038/S41598-021-98124-3",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncf66f60b804449ebbdd7372708a5d1d1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N7f7892df7c4f4498bb8fafc9feac84a9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:name": "Statistical estimate score"
     }
   ]
 }

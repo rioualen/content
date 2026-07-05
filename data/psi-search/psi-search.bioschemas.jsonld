@@ -36,18 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/psi-search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nb0c76984db67427b88d31aa767d6caa3"
+        "@id": "_:Naa801a00c07a4050b8918f3c91b56a05"
       },
       "bsc:output": [
         {
-          "@id": "_:N9ad13c5ea2094bbc82805e858e6b050d"
+          "@id": "_:N24a92cbad42941dc841b2f3d46b9eeae"
         },
         {
-          "@id": "_:Nbf90917507734e0d8a70bc91d2e8e908"
+          "@id": "_:N6946d79339a443189a421309cfd7aeda"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -60,21 +72,21 @@
       },
       "sc:author": "Bill Pearson",
       "sc:citation": [
-        "pmcid:PMC9252731",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/bts240"
+        },
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
         "pubmed:38597606",
+        "pmcid:PMC3371869",
+        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
         "pmcid:PMC11223882",
         "pubmed:22539666",
-        "pubmed:35412617",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/bts240"
-        },
-        "pmcid:PMC3371869"
+        "pubmed:35412617"
       ],
       "sc:description": "Iterative protein sequence similarity search based on Smith & Waterman algorithm with PSI-BLAST profile construction : find distantly related protein sequences.",
       "sc:featureList": {
@@ -82,30 +94,30 @@
       },
       "sc:name": "PSI-Search (EBI)",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
+        "Windows",
         "Mac"
       ],
       "sc:provider": [
-        "University of Virginia",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "University of Virginia"
       ],
       "sc:softwareHelp": [
+        {
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+        },
         {
           "@id": "https://github.com/wrpearson/fasta36"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
-        {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/sss/psisearch"
     },
     {
-      "@id": "_:N9ad13c5ea2094bbc82805e858e6b050d",
+      "@id": "_:N24a92cbad42941dc841b2f3d46b9eeae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2854"
@@ -113,7 +125,7 @@
       "sc:name": "Position-specific scoring matrix"
     },
     {
-      "@id": "_:Nbf90917507734e0d8a70bc91d2e8e908",
+      "@id": "_:N6946d79339a443189a421309cfd7aeda",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -121,24 +133,12 @@
       "sc:name": "Sequence search results"
     },
     {
-      "@id": "_:Nb0c76984db67427b88d31aa767d6caa3",
+      "@id": "_:Naa801a00c07a4050b8918f3c91b56a05",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts240",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

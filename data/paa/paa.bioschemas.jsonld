@@ -36,30 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw037",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-0737-1114",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/paa",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N940940649b5a459f8e73d07ef5927e80"
+          "@id": "_:N67277845700f4bc59acb7a17f1823a2e"
         },
         {
-          "@id": "_:N5c28e4641a6442ffb6660b891acb1be7"
+          "@id": "_:N2e24d318f30349beb96609cb657d3aa1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6917b9ecd2f24232a1138c38b14c99d4"
+          "@id": "_:N93a4b2edcb624278a3d705e512cae664"
         },
         {
-          "@id": "_:N0c8bc127cbdb4507a722349d4e976a0d"
+          "@id": "_:N7a2eec6394d847f689080842a95ae810"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -82,11 +74,11 @@
         "@id": "http://orcid.org/0000-0003-0737-1114"
       },
       "sc:citation": [
-        "pubmed:26803161",
-        "pmcid:PMC4866526",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw037"
-        }
+        },
+        "pmcid:PMC4866526",
+        "pubmed:26803161"
       ],
       "sc:contributor": "Martin Eisenacher",
       "sc:description": "It imports single color (protein) microarray data that has been saved in gpr file format. After preprocessing univariate feature preselection is performed. Subsequently, a multivariate feature selection is conducted to discover biomarker candidates. Thereto, either a frequency-based backwards elimination aproach or ensemble feature selection can be used. It provides a complete toolbox of analysis tools including several different plots for results examination and evaluation.",
@@ -97,15 +89,15 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "PAA - Protein Array Analyzer",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
+        "Windows",
         "Mac"
       ],
       "sc:provider": [
-        "This work is supported by de.NBI, a project of the BMBF [FKZ 031 A 534A].",
+        "This work was supported by P.U.R.E., a project of Nordrhein-Westfalen, a federal state of Germany.",
         "Ruhr-Universitaet Bochum, Medizinisches Proteom-Center (MPC)",
         "BioInfra.Prot",
-        "This work was supported by P.U.R.E., a project of Nordrhein-Westfalen, a federal state of Germany."
+        "This work is supported by de.NBI, a project of the BMBF [FKZ 031 A 534A]."
       ],
       "sc:softwareHelp": {
         "@id": "https://www.bioconductor.org/packages/release/bioc/manuals/PAA/man/PAA.pdf"
@@ -114,18 +106,26 @@
       "sc:url": "http://bioconductor.org/packages/PAA/"
     },
     {
-      "@id": "_:N6917b9ecd2f24232a1138c38b14c99d4",
+      "@id": "_:N67277845700f4bc59acb7a17f1823a2e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2872"
+        "@id": "edam:data_3110"
+      },
+      "sc:name": "Raw microarray data"
+    },
+    {
+      "@id": "_:N2e24d318f30349beb96609cb657d3aa1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3671"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_3475"
       },
-      "sc:name": "ID list"
+      "sc:name": "Text"
     },
     {
-      "@id": "_:N0c8bc127cbdb4507a722349d4e976a0d",
+      "@id": "_:N93a4b2edcb624278a3d705e512cae664",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -141,23 +141,23 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N940940649b5a459f8e73d07ef5927e80",
+      "@id": "_:N7a2eec6394d847f689080842a95ae810",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3671"
+        "@id": "edam:data_2872"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_3475"
       },
-      "sc:name": "Text"
+      "sc:name": "ID list"
     },
     {
-      "@id": "_:N5c28e4641a6442ffb6660b891acb1be7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3110"
-      },
-      "sc:name": "Raw microarray data"
+      "@id": "http://orcid.org/0000-0003-0737-1114",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw037",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,7 +36,15 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-9373-7930",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-7848-8216",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3139-3700",
       "@type": "sc:Person"
     },
     {
@@ -44,17 +52,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "FireProt ASR team",
       "bsc:input": {
-        "@id": "_:N90cf9feff2f246b587b26ad8573322c7"
+        "@id": "_:N40b3f3f8428b4733aa18f81dee31f1e2"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc69899b4252c4b7b8934a053fcfc845f"
+          "@id": "_:Nb036e1d6d7a64bbfaa363a41dc53dc06"
         },
         {
-          "@id": "_:N28fb1884318c483796ffd9cb451e91bd"
+          "@id": "_:N34c1548fd6dc422db533316f23bc61d5"
         },
         {
-          "@id": "_:N5cb6454c87814e0ebac84e92d9357987"
+          "@id": "_:Ne7dcd4ee13874295bcaa25e589a3d264"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -72,17 +80,17 @@
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0001-9373-7930"
+          "@id": "https://orcid.org/0000-0003-3139-3700"
         },
         {
-          "@id": "https://orcid.org/0000-0003-3139-3700"
+          "@id": "https://orcid.org/0000-0001-9373-7930"
         }
       ],
       "sc:contributor": [
+        "Rayyan Khan",
         {
           "@id": "https://orcid.org/0000-0002-7848-8216"
         },
-        "Rayyan Khan",
         {
           "@id": "https://orcid.org/0000-0002-6803-0340"
         }
@@ -90,10 +98,10 @@
       "sc:description": "FireProt-ASR is a web server for an automated calculation of ancestral sequences. Fireprot-ASR allows you to perform ancestral sequence reconstruction starting from a single protein sequence. The pipeline first compiles a dataset of catalytically similar protein sequences, aligns them, construct their phylogenetic tree, and then reconstruct ancestral nodes. It also allows user to input their own data and start from a different point in the pipeline.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3478"
+          "@id": "edam:operation_0492"
         },
         {
-          "@id": "edam:operation_0492"
+          "@id": "edam:operation_3478"
         },
         {
           "@id": "edam:operation_0346"
@@ -106,15 +114,15 @@
       "sc:license": "Proprietary",
       "sc:name": "FireProt ASR",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
-        "International Centre for Clinical Research, Brno, Czech Republic",
         "Masaryk University, Brno, Czech Republic",
-        "ELIXIR-CZ",
         "Brno University of Technology, Brno, Czech Republic",
+        "International Centre for Clinical Research, Brno, Czech Republic",
+        "ELIXIR-CZ",
         "Loschmidt Laboratories"
       ],
       "sc:softwareHelp": [
@@ -132,18 +140,7 @@
       "sc:url": "https://loschmidt.chemi.muni.cz/fireprotasr/"
     },
     {
-      "@id": "_:N90cf9feff2f246b587b26ad8573322c7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nc69899b4252c4b7b8934a053fcfc845f",
+      "@id": "_:Nb036e1d6d7a64bbfaa363a41dc53dc06",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -154,18 +151,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N28fb1884318c483796ffd9cb451e91bd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N5cb6454c87814e0ebac84e92d9357987",
+      "@id": "_:N34c1548fd6dc422db533316f23bc61d5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -176,15 +162,29 @@
       "sc:name": "Protein sequence alignment"
     },
     {
-      "@id": "https://orcid.org/0000-0003-3139-3700",
-      "@type": "sc:Person"
+      "@id": "_:Ne7dcd4ee13874295bcaa25e589a3d264",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N40b3f3f8428b4733aa18f81dee31f1e2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
     },
     {
       "@id": "https://orcid.org/0000-0002-6803-0340",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9373-7930",
       "@type": "sc:Person"
     }
   ]

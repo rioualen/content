@@ -36,35 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/065565",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/matrix-clustering",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Jaime Castro-Mondragon",
         "Jacques van Helden",
+        "Jaime Castro-Mondragon",
         "Morgane Thomas-Chollier"
       ],
       "bsc:input": {
-        "@id": "_:N5b5d53bcbabd414da19b1dcef0e7c576"
+        "@id": "_:N54137f35681c4b639595c060f2b9d009"
       },
       "bsc:output": [
         {
-          "@id": "_:Na38cb0647b8d4b90a228ca9907f34be7"
+          "@id": "_:N28378679ba2c45cdac6be79d76ddbf5f"
         },
         {
-          "@id": "_:N0858de20f7844436865b3e993560c2e9"
+          "@id": "_:N32ec2536e0784ba1aaa5df99afe0bc73"
         },
         {
-          "@id": "_:N1f413ba172e34d89a2cd7a550af788d2"
+          "@id": "_:Ncf83daa3244e4d98bc87558a8f2be673"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -80,23 +76,23 @@
       },
       "sc:contributor": [
         "Denis Thieffry",
-        "Jacques van Helden",
-        "Morgane Thomas-Chollier"
+        "Morgane Thomas-Chollier",
+        "Jacques van Helden"
       ],
       "sc:description": "Taking as input one or several sets of position-specific scoring matrices, this program applies hierarchical clustering to identify clusters of similar motifs. It produces a set of trees (one per cluster) and builds branch motifs at each node of each tree by merging the matrices of all descendent nodes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3459"
+          "@id": "edam:operation_0240"
         },
         {
-          "@id": "edam:operation_0240"
+          "@id": "edam:operation_3459"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "matrix-clustering",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://rsat.eu/"
@@ -105,7 +101,23 @@
       "sc:url": "http://rsat.eu/"
     },
     {
-      "@id": "_:Na38cb0647b8d4b90a228ca9907f34be7",
+      "@id": "_:N54137f35681c4b639595c060f2b9d009",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1361"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_1419"
+        }
+      ],
+      "sc:name": "Position frequency matrix"
+    },
+    {
+      "@id": "_:N28378679ba2c45cdac6be79d76ddbf5f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -113,7 +125,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N0858de20f7844436865b3e993560c2e9",
+      "@id": "_:N32ec2536e0784ba1aaa5df99afe0bc73",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1246"
@@ -121,7 +133,7 @@
       "sc:name": "Sequence cluster (nucleic acid)"
     },
     {
-      "@id": "_:N1f413ba172e34d89a2cd7a550af788d2",
+      "@id": "_:Ncf83daa3244e4d98bc87558a8f2be673",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1361"
@@ -132,20 +144,8 @@
       "sc:name": "Position frequency matrix"
     },
     {
-      "@id": "_:N5b5d53bcbabd414da19b1dcef0e7c576",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1361"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1419"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Position frequency matrix"
+      "@id": "https://doi.org/10.1101/065565",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

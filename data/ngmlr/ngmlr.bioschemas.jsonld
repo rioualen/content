@@ -36,43 +36,39 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41592-018-0001-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ngmlr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Philipp Rescheneder",
       "bsc:input": [
         {
-          "@id": "_:Na597d60e290a4b10994c50ae88045d5b"
+          "@id": "_:N6710ff9aa74f42e6958698d64b1025d3"
         },
         {
-          "@id": "_:Nc3a47f9f628d46bf8e8fda34b29bb190"
+          "@id": "_:Nf0f0a63fe80449f68f3599d46412706a"
         }
       ],
       "bsc:output": {
-        "@id": "_:N2bd040d63f944311ae56f56ad7fdf745"
+        "@id": "_:N9920fd7b969646d7ab3adbef92a6e716"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3175"
+        },
+        {
           "@id": "edam:topic_3168"
         },
         {
           "@id": "edam:topic_0102"
-        },
-        {
-          "@id": "edam:topic_3175"
         }
       ],
       "sc:citation": [
         "pubmed:29713083",
+        "pmcid:PMC5990442",
         {
           "@id": "https://doi.org/10.1038/s41592-018-0001-7"
-        },
-        "pmcid:PMC5990442"
+        }
       ],
       "sc:description": "An algorithm to map third generation long-read sequencing data (PacBio and Oxford Nanopore) to a reference genome with a focus on reads that span structural variation.",
       "sc:featureList": [
@@ -90,8 +86,8 @@
       "sc:license": "MIT",
       "sc:name": "NGMLR",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
+        "Windows",
         "Mac"
       ],
       "sc:softwareHelp": {
@@ -100,18 +96,7 @@
       "sc:url": "https://github.com/philres/ngmlr"
     },
     {
-      "@id": "_:Na597d60e290a4b10994c50ae88045d5b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:Nc3a47f9f628d46bf8e8fda34b29bb190",
+      "@id": "_:N6710ff9aa74f42e6958698d64b1025d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -122,7 +107,18 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:N2bd040d63f944311ae56f56ad7fdf745",
+      "@id": "_:Nf0f0a63fe80449f68f3599d46412706a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Data reference"
+    },
+    {
+      "@id": "_:N9920fd7b969646d7ab3adbef92a6e716",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -131,6 +127,10 @@
         "@id": "edam:format_2573"
       },
       "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41592-018-0001-7",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

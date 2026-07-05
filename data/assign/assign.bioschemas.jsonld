@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv031",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/assign",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ying Shen",
       "bsc:input": [
         {
-          "@id": "_:N4ca91fd0c6604d7cb27aac32532f6732"
+          "@id": "_:N0f7bd773e085498f86089937fd565e0e"
         },
         {
-          "@id": "_:Ne2b22eb9aa0948588cd27091c14fa51d"
+          "@id": "_:N40e38b7cd8d94e4d8a093cf3ea72f1a3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb864b71d439349379548a9cdb932c95e"
+          "@id": "_:Ne5c99077b654449c91bd6545e739d48d"
         },
         {
-          "@id": "_:N532fa780fc594b668a56f04f7214927a"
+          "@id": "_:N51c04a42bcd5416691bcbc1e643fbbfd"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -69,11 +73,11 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4443674",
-        "pubmed:25617415",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv031"
-        }
+        },
+        "pubmed:25617415",
+        "pmcid:PMC4443674"
       ],
       "sc:description": "Tool to evaluate the pathway deregulation/activation status in patient samples. It employs a Bayesian factor analysis approach to adapt predetermined pathway signatures derived from knowledge-based literatures or from perturbation experiments to the cell-/tissue-specific pathway signatures. The deregulation/activation level of each context-specific pathway is quantified to a score, which represents the extent to which a patient sample encompasses the pathway deregulation/activation signature.",
       "sc:featureList": {
@@ -83,8 +87,8 @@
       "sc:name": "ASSIGN",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ASSIGN.html"
@@ -93,23 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ASSIGN.html"
     },
     {
-      "@id": "_:N4ca91fd0c6604d7cb27aac32532f6732",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2013"
-        },
-        {
-          "@id": "edam:format_2058"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Ne2b22eb9aa0948588cd27091c14fa51d",
+      "@id": "_:N0f7bd773e085498f86089937fd565e0e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -125,7 +113,23 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nb864b71d439349379548a9cdb932c95e",
+      "@id": "_:N40e38b7cd8d94e4d8a093cf3ea72f1a3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2058"
+        },
+        {
+          "@id": "edam:format_2013"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Ne5c99077b654449c91bd6545e739d48d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -136,7 +140,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N532fa780fc594b668a56f04f7214927a",
+      "@id": "_:N51c04a42bcd5416691bcbc1e643fbbfd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -145,10 +149,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Score"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv031",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

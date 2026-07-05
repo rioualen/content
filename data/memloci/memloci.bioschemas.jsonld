@@ -36,46 +36,46 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-0274-5669",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btr108",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0274-5669",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/memloci",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Andrea Pierleoni",
         {
           "@id": "https://orcid.org/0000-0002-0274-5669"
-        }
+        },
+        "Andrea Pierleoni"
       ],
       "bsc:input": {
-        "@id": "_:N379793ef8dcb4f8a84ba818582dcbef0"
+        "@id": "_:N3ae721b870c647dfb82260e8371b4f6a"
       },
       "bsc:output": {
-        "@id": "_:Nbd41423df3794ddaa3d8451b02fbef2c"
+        "@id": "_:N7e3b8e7be9f247108e0c2d66a2c73756"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0820"
-        },
-        {
           "@id": "edam:topic_0140"
         },
         {
           "@id": "edam:topic_0621"
+        },
+        {
+          "@id": "edam:topic_0820"
         }
       ],
       "sc:citation": [
+        "pubmed:21367869",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr108"
-        },
-        "pubmed:21367869"
+        }
       ],
       "sc:description": "Predictor for the subcellular localization of proteins associated or inserted in eukaryotes membranes.",
       "sc:featureList": {
@@ -84,8 +84,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "MemLoci",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
+        "Windows",
         "Mac"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
@@ -96,18 +96,7 @@
       "sc:url": "https://mu2py.biocomp.unibo.it/memloci"
     },
     {
-      "@id": "_:Nbd41423df3794ddaa3d8451b02fbef2c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N379793ef8dcb4f8a84ba818582dcbef0",
+      "@id": "_:N3ae721b870c647dfb82260e8371b4f6a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -116,6 +105,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:N7e3b8e7be9f247108e0c2d66a2c73756",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
     }
   ]
 }

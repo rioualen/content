@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts192",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/starank",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Juliane Siebourg",
       "bsc:input": {
-        "@id": "_:Ne2602b0ecf97416e9f2275c1356a5741"
+        "@id": "_:N8b240d4c02a943b2a370c7c820c44be4"
       },
       "bsc:output": {
-        "@id": "_:N2410bfe9d10742bd823a5d6d350c009f"
+        "@id": "_:N58a33610a35d4ed8b9828217c6fcd635"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -63,10 +59,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:22513992",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts192"
-        },
-        "pubmed:22513992"
+        }
       ],
       "sc:description": "Detecting all relevant variables from a data set is challenging, especially when only few samples are available and data is noisy. Stability ranking provides improved variable rankings of increased robustness using resampling or subsampling.",
       "sc:featureList": {
@@ -75,9 +71,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "staRank",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/staRank.html"
@@ -86,7 +82,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/staRank.html"
     },
     {
-      "@id": "_:Ne2602b0ecf97416e9f2275c1356a5741",
+      "@id": "_:N58a33610a35d4ed8b9828217c6fcd635",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N8b240d4c02a943b2a370c7c820c44be4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -97,15 +104,8 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:N2410bfe9d10742bd823a5d6d350c009f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
+      "@id": "https://doi.org/10.1093/bioinformatics/bts192",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

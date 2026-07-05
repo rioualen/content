@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1038/s41597-019-0177-4",
       "@type": "sc:CreativeWork"
     },
@@ -47,21 +51,21 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N3f6f5899cda94b82bad1a5c7e474f434"
+          "@id": "_:N15fcf328b5154f019edb248db5d8b25c"
         },
         {
-          "@id": "_:Nd2a44db83aa04722b89f05494afe90b7"
+          "@id": "_:Nba820167873e44beaa98732d57b85581"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4a9054c7ce7040d8b4c5190b1f1800c6"
+          "@id": "_:Nd00b48055566431ab55f2950a73a5f36"
         },
         {
-          "@id": "_:N5c5ef39821bc4a8aaea9b217c3f56230"
+          "@id": "_:N3e6dc2feeb7f4be396bdfc94f81d84ed"
         },
         {
-          "@id": "_:N917770dd155348ca9783e0c23d3e71b5"
+          "@id": "_:N669508d1afe44f27b819f078ec02b4a6"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -80,10 +84,10 @@
       ],
       "sc:citation": [
         "pmcid:PMC6736963",
-        "pubmed:31506435",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
-        }
+        },
+        "pubmed:31506435"
       ],
       "sc:description": "This tutorial aims to illustrate how to compute a fast-growth mutation free energy calculation, step by step, using the BioExcel Building Blocks library (biobb). The particular example used is the Staphylococcal nuclease protein (PDB code 1STN), a small, minimal protein, appropriate for a short tutorial.",
       "sc:featureList": [
@@ -101,9 +105,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks tutorials: Mutation Free Energy Calculations",
       "sc:operatingSystem": [
-        "Mac",
+        "Linux",
         "Windows",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": "BioExcel Centre of Excellence",
       "sc:softwareHelp": {
@@ -113,40 +117,23 @@
       "sc:url": "http://mmb.irbbarcelona.org/biobb/availability/tutorials/pmx"
     },
     {
-      "@id": "_:N4a9054c7ce7040d8b4c5190b1f1800c6",
+      "@id": "_:N15fcf328b5154f019edb248db5d8b25c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3779"
+        "@id": "edam:data_3872"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Annotated text"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3880"
+        },
+        {
+          "@id": "edam:format_3883"
+        }
+      ],
+      "sc:name": "Topology data"
     },
     {
-      "@id": "_:N5c5ef39821bc4a8aaea9b217c3f56230",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3905"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Histogram"
-    },
-    {
-      "@id": "_:N917770dd155348ca9783e0c23d3e71b5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3910"
-      },
-      "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:N3f6f5899cda94b82bad1a5c7e474f434",
+      "@id": "_:Nba820167873e44beaa98732d57b85581",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -157,24 +144,37 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:Nd2a44db83aa04722b89f05494afe90b7",
+      "@id": "_:Nd00b48055566431ab55f2950a73a5f36",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3872"
+        "@id": "edam:data_3779"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3883"
-        },
-        {
-          "@id": "edam:format_3880"
-        }
-      ],
-      "sc:name": "Topology data"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Annotated text"
     },
     {
-      "@id": "https://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
+      "@id": "_:N3e6dc2feeb7f4be396bdfc94f81d84ed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3910"
+      },
+      "sc:name": "Trajectory data"
+    },
+    {
+      "@id": "_:N669508d1afe44f27b819f078ec02b4a6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3905"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Histogram"
     }
   ]
 }

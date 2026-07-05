@@ -36,42 +36,46 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.2202/1544-6115.1727",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ternarynet",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Matthew N. McCall",
       "bsc:input": [
         {
-          "@id": "_:N6e1d9ff88b8940feb0e4ea3bfc4e09bf"
+          "@id": "_:N5ffcf65f285949d7836cd31ce4eb3b1b"
         },
         {
-          "@id": "_:N43c8fd4858034788a75007427d6a6edf"
+          "@id": "_:N8efc0d6170e5485e802a73d7cbca267c"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ndbc2c8982c29415697b2d92d13ec91fe"
+        "@id": "_:Nbd52bfe4f7de4b0aa7f1e6e3fa63c8e0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2229"
-        },
         {
           "@id": "edam:topic_2269"
         },
         {
           "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_2229"
         }
       ],
       "sc:citation": [
-        "pubmed:23089817",
-        "pmcid:PMC3215431",
         {
           "@id": "https://doi.org/10.2202/1544-6115.1727"
-        }
+        },
+        "pubmed:23089817",
+        "pmcid:PMC3215431"
       ],
       "sc:description": "A computational Bayesian approach to ternary gene regulatory network estimation from gene perturbation experiments.",
       "sc:featureList": {
@@ -81,8 +85,8 @@
       "sc:name": "ternarynet",
       "sc:operatingSystem": [
         "Windows",
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ternarynet.html"
@@ -91,23 +95,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ternarynet.html"
     },
     {
-      "@id": "_:N6e1d9ff88b8940feb0e4ea3bfc4e09bf",
+      "@id": "_:Nbd52bfe4f7de4b0aa7f1e6e3fa63c8e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3112"
+        "@id": "edam:data_0951"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Gene expression matrix"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:N43c8fd4858034788a75007427d6a6edf",
+      "@id": "_:N5ffcf65f285949d7836cd31ce4eb3b1b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -123,19 +122,20 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:Ndbc2c8982c29415697b2d92d13ec91fe",
+      "@id": "_:N8efc0d6170e5485e802a73d7cbca267c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0951"
+        "@id": "edam:data_3112"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "https://doi.org/10.2202/1544-6115.1727",
-      "@type": "sc:CreativeWork"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Gene expression matrix"
     }
   ]
 }

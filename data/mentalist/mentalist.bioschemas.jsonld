@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1099/mgen.0.000146",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mentalist",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2801e2e51ce54d0ba1426a39b2ac5dbd"
+          "@id": "_:N2181260130e34381a02e4152cb91db37"
         },
         {
-          "@id": "_:N9ec551c887a6451fbb8ee553518d50e6"
+          "@id": "_:N529775d768e04bcebd37031499d9952f"
         }
       ],
       "bsc:output": {
-        "@id": "_:N44ab446a447d4780a2f697da9788354d"
+        "@id": "_:Ne921749dace641738583704350fea61f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -55,11 +59,11 @@
         "@id": "edam:topic_0199"
       },
       "sc:citation": [
-        "pmcid:PMC5857373",
         "pubmed:29319471",
         {
           "@id": "https://doi.org/10.1099/mgen.0.000146"
-        }
+        },
+        "pmcid:PMC5857373"
       ],
       "sc:description": "A MLST caller based on a k-mer counting algorithm and written in the Julia language, specifically designed and implemented to handle large typing schemes.",
       "sc:featureList": {
@@ -76,29 +80,7 @@
       "sc:url": "https://github.com/WGS-TB/MentaLiST"
     },
     {
-      "@id": "_:N2801e2e51ce54d0ba1426a39b2ac5dbd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3210"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3590"
-      },
-      "sc:name": "Genome index"
-    },
-    {
-      "@id": "_:N9ec551c887a6451fbb8ee553518d50e6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3497"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence (raw)"
-    },
-    {
-      "@id": "_:N44ab446a447d4780a2f697da9788354d",
+      "@id": "_:Ne921749dace641738583704350fea61f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3492"
@@ -109,8 +91,26 @@
       "sc:name": "Nucleic acid signature"
     },
     {
-      "@id": "https://doi.org/10.1099/mgen.0.000146",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2181260130e34381a02e4152cb91db37",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3497"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "_:N529775d768e04bcebd37031499d9952f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3210"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3590"
+      },
+      "sc:name": "Genome index"
     }
   ]
 }

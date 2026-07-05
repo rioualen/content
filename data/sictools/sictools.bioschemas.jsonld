@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sictools",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Xiaobin Xing",
       "bsc:input": {
-        "@id": "_:Nd05ca014db04421698cd29a91a53f4cb"
+        "@id": "_:N291b70c75f564458b1b8e6f4c59fc7b4"
       },
       "bsc:output": {
-        "@id": "_:N0fe8baabc0b94ebdba0a08f8033a2743"
+        "@id": "_:Nb90141f1eeda4129866a8193c81cd9d1"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -62,24 +66,24 @@
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        "pmcid:PMC4509590",
+        "pubmed:25633503"
       ],
       "sc:description": "This package is to find SNV/Indel differences between two bam files with near relationship in a way of pairwise comparison thourgh each base position across the genome region of interest. The difference is inferred by fisher test and euclidean distance, the input of which is the base count (A,T,G,C) in a given position and read counts for indels that span no less than 2bp on both sides of indel region.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_2403"
         },
         {
-          "@id": "edam:operation_2403"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "SICtools",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SICtools.html"
@@ -88,7 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SICtools.html"
     },
     {
-      "@id": "_:N0fe8baabc0b94ebdba0a08f8033a2743",
+      "@id": "_:Nb90141f1eeda4129866a8193c81cd9d1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -99,7 +103,7 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:Nd05ca014db04421698cd29a91a53f4cb",
+      "@id": "_:N291b70c75f564458b1b8e6f4c59fc7b4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -108,10 +112,6 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

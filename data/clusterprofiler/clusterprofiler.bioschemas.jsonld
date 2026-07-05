@@ -36,37 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1089/omi.2011.0118",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-6485-8781",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/clusterprofiler",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-6485-8781"
       },
       "bsc:input": {
-        "@id": "_:N0751d3f9d98e4b7888dad81e282422d8"
+        "@id": "_:Nd5e5184cb7e748c2b8c59c77228f0ea4"
       },
       "bsc:output": [
         {
-          "@id": "_:N56fabdfe4ad54f629e4b29a543d0fab1"
+          "@id": "_:Nd48bad0635104ce1b91a9d481d0bce06"
         },
         {
-          "@id": "_:N1e84e2e914764b43b7f198972411985e"
+          "@id": "_:N78d1197e78564756aefd88b56d1abad5"
         },
         {
-          "@id": "_:Nfb0408d321e64e369036cbc9f73951f4"
+          "@id": "_:N91283f02b1834203bdb48c8dcc6d8f96"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -77,28 +69,28 @@
         }
       ],
       "sc:citation": [
+        "pubmed:22455463",
         {
           "@id": "https://doi.org/10.1089/omi.2011.0118"
         },
-        "pubmed:22455463",
         "pmcid:PMC3339379"
       ],
       "sc:description": "This package implements methods to analyze and visualize functional profiles (GO and KEGG) of gene and gene clusters.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Artistic-2.0",
       "sc:name": "clusterProfiler",
       "sc:operatingSystem": [
-        "Mac",
+        "Linux",
         "Windows",
-        "Linux"
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/clusterProfiler.html"
@@ -107,18 +99,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/clusterProfiler.html"
     },
     {
-      "@id": "_:N56fabdfe4ad54f629e4b29a543d0fab1",
+      "@id": "_:Nd5e5184cb7e748c2b8c59c77228f0ea4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_1027"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3547"
+        "@id": "edam:format_2330"
       },
-      "sc:name": "Plot"
+      "sc:name": "Gene ID (NCBI)"
     },
     {
-      "@id": "_:N1e84e2e914764b43b7f198972411985e",
+      "@id": "_:Nd48bad0635104ce1b91a9d481d0bce06",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0862"
@@ -129,7 +121,18 @@
       "sc:name": "Dotplot"
     },
     {
-      "@id": "_:Nfb0408d321e64e369036cbc9f73951f4",
+      "@id": "_:N78d1197e78564756aefd88b56d1abad5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N91283f02b1834203bdb48c8dcc6d8f96",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -140,15 +143,12 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N0751d3f9d98e4b7888dad81e282422d8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1027"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID (NCBI)"
+      "@id": "http://orcid.org/0000-0002-6485-8781",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1089/omi.2011.0118",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

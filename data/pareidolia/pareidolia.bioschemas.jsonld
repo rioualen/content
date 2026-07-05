@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-1126-1535",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/pareidolia",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N59c6fa0cd136446a96c9cbd3b056c94a"
+        "@id": "_:N7bc58162408c41a892abfb541bdbc9b7"
       },
       "bsc:output": {
-        "@id": "_:N95c405fedf6c495599eb83f2982b7c4a"
+        "@id": "_:Nfd92de7b26534ebfb2a4f1ae728fa03c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0654"
+        },
         {
           "@id": "edam:topic_3473"
         },
         {
           "@id": "edam:topic_3173"
-        },
-        {
-          "@id": "edam:topic_0654"
         }
       ],
       "sc:author": {
@@ -90,7 +86,18 @@
       "sc:url": "https://github.com/koszullab/pareidolia"
     },
     {
-      "@id": "_:N95c405fedf6c495599eb83f2982b7c4a",
+      "@id": "_:N7bc58162408c41a892abfb541bdbc9b7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2856"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3590"
+      },
+      "sc:name": "Structural distance matrix"
+    },
+    {
+      "@id": "_:Nfd92de7b26534ebfb2a4f1ae728fa03c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -101,15 +108,8 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:N59c6fa0cd136446a96c9cbd3b056c94a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2856"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3590"
-      },
-      "sc:name": "Structural distance matrix"
+      "@id": "https://orcid.org/0000-0002-1126-1535",
+      "@type": "sc:Person"
     }
   ]
 }

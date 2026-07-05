@@ -36,53 +36,45 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-5242-6060",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.mri.2023.03.012",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/n4_bias_filter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N60498896316644898c983668b3cb563e"
+          "@id": "_:N8b52faddcb4d426cb63bc81072d0fa7b"
         },
         {
-          "@id": "_:N9268134fb1eb475fa1b16f39b6c94c6c"
+          "@id": "_:N4e1602b6cd164ddfb52813f62886c23c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na7ae355531c0406a85a25f24f59b1067"
+          "@id": "_:N5215c3128c9d4bb3a28eed703a385964"
         },
         {
-          "@id": "_:Nc74598b4b3b74394bf421f2399fb5b50"
+          "@id": "_:N1d42a4e76e9a4320af1785d29abb0bc3"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
-        },
-        {
           "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0001-5242-6060"
       },
       "sc:citation": [
-        "pubmed:37004467",
         {
           "@id": "https://doi.org/10.1016/j.mri.2023.03.012"
-        }
+        },
+        "pubmed:37004467"
       ],
       "sc:description": "The tool is designed to perform image pre-processing to reduce the bias field effect, improving the quality of the image. Two main functionalities are offered: (1) Apply N4 filter to image/images (either with the default parameters values or with parameters values defined by the user) (2) Find the optimal configuration of the N4 filter for specific image/images by measuring the Full Width at Half Maximum (FWHM) of the periprostatic fat distribution.",
       "sc:featureList": [
@@ -97,8 +89,8 @@
       "sc:name": "N4 Bias Filter",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
@@ -112,7 +104,7 @@
       "sc:url": "https://cbml-gitlab.ics.forth.gr/adovrou/n4biasfilter/-/tree/eucaim?ref_type=heads"
     },
     {
-      "@id": "_:Na7ae355531c0406a85a25f24f59b1067",
+      "@id": "_:N8b52faddcb4d426cb63bc81072d0fa7b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -123,7 +115,18 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nc74598b4b3b74394bf421f2399fb5b50",
+      "@id": "_:N4e1602b6cd164ddfb52813f62886c23c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N5215c3128c9d4bb3a28eed703a385964",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -134,7 +137,7 @@
       "sc:name": "Text"
     },
     {
-      "@id": "_:N60498896316644898c983668b3cb563e",
+      "@id": "_:N1d42a4e76e9a4320af1785d29abb0bc3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -145,15 +148,12 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N9268134fb1eb475fa1b16f39b6c94c6c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
+      "@id": "https://doi.org/10.1016/j.mri.2023.03.012",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5242-6060",
+      "@type": "sc:Person"
     }
   ]
 }

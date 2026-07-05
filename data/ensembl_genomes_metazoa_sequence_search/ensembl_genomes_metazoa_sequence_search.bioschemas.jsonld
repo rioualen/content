@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ensembl_genomes_metazoa_sequence_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N858992e93b9c41c89493fb08a2e3781d"
+        "@id": "_:N753151c2b09347a08327d216a7c446e7"
       },
       "bsc:output": {
-        "@id": "_:N1f049fd208554af69eee791778b7e7f4"
+        "@id": "_:N83cea51f7b8a40748f25165ff16b3784"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -52,11 +56,11 @@
       },
       "sc:author": "Ensembl Genomes team",
       "sc:citation": [
+        "pmcid:PMC4702834",
         "pubmed:26687719",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
-        },
-        "pmcid:PMC4702834"
+        }
       ],
       "sc:description": "Searches Ensembl Metazoa sequences using Exonerate.",
       "sc:featureList": {
@@ -64,32 +68,24 @@
       },
       "sc:name": "Ensembl Genomes Metazoa sequence search",
       "sc:operatingSystem": [
+        "Windows",
         "Mac",
-        "Linux",
-        "Windows"
+        "Linux"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://metazoa.ensembl.org/info/website/help/index.html"
         },
         {
-          "@id": "http://metazoa.ensembl.org/info/website/help/index.html"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://metazoa.ensembl.org/Multi/enasearch"
     },
     {
-      "@id": "_:N1f049fd208554af69eee791778b7e7f4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N858992e93b9c41c89493fb08a2e3781d",
+      "@id": "_:N753151c2b09347a08327d216a7c446e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -100,8 +96,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N83cea51f7b8a40748f25165ff16b3784",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

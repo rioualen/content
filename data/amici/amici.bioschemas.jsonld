@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btab227",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0001-9963-6057",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0002-4935-3312",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1093/bioinformatics/btab227",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/AMICI",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
+        {
+          "@id": "https://orcid.org/0000-0002-4935-3312"
+        },
         "Fabian Fröhlich",
         {
           "@id": "https://orcid.org/0000-0001-9963-6057"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-4935-3312"
         }
       ],
       "bsc:input": {
-        "@id": "_:N1d48a4b0044e47b184b1b322d6fe784c"
+        "@id": "_:N28408b2e18b74bbea00da349a2a893f0"
       },
       "bsc:output": {
-        "@id": "_:Nfa15402a808f4283ba3849a945a5244b"
+        "@id": "_:N7cb84a9be1ea46bcaef9591cb7f40bdc"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
@@ -78,27 +74,27 @@
       ],
       "sc:citation": [
         "pubmed:33821950",
-        "pmcid:PMC8545331",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btab227"
-        }
+        },
+        "pmcid:PMC8545331"
       ],
       "sc:description": "AMICI provides a multi-language (Python, C++, Matlab) interface for the SUNDIALS solvers CVODES (for ordinary differential equations) and IDAS (for algebraic differential equations). AMICI allows the user to read differential equation models specified as SBML or PySB and automatically compiles such models into .mex simulation files (Matlab), C++ executables or Python modules.\n\nBeyond forward integration, the compiled simulation file also allows for forward sensitivity analysis, steady state sensitivity analysis and adjoint sensitivity analysis for likelihood-based output functions.\n\nThe interface was designed to provide routines for efficient gradient computation in parameter estimation of biochemical reaction models but it is also applicable to a wider range of differential equation constrained optimization problems.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_3562"
         },
         {
-          "@id": "edam:operation_3562"
+          "@id": "edam:operation_2426"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "AMICI",
       "sc:operatingSystem": [
-        "Linux",
+        "Windows",
         "Mac",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "https://amici.readthedocs.io/en/latest/"
@@ -106,7 +102,23 @@
       "sc:url": "https://github.com/AMICI-dev/AMICI"
     },
     {
-      "@id": "_:Nfa15402a808f4283ba3849a945a5244b",
+      "@id": "_:N28408b2e18b74bbea00da349a2a893f0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_4015"
+        },
+        {
+          "@id": "edam:format_2585"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N7cb84a9be1ea46bcaef9591cb7f40bdc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -117,20 +129,8 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:N1d48a4b0044e47b184b1b322d6fe784c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2585"
-        },
-        {
-          "@id": "edam:format_4015"
-        }
-      ],
-      "sc:name": "Pathway or network"
+      "@id": "https://orcid.org/0000-0002-4935-3312",
+      "@type": "sc:Person"
     }
   ]
 }

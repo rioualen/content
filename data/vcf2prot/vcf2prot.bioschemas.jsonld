@@ -36,35 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2022.01.21.477084",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/vcf2prot",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc8db36c39d1148888781668c66f6875d"
+        "@id": "_:Nb3e7f984b0344b2781a5312e0d0456bb"
       },
       "bsc:output": {
-        "@id": "_:N0c4fd9086f084c129403e58295ec2692"
+        "@id": "_:Nd5e2745b19ec42edbf95e207a7aa24b6"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0121"
+        },
+        {
           "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_3676"
         },
         {
           "@id": "edam:topic_3577"
         },
         {
-          "@id": "edam:topic_0121"
-        },
-        {
           "@id": "edam:topic_3922"
-        },
-        {
-          "@id": "edam:topic_3676"
         }
       ],
       "sc:citation": {
@@ -73,27 +69,38 @@
       "sc:description": "Generating sample-specific FASTA files from a consequence called VCF-file and a reference proteome.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3227"
+        },
+        {
           "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_3359"
-        },
-        {
-          "@id": "edam:operation_3227"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "VCF2Prot",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
+        "Mac",
         "Linux"
       ],
       "sc:url": "https://github.com/ikmb/vcf2prot"
     },
     {
-      "@id": "_:N0c4fd9086f084c129403e58295ec2692",
+      "@id": "_:Nb3e7f984b0344b2781a5312e0d0456bb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nd5e2745b19ec42edbf95e207a7aa24b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -104,15 +111,8 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nc8db36c39d1148888781668c66f6875d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1101/2022.01.21.477084",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

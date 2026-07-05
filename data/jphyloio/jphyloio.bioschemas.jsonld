@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/database/bav094",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/jphyloio",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ben C. Stöver",
       "bsc:input": [
         {
-          "@id": "_:N3cf5dfce3a4148d08dbb8643080fb75f"
+          "@id": "_:N9f678dd42d1c410abf1b7de8308a4f53"
         },
         {
-          "@id": "_:N8a0bbbb78f524007a29d69efbe1c3ec9"
+          "@id": "_:N074218561b2d40f08adad95af93bfcbf"
         },
         {
-          "@id": "_:N73e21d86e72349bd859bef07ae0be6d2"
+          "@id": "_:N8847bc7cb94a4483aab270c9391b0c94"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7f8a6ff52bcf4a48b24e1e6792dc821e"
+          "@id": "_:N3e037c4815a2471ab5b3186f6040b925"
         },
         {
-          "@id": "_:N0fb603980df749969efcb85728316e49"
+          "@id": "_:N14558a332ce04c06aa0f9f97586df803"
         },
         {
-          "@id": "_:N703633951e944785a3d050737fe57f82"
+          "@id": "_:N76ee3975e4c3485ea1e314d42ae91b46"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -83,23 +79,23 @@
         "Ben C. Stöver"
       ],
       "sc:citation": [
+        "pubmed:26424081",
         {
           "@id": "https://doi.org/10.1093/database/bav094"
         },
-        "pmcid:PMC4589695",
-        "pubmed:26424081"
+        "pmcid:PMC4589695"
       ],
       "sc:contributor": "Kai F. Müller",
       "sc:description": "An open source Java library for reading and writing various tree and alignment formats. Application developers are able to implement format-independent data processing by including event based readers via the abstract strategy pattern. All readers are designed to deal with large amounts of data (alignments with many and/or very long sequences, large trees) without using a great amount of resources (CPU or RAM).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3357"
+          "@id": "edam:operation_1812"
         },
         {
           "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_3357"
         }
       ],
       "sc:funder": "DFG (German Research Foundation)",
@@ -107,29 +103,29 @@
       "sc:license": "LGPL-3.0",
       "sc:name": "JPhyloIO",
       "sc:operatingSystem": [
+        "Windows",
         "Linux",
-        "Mac",
-        "Windows"
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://bioinfweb.info/JPhyloIO/Documentation/Demos"
+          "@id": "http://bioinfweb.info/JPhyloIO/Documentation/API/Latest/"
         },
         {
           "@id": "http://bioinfweb.info/JPhyloIO/License"
         },
         {
-          "@id": "http://bioinfweb.info/JPhyloIO/Documentation/API/Latest/"
+          "@id": "http://bioinfweb.info/JPhyloIO/Documentation"
         },
         {
-          "@id": "http://bioinfweb.info/JPhyloIO/Documentation"
+          "@id": "http://bioinfweb.info/JPhyloIO/Documentation/Demos"
         }
       ],
       "sc:softwareVersion": "0.5.4",
       "sc:url": "http://bioinfweb.info/JPhyloIO/"
     },
     {
-      "@id": "_:N3cf5dfce3a4148d08dbb8643080fb75f",
+      "@id": "_:N3e037c4815a2471ab5b3186f6040b925",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -142,6 +138,82 @@
           "@id": "edam:format_3160"
         },
         {
+          "@id": "edam:format_3159"
+        },
+        {
+          "@id": "edam:format_1910"
+        }
+      ],
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N14558a332ce04c06aa0f9f97586df803",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3160"
+        },
+        {
+          "@id": "edam:format_3159"
+        },
+        {
+          "@id": "edam:format_1912"
+        }
+      ],
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N76ee3975e4c3485ea1e314d42ae91b46",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1997"
+        },
+        {
+          "@id": "edam:format_3160"
+        },
+        {
+          "@id": "edam:format_1912"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:N9f678dd42d1c410abf1b7de8308a4f53",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3159"
+        },
+        {
+          "@id": "edam:format_3160"
+        },
+        {
+          "@id": "edam:format_1912"
+        }
+      ],
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N074218561b2d40f08adad95af93bfcbf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": [
+        {
           "@id": "edam:format_2332"
         },
         {
@@ -149,17 +221,26 @@
         },
         {
           "@id": "edam:format_3159"
+        },
+        {
+          "@id": "edam:format_3160"
+        },
+        {
+          "@id": "edam:format_1912"
         }
       ],
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N8a0bbbb78f524007a29d69efbe1c3ec9",
+      "@id": "_:N8847bc7cb94a4483aab270c9391b0c94",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
       },
       "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
         {
           "@id": "edam:format_2332"
         },
@@ -167,101 +248,20 @@
           "@id": "edam:format_1991"
         },
         {
-          "@id": "edam:format_1929"
-        },
-        {
           "@id": "edam:format_1997"
         },
         {
-          "@id": "edam:format_1912"
+          "@id": "edam:format_3160"
         },
         {
-          "@id": "edam:format_3160"
+          "@id": "edam:format_1912"
         }
       ],
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:N73e21d86e72349bd859bef07ae0be6d2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1912"
-        },
-        {
-          "@id": "edam:format_3159"
-        },
-        {
-          "@id": "edam:format_3160"
-        }
-      ],
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:N7f8a6ff52bcf4a48b24e1e6792dc821e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1910"
-        },
-        {
-          "@id": "edam:format_3159"
-        },
-        {
-          "@id": "edam:format_3160"
-        },
-        {
-          "@id": "edam:format_1912"
-        }
-      ],
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N0fb603980df749969efcb85728316e49",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1997"
-        },
-        {
-          "@id": "edam:format_1912"
-        },
-        {
-          "@id": "edam:format_3160"
-        }
-      ],
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N703633951e944785a3d050737fe57f82",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1912"
-        },
-        {
-          "@id": "edam:format_3160"
-        },
-        {
-          "@id": "edam:format_3159"
-        }
-      ],
-      "sc:name": "Taxonomy"
+      "@id": "https://doi.org/10.1093/database/bav094",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

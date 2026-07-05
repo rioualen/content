@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nbt1160",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/show_viterbi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pierre Nicolas",
       "bsc:input": [
         {
-          "@id": "_:Nf8f957f552904132bc6e424323c2abb1"
+          "@id": "_:Nae4ab12865014cbf9b95b801cb4a8f99"
         },
         {
-          "@id": "_:N6e52699a539846e78e01856fcb2e6ae3"
+          "@id": "_:Nbdee548c37ee4838aeb98b71b9434702"
         }
       ],
       "bsc:output": {
-        "@id": "_:N2585b1d6bb3549649db68b434ad47aea"
+        "@id": "_:N0411f7ecadd74087879a4633a4dcd595"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -56,24 +60,24 @@
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
+        "pubmed:16273110",
         {
           "@id": "https://doi.org/10.1038/nbt1160"
-        },
-        "pubmed:16273110"
+        }
       ],
       "sc:description": "This tool implements the viterbi algorithm to find the most probable hidden path given the observed sequence (segmentation). The Hidden Markov Model parameters can first be learned with show_emfit.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0436"
+          "@id": "edam:operation_0361"
         },
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_0436"
         }
       ],
       "sc:name": "show_viterbi",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "IFB ELIXIR-FR",
       "sc:softwareHelp": {
@@ -83,7 +87,7 @@
       "sc:url": "http://genome.jouy.inra.fr/ssb/SHOW/"
     },
     {
-      "@id": "_:Nf8f957f552904132bc6e424323c2abb1",
+      "@id": "_:Nae4ab12865014cbf9b95b801cb4a8f99",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1364"
@@ -91,7 +95,7 @@
       "sc:name": "Hidden Markov model"
     },
     {
-      "@id": "_:N6e52699a539846e78e01856fcb2e6ae3",
+      "@id": "_:Nbdee548c37ee4838aeb98b71b9434702",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -99,16 +103,12 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N2585b1d6bb3549649db68b434ad47aea",
+      "@id": "_:N0411f7ecadd74087879a4633a4dcd595",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nbt1160",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

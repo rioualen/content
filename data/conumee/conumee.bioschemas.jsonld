@@ -36,46 +36,50 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/conumee",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Volker Hovestadt",
       "bsc:input": [
         {
-          "@id": "_:Nb04fce4ee0df4767bdd5276d789401f4"
+          "@id": "_:N27bc507a4e12465991e183ec3b4099bb"
         },
         {
-          "@id": "_:N18e1fdc621fb4eca98cdab6af275a6eb"
+          "@id": "_:Nb9a669786751478eb52a15ed71451319"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N878d95f6bb774e1e99f7940923172dcf"
+          "@id": "_:N0b586924696743fba437a9e05a6c950d"
         },
         {
-          "@id": "_:Nf1062eda0d2242059c8697ede6019f8b"
+          "@id": "_:N7e63765730d840ae8d64a2154ce07bad"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3295"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3295"
         },
         {
           "@id": "edam:topic_3518"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
+        "pmcid:PMC4509590",
         "pubmed:25633503"
       ],
       "sc:description": "This package contains a set of processing and plotting methods for performing copy-number variation (CNV) analysis using Illumina 450k or EPIC methylation arrays.",
@@ -86,8 +90,8 @@
       "sc:name": "conumee",
       "sc:operatingSystem": [
         "Linux",
-        "Mac",
-        "Windows"
+        "Windows",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/conumee.html"
@@ -96,26 +100,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/conumee.html"
     },
     {
-      "@id": "_:Nb04fce4ee0df4767bdd5276d789401f4",
+      "@id": "_:N0b586924696743fba437a9e05a6c950d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2012"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3578"
-        },
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Sequence coordinates"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:N18e1fdc621fb4eca98cdab6af275a6eb",
+      "@id": "_:N7e63765730d840ae8d64a2154ce07bad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N27bc507a4e12465991e183ec3b4099bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3117"
@@ -134,30 +141,23 @@
       "sc:name": "Microarray hybridisation data"
     },
     {
-      "@id": "_:N878d95f6bb774e1e99f7940923172dcf",
+      "@id": "_:Nb9a669786751478eb52a15ed71451319",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1276"
+        "@id": "edam:data_2012"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:Nf1062eda0d2242059c8697ede6019f8b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3578"
+        },
+        {
+          "@id": "edam:format_3003"
+        }
+      ],
+      "sc:name": "Sequence coordinates"
     }
   ]
 }

@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gks491",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/carna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -45,20 +53,20 @@
         }
       ],
       "bsc:input": {
-        "@id": "_:N00533cc850574b47b0dc90cb1e84cb56"
+        "@id": "_:N5d3c1a4a67584f97ba041a930f617be9"
       },
       "bsc:output": [
         {
-          "@id": "_:N47ab9ab810924777b11ff49cbed667c4"
+          "@id": "_:Nf22e4d4352e9496e9d0ea4a1af3471d9"
         },
         {
-          "@id": "_:N81f17d8a490f47ee8fad17f8e41854c8"
+          "@id": "_:Ndb425b23263141899bc9aef2dfb66f92"
         },
         {
-          "@id": "_:N8c6721ff7b16449dad71fea37de8da4f"
+          "@id": "_:N17354583a3924d39bd0114d4bdf5f212"
         },
         {
-          "@id": "_:Na54e53a9477947e7973be34e8b76a6ca"
+          "@id": "_:N93b79aa108814643a2d1b0024de0d51b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -72,17 +80,17 @@
         }
       ],
       "sc:author": [
+        "Sebastian Will",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        },
-        "Sebastian Will"
+        }
       ],
       "sc:citation": [
         "pmcid:PMC3394245",
-        "pubmed:22689637",
         {
           "@id": "https://doi.org/10.1093/nar/gks491"
-        }
+        },
+        "pubmed:22689637"
       ],
       "sc:description": "Alignment of RNA structure ensembles.",
       "sc:featureList": {
@@ -91,9 +99,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "CARNA web server",
       "sc:operatingSystem": [
-        "Mac",
+        "Linux",
         "Windows",
-        "Linux"
+        "Mac"
       ],
       "sc:provider": [
         "University Freiburg",
@@ -106,7 +114,59 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/CARNA/"
     },
     {
-      "@id": "_:N00533cc850574b47b0dc90cb1e84cb56",
+      "@id": "_:Nf22e4d4352e9496e9d0ea4a1af3471d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1982"
+      },
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:Ndb425b23263141899bc9aef2dfb66f92",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N17354583a3924d39bd0114d4bdf5f212",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N93b79aa108814643a2d1b0024de0d51b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N5d3c1a4a67584f97ba041a930f617be9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -120,66 +180,6 @@
         }
       ],
       "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N47ab9ab810924777b11ff49cbed667c4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1982"
-      },
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N81f17d8a490f47ee8fad17f8e41854c8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N8c6721ff7b16449dad71fea37de8da4f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Na54e53a9477947e7973be34e8b76a6ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gks491",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
     }
   ]
 }

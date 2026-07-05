@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/matchms",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0fc1295d70144ecd9579bf64a745007d"
+        "@id": "_:N11f027b7e0bb4b2cbe27409036ec2209"
       },
       "bsc:output": [
         {
-          "@id": "_:Nbe781e8ea5c847afbafd2d9c20da24b7"
+          "@id": "_:Nbe647d7b4e3a42c8aa89daae8305a82e"
         },
         {
-          "@id": "_:N37df7cc8d446476ab0738373f8591776"
+          "@id": "_:Neb38af04b7574bf6a0cd7566d1f2cd7f"
         },
         {
-          "@id": "_:N38cbe2f7b09f4917a555c8bf1d7154f2"
+          "@id": "_:Naecb6de7d31f453cae2668a734cdd441"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -60,37 +60,42 @@
       "sc:description": "Tool to import, process, clean, and compare mass spectrometry data.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0336"
+        },
+        {
           "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_3801"
-        },
-        {
-          "@id": "edam:operation_0336"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "Matchms",
       "sc:softwareVersion": [
-        "0.9.2",
-        "0.20.0"
+        "0.20.0",
+        "0.9.2"
       ],
       "sc:url": "https://github.com/matchms/matchms"
     },
     {
-      "@id": "_:Nbe781e8ea5c847afbafd2d9c20da24b7",
+      "@id": "_:N11f027b7e0bb4b2cbe27409036ec2209",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3245"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N37df7cc8d446476ab0738373f8591776",
+      "@id": "_:Nbe647d7b4e3a42c8aa89daae8305a82e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2855"
@@ -101,7 +106,18 @@
       "sc:name": "Distance matrix"
     },
     {
-      "@id": "_:N38cbe2f7b09f4917a555c8bf1d7154f2",
+      "@id": "_:Neb38af04b7574bf6a0cd7566d1f2cd7f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3245"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:Naecb6de7d31f453cae2668a734cdd441",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0888"
@@ -110,22 +126,6 @@
         "@id": "edam:format_3464"
       },
       "sc:name": "Structure similarity score"
-    },
-    {
-      "@id": "_:N0fc1295d70144ecd9579bf64a745007d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Mass spectrum"
     }
   ]
 }

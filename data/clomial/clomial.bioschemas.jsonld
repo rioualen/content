@@ -36,46 +36,42 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1003703",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/clomial",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-5902-6238"
       },
       "bsc:input": {
-        "@id": "_:Ncdc4df0774d34de3aa41fbfef1757cf2"
+        "@id": "_:Nab59879a49ed466a8d1ad83c81490619"
       },
       "bsc:output": {
-        "@id": "_:N477dcc81a6924dc0b82e72bdbb48d9fc"
+        "@id": "_:N9ebe6cdb32d0403fbff94687d22825bc"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3360"
+          "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_2269"
         },
         {
           "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3360"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4091710",
         "pubmed:25010360",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1003703"
-        }
+        },
+        "pmcid:PMC4091710"
       ],
       "sc:description": "This tool fits binomial distributions to counts obtained from NGS data of multiple samples of the same tumor. The trained parameters can be interpreted to infer the clonal structure of the tumor.",
       "sc:featureList": {
@@ -84,9 +80,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "Clomial",
       "sc:operatingSystem": [
-        "Linux",
+        "Windows",
         "Mac",
-        "Windows"
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/Clomial.html"
@@ -95,18 +91,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Clomial.html"
     },
     {
-      "@id": "_:N477dcc81a6924dc0b82e72bdbb48d9fc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1622"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Disease report"
-    },
-    {
-      "@id": "_:Ncdc4df0774d34de3aa41fbfef1757cf2",
+      "@id": "_:Nab59879a49ed466a8d1ad83c81490619",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -117,8 +102,23 @@
       "sc:name": "Sequence variations"
     },
     {
+      "@id": "_:N9ebe6cdb32d0403fbff94687d22825bc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1622"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Disease report"
+    },
+    {
       "@id": "http://orcid.org/0000-0001-5902-6238",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1003703",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
