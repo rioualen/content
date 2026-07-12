@@ -36,62 +36,66 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkq211",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/quasr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Michael Stadler",
       "bsc:input": {
-        "@id": "_:N961e6429f5cf40e4aac78f34fdc71fbc"
+        "@id": "_:Ndd42cc6baa9640698469e22e15689dc6"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd2548269f6d243de91f16c4857e6a7ba"
+          "@id": "_:N34f3ec35b9e349d59474c87fd5a4aa65"
         },
         {
-          "@id": "_:N30fc4abc93e648e484890ca080138ca6"
+          "@id": "_:N1c44969314734f2d957adc3109fecc29"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_3169"
         },
         {
-          "@id": "edam:topic_3053"
-        },
-        {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3168"
         },
         {
           "@id": "edam:topic_0769"
+        },
+        {
+          "@id": "edam:topic_3053"
+        },
+        {
+          "@id": "edam:topic_3518"
         }
       ],
       "sc:citation": [
+        "pubmed:20371516",
+        "pmcid:PMC2919714",
         {
           "@id": "https://doi.org/10.1093/nar/gkq211"
-        },
-        "pubmed:20371516",
-        "pmcid:PMC2919714"
+        }
       ],
       "sc:description": "This package provides a framework for the quantification and analysis of Short Reads. It covers a complete workflow starting from raw sequence reads, over creation of alignments and quality control plots, to the quantification of genomic regions of interest.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2238"
+        },
         {
           "@id": "edam:operation_3219"
         },
         {
           "@id": "edam:operation_3198"
-        },
-        {
-          "@id": "edam:operation_2238"
         }
       ],
       "sc:license": "GPL-2.0",
@@ -108,7 +112,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/QuasR.html"
     },
     {
-      "@id": "_:Nd2548269f6d243de91f16c4857e6a7ba",
+      "@id": "_:N34f3ec35b9e349d59474c87fd5a4aa65",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3327"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N1c44969314734f2d957adc3109fecc29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -119,29 +134,12 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N30fc4abc93e648e484890ca080138ca6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3327"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "_:N961e6429f5cf40e4aac78f34fdc71fbc",
+      "@id": "_:Ndd42cc6baa9640698469e22e15689dc6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1957"
-        },
-        {
-          "@id": "edam:format_2572"
-        },
         {
           "@id": "edam:format_2573"
         },
@@ -149,14 +147,16 @@
           "@id": "edam:format_1930"
         },
         {
+          "@id": "edam:format_1957"
+        },
+        {
+          "@id": "edam:format_2572"
+        },
+        {
           "@id": "edam:format_1929"
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkq211",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

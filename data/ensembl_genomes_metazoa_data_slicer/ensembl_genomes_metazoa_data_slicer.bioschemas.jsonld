@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ensembl_genomes_metazoa_data_slicer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": [
         {
-          "@id": "_:Na292d7aedab6495d952dfd13fb688765"
+          "@id": "_:N11c56389ca7c482b8a0b8dd060c5c9f2"
         },
         {
-          "@id": "_:Nf675ce6eeb4a4dcfb439051814490401"
+          "@id": "_:N7489c5261f80427ab42f78b8776a63fc"
         },
         {
-          "@id": "_:N6fb97999c58548be908dda2e9589dfe7"
+          "@id": "_:N1aae3a13ee404cd5ab6b45eda6c8f44a"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -61,11 +57,11 @@
       },
       "sc:author": "Ensembl Genomes team",
       "sc:citation": [
-        "pubmed:26687719",
-        "pmcid:PMC4702834",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
-        }
+        },
+        "pubmed:26687719",
+        "pmcid:PMC4702834"
       ],
       "sc:description": "Get a subset of data from a BAM | VCF file.",
       "sc:featureList": {
@@ -73,24 +69,40 @@
       },
       "sc:name": "Ensembl Genomes Metazoa data slicer",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://metazoa.ensembl.org/info/website/help/index.html"
         },
         {
-          "@id": "http://metazoa.ensembl.org/info/website/help/index.html"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://metazoa.ensembl.org/tools.html"
     },
     {
-      "@id": "_:Na292d7aedab6495d952dfd13fb688765",
+      "@id": "_:N11c56389ca7c482b8a0b8dd060c5c9f2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N7489c5261f80427ab42f78b8776a63fc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -106,36 +118,24 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:Nf675ce6eeb4a4dcfb439051814490401",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N6fb97999c58548be908dda2e9589dfe7",
+      "@id": "_:N1aae3a13ee404cd5ab6b45eda6c8f44a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_3016"
         },
         {
-          "@id": "edam:format_3016"
+          "@id": "edam:format_2572"
         }
       ],
       "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

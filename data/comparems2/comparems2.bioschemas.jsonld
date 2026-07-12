@@ -36,39 +36,51 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/rcm.6162",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jproteome.1c00528",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jproteome.2c00457",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/comparems2",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-5865-8994"
       },
       "bsc:input": {
-        "@id": "_:N10bcaede6f874f198173390320258f6a"
+        "@id": "_:N1ecc53998d034855a9c7a636c45051d4"
       },
       "bsc:output": [
         {
-          "@id": "_:N636cdb06bd1345148bebc5ad78321b32"
+          "@id": "_:N50ba1f7974d9405ca8fa3af56568119d"
         },
         {
-          "@id": "_:Ne069333f74a6477ca09383c5046f1afa"
+          "@id": "_:N91e92832bbfc47feb4b9fbc67112d5b8"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Desktop application"
+        "Desktop application",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_0084"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3172"
+        },
+        {
+          "@id": "edam:topic_0084"
         }
       ],
       "sc:author": [
@@ -80,20 +92,20 @@
         }
       ],
       "sc:citation": [
+        "pubmed:22368051",
         "pmcid:PMC8491155",
         "pubmed:36173614",
-        "pmcid:PMC9903320",
         "pubmed:34523928",
         {
           "@id": "https://doi.org/10.1002/rcm.6162"
         },
-        "pubmed:22368051",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.2c00457"
         },
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.1c00528"
-        }
+        },
+        "pmcid:PMC9903320"
       ],
       "sc:description": "compareMS2 is a tool for comparing sets of (tandem) mass spectra for clustering samples, molecular phylogenetics, identification of biological species or tissues, and quality control. compareMS2 currently consumes Mascot Generic Format, or MGF, and produces output in a variety of common image and distance matrix formats.",
       "sc:featureList": [
@@ -108,9 +120,9 @@
       "sc:license": "MIT",
       "sc:name": "compareMS2",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": [
         {
@@ -127,26 +139,18 @@
       "sc:url": "https://github.com/524D/compareMS2"
     },
     {
-      "@id": "_:N636cdb06bd1345148bebc5ad78321b32",
+      "@id": "_:N1ecc53998d034855a9c7a636c45051d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2855"
+        "@id": "edam:data_2536"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1991"
-        },
-        {
-          "@id": "edam:format_1910"
-        },
-        {
-          "@id": "edam:format_1912"
-        }
-      ],
-      "sc:name": "Distance matrix"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3651"
+      },
+      "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Ne069333f74a6477ca09383c5046f1afa",
+      "@id": "_:N50ba1f7974d9405ca8fa3af56568119d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3272"
@@ -162,35 +166,31 @@
       "sc:name": "Species tree"
     },
     {
-      "@id": "_:N10bcaede6f874f198173390320258f6a",
+      "@id": "_:N91e92832bbfc47feb4b9fbc67112d5b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2536"
+        "@id": "edam:data_2855"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3651"
-      },
-      "sc:name": "Mass spectrometry data"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1991"
+        },
+        {
+          "@id": "edam:format_1912"
+        },
+        {
+          "@id": "edam:format_1910"
+        }
+      ],
+      "sc:name": "Distance matrix"
     },
     {
       "@id": "http://orcid.org/0000-0002-5865-8994",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1002/rcm.6162",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0002-1220-9173",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jproteome.1c00528",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jproteome.2c00457",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

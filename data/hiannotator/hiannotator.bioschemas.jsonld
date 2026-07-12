@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/hiannotator",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nirav V Malani",
       "bsc:input": {
-        "@id": "_:N476689d24ed74c0eadafc51be28acc31"
+        "@id": "_:N507b6d06909a4ffba405d0c862264723"
       },
       "bsc:output": [
         {
-          "@id": "_:Nbd57e851e7874bc7a2d21bcfc3545327"
+          "@id": "_:N75871f7858e34bc7b41f485e86d591a3"
         },
         {
-          "@id": "_:N45973e1c7187476c81c1be8f6dae365e"
+          "@id": "_:N8f2b717657d945d2869a91c80179796c"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -63,11 +59,11 @@
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
-        "pmcid:PMC4509590",
-        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        }
+        },
+        "pubmed:25633503",
+        "pmcid:PMC4509590"
       ],
       "sc:description": "Set of functions to annotate a GRanges object with custom set of annotations. This package takes two GRanges objects (query & subject) with a common set of seqnames (i.e. chromosomes) and returns associated annotation per seqnames and rows from the query matching seqnames and rows from the subject (i.e. genes or cpg islands).",
       "sc:featureList": {
@@ -76,8 +72,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "hiAnnotator",
       "sc:operatingSystem": [
-        "Mac",
         "Windows",
+        "Mac",
         "Linux"
       ],
       "sc:softwareHelp": {
@@ -87,18 +83,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/hiAnnotator.html"
     },
     {
-      "@id": "_:N476689d24ed74c0eadafc51be28acc31",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nbd57e851e7874bc7a2d21bcfc3545327",
+      "@id": "_:N75871f7858e34bc7b41f485e86d591a3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -114,7 +99,7 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:N45973e1c7187476c81c1be8f6dae365e",
+      "@id": "_:N8f2b717657d945d2869a91c80179796c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -128,6 +113,21 @@
         }
       ],
       "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N507b6d06909a4ffba405d0c862264723",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

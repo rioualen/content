@@ -36,44 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btk005",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/edge",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "John D. Storey",
-        "Andrew J. Bass"
+        "Andrew J. Bass",
+        "John D. Storey"
       ],
       "bsc:input": {
-        "@id": "_:N9e0133fdfbc74376ae797d4026c78058"
+        "@id": "_:Nb4654ce9231d4dc4ba14937b7e2feb44"
       },
       "bsc:output": [
         {
-          "@id": "_:N5012d4b90e764d1daaa9c208cc665406"
+          "@id": "_:N21353e8c08774a7c80f66416828a864c"
         },
         {
-          "@id": "_:Nd37d1c6c1e5b4a9ea90477ae8c8efcd1"
+          "@id": "_:N12fa535d99a3472b8fa95540e2ffd49f"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Library"
+        "Library",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3053"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
-        "pubmed:16357033",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btk005"
-        }
+        },
+        "pubmed:16357033"
       ],
       "sc:description": "Software package for the significance analysis of DNA microarray experiments for both standard and time course experiments based on our new Optimal Discovery Procedure and Time Course Methodology.",
       "sc:featureList": {
@@ -82,9 +86,9 @@
       "sc:license": "MIT",
       "sc:name": "edge",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/edge.html"
@@ -93,7 +97,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/edge.html"
     },
     {
-      "@id": "_:N9e0133fdfbc74376ae797d4026c78058",
+      "@id": "_:N21353e8c08774a7c80f66416828a864c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N12fa535d99a3472b8fa95540e2ffd49f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nb4654ce9231d4dc4ba14937b7e2feb44",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -102,42 +138,6 @@
         "@id": "edam:format_1919"
       },
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N5012d4b90e764d1daaa9c208cc665406",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nd37d1c6c1e5b4a9ea90477ae8c8efcd1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btk005",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

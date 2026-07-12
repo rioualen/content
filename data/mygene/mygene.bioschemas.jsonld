@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/009332",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mygene",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chunlei Wu",
       "bsc:input": {
-        "@id": "_:N107f4e4119f5424781af930b340dca36"
+        "@id": "_:N37b9c887c68b49e3bcb6a4543288a972"
       },
       "bsc:output": [
         {
-          "@id": "_:N856b073783ce410dbeb4a55c80fb491f"
+          "@id": "_:N06d37208ba634af894daecd62053a696"
         },
         {
-          "@id": "_:Ne3d4f066dbcd4e4ca78510192c872f10"
+          "@id": "_:Nff85bfbf590440cabd605b52cbc9d214"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3321"
@@ -73,9 +77,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "mygene",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/mygene.html"
@@ -84,29 +88,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/mygene.html"
     },
     {
-      "@id": "_:N856b073783ce410dbeb4a55c80fb491f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1033"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Ensembl gene ID"
-    },
-    {
-      "@id": "_:Ne3d4f066dbcd4e4ca78510192c872f10",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1027"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene ID (NCBI)"
-    },
-    {
-      "@id": "_:N107f4e4119f5424781af930b340dca36",
+      "@id": "_:N37b9c887c68b49e3bcb6a4543288a972",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -117,8 +99,26 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "https://doi.org/10.1101/009332",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N06d37208ba634af894daecd62053a696",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1027"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene ID (NCBI)"
+    },
+    {
+      "@id": "_:Nff85bfbf590440cabd605b52cbc9d214",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1033"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Ensembl gene ID"
     }
   ]
 }

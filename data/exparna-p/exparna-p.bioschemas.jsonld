@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/exparna-p",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Christina Otto",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Christina Otto"
       ],
       "bsc:input": {
-        "@id": "_:Nc282202ec64a4fec9f7f01e63e126f5e"
+        "@id": "_:Nb972411451d74685ab07b745965a162a"
       },
       "bsc:output": [
         {
-          "@id": "_:N36640d4c016e455a90a92678adca05b8"
+          "@id": "_:Nf05c30495d1a48a1baa082d976785fc5"
         },
         {
-          "@id": "_:Nfcb768ef69464841a804dcac5f325617"
+          "@id": "_:N94586b37fe98488abce318878f2647ec"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0097"
         },
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": [
@@ -88,8 +92,8 @@
         "Linux"
       ],
       "sc:provider": [
-        "University Freiburg",
-        "rnateam"
+        "rnateam",
+        "University Freiburg"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.bioinf.uni-freiburg.de/Software/ExpaRNA-P/"
@@ -98,23 +102,7 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/ExpaRNA-P/"
     },
     {
-      "@id": "_:Nc282202ec64a4fec9f7f01e63e126f5e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2200"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N36640d4c016e455a90a92678adca05b8",
+      "@id": "_:Nf05c30495d1a48a1baa082d976785fc5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -125,7 +113,7 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:Nfcb768ef69464841a804dcac5f325617",
+      "@id": "_:N94586b37fe98488abce318878f2647ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -136,8 +124,20 @@
       "sc:name": "Image"
     },
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
+      "@id": "_:Nb972411451d74685ab07b745965a162a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2200"
+        }
+      ],
+      "sc:name": "RNA sequence"
     },
     {
       "@id": "https://doi.org/10.1186/s12859-014-0404-0",

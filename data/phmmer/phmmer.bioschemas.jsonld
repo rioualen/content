@@ -36,29 +36,41 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv397",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw305",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8626-2148",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/phmmer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-8626-2148"
       },
       "bsc:input": {
-        "@id": "_:N7a18b1bdb6524aeabae687f9d8ce41d5"
+        "@id": "_:Nb15a509db3dc46308cec66f605ffff48"
       },
       "bsc:output": [
         {
-          "@id": "_:Nff97af6fbadf47d79c16426b29892a12"
+          "@id": "_:Ne38e54fc1fce43adb5dc4275794ff84f"
         },
         {
-          "@id": "_:N152c9cfee8834acab29e338e5b70a26a"
+          "@id": "_:N622a1b50ae6948c6873598a21343a78a"
         },
         {
-          "@id": "_:Nd632f207f65440a584992e1ad2b3d89c"
+          "@id": "_:N8bf3033a65924c179b66ed4abcec7347"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Web service"
+        "Web service",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -69,22 +81,19 @@
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btw305"
-        },
         "pubmed:25943547",
-        "pubmed:27256311",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkv397"
+        },
         "pmcid:PMC4489315",
         "pmcid:PMC5013910",
         {
-          "@id": "https://doi.org/10.1093/nar/gkv397"
-        }
+          "@id": "https://doi.org/10.1093/bioinformatics/btw305"
+        },
+        "pubmed:27256311"
       ],
       "sc:description": "Search a protein sequence against a protein database using HMMER.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0224"
-        },
         {
           "@id": "edam:operation_2421"
         },
@@ -93,12 +102,15 @@
         },
         {
           "@id": "edam:operation_3460"
+        },
+        {
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:name": "PHMMER",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://hmmer.org/documentation.html"
@@ -107,31 +119,7 @@
       "sc:url": "https://www.ebi.ac.uk/metagenomics/sequence-search/search/phmmer"
     },
     {
-      "@id": "_:Nff97af6fbadf47d79c16426b29892a12",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1394"
-      },
-      "sc:name": "Alignment score or penalty"
-    },
-    {
-      "@id": "_:N152c9cfee8834acab29e338e5b70a26a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:Nd632f207f65440a584992e1ad2b3d89c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2085"
-      },
-      "sc:name": "Structure report"
-    },
-    {
-      "@id": "_:N7a18b1bdb6524aeabae687f9d8ce41d5",
+      "@id": "_:Nb15a509db3dc46308cec66f605ffff48",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -142,16 +130,28 @@
       "sc:name": "Text"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv397",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne38e54fc1fce43adb5dc4275794ff84f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1394"
+      },
+      "sc:name": "Alignment score or penalty"
     },
     {
-      "@id": "http://orcid.org/0000-0001-8626-2148",
-      "@type": "sc:Person"
+      "@id": "_:N622a1b50ae6948c6873598a21343a78a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2085"
+      },
+      "sc:name": "Structure report"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw305",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8bf3033a65924c179b66ed4abcec7347",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:name": "Taxonomy"
     }
   ]
 }

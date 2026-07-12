@@ -36,39 +36,35 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/imagehts",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Joseph Barry",
       "bsc:input": [
         {
-          "@id": "_:N4902acc8d42b45d2899f6979ff44cbeb"
+          "@id": "_:N9a0c1a5ca76d4e0da658d108f53c188c"
         },
         {
-          "@id": "_:N42d633a075a446b89d04b02719da02de"
+          "@id": "_:N95bb30b0110445af84f76fdf0510b575"
         },
         {
-          "@id": "_:N3b5b7cfd2ae049678e9f8fd30c22ce4b"
+          "@id": "_:Ncd935642c09d4ad78da7624ecde44448"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7bffffb581aa421ea98eaa56c4cd7e15"
+          "@id": "_:N860551632a95476b839888a44e7df5fa"
         },
         {
-          "@id": "_:N24404ec20a7f4a7ba41c54af56e90da4"
+          "@id": "_:N6293bd1a173948879a822ac5a794d34e"
         },
         {
-          "@id": "_:Nd394c8fe3e654e44a1ce102855cffa9b"
+          "@id": "_:N59c5354130944652887d4c84d17a3f5a"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -79,10 +75,10 @@
         }
       ],
       "sc:citation": [
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         },
-        "pmcid:PMC4509590",
         "pubmed:25633503"
       ],
       "sc:description": "R package dedicated to the analysis of high-throughput microscopy-based screens. The package provides a modular and extensible framework to segment cells, extract quantitative cell features, predict cell types and browse screen data through web interfaces. Designed to operate in distributed environments, it provides a standardized access to remote data and facilitates the dissemination of high-throughput microscopy-based datasets.",
@@ -92,9 +88,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "imageHTS",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/imageHTS.html"
@@ -103,7 +99,64 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/imageHTS.html"
     },
     {
-      "@id": "_:N7bffffb581aa421ea98eaa56c4cd7e15",
+      "@id": "_:N9a0c1a5ca76d4e0da658d108f53c188c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:N95bb30b0110445af84f76fdf0510b575",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1052"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3579"
+        }
+      ],
+      "sc:name": "URL"
+    },
+    {
+      "@id": "_:Ncd935642c09d4ad78da7624ecde44448",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3546"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Image metadata"
+    },
+    {
+      "@id": "_:N860551632a95476b839888a44e7df5fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -122,26 +175,26 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N24404ec20a7f4a7ba41c54af56e90da4",
+      "@id": "_:N6293bd1a173948879a822ac5a794d34e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3547"
+        },
+        {
           "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nd394c8fe3e654e44a1ce102855cffa9b",
+      "@id": "_:N59c5354130944652887d4c84d17a3f5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3546"
@@ -160,61 +213,8 @@
       "sc:name": "Image metadata"
     },
     {
-      "@id": "_:N4902acc8d42b45d2899f6979ff44cbeb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3546"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Image metadata"
-    },
-    {
-      "@id": "_:N42d633a075a446b89d04b02719da02de",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1052"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "URL"
-    },
-    {
-      "@id": "_:N3b5b7cfd2ae049678e9f8fd30c22ce4b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3424"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Raw image"
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

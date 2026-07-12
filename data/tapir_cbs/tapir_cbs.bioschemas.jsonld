@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0083784",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/tapir_cbs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ole Lund",
       "bsc:input": {
-        "@id": "_:Nd011d83770cb40c584b4040fa30d973f"
+        "@id": "_:Nc4beac084dcc45618e9fcd283dbf4480"
       },
       "bsc:output": {
-        "@id": "_:N259e7b44698d42a59ec09274589eebf8"
+        "@id": "_:Nf597ddfe56354ab3a1553f3a3904ae6c"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -52,11 +56,11 @@
       },
       "sc:author": "Laurent Gautier",
       "sc:citation": [
+        "pmcid:PMC3877093",
         "pubmed:24391826",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0083784"
-        },
-        "pmcid:PMC3877093"
+        }
       ],
       "sc:description": "This service is like a DNA search engine.",
       "sc:featureList": {
@@ -65,9 +69,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Tapir",
       "sc:operatingSystem": [
-        "Windows",
         "Mac",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -77,7 +81,18 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/webtools/tapir/"
     },
     {
-      "@id": "_:Nd011d83770cb40c584b4040fa30d973f",
+      "@id": "_:Nf597ddfe56354ab3a1553f3a3904ae6c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1212"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Nc4beac084dcc45618e9fcd283dbf4480",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -91,21 +106,6 @@
         }
       ],
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N259e7b44698d42a59ec09274589eebf8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1212"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0083784",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

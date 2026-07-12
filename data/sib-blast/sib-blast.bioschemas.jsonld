@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkp301",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sib-blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ralf Bundschuh",
       "bsc:input": {
-        "@id": "_:N853dfaa5ff5b44bba958147c700f759f"
+        "@id": "_:Nd766d6925cbb4a8ba443901c5e7dff65"
       },
       "bsc:output": {
-        "@id": "_:N39dddf2556e14fb69a1b833777e78b59"
+        "@id": "_:N7b11972ede0e4e5b89d18651cadd533a"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -62,26 +66,26 @@
         }
       ],
       "sc:citation": [
-        "pubmed:19429693",
-        "pmcid:PMC2703926",
         {
           "@id": "https://doi.org/10.1093/nar/gkp301"
-        }
+        },
+        "pmcid:PMC2703926",
+        "pubmed:19429693"
       ],
       "sc:description": "SIB-BLAST is a web server for improved delineation of true and false positives in PSI-BLAST searches using the SimpleIsBeautiful (SIB) algorithm for sequence based homology detection.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0346"
         },
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_0292"
         }
       ],
       "sc:name": "SIB-BLAST",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioserv.mps.ohio-state.edu/sib-blast/Manual.html"
@@ -89,15 +93,7 @@
       "sc:url": "http://bioserv.mps.ohio-state.edu/sib-blast/"
     },
     {
-      "@id": "_:N39dddf2556e14fb69a1b833777e78b59",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N853dfaa5ff5b44bba958147c700f759f",
+      "@id": "_:Nd766d6925cbb4a8ba443901c5e7dff65",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -105,8 +101,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkp301",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7b11972ede0e4e5b89d18651cadd533a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
     }
   ]
 }

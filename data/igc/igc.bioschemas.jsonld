@@ -36,27 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-3697-0386",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1186/s12859-016-1438-2",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-3697-0386",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/igc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Liang-Bo Wang",
       "bsc:input": {
-        "@id": "_:N2278f4e2f7b044b4b171bc0e5333ebdb"
+        "@id": "_:N725a3df9c8554fe480957607f701a53f"
       },
       "bsc:output": {
-        "@id": "_:N1fef7e3fbcf34fc9a83530919a80ae63"
+        "@id": "_:N0e8fd5b613d64ad0bdfa2e721148daa7"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
         {
@@ -67,11 +67,11 @@
         }
       ],
       "sc:citation": [
-        "pubmed:28088185",
-        "pmcid:PMC5237550",
         {
           "@id": "https://doi.org/10.1186/s12859-016-1438-2"
-        }
+        },
+        "pmcid:PMC5237550",
+        "pubmed:28088185"
       ],
       "sc:contributor": {
         "@id": "http://orcid.org/0000-0003-3697-0386"
@@ -83,9 +83,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "iGC",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/iGC.html"
@@ -94,18 +94,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/iGC.html"
     },
     {
-      "@id": "_:N1fef7e3fbcf34fc9a83530919a80ae63",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N2278f4e2f7b044b4b171bc0e5333ebdb",
+      "@id": "_:N725a3df9c8554fe480957607f701a53f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -114,6 +103,17 @@
         "@id": "edam:format_2058"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N0e8fd5b613d64ad0bdfa2e721148daa7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "P-value"
     }
   ]
 }

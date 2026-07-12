@@ -49,21 +49,21 @@
       "biotools:primaryContact": "Daehwan Kim",
       "bsc:input": [
         {
-          "@id": "_:Nfa760e29e36049a886c05fbf93fb44d0"
+          "@id": "_:N501fcb3d89dd4ce8838e966759705095"
         },
         {
-          "@id": "_:N73a84c22800d48b99fe96337cc4b95be"
+          "@id": "_:Nf3e14e37515146ac992f8d4de115ca36"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N18fccb670ead42f0b10c89dbbfd8b0d9"
+          "@id": "_:N73c67da4509e4ff2bfa3787f0455f478"
         },
         {
-          "@id": "_:Ne55197a0c3df48f39ed1bb4ab09be94b"
+          "@id": "_:N0571bdc936e64d9eb4c64633c781964a"
         },
         {
-          "@id": "_:N2c1d2458a18c41d28f0c4e5d3315bf5f"
+          "@id": "_:Nfddd77f1022648058f7df48828204ecd"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -84,25 +84,25 @@
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         },
         "pmcid:PMC2672628",
-        "pubmed:19289445",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp120"
-        }
+        },
+        "pubmed:19289445"
       ],
       "sc:description": "Program that aligns RNA-Seq reads to a genome in order to identify exon-exon splice junctions. It is built on the ultrafast short read mapping program Bowtie. A stable SAMtools version is now packaged with the program.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0433"
+          "@id": "edam:operation_3198"
         },
         {
-          "@id": "edam:operation_3198"
+          "@id": "edam:operation_0433"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "TopHat",
       "sc:operatingSystem": [
-        "Linux",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://ccb.jhu.edu/software/tophat/manual.shtml"
@@ -111,18 +111,31 @@
       "sc:url": "http://ccb.jhu.edu/software/tophat/index.shtml"
     },
     {
-      "@id": "_:N18fccb670ead42f0b10c89dbbfd8b0d9",
+      "@id": "_:N501fcb3d89dd4ce8838e966759705095",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3002"
+        "@id": "edam:data_1234"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:Ne55197a0c3df48f39ed1bb4ab09be94b",
+      "@id": "_:Nf3e14e37515146ac992f8d4de115ca36",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2749"
+      },
+      "sc:name": "Genome identifier"
+    },
+    {
+      "@id": "_:N73c67da4509e4ff2bfa3787f0455f478",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -133,7 +146,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N2c1d2458a18c41d28f0c4e5d3315bf5f",
+      "@id": "_:N0571bdc936e64d9eb4c64633c781964a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -144,28 +157,15 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:Nfa760e29e36049a886c05fbf93fb44d0",
+      "@id": "_:Nfddd77f1022648058f7df48828204ecd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1234"
+        "@id": "edam:data_3002"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:N73a84c22800d48b99fe96337cc4b95be",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2749"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
       },
-      "sc:name": "Genome identifier"
+      "sc:name": "Annotation track"
     }
   ]
 }

@@ -36,24 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-9506-9451",
+      "@id": "https://orcid.org/0000-0002-6048-2940",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8234-010X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5567-4278",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.3390/cancers15051622",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.3390/cancers14153648",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/mr-based_neuroblastoma_tumour_detection_and_segmentation",
@@ -63,14 +47,14 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nb6fd98fd95704dda8eb023d6b21bb0e3"
+          "@id": "_:N58c3200ee25c4404ba058768905736e8"
         },
         {
-          "@id": "_:N84eac108451a4fce8c5f711b692f28e1"
+          "@id": "_:N83a4fb1f9ecd497599090e10d15ea4b8"
         }
       ],
       "bsc:output": {
-        "@id": "_:N86c8d73b7ce74b69ae7b0f94607694d6"
+        "@id": "_:N5d629d5e5a2841e195594dd3af70406a"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
@@ -87,21 +71,21 @@
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-9506-9451"
-        },
-        {
           "@id": "https://orcid.org/0000-0002-5567-4278"
         },
         {
           "@id": "https://orcid.org/0000-0002-6048-2940"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-9506-9451"
         }
       ],
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.3390/cancers15051622"
+          "@id": "https://doi.org/10.3390/cancers14153648"
         },
         {
-          "@id": "https://doi.org/10.3390/cancers14153648"
+          "@id": "https://doi.org/10.3390/cancers15051622"
         }
       ],
       "sc:description": "This tool is specifically designed and validated for automated detection and segmentation of neuroblastic tumours in T2-weighted magnetic resonance images (T2-MR) using deep learning. It processes DICOM or NIfTI input data and outputs in NIFTI or DICOM SEG.\n\nTRAINING & VALIDATION COHORTS:\n\nInitial Development (Veiga-Canuto 2022):\n-Training: 106 patients, 5-fold CV (median DSC 0.965 ± 0.018).\n-Internal validation: 26 patients (median DSC 0.918 ± 0.067).\n-Sources: La Fe (Spain), SIOPEN HR-NBL1/LINES, St. Anna (Austria), Pisa (Italy).\n-Mean age: 37.6 ± 39.3 months.\n-Median tumor volume: 116,518 mm³.\n\nExternal Validation (Veiga-Canuto 2023):\n-300 patients, 535 independent T2 MRI scans (486 at diagnosis, 49 post-chemotherapy).\n-Performance: median DSC 0.997 (0.944–1.000), 94% successful detection.\n-Sources: 12 European countries (HR-NBL1/SIOPEN 119, LINES/SIOPEN 107, German Registry 62, others 12).\n-Heterogeneous data: 1.5T (435), 3T (100); Siemens (318), Philips (109), GE (105), Canon (3).",
@@ -112,9 +96,9 @@
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "MR-based neuroblastoma tumour detection and segmentation (EUCAIM-SW-019_T-01-02-002)",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:provider": [
         {
@@ -134,39 +118,23 @@
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/4/repositories/mr_based_neuroblastoma_tumour_detection_and_segmentation/artifacts-tab"
     },
     {
-      "@id": "_:Nb6fd98fd95704dda8eb023d6b21bb0e3",
+      "@id": "_:N58c3200ee25c4404ba058768905736e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_3464"
         }
       ],
       "sc:name": "Report"
     },
     {
-      "@id": "_:N84eac108451a4fce8c5f711b692f28e1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3548"
-        },
-        {
-          "@id": "edam:format_3549"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N86c8d73b7ce74b69ae7b0f94607694d6",
+      "@id": "_:N83a4fb1f9ecd497599090e10d15ea4b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -182,7 +150,39 @@
       "sc:name": "Image"
     },
     {
-      "@id": "https://orcid.org/0000-0002-6048-2940",
+      "@id": "_:N5d629d5e5a2841e195594dd3af70406a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3548"
+        },
+        {
+          "@id": "edam:format_3549"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9506-9451",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.3390/cancers14153648",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8234-010X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.3390/cancers15051622",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5567-4278",
       "@type": "sc:Person"
     }
   ]

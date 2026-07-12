@@ -36,29 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/S12859-021-04042-6",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pignon",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3abff58b08954f5397c1507a18374a51"
+          "@id": "_:Nff673912ee674613984e2163789acc06"
         },
         {
-          "@id": "_:N0d564fc1ddc24e0b8b664eeda13bd8b1"
+          "@id": "_:Nbab078c7d5c5460bb256489d52d26a32"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0f2080eadcdc41238be3e3cece4a4e5c"
+        "@id": "_:Ne6273746d6c04f6bb14d4ea21ccf7fa0"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_0128"
         },
@@ -70,17 +63,23 @@
         },
         {
           "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
-        "pubmed:34088263",
+        "pmcid:PMC8178832",
         {
           "@id": "https://doi.org/10.1186/S12859-021-04042-6"
         },
-        "pmcid:PMC8178832"
+        "pubmed:34088263"
       ],
       "sc:description": "PIGNON is a protein-protein interaction (PPI)-guided functional enrichment analysis for quantitative proteomics. This algorithm measures the clustering of proteins with a shared Gene Ontology (GO) annotation within the provided PPI network weighted with quantitative proteomics data. The significance of this clustering measure is then estimated from a normal distribution approximated from a Monte Carlo Sampling Distribution. To correct for multiple hypothesis testing, we assess the false discovery rate at various thresholds against a null model.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2949"
+        },
         {
           "@id": "edam:operation_2436"
         },
@@ -89,31 +88,20 @@
         },
         {
           "@id": "edam:operation_3223"
-        },
-        {
-          "@id": "edam:operation_2949"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "PIGNON",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:url": "https://github.com/LavalleeAdamLab/PIGNON"
     },
     {
-      "@id": "_:N3abff58b08954f5397c1507a18374a51",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2628"
-      },
-      "sc:name": "BioGRID interaction ID"
-    },
-    {
-      "@id": "_:N0d564fc1ddc24e0b8b664eeda13bd8b1",
+      "@id": "_:Nff673912ee674613984e2163789acc06",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2302"
@@ -121,7 +109,15 @@
       "sc:name": "STRING ID"
     },
     {
-      "@id": "_:N0f2080eadcdc41238be3e3cece4a4e5c",
+      "@id": "_:Nbab078c7d5c5460bb256489d52d26a32",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2628"
+      },
+      "sc:name": "BioGRID interaction ID"
+    },
+    {
+      "@id": "_:Ne6273746d6c04f6bb14d4ea21ccf7fa0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3932"
@@ -130,6 +126,10 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Q-value"
+    },
+    {
+      "@id": "https://doi.org/10.1186/S12859-021-04042-6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

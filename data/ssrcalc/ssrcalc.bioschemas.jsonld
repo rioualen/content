@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1074/mcp.m400031-mcp200",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ssrcalc",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Naf644fb4d6124b6f967c85190d0dea19"
+          "@id": "_:N226d29c408554f029927bec4f733c3eb"
         },
         {
-          "@id": "_:Nac0e5c235457408ca4e56d20596e898d"
+          "@id": "_:Na2d8724e539047929508c47e51fb1dbf"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne412fe89aaad4e53aa360410f1774f04"
+          "@id": "_:N374bf478528e452fb2f5693abe7aaf69"
         },
         {
-          "@id": "_:N695ba1aef56044d6a0b3d0685984df52"
+          "@id": "_:N1e33d4edce574da9a109efd9e0101111"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
-        "pubmed:15238601",
         {
           "@id": "https://doi.org/10.1074/mcp.m400031-mcp200"
-        }
+        },
+        "pubmed:15238601"
       ],
       "sc:description": "Sequence-specific retention time calculator.",
       "sc:featureList": {
@@ -76,9 +80,9 @@
       },
       "sc:name": "SSRCalc",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://hs2.proteome.ca/SSRCalc/SSRCalcHelp.htm"
@@ -86,50 +90,7 @@
       "sc:url": "http://hs2.proteome.ca/SSRCalc/SSRCalc.html"
     },
     {
-      "@id": "_:Ne412fe89aaad4e53aa360410f1774f04",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2016"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3468"
-        }
-      ],
-      "sc:name": "Amino acid property"
-    },
-    {
-      "@id": "_:N695ba1aef56044d6a0b3d0685984df52",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1520"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3468"
-        }
-      ],
-      "sc:name": "Peptide hydrophobic moment"
-    },
-    {
-      "@id": "_:Naf644fb4d6124b6f967c85190d0dea19",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:Nac0e5c235457408ca4e56d20596e898d",
+      "@id": "_:N226d29c408554f029927bec4f733c3eb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -140,8 +101,47 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1074/mcp.m400031-mcp200",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na2d8724e539047929508c47e51fb1dbf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:N374bf478528e452fb2f5693abe7aaf69",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2016"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3468"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Amino acid property"
+    },
+    {
+      "@id": "_:N1e33d4edce574da9a109efd9e0101111",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1520"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3468"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Peptide hydrophobic moment"
     }
   ]
 }

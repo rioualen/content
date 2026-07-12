@@ -39,10 +39,10 @@
       "@id": "https://bio.tools/assemblage",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N96e03aea23944e479ab11776d1725922"
+        "@id": "_:Ne4c8e4ec21b546dea6248811e908444b"
       },
       "bsc:output": {
-        "@id": "_:Nc29a398a1d8a42ff9b12b0de459aca6c"
+        "@id": "_:N749219af19e044f19d6e2623c61d8ec1"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -52,10 +52,10 @@
       "sc:description": "Assemblage is a microbial genome assembly pipeline that runs various QC, assembly and post-assembly steps on Illumina PE/SE reads. The different steps of the pipeline are - downsample reads using Seqtk/Mash (optional), clean reads with Trimmomatic, assemble clean reads with SPAdes assembler, perform post-assembly correction with PILON and annotates assembled genome using PROKKA.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0362"
+          "@id": "edam:operation_0524"
         },
         {
-          "@id": "edam:operation_0524"
+          "@id": "edam:operation_0362"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -65,7 +65,26 @@
       "sc:url": "https://github.com/alipirani88/assemblage"
     },
     {
-      "@id": "_:N96e03aea23944e479ab11776d1725922",
+      "@id": "_:N749219af19e044f19d6e2623c61d8ec1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1936"
+        },
+        {
+          "@id": "edam:format_2305"
+        },
+        {
+          "@id": "edam:format_1929"
+        }
+      ],
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Ne4c8e4ec21b546dea6248811e908444b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -73,25 +92,6 @@
       "sc:encodingFormat": {
         "@id": "edam:format_1931"
       },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nc29a398a1d8a42ff9b12b0de459aca6c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1936"
-        },
-        {
-          "@id": "edam:format_2305"
-        }
-      ],
       "sc:name": "DNA sequence"
     }
   ]

@@ -36,26 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu384",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netbiov",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Shailesh tripathi",
       "bsc:input": {
-        "@id": "_:Nd15aad7f0b6d4ccda4a38b220f29d748"
+        "@id": "_:Nb365a7525ccd4be5893275ecf00adf86"
       },
       "bsc:output": [
         {
-          "@id": "_:N2c245e7864744e2c96381adc0911fc15"
+          "@id": "_:Nc35dc4504b614680930d3ba588eabc9a"
         },
         {
-          "@id": "_:N692b26ffdc6f44ac997fc4c4e08dedc4"
+          "@id": "_:Nba2eb22fa85f4831a80f9f4bceea3a5b"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2640"
+        },
         {
           "@id": "edam:topic_3303"
         },
@@ -63,20 +70,17 @@
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_3070"
-        },
-        {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3070"
         }
       ],
       "sc:citation": [
+        "pubmed:24928209",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu384"
-        },
-        "pubmed:24928209"
+        }
       ],
       "sc:description": "A package that provides an effective visualization of large biological networks.",
       "sc:featureList": {
@@ -85,9 +89,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "netbiov",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/netbiov.html"
@@ -96,18 +100,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/netbiov.html"
     },
     {
-      "@id": "_:Nd15aad7f0b6d4ccda4a38b220f29d748",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3604"
-      },
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:N2c245e7864744e2c96381adc0911fc15",
+      "@id": "_:Nc35dc4504b614680930d3ba588eabc9a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -118,7 +111,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N692b26ffdc6f44ac997fc4c4e08dedc4",
+      "@id": "_:Nba2eb22fa85f4831a80f9f4bceea3a5b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -129,8 +122,15 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu384",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nb365a7525ccd4be5893275ecf00adf86",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3604"
+      },
+      "sc:name": "Matrix"
     }
   ]
 }

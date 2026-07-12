@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/getwigdistance",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N799b87ec35e94bf893c3a6554dca376c"
+          "@id": "_:Na11743f571d845ce83f81156a6120a81"
         },
         {
-          "@id": "_:Nc1457daca08b43f59173dbdab4e50594"
+          "@id": "_:N75e323b2de47414381832aba7272a15f"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3bdb71fbeff64d3b85f2c96cd0e5ffaf"
+        "@id": "_:N5f39b7341ce14e4dbfa248e70230032f"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -56,14 +60,14 @@
         "@id": "edam:topic_0622"
       },
       "sc:citation": [
-        "pubmed:27137889",
         "pmcid:PMC4987906",
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        },
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        }
+        "pubmed:27137889"
       ],
       "sc:description": "Compute the average data around some genomic coordinates using WIG files (thus covering a large proportion of the genome).",
       "sc:featureList": {
@@ -71,9 +75,9 @@
       },
       "sc:name": "getwigdistance",
       "sc:operatingSystem": [
+        "Mac",
         "Linux",
-        "Windows",
-        "Mac"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Ffmareuil%2Furgi_tools%2FgetWigDistance%2F1.0.0"
@@ -82,29 +86,7 @@
       "sc:url": "https://urgi.versailles.inra.fr/Tools/REPET"
     },
     {
-      "@id": "_:N799b87ec35e94bf893c3a6554dca376c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1975"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Nc1457daca08b43f59173dbdab4e50594",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3005"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N3bdb71fbeff64d3b85f2c96cd0e5ffaf",
+      "@id": "_:N5f39b7341ce14e4dbfa248e70230032f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -115,8 +97,26 @@
       "sc:name": "Image"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na11743f571d845ce83f81156a6120a81",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3005"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N75e323b2de47414381832aba7272a15f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1975"
+      },
+      "sc:name": "Data"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

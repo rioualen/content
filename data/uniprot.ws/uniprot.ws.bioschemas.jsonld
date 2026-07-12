@@ -36,41 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/uniprot.ws",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Marc Carlson",
       "bsc:input": {
-        "@id": "_:N475f6037a8af4761a8340ca8ee490877"
+        "@id": "_:N57ac79f7dbb84a71951531a28644dae2"
       },
       "bsc:output": {
-        "@id": "_:N8946a62e0b084b82adb6e7cdd4ebddc1"
+        "@id": "_:N5bd151f498714291b50bfd82d21b9d63"
       },
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:citation": [
-        "pmcid:PMC4509590",
-        "pubmed:25633503",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        }
+        },
+        "pubmed:25633503",
+        "pmcid:PMC4509590"
       ],
       "sc:description": "A collection of functions for retrieving, processing and repackaging the UniProt web services.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2421"
+        },
         {
           "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_0224"
-        },
-        {
-          "@id": "edam:operation_2421"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -88,7 +84,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/UniProt.ws.html"
     },
     {
-      "@id": "_:N475f6037a8af4761a8340ca8ee490877",
+      "@id": "_:N5bd151f498714291b50bfd82d21b9d63",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1963"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N57ac79f7dbb84a71951531a28644dae2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -99,15 +106,8 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N8946a62e0b084b82adb6e7cdd4ebddc1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1963"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

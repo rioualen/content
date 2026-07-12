@@ -45,40 +45,40 @@
       "biotools:primaryContact": "Thomas Sandmann",
       "bsc:input": [
         {
-          "@id": "_:Nf6391bd581bf4c60856e3c05b5afe32d"
+          "@id": "_:Nc33a9bf072d2483fb15203114cf789d7"
         },
         {
-          "@id": "_:N395506f6672647019e77fa1189e5bdeb"
+          "@id": "_:Na4ce65ac0da84dcfb1262cd8c84b75b4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N290ef62f4366413ba8961661c5ad29f4"
+          "@id": "_:N08dd2027bf6c4648843bbf1cee045a30"
         },
         {
-          "@id": "_:Na493519b4a2b4e85b8802ed3d520dd8a"
+          "@id": "_:Na4a3068e5a5d441bb7b093e7d345d0ac"
         },
         {
-          "@id": "_:Nf19d176740174ad2b2362b0a1675fbd0"
+          "@id": "_:N5196b9068e0d435b9fcb96e9dfe6eb0a"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
-        "Library"
+        "Library",
+        "Command-line tool"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0203"
-        },
         {
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
@@ -90,18 +90,18 @@
       "sc:description": "Toolkit for comparing differential gene expression profiles through gene set enrichment analysis. Starting from normalized microarray or RNA-seq gene expression values the package performs differential expression analysis. Supplying a simple list of gene identifiers, global differential expression profiles or data from complete experiments as input, users can use a unified set of well-known gene set enrichment analysis methods to retrieve experiments with similar changes in gene expression.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3223"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "gCMAP",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/gCMAP.html"
@@ -110,39 +110,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gCMAP.html"
     },
     {
-      "@id": "_:N290ef62f4366413ba8961661c5ad29f4",
+      "@id": "_:Nc33a9bf072d2483fb15203114cf789d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1636"
+        "@id": "edam:data_0842"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Heat map"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Identifier"
     },
     {
-      "@id": "_:Na493519b4a2b4e85b8802ed3d520dd8a",
+      "@id": "_:Na4ce65ac0da84dcfb1262cd8c84b75b4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_0928"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Nf19d176740174ad2b2362b0a1675fbd0",
+      "@id": "_:N08dd2027bf6c4648843bbf1cee045a30",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -158,26 +148,36 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nf6391bd581bf4c60856e3c05b5afe32d",
+      "@id": "_:Na4a3068e5a5d441bb7b093e7d345d0ac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0842"
+        "@id": "edam:data_1636"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Identifier"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Heat map"
     },
     {
-      "@id": "_:N395506f6672647019e77fa1189e5bdeb",
+      "@id": "_:N5196b9068e0d435b9fcb96e9dfe6eb0a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0928"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression profile"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

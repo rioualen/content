@@ -36,27 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bti551",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bingo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Steven Maere",
       "bsc:input": [
         {
-          "@id": "_:N355324f1dd264a8b9928d6bb24c302bc"
+          "@id": "_:Nae6f668695de4d91a63930b7f5a3bb08"
         },
         {
-          "@id": "_:N40829aaf41ad4b76b84077a26c7d0cd7"
+          "@id": "_:Na01698e6f9174bb187add0d854c68a86"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N75f09c59e189492da5c6003fd9e4ae42"
+          "@id": "_:Ne2eeb55e8769417cbff52a099bcbdd89"
         },
         {
-          "@id": "_:N606b29f86f214ddaa8862ad181c8581c"
+          "@id": "_:N69cb7019149145f2b3d6d3b652b5df28"
         }
       ],
       "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,10 +61,10 @@
         "@id": "edam:topic_0085"
       },
       "sc:citation": [
-        "pubmed:15972284",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bti551"
-        }
+        },
+        "pubmed:15972284"
       ],
       "sc:description": "A tool to determine which Gene Ontology (GO) categories are statistically overrepresented in a set of genes or a subgraph of a biological network.",
       "sc:featureList": {
@@ -76,9 +72,9 @@
       },
       "sc:name": "BiNGO",
       "sc:operatingSystem": [
-        "Linux",
         "Windows",
-        "Mac"
+        "Mac",
+        "Linux"
       ],
       "sc:provider": "PSB",
       "sc:softwareHelp": {
@@ -88,7 +84,31 @@
       "sc:url": "http://www.psb.ugent.be/cbd/papers/BiNGO/Home.html"
     },
     {
-      "@id": "_:N75f09c59e189492da5c6003fd9e4ae42",
+      "@id": "_:Nae6f668695de4d91a63930b7f5a3bb08",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1025"
+      },
+      "sc:name": "Gene identifier"
+    },
+    {
+      "@id": "_:Na01698e6f9174bb187add0d854c68a86",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2338"
+      },
+      "sc:name": "Ontology identifier"
+    },
+    {
+      "@id": "_:Ne2eeb55e8769417cbff52a099bcbdd89",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N69cb7019149145f2b3d6d3b652b5df28",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2338"
@@ -99,28 +119,8 @@
       "sc:name": "Ontology identifier"
     },
     {
-      "@id": "_:N606b29f86f214ddaa8862ad181c8581c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N355324f1dd264a8b9928d6bb24c302bc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1025"
-      },
-      "sc:name": "Gene identifier"
-    },
-    {
-      "@id": "_:N40829aaf41ad4b76b84077a26c7d0cd7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2338"
-      },
-      "sc:name": "Ontology identifier"
+      "@id": "https://doi.org/10.1093/bioinformatics/bti551",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
