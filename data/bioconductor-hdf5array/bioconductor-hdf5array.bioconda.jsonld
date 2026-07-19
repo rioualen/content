@@ -1,6 +1,6 @@
 {
   "@context": {
-    "bioconda": "https://bioconda.github.io/recipes/",
+    "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -36,7 +36,28 @@
   "@type": "schema1:SoftwareApplication",
   "schema1:citation": "doi:10.1038/nmeth.3252",
   "schema1:description": "HDF5 datasets as array-like objects in R",
-  "schema1:downloadUrl": "['https://bioconductor.org/packages/3.20/bioc/src/contrib/HDF5Array_1.34.0.tar.gz', 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/HDF5Array/HDF5Array_1.34.0.tar.gz', 'https://bioarchive.galaxyproject.org/HDF5Array_1.34.0.tar.gz', 'https://depot.galaxyproject.org/software/bioconductor-hdf5array/bioconductor-hdf5array_1.34.0_src_all.tar.gz']",
+  "schema1:downloadUrl": [
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/HDF5Array_1.34.0.tar.gz",
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/HDF5Array/HDF5Array_1.34.0.tar.gz",
+    "https://bioarchive.galaxyproject.org/HDF5Array_1.34.0.tar.gz",
+    "https://depot.galaxyproject.org/software/bioconductor-hdf5array/bioconductor-hdf5array_1.34.0_src_all.tar.gz"
+  ],
+  "schema1:hasPart": [
+    "bioconductor-biocgenerics",
+    "bioconductor-delayedarray",
+    "bioconductor-iranges",
+    "bioconductor-rhdf5",
+    "bioconductor-rhdf5filters",
+    "bioconductor-rhdf5lib",
+    "bioconductor-s4arrays",
+    "bioconductor-s4vectors",
+    "bioconductor-sparsearray",
+    "r-base",
+    "r-matrix",
+    "libblas",
+    "liblapack",
+    "zlib"
+  ],
   "schema1:identifier": {
     "@id": "biotools:hdf5array"
   },

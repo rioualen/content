@@ -1,6 +1,6 @@
 {
   "@context": {
-    "bioconda": "https://bioconda.github.io/recipes/",
+    "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -40,12 +40,19 @@
   ],
   "schema1:citation": "doi:10.1371/journal.pcbi.1009123",
   "schema1:description": "Command-line tools for manipulating VCF files.",
-  "schema1:downloadUrl": [
-    "https://github.com/vcflib/vcflib/releases/download/v1.0.14/vcflib-1.0.14-src.tar.gz",
-    "https://ziglang.org/builds/zig-linux-x86_64-0.15.0-dev.565+8e72a2528.tar.xz",
-    "https://ziglang.org/builds/zig-linux-aarch64-0.15.0-dev.565+8e72a2528.tar.xz",
-    "https://ziglang.org/builds/zig-macos-x86_64-0.15.0-dev.565+8e72a2528.tar.xz",
-    "https://ziglang.org/builds/zig-macos-aarch64-0.15.0-dev.565+8e72a2528.tar.xz"
+  "schema1:hasPart": [
+    "libgomp",
+    "llvm-openmp",
+    "htslib",
+    "tabixpp",
+    "wfa2-lib",
+    "pandoc",
+    "zlib",
+    "bzip2",
+    "xz",
+    "libcurl",
+    "libdeflate",
+    "fastahack"
   ],
   "schema1:identifier": {
     "@id": "biotools:vcflib"

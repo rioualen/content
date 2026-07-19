@@ -1,6 +1,6 @@
 {
   "@context": {
-    "bioconda": "https://bioconda.github.io/recipes/",
+    "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -36,7 +36,19 @@
   "@type": "schema1:SoftwareApplication",
   "schema1:citation": "doi:10.1109/tcbb.2007.1078",
   "schema1:description": "Reproducibility-Optimized Test Statistic",
-  "schema1:downloadUrl": "['https://bioconductor.org/packages/3.20/bioc/src/contrib/ROTS_1.34.0.tar.gz', 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/ROTS/ROTS_1.34.0.tar.gz', 'https://bioarchive.galaxyproject.org/ROTS_1.34.0.tar.gz', 'https://depot.galaxyproject.org/software/bioconductor-rots/bioconductor-rots_1.34.0_src_all.tar.gz']",
+  "schema1:downloadUrl": [
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/ROTS_1.34.0.tar.gz",
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/ROTS/ROTS_1.34.0.tar.gz",
+    "https://bioarchive.galaxyproject.org/ROTS_1.34.0.tar.gz",
+    "https://depot.galaxyproject.org/software/bioconductor-rots/bioconductor-rots_1.34.0_src_all.tar.gz"
+  ],
+  "schema1:hasPart": [
+    "bioconductor-biobase",
+    "r-base",
+    "r-rcpp",
+    "libblas",
+    "liblapack"
+  ],
   "schema1:identifier": {
     "@id": "biotools:rots"
   },

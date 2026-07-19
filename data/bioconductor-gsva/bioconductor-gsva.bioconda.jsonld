@@ -1,6 +1,6 @@
 {
   "@context": {
-    "bioconda": "https://bioconda.github.io/recipes/",
+    "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -35,7 +35,32 @@
   "@id": "bioconda:bioconductor-gsva",
   "@type": "schema1:SoftwareApplication",
   "schema1:description": "Gene Set Variation Analysis for Microarray and RNA-Seq Data",
-  "schema1:downloadUrl": "['https://bioconductor.org/packages/3.20/bioc/src/contrib/GSVA_2.0.0.tar.gz', 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/GSVA/GSVA_2.0.0.tar.gz', 'https://bioarchive.galaxyproject.org/GSVA_2.0.0.tar.gz', 'https://depot.galaxyproject.org/software/bioconductor-gsva/bioconductor-gsva_2.0.0_src_all.tar.gz']",
+  "schema1:downloadUrl": [
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/GSVA_2.0.0.tar.gz",
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/GSVA/GSVA_2.0.0.tar.gz",
+    "https://bioarchive.galaxyproject.org/GSVA_2.0.0.tar.gz",
+    "https://depot.galaxyproject.org/software/bioconductor-gsva/bioconductor-gsva_2.0.0_src_all.tar.gz"
+  ],
+  "schema1:hasPart": [
+    "bioconductor-biobase",
+    "bioconductor-biocparallel",
+    "bioconductor-biocsingular",
+    "bioconductor-delayedarray",
+    "bioconductor-delayedmatrixstats",
+    "bioconductor-gseabase",
+    "bioconductor-hdf5array",
+    "bioconductor-iranges",
+    "bioconductor-s4vectors",
+    "bioconductor-singlecellexperiment",
+    "bioconductor-sparsematrixstats",
+    "bioconductor-spatialexperiment",
+    "bioconductor-summarizedexperiment",
+    "r-base",
+    "r-cli",
+    "r-matrix",
+    "libblas",
+    "liblapack"
+  ],
   "schema1:identifier": {
     "@id": "biotools:gsva"
   },

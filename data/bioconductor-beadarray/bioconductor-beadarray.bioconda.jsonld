@@ -1,6 +1,6 @@
 {
   "@context": {
-    "bioconda": "https://bioconda.github.io/recipes/",
+    "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -35,7 +35,28 @@
   "@id": "bioconda:bioconductor-beadarray",
   "@type": "schema1:SoftwareApplication",
   "schema1:description": "Quality assessment and low-level analysis for Illumina BeadArray data",
-  "schema1:downloadUrl": "['https://bioconductor.org/packages/3.20/bioc/src/contrib/beadarray_2.56.0.tar.gz', 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/beadarray/beadarray_2.56.0.tar.gz', 'https://bioarchive.galaxyproject.org/beadarray_2.56.0.tar.gz', 'https://depot.galaxyproject.org/software/bioconductor-beadarray/bioconductor-beadarray_2.56.0_src_all.tar.gz']",
+  "schema1:downloadUrl": [
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/beadarray_2.56.0.tar.gz",
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/beadarray/beadarray_2.56.0.tar.gz",
+    "https://bioarchive.galaxyproject.org/beadarray_2.56.0.tar.gz",
+    "https://depot.galaxyproject.org/software/bioconductor-beadarray/bioconductor-beadarray_2.56.0_src_all.tar.gz"
+  ],
+  "schema1:hasPart": [
+    "bioconductor-annotationdbi",
+    "bioconductor-beaddatapackr",
+    "bioconductor-biobase",
+    "bioconductor-biocgenerics",
+    "bioconductor-genomicranges",
+    "bioconductor-illuminaio",
+    "bioconductor-iranges",
+    "bioconductor-limma",
+    "r-base",
+    "r-ggplot2",
+    "r-hexbin",
+    "r-reshape2",
+    "libblas",
+    "liblapack"
+  ],
   "schema1:identifier": {
     "@id": "biotools:beadarray"
   },

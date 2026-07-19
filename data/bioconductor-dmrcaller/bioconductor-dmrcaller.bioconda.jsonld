@@ -1,6 +1,6 @@
 {
   "@context": {
-    "bioconda": "https://bioconda.github.io/recipes/",
+    "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -35,7 +35,23 @@
   "@id": "bioconda:bioconductor-dmrcaller",
   "@type": "schema1:SoftwareApplication",
   "schema1:description": "Differentially Methylated Regions caller",
-  "schema1:downloadUrl": "['https://bioconductor.org/packages/3.20/bioc/src/contrib/DMRcaller_1.38.0.tar.gz', 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/DMRcaller/DMRcaller_1.38.0.tar.gz', 'https://bioarchive.galaxyproject.org/DMRcaller_1.38.0.tar.gz', 'https://depot.galaxyproject.org/software/bioconductor-dmrcaller/bioconductor-dmrcaller_1.38.0_src_all.tar.gz']",
+  "schema1:downloadUrl": [
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/DMRcaller_1.38.0.tar.gz",
+    "https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/DMRcaller/DMRcaller_1.38.0.tar.gz",
+    "https://bioarchive.galaxyproject.org/DMRcaller_1.38.0.tar.gz",
+    "https://depot.galaxyproject.org/software/bioconductor-dmrcaller/bioconductor-dmrcaller_1.38.0_src_all.tar.gz"
+  ],
+  "schema1:hasPart": [
+    "bioconductor-genomicranges",
+    "bioconductor-iranges",
+    "bioconductor-s4vectors",
+    "r-base",
+    "r-betareg",
+    "r-rcpp",
+    "r-rcpproll",
+    "libblas",
+    "liblapack"
+  ],
   "schema1:identifier": {
     "@id": "biotools:dmrcaller"
   },
