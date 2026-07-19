@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw852",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/derfinderhelper",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Leonardo Collado-Torres",
       "bsc:input": {
-        "@id": "_:N34afca1c769347f5bb2bd953d29c07b8"
+        "@id": "_:N848bbdefff9147fbaff35d813e705028"
       },
       "bsc:output": {
-        "@id": "_:N18fda2f58bd54c8cb82f21b5b141e9e9"
+        "@id": "_:N7cd5b3b557ca4cbbb63e7932e52405d0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3372"
       },
       "sc:citation": [
+        "pubmed:27694310",
+        "pmcid:PMC5314792",
         {
           "@id": "https://doi.org/10.1093/nar/gkw852"
-        },
-        "pmcid:PMC5314792",
-        "pubmed:27694310"
+        }
       ],
       "sc:description": "Helper package for speeding up the derfinder package when using multiple cores.",
       "sc:featureList": {
@@ -71,8 +67,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "derfinderHelper",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -82,7 +78,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/derfinderHelper.html"
     },
     {
-      "@id": "_:N34afca1c769347f5bb2bd953d29c07b8",
+      "@id": "_:N848bbdefff9147fbaff35d813e705028",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -93,7 +89,7 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:N18fda2f58bd54c8cb82f21b5b141e9e9",
+      "@id": "_:N7cd5b3b557ca4cbbb63e7932e52405d0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -102,6 +98,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Statistical estimate score"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw852",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

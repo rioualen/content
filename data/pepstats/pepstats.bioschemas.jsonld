@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
@@ -44,27 +48,23 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pepstats",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nbe4ebe11e5f848b3bc13ac85ec1866dc"
+          "@id": "_:N63cbfc5f20034e99bef4c33d53b36193"
         },
         {
-          "@id": "_:Neaf2fc6f2ce4454c8c19401233f07c6d"
+          "@id": "_:N28fadbc3d8a742e7b153ea585f837d61"
         },
         {
-          "@id": "_:N2748ce30deef42a78f0e018a6b66288a"
+          "@id": "_:N3e29ee08f8314fd2a917f30eec1f5ae0"
         }
       ],
       "bsc:output": {
-        "@id": "_:Na07c2a5494c14b02bde66363a38f993b"
+        "@id": "_:N87803b0786944dc9bb9312f097014f6b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0123"
@@ -74,34 +74,34 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
         "UK BBSRC",
         "UK MRC",
-        "EMBOSS Contributors",
-        "Wellcome Trust"
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Calculate statistics of protein properties.",
       "sc:featureList": {
         "@id": "edam:operation_0250"
       },
       "sc:funder": [
-        "UK MRC",
         "UK BBSRC",
+        "UK MRC",
         "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "pepstats",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -109,36 +109,20 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
           "@id": "http://emboss.open-bio.org/rel/rel6/apps/pepstats.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/pepstats.html"
     },
     {
-      "@id": "_:Nbe4ebe11e5f848b3bc13ac85ec1866dc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1505"
-      },
-      "sc:name": "Amino acid index (molecular weight)"
-    },
-    {
-      "@id": "_:Neaf2fc6f2ce4454c8c19401233f07c6d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "_:N2748ce30deef42a78f0e018a6b66288a",
+      "@id": "_:N63cbfc5f20034e99bef4c33d53b36193",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1502"
@@ -146,7 +130,23 @@
       "sc:name": "Amino acid index (chemical classes)"
     },
     {
-      "@id": "_:Na07c2a5494c14b02bde66363a38f993b",
+      "@id": "_:N28fadbc3d8a742e7b153ea585f837d61",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1505"
+      },
+      "sc:name": "Amino acid index (molecular weight)"
+    },
+    {
+      "@id": "_:N3e29ee08f8314fd2a917f30eec1f5ae0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:N87803b0786944dc9bb9312f097014f6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0897"

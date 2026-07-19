@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-0474-2218",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq046",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ebimage",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Andrzej Oleś",
       "bsc:input": {
-        "@id": "_:N5f26db2a54df43aeaccff54caa05b3ec"
+        "@id": "_:N1530ad186bc942e385acb7ca6a269a8d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3383"
       },
       "sc:author": [
-        "Oleg Sklyar",
         {
           "@id": "http://orcid.org/0000-0002-0474-2218"
         },
-        "Mike Smith",
         "Andrzej Oleś",
-        "Gregoire Pau"
+        "Gregoire Pau",
+        "Mike Smith",
+        "Oleg Sklyar"
       ],
       "sc:citation": [
+        "pubmed:20338898",
         "pmcid:PMC2844988",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btq046"
-        },
-        "pubmed:20338898"
+        }
       ],
       "sc:description": "R package which provides general purpose functionality for image processing and analysis. In the context of (high-throughput) microscopy-based cellular assays, It offers tools to segment cells and extract quantitative cellular descriptors. This allows the automation of such tasks using the R programming language and facilitates the use of other tools in the R environment for signal processing, statistical modeling, machine learning and visualization with image data.",
       "sc:featureList": {
@@ -72,8 +80,8 @@
       "sc:name": "EBImage",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "European Molecular Biology Laboratory",
@@ -86,20 +94,12 @@
       "sc:url": "http://bioconductor.org/packages/EBImage/"
     },
     {
-      "@id": "_:N5f26db2a54df43aeaccff54caa05b3ec",
+      "@id": "_:N1530ad186bc942e385acb7ca6a269a8d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq046",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-0474-2218",
-      "@type": "sc:Person"
     }
   ]
 }

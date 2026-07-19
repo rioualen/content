@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv379",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/birte",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Holger Froehlich",
       "bsc:input": [
         {
-          "@id": "_:N27a6d8569e2e41bdaf86677aece7cbef"
+          "@id": "_:N56b77cd8372142afa95d1cebcd196502"
         },
         {
-          "@id": "_:Ne0c9e6b1e82a4855842977948c0a948a"
+          "@id": "_:N10c9600d26b2458d921d4fdd5a189d62"
         }
       ],
       "bsc:output": {
-        "@id": "_:Neb214598283548a89b8372f7130cd97b"
+        "@id": "_:N37264bfb676d487e8f89bff771fdb0a1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -67,10 +71,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:26112290",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv379"
-        },
-        "pubmed:26112290"
+        }
       ],
       "sc:description": "This tool uses regulatory networks of TFs, miRNAs and possibly other factors, together with mRNA, miRNA and other available expression data to predict the relative influence of a regulator on the expression of its target genes. Inference is done in a Bayesian modeling framework using Markov-Chain-Monte-Carlo. A special feature is the possibility for follow-up network reverse engineering between active regulators.",
       "sc:featureList": {
@@ -79,9 +83,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "birte",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/birte.html"
@@ -90,7 +94,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/birte.html"
     },
     {
-      "@id": "_:N27a6d8569e2e41bdaf86677aece7cbef",
+      "@id": "_:N56b77cd8372142afa95d1cebcd196502",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -106,7 +110,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Ne0c9e6b1e82a4855842977948c0a948a",
+      "@id": "_:N10c9600d26b2458d921d4fdd5a189d62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -122,7 +126,7 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:Neb214598283548a89b8372f7130cd97b",
+      "@id": "_:N37264bfb676d487e8f89bff771fdb0a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -131,10 +135,6 @@
         "@id": "edam:format_2013"
       },
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv379",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

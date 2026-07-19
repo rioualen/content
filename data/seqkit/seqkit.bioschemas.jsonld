@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0163962",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/seqkit",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N895ecfc0f7484909a74c801a59dfcada"
+        "@id": "_:Ncec05d17e09d49eeb68d5d325df00e2a"
       },
       "bsc:output": {
-        "@id": "_:Ndc56762b2b6f42639af7de5bd40059c1"
+        "@id": "_:Nc8166587892d4412b757bb6b7027e2ca"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3489"
@@ -55,31 +59,31 @@
       ],
       "sc:citation": [
         "pubmed:27706213",
+        "pmcid:PMC5051824",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0163962"
-        },
-        "pmcid:PMC5051824"
+        }
       ],
       "sc:description": "FASTA and FASTQ are basic and ubiquitous formats for storing nucleotide and protein sequences. Common manipulations of FASTA/Q file include converting, searching, filtering, deduplication, splitting, shuffling, and sampling. Existing tools only implement some of these manipulations, and not particularly efficiently, and some are only available for certain operating systems. Furthermore, the complicated installation process of required packages and running environments can render these programs less user friendly. SeqKit demonstrates competitive performance in execution time and memory usage compared to similar tools. The efficiency and usability of SeqKit enable researchers to rapidly accomplish common FASTA/Q file manipulations.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0233"
+          "@id": "edam:operation_0372"
         },
         {
           "@id": "edam:operation_0371"
         },
         {
-          "@id": "edam:operation_3192"
+          "@id": "edam:operation_0233"
         },
         {
-          "@id": "edam:operation_0372"
+          "@id": "edam:operation_3192"
         }
       ],
       "sc:name": "seqkit",
       "sc:url": "https://bioinf.shenwei.me/seqkit/"
     },
     {
-      "@id": "_:Ndc56762b2b6f42639af7de5bd40059c1",
+      "@id": "_:Ncec05d17e09d49eeb68d5d325df00e2a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -95,24 +99,20 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N895ecfc0f7484909a74c801a59dfcada",
+      "@id": "_:Nc8166587892d4412b757bb6b7027e2ca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1930"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1930"
         }
       ],
       "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0163962",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

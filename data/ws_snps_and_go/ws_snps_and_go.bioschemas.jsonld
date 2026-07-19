@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/humu.21047",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ws_snps_and_go",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -50,47 +46,47 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nedd46a75e95a49ac878910ee3dd5d280"
+          "@id": "_:Nad73e731295f4b6583243a95c556071a"
         },
         {
-          "@id": "_:N72ecaa58050548f591c125e98324e114"
+          "@id": "_:N2ca50c15a62343b890943ce7a05f10c8"
         },
         {
-          "@id": "_:N2bf41cf0ed354efca07f791b2ca1acb2"
+          "@id": "_:Na222b299f1df450e9c440b7ce2f3073e"
         },
         {
-          "@id": "_:N59e78b235823489593edb78159465ce0"
+          "@id": "_:N92172450bba940d19d5405d4f65b9fb0"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ndf0ced9adf1d443bb257c3aa947702b7"
+        "@id": "_:Nfb343756b5214af1b032289cfe49d6b6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3325"
+          "@id": "edam:topic_0634"
         },
         {
           "@id": "edam:topic_0123"
         },
         {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:author": {
         "@id": "http://orcid.org/0000-0002-2323-0963"
       },
       "sc:citation": [
-        "pubmed:19514061",
-        "pmcid:PMC3194195",
         "pubmed:21992054",
+        "pmcid:PMC3194195",
         {
           "@id": "https://doi.org/10.1186/1471-2105-12-s4-s3"
         },
+        "pubmed:19514061",
         {
           "@id": "https://doi.org/10.1002/humu.21047"
         }
@@ -102,9 +98,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "WS-SNPs-and-GO",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -114,18 +110,7 @@
       "sc:url": "http://snps.biofold.org/snps-and-go"
     },
     {
-      "@id": "_:Nedd46a75e95a49ac878910ee3dd5d280",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2209"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mutation ID"
-    },
-    {
-      "@id": "_:N72ecaa58050548f591c125e98324e114",
+      "@id": "_:Nad73e731295f4b6583243a95c556071a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1176"
@@ -136,7 +121,18 @@
       "sc:name": "GO concept ID"
     },
     {
-      "@id": "_:N2bf41cf0ed354efca07f791b2ca1acb2",
+      "@id": "_:N2ca50c15a62343b890943ce7a05f10c8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2209"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Mutation ID"
+    },
+    {
+      "@id": "_:Na222b299f1df450e9c440b7ce2f3073e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -147,7 +143,7 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N59e78b235823489593edb78159465ce0",
+      "@id": "_:N92172450bba940d19d5405d4f65b9fb0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1467"
@@ -158,7 +154,7 @@
       "sc:name": "Protein chain"
     },
     {
-      "@id": "_:Ndf0ced9adf1d443bb257c3aa947702b7",
+      "@id": "_:Nfb343756b5214af1b032289cfe49d6b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1622"
@@ -174,6 +170,10 @@
     },
     {
       "@id": "https://doi.org/10.1186/1471-2105-12-s4-s3",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/humu.21047",
       "@type": "sc:CreativeWork"
     }
   ]

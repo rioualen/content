@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku989",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/uniprot_align",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Xavier Watkins",
       "bsc:input": {
-        "@id": "_:Nb624916a924f445595bc7918aa7061ab"
+        "@id": "_:Nb6b53d6672cd448bbe6425005897c69c"
       },
       "bsc:output": {
-        "@id": "_:N05ad224a463e4fa380d46aafac83ab2f"
+        "@id": "_:N3f8a0d5c34df4dabab016eaebc23166e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
         "pubmed:25348405",
+        "pmcid:PMC4384041",
         {
           "@id": "https://doi.org/10.1093/nar/gku989"
-        },
-        "pmcid:PMC4384041"
+        }
       ],
       "sc:description": "Multiple sequence alignment.",
       "sc:featureList": {
@@ -64,30 +68,30 @@
       "sc:license": "CC-BY-ND-3.0",
       "sc:name": "UniProt Align",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
-        "UniProt Consortium",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "UniProt Consortium"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.uniprot.org/help/license"
+          "@id": "http://www.uniprot.org/help/sequence-alignments"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         },
         {
-          "@id": "http://www.uniprot.org/help/sequence-alignments"
+          "@id": "http://www.uniprot.org/help/license"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.uniprot.org/align"
     },
     {
-      "@id": "_:Nb624916a924f445595bc7918aa7061ab",
+      "@id": "_:Nb6b53d6672cd448bbe6425005897c69c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -95,16 +99,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N05ad224a463e4fa380d46aafac83ab2f",
+      "@id": "_:N3f8a0d5c34df4dabab016eaebc23166e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku989",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

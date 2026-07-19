@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/pmic.200900379",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/compomics-rover",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N51a5584fa67545a297576d4fa46ae057"
+        "@id": "_:N8be2086001864da1923cf750f29c4960"
       },
       "bsc:output": {
-        "@id": "_:Nf842a4d481844daeb878b2f6fc3242a6"
+        "@id": "_:Nca40286848e446e380e207b90deb1b6a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
+        "pubmed:20058247",
         {
           "@id": "https://doi.org/10.1002/pmic.200900379"
-        },
-        "pubmed:20058247"
+        }
       ],
       "sc:description": "A tool to visualize and validate quantitative proteomics data from different sources.",
       "sc:featureList": {
@@ -65,8 +61,8 @@
       },
       "sc:name": "compomics-rover",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -76,7 +72,7 @@
       "sc:url": "https://code.google.com/p/compomics-rover/"
     },
     {
-      "@id": "_:N51a5584fa67545a297576d4fa46ae057",
+      "@id": "_:N8be2086001864da1923cf750f29c4960",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -84,12 +80,16 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Nf842a4d481844daeb878b2f6fc3242a6",
+      "@id": "_:Nca40286848e446e380e207b90deb1b6a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://doi.org/10.1002/pmic.200900379",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

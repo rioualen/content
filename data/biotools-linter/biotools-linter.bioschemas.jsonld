@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0009-0002-0046-9725",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/biotools-linter",
       "@type": "sc:SoftwareApplication",
       "bsc:output": {
-        "@id": "_:N28e663bc557f4f60b12faf9136a78aaa"
+        "@id": "_:N6505131fc2fc48fa90efd14e21e11188"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
+        "Command-line tool",
         "Web API",
-        "Command-line tool"
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3572"
@@ -61,8 +65,8 @@
       "sc:license": "MIT",
       "sc:name": "biotools-linter",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
@@ -76,7 +80,7 @@
       "sc:url": "https://biotools-linter.biodata.ceitec.cz/"
     },
     {
-      "@id": "_:N28e663bc557f4f60b12faf9136a78aaa",
+      "@id": "_:N6505131fc2fc48fa90efd14e21e11188",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -85,10 +89,6 @@
         "@id": "edam:format_3603"
       },
       "sc:name": "Matrix"
-    },
-    {
-      "@id": "https://orcid.org/0009-0002-0046-9725",
-      "@type": "sc:Person"
     }
   ]
 }

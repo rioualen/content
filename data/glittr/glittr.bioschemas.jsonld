@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-1561-078X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/glittr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-1561-078X"
       },
       "bsc:input": {
-        "@id": "_:N5385046ba1ab465ea1ad8b90d661533e"
+        "@id": "_:Nb3f70ab507084e508208f41d9f04eb27"
       },
       "bsc:output": {
-        "@id": "_:N83b89d05f81349769eeb6dae01130f32"
+        "@id": "_:N4238e4e405864a3c9f8db425746f2ad7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
+        "Bioinformatics portal",
         "Web API",
-        "Bioinformatics portal"
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_3366"
+          "@id": "edam:topic_3307"
         },
         {
-          "@id": "edam:topic_3307"
+          "@id": "edam:topic_3366"
         },
         {
           "@id": "edam:topic_0219"
@@ -75,10 +71,10 @@
       "sc:description": "Glittr is a web application that helps you find and compare bioinformatics training material on GitHub and GitLab.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3431"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3431"
         },
         {
           "@id": "edam:operation_0224"
@@ -88,9 +84,9 @@
       "sc:license": "MIT",
       "sc:name": "Glittr",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
       "sc:softwareHelp": {
@@ -99,7 +95,7 @@
       "sc:url": "https://glittr.org"
     },
     {
-      "@id": "_:N5385046ba1ab465ea1ad8b90d661533e",
+      "@id": "_:Nb3f70ab507084e508208f41d9f04eb27",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3669"
@@ -107,12 +103,16 @@
       "sc:name": "Training material"
     },
     {
-      "@id": "_:N83b89d05f81349769eeb6dae01130f32",
+      "@id": "_:N4238e4e405864a3c9f8db425746f2ad7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3669"
       },
       "sc:name": "Training material"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1561-078X",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3505",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/speedseq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N081233d62e5448dd96ba2c66af957d20"
+        "@id": "_:N3d45d9c6728248e890af6558795f645e"
       },
       "bsc:output": {
-        "@id": "_:Nece46ea9e1304c8ebbae692b8975cf17"
+        "@id": "_:Ncc1005675377452ea614ed91003b8f8d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workbench",
-        "Command-line tool"
+        "Command-line tool",
+        "Workbench"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
       "sc:citation": [
+        "pubmed:26258291",
+        "pmcid:PMC4589466",
         {
           "@id": "https://doi.org/10.1038/nmeth.3505"
-        },
-        "pubmed:26258291",
-        "pmcid:PMC4589466"
+        }
       ],
       "sc:description": "A flexible framework for rapid genome analysis and interpretation",
       "sc:featureList": [
@@ -76,14 +72,25 @@
       "sc:license": "MIT",
       "sc:name": "SpeedSeq",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/hall-lab/speedseq"
     },
     {
-      "@id": "_:Nece46ea9e1304c8ebbae692b8975cf17",
+      "@id": "_:N3d45d9c6728248e890af6558795f645e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:Ncc1005675377452ea614ed91003b8f8d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0955"
@@ -94,15 +101,8 @@
       "sc:name": "Data index"
     },
     {
-      "@id": "_:N081233d62e5448dd96ba2c66af957d20",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "Nucleic acid sequence"
+      "@id": "https://doi.org/10.1038/nmeth.3505",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.2489",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/micromummie",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Uwe Ohler",
       "bsc:input": [
         {
-          "@id": "_:N8e174bd6a97e4b65be86783e8aa893c6"
+          "@id": "_:Nec727f2dab65421b9203369383293136"
         },
         {
-          "@id": "_:N361c0b8d3ada4f1c89fa533a350eb86e"
+          "@id": "_:N4d719997ff4e472bb95261435bbc4326"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0a3a88274efb4dedbe0435a75e2dcdb9"
+        "@id": "_:N9da1cd3c07924d7f88109b265ff45211"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3308"
@@ -72,8 +68,8 @@
       },
       "sc:name": "microMUMMIE",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://ohlerlab.mdc-berlin.de/software/microMUMMIE_99/"
@@ -81,18 +77,18 @@
       "sc:url": "https://ohlerlab.mdc-berlin.de/software/microMUMMIE_99/"
     },
     {
-      "@id": "_:N0a3a88274efb4dedbe0435a75e2dcdb9",
+      "@id": "_:Nec727f2dab65421b9203369383293136",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1270"
+        "@id": "edam:data_2887"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2305"
+        "@id": "edam:format_2206"
       },
-      "sc:name": "Feature table"
+      "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "_:N8e174bd6a97e4b65be86783e8aa893c6",
+      "@id": "_:N4d719997ff4e472bb95261435bbc4326",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -103,15 +99,19 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:N361c0b8d3ada4f1c89fa533a350eb86e",
+      "@id": "_:N9da1cd3c07924d7f88109b265ff45211",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2887"
+        "@id": "edam:data_1270"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2206"
+        "@id": "edam:format_2305"
       },
-      "sc:name": "Nucleic acid sequence record"
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.2489",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

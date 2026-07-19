@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-9918-3374",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/vivo_platform",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,26 +47,26 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nad1a71ec92ae4e5f9146438d01f4b781"
+          "@id": "_:Nc3fc2c1639404688a93c31447627ca97"
         },
         {
-          "@id": "_:Na3302ae2650444b1b645c62730417d95"
+          "@id": "_:Ndc13386fb77e4b0bb1d70a3ca6b034ad"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7863e2b5c54e45d883da36922e972ae6"
+        "@id": "_:Na8c09377ee1b4fc3beb37d690525b587"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3386"
         },
         {
-          "@id": "edam:topic_3386"
+          "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_3379"
@@ -79,28 +83,28 @@
           "@id": "https://orcid.org/0000-0002-9918-3374"
         },
         {
-          "@id": "https://orcid.org/0000-0002-5244-9569"
+          "@id": "https://orcid.org/0000-0003-0553-0695"
         },
         {
-          "@id": "https://orcid.org/0000-0003-0553-0695"
+          "@id": "https://orcid.org/0000-0002-5244-9569"
         }
       ],
       "sc:description": "ViVo Platform is a free, open-access web application for the analysis of in vivo tumor growth data in mouse models.\nDesigned to standardize in vivo efficacy analysis, improve research reproducibility, and reduce animal usage, it provides tools to upload tumor volume or bioluminescence imaging (BLI) datasets, configure analysis parameters, detect outliers, and automatically compute tumor growth rates (TGR), group comparisons, and reports.\n\nBy standardizing data processing and incorporating advanced temporal modeling, ViVo Platform enhances statistical power and contributes to the 3Rs principle by reducing the number of animals needed in preclinical efficacy studies.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2426"
+        },
+        {
           "@id": "edam:operation_2945"
-        },
-        {
-          "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_2238"
         },
         {
           "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_2238"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -108,23 +112,23 @@
       "sc:name": "ViVo Platform",
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/gcanudo-barreras/ViVo-Platform/blob/main/README.md"
+          "@id": "https://www.biorxiv.org/content/10.1101/2025.10.14.682266v1"
         },
         {
-          "@id": "https://github.com/gcanudo-barreras/ViVo-Platform/blob/main/ViVo_USER_MANUAL.md"
+          "@id": "https://github.com/gcanudo-barreras/ViVo-Platform/blob/main/README.md"
         },
         {
           "@id": "https://github.com/gcanudo-barreras/ViVo-Platform/releases/tag/v1.0-beta"
         },
         {
-          "@id": "https://www.biorxiv.org/content/10.1101/2025.10.14.682266v1"
+          "@id": "https://github.com/gcanudo-barreras/ViVo-Platform/blob/main/ViVo_USER_MANUAL.md"
         }
       ],
       "sc:softwareVersion": "Research Beta 1.0",
       "sc:url": "https://gcanudo-barreras.github.io/ViVo-Platform/"
     },
     {
-      "@id": "_:Nad1a71ec92ae4e5f9146438d01f4b781",
+      "@id": "_:Nc3fc2c1639404688a93c31447627ca97",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3723"
@@ -135,7 +139,7 @@
       "sc:name": "Morphology parameter"
     },
     {
-      "@id": "_:Na3302ae2650444b1b645c62730417d95",
+      "@id": "_:Ndc13386fb77e4b0bb1d70a3ca6b034ad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3722"
@@ -146,7 +150,7 @@
       "sc:name": "Physiology parameter"
     },
     {
-      "@id": "_:N7863e2b5c54e45d883da36922e972ae6",
+      "@id": "_:Na8c09377ee1b4fc3beb37d690525b587",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -165,14 +169,6 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://orcid.org/0000-0002-1949-9185",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0553-0695",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://orcid.org/0000-0002-5244-9569",
       "@type": "sc:Person"
     },
@@ -181,7 +177,11 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0002-9918-3374",
+      "@id": "https://orcid.org/0000-0002-1949-9185",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0553-0695",
       "@type": "sc:Person"
     }
   ]

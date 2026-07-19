@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dasir",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ricard Illa",
       "bsc:input": [
         {
-          "@id": "_:N7d907f1f5b9e408a9ba67ceb5520cce9"
+          "@id": "_:N0b3a48bc3d344912be62e451f8d09385"
         },
         {
-          "@id": "_:N6c0f80227784466cb9b5d9a5d4b5f195"
+          "@id": "_:Nfd0375d2891048a1bf2c1b1632d8eaaf"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9be353f4ae5a46ed82a0ee8e082451c3"
+          "@id": "_:Nc7686d7ed6fe413098bf623fbaf74757"
         },
         {
-          "@id": "_:Nd7509407fcf541ea9d4e120c695634a3"
+          "@id": "_:N88b05cb3818d47c6801634912de45ff2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Plug-in"
@@ -64,15 +68,15 @@
         "@id": "edam:topic_3316"
       },
       "sc:author": [
-        "Oscar Flores",
-        "Anna Mantsoki"
+        "Anna Mantsoki",
+        "Oscar Flores"
       ],
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "R package for programmatic retrieval of information from DAS servers.",
       "sc:featureList": [
@@ -80,18 +84,18 @@
           "@id": "edam:operation_0226"
         },
         {
-          "@id": "edam:operation_3760"
+          "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_3760"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "DASiR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "BioConductor",
       "sc:softwareHelp": {
@@ -101,18 +105,23 @@
       "sc:url": "http://www.bioconductor.org/packages//2.13/bioc/html/DASiR.html"
     },
     {
-      "@id": "_:N9be353f4ae5a46ed82a0ee8e082451c3",
+      "@id": "_:N0b3a48bc3d344912be62e451f8d09385",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2353"
+        "@id": "edam:data_2093"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3617"
-      },
-      "sc:name": "Ontology data"
+      "sc:name": "Data reference"
     },
     {
-      "@id": "_:Nd7509407fcf541ea9d4e120c695634a3",
+      "@id": "_:Nfd0375d2891048a1bf2c1b1632d8eaaf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:Nc7686d7ed6fe413098bf623fbaf74757",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -123,24 +132,15 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N7d907f1f5b9e408a9ba67ceb5520cce9",
+      "@id": "_:N88b05cb3818d47c6801634912de45ff2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0842"
+        "@id": "edam:data_2353"
       },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N6c0f80227784466cb9b5d9a5d4b5f195",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3617"
       },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Ontology data"
     }
   ]
 }

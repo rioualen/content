@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/acs.jcim.2c00822",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/icardiotoxcsm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N29b544836daa47b8a78d1c4b1a716061"
+        "@id": "_:N2ee8d5ed50044f549a80ca8d6459990e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3047"
-        },
         {
           "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_0209"
+        },
+        {
+          "@id": "edam:topic_3047"
         },
         {
           "@id": "edam:topic_0154"
@@ -66,32 +70,28 @@
       "sc:description": "A Web Server for Predicting Cardiotoxicity of Small Molecules.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_4009"
+          "@id": "edam:operation_3799"
         },
         {
-          "@id": "edam:operation_3799"
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "icardioToxCSM",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://biosig.lab.uq.edu.au/cardiotoxcsm"
     },
     {
-      "@id": "_:N29b544836daa47b8a78d1c4b1a716061",
+      "@id": "_:N2ee8d5ed50044f549a80ca8d6459990e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
       },
       "sc:name": "SMILES string"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jcim.2c00822",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

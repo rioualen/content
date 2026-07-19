@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/srep42717",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/swissadme",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3c80b47202014c6391452f83bf7bca5f"
+        "@id": "_:Nc4669919de8d4ca9820b6f518d7dd9a7"
       },
       "bsc:output": {
-        "@id": "_:N44234634f7f84dd3a383539595eec286"
+        "@id": "_:N5066d2e32544438bb7484cbb5c721f3c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0209"
+          "@id": "edam:topic_2258"
         },
         {
-          "@id": "edam:topic_2258"
+          "@id": "edam:topic_0209"
         }
       ],
       "sc:citation": [
         "pubmed:28256516",
+        "pmcid:PMC5335600",
         {
           "@id": "https://doi.org/10.1038/srep42717"
-        },
-        "pmcid:PMC5335600"
+        }
       ],
       "sc:description": "Gives free access to a number of parameters and predictive models in order to compute the physicochemistry and estimate the pharmacokinetics, druglikeness and medicinal chemistry friendliness of one or several small molecules.",
       "sc:featureList": {
@@ -68,8 +72,8 @@
       "sc:name": "SwissADME",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
       "sc:softwareHelp": {
@@ -79,15 +83,7 @@
       "sc:url": "http://www.swissadme.ch/index.php"
     },
     {
-      "@id": "_:N44234634f7f84dd3a383539595eec286",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N3c80b47202014c6391452f83bf7bca5f",
+      "@id": "_:Nc4669919de8d4ca9820b6f518d7dd9a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
@@ -95,8 +91,12 @@
       "sc:name": "SMILES string"
     },
     {
-      "@id": "https://doi.org/10.1038/srep42717",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N5066d2e32544438bb7484cbb5c721f3c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
     }
   ]
 }

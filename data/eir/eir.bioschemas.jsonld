@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,51 +36,47 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq067",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/eir",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Girke",
       "bsc:input": [
         {
-          "@id": "_:N69926261a7e94766b8a641d29b0d0980"
+          "@id": "_:Nb5a63937d1e7475fb598fb3e9b0a886d"
         },
         {
-          "@id": "_:N5e974634a0c74ac48f4d5771079d741c"
+          "@id": "_:Na1c7a7c60624458f839eb89b2a1fd106"
         },
         {
-          "@id": "_:N9f018a4768614d1bbd089b41f40398c2"
+          "@id": "_:N41b43488af0f4177bd0cf2a1f92f7384"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N043bd36f01964bfe8dd280d6e3fa5b4c"
+          "@id": "_:Nd310e06002554bab9308cc79558330d6"
         },
         {
-          "@id": "_:N0bdd9f3f379340bfaca76051d81e6ba7"
+          "@id": "_:N53847c8f464c413f9b85abb05646b38a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0081"
+          "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
+        "pubmed:20179075",
+        "pmcid:PMC2844998",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btq067"
-        },
-        "pmcid:PMC2844998",
-        "pubmed:20179075"
+        }
       ],
       "sc:description": "This package provides utilities for accelerated structure similarity searching of very large small molecule data sets using an embedding and indexing approach.",
       "sc:featureList": {
@@ -89,9 +85,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "eiR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/eiR.html"
@@ -100,23 +96,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/eiR.html"
     },
     {
-      "@id": "_:N69926261a7e94766b8a641d29b0d0980",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0990"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2033"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Compound name"
-    },
-    {
-      "@id": "_:N5e974634a0c74ac48f4d5771079d741c",
+      "@id": "_:Nb5a63937d1e7475fb598fb3e9b0a886d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1086"
@@ -132,7 +112,23 @@
       "sc:name": "Compound identifier"
     },
     {
-      "@id": "_:N9f018a4768614d1bbd089b41f40398c2",
+      "@id": "_:Na1c7a7c60624458f839eb89b2a1fd106",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0990"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Compound name"
+    },
+    {
+      "@id": "_:N41b43488af0f4177bd0cf2a1f92f7384",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -148,48 +144,52 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:N043bd36f01964bfe8dd280d6e3fa5b4c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1463"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1196"
-        },
-        {
-          "@id": "edam:format_2033"
-        },
-        {
-          "@id": "edam:format_3621"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "_:N0bdd9f3f379340bfaca76051d81e6ba7",
+      "@id": "_:Nd310e06002554bab9308cc79558330d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2033"
+          "@id": "edam:format_1196"
         },
         {
           "@id": "edam:format_3621"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2033"
         },
         {
-          "@id": "edam:format_1196"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:N53847c8f464c413f9b85abb05646b38a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1196"
+        },
+        {
+          "@id": "edam:format_3621"
+        },
+        {
+          "@id": "edam:format_2033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq067",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,47 +36,51 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/semdist",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ian Gonzalez",
       "bsc:input": [
         {
-          "@id": "_:N953ef9387acd46d9aba8c6a5ed5250e0"
+          "@id": "_:Nd049610e35654f52848a80f7243dd04b"
         },
         {
-          "@id": "_:N1addcfcc5c844389ae022083e8358124"
+          "@id": "_:N73785254042241b29427fccccd85d644"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne13b2b2f69d54d819a5c8ada02507800"
+          "@id": "_:N10430d3a48c74712995352662a0bee2d"
         },
         {
-          "@id": "_:N12e8d6e1d7204beebda73453d4e8508f"
+          "@id": "_:Nbac43b8a23e043b193771cee54b3ea99"
         },
         {
-          "@id": "_:N425fe8868c8c45c2b978699bbc088d72"
+          "@id": "_:Nb69a946ed2b14e108af40193dbbebc45"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0089"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "This package implements methods to calculate information accretion for a given version of the gene ontology and uses this data to calculate remaining uncertainty, misinformation, and semantic similarity for given sets of predicted annotations and true annotations from a protein function predictor.",
       "sc:featureList": [
@@ -90,8 +94,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "SemDist",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -101,23 +105,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SemDist.html"
     },
     {
-      "@id": "_:N953ef9387acd46d9aba8c6a5ed5250e0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N1addcfcc5c844389ae022083e8358124",
+      "@id": "_:Nd049610e35654f52848a80f7243dd04b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"
@@ -133,14 +121,14 @@
       "sc:name": "Ontology"
     },
     {
-      "@id": "_:Ne13b2b2f69d54d819a5c8ada02507800",
+      "@id": "_:N73785254042241b29427fccccd85d644",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_2330"
@@ -149,23 +137,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N12e8d6e1d7204beebda73453d4e8508f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N425fe8868c8c45c2b978699bbc088d72",
+      "@id": "_:N10430d3a48c74712995352662a0bee2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -181,8 +153,36 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nbac43b8a23e043b193771cee54b3ea99",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nb69a946ed2b14e108af40193dbbebc45",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
     }
   ]
 }

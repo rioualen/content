@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,11 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2020.06.19.162180",
+      "@id": "https://doi.org/10.1093/bioinformatics/btt087",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt087",
+      "@id": "https://doi.org/10.1101/2020.06.19.162180",
       "@type": "sc:CreativeWork"
     },
     {
@@ -48,40 +48,40 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ning Leng",
       "bsc:input": {
-        "@id": "_:N9e371aebe6574befa4f4a8be4a58bd3e"
+        "@id": "_:Nb79aa7775c4549e38126c15f3e797dba"
       },
       "bsc:output": [
         {
-          "@id": "_:N6c7cf6cfc92743c1bca91bfc1049b590"
+          "@id": "_:N77df4c38a9ac41138c808fc7d6f6876d"
         },
         {
-          "@id": "_:Ne58aad80cf4649b0b5819cae52222b47"
+          "@id": "_:N8125380f9f7d4f4e966876d29e65350d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_2269"
-        },
-        {
           "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
-        "pubmed:23428641",
         {
           "@id": "https://doi.org/10.1101/2020.06.19.162180"
         },
+        "pubmed:23428641",
         "pmcid:PMC3624807",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt087"
@@ -102,9 +102,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "EBSeq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/EBSeq.html"
@@ -113,23 +113,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/EBSeq.html"
     },
     {
-      "@id": "_:N6c7cf6cfc92743c1bca91bfc1049b590",
+      "@id": "_:Nb79aa7775c4549e38126c15f3e797dba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_0928"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2058"
         },
         {
           "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Report"
+      "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Ne58aad80cf4649b0b5819cae52222b47",
+      "@id": "_:N77df4c38a9ac41138c808fc7d6f6876d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -145,20 +145,20 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N9e371aebe6574befa4f4a8be4a58bd3e",
+      "@id": "_:N8125380f9f7d4f4e966876d29e65350d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0928"
+        "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_2058"
+          "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Gene expression profile"
+      "sc:name": "Report"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.16966/2470-1025.103",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/IMGT_HighV-QUEST",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne0cc1dae14264227bc6bccb8c4f3ec4b"
+        "@id": "_:N525837b608a34661b1bb1851ccacbd20"
       },
       "bsc:output": [
         {
-          "@id": "_:N09446e516af04151ae9e2a37d767103a"
+          "@id": "_:Na28b94e16b104bec97277fa7f92eb064"
         },
         {
-          "@id": "_:Nbac78499c8ce433eb219a5b540986401"
+          "@id": "_:Nb40b20bde86e4ae591fe88402c8356dc"
         },
         {
-          "@id": "_:Nbffaa0670b9143729cbcae89e1ac4fd6"
+          "@id": "_:Nb5280cea64b54f7d8cd37628e4071126"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Bioinformatics portal",
         "Web application"
@@ -70,15 +66,15 @@
         }
       ],
       "sc:citation": [
-        "pubmed:22665256",
-        "pubmed:25378316",
-        "pmcid:PMC4383898",
         {
           "@id": "https://doi.org/10.16966/2470-1025.103"
         },
+        "pubmed:25378316",
+        "pmcid:PMC4383898",
         {
           "@id": "https://doi.org/10.1093/nar/gku1056"
         },
+        "pubmed:22665256",
         {
           "@id": "https://doi.org/10.1007/978-1-61779-842-9_32"
         }
@@ -86,24 +82,24 @@
       "sc:description": "IMGT/HighV-QUEST is the IMGT® portal for NGS high-throughput nucleotide sequence analysis of immunoglobulins (IG) and T cell receptors (TR) variable domains, integrates IMGT/JunctionAnalysis and IMGT/Automat.\nAnalysis is based on the IMGT-ONTOLOGY concepts.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3192"
+          "@id": "edam:operation_2478"
         },
         {
           "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_2478"
+          "@id": "edam:operation_0448"
         },
         {
-          "@id": "edam:operation_0448"
+          "@id": "edam:operation_3192"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "IMGT HighV-QUEST",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -116,40 +112,7 @@
       "sc:url": "http://www.imgt.org/HighV-QUEST/home.action"
     },
     {
-      "@id": "_:N09446e516af04151ae9e2a37d767103a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nbac78499c8ce433eb219a5b540986401",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:Nbffaa0670b9143729cbcae89e1ac4fd6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3779"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Annotated text"
-    },
-    {
-      "@id": "_:Ne0cc1dae14264227bc6bccb8c4f3ec4b",
+      "@id": "_:N525837b608a34661b1bb1851ccacbd20",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -160,11 +123,48 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gku1056",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na28b94e16b104bec97277fa7f92eb064",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3779"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Annotated text"
+    },
+    {
+      "@id": "_:Nb40b20bde86e4ae591fe88402c8356dc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:Nb5280cea64b54f7d8cd37628e4071126",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Sequence report"
     },
     {
       "@id": "https://doi.org/10.1007/978-1-61779-842-9_32",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.16966/2470-1025.103",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku1056",
       "@type": "sc:CreativeWork"
     }
   ]

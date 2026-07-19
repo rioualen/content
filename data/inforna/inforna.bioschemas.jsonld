@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -47,23 +47,23 @@
       "@id": "https://bio.tools/inforna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Anke Busch",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Anke Busch"
       ],
       "bsc:input": {
-        "@id": "_:N25906fd0d5e34848b65f03a85109a8ed"
+        "@id": "_:N0b5eeb60a2584fada0fab3c6c8a4e40e"
       },
       "bsc:output": [
         {
-          "@id": "_:N5e93f22989174eb0983fb370a822ef47"
+          "@id": "_:Nc6a6fd0a20654875b49985a02295760d"
         },
         {
-          "@id": "_:N665f2cba22724845a1ad1cd2b12c9ef5"
+          "@id": "_:Nf0a053ac28504e98a0df00e3f902b78a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -75,11 +75,11 @@
         "Anke Busch"
       ],
       "sc:citation": [
+        "pubmed:17452349",
         "pmcid:PMC1933236",
         {
           "@id": "https://doi.org/10.1093/nar/gkm218"
-        },
-        "pubmed:17452349"
+        }
       ],
       "sc:description": "RNA sequence design by inverse folding.",
       "sc:featureList": {
@@ -88,13 +88,13 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "INFORNA Sequence Design",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
-        "rnateam",
-        "University Freiburg"
+        "University Freiburg",
+        "rnateam"
       ],
       "sc:softwareHelp": {
         "@id": "http://rna.informatik.uni-freiburg.de/Help.jsp"
@@ -103,7 +103,37 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/INFORNA/"
     },
     {
-      "@id": "_:N5e93f22989174eb0983fb370a822ef47",
+      "@id": "_:N0b5eeb60a2584fada0fab3c6c8a4e40e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0880"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1457"
+      },
+      "sc:name": "RNA secondary structure"
+    },
+    {
+      "@id": "_:Nc6a6fd0a20654875b49985a02295760d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nf0a053ac28504e98a0df00e3f902b78a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -117,36 +147,6 @@
         }
       ],
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N665f2cba22724845a1ad1cd2b12c9ef5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N25906fd0d5e34848b65f03a85109a8ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0880"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1457"
-      },
-      "sc:name": "RNA secondary structure"
     }
   ]
 }

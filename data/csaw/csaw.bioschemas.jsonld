@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,54 +36,50 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-3564-4813",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/csaw",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-3564-4813"
       },
       "bsc:input": {
-        "@id": "_:N8b4cb13b966542888a9673902782ada6"
+        "@id": "_:N0dea61a689584b3e9b48a085a2f4ef43"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc0907fc30d734fda86472c9cf26ecf4f"
+          "@id": "_:N93a2f119f0a2492ba4a8290e64602c80"
         },
         {
-          "@id": "_:N290f19f05c64498a9bfe300fb290e0ac"
+          "@id": "_:N0704a28ce81544abb19fc3ab1bdd964c"
         },
         {
-          "@id": "_:N4f625e75a87e497b98e29779830a3b52"
+          "@id": "_:N3d9c7e51bf124acf9105fa1450c5a1cd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3511"
+          "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_3511"
         },
         {
           "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
+        "pubmed:24852250",
         "pmcid:PMC4066778",
         {
           "@id": "https://doi.org/10.1093/nar/gku351"
-        },
-        "pubmed:24852250"
+        }
       ],
       "sc:description": "Detection of differentially bound regions in ChIP-seq data with sliding windows, with methods for normalization and proper FDR control.",
       "sc:featureList": {
@@ -92,8 +88,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "csaw",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -103,64 +99,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/csaw.html"
     },
     {
-      "@id": "_:Nc0907fc30d734fda86472c9cf26ecf4f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N290f19f05c64498a9bfe300fb290e0ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:N4f625e75a87e497b98e29779830a3b52",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N8b4cb13b966542888a9673902782ada6",
+      "@id": "_:N0dea61a689584b3e9b48a085a2f4ef43",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -174,6 +113,67 @@
         }
       ],
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N93a2f119f0a2492ba4a8290e64602c80",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N0704a28ce81544abb19fc3ab1bdd964c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Sequence alignment report"
+    },
+    {
+      "@id": "_:N3d9c7e51bf124acf9105fa1450c5a1cd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-3564-4813",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gku351",

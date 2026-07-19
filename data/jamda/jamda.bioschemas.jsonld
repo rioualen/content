@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,11 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.3c01573",
+      "@id": "https://doi.org/10.1021/acs.jcim.0c01095",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1002/jcc.26522",
+      "@id": "https://doi.org/10.1021/acs.jcim.3c01573",
       "@type": "sc:CreativeWork"
     },
     {
@@ -48,45 +48,45 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ncd7b235fc492413c804c1cec64bc64b2"
+          "@id": "_:Nd6a2cfbf864546359d852e560f1fce76"
         },
         {
-          "@id": "_:Nc673f552c40a4ba9b14523910470d57b"
+          "@id": "_:N70b79161b3ec4b0b94e4a1932fe8233d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3aba5aafa9f44869b90c2f66fb21a755"
+          "@id": "_:Nd6daa6b565a1401c974ce942602eae3f"
         },
         {
-          "@id": "_:Nd0eaf8f23af84b6a8bbdc30c0c1d87fc"
+          "@id": "_:N14c7b6487bde4204b506fe0b87dc8735"
         },
         {
-          "@id": "_:N09075c3aab894b69b7ebd0e560f1d549"
+          "@id": "_:N423c3c1ad8c34a0fa194201d65846972"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool"
+        "Command-line tool",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_2275"
         },
         {
-          "@id": "edam:topic_2275"
+          "@id": "edam:topic_0128"
         }
       ],
       "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1002/jcc.26522"
+        },
         {
           "@id": "https://doi.org/10.1021/acs.jcim.0c01095"
         },
         {
           "@id": "https://doi.org/10.1021/acs.jcim.3c01573"
-        },
-        {
-          "@id": "https://doi.org/10.1002/jcc.26522"
         }
       ],
       "sc:description": "JAMDA enables the preparation of individual protein structures and the docking of small molecules in preprocessed binding sites of choice. JAMDA simplifies the process of protein-ligand docking by automatic preprocessing protocols for the protein and binding sites of interest. The JAMDAscore scoring function retrieved 75% of the native poses in the three highest-ranked solutions for high-quality protein-ligand complexes with default settings. Individual configurations for protein preparation are available, e.g., considering protein ensembles, relevant binding site water molecules, or cofactors. A user-defined number of input conformations for the ligands of interest can be generated fully automated using Conformator. Alternatively, users can also provide externally prepared ligand conformers.",
@@ -97,23 +97,15 @@
       "sc:license": "Other",
       "sc:name": "JAMDA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
       "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/jamda.html"
     },
     {
-      "@id": "_:Ncd7b235fc492413c804c1cec64bc64b2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2301"
-      },
-      "sc:name": "SMILES string"
-    },
-    {
-      "@id": "_:Nc673f552c40a4ba9b14523910470d57b",
+      "@id": "_:Nd6a2cfbf864546359d852e560f1fce76",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -121,15 +113,15 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N3aba5aafa9f44869b90c2f66fb21a755",
+      "@id": "_:N70b79161b3ec4b0b94e4a1932fe8233d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1461"
+        "@id": "edam:data_2301"
       },
-      "sc:name": "Protein-ligand complex"
+      "sc:name": "SMILES string"
     },
     {
-      "@id": "_:Nd0eaf8f23af84b6a8bbdc30c0c1d87fc",
+      "@id": "_:Nd6daa6b565a1401c974ce942602eae3f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
@@ -137,7 +129,15 @@
       "sc:name": "Protein structure report"
     },
     {
-      "@id": "_:N09075c3aab894b69b7ebd0e560f1d549",
+      "@id": "_:N14c7b6487bde4204b506fe0b87dc8735",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N423c3c1ad8c34a0fa194201d65846972",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -145,7 +145,7 @@
       "sc:name": "Score"
     },
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.0c01095",
+      "@id": "https://doi.org/10.1002/jcc.26522",
       "@type": "sc:CreativeWork"
     }
   ]

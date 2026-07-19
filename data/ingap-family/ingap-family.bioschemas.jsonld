@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.gpb.2019.11.014",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ingap-family",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ji Qi",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC9801030",
         "pubmed:33711466",
+        "pmcid:PMC9801030",
         {
           "@id": "https://doi.org/10.1016/j.gpb.2019.11.014"
         }
@@ -71,13 +75,13 @@
           "@id": "edam:operation_0282"
         },
         {
-          "@id": "edam:operation_3227"
+          "@id": "edam:operation_3196"
         },
         {
           "@id": "edam:operation_0451"
         },
         {
-          "@id": "edam:operation_3196"
+          "@id": "edam:operation_3227"
         },
         {
           "@id": "edam:operation_0337"
@@ -85,10 +89,6 @@
       ],
       "sc:name": "inGAP-family",
       "sc:url": "https://sourceforge.net/projects/ingap-family/"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.gpb.2019.11.014",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

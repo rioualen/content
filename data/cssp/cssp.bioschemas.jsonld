@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,57 +36,53 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt200",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cssp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chandler Zuo",
       "bsc:input": [
         {
-          "@id": "_:N40d5ad66a33341c0b45fccd6e509d386"
+          "@id": "_:N5386767ec68241b2bcca9cb7501d40dd"
         },
         {
-          "@id": "_:N6a98089f298c4aa199a084436fd40a26"
+          "@id": "_:Nbb2395c1d8444e298fbb81a6a13d5001"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3b5dd6e73c3f41a1b0e97696cc3f0077"
+          "@id": "_:N1055d66c22b54ed8919facc3da3d8558"
         },
         {
-          "@id": "_:Ne5bb2926df754ef99f412f1f6040a4f4"
+          "@id": "_:N2adeb902efdc4db98a3dc1806dc248ee"
         },
         {
-          "@id": "_:N935e3fc84ed149a9af20886a175b2997"
+          "@id": "_:N06e2089f0a3242d3839b4c8f08f61b55"
         },
         {
-          "@id": "_:Nfda05e67e8eb4fdfbfacc9d05d16a141"
+          "@id": "_:N21e1314c5d254be9858d6b55bce7a84d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
-        },
-        {
           "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_3572"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:23665773",
+        "pmcid:PMC3957067",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt200"
-        },
-        "pmcid:PMC3957067",
-        "pubmed:23665773"
+        }
       ],
       "sc:description": "Power computation for ChIP-Seq data based on Bayesian estimation for local poisson counting process.",
       "sc:featureList": [
@@ -100,8 +96,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "CSSP",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -111,55 +107,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/CSSP.html"
     },
     {
-      "@id": "_:N3b5dd6e73c3f41a1b0e97696cc3f0077",
+      "@id": "_:N5386767ec68241b2bcca9cb7501d40dd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1669"
+        "@id": "edam:data_1772"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "P-value"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
     },
     {
-      "@id": "_:Ne5bb2926df754ef99f412f1f6040a4f4",
+      "@id": "_:Nbb2395c1d8444e298fbb81a6a13d5001",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_0867"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence alignment report"
     },
     {
-      "@id": "_:N935e3fc84ed149a9af20886a175b2997",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nfda05e67e8eb4fdfbfacc9d05d16a141",
+      "@id": "_:N1055d66c22b54ed8919facc3da3d8558",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -175,26 +145,56 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N40d5ad66a33341c0b45fccd6e509d386",
+      "@id": "_:N2adeb902efdc4db98a3dc1806dc248ee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0867"
+        "@id": "edam:data_1669"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence alignment report"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "P-value"
     },
     {
-      "@id": "_:N6a98089f298c4aa199a084436fd40a26",
+      "@id": "_:N06e2089f0a3242d3839b4c8f08f61b55",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N21e1314c5d254be9858d6b55bce7a84d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
       },
-      "sc:name": "Score"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt200",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

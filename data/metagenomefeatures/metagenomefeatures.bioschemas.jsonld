@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metagenomefeatures",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nathan D. Olson",
       "bsc:input": [
         {
-          "@id": "_:N928326708dd94393bd59f232469c658f"
+          "@id": "_:N435a0415cb274f66b7c3889ad27ae4a6"
         },
         {
-          "@id": "_:N17859d712c0a43cca1c953df5350495c"
+          "@id": "_:N78476c5001414367add0dc584d6987e2"
         },
         {
-          "@id": "_:N4c3315aaa7894e6a86406cb6e3f90633"
+          "@id": "_:N7fe4984606b9465a96bad65070fee05a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Naf1b9bf38c1a44e5922fc68837f1f392"
+          "@id": "_:N4c2c902b6ebb479dba71afbbc78e1ad8"
         },
         {
-          "@id": "_:N2c5fdf860a4841578cd71168124b5677"
+          "@id": "_:Ndc9e5fb706dd495bb37ab7c4014fe561"
         },
         {
-          "@id": "_:N16416faa4414438092438efeab282070"
+          "@id": "_:Nada71286b34c4e098528b86ec98458a3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -75,27 +79,27 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "Developed for use in exploring the taxonomic annotations for a marker-gene metagenomic sequence dataset. The package can be used to explore the taxonomic composition of a marker-gene database or annotated sequences from a marker-gene metagenome experiment.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_3460"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "metagenomeFeatures",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/metagenomeFeatures.html"
@@ -104,40 +108,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/metagenomeFeatures.html"
     },
     {
-      "@id": "_:Naf1b9bf38c1a44e5922fc68837f1f392",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3113"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sample annotation"
-    },
-    {
-      "@id": "_:N2c5fdf860a4841578cd71168124b5677",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3567"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Reference sample report"
-    },
-    {
-      "@id": "_:N16416faa4414438092438efeab282070",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:N928326708dd94393bd59f232469c658f",
+      "@id": "_:N435a0415cb274f66b7c3889ad27ae4a6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3567"
@@ -153,7 +124,7 @@
       "sc:name": "Reference sample report"
     },
     {
-      "@id": "_:N17859d712c0a43cca1c953df5350495c",
+      "@id": "_:N78476c5001414367add0dc584d6987e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3113"
@@ -169,24 +140,53 @@
       "sc:name": "Sample annotation"
     },
     {
-      "@id": "_:N4c3315aaa7894e6a86406cb6e3f90633",
+      "@id": "_:N7fe4984606b9465a96bad65070fee05a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4c2c902b6ebb479dba71afbbc78e1ad8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3567"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Reference sample report"
+    },
+    {
+      "@id": "_:Ndc9e5fb706dd495bb37ab7c4014fe561",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3113"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sample annotation"
+    },
+    {
+      "@id": "_:Nada71286b34c4e098528b86ec98458a3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Taxonomy"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41467-018-05051-5",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8869-3689",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1849-1269",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/Sugarcane_Genome_Hub",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,48 +55,48 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N313756ddd86344258785db0fec545d75"
+          "@id": "_:N7af438d4a13942d786a245a5bfdf171a"
         },
         {
-          "@id": "_:Nb9cd15bc556d492183a41aad5b60ab31"
+          "@id": "_:N6a0e465fe13f499e86de05f0ae32a2c8"
         },
         {
-          "@id": "_:N0ef4fa2e55fd40f88d647e79af612e8d"
+          "@id": "_:Nc3bac57eec324bd69aa0a7e51637198a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nee5229e356c4478296bc5ca7b802c2d3"
+          "@id": "_:Ndc3593402c8540aebab54ecfa65f7132"
         },
         {
-          "@id": "_:N4215b0744e2c434f83e7dc2bf12607f7"
+          "@id": "_:N228d8b24b5a647a68a3d55743689e9fe"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_3810"
         },
         {
-          "@id": "edam:topic_3810"
+          "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0621"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0003-1849-1269"
       },
       "sc:citation": [
+        "pubmed:29980662",
+        "pmcid:PMC6035169",
         {
           "@id": "https://doi.org/10.1038/s41467-018-05051-5"
-        },
-        "pubmed:29980662",
-        "pmcid:PMC6035169"
+        }
       ],
       "sc:description": "The Sugarcane Genome Hub is an integrated web-based database providing centralized access to the sugarcane reference genome sequences and genomic resources.",
       "sc:featureList": {
@@ -100,31 +112,7 @@
       "sc:url": "https://sugarcane-genome.cirad.fr/"
     },
     {
-      "@id": "_:Nee5229e356c4478296bc5ca7b802c2d3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N4215b0744e2c434f83e7dc2bf12607f7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N313756ddd86344258785db0fec545d75",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nb9cd15bc556d492183a41aad5b60ab31",
+      "@id": "_:N7af438d4a13942d786a245a5bfdf171a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -132,7 +120,7 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N0ef4fa2e55fd40f88d647e79af612e8d",
+      "@id": "_:N6a0e465fe13f499e86de05f0ae32a2c8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
@@ -140,16 +128,28 @@
       "sc:name": "Keyword"
     },
     {
-      "@id": "https://orcid.org/0000-0001-8869-3689",
-      "@type": "sc:Person"
+      "@id": "_:Nc3bac57eec324bd69aa0a7e51637198a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1038/s41467-018-05051-5",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ndc3593402c8540aebab54ecfa65f7132",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
     },
     {
-      "@id": "https://orcid.org/0000-0003-1849-1269",
-      "@type": "sc:Person"
+      "@id": "_:N228d8b24b5a647a68a3d55743689e9fe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

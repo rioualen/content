@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,44 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4303",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mapscape",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Maia Smith",
       "bsc:input": [
         {
-          "@id": "_:Ncdf016c7cb0c44afa43673d99e8e2083"
+          "@id": "_:N196a98a8db1148489ee987b968e25691"
         },
         {
-          "@id": "_:N56a27e3a5e0740e5aec08bbc0729e5a8"
+          "@id": "_:Nbc739a8171f44a8caf39c9a0df823cbf"
         },
         {
-          "@id": "_:Nde83933e14cb41d98e5a771e380639e9"
+          "@id": "_:N0d5f87c4f1c14401b939573bc4654c66"
         },
         {
-          "@id": "_:N3da37f55c4d547cba851ec27e6948190"
+          "@id": "_:N86208854160246959e54ecd6e4af0cd8"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nffb46e348fe34fdcabcce0856e29a0ea"
+        "@id": "_:N1349a2371a8a4520b49d8cf476d1cf6d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": [
+        "pubmed:28557980",
         {
           "@id": "https://doi.org/10.1038/nmeth.4303"
-        },
-        "pubmed:28557980"
+        }
       ],
       "sc:description": "A E-scape tool for interactive visualization of spatial clonal evolution.",
       "sc:featureList": [
@@ -81,19 +85,19 @@
           "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_3083"
+          "@id": "edam:operation_2497"
         },
         {
-          "@id": "edam:operation_2497"
+          "@id": "edam:operation_3083"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "MapScape",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/release/bioc/manuals/mapscape/man/mapscape.pdf"
@@ -101,23 +105,7 @@
       "sc:url": "https://bioconductor.org/packages/release/bioc/html/mapscape.html"
     },
     {
-      "@id": "_:Nffb46e348fe34fdcabcce0856e29a0ea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Ncdf016c7cb0c44afa43673d99e8e2083",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3424"
-      },
-      "sc:name": "Raw image"
-    },
-    {
-      "@id": "_:N56a27e3a5e0740e5aec08bbc0729e5a8",
+      "@id": "_:N196a98a8db1148489ee987b968e25691",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -125,15 +113,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:Nde83933e14cb41d98e5a771e380639e9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2523"
-      },
-      "sc:name": "Phylogenetic data"
-    },
-    {
-      "@id": "_:N3da37f55c4d547cba851ec27e6948190",
+      "@id": "_:Nbc739a8171f44a8caf39c9a0df823cbf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3546"
@@ -141,8 +121,28 @@
       "sc:name": "Image metadata"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.4303",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0d5f87c4f1c14401b939573bc4654c66",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2523"
+      },
+      "sc:name": "Phylogenetic data"
+    },
+    {
+      "@id": "_:N86208854160246959e54ecd6e4af0cd8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:N1349a2371a8a4520b49d8cf476d1cf6d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

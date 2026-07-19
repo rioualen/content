@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,47 +36,43 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/intarna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Patrick Wright",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Patrick Wright"
       ],
       "bsc:input": {
-        "@id": "_:N37729630b78a4f888c62b94ef66d9035"
+        "@id": "_:Na697d305293f403994b62ec5773d8f43"
       },
       "bsc:output": [
         {
-          "@id": "_:N387580f291004e1e9cf26f09b41694c7"
+          "@id": "_:Nfd0a0319b8094173860081907feaac0f"
         },
         {
-          "@id": "_:Nc2d59905f05241138f5e44b3fa156e2a"
+          "@id": "_:N30336400de68426ca5547f5de96e80a8"
         },
         {
-          "@id": "_:N8997ccb15ae448c98f5fa5c70147c8bd"
+          "@id": "_:N0f0669c6f94e4188b10d31339303767e"
         },
         {
-          "@id": "_:Ne944b863f7b74f09bdb4ee05def1c0ec"
+          "@id": "_:N24c3bcf22b214a078039c2e9b49eccaa"
         },
         {
-          "@id": "_:N25d6af81077c49e0b4704e5a2bc8acd4"
+          "@id": "_:N52a6b511b30b4e3f9f58fca3a8e5e93f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "Patrick Wright",
       "sc:citation": [
-        "pmcid:PMC4086077",
         "pubmed:24838564",
+        "pmcid:PMC4086077",
         {
           "@id": "https://doi.org/10.1093/nar/gku359"
         }
@@ -89,12 +85,12 @@
       "sc:name": "IntaRNA - RNA-RNA interaction",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
-        "rnateam",
-        "University Freiburg"
+        "University Freiburg",
+        "rnateam"
       ],
       "sc:softwareHelp": {
         "@id": "http://rna.informatik.uni-freiburg.de/Help.jsp"
@@ -103,83 +99,7 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/IntaRNA/"
     },
     {
-      "@id": "_:N387580f291004e1e9cf26f09b41694c7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:Nc2d59905f05241138f5e44b3fa156e2a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N8997ccb15ae448c98f5fa5c70147c8bd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Ne944b863f7b74f09bdb4ee05def1c0ec",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N25d6af81077c49e0b4704e5a2bc8acd4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N37729630b78a4f888c62b94ef66d9035",
+      "@id": "_:Na697d305293f403994b62ec5773d8f43",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -190,8 +110,88 @@
       "sc:name": "RNA sequence"
     },
     {
+      "@id": "_:Nfd0a0319b8094173860081907feaac0f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N30336400de68426ca5547f5de96e80a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N0f0669c6f94e4188b10d31339303767e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N24c3bcf22b214a078039c2e9b49eccaa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N52a6b511b30b4e3f9f58fca3a8e5e93f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gku359",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
     }
   ]
 }

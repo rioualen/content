@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,27 +44,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N52d6c6e61ad349daa254498da02ba4ae"
+          "@id": "_:N0a789f5bd8a94084869883621b5ef652"
         },
         {
-          "@id": "_:Nfcec4dfe3d4d47f58b3f93b1aab9a8d4"
+          "@id": "_:N818593deb1424c7caa9c864ca93b2aef"
         },
         {
-          "@id": "_:N9328ab3c10aa4c7f809115266131cd83"
+          "@id": "_:N9150ac5c510e4d19a01317730864849a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0082"
-        },
         {
           "@id": "edam:topic_3534"
         },
@@ -73,11 +67,17 @@
         },
         {
           "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC9312471",
         "pubmed:35883523",
+        "pmcid:PMC9312471",
         {
           "@id": "https://doi.org/10.3390/biom12070967"
         }
@@ -85,26 +85,34 @@
       "sc:description": "A database of potential ligand binding sites in the human proteome.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_4009"
-        },
-        {
           "@id": "edam:operation_3897"
         },
         {
           "@id": "edam:operation_0474"
+        },
+        {
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "CavitySpace",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://www.pkumdl.cn:8000/cavityspace/"
     },
     {
-      "@id": "_:N52d6c6e61ad349daa254498da02ba4ae",
+      "@id": "_:N0a789f5bd8a94084869883621b5ef652",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N818593deb1424c7caa9c864ca93b2aef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1009"
@@ -112,20 +120,12 @@
       "sc:name": "Protein name"
     },
     {
-      "@id": "_:Nfcec4dfe3d4d47f58b3f93b1aab9a8d4",
+      "@id": "_:N9150ac5c510e4d19a01317730864849a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2764"
       },
       "sc:name": "Protein name (UniProt)"
-    },
-    {
-      "@id": "_:N9328ab3c10aa4c7f809115266131cd83",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:name": "Gene name"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2023.12.04.569909",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/q2-predict-dysbiosis",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ndcb7f5bf5f044693b69450bc6b18dd8b"
+        "@id": "_:N7d0ed419e64249f680db47813dc0b1d5"
       },
       "bsc:output": {
-        "@id": "_:Nc018179174344b29872494e12f25b995"
+        "@id": "_:N96dfb8a0a9004408954db94377a4988e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0091"
@@ -64,9 +60,9 @@
       "sc:license": "Other",
       "sc:name": "q2-predict-dysbiosis",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/Kizielins/q2-predict-dysbiosis/tree/master"
@@ -74,7 +70,18 @@
       "sc:url": "https://github.com/Kizielins/q2-predict-dysbiosis/tree/master"
     },
     {
-      "@id": "_:Nc018179174344b29872494e12f25b995",
+      "@id": "_:N7d0ed419e64249f680db47813dc0b1d5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N96dfb8a0a9004408954db94377a4988e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -85,15 +92,8 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:Ndcb7f5bf5f044693b69450bc6b18dd8b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Taxonomy"
+      "@id": "https://doi.org/10.1101/2023.12.04.569909",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

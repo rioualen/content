@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cshl_fastx_reverse_complement",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N6c73fc95db1449a09c8a6168035909a9"
+        "@id": "_:N1904cfccbb6a491884d208744e0c15fa"
       },
       "bsc:output": {
-        "@id": "_:N44ae018a88534b3c9d6c4ce3c40f2521"
+        "@id": "_:Nbd1950258a924f7aa64b0ad5e812afdf"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
+        "pubmed:27137889",
         "pmcid:PMC4987906",
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
-        "pubmed:27137889"
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        }
       ],
       "sc:description": "Reverse-complement each sequence in a library. If the library is a FASTQ, the quality-scores are also reversed.",
       "sc:featureList": [
@@ -71,9 +75,9 @@
       ],
       "sc:name": "cshl_fastx_reverse_complement",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://hannonlab.cshl.edu/fastx_toolkit/galaxy.html"
@@ -82,26 +86,26 @@
       "sc:url": "http://hannonlab.cshl.edu/fastx_toolkit/"
     },
     {
-      "@id": "_:N6c73fc95db1449a09c8a6168035909a9",
+      "@id": "_:N1904cfccbb6a491884d208744e0c15fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1933"
+          "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_1932"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1933"
         }
       ],
       "sc:name": "Data"
     },
     {
-      "@id": "_:N44ae018a88534b3c9d6c4ce3c40f2521",
+      "@id": "_:Nbd1950258a924f7aa64b0ad5e812afdf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -110,10 +114,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

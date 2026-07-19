@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac820",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/qptm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc5cba43c558d48488dbdced18b42d205"
+          "@id": "_:N24441935a49e4a7f846a54df967dccdb"
         },
         {
-          "@id": "_:Ne9e3ccf791b0420498c3ec12109204e1"
+          "@id": "_:N6a289d3070a74b649c6d5acf9e05426a"
         },
         {
-          "@id": "_:N8e3028f22f6d45cdb93aab03a4682cec"
+          "@id": "_:Nfa02a89c61eb4030bac9793260959e1f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0621"
         },
         {
-          "@id": "edam:topic_3520"
-        },
-        {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0601"
         },
         {
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0601"
+          "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -85,23 +81,23 @@
           "@id": "edam:operation_3755"
         },
         {
-          "@id": "edam:operation_3799"
+          "@id": "edam:operation_0417"
         },
         {
-          "@id": "edam:operation_0417"
+          "@id": "edam:operation_3799"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "qPTM",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://qptm.omicsbio.info"
     },
     {
-      "@id": "_:Nc5cba43c558d48488dbdced18b42d205",
+      "@id": "_:N24441935a49e4a7f846a54df967dccdb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -109,7 +105,7 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:Ne9e3ccf791b0420498c3ec12109204e1",
+      "@id": "_:N6a289d3070a74b649c6d5acf9e05426a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1009"
@@ -117,12 +113,16 @@
       "sc:name": "Protein name"
     },
     {
-      "@id": "_:N8e3028f22f6d45cdb93aab03a4682cec",
+      "@id": "_:Nfa02a89c61eb4030bac9793260959e1f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
       },
       "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac820",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

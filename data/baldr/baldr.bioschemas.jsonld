@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13073-018-0528-3",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/baldr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc103b31e888f4ba8b6b942d202584ef2"
+        "@id": "_:N6f775b446713443fb07aa3a7206906e9"
       },
       "bsc:output": {
-        "@id": "_:N14bf92a4b9394d6ba441141b7a0a2293"
+        "@id": "_:N9d21b3d21a034e9a825781113a56d930"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
@@ -69,8 +65,8 @@
       "sc:license": "MIT",
       "sc:name": "BALDR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -79,7 +75,18 @@
       "sc:url": "https://www.bosingerlab.com/baldr/"
     },
     {
-      "@id": "_:N14bf92a4b9394d6ba441141b7a0a2293",
+      "@id": "_:N6f775b446713443fb07aa3a7206906e9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2182"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N9d21b3d21a034e9a825781113a56d930",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -90,15 +97,8 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:Nc103b31e888f4ba8b6b942d202584ef2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2182"
-      },
-      "sc:name": "RNA sequence"
+      "@id": "https://doi.org/10.1186/s13073-018-0528-3",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

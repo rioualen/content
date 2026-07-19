@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Camille Laibe",
       "bsc:input": {
-        "@id": "_:N7d62436f20924fdd86b9a51255c22bb7"
+        "@id": "_:N4c3ecd73c8ee47a88b10de4b755af3ff"
       },
       "bsc:output": {
-        "@id": "_:N1065855e7e484480bc1a3a0b2892fec7"
+        "@id": "_:N526c00eaf2a74520bc3ef4dacfcb4907"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3071"
@@ -65,23 +65,34 @@
       "sc:name": "BioModels Database Converters",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/compneur-srv/sbml/converters/"
         },
         {
-          "@id": "http://www.ebi.ac.uk/compneur-srv/sbml/converters/"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/compneur-srv/converters/converters"
     },
     {
-      "@id": "_:N1065855e7e484480bc1a3a0b2892fec7",
+      "@id": "_:N4c3ecd73c8ee47a88b10de4b755af3ff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2585"
+      },
+      "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "_:N526c00eaf2a74520bc3ef4dacfcb4907",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -94,17 +105,6 @@
           "@id": "edam:format_2585"
         }
       ],
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:N7d62436f20924fdd86b9a51255c22bb7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2585"
-      },
       "sc:name": "Mathematical model"
     }
   ]

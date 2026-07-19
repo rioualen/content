@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1111/j.1365-2583.2009.00930.x",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/aphidbase",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BIPAA platform",
       "bsc:input": {
-        "@id": "_:N33ffbedfe54d49d1b2d54a6b109bda83"
+        "@id": "_:Nf16b3308ef564601844d09053f3d1ced"
       },
       "bsc:output": {
-        "@id": "_:Nad0e8984cd424a37aaf92edc880cb47c"
+        "@id": "_:N5202e65b105e4c758f64eeb3a5bd8ce7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
@@ -60,9 +64,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "AphidBase",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "GenOuest",
       "sc:softwareHelp": {
@@ -71,7 +75,7 @@
       "sc:url": "http://aphidbase.com/"
     },
     {
-      "@id": "_:N33ffbedfe54d49d1b2d54a6b109bda83",
+      "@id": "_:Nf16b3308ef564601844d09053f3d1ced",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -82,7 +86,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nad0e8984cd424a37aaf92edc880cb47c",
+      "@id": "_:N5202e65b105e4c758f64eeb3a5bd8ce7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -91,10 +95,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1111/j.1365-2583.2009.00930.x",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

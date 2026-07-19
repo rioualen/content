@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ccrepe",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "George Weingart",
+        "Craig Bielski",
         "Emma Schwager",
-        "Craig Bielski"
+        "George Weingart"
       ],
       "bsc:input": {
-        "@id": "_:N619c807c38ba4467895ef6fb70f1a1aa"
+        "@id": "_:N660dc292c60f465fb4d64db3f91f3f60"
       },
       "bsc:output": [
         {
-          "@id": "_:N7c028f6c4180427fa2d086f839a248e0"
+          "@id": "_:N04501ac03ee14682b92cb04cc61d2e06"
         },
         {
-          "@id": "_:N271aba74f26a4227b265df4c701041f9"
+          "@id": "_:N9f2e7f9de3be4ae3b06a076835ed5842"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -80,18 +84,18 @@
       "sc:description": "The package is designed to assess the significance of general similarity measures in compositional datasets. The package has two functions: ccrepe: Calculates similarity measures, p-values and q-values for relative abundances of bugs in one or two body sites using bootstrap and permutation matrices of the data. nc.score: Calculates species-level co-variation and co-exclusion patterns based on an extension of the checkerboard score to ordinal data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3465"
         },
         {
-          "@id": "edam:operation_3465"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "MIT",
       "sc:name": "ccrepe",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ccrepe.html"
@@ -100,7 +104,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ccrepe.html"
     },
     {
-      "@id": "_:N619c807c38ba4467895ef6fb70f1a1aa",
+      "@id": "_:N660dc292c60f465fb4d64db3f91f3f60",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -111,7 +115,23 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N7c028f6c4180427fa2d086f839a248e0",
+      "@id": "_:N04501ac03ee14682b92cb04cc61d2e06",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N9f2e7f9de3be4ae3b06a076835ed5842",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -125,26 +145,6 @@
         }
       ],
       "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:N271aba74f26a4227b265df4c701041f9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

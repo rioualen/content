@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,28 +39,22 @@
       "@id": "https://bio.tools/indigestion",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd37a65db19c742d9b4614ded6bd9208b"
+        "@id": "_:N473133f531fe4d94ae7d679144b4275b"
       },
       "bsc:output": [
         {
-          "@id": "_:Nac7a01e60c4b40aaadbbbc29cb3ed5e7"
+          "@id": "_:Ne21eaf4e7f5448018debaf4ec50aa71f"
         },
         {
-          "@id": "_:N996032b27137467a8443f19ffc4dba7e"
+          "@id": "_:N8cea83ec791443a3b2b33e71784de025"
         },
         {
-          "@id": "_:N05f1506a7ceb4ed58237b693fd0836f3"
+          "@id": "_:Ne14a1b7335874e9eafb653bed184a228"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0078"
-        },
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_0137"
         },
@@ -68,25 +62,31 @@
           "@id": "edam:topic_0123"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3043"
         },
         {
-          "@id": "edam:topic_3043"
+          "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:description": "IOS app for in-silico digestion and more.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0401"
+          "@id": "edam:operation_3441"
+        },
+        {
+          "@id": "edam:operation_0422"
         },
         {
           "@id": "edam:operation_2574"
         },
         {
-          "@id": "edam:operation_3441"
-        },
-        {
-          "@id": "edam:operation_0422"
+          "@id": "edam:operation_0401"
         }
       ],
       "sc:name": "InDigestion",
@@ -96,29 +96,18 @@
       "sc:url": "http://indigestionapp.com"
     },
     {
-      "@id": "_:Nac7a01e60c4b40aaadbbbc29cb3ed5e7",
+      "@id": "_:N473133f531fe4d94ae7d679144b4275b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1238"
+        "@id": "edam:data_3021"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Proteolytic digest"
+      "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:N996032b27137467a8443f19ffc4dba7e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1522"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein sequence hydropathy plot"
-    },
-    {
-      "@id": "_:N05f1506a7ceb4ed58237b693fd0836f3",
+      "@id": "_:Ne21eaf4e7f5448018debaf4ec50aa71f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2970"
@@ -129,15 +118,26 @@
       "sc:name": "Protein hydropathy data"
     },
     {
-      "@id": "_:Nd37a65db19c742d9b4614ded6bd9208b",
+      "@id": "_:N8cea83ec791443a3b2b33e71784de025",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3021"
+        "@id": "edam:data_1522"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "UniProt accession"
+      "sc:name": "Protein sequence hydropathy plot"
+    },
+    {
+      "@id": "_:Ne14a1b7335874e9eafb653bed184a228",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1238"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Proteolytic digest"
     }
   ]
 }

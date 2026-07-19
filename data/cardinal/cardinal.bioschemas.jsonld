@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv146",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cardinal",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Kylie A. Bemis",
       "bsc:input": [
         {
-          "@id": "_:Nf42eec638ab24c4a9525f344c804d780"
+          "@id": "_:Neacfb8b1c1d24cb9a07cee1b62e0b8ec"
         },
         {
-          "@id": "_:Ned9738fb5e704e788dd64e1a0aef9e4e"
+          "@id": "_:N26ba19cefaa048d0a0008510368aad48"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne18305f03a474a5ebf4bebcbfa79cb95"
+          "@id": "_:N13ef6ed313ae4311a50a5e2d8be2d488"
         },
         {
-          "@id": "_:N5ce8813f42cb4bb6b4ef85dc9a6f7ab9"
+          "@id": "_:N7b7e44b9037b49f7851e3ddecba7f585"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -78,29 +82,29 @@
       "sc:description": "Implements statistical and computational tools for analyzing mass spectrometry imaging datasets, including methods for efficient pre-processing, spatial segmentation, and classification.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3627"
-        },
-        {
           "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3694"
         },
         {
           "@id": "edam:operation_0337"
         },
         {
+          "@id": "edam:operation_3627"
+        },
+        {
           "@id": "edam:operation_3214"
         },
         {
-          "@id": "edam:operation_3694"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "Cardinal",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -110,55 +114,55 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Cardinal.html"
     },
     {
-      "@id": "_:Ne18305f03a474a5ebf4bebcbfa79cb95",
+      "@id": "_:Neacfb8b1c1d24cb9a07cee1b62e0b8ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3604"
+          "@id": "edam:format_3839"
         },
+        {
+          "@id": "edam:format_3682"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N26ba19cefaa048d0a0008510368aad48",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3839"
+        },
+        {
+          "@id": "edam:format_3682"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N13ef6ed313ae4311a50a5e2d8be2d488",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
         {
           "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N5ce8813f42cb4bb6b4ef85dc9a6f7ab9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3682"
         },
         {
-          "@id": "edam:format_3839"
+          "@id": "edam:format_3604"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nf42eec638ab24c4a9525f344c804d780",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3682"
-        },
-        {
-          "@id": "edam:format_3839"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Ned9738fb5e704e788dd64e1a0aef9e4e",
+      "@id": "_:N7b7e44b9037b49f7851e3ddecba7f585",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -172,10 +176,6 @@
         }
       ],
       "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv146",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

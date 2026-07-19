@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkn631",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/giardiadb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb2f2e358daaf47af90e931f4d7006d07"
+        "@id": "_:Na91b312ccd6b4c8ea82959b7209f01b1"
       },
       "bsc:output": {
-        "@id": "_:N725e821d21db4fe7830cec599a6efdfc"
+        "@id": "_:Nedb96ba2c87246b7acbf0d20c040c8b4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
@@ -62,9 +66,9 @@
       },
       "sc:name": "Giardia genome resources (GiardiaDB)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://giardiadb.org/giardiadb/showXmlDataContent.do?name=XmlQuestions.Tutorials"
@@ -72,7 +76,15 @@
       "sc:url": "http://giardiadb.org/giardiadb/"
     },
     {
-      "@id": "_:N725e821d21db4fe7830cec599a6efdfc",
+      "@id": "_:Na91b312ccd6b4c8ea82959b7209f01b1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2295"
+      },
+      "sc:name": "Gene ID"
+    },
+    {
+      "@id": "_:Nedb96ba2c87246b7acbf0d20c040c8b4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -81,18 +93,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:Nb2f2e358daaf47af90e931f4d7006d07",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2295"
-      },
-      "sc:name": "Gene ID"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkn631",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

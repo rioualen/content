@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,54 +40,50 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-14-308",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mitoode",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Gregoire Pau",
         {
           "@id": "http://orcid.org/0000-0002-0474-2218"
-        }
+        },
+        "Gregoire Pau"
       ],
       "bsc:input": {
-        "@id": "_:N4b56fac754434221a001ced3bd7569bc"
+        "@id": "_:Nd83474260921452d9a525a0595693636"
       },
       "bsc:output": [
         {
-          "@id": "_:N5cdb5d1b64b24c3386b4d6e777d1dcd5"
+          "@id": "_:Nb3bc7680f0b4433381a6965515bbdb19"
         },
         {
-          "@id": "_:Nb4a6ef36a88e470e84aa3f1c6bf5c3cd"
+          "@id": "_:Na98a30a9108747db9d4f0dceb7cf2df9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0625"
-        },
-        {
-          "@id": "edam:topic_3523"
-        },
-        {
           "@id": "edam:topic_3383"
         },
         {
           "@id": "edam:topic_2229"
+        },
+        {
+          "@id": "edam:topic_0625"
+        },
+        {
+          "@id": "edam:topic_3523"
         }
       ],
       "sc:citation": [
+        "pubmed:24131777",
         "pmcid:PMC3827932",
         {
           "@id": "https://doi.org/10.1186/1471-2105-14-308"
-        },
-        "pubmed:24131777"
+        }
       ],
       "sc:description": "The package contains the methods to fit a cell-cycle model on cell count data.",
       "sc:featureList": {
@@ -97,8 +93,8 @@
       "sc:name": "mitoODE",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/mitoODE.html"
@@ -107,23 +103,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/mitoODE.html"
     },
     {
-      "@id": "_:N5cdb5d1b64b24c3386b4d6e777d1dcd5",
+      "@id": "_:Nd83474260921452d9a525a0595693636",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_3108"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:Nb4a6ef36a88e470e84aa3f1c6bf5c3cd",
+      "@id": "_:Nb3bc7680f0b4433381a6965515bbdb19",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -139,15 +130,24 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N4b56fac754434221a001ced3bd7569bc",
+      "@id": "_:Na98a30a9108747db9d4f0dceb7cf2df9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3108"
+        "@id": "edam:data_1772"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Experimental measurement"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-14-308",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

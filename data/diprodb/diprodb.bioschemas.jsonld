@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkn597",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/diprodb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Maik Friedel",
       "bsc:input": [
         {
-          "@id": "_:N27be690ed1e741c4b0cec30d0e520780"
+          "@id": "_:N91366779377448f6a57f985c0febd0c5"
         },
         {
-          "@id": "_:Nf838383630a04b5cb36827ed116533d8"
+          "@id": "_:N354cbba5b7d6418ba89cdc7a891b0a86"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4235070d955d4588a6ad63cac21f1adc"
+          "@id": "_:N2215f073f6c44c5dac85aca8a4cbbbc9"
         },
         {
-          "@id": "_:N2e366318a9b246e283f51e9eb5eb69bc"
+          "@id": "_:N2373f78401e9485a808c237170d8f99f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
       },
       "sc:citation": [
+        "pubmed:18805906",
+        "pmcid:PMC2686603",
         {
           "@id": "https://doi.org/10.1093/nar/gkn597"
-        },
-        "pubmed:18805906",
-        "pmcid:PMC2686603"
+        }
       ],
       "sc:description": "Database which is designed to collect and analyse thermodynamic, structural and other dinucleotide properties. The table presenting all the dinucleotide properties can be pruned and rearranged by different criteria. The database contains different export and analysis functions.",
       "sc:featureList": {
@@ -74,8 +78,8 @@
       "sc:name": "Dinucleotide property database (DiProDB)",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "Leibniz Institute for Age Research",
       "sc:softwareHelp": {
@@ -84,7 +88,7 @@
       "sc:url": "http://diprodb.fli-leibniz.de/"
     },
     {
-      "@id": "_:N27be690ed1e741c4b0cec30d0e520780",
+      "@id": "_:N91366779377448f6a57f985c0febd0c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2721"
@@ -92,7 +96,7 @@
       "sc:name": "DiProDB ID"
     },
     {
-      "@id": "_:Nf838383630a04b5cb36827ed116533d8",
+      "@id": "_:N354cbba5b7d6418ba89cdc7a891b0a86",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -100,18 +104,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N4235070d955d4588a6ad63cac21f1adc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3128"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Nucleic acid structure report"
-    },
-    {
-      "@id": "_:N2e366318a9b246e283f51e9eb5eb69bc",
+      "@id": "_:N2215f073f6c44c5dac85aca8a4cbbbc9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2720"
@@ -122,8 +115,15 @@
       "sc:name": "Dinucleotide property"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkn597",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2373f78401e9485a808c237170d8f99f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3128"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Nucleic acid structure report"
     }
   ]
 }

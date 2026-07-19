@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,47 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.64898/2025.12.18.695169",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pyxlms",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Proteomics FHOÖ Campus Hagenberg",
       "bsc:input": {
-        "@id": "_:N868855c44a5b455dae285f9c1e412606"
+        "@id": "_:N235e44149dd54909b5b553a01520d79a"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc59d98821a484ec28eb5a0e3b5474790"
+          "@id": "_:Nd658a98e13c04eaeb70e50a7b09b6f7f"
         },
         {
-          "@id": "_:Nb4413bf95a704a54b8d07859bba7ea05"
+          "@id": "_:Naea84f102d9344148f274848e0d96880"
         },
         {
-          "@id": "_:N04840f79e0e74331bdb0fcfb236428d8"
+          "@id": "_:N646d439b838949d78cb1554fd03c99e7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Library"
+        "Library",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
-        },
-        {
-          "@id": "edam:topic_0121"
-        },
-        {
           "@id": "edam:topic_0091"
+        },
+        {
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_0128"
         },
         {
           "@id": "edam:topic_2814"
+        },
+        {
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": {
@@ -84,42 +88,42 @@
       "sc:description": "pyXLMS is a python package and web application with graphical user interface that aims to simplify and streamline the intermediate step of connecting crosslink search engine results with down-stream analysis tools, enabling researchers even without bioinformatics knowledge to conduct in-depth crosslink analyses and shifting the focus from data transformation to data interpretation and therefore gaining biological insight.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2406"
+          "@id": "edam:operation_0276"
         },
         {
-          "@id": "edam:operation_0276"
+          "@id": "edam:operation_2406"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "pyXLMS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/hgb-bin-proteomics/pyXLMS/releases"
-        },
-        {
-          "@id": "https://github.com/hgb-bin-proteomics/pyXLMS/blob/master/CONTRIBUTING.md"
-        },
-        {
-          "@id": "https://hgb-bin-proteomics.github.io/pyXLMS-docs"
+          "@id": "https://hgb-bin-proteomics.github.io/pyXLMS/"
         },
         {
           "@id": "https://github.com/hgb-bin-proteomics/pyXLMS/blob/master/CODE_OF_CONDUCT.md"
         },
         {
-          "@id": "https://hgb-bin-proteomics.github.io/pyXLMS/"
+          "@id": "https://github.com/hgb-bin-proteomics/pyXLMS/blob/master/CONTRIBUTING.md"
+        },
+        {
+          "@id": "https://github.com/hgb-bin-proteomics/pyXLMS/releases"
+        },
+        {
+          "@id": "https://hgb-bin-proteomics.github.io/pyXLMS-docs"
         }
       ],
       "sc:softwareVersion": "1.7.5+",
       "sc:url": "https://github.com/hgb-bin-proteomics/pyXLMS"
     },
     {
-      "@id": "_:N868855c44a5b455dae285f9c1e412606",
+      "@id": "_:N235e44149dd54909b5b553a01520d79a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -132,19 +136,19 @@
           "@id": "edam:format_3464"
         },
         {
+          "@id": "edam:format_3475"
+        },
+        {
           "@id": "edam:format_3247"
         },
         {
           "@id": "edam:format_3620"
-        },
-        {
-          "@id": "edam:format_3475"
         }
       ],
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:Nc59d98821a484ec28eb5a0e3b5474790",
+      "@id": "_:Nd658a98e13c04eaeb70e50a7b09b6f7f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -152,7 +156,7 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:Nb4413bf95a704a54b8d07859bba7ea05",
+      "@id": "_:Naea84f102d9344148f274848e0d96880",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -160,16 +164,12 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N04840f79e0e74331bdb0fcfb236428d8",
+      "@id": "_:N646d439b838949d78cb1554fd03c99e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.64898/2025.12.18.695169",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-5332-5701",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/pr400727e",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mspire-simulator",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N32cae926f403494fb206cd5af76dfbc2"
+        "@id": "_:N5f7d216a2c624d85a96d4a07774c9e8a"
       },
       "bsc:output": {
-        "@id": "_:N7c57cd4038b94ac3b8bd11e79f93949b"
+        "@id": "_:Nf52814297ca04ae2ba815be90f7b9bca"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_3524"
+          "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3524"
         }
       ],
       "sc:citation": [
@@ -84,18 +88,7 @@
       "sc:url": "https://github.com/princelab/mspire-simulator"
     },
     {
-      "@id": "_:N7c57cd4038b94ac3b8bd11e79f93949b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3244"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N32cae926f403494fb206cd5af76dfbc2",
+      "@id": "_:N5f7d216a2c624d85a96d4a07774c9e8a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -106,8 +99,15 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1021/pr400727e",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf52814297ca04ae2ba815be90f7b9bca",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3244"
+      },
+      "sc:name": "Mass spectrometry data"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0676-z",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/spirpro",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jittisak Senachak",
       "bsc:input": [
         {
-          "@id": "_:Nc7cc02d2dffc450abcb3b043139f2dff"
+          "@id": "_:N3e49de852f464e01be917cd765d2fe4c"
         },
         {
-          "@id": "_:N7b2309a20205437d9c50e50a7a351f31"
+          "@id": "_:N2624a79186d742dbae8e7a22f45a7f01"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ncdcf604340a644c3a95b31ecb20dc8f2"
+        "@id": "_:Necf0aa121d1d4382b0013bad6fcd030f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -68,8 +64,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4518644",
         "pubmed:26220682",
+        "pmcid:PMC4518644",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0676-z"
         }
@@ -77,23 +73,23 @@
       "sc:description": "A Spirulina proteome database and web-based tools for the analysis of protein-protein interactions at the metabolic level in Spirulina (Arthrospira) platensis C1.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3083"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3083"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "SpirPro",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
+        "KMUTT",
         "King Mongkut's University of Technology (Thonburi)",
-        "National Center for Genetic Engineering and Biotechnology",
-        "KMUTT"
+        "National Center for Genetic Engineering and Biotechnology"
       ],
       "sc:softwareHelp": {
         "@id": "http://spirpro.sbi.kmutt.ac.th/"
@@ -101,23 +97,15 @@
       "sc:url": "http://spirpro.sbi.kmutt.ac.th"
     },
     {
-      "@id": "_:Ncdcf604340a644c3a95b31ecb20dc8f2",
+      "@id": "_:N3e49de852f464e01be917cd765d2fe4c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2600"
+        "@id": "edam:data_2099"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Pathway or network"
+      "sc:name": "Name"
     },
     {
-      "@id": "_:Nc7cc02d2dffc450abcb3b043139f2dff",
+      "@id": "_:N2624a79186d742dbae8e7a22f45a7f01",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2343"
@@ -125,12 +113,24 @@
       "sc:name": "Pathway ID (KEGG)"
     },
     {
-      "@id": "_:N7b2309a20205437d9c50e50a7a351f31",
+      "@id": "_:Necf0aa121d1d4382b0013bad6fcd030f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2099"
+        "@id": "edam:data_2600"
       },
-      "sc:name": "Name"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-015-0676-z",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

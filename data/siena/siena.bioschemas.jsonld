@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,76 +36,68 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.5b00210",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jcim.5b00588",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/siena",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbfd4991d7c03439eb87aced2c0b47cab"
+        "@id": "_:N4f18a04ae4894ea9ac4e20b7bfcd2715"
       },
       "bsc:output": [
         {
-          "@id": "_:N23a538bf5c484ad683f732b50345f3d2"
+          "@id": "_:N1fe4b841773243188bb80ba5fc5a99a6"
         },
         {
-          "@id": "_:Nb2603f030a604541a663898e0f0355aa"
+          "@id": "_:N51e45bcf667f46788a66ed7a88f52996"
         },
         {
-          "@id": "_:N3454ecd1b7b647e4b4ce15bcaa7000e1"
+          "@id": "_:N8658b844274849aca4abe113122e04e4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3534"
+          "@id": "edam:topic_3336"
         },
         {
-          "@id": "edam:topic_3336"
+          "@id": "edam:topic_3534"
         },
         {
           "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1021/acs.jcim.5b00588"
-        },
+        "pubmed:26098831",
         {
           "@id": "https://doi.org/10.1021/acs.jcim.5b00210"
         },
-        "pubmed:26098831",
-        "pubmed:26759067"
+        "pubmed:26759067",
+        {
+          "@id": "https://doi.org/10.1021/acs.jcim.5b00588"
+        }
       ],
       "sc:description": "Search for homologous protein binding sites structures in the Protein Data Bank. The tool allows an automated assembly and preprocessing of protein structure ensembles supporting protein flexibility and point mutation analyses as well as structure-based virtual screening.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0339"
-        },
-        {
-          "@id": "edam:operation_0310"
+          "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_0244"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_0310"
         },
         {
           "@id": "edam:operation_0295"
+        },
+        {
+          "@id": "edam:operation_0339"
         }
       ],
       "sc:name": "SIENA",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "University of Hamburg - Center for Bioinformatics",
       "sc:softwareHelp": {
@@ -114,7 +106,7 @@
       "sc:url": "http://proteinsplus.zbh.uni-hamburg.de/#siena"
     },
     {
-      "@id": "_:N23a538bf5c484ad683f732b50345f3d2",
+      "@id": "_:N4f18a04ae4894ea9ac4e20b7bfcd2715",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -125,15 +117,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nb2603f030a604541a663898e0f0355aa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1384"
-      },
-      "sc:name": "Sequence alignment (protein)"
-    },
-    {
-      "@id": "_:N3454ecd1b7b647e4b4ce15bcaa7000e1",
+      "@id": "_:N1fe4b841773243188bb80ba5fc5a99a6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1497"
@@ -141,7 +125,15 @@
       "sc:name": "Root-mean-square deviation"
     },
     {
-      "@id": "_:Nbfd4991d7c03439eb87aced2c0b47cab",
+      "@id": "_:N51e45bcf667f46788a66ed7a88f52996",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1384"
+      },
+      "sc:name": "Sequence alignment (protein)"
+    },
+    {
+      "@id": "_:N8658b844274849aca4abe113122e04e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -150,6 +142,14 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jcim.5b00210",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jcim.5b00588",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

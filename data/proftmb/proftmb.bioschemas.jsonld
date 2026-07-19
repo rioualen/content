@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/proftmb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd3bbcfbf727f4928a0b4ea9b32303a2a"
+        "@id": "_:Nf9e2867641b14e8f908288dc58f0b5a7"
       },
       "bsc:output": {
-        "@id": "_:Nf3844f1daa3f40e0a17e0d207a538eab"
+        "@id": "_:Nac96ca0b24cb43808065b64624d4bd19"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -70,16 +70,16 @@
         }
       ],
       "sc:contributor": [
-        "Burkhard Rost",
-        "grant R01-LM07329-01 from the National Library of Medicine"
+        "grant R01-LM07329-01 from the National Library of Medicine",
+        "Burkhard Rost"
       ],
       "sc:description": "Per-residue prediction of bacterial transmembrane beta barrels.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0269"
+          "@id": "edam:operation_0268"
         },
         {
-          "@id": "edam:operation_0268"
+          "@id": "edam:operation_0269"
         }
       ],
       "sc:funder": "grant R01-LM07329-01 from the National Library of Medicine",
@@ -87,9 +87,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "PROFtmb",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "Columbia University",
@@ -103,18 +103,7 @@
       "sc:url": "http://ppopen.informatik.tu-muenchen.de/"
     },
     {
-      "@id": "_:Nf3844f1daa3f40e0a17e0d207a538eab",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0896"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1920"
-      },
-      "sc:name": "Protein report"
-    },
-    {
-      "@id": "_:Nd3bbcfbf727f4928a0b4ea9b32303a2a",
+      "@id": "_:Nf9e2867641b14e8f908288dc58f0b5a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -123,6 +112,17 @@
         "@id": "edam:format_2200"
       },
       "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:Nac96ca0b24cb43808065b64624d4bd19",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1920"
+      },
+      "sc:name": "Protein report"
     }
   ]
 }

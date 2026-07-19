@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.4295",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cydar",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Aaron Lun",
       "bsc:input": {
-        "@id": "_:N8dca26d0a9234a8d989ffdab385fa076"
+        "@id": "_:Na655966fc46943e7b1d89e12995dad19"
       },
       "bsc:output": {
-        "@id": "_:Nd6efb22066b3408cb209b6d3ce7463c1"
+        "@id": "_:N4640c95cf4b54b23a71c1b6b45cfe31b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_3360"
         },
         {
-          "@id": "edam:topic_3360"
+          "@id": "edam:topic_2229"
         }
       ],
       "sc:citation": [
@@ -69,18 +65,18 @@
       "sc:description": "A tool for differential abundance analysis using mass cytometry data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3214"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3214"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "cydar",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -89,7 +85,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/cydar.html"
     },
     {
-      "@id": "_:Nd6efb22066b3408cb209b6d3ce7463c1",
+      "@id": "_:Na655966fc46943e7b1d89e12995dad19",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3483"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3245"
+      },
+      "sc:name": "Spectrum"
+    },
+    {
+      "@id": "_:N4640c95cf4b54b23a71c1b6b45cfe31b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -100,15 +107,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N8dca26d0a9234a8d989ffdab385fa076",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3483"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3245"
-      },
-      "sc:name": "Spectrum"
+      "@id": "https://doi.org/10.1038/nmeth.4295",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

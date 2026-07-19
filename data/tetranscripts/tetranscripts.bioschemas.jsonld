@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv422",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/tetranscripts",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ncf9b572b57494f9b8c55a7e89f0bc63e"
+        "@id": "_:Ne216747cb4804ba99be8db06b7820ecc"
       },
       "bsc:output": {
-        "@id": "_:N70d0ab303c9f498fa411a5adbc92cdd6"
+        "@id": "_:Ne928ac4aaa0c493a922bce41cd5ba638"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Command-line tool"
+        "Command-line tool",
+        "Script"
       ],
       "sc:applicationSubCategory": [
         {
@@ -75,8 +71,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "TEtranscripts",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/mhammell-laboratory/TEtranscripts"
@@ -84,7 +80,7 @@
       "sc:url": "https://hammelllab.labsites.cshl.edu/software/#TEtranscripts"
     },
     {
-      "@id": "_:Ncf9b572b57494f9b8c55a7e89f0bc63e",
+      "@id": "_:Ne216747cb4804ba99be8db06b7820ecc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -95,7 +91,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N70d0ab303c9f498fa411a5adbc92cdd6",
+      "@id": "_:Ne928ac4aaa0c493a922bce41cd5ba638",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -104,6 +100,10 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv422",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0003-0405-8392",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,46 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2021.10.16.464637",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ihypoxia",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N142b7ec57dc845df92736ba00f6b1738"
+          "@id": "_:N2df678d204324c499328a70937f44f0b"
         },
         {
-          "@id": "_:N6e612896ada7487e86c5ce117d6f1147"
+          "@id": "_:N9ccd0e87f3f945ad9b511d49c361f1a6"
         },
         {
-          "@id": "_:N9aa2c1afa93d4971b33bebaa257083bc"
+          "@id": "_:N8a43f1c92cb741dca5477626ecec4580"
         },
         {
-          "@id": "_:Nf010b989dec7411591b907c0f60aa797"
+          "@id": "_:N5d6843d2989f4bdc96ead4938e3cc282"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0601"
-        },
-        {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_0621"
         },
         {
-          "@id": "edam:topic_3500"
+          "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0601"
+        },
+        {
+          "@id": "edam:topic_3500"
         }
       ],
       "sc:citation": {
@@ -83,31 +87,23 @@
           "@id": "edam:operation_2476"
         },
         {
-          "@id": "edam:operation_3630"
+          "@id": "edam:operation_0417"
         },
         {
-          "@id": "edam:operation_0417"
+          "@id": "edam:operation_3630"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "iHypoxia",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://ihypoxia.omicsbio.info"
     },
     {
-      "@id": "_:N142b7ec57dc845df92736ba00f6b1738",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:N6e612896ada7487e86c5ce117d6f1147",
+      "@id": "_:N2df678d204324c499328a70937f44f0b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -115,15 +111,7 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:N9aa2c1afa93d4971b33bebaa257083bc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1009"
-      },
-      "sc:name": "Protein name"
-    },
-    {
-      "@id": "_:Nf010b989dec7411591b907c0f60aa797",
+      "@id": "_:N9ccd0e87f3f945ad9b511d49c361f1a6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -131,8 +119,20 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "https://doi.org/10.1101/2021.10.16.464637",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8a43f1c92cb741dca5477626ecec4580",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1009"
+      },
+      "sc:name": "Protein name"
+    },
+    {
+      "@id": "_:N5d6843d2989f4bdc96ead4938e3cc282",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:name": "UniProt ID"
     }
   ]
 }

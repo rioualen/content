@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-6173-7255",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-017-1990-4",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/metagenyo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-6173-7255"
       },
       "bsc:input": {
-        "@id": "_:Nb957f03fd9614b799e0a20f619324fa7"
+        "@id": "_:N32570d9173cf4b909b8c4c0b726691ad"
       },
       "bsc:output": {
-        "@id": "_:Nb180ecbcff1e4e869a4627a46fb6f345"
+        "@id": "_:N50912a219abc4e60b4f36e17ee40a8c5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_2885"
         },
         {
+          "@id": "edam:topic_0625"
+        },
+        {
           "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_2269"
-        },
-        {
-          "@id": "edam:topic_0625"
         }
       ],
       "sc:author": "Jordi Martorell-Marugán",
@@ -86,38 +78,46 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "MetaGenyo",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://metagenyo.genyo.es"
     },
     {
-      "@id": "_:Nb180ecbcff1e4e869a4627a46fb6f345",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0920"
-      },
-      "sc:name": "Genotype/phenotype report"
-    },
-    {
-      "@id": "_:Nb957f03fd9614b799e0a20f619324fa7",
+      "@id": "_:N32570d9173cf4b909b8c4c0b726691ad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3468"
-        },
-        {
           "@id": "edam:format_3752"
         },
         {
           "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3468"
         }
       ],
       "sc:name": "Genotype/phenotype report"
+    },
+    {
+      "@id": "_:N50912a219abc4e60b4f36e17ee40a8c5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0920"
+      },
+      "sc:name": "Genotype/phenotype report"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-017-1990-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6173-7255",
+      "@type": "sc:Person"
     }
   ]
 }

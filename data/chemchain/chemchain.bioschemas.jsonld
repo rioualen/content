@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1752-0509-3-58",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/chemchain",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc8caf58c5c16432ea642d7b552ddd513"
+          "@id": "_:N171bcee3cc9d4258873fd18fbe49658e"
         },
         {
-          "@id": "_:N55ac025cb8e1489eb090fab7e700a73d"
+          "@id": "_:Nd630710f4e394a8f8b7a6d83d11fad9a"
         },
         {
-          "@id": "_:Na939ba65f52d4feabb9a81ce05ede6d7"
+          "@id": "_:N3f858f325ad24130a9eec2865cc181f4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
         "pubmed:19500393",
         "pmcid:PMC2705353",
@@ -64,10 +60,10 @@
       "sc:description": "ChemChains is a logical network simulation and analysis suite.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0244"
+          "@id": "edam:operation_3927"
         },
         {
-          "@id": "edam:operation_3927"
+          "@id": "edam:operation_0244"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -80,15 +76,7 @@
       "sc:url": "https://www.bioinformatics.org/chemchains/wiki/"
     },
     {
-      "@id": "_:Nc8caf58c5c16432ea642d7b552ddd513",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N55ac025cb8e1489eb090fab7e700a73d",
+      "@id": "_:N171bcee3cc9d4258873fd18fbe49658e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2133"
@@ -96,12 +84,24 @@
       "sc:name": "Logical operator"
     },
     {
-      "@id": "_:Na939ba65f52d4feabb9a81ce05ede6d7",
+      "@id": "_:Nd630710f4e394a8f8b7a6d83d11fad9a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N3f858f325ad24130a9eec2865cc181f4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3869"
       },
       "sc:name": "Simulation"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1752-0509-3-58",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

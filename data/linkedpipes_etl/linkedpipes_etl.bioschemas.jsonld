@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,11 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1145/3151759.3151809",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-2732-9370",
+      "@id": "https://orcid.org/0000-0001-7234-3051",
       "@type": "sc:Person"
     },
     {
@@ -48,8 +44,12 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0001-7234-3051",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1145/3151759.3151809",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-3-319-47602-5_20",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/linkedpipes_etl",
@@ -58,12 +58,12 @@
         "@id": "https://orcid.org/0000-0001-7234-3051"
       },
       "bsc:input": {
-        "@id": "_:N074811368a304beaae7c196d65bc3c06"
+        "@id": "_:N7ae769e6ea79496098e951da446d9d89"
       },
       "bsc:output": {
-        "@id": "_:N9a62e92f152c46b3bc866e84315e5933"
+        "@id": "_:N852cbf9705ac449a9b1ead2e78b7851b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Workbench",
@@ -71,13 +71,13 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3366"
+          "@id": "edam:topic_3316"
         },
         {
           "@id": "edam:topic_3345"
         },
         {
-          "@id": "edam:topic_3316"
+          "@id": "edam:topic_3366"
         },
         {
           "@id": "edam:topic_0219"
@@ -94,19 +94,19 @@
       },
       "sc:citation": [
         {
+          "@id": "https://doi.org/10.1007/978-3-319-47602-5_20"
+        },
+        {
           "@id": "https://doi.org/10.1007/978-3-319-69459-7_10"
         },
         {
           "@id": "https://doi.org/10.1145/3151759.3151809"
-        },
-        {
-          "@id": "https://doi.org/10.1007/978-3-319-47602-5_20"
         }
       ],
       "sc:description": "Extract Transform Load for Linked Data",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_3436"
         },
         {
           "@id": "edam:operation_2409"
@@ -115,7 +115,7 @@
           "@id": "edam:operation_0335"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -127,48 +127,23 @@
       "sc:url": "https://etl.linkedpipes.com/"
     },
     {
-      "@id": "_:N074811368a304beaae7c196d65bc3c06",
+      "@id": "_:N7ae769e6ea79496098e951da446d9d89",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_2331"
-        },
         {
           "@id": "edam:format_3751"
         },
         {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2376"
-        }
-      ],
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:N9a62e92f152c46b3bc866e84315e5933",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3750"
-        },
-        {
           "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_2376"
+          "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_2376"
         },
         {
           "@id": "edam:format_2332"
@@ -177,8 +152,33 @@
       "sc:name": "Data reference"
     },
     {
-      "@id": "https://doi.org/10.1007/978-3-319-47602-5_20",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N852cbf9705ac449a9b1ead2e78b7851b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2376"
+        },
+        {
+          "@id": "edam:format_2332"
+        },
+        {
+          "@id": "edam:format_3750"
+        }
+      ],
+      "sc:name": "Data reference"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2732-9370",
+      "@type": "sc:Person"
     }
   ]
 }

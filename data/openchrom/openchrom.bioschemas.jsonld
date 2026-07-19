@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-6114-0304",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1186/1471-2105-11-405",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/openchrom",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na968ca11586b4220922fa877652597b0"
+        "@id": "_:Nb885fb7e7bca43068ad43b6df62041b2"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd1ac770c6d27410e8bb419f69a9c8cdf"
+          "@id": "_:N346f2ac22ea5447da7cef2ec96fe52fb"
         },
         {
-          "@id": "_:N7cdc8ebaf89a4331a8e286eed863515d"
+          "@id": "_:N3e9a28f20ec04fc3a67ba39b2cd97c75"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -64,10 +64,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:20673335",
         {
           "@id": "https://doi.org/10.1186/1471-2105-11-405"
-        },
-        "pubmed:20673335"
+        }
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0001-6114-0304"
@@ -78,37 +78,65 @@
           "@id": "edam:operation_3203"
         },
         {
-          "@id": "edam:operation_3215"
-        },
-        {
-          "@id": "edam:operation_3214"
+          "@id": "edam:operation_2424"
         },
         {
           "@id": "edam:operation_3694"
         },
         {
-          "@id": "edam:operation_2424"
+          "@id": "edam:operation_3215"
+        },
+        {
+          "@id": "edam:operation_3214"
         }
       ],
       "sc:license": "EPL-1.0",
       "sc:name": "OpenChrom",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://lablicate.com/marketplace/extensions/handbook"
+          "@id": "https://github.com/OpenChrom/openchrom/wiki/faq"
         },
         {
-          "@id": "https://github.com/OpenChrom/openchrom/wiki/faq"
+          "@id": "https://lablicate.com/marketplace/extensions/handbook"
         }
       ],
       "sc:url": "https://www.openchrom.net/"
     },
     {
-      "@id": "_:Nd1ac770c6d27410e8bb419f69a9c8cdf",
+      "@id": "_:Nb885fb7e7bca43068ad43b6df62041b2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3650"
+        },
+        {
+          "@id": "edam:format_3712"
+        },
+        {
+          "@id": "edam:format_1637"
+        },
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N346f2ac22ea5447da7cef2ec96fe52fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -119,7 +147,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N7cdc8ebaf89a4331a8e286eed863515d",
+      "@id": "_:N3e9a28f20ec04fc3a67ba39b2cd97c75",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"
@@ -132,45 +160,17 @@
           "@id": "edam:format_3650"
         },
         {
-          "@id": "edam:format_3620"
+          "@id": "edam:format_3244"
         },
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3620"
         }
       ],
       "sc:name": "Peptide mass fingerprint"
     },
     {
-      "@id": "_:Na968ca11586b4220922fa877652597b0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3712"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3650"
-        },
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_1637"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-11-405",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0001-6114-0304",
+      "@type": "sc:Person"
     }
   ]
 }

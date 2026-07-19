@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,19 +45,19 @@
       "biotools:primaryContact": "Yuanhang Liu",
       "bsc:input": [
         {
-          "@id": "_:N9c3f546eea744b2991ec30d1b4d1a3dc"
+          "@id": "_:N132829a109f641e28b9c7bcb216aaca2"
         },
         {
-          "@id": "_:Na39e5818d1cb44fcbc5b5b4861116b1c"
+          "@id": "_:N9d2d8de2168449de98d4b6a244b574ba"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5c120590dc754def9433da354b7ea2f3"
+        "@id": "_:N7f146448510b4cbfad5efd93a60beec2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -68,11 +68,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:26099631",
+        "pmcid:PMC4474535",
         {
           "@id": "https://doi.org/10.1186/1471-2164-16-s7-s14"
-        },
-        "pubmed:26099631",
-        "pmcid:PMC4474535"
+        }
       ],
       "sc:description": "This algorithm establishes an statistical model based on the assumption that observed signals are the convolution of true expression signals and sequencing noises. The mapped reads in non-exonic regions are considered as sequencing noises that follow a Poisson distribution. Given measureable observed and noise signals from RNA-seq data, true expression signals can be identified, assuming that they are governed by the negative binomial distribution.",
       "sc:featureList": [
@@ -86,9 +86,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "XBSeq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/XBSeq.html"
@@ -97,7 +97,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/XBSeq.html"
     },
     {
-      "@id": "_:N5c120590dc754def9433da354b7ea2f3",
+      "@id": "_:N132829a109f641e28b9c7bcb216aaca2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2887"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2306"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Nucleic acid sequence record"
+    },
+    {
+      "@id": "_:N9d2d8de2168449de98d4b6a244b574ba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2306"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N7f146448510b4cbfad5efd93a60beec2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -106,38 +138,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N9c3f546eea744b2991ec30d1b4d1a3dc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2887"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2306"
-        }
-      ],
-      "sc:name": "Nucleic acid sequence record"
-    },
-    {
-      "@id": "_:Na39e5818d1cb44fcbc5b5b4861116b1c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2306"
-        }
-      ],
-      "sc:name": "Sequence alignment"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,37 +39,46 @@
       "@id": "https://bio.tools/gcmodeller",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N43ec2362d92b4256899a4d7d9c57e1c8"
+        "@id": "_:Ncf95d5700e604896bda1627a634e4db6"
       },
       "bsc:output": {
-        "@id": "_:N0c2e6fad9e4d49f7a4f47096c038c441"
+        "@id": "_:N7db4d44fb376421a913fb2b4bd8ad9cc"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Command-line tool",
         "Bioinformatics portal",
-        "Workflow",
+        "Command-line tool",
+        "Library",
         "Suite",
-        "Library"
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3172"
-        },
-        {
-          "@id": "edam:topic_2259"
-        },
         {
           "@id": "edam:topic_3955"
         },
         {
+          "@id": "edam:topic_3172"
+        },
+        {
           "@id": "edam:topic_3298"
+        },
+        {
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:description": "GCModeller: genomics CAD(Computer Assistant Design) Modeller System",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0491"
+          "@id": "edam:operation_3463"
+        },
+        {
+          "@id": "edam:operation_0571"
+        },
+        {
+          "@id": "edam:operation_2437"
+        },
+        {
+          "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_3182"
@@ -78,68 +87,59 @@
           "@id": "edam:operation_3929"
         },
         {
+          "@id": "edam:operation_0491"
+        },
+        {
           "@id": "edam:operation_3566"
-        },
-        {
-          "@id": "edam:operation_0571"
-        },
-        {
-          "@id": "edam:operation_2436"
-        },
-        {
-          "@id": "edam:operation_2437"
-        },
-        {
-          "@id": "edam:operation_3463"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "GCModeller",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://gcmodeller.org/"
     },
     {
-      "@id": "_:N0c2e6fad9e4d49f7a4f47096c038c441",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3779"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2585"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Annotated text"
-    },
-    {
-      "@id": "_:N43ec2362d92b4256899a4d7d9c57e1c8",
+      "@id": "_:Ncf95d5700e604896bda1627a634e4db6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3770"
+          "@id": "edam:format_1333"
         },
         {
           "@id": "edam:format_2200"
         },
         {
-          "@id": "edam:format_1333"
+          "@id": "edam:format_2182"
         },
         {
-          "@id": "edam:format_2182"
+          "@id": "edam:format_3770"
         }
       ],
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N7db4d44fb376421a913fb2b4bd8ad9cc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3779"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2585"
+        }
+      ],
+      "sc:name": "Annotated text"
     }
   ]
 }

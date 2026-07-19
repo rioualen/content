@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,76 +40,68 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nff673912ee674613984e2163789acc06"
+          "@id": "_:N4c403345b6114bc19fb00ff67699d66b"
         },
         {
-          "@id": "_:Nbab078c7d5c5460bb256489d52d26a32"
+          "@id": "_:N3038aa35b67843b4a6299d6335e11588"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne6273746d6c04f6bb14d4ea21ccf7fa0"
+        "@id": "_:N058c0065f6144b8b9eec6aaabba8de93"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0128"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:34088263",
         "pmcid:PMC8178832",
         {
           "@id": "https://doi.org/10.1186/S12859-021-04042-6"
-        },
-        "pubmed:34088263"
+        }
       ],
       "sc:description": "PIGNON is a protein-protein interaction (PPI)-guided functional enrichment analysis for quantitative proteomics. This algorithm measures the clustering of proteins with a shared Gene Ontology (GO) annotation within the provided PPI network weighted with quantitative proteomics data. The significance of this clustering measure is then estimated from a normal distribution approximated from a Monte Carlo Sampling Distribution. To correct for multiple hypothesis testing, we assess the false discovery rate at various thresholds against a null model.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2949"
+          "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_3799"
+          "@id": "edam:operation_2949"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3799"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "PIGNON",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://github.com/LavalleeAdamLab/PIGNON"
     },
     {
-      "@id": "_:Nff673912ee674613984e2163789acc06",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2302"
-      },
-      "sc:name": "STRING ID"
-    },
-    {
-      "@id": "_:Nbab078c7d5c5460bb256489d52d26a32",
+      "@id": "_:N4c403345b6114bc19fb00ff67699d66b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2628"
@@ -117,7 +109,15 @@
       "sc:name": "BioGRID interaction ID"
     },
     {
-      "@id": "_:Ne6273746d6c04f6bb14d4ea21ccf7fa0",
+      "@id": "_:N3038aa35b67843b4a6299d6335e11588",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2302"
+      },
+      "sc:name": "STRING ID"
+    },
+    {
+      "@id": "_:N058c0065f6144b8b9eec6aaabba8de93",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3932"

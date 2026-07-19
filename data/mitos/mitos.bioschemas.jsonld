@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/mitos",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N459213b567e64362a5cd6c15bc08d1ed"
+        "@id": "_:N1b67fb0689f9420cb3af7bf542873f10"
       },
       "bsc:output": {
-        "@id": "_:N3d2eae6140ca4d339086bb4d0ba708bf"
+        "@id": "_:N77983db19de14c44ab7c0fdfa4a50617"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Workflow"
@@ -78,7 +78,18 @@
       "sc:url": "https://mitos.bioinf.uni-leipzig.de/index.py"
     },
     {
-      "@id": "_:N3d2eae6140ca4d339086bb4d0ba708bf",
+      "@id": "_:N1b67fb0689f9420cb3af7bf542873f10",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N77983db19de14c44ab7c0fdfa4a50617",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2084"
@@ -88,24 +99,13 @@
           "@id": "edam:format_3003"
         },
         {
-          "@id": "edam:format_2305"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_2305"
         }
       ],
       "sc:name": "Nucleic acid report"
-    },
-    {
-      "@id": "_:N459213b567e64362a5cd6c15bc08d1ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
     }
   ]
 }

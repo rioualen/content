@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
     {
@@ -52,16 +48,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N11f03a4be96d49008baa8c1d0251426a"
+          "@id": "_:N853d661b1f084e03ac7f3416bbe9901a"
         },
         {
-          "@id": "_:Nfa35a2ae4d5e4fbc866b97ef0660bce0"
+          "@id": "_:N5cd2e945e8614f768150b535dd6034ab"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf024640b39094e8ebe1802ab3d9e639d"
+        "@id": "_:N1c7c1ce92cc84f1ab509f92cd2c63cc6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0203"
@@ -78,61 +74,53 @@
         }
       ],
       "sc:contributor": [
-        "Wellcome Trust",
         "UK BBSRC",
         "UK MRC",
+        "Wellcome Trust",
         "EMBOSS Contributors"
       ],
       "sc:description": "Draw synonymous codon usage statistic plot for a nucleotide sequence.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0286"
+          "@id": "edam:operation_0436"
         },
         {
-          "@id": "edam:operation_0436"
+          "@id": "edam:operation_0286"
         }
       ],
       "sc:funder": [
-        "Wellcome Trust",
+        "UK BBSRC",
         "UK MRC",
-        "UK BBSRC"
+        "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "syco",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "EMBOSS",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "EMBOSS"
       ],
       "sc:softwareHelp": [
+        {
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+        },
         {
           "@id": "http://emboss.open-bio.org/rel/rel6/apps/syco.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/syco.html"
     },
     {
-      "@id": "_:N11f03a4be96d49008baa8c1d0251426a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Nfa35a2ae4d5e4fbc866b97ef0660bce0",
+      "@id": "_:N853d661b1f084e03ac7f3416bbe9901a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1597"
@@ -140,12 +128,24 @@
       "sc:name": "Codon usage table"
     },
     {
-      "@id": "_:Nf024640b39094e8ebe1802ab3d9e639d",
+      "@id": "_:N5cd2e945e8614f768150b535dd6034ab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N1c7c1ce92cc84f1ab509f92cd2c63cc6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1600"
       },
       "sc:name": "Codon usage bias plot"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

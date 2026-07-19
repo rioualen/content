@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2022.01.23.474238",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/fmsclusterfinder",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1096eb05f7ef43c5a4fc835825ffe5be"
+          "@id": "_:N9a493443b7f447a3947ae0d4c5060133"
         },
         {
-          "@id": "_:N5157c53d4c4442e99a774c70949076b8"
+          "@id": "_:N9ac6cba605424cc795e5af4d450e6710"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0203"
+        },
         {
           "@id": "edam:topic_3512"
         },
         {
           "@id": "edam:topic_0160"
-        },
-        {
-          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": {
@@ -65,26 +69,26 @@
       "sc:description": "A new tool for detection and identification of clusters of sequential motifs with varying characteristics inside genomic sequences.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3432"
+        },
+        {
           "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_0239"
-        },
-        {
-          "@id": "edam:operation_3432"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "FMSClusterFinder",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://fmsclusterfinder.fmsbiog.com"
     },
     {
-      "@id": "_:N1096eb05f7ef43c5a4fc835825ffe5be",
+      "@id": "_:N9a493443b7f447a3947ae0d4c5060133",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -92,16 +96,12 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N5157c53d4c4442e99a774c70949076b8",
+      "@id": "_:N9ac6cba605424cc795e5af4d450e6710",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2022.01.23.474238",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

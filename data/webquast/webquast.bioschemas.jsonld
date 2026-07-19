@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkad406",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/webquast",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7bef8e75fc1e41489ef2ec556e6279a9"
+        "@id": "_:Ncec500b508154f88913a02d7d3195660"
       },
       "bsc:output": {
-        "@id": "_:Nc8947541387548f6ba669015b62389ec"
+        "@id": "_:N4e40830e23a6403398330b430482efed"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3174"
+        },
+        {
+          "@id": "edam:topic_0621"
         },
         {
           "@id": "edam:topic_0196"
@@ -60,21 +67,21 @@
           "@id": "edam:topic_3175"
         },
         {
-          "@id": "edam:topic_3174"
-        },
-        {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
+        "pubmed:37194696",
+        "pmcid:PMC10320133",
         {
           "@id": "https://doi.org/10.1093/nar/gkad406"
-        },
-        "pubmed:37194696",
-        "pmcid:PMC10320133"
+        }
       ],
       "sc:description": "Online evaluation of genome assemblies.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0525"
+        },
         {
           "@id": "edam:operation_0523"
         },
@@ -85,30 +92,19 @@
           "@id": "edam:operation_3180"
         },
         {
-          "@id": "edam:operation_0525"
-        },
-        {
           "@id": "edam:operation_3192"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "WebQUAST",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://www.ccb.uni-saarland.de/quast/"
     },
     {
-      "@id": "_:Nc8947541387548f6ba669015b62389ec",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3914"
-      },
-      "sc:name": "Quality control report"
-    },
-    {
-      "@id": "_:N7bef8e75fc1e41489ef2ec556e6279a9",
+      "@id": "_:Ncec500b508154f88913a02d7d3195660",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -119,8 +115,12 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkad406",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4e40830e23a6403398330b430482efed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3914"
+      },
+      "sc:name": "Quality control report"
     }
   ]
 }

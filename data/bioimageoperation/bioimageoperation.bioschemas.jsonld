@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,49 +36,45 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-9704-2925",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/bioimageoperation",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-9704-2925"
       },
       "bsc:input": {
-        "@id": "_:N9a64b4ee0b3d4ff4af6c286f648b7265"
+        "@id": "_:N1f29ff3f34e5413d89d5c152e53343e1"
       },
       "bsc:output": {
-        "@id": "_:N9550511719314d93967124e8aa85a95f"
+        "@id": "_:N61c68bae178e4ed2bd13c9707a0efe02"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_3382"
         },
         {
-          "@id": "edam:topic_3382"
+          "@id": "edam:topic_0621"
         }
       ],
       "sc:description": "Bio Image Operation or 'BIO', is a next generation Image processing tool focusing on biological applications, balancing ease of use with desired flexibility required for research",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3553"
+          "@id": "edam:operation_3443"
         },
         {
-          "@id": "edam:operation_3443"
+          "@id": "edam:operation_3553"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "BioImageOperation",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
@@ -92,7 +88,7 @@
       "sc:url": "https://joostdefolter.info"
     },
     {
-      "@id": "_:N9a64b4ee0b3d4ff4af6c286f648b7265",
+      "@id": "_:N1f29ff3f34e5413d89d5c152e53343e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
@@ -100,12 +96,16 @@
       "sc:name": "Raw image"
     },
     {
-      "@id": "_:N9550511719314d93967124e8aa85a95f",
+      "@id": "_:N61c68bae178e4ed2bd13c9707a0efe02",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9704-2925",
+      "@type": "sc:Person"
     }
   ]
 }

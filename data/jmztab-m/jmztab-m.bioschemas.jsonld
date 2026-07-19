@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,29 +43,29 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N0639b0d060fe4114857c5b02eddbaa79"
+          "@id": "_:Naa6883f25938433da4c24a7ecc6bc2c4"
         },
         {
-          "@id": "_:N2ce1ad87811e4625be3d172da1082366"
+          "@id": "_:N0f833921d6684d209f4cf137338ffbf9"
         }
       ],
       "bsc:output": {
-        "@id": "_:N6cf3a64e30ba49b4bf16709a1518fc88"
+        "@id": "_:N714de60385fb40bf8ca2111099803908"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0089"
-        },
         {
           "@id": "edam:topic_0219"
         },
         {
           "@id": "edam:topic_3172"
+        },
+        {
+          "@id": "edam:topic_0089"
         }
       ],
       "sc:citation": {
@@ -77,35 +77,46 @@
           "@id": "edam:operation_0336"
         },
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_0335"
         },
         {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_1812"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "jmztab-m",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/lifs-tools/jmzTab-m/blob/master/README.adoc"
       },
       "sc:softwareVersion": [
-        "1.0.4",
-        "1.0.6",
-        "1.0.2",
-        "1.0.5",
         "0.9.6",
-        "1.0.1"
+        "1.0.1",
+        "1.0.2",
+        "1.0.4",
+        "1.0.5",
+        "1.0.6"
       ],
       "sc:url": "https://github.com/lifs-tools/jmzTab-m"
     },
     {
-      "@id": "_:N0639b0d060fe4114857c5b02eddbaa79",
+      "@id": "_:Naa6883f25938433da4c24a7ecc6bc2c4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3681"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N0f833921d6684d209f4cf137338ffbf9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3509"
@@ -116,7 +127,7 @@
       "sc:name": "Ontology mapping"
     },
     {
-      "@id": "_:N2ce1ad87811e4625be3d172da1082366",
+      "@id": "_:N714de60385fb40bf8ca2111099803908",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -125,25 +136,14 @@
         "@id": "edam:format_3681"
       },
       "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N6cf3a64e30ba49b4bf16709a1518fc88",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3681"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6540-6875",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1021/acs.analchem.9b01987",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6540-6875",
+      "@type": "sc:Person"
     }
   ]
 }

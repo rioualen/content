@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-5231-3346",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/macsyfinder",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -50,27 +46,27 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nf5963086523a4b2880a113537bf11d37"
+          "@id": "_:Ne660e42042d9445ab860ea194b061134"
         },
         {
-          "@id": "_:N9c128348f7da4840a142cb3be5aeaae6"
+          "@id": "_:Naaef9ab8484d484ca937b9d864209b35"
         },
         {
-          "@id": "_:N5ce4da86a99341cb817b52fd197e3699"
+          "@id": "_:Nd873a8196d3346adac3be7f81f7cd768"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6da0b374121342aca70a22eefdc4e85b"
+          "@id": "_:N0fbc69c2e53c4b538d9a6f6c04262b6d"
         },
         {
-          "@id": "_:N9347a20a397e4121a66d3c23390e0b2a"
+          "@id": "_:N08292cab11ab4a318131582c00dc2a63"
         },
         {
-          "@id": "_:Ncad40305e9c041dfa5d5c605eb782910"
+          "@id": "_:N822dd29872bb4c9387b715dfbbfed1f2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -80,14 +76,14 @@
       },
       "sc:author": "Bertrand Néron",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.24072/pcjournal.250"
-        },
+        "pubmed:25330359",
         "pmcid:PMC4201578",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0110726"
         },
-        "pubmed:25330359"
+        {
+          "@id": "https://doi.org/10.24072/pcjournal.250"
+        }
       ],
       "sc:description": "Program to model and detect macromolecular systems, genetic pathways... in protein datasets. In prokaryotes, these systems have often evolutionarily conserved properties: they are made of conserved components, and are encoded in compact loci (conserved genetic architecture). The user models these systems to reflect these conserved features, and to allow their efficient detection.",
       "sc:featureList": [
@@ -101,19 +97,16 @@
       "sc:license": "GPL-3.0",
       "sc:name": "MacSyFinder",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "Institut Pasteur",
-        "Microbial Evolutionary Genomics Unit"
+        "Microbial Evolutionary Genomics Unit",
+        "Institut Pasteur"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://macsyfinder.readthedocs.io/en/latest/"
-        },
-        {
-          "@id": "https://macsyfinder.readthedocs.io/en/latest/user_guide/index.html"
+          "@id": "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0110726"
         },
         {
           "@id": "https://peercommunityjournal.org/articles/10.24072/pcjournal.250/"
@@ -122,54 +115,24 @@
           "@id": "https://macsyfinder.readthedocs.io/en/latest/developer_guide/index.html"
         },
         {
-          "@id": "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0110726"
+          "@id": "https://macsyfinder.readthedocs.io/en/latest/"
+        },
+        {
+          "@id": "https://macsyfinder.readthedocs.io/en/latest/user_guide/index.html"
         }
       ],
       "sc:softwareVersion": [
-        "2.1.1",
-        "2.1.4",
         "1.0.2",
-        "2.1.3",
         "2.0",
-        "2.1.2"
+        "2.1.1",
+        "2.1.2",
+        "2.1.3",
+        "2.1.4"
       ],
       "sc:url": "https://github.com/gem-pasteur/macsyfinder"
     },
     {
-      "@id": "_:N6da0b374121342aca70a22eefdc4e85b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N9347a20a397e4121a66d3c23390e0b2a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Ncad40305e9c041dfa5d5c605eb782910",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nf5963086523a4b2880a113537bf11d37",
+      "@id": "_:Ne660e42042d9445ab860ea194b061134",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -185,7 +148,18 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:N9c128348f7da4840a142cb3be5aeaae6",
+      "@id": "_:Naaef9ab8484d484ca937b9d864209b35",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2337"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2332"
+      },
+      "sc:name": "Resource metadata"
+    },
+    {
+      "@id": "_:Nd873a8196d3346adac3be7f81f7cd768",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0869"
@@ -196,15 +170,41 @@
       "sc:name": "Sequence-profile alignment"
     },
     {
-      "@id": "_:N5ce4da86a99341cb817b52fd197e3699",
+      "@id": "_:N0fbc69c2e53c4b538d9a6f6c04262b6d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2337"
+        "@id": "edam:data_2048"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2332"
+        "@id": "edam:format_3475"
       },
-      "sc:name": "Resource metadata"
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N08292cab11ab4a318131582c00dc2a63",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N822dd29872bb4c9387b715dfbbfed1f2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5231-3346",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pone.0110726",

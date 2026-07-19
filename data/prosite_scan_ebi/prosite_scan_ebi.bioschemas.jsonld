@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkl124",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/prosite_scan_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nde5ddb7d11c24a5da9a9268df9b7a43d"
+        "@id": "_:N42ce94be9068452a9833e5fcb05bd821"
       },
       "bsc:output": [
         {
-          "@id": "_:N73ef662e9db54995a6ccc1987a60cd98"
+          "@id": "_:N54f5d9810a0743ca91e412b0169195ac"
         },
         {
-          "@id": "_:N7dba4e8f4e7f410ab34495efa30144d4"
+          "@id": "_:N8af10ff2d2714e4eba4cfaf49ce8eeb8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
@@ -73,13 +65,13 @@
       ],
       "sc:author": "PROSITE",
       "sc:citation": [
-        "pubmed:16845026",
+        "pubmed:35412617",
+        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
+        "pubmed:16845026",
         "pmcid:PMC1538847",
-        "pubmed:35412617",
-        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkl124"
         }
@@ -87,32 +79,40 @@
       "sc:description": "Scan a protein against PROSITE or HAMAP patterns and profiles.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:name": "PROSITE Scan (EBI)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/Tools/pfa/ps_scan/"
         },
         {
-          "@id": "http://www.ebi.ac.uk/Tools/pfa/ps_scan/"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "Retired",
       "sc:url": "http://www.ebi.ac.uk/Tools/pfa/ps_scan/"
     },
     {
-      "@id": "_:N73ef662e9db54995a6ccc1987a60cd98",
+      "@id": "_:N42ce94be9068452a9833e5fcb05bd821",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N54f5d9810a0743ca91e412b0169195ac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -120,7 +120,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N7dba4e8f4e7f410ab34495efa30144d4",
+      "@id": "_:N8af10ff2d2714e4eba4cfaf49ce8eeb8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
@@ -128,12 +128,12 @@
       "sc:name": "Sequence signature matches"
     },
     {
-      "@id": "_:Nde5ddb7d11c24a5da9a9268df9b7a43d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkl124",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,16 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "http://orcid.org/0000-0002-8853-9435",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/beadarray",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-8853-9435"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -74,19 +78,15 @@
       "sc:license": "GPL-2.0",
       "sc:name": "beadarray",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/beadarray.html"
       },
       "sc:softwareVersion": "2.24.0",
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/beadarray.html"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-8853-9435",
-      "@type": "sc:Person"
     }
   ]
 }

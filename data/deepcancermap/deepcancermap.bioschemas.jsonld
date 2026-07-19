@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.ejmech.2023.115401",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/deepcancermap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N282feebf216d48059c36fbf93f115ac9"
+        "@id": "_:N8f0d9b2445a9475d95ebf7546a84d423"
       },
       "bsc:output": {
-        "@id": "_:Nfd55dbb6f279461c97193718e5830972"
+        "@id": "_:Ne0b07f54b8d04e3ab12a3310c3219b91"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_3373"
         },
@@ -61,6 +59,12 @@
         },
         {
           "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_3168"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
@@ -76,22 +80,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "DeepCancerMap",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://deepcancermap.idruglab.cn"
     },
     {
-      "@id": "_:Nfd55dbb6f279461c97193718e5830972",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N282feebf216d48059c36fbf93f115ac9",
+      "@id": "_:N8f0d9b2445a9475d95ebf7546a84d423",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -102,8 +98,12 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "https://doi.org/10.1016/j.ejmech.2023.115401",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne0b07f54b8d04e3ab12a3310c3219b91",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
     }
   ]
 }

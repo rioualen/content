@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,59 +36,63 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bth945",
+      "@id": "https://doi.org/10.1093/nar/gku1056",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gku1056",
+      "@id": "https://doi.org/10.1101/pdb.prot5634",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bth945",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/IMGT_JunctionAnalysis",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7c44d9777db9473bbf88e069c2e17cd8"
+        "@id": "_:N70996fdcf66b472b89b209a923541748"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne11016cbf8bd4fd4b6f330170e1b9b1c"
+          "@id": "_:N16a2c75b00814b6dac3e7ca687c49653"
         },
         {
-          "@id": "_:Nb0ba208abb9f4ca38383b01341601d1d"
+          "@id": "_:N6a33384bdbd445a3b9ca24b3224b188c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3948"
+          "@id": "edam:topic_3930"
         },
         {
-          "@id": "edam:topic_3930"
+          "@id": "edam:topic_3948"
         }
       ],
       "sc:citation": [
-        "pubmed:15262823",
         "pubmed:25378316",
         "pmcid:PMC4383898",
         {
-          "@id": "https://doi.org/10.1101/pdb.prot5634"
+          "@id": "https://doi.org/10.1093/nar/gku1056"
+        },
+        "pubmed:15262823",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/bth945"
         },
         "pubmed:21632777",
         {
-          "@id": "https://doi.org/10.1093/nar/gku1056"
-        },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/bth945"
+          "@id": "https://doi.org/10.1101/pdb.prot5634"
         }
       ],
       "sc:description": "IMGT/JunctionAnalysis is the IMGT® tool for the analysis of the nucleotide sequences of the V-J and V-D-J junctions of the variable domains of the immunoglobulins (IG) or antibodies and T cell receptors (TR).\nAnalysis is based on the IMGT-ONTOLOGY concepts.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_2478"
         },
         {
-          "@id": "edam:operation_2478"
+          "@id": "edam:operation_0292"
         },
         {
           "@id": "edam:operation_0448"
@@ -97,9 +101,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "IMGT JunctionAnalysis",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.imgt.org/IMGT_jcta/user_guide"
@@ -107,29 +111,7 @@
       "sc:url": "http://www.imgt.org/IMGT_jcta"
     },
     {
-      "@id": "_:Ne11016cbf8bd4fd4b6f330170e1b9b1c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nb0ba208abb9f4ca38383b01341601d1d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:N7c44d9777db9473bbf88e069c2e17cd8",
+      "@id": "_:N70996fdcf66b472b89b209a923541748",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -140,8 +122,26 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1101/pdb.prot5634",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N16a2c75b00814b6dac3e7ca687c49653",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N6a33384bdbd445a3b9ca24b3224b188c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence alignment report"
     }
   ]
 }

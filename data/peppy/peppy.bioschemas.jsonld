@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,56 +40,53 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0b99a980fd6e4e84976a7fc083c7bed0"
+          "@id": "_:N7bd1cf134d7c45cc96dda5b66aa86c33"
         },
         {
-          "@id": "_:Nab0755905d5f4ae6afc42ba05f28aab2"
+          "@id": "_:N9d168d7727544f70867285303fd82409"
         },
         {
-          "@id": "_:N7b56751b19d946c78e19da608dcbea2e"
+          "@id": "_:N54188942435b454394d0667182e55716"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2615b48a89ff495a80fa5b50d02fca33"
+          "@id": "_:N19e3bc25316445e48f6b2ca98322bac9"
         },
         {
-          "@id": "_:N41ca085ff18742f49f7b3b567d5b5b5b"
+          "@id": "_:N42c05866dc8149948e39271cd64fde26"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_3520"
-        },
-        {
           "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pubmed:23614390",
         "pmcid:PMC4117251",
         {
           "@id": "https://doi.org/10.1021/pr400208w"
-        },
-        "pubmed:23614390"
+        }
       ],
       "sc:description": "A software that identifies new proteins and aberrant protein forms withing proteomic data.",
       "sc:featureList": [
         {
           "@id": "edam:operation_0362"
-        },
-        {
-          "@id": "edam:operation_0366"
         },
         {
           "@id": "edam:operation_3646"
@@ -98,20 +95,23 @@
           "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_3648"
+          "@id": "edam:operation_3767"
+        },
+        {
+          "@id": "edam:operation_0366"
         },
         {
           "@id": "edam:operation_3649"
         },
         {
-          "@id": "edam:operation_3767"
+          "@id": "edam:operation_3648"
         }
       ],
       "sc:name": "Peppy",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.geneffects.com/peppy/"
@@ -119,18 +119,26 @@
       "sc:url": "http://www.geneffects.com/peppy/"
     },
     {
-      "@id": "_:N0b99a980fd6e4e84976a7fc083c7bed0",
+      "@id": "_:N7bd1cf134d7c45cc96dda5b66aa86c33",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2886"
+        "@id": "edam:data_0943"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence record"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3652"
+        },
+        {
+          "@id": "edam:format_3653"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nab0755905d5f4ae6afc42ba05f28aab2",
+      "@id": "_:N9d168d7727544f70867285303fd82409",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -141,26 +149,18 @@
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "_:N7b56751b19d946c78e19da608dcbea2e",
+      "@id": "_:N54188942435b454394d0667182e55716",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_2886"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3653"
-        },
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3652"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:N2615b48a89ff495a80fa5b50d02fca33",
+      "@id": "_:N19e3bc25316445e48f6b2ca98322bac9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -171,7 +171,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N41ca085ff18742f49f7b3b567d5b5b5b",
+      "@id": "_:N42c05866dc8149948e39271cd64fde26",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"

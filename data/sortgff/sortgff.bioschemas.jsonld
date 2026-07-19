@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sortgff",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N83b1e5148294470ea0a85f1a526e90bf"
+        "@id": "_:N825b1221b7f846f4a88c9332037c9ec3"
       },
       "bsc:output": {
-        "@id": "_:N5691feb0d3ac42bebaa776df9657a961"
+        "@id": "_:N50664fa462e34e75a626f518ff221f92"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3071"
         },
         {
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -72,8 +80,8 @@
       },
       "sc:name": "sortgff",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,7 +91,7 @@
       "sc:url": "https://urgi.versailles.inra.fr/Tools/REPET"
     },
     {
-      "@id": "_:N83b1e5148294470ea0a85f1a526e90bf",
+      "@id": "_:N825b1221b7f846f4a88c9332037c9ec3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -94,7 +102,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N5691feb0d3ac42bebaa776df9657a961",
+      "@id": "_:N50664fa462e34e75a626f518ff221f92",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -103,14 +111,6 @@
         "@id": "edam:format_1975"
       },
       "sc:name": "Data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

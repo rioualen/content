@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,16 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-1928-7139",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/genvisr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-1928-7139"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -63,8 +67,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "GenVisR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -72,10 +76,6 @@
       },
       "sc:softwareVersion": "1.4.1",
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GenVisR.html"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-1928-7139",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btw325",

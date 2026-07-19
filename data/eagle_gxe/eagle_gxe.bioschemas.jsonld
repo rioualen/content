@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4298",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/eagle_gxe",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "David A Knowles",
       "bsc:input": [
         {
-          "@id": "_:Nf972a4a3069c4417a45cf5d4e31379cd"
+          "@id": "_:N622dd2823219452dac1c4016c6e3bcc6"
         },
         {
-          "@id": "_:Ndd9c4f77334748d88cbd407ea1196093"
+          "@id": "_:N2bbc0373ad8643b0a5e29679743e4842"
         }
       ],
       "bsc:output": {
-        "@id": "_:N2ef089a3e7da4b7aabf51e5616dc6315"
+        "@id": "_:N2b58aba44b6e470092009d6b19a9d52b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0625"
+        },
         {
           "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_0625"
         }
       ],
       "sc:citation": [
         "pubmed:28530654",
+        "pmcid:PMC5501199",
         {
           "@id": "https://doi.org/10.1038/nmeth.4298"
-        },
-        "pmcid:PMC5501199"
+        }
       ],
       "sc:description": "An R package for detecting Gene-by-Environment (GxE) interaction effects on the transcriptome using Allele Specific Expression (ASE) quantified from RNA-seq",
       "sc:featureList": [
@@ -76,22 +80,22 @@
           "@id": "edam:operation_3672"
         },
         {
-          "@id": "edam:operation_3800"
+          "@id": "edam:operation_2497"
         },
         {
-          "@id": "edam:operation_2497"
+          "@id": "edam:operation_3800"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "EAGLE",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://github.com/davidaknowles/eagle"
     },
     {
-      "@id": "_:Nf972a4a3069c4417a45cf5d4e31379cd",
+      "@id": "_:N622dd2823219452dac1c4016c6e3bcc6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -99,7 +103,7 @@
       "sc:name": "Data reference"
     },
     {
-      "@id": "_:Ndd9c4f77334748d88cbd407ea1196093",
+      "@id": "_:N2bbc0373ad8643b0a5e29679743e4842",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -110,7 +114,7 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N2ef089a3e7da4b7aabf51e5616dc6315",
+      "@id": "_:N2b58aba44b6e470092009d6b19a9d52b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -119,10 +123,6 @@
         "@id": "edam:format_2032"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4298",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,15 +38,9 @@
     {
       "@id": "https://bio.tools/muon",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_4028"
-        },
-        {
-          "@id": "edam:topic_4021"
-        },
         {
           "@id": "edam:topic_2229"
         },
@@ -55,24 +49,30 @@
         },
         {
           "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_4021"
+        },
+        {
+          "@id": "edam:topic_4028"
         }
       ],
       "sc:citation": [
+        "pubmed:35105358",
+        "pmcid:PMC8805324",
         {
           "@id": "https://doi.org/10.1186/s13059-021-02577-8"
-        },
-        "pmcid:PMC8805324",
-        "pubmed:35105358"
+        }
       ],
       "sc:description": "muon is a Python framework for multimodal omics analysis.",
       "sc:license": "BSD-3-Clause",
       "sc:name": "muon",
       "sc:softwareHelp": [
         {
-          "@id": "https://muon-tutorials.readthedocs.io/en/latest/"
+          "@id": "https://muon.readthedocs.io/en/latest/index.html"
         },
         {
-          "@id": "https://muon.readthedocs.io/en/latest/index.html"
+          "@id": "https://muon-tutorials.readthedocs.io/en/latest/"
         }
       ],
       "sc:url": "https://muon.scverse.org/"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,22 +40,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Priit Adler",
       "bsc:input": {
-        "@id": "_:N55bb9eb3086944f4b9b6de201fb2f3e9"
+        "@id": "_:N5e969ebf6073419e97516b6e38ad8c5f"
       },
       "bsc:output": {
-        "@id": "_:N8f60645a969a4fec82e6b213e744b37d"
+        "@id": "_:N506d55c67b2e4f89ad4dc2f98174f815"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0089"
         },
         {
           "@id": "edam:topic_2259"
@@ -67,10 +67,10 @@
       "sc:description": "Web-based tool for visualizing experimental data in the context of biological pathways. It produces animations or static images of KEGG pathways by overlaying public or user uploaded high-thourghput data over handdrawn KEGG pathway maps.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3083"
+          "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3083"
         },
         {
           "@id": "edam:operation_3731"
@@ -80,8 +80,8 @@
       "sc:license": "Freeware",
       "sc:name": "KEGGanim",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-EE",
@@ -92,7 +92,26 @@
       "sc:url": "http://biit.cs.ut.ee/kegganim"
     },
     {
-      "@id": "_:N8f60645a969a4fec82e6b213e744b37d",
+      "@id": "_:N5e969ebf6073419e97516b6e38ad8c5f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3780"
+        },
+        {
+          "@id": "edam:format_3326"
+        },
+        {
+          "@id": "edam:format_3167"
+        }
+      ],
+      "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N506d55c67b2e4f89ad4dc2f98174f815",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -101,25 +120,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Image"
-    },
-    {
-      "@id": "_:N55bb9eb3086944f4b9b6de201fb2f3e9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3326"
-        },
-        {
-          "@id": "edam:format_3780"
-        },
-        {
-          "@id": "edam:format_3167"
-        }
-      ],
-      "sc:name": "Experimental measurement"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btm581",

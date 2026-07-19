@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/hgv_codingsnps",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N7056ba51a5244e5bb37fb9894df9d121"
+          "@id": "_:N95c2151cb0d44203bc0ffb8e7d572683"
         },
         {
-          "@id": "_:N6d033261ea4d437fbe4f3cf735ce3fd1"
+          "@id": "_:N687dbb76a8764381a80c1c65ee474e67"
         }
       ],
       "bsc:output": {
-        "@id": "_:N84e64e9ca6814989b3ddd3d2d7206c5d"
+        "@id": "_:N23dbd428e95d4dbd9358357094e31869"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3473"
         },
         {
           "@id": "edam:topic_0085"
         },
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_0199"
         },
         {
           "@id": "edam:topic_0625"
@@ -70,25 +74,25 @@
         "pubmed:27137889",
         "pmcid:PMC4987906",
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "This tool identifies which SNPs create amino-acid changes in the specified coding regions.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3661"
-        },
-        {
-          "@id": "edam:operation_0306"
-        },
-        {
           "@id": "edam:operation_2409"
         },
         {
+          "@id": "edam:operation_3661"
+        },
+        {
           "@id": "edam:operation_2403"
+        },
+        {
+          "@id": "edam:operation_0306"
         },
         {
           "@id": "edam:operation_3225"
@@ -96,9 +100,9 @@
       ],
       "sc:name": "hgv_codingsnps",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=hgv_codingSnps"
@@ -107,7 +111,7 @@
       "sc:url": "https://github.com/galaxyproject/galaxy/tree/dev/tools"
     },
     {
-      "@id": "_:N7056ba51a5244e5bb37fb9894df9d121",
+      "@id": "_:N95c2151cb0d44203bc0ffb8e7d572683",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -118,7 +122,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N6d033261ea4d437fbe4f3cf735ce3fd1",
+      "@id": "_:N687dbb76a8764381a80c1c65ee474e67",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -129,7 +133,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N84e64e9ca6814989b3ddd3d2d7206c5d",
+      "@id": "_:N23dbd428e95d4dbd9358357094e31869",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -138,10 +142,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

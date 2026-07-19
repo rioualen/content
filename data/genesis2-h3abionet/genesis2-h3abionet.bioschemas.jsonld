@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,28 +40,32 @@
       "@type": "sc:Person"
     },
     {
+      "@id": "https://orcid.org/0000-0001-6648-7032",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/genesis2-h3abionet",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-0581-149X"
       },
       "bsc:input": {
-        "@id": "_:N024c4e8b250545ceba89cff1864b6f15"
+        "@id": "_:N090841b2b186456c98378fec8c6da848"
       },
       "bsc:output": {
-        "@id": "_:N307acf9a152b4713848790d16f8ae88f"
+        "@id": "_:Neded6d2306fb423d831bdd94c367c589"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3056"
-        },
         {
           "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_3517"
+        },
+        {
+          "@id": "edam:topic_3056"
         }
       ],
       "sc:author": {
@@ -84,31 +88,15 @@
       "sc:license": "MIT",
       "sc:name": "genesis2",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareVersion": "2.0.0",
       "sc:url": "https://github.com/h3abionet/genesis2"
     },
     {
-      "@id": "_:N307acf9a152b4713848790d16f8ae88f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N024c4e8b250545ceba89cff1864b6f15",
+      "@id": "_:N090841b2b186456c98378fec8c6da848",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -116,8 +104,20 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "https://orcid.org/0000-0001-6648-7032",
-      "@type": "sc:Person"
+      "@id": "_:Neded6d2306fb423d831bdd94c367c589",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Image"
     }
   ]
 }

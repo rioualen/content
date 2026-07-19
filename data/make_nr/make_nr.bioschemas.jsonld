@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/make_nr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N73cd64296dff4f39af3dd378ef449f97"
+        "@id": "_:Nb9f48d7c75ef4f93a21cf221be524c08"
       },
       "bsc:output": {
-        "@id": "_:N8e895a0ebd08497c86e3ef6e4b0f9697"
+        "@id": "_:N92a76d7c0a6e40b9977d54243eb5d16b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Bioinformatics portal",
       "sc:applicationSubCategory": [
         {
@@ -68,10 +68,10 @@
       "sc:description": "Make a FASTA file non-redundant, with a Galaxy wrapper\nThis tool is copyright 2018 by Peter Cock, The James Hutton Institute, UK. All rights reserved.\nThis tool is a short Python script intended to be run prior to calling the NCBI BLAST+ command line tool makeblastdb or in other settings where you want to collapse duplicated sequences in a FASTA file to a single representative.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0362"
         },
         {
-          "@id": "edam:operation_0362"
+          "@id": "edam:operation_0292"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -80,18 +80,7 @@
       "sc:url": "https://github.com/peterjc/galaxy_blast/tree/master/tools/make_nr"
     },
     {
-      "@id": "_:N8e895a0ebd08497c86e3ef6e4b0f9697",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2887"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence record"
-    },
-    {
-      "@id": "_:N73cd64296dff4f39af3dd378ef449f97",
+      "@id": "_:Nb9f48d7c75ef4f93a21cf221be524c08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -104,6 +93,17 @@
           "@id": "edam:format_3989"
         }
       ],
+      "sc:name": "Nucleic acid sequence record"
+    },
+    {
+      "@id": "_:N92a76d7c0a6e40b9977d54243eb5d16b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2887"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
       "sc:name": "Nucleic acid sequence record"
     }
   ]

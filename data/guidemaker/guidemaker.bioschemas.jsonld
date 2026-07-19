@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,22 +40,18 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0002-3703-834X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/guidemaker",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-3703-834X"
       },
       "bsc:input": {
-        "@id": "_:Ne315d47c82f9441381f143471ff47ec9"
+        "@id": "_:N2f368a81504d467a8b49fc71fef046f5"
       },
       "bsc:output": {
-        "@id": "_:N2a1c70cbaa4444bda1408ffbfccf216d"
+        "@id": "_:Ndaca12506266449aafef90ce1b1b8104"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": {
         "@id": "https://doi.org/10.1101/2021.06.28.450164"
       },
@@ -70,13 +66,24 @@
         "@id": "https://guidemaker.org"
       },
       "sc:softwareVersion": [
-        "v0.3.4",
-        "v0.3.1"
+        "v0.3.1",
+        "v0.3.4"
       ],
       "sc:url": "https://guidemaker.org"
     },
     {
-      "@id": "_:N2a1c70cbaa4444bda1408ffbfccf216d",
+      "@id": "_:N2f368a81504d467a8b49fc71fef046f5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2887"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2205"
+      },
+      "sc:name": "Nucleic acid sequence record"
+    },
+    {
+      "@id": "_:Ndaca12506266449aafef90ce1b1b8104",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2084"
@@ -87,15 +94,8 @@
       "sc:name": "Nucleic acid report"
     },
     {
-      "@id": "_:Ne315d47c82f9441381f143471ff47ec9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2887"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2205"
-      },
-      "sc:name": "Nucleic acid sequence record"
+      "@id": "https://orcid.org/0000-0002-3703-834X",
+      "@type": "sc:Person"
     }
   ]
 }

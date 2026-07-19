@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/picard_bamindexstats",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N5b7d0176a4424469a95e907cc95696ce"
+        "@id": "_:Nfe026fd4417045a8a24907774ba92b6e"
       },
       "bsc:output": {
-        "@id": "_:Ndbefb7c65bac41f8b0433a4012a21088"
+        "@id": "_:N53cfa693eed342bc954c6c750d74a3e7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
+        "pubmed:27137889",
+        "pmcid:PMC4987906",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
-        "pmcid:PMC4987906",
-        "pubmed:27137889",
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
@@ -70,9 +66,9 @@
       },
       "sc:name": "picard_bamindexstats",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://broadinstitute.github.io/picard/command-line-overview.html#BamIndexStats"
@@ -81,7 +77,7 @@
       "sc:url": "https://broadinstitute.github.io/picard/"
     },
     {
-      "@id": "_:N5b7d0176a4424469a95e907cc95696ce",
+      "@id": "_:Nfe026fd4417045a8a24907774ba92b6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -92,7 +88,7 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:Ndbefb7c65bac41f8b0433a4012a21088",
+      "@id": "_:N53cfa693eed342bc954c6c750d74a3e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -101,6 +97,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

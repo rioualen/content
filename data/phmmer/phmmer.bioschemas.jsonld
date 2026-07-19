@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv397",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw305",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "http://orcid.org/0000-0001-8626-2148",
       "@type": "sc:Person"
     },
@@ -54,23 +46,23 @@
         "@id": "http://orcid.org/0000-0001-8626-2148"
       },
       "bsc:input": {
-        "@id": "_:Nb15a509db3dc46308cec66f605ffff48"
+        "@id": "_:N66a548784f2445188ecd61df06f3d28a"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne38e54fc1fce43adb5dc4275794ff84f"
+          "@id": "_:N44ed4f87d33349cebc23ff54e2b500b4"
         },
         {
-          "@id": "_:N622a1b50ae6948c6873598a21343a78a"
+          "@id": "_:Ne9aca93a07de472f94051829a9b496ab"
         },
         {
-          "@id": "_:N8bf3033a65924c179b66ed4abcec7347"
+          "@id": "_:N238a24da4cbf4bd487aa5eac02a437b0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool"
+        "Command-line tool",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -81,16 +73,16 @@
         }
       ],
       "sc:citation": [
-        "pubmed:25943547",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkv397"
-        },
-        "pmcid:PMC4489315",
+        "pubmed:27256311",
         "pmcid:PMC5013910",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw305"
         },
-        "pubmed:27256311"
+        "pubmed:25943547",
+        "pmcid:PMC4489315",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkv397"
+        }
       ],
       "sc:description": "Search a protein sequence against a protein database using HMMER.",
       "sc:featureList": [
@@ -109,8 +101,8 @@
       ],
       "sc:name": "PHMMER",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://hmmer.org/documentation.html"
@@ -119,7 +111,7 @@
       "sc:url": "https://www.ebi.ac.uk/metagenomics/sequence-search/search/phmmer"
     },
     {
-      "@id": "_:Nb15a509db3dc46308cec66f605ffff48",
+      "@id": "_:N66a548784f2445188ecd61df06f3d28a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -130,7 +122,7 @@
       "sc:name": "Text"
     },
     {
-      "@id": "_:Ne38e54fc1fce43adb5dc4275794ff84f",
+      "@id": "_:N44ed4f87d33349cebc23ff54e2b500b4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1394"
@@ -138,7 +130,7 @@
       "sc:name": "Alignment score or penalty"
     },
     {
-      "@id": "_:N622a1b50ae6948c6873598a21343a78a",
+      "@id": "_:Ne9aca93a07de472f94051829a9b496ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2085"
@@ -146,12 +138,20 @@
       "sc:name": "Structure report"
     },
     {
-      "@id": "_:N8bf3033a65924c179b66ed4abcec7347",
+      "@id": "_:N238a24da4cbf4bd487aa5eac02a437b0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
       },
       "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw305",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv397",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,45 +43,45 @@
       "@id": "https://bio.tools/emdomics",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Daniel Schmolze",
-        "Sadhika Malladi"
+        "Sadhika Malladi",
+        "Daniel Schmolze"
       ],
       "bsc:input": {
-        "@id": "_:Ne827e6f074f148aa8c2117d93c1e2ac9"
+        "@id": "_:N98484df7acb840c2a1a369f9f0875230"
       },
       "bsc:output": [
         {
-          "@id": "_:N956a1ee14d2e48d98996100d37e0df3d"
+          "@id": "_:Nfca68609a8054f3e8ed928b465ff1751"
         },
         {
-          "@id": "_:Nfca4ff049b484159a3240ad2ec22cde5"
+          "@id": "_:N4f12fcfda9e7430ab198aaa16d117fcd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3168"
         },
         {
           "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:26515818",
+        "pmcid:PMC4743632",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv634"
-        },
-        "pubmed:26515818",
-        "pmcid:PMC4743632"
+        }
       ],
       "sc:description": "Algorithm used to perform a supervised multi-class analysis to measure the magnitude and statistical significance of observed continuous genomics data between groups. Traditional methods use significance tests based on summary statistics of the distributions. This approach lacks power to identify differences between groups with high levels of intra-group heterogeneity. The algorithm transforms one distribution into another, providing the overall difference in shape between two distributions.",
       "sc:featureList": {
@@ -90,9 +90,9 @@
       "sc:license": "MIT",
       "sc:name": "EMDomics",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/EMDomics.html"
@@ -101,7 +101,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/EMDomics.html"
     },
     {
-      "@id": "_:N956a1ee14d2e48d98996100d37e0df3d",
+      "@id": "_:N98484df7acb840c2a1a369f9f0875230",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2058"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Nfca68609a8054f3e8ed928b465ff1751",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -117,7 +133,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nfca4ff049b484159a3240ad2ec22cde5",
+      "@id": "_:N4f12fcfda9e7430ab198aaa16d117fcd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -131,22 +147,6 @@
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:Ne827e6f074f148aa8c2117d93c1e2ac9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2058"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene expression profile"
     }
   ]
 }

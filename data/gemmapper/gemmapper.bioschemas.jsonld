@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.2221",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gemmapper",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Paolo Ribeca",
       "bsc:input": {
-        "@id": "_:N691c3d2ae86c4b4fb8d0f83586b8d5ea"
+        "@id": "_:N72a06058e64947b9a25f850215d163bc"
       },
       "bsc:output": {
-        "@id": "_:N12fe234cc49f4c368a6247e89acf2f90"
+        "@id": "_:Nb3af2286acde4bda85710356b52b7535"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0077"
       },
       "sc:author": "Paolo Ribeca",
       "sc:citation": [
+        "pubmed:23103880",
         {
           "@id": "https://doi.org/10.1038/nmeth.2221"
-        },
-        "pubmed:23103880"
+        }
       ],
       "sc:contributor": "Santiago Marco Sola",
       "sc:description": "A set of very optimized tools for indexing/querying huge genomes/files. Provided so far: a very fast exact mapper, and an unconstrained split-mapper",
@@ -70,8 +66,8 @@
       "sc:name": "The GEM (GEnome Multi-tool) Library (GEM Mapper)",
       "sc:operatingSystem": "Linux",
       "sc:provider": [
-        "crg.eu",
-        "Lab Roderic Guigo Group"
+        "Lab Roderic Guigo Group",
+        "crg.eu"
       ],
       "sc:softwareHelp": {
         "@id": "http://algorithms.cnag.cat/wiki/The_GEM_library"
@@ -80,7 +76,7 @@
       "sc:url": "https://sourceforge.net/projects/gemlibrary/"
     },
     {
-      "@id": "_:N691c3d2ae86c4b4fb8d0f83586b8d5ea",
+      "@id": "_:N72a06058e64947b9a25f850215d163bc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -91,7 +87,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N12fe234cc49f4c368a6247e89acf2f90",
+      "@id": "_:Nb3af2286acde4bda85710356b52b7535",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -105,6 +101,10 @@
         }
       ],
       "sc:name": "Alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.2221",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

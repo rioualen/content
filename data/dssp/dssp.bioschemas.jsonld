@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-6059-6270",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1002/bip.360221211",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku1028",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dssp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4ad3eabfed5542c3b54ea796c0a5d313"
+        "@id": "_:N64cff3cd0dfb4306ad3947428c305006"
       },
       "bsc:output": {
-        "@id": "_:N47a5cd0a0ad542c3a19b686bd73cd7b9"
+        "@id": "_:Nf24a055493994960b54a3d8023fbf75f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -73,12 +61,12 @@
         "Wolfgang Kabsch"
       ],
       "sc:citation": [
-        "pubmed:6667333",
+        "pubmed:25352545",
+        "pmcid:PMC4383885",
         {
           "@id": "https://doi.org/10.1093/nar/gku1028"
         },
-        "pubmed:25352545",
-        "pmcid:PMC4383885",
+        "pubmed:6667333",
         {
           "@id": "https://doi.org/10.1002/bip.360221211"
         }
@@ -91,8 +79,8 @@
       "sc:license": "BSD-2-Clause",
       "sc:name": "DSSP",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/PDB-REDO/dssp/blob/trunk/doc/mkdssp.pdf"
@@ -101,23 +89,23 @@
       "sc:url": "http://swift.cmbi.ru.nl/gv/dssp/"
     },
     {
-      "@id": "_:N4ad3eabfed5542c3b54ea796c0a5d313",
+      "@id": "_:N64cff3cd0dfb4306ad3947428c305006",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1477"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_1477"
         }
       ],
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N47a5cd0a0ad542c3a19b686bd73cd7b9",
+      "@id": "_:Nf24a055493994960b54a3d8023fbf75f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -126,6 +114,18 @@
         "@id": "edam:format_1454"
       },
       "sc:name": "Protein features"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku1028",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/bip.360221211",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6059-6270",
+      "@type": "sc:Person"
     }
   ]
 }

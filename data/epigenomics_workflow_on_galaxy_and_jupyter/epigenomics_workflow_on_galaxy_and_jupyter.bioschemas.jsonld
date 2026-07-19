@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,31 +44,31 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8aa96ba69636456c9be4f480e5daa4b7"
+          "@id": "_:N9f3885e22eda44c3b53c97342122a9e1"
         },
         {
-          "@id": "_:Nc3b340254b1f4028987b8a97c3576704"
+          "@id": "_:N88f31c0cf6384c84b86bfa1f522c6ff6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N91996358438144868898b2a7c20ee2d6"
+          "@id": "_:N7d4541709b144b37b33dc4c6f7ec2404"
         },
         {
-          "@id": "_:N31b9d9580094497d9a929d98a0c5e12a"
+          "@id": "_:N2b22959044f24c8885fd82c4bd7d3bc1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3125"
+        },
         {
           "@id": "edam:topic_3173"
         },
         {
           "@id": "edam:topic_3512"
-        },
-        {
-          "@id": "edam:topic_3125"
         }
       ],
       "sc:citation": {
@@ -77,10 +77,10 @@
       "sc:description": "Reproducible Epigenomics Analysis pipeline for the analysis of ChIP-Seq and RNA-Seq data using Docker images containing Galaxy and Jupyter. The analysis workflow was originally designed to analyze Brassica rapa data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3563"
+          "@id": "edam:operation_3677"
         },
         {
-          "@id": "edam:operation_3677"
+          "@id": "edam:operation_3563"
         }
       ],
       "sc:funder": "Agencia Estatal de Investigación",
@@ -92,18 +92,7 @@
       "sc:url": "https://github.com/wilkinsonlab/epigenomics_pipeline"
     },
     {
-      "@id": "_:N8aa96ba69636456c9be4f480e5daa4b7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1931"
-      },
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:Nc3b340254b1f4028987b8a97c3576704",
+      "@id": "_:N9f3885e22eda44c3b53c97342122a9e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -114,18 +103,18 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N91996358438144868898b2a7c20ee2d6",
+      "@id": "_:N88f31c0cf6384c84b86bfa1f522c6ff6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3112"
+        "@id": "edam:data_3495"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+        "@id": "edam:format_1931"
       },
-      "sc:name": "Gene expression matrix"
+      "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N31b9d9580094497d9a929d98a0c5e12a",
+      "@id": "_:N7d4541709b144b37b33dc4c6f7ec2404",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -134,6 +123,17 @@
         "@id": "edam:format_3003"
       },
       "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N2b22959044f24c8885fd82c4bd7d3bc1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression matrix"
     }
   ]
 }

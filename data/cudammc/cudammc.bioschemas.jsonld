@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btad588",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cudammc",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3452"
+          "@id": "edam:topic_3940"
         },
         {
           "@id": "edam:topic_0203"
@@ -51,7 +55,7 @@
           "@id": "edam:topic_3315"
         },
         {
-          "@id": "edam:topic_3940"
+          "@id": "edam:topic_3452"
         }
       ],
       "sc:citation": [
@@ -64,23 +68,19 @@
       "sc:description": "GPU-enhanced multiscale Monte Carlo chromatin 3d modelling.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0481"
+          "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_0481"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "cudaMMC",
       "sc:operatingSystem": "Linux",
       "sc:url": "https://github.com/SFGLab/cudaMMC"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btad588",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

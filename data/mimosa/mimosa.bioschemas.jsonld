@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/biostatistics/kxt024",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "http://orcid.org/0000-0003-4341-9090",
       "@type": "sc:Person"
     },
@@ -46,25 +50,25 @@
         "@id": "http://orcid.org/0000-0003-4341-9090"
       },
       "bsc:input": {
-        "@id": "_:N85731c590a1b4589bfded0b5d5b6a78d"
+        "@id": "_:N5ffe69b5310242ba9a092b510fc40576"
       },
       "bsc:output": {
-        "@id": "_:N3aae416bbb4946e8b6badc8b252feaae"
+        "@id": "_:N98b426e42f33495fb8eeca8da08b8fff"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3361"
       },
       "sc:citation": [
+        "pubmed:23887981",
         "pmcid:PMC3862207",
         {
           "@id": "https://doi.org/10.1093/biostatistics/kxt024"
-        },
-        "pubmed:23887981"
+        }
       ],
       "sc:description": "Modeling count data using Dirichlet-multinomial and beta-binomial mixtures with applications to single-cell assays.",
       "sc:featureList": [
@@ -78,9 +82,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "MIMOSA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/MIMOSA.html"
@@ -89,18 +93,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/MIMOSA.html"
     },
     {
-      "@id": "_:N3aae416bbb4946e8b6badc8b252feaae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N85731c590a1b4589bfded0b5d5b6a78d",
+      "@id": "_:N5ffe69b5310242ba9a092b510fc40576",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -111,8 +104,15 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "https://doi.org/10.1093/biostatistics/kxt024",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N98b426e42f33495fb8eeca8da08b8fff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

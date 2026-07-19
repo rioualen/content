@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/pmic.200300744",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/unimod",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N2d3cb8e12e0647b6bd03c10365b6f0a4"
+        "@id": "_:N854be179cc3c4943aa487bd3c9337a41"
       },
       "bsc:output": {
-        "@id": "_:N968079d28c804becb23f17ee398a8624"
+        "@id": "_:Nfeabdd06444547159a95f0a7f54a14d5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0601"
         },
         {
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0601"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
@@ -69,9 +73,9 @@
       },
       "sc:name": "UniMod",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.unimod.org/unimod_help.html"
@@ -79,18 +83,7 @@
       "sc:url": "http://www.unimod.org"
     },
     {
-      "@id": "_:N968079d28c804becb23f17ee398a8624",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0844"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Molecular mass"
-    },
-    {
-      "@id": "_:N2d3cb8e12e0647b6bd03c10365b6f0a4",
+      "@id": "_:N854be179cc3c4943aa487bd3c9337a41",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2618"
@@ -101,8 +94,15 @@
       "sc:name": "Protein modification ID"
     },
     {
-      "@id": "https://doi.org/10.1002/pmic.200300744",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nfeabdd06444547159a95f0a7f54a14d5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0844"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Molecular mass"
     }
   ]
 }

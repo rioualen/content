@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.12688/wellcomeopenres.10004.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/seqplots",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Przemyslaw Stempor",
       "bsc:input": [
         {
-          "@id": "_:N2e2daeb0b15b4e34b77923ae53ee7497"
+          "@id": "_:Ned8d934c27fc454bb1b615a090279ca7"
         },
         {
-          "@id": "_:N6e5f0a327ee6461a8d150076933ab8d9"
+          "@id": "_:Nfd280918387848f5be72e6610981780b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na51209feb6564c4f8c71c2b19140d3f2"
+          "@id": "_:Nff364bdda3574b60be1e407906cfc4e1"
         },
         {
-          "@id": "_:N6f67e255bba740db960c8ffa283220a9"
+          "@id": "_:Nde74a8dd7214449bafab26f9de2f5b29"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": {
@@ -83,8 +79,8 @@
       "sc:name": "seqplots",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/seqplots.html"
@@ -93,18 +89,45 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/seqplots.html"
     },
     {
-      "@id": "_:Na51209feb6564c4f8c71c2b19140d3f2",
+      "@id": "_:Ned8d934c27fc454bb1b615a090279ca7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_3002"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Plot"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2305"
+        },
+        {
+          "@id": "edam:format_3005"
+        }
+      ],
+      "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N6f67e255bba740db960c8ffa283220a9",
+      "@id": "_:Nfd280918387848f5be72e6610981780b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2305"
+        },
+        {
+          "@id": "edam:format_3005"
+        }
+      ],
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:Nff364bdda3574b60be1e407906cfc4e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -115,42 +138,19 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N2e2daeb0b15b4e34b77923ae53ee7497",
+      "@id": "_:Nde74a8dd7214449bafab26f9de2f5b29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1270"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3005"
-        },
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2305"
-        }
-      ],
-      "sc:name": "Feature table"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:N6e5f0a327ee6461a8d150076933ab8d9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2305"
-        },
-        {
-          "@id": "edam:format_3005"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Annotation track"
+      "@id": "https://doi.org/10.12688/wellcomeopenres.10004.1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

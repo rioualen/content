@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,12 +42,12 @@
         "@id": "http://orcid.org/0000-0002-8886-7797"
       },
       "bsc:input": {
-        "@id": "_:N5da37083f4524fb28a0895baf4e08730"
+        "@id": "_:N1f5f2d6ec1dc40f2aeeb9141d3402721"
       },
       "bsc:output": {
-        "@id": "_:N4997e995844d4629920cc9ff0952c756"
+        "@id": "_:N61a8990592804badaf5f90b02e37ba3b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0204"
@@ -56,8 +56,8 @@
         "@id": "http://orcid.org/0000-0002-8886-7797"
       },
       "sc:citation": [
-        "pmcid:PMC5899412",
         "pubmed:29653518",
+        "pmcid:PMC5899412",
         {
           "@id": "https://doi.org/10.1186/s12859-018-2138-x"
         }
@@ -71,9 +71,9 @@
       "sc:license": "LGPL-3.0",
       "sc:name": "CyGenexpi",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/cas-bioinf/genexpi/wiki/CyGenexpi"
@@ -85,18 +85,7 @@
       "sc:url": "https://github.com/cas-bioinf/genexpi/wiki/CyGenexpi"
     },
     {
-      "@id": "_:N4997e995844d4629920cc9ff0952c756",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2984"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "_:N5da37083f4524fb28a0895baf4e08730",
+      "@id": "_:N1f5f2d6ec1dc40f2aeeb9141d3402721",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -107,12 +96,23 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-018-2138-x",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N61a8990592804badaf5f90b02e37ba3b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2984"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Pathway or network report"
     },
     {
       "@id": "http://orcid.org/0000-0002-8886-7797",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-018-2138-x",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

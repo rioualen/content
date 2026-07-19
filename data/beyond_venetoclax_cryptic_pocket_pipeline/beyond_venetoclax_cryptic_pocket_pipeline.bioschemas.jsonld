@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0009-0008-4144-718X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.26434/chemrxiv-2025-5vz5r",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/beyond_venetoclax_cryptic_pocket_pipeline",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,34 +51,34 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N424591731b224c90a1d8e26a2ff3e1f7"
+          "@id": "_:N9827ac3418b24a77a890ba9416a7334a"
         },
         {
-          "@id": "_:Na1b257b838054cf28ec169205aa53d86"
+          "@id": "_:Nc6d981b896724bd196426d7f98b2b422"
         },
         {
-          "@id": "_:N7d3640197f2b42308eafa680972d2bb9"
+          "@id": "_:N6933ccfa2a8a49618d5009b2c447c53c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf8963c2d75214c35b0d6c621ad2469e3"
+          "@id": "_:Naa3299fa421641b6a913709f53a09736"
         },
         {
-          "@id": "_:N505be4aaea11464d8ab81c1635f1941d"
+          "@id": "_:N4005b76aca5b4aa6a12a2533736152e5"
         },
         {
-          "@id": "_:Nd9a50cf0ddf0423cb9af02d465c5470f"
+          "@id": "_:N18e6b3c829384c03a1891a47a44b6f12"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3678"
+          "@id": "edam:topic_4019"
         },
         {
-          "@id": "edam:topic_4019"
+          "@id": "edam:topic_3678"
         }
       ],
       "sc:citation": {
@@ -79,10 +87,10 @@
       "sc:description": "A machine-guided pipeline for cryptic pocket discovery in undruggable cancer targets. Combines long MD (100–200 ns), metastable state modeling (MSM), hydration thermodynamics, and PLIP-based interaction analysis to identify mutant-specific pockets absent in wild-type. Validated on TP53, KRAS G12D, MYC mutants, and fusion oncoproteins",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_2423"
         },
         {
-          "@id": "edam:operation_2423"
+          "@id": "edam:operation_2426"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -95,7 +103,31 @@
       "sc:url": "https://sites.google.com/view/sn-biotech/home\""
     },
     {
-      "@id": "_:Nf8963c2d75214c35b0d6c621ad2469e3",
+      "@id": "_:N9827ac3418b24a77a890ba9416a7334a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3842"
+      },
+      "sc:name": "Molecular simulation data"
+    },
+    {
+      "@id": "_:Nc6d981b896724bd196426d7f98b2b422",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:name": "Structure"
+    },
+    {
+      "@id": "_:N6933ccfa2a8a49618d5009b2c447c53c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:name": "Structure"
+    },
+    {
+      "@id": "_:Naa3299fa421641b6a913709f53a09736",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2087"
@@ -103,52 +135,20 @@
       "sc:name": "Molecular property"
     },
     {
-      "@id": "_:N505be4aaea11464d8ab81c1635f1941d",
+      "@id": "_:N4005b76aca5b4aa6a12a2533736152e5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:name": "Structure"
+    },
+    {
+      "@id": "_:N18e6b3c829384c03a1891a47a44b6f12",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3842"
       },
       "sc:name": "Molecular simulation data"
-    },
-    {
-      "@id": "_:Nd9a50cf0ddf0423cb9af02d465c5470f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:N424591731b224c90a1d8e26a2ff3e1f7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:Na1b257b838054cf28ec169205aa53d86",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:N7d3640197f2b42308eafa680972d2bb9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3842"
-      },
-      "sc:name": "Molecular simulation data"
-    },
-    {
-      "@id": "https://orcid.org/0009-0008-4144-718X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.26434/chemrxiv-2025-5vz5r",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

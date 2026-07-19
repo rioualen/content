@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,22 +44,22 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb71befa9a9e84df9b13f00f4df13758c"
+          "@id": "_:N536dc052370e44cab0d372a13f0a9c9c"
         },
         {
-          "@id": "_:Ne087ac4982834a50919a570959fd49dd"
+          "@id": "_:Nde19b955316b4282a6e4c0b3b7e34feb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
+        "pubmed:30574787",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.8b00766"
-        },
-        "pubmed:30574787"
+        }
       ],
       "sc:description": "Platform for gathering, monitoring, integrating and visualizing glycomics data.",
       "sc:featureList": {
@@ -69,8 +69,8 @@
       "sc:license": "Unlicense",
       "sc:name": "GlyConnect",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -79,18 +79,7 @@
       "sc:url": "https://glyconnect.expasy.org/"
     },
     {
-      "@id": "_:Nb71befa9a9e84df9b13f00f4df13758c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1963"
-      },
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:Ne087ac4982834a50919a570959fd49dd",
+      "@id": "_:N536dc052370e44cab0d372a13f0a9c9c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0982"
@@ -99,6 +88,17 @@
         "@id": "edam:format_1963"
       },
       "sc:name": "Molecule identifier"
+    },
+    {
+      "@id": "_:Nde19b955316b4282a6e4c0b3b7e34feb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1963"
+      },
+      "sc:name": "UniProt ID"
     }
   ]
 }

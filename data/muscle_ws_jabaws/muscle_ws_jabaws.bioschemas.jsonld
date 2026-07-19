@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr304",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/muscle_ws_jabaws",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3498f9cd55f44859b5e420275e48cf6d"
+        "@id": "_:N1fe6a1ccf6f6462097c859eb7e555382"
       },
       "bsc:output": {
-        "@id": "_:N8d4743c1a01f42f2a5df0aa9a9ad663e"
+        "@id": "_:N1d8b707d715e447c87baec2c477b9ccf"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:21593132",
+        "pmcid:PMC3129525",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr304"
-        },
-        "pmcid:PMC3129525",
-        "pubmed:21593132"
+        }
       ],
       "sc:description": "Multiple sequence algnment tool.",
       "sc:featureList": {
@@ -63,8 +67,8 @@
       "sc:name": "Muscle WS (jabaws)",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -78,7 +82,7 @@
       "sc:url": "http://www.compbio.dundee.ac.uk/jabaws"
     },
     {
-      "@id": "_:N3498f9cd55f44859b5e420275e48cf6d",
+      "@id": "_:N1fe6a1ccf6f6462097c859eb7e555382",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -86,16 +90,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N8d4743c1a01f42f2a5df0aa9a9ad663e",
+      "@id": "_:N1d8b707d715e447c87baec2c477b9ccf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr304",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

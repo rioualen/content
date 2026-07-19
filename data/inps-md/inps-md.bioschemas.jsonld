@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-7359-0633",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv291",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btw192",
       "@type": "sc:CreativeWork"
     },
@@ -51,40 +43,40 @@
       "@id": "https://bio.tools/inps-md",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Piero Fariselli",
         {
           "@id": "https://orcid.org/0000-0002-7359-0633"
-        }
+        },
+        "Piero Fariselli"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nd05fdbb4c7ab46c5b023d2b40c9a8dff"
+          "@id": "_:N31581c28e1f3426ba32cc20100a68672"
         },
         {
-          "@id": "_:Nc07fa3fc3cb44d6c9cd4d4e47784487d"
+          "@id": "_:N3df31bdd69de44eb8a4ddd7a1626fa03"
         },
         {
-          "@id": "_:N29ed887b92f542a0b4ad75fb263fba21"
+          "@id": "_:N71277c3bdaa14974bb886f498992a712"
         },
         {
-          "@id": "_:Nf65056cb0ec743488b2d5a455b20f90d"
+          "@id": "_:Nb264bf680a9d403dbaeb9d93321b8feb"
         },
         {
-          "@id": "_:Nba3177ded5794aebac5a617366f2e5d8"
+          "@id": "_:N4bc3b800327f4a338d15bce0fd8069cd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N067dc09719f24d27961799209f4f675f"
+          "@id": "_:N80b7f2a1d98a4f789c687cba0ac50400"
         },
         {
-          "@id": "_:Nf2c1b8e43dd04b188d425f5573c40ec4"
+          "@id": "_:N165c52fc29824a37b8033e9c20e46cef"
         },
         {
-          "@id": "_:Nce073337238145fea485cad9c4f9e663"
+          "@id": "_:N1b61e758acaf4542a1123ae2cc54befc"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0199"
@@ -100,13 +92,13 @@
         "@id": "https://orcid.org/0000-0002-7359-0633"
       },
       "sc:citation": [
-        "pubmed:27153629",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btw192"
-        },
         "pubmed:25957347",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv291"
+        },
+        "pubmed:27153629",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btw192"
         }
       ],
       "sc:description": "Predicting the impact of mutations on protein stability from sequence and structure.",
@@ -123,23 +115,15 @@
       "sc:url": "http://inpsmd.biocomp.unibo.it"
     },
     {
-      "@id": "_:N067dc09719f24d27961799209f4f675f",
+      "@id": "_:N31581c28e1f3426ba32cc20100a68672",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0896"
+        "@id": "edam:data_1008"
       },
-      "sc:name": "Protein report"
+      "sc:name": "Polypeptide chain ID"
     },
     {
-      "@id": "_:Nf2c1b8e43dd04b188d425f5573c40ec4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0896"
-      },
-      "sc:name": "Protein report"
-    },
-    {
-      "@id": "_:Nce073337238145fea485cad9c4f9e663",
+      "@id": "_:N3df31bdd69de44eb8a4ddd7a1626fa03",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -147,7 +131,15 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nd05fdbb4c7ab46c5b023d2b40c9a8dff",
+      "@id": "_:N71277c3bdaa14974bb886f498992a712",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Nb264bf680a9d403dbaeb9d93321b8feb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -155,7 +147,23 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:Nc07fa3fc3cb44d6c9cd4d4e47784487d",
+      "@id": "_:N4bc3b800327f4a338d15bce0fd8069cd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N80b7f2a1d98a4f789c687cba0ac50400",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:name": "Protein report"
+    },
+    {
+      "@id": "_:N165c52fc29824a37b8033e9c20e46cef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -163,28 +171,20 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N29ed887b92f542a0b4ad75fb263fba21",
+      "@id": "_:N1b61e758acaf4542a1123ae2cc54befc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3498"
+        "@id": "edam:data_0896"
       },
-      "sc:name": "Sequence variations"
+      "sc:name": "Protein report"
     },
     {
-      "@id": "_:Nf65056cb0ec743488b2d5a455b20f90d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:name": "Sequence variations"
+      "@id": "https://orcid.org/0000-0002-7359-0633",
+      "@type": "sc:Person"
     },
     {
-      "@id": "_:Nba3177ded5794aebac5a617366f2e5d8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1008"
-      },
-      "sc:name": "Polypeptide chain ID"
+      "@id": "https://doi.org/10.1093/bioinformatics/btv291",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

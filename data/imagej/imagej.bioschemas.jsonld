@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,48 +39,48 @@
       "@id": "https://bio.tools/imagej",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb49858730aa6461ba98f9cfc5ec2a62a"
+        "@id": "_:N3d96f4440a294a90a5a2e2dabae60307"
       },
       "bsc:output": [
         {
-          "@id": "_:Na858eb103935404e9c2d8d4501c3c45b"
+          "@id": "_:N41a5c5173c084261932144a9f590c8ef"
         },
         {
-          "@id": "_:N8793fa169568479b93e6780094835371"
+          "@id": "_:Nd0bcc2881adf49589beca877e6aa337b"
         },
         {
-          "@id": "_:N7a0af37ba4144b98b444204398b9d41c"
+          "@id": "_:N29ec5b2a4e4d4d13bef40b3ebe7c50c3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3382"
       },
       "sc:citation": [
+        "pubmed:22930834",
+        "pmcid:PMC5554542",
         {
           "@id": "https://doi.org/10.1038/nmeth.2089"
-        },
-        "pmcid:PMC5554542",
-        "pubmed:22930834"
+        }
       ],
       "sc:description": "It is a public domain Java image processing program, which was designed with an open architecture. Custom acquisition, analysis and processing plugins can be developed using ImageJ’s built-in editor and a Java compiler. User-written plugins make it possible to solve many image processing and analysis problems, from three-dimensional live-cell imaging, to radiological image processing, multiple imaging system data comparisons to automated hematology systems.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0337"
-        },
         {
           "@id": "edam:operation_3443"
         },
         {
           "@id": "edam:operation_3553"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:name": "ImageJ2",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://imagej.net/Introduction"
@@ -88,40 +88,32 @@
       "sc:url": "http://imagej.net/"
     },
     {
-      "@id": "_:Na858eb103935404e9c2d8d4501c3c45b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N8793fa169568479b93e6780094835371",
+      "@id": "_:N3d96f4440a294a90a5a2e2dabae60307",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3592"
+        },
+        {
           "@id": "edam:format_3548"
         },
         {
-          "@id": "edam:format_1957"
+          "@id": "edam:format_3467"
         },
         {
           "@id": "edam:format_3591"
         },
         {
-          "@id": "edam:format_3592"
-        },
-        {
-          "@id": "edam:format_3467"
+          "@id": "edam:format_1957"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:N7a0af37ba4144b98b444204398b9d41c",
+      "@id": "_:N41a5c5173c084261932144a9f590c8ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3546"
@@ -129,23 +121,31 @@
       "sc:name": "Image metadata"
     },
     {
-      "@id": "_:Nb49858730aa6461ba98f9cfc5ec2a62a",
+      "@id": "_:Nd0bcc2881adf49589beca877e6aa337b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N29ec5b2a4e4d4d13bef40b3ebe7c50c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3591"
+          "@id": "edam:format_3592"
         },
         {
-          "@id": "edam:format_3592"
+          "@id": "edam:format_3548"
         },
         {
           "@id": "edam:format_3467"
         },
         {
-          "@id": "edam:format_3548"
+          "@id": "edam:format_3591"
         },
         {
           "@id": "edam:format_1957"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,16 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1111/1755-0998.13734",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/crimp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Neeb835c2afd94d7e8142755ff441a770"
+        "@id": "_:Ned0a57efa40542fba9a9295df478317d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3056"
@@ -58,32 +62,28 @@
           "@id": "edam:operation_2928"
         },
         {
-          "@id": "edam:operation_3197"
+          "@id": "edam:operation_2424"
         },
         {
-          "@id": "edam:operation_2424"
+          "@id": "edam:operation_3197"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "Crimp",
       "sc:operatingSystem": [
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:url": "https://github.com/ulilautenschlager/crimp"
     },
     {
-      "@id": "_:Neeb835c2afd94d7e8142755ff441a770",
+      "@id": "_:Ned0a57efa40542fba9a9295df478317d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
       },
       "sc:name": "Matrix"
-    },
-    {
-      "@id": "https://doi.org/10.1111/1755-0998.13734",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

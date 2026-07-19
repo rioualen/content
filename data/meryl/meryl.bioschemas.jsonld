@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13059-020-02134-9",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/meryl",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5df721b16fdc41ca9e76f9ea5d936270"
+        "@id": "_:N55f2f537791740b78d4d4dd8039a1ae4"
       },
       "bsc:output": {
-        "@id": "_:N5954739008824f45b2fef565b5d0bf9f"
+        "@id": "_:Nddaafd1b5d9648449d662917cad343a1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_3673"
+          "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3673"
         }
       ],
       "sc:citation": [
+        "pubmed:32928274",
         "pmcid:PMC7488777",
         {
           "@id": "https://doi.org/10.1186/s13059-020-02134-9"
-        },
-        "pubmed:32928274"
+        }
       ],
       "sc:description": "Meryl is a tool for counting and working with sets of k-mers that was originally developed for use in the Celera Assembler and has since been migrated and maintained as part of Canu.",
       "sc:featureList": {
@@ -82,23 +78,23 @@
       "sc:url": "https://github.com/marbl/meryl"
     },
     {
-      "@id": "_:N5df721b16fdc41ca9e76f9ea5d936270",
+      "@id": "_:N55f2f537791740b78d4d4dd8039a1ae4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1930"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1930"
         }
       ],
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:N5954739008824f45b2fef565b5d0bf9f",
+      "@id": "_:Nddaafd1b5d9648449d662917cad343a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -107,6 +103,10 @@
         "@id": "edam:format_3665"
       },
       "sc:name": "Count matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13059-020-02134-9",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

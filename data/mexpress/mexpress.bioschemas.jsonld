@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12864-015-1847-z",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mexpress",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na385e33836de45beafb1471cac11ba4a"
+        "@id": "_:N615f3f4c06ce4f89b88db4dfd0f1d30d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3173"
         },
         {
-          "@id": "edam:topic_3173"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4549898",
         "pubmed:26306699",
+        "pmcid:PMC4549898",
         {
           "@id": "https://doi.org/10.1186/s12864-015-1847-z"
         }
@@ -64,8 +68,8 @@
       },
       "sc:name": "MEXPRESS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -76,16 +80,12 @@
       "sc:url": "http://www.mexpress.be"
     },
     {
-      "@id": "_:Na385e33836de45beafb1471cac11ba4a",
+      "@id": "_:N615f3f4c06ce4f89b88db4dfd0f1d30d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1025"
       },
       "sc:name": "Gene identifier"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12864-015-1847-z",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

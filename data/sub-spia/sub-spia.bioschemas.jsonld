@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0132813",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sub-spia",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd3a27571ea724082a6a71b6f4e5d496d"
+        "@id": "_:N00df0277ec3a49f59f8ae0225ed70b05"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
       },
       "sc:citation": [
+        "pubmed:26207919",
+        "pmcid:PMC4514860",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0132813"
-        },
-        "pmcid:PMC4514860",
-        "pubmed:26207919"
+        }
       ],
       "sc:description": "Signaling-pathway impact analysis (SPIA) is one such method and combines both the classical enrichment analysis and the actual perturbation on a given pathway. Because this method focuses on a single pathway, its resolution generally is not very high because the differentially expressed genes may be enriched in a local region of the pathway. In the present work, to identify cancer-related pathways, we incorporated a recent subpathway analysis method into the SPIA method to form the “sub-SPIA method.”",
       "sc:featureList": {
@@ -61,23 +65,19 @@
       "sc:license": "MIT",
       "sc:name": "sub-SPIA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/eshinesimida/subpathway-analysis"
     },
     {
-      "@id": "_:Nd3a27571ea724082a6a71b6f4e5d496d",
+      "@id": "_:N00df0277ec3a49f59f8ae0225ed70b05",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0132813",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

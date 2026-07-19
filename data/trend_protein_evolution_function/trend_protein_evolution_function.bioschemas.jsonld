@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac034",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkaa243",
       "@type": "sc:CreativeWork"
     },
@@ -44,61 +48,61 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8dd40c4f99d34460a1cd09f68cd8385f"
+          "@id": "_:N3262bdb84f3e429c834a186db5f0c1ed"
         },
         {
-          "@id": "_:N2b7a547a28f74061a5239d74a9634ccb"
+          "@id": "_:N5071c424f7ab4a57bc4aa10ff5a9551c"
         },
         {
-          "@id": "_:N462b281ff5da4125aa81652cdd1ea2c8"
+          "@id": "_:N83dfb699d99441b19ac7bde172ca6f7a"
         },
         {
-          "@id": "_:Nfd8bc72a03c345e9b9d9839f5c1c8ebd"
+          "@id": "_:N2e90a84fdd0642d99856cde8c2ebd118"
         },
         {
-          "@id": "_:N140f5afdccd94a4f9333c2d5cab1526b"
+          "@id": "_:N1a814cca44ee4d42ab4de704d257097d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4dddaaad8c5a425eb4339885e4264aa1"
+          "@id": "_:Ncad8cdef553e4e60890369729b9246aa"
         },
         {
-          "@id": "_:Nd5a951c3614a4034a511c30cf8e168c1"
+          "@id": "_:Nc9f6202337a74c0787c1a71ed9e44725"
         },
         {
-          "@id": "_:N90688662dd2d40c89475b2a10d995e3f"
+          "@id": "_:Nd7d4cd421ffa4439b8e2f8ace3e6b976"
         },
         {
-          "@id": "_:N30b809fad51c462f95b6b0b63f0286bf"
+          "@id": "_:N05c62543a7094602ab6fe3fd9fdfa7b4"
         },
         {
-          "@id": "_:N85fa665c0f7140f7bc249b1a7983c18b"
+          "@id": "_:N252639eae3c2495890128af29015ef36"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0084"
-        },
-        {
           "@id": "edam:topic_0091"
-        },
-        {
-          "@id": "edam:topic_3301"
-        },
-        {
-          "@id": "edam:topic_3510"
         },
         {
           "@id": "edam:topic_3299"
         },
         {
+          "@id": "edam:topic_0085"
+        },
+        {
+          "@id": "edam:topic_3301"
+        },
+        {
           "@id": "edam:topic_0194"
         },
         {
-          "@id": "edam:topic_0085"
+          "@id": "edam:topic_0084"
+        },
+        {
+          "@id": "edam:topic_3510"
         }
       ],
       "sc:citation": [
@@ -107,11 +111,11 @@
         {
           "@id": "https://doi.org/10.1093/nar/gkac034"
         },
+        "pubmed:32282909",
         "pmcid:PMC7319448",
         {
           "@id": "https://doi.org/10.1093/nar/gkaa243"
-        },
-        "pubmed:32282909"
+        }
       ],
       "sc:description": "TREND is a platform that allows researchers to explore protein function and evolution identifying protein features, gene neighborhoods and operons, clustering neighboring genes, and integrating all these data into phylogenomic context and cross-referencing with RefSeq, Pfam, CDD and MiST databases. The platform provides ample opportunities for adjusting each step of the analysis.",
       "sc:featureList": [
@@ -122,13 +126,13 @@
           "@id": "edam:operation_0323"
         },
         {
-          "@id": "edam:operation_2995"
-        },
-        {
           "@id": "edam:operation_0246"
         },
         {
           "@id": "edam:operation_3092"
+        },
+        {
+          "@id": "edam:operation_2995"
         },
         {
           "@id": "edam:operation_0291"
@@ -141,7 +145,15 @@
       "sc:url": "http://trend.evobionet.com/"
     },
     {
-      "@id": "_:N8dd40c4f99d34460a1cd09f68cd8385f",
+      "@id": "_:N3262bdb84f3e429c834a186db5f0c1ed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2385"
+      },
+      "sc:name": "RefSeq accession (protein)"
+    },
+    {
+      "@id": "_:N5071c424f7ab4a57bc4aa10ff5a9551c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1900"
@@ -152,7 +164,29 @@
       "sc:name": "NCBI locus tag"
     },
     {
-      "@id": "_:N2b7a547a28f74061a5239d74a9634ccb",
+      "@id": "_:N83dfb699d99441b19ac7bde172ca6f7a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N2e90a84fdd0642d99856cde8c2ebd118",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1384"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence alignment"
+    },
+    {
+      "@id": "_:N1a814cca44ee4d42ab4de704d257097d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -163,48 +197,7 @@
       "sc:name": "Sequence set (protein)"
     },
     {
-      "@id": "_:N462b281ff5da4125aa81652cdd1ea2c8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:Nfd8bc72a03c345e9b9d9839f5c1c8ebd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1384"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence alignment"
-    },
-    {
-      "@id": "_:N140f5afdccd94a4f9333c2d5cab1526b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2385"
-      },
-      "sc:name": "RefSeq accession (protein)"
-    },
-    {
-      "@id": "_:N4dddaaad8c5a425eb4339885e4264aa1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3464"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:Nd5a951c3614a4034a511c30cf8e168c1",
+      "@id": "_:Ncad8cdef553e4e60890369729b9246aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -215,7 +208,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N90688662dd2d40c89475b2a10d995e3f",
+      "@id": "_:Nc9f6202337a74c0787c1a71ed9e44725",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -226,7 +219,18 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N30b809fad51c462f95b6b0b63f0286bf",
+      "@id": "_:Nd7d4cd421ffa4439b8e2f8ace3e6b976",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3464"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N05c62543a7094602ab6fe3fd9fdfa7b4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -237,7 +241,7 @@
       "sc:name": "Protein sequence alignment"
     },
     {
-      "@id": "_:N85fa665c0f7140f7bc249b1a7983c18b",
+      "@id": "_:N252639eae3c2495890128af29015ef36",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1245"
@@ -246,10 +250,6 @@
         "@id": "edam:format_3464"
       },
       "sc:name": "Sequence cluster (protein)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac034",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,47 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv701",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rcellminer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Vinodh Rajapakse",
-        "Augustin Luna"
+        "Augustin Luna",
+        "Vinodh Rajapakse"
       ],
       "bsc:input": {
-        "@id": "_:N026fdfdcb2bd4289a864489af67659d9"
+        "@id": "_:Ne3216aed198042bab35928e47e85b519"
       },
       "bsc:output": [
         {
-          "@id": "_:N1e88594d897349cea23e473461221ed6"
+          "@id": "_:Nbe184fd70ab645699b6aee498c9b593e"
         },
         {
-          "@id": "_:N3c466ccb7e6f44048c1c0bbd58da3001"
+          "@id": "_:Nbda4872d4edb4d989079c9849382f0e7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3365"
         },
         {
           "@id": "edam:topic_3366"
         },
         {
-          "@id": "edam:topic_3365"
+          "@id": "edam:topic_3373"
         },
         {
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_3373"
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": [
@@ -89,9 +93,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "rcellminer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/rcellminer.html"
@@ -100,29 +104,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/rcellminer.html"
     },
     {
-      "@id": "_:N1e88594d897349cea23e473461221ed6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0993"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Drug identifier"
-    },
-    {
-      "@id": "_:N3c466ccb7e6f44048c1c0bbd58da3001",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2899"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Drug name"
-    },
-    {
-      "@id": "_:N026fdfdcb2bd4289a864489af67659d9",
+      "@id": "_:Ne3216aed198042bab35928e47e85b519",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0990"
@@ -133,8 +115,26 @@
       "sc:name": "Compound name"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv701",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nbe184fd70ab645699b6aee498c9b593e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0993"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Drug identifier"
+    },
+    {
+      "@id": "_:Nbda4872d4edb4d989079c9849382f0e7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2899"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Drug name"
     }
   ]
 }

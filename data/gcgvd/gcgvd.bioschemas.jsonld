@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,14 +38,11 @@
     {
       "@id": "https://bio.tools/gcgvd",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_0102"
         },
         {
           "@id": "edam:topic_0621"
@@ -54,18 +51,27 @@
           "@id": "edam:topic_3320"
         },
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:citation": [
         "pubmed:31592084",
+        "pmcid:PMC6775296",
         {
           "@id": "https://doi.org/10.7150/IJBS.32860"
-        },
-        "pmcid:PMC6775296"
+        }
       ],
       "sc:description": "An informational platform for genome biology of grass carp.\n\nGrass carp (Ctenopharyngodon idellus) is a herbivorous, freshwater fish species of the family Cyprinidae, and the only species of the genus Ctenopharyngodon.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2422"
+        },
+        {
+          "@id": "edam:operation_0282"
+        },
         {
           "@id": "edam:operation_3208"
         },
@@ -74,12 +80,6 @@
         },
         {
           "@id": "edam:operation_0464"
-        },
-        {
-          "@id": "edam:operation_2422"
-        },
-        {
-          "@id": "edam:operation_0282"
         }
       ],
       "sc:name": "GCGVD",

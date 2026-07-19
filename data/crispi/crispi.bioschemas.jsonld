@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp586",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/crispi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "GenOuest platform",
       "bsc:input": {
-        "@id": "_:Ne0dbe3998d6b4aad99fb484b1e2c98e0"
+        "@id": "_:N08a9129c43284a9da1da29c5ed08f34a"
       },
       "bsc:output": {
-        "@id": "_:N1dabb1ca28fa42a09b3f1b710864310b"
+        "@id": "_:Nf0b1a05c4ad04ddabd052b88b54c1789"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
+        "pubmed:19846435",
+        "pmcid:PMC2788928",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp586"
-        },
-        "pmcid:PMC2788928",
-        "pubmed:19846435"
+        }
       ],
       "sc:description": "A CRISPR Interactive database.",
       "sc:featureList": {
@@ -68,8 +64,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Crispi",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "GenOuest",
@@ -79,7 +75,7 @@
       "sc:url": "http://crispi.genouest.org/"
     },
     {
-      "@id": "_:Ne0dbe3998d6b4aad99fb484b1e2c98e0",
+      "@id": "_:N08a9129c43284a9da1da29c5ed08f34a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -90,7 +86,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N1dabb1ca28fa42a09b3f1b710864310b",
+      "@id": "_:Nf0b1a05c4ad04ddabd052b88b54c1789",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -99,6 +95,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp586",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

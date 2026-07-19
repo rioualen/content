@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1111/imm.12160",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netmhcstab",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N14a326d1e533454b882121f060349d20"
+        "@id": "_:N1b474b9f3daa45f1804aba788d46bd4b"
       },
       "bsc:output": {
-        "@id": "_:Nbb188a31a38d4757ac6f13f635f94ca0"
+        "@id": "_:Nce46b834b28b403aa3e4b94a08414d70"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3534"
@@ -71,8 +75,8 @@
       "sc:license": "Other",
       "sc:name": "NetMHCstab",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "CBS",
@@ -83,7 +87,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetMHCstab/"
     },
     {
-      "@id": "_:N14a326d1e533454b882121f060349d20",
+      "@id": "_:N1b474b9f3daa45f1804aba788d46bd4b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -94,7 +98,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nbb188a31a38d4757ac6f13f635f94ca0",
+      "@id": "_:Nce46b834b28b403aa3e4b94a08414d70",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -103,10 +107,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "https://doi.org/10.1111/imm.12160",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "http://orcid.org/0000-0001-7885-4311",

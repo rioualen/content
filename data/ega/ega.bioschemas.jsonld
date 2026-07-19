@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,18 +39,24 @@
       "@id": "https://bio.tools/ega",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1af38de0c6cd4cd4b2b000b0b691e48e"
+        "@id": "_:N7f663a4a9f34430ab7bb100dc12ccf22"
       },
       "bsc:output": {
-        "@id": "_:N2ce7f523421746c8ae8c05e1f2387993"
+        "@id": "_:N77c91b13b5a241d1a1e662c920d4af36"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Database portal",
         "Web API",
-        "Web application",
-        "Database portal"
+        "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3366"
+        },
+        {
+          "@id": "edam:topic_3263"
+        },
         {
           "@id": "edam:topic_0625"
         },
@@ -59,12 +65,6 @@
         },
         {
           "@id": "edam:topic_3325"
-        },
-        {
-          "@id": "edam:topic_3366"
-        },
-        {
-          "@id": "edam:topic_3263"
         }
       ],
       "sc:citation": {
@@ -73,21 +73,21 @@
       "sc:description": "European genome-phenome Archive (EGA) - service for permanent archiving and sharing of all types of personally identifiable genetic and phenotypic data resulting from biomedical research projects.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_3436"
         },
         {
           "@id": "edam:operation_3431"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "EGA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI Databases",
       "sc:softwareHelp": {
@@ -96,7 +96,15 @@
       "sc:url": "https://ega-archive.org/"
     },
     {
-      "@id": "_:N2ce7f523421746c8ae8c05e1f2387993",
+      "@id": "_:N7f663a4a9f34430ab7bb100dc12ccf22",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2383"
+      },
+      "sc:name": "EGA accession"
+    },
+    {
+      "@id": "_:N77c91b13b5a241d1a1e662c920d4af36",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
@@ -105,14 +113,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Experiment report"
-    },
-    {
-      "@id": "_:N1af38de0c6cd4cd4b2b000b0b691e48e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2383"
-      },
-      "sc:name": "EGA accession"
     },
     {
       "@id": "https://doi.org/10.1038/ng.3312",

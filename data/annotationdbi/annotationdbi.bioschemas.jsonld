@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/annotationdbi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BioConductor Package Maintainer",
       "bsc:input": {
-        "@id": "_:Ndcb035895ef14489afc7969f82987f9a"
+        "@id": "_:N1065f98aa826434c971040764730886d"
       },
       "bsc:output": {
-        "@id": "_:N553f87cc711546f5bdc80aa08ab07f28"
+        "@id": "_:N829e28039e004dbcb73c464d846fa141"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -68,18 +72,18 @@
       "sc:description": "Provides user interface and database connection code for annotation data packages using SQLite data storage.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "AnnotationDbi",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/AnnotationDbi.html"
@@ -88,7 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/AnnotationDbi.html"
     },
     {
-      "@id": "_:Ndcb035895ef14489afc7969f82987f9a",
+      "@id": "_:N1065f98aa826434c971040764730886d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -99,7 +103,7 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N553f87cc711546f5bdc80aa08ab07f28",
+      "@id": "_:N829e28039e004dbcb73c464d846fa141",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -108,10 +112,6 @@
         "@id": "edam:format_1920"
       },
       "sc:name": "Database search results"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

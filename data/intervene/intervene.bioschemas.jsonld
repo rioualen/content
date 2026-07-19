@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-6459-6224",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1101/109728",
       "@type": "sc:CreativeWork"
     },
@@ -50,15 +46,15 @@
         "@id": "https://orcid.org/0000-0002-6459-6224"
       },
       "bsc:input": {
-        "@id": "_:Nd9a38c86885748b89ef9f98992641656"
+        "@id": "_:Nffcf6849ef84425fa96b7a45ed65ecac"
       },
       "bsc:output": {
-        "@id": "_:N21b01f431e7d452e9ce1b42cb26c8f15"
+        "@id": "_:Ne71838ce9f644c5ba39375a6ccb9c6e8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3307"
@@ -79,40 +75,21 @@
       "sc:license": "MIT",
       "sc:name": "Intervene",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://intervene.readthedocs.io"
       },
       "sc:softwareVersion": [
-        "0.6.4",
-        "0.5.8"
+        "0.5.8",
+        "0.6.4"
       ],
       "sc:url": "https://bitbucket.org/CBGR/intervene"
     },
     {
-      "@id": "_:N21b01f431e7d452e9ce1b42cb26c8f15",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3604"
-        }
-      ],
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:Nd9a38c86885748b89ef9f98992641656",
+      "@id": "_:Nffcf6849ef84425fa96b7a45ed65ecac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -121,6 +98,29 @@
         "@id": "edam:format_3003"
       },
       "sc:name": "Sequence set"
+    },
+    {
+      "@id": "_:Ne71838ce9f644c5ba39375a6ccb9c6e8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3604"
+        }
+      ],
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6459-6224",
+      "@type": "sc:Person"
     }
   ]
 }

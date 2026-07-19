@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,37 +42,37 @@
         "@id": "http://orcid.org/0000-0002-6485-8781"
       },
       "bsc:input": {
-        "@id": "_:N0cf32dbc47f843769f2bb8e5000f18fd"
+        "@id": "_:N596146213e644e60ad3fe6cdeb2fce48"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc96b57d39fcc4bd3bcbd5337225c4e10"
+          "@id": "_:N91da90cf119643c987378689352f9e97"
         },
         {
-          "@id": "_:N69fcab51a290412488b4cf760409e036"
+          "@id": "_:N7ba89534102140aaa78bab352a23b359"
         },
         {
-          "@id": "_:N8f0531b137b34a09b9eeeecb7b5b94c4"
+          "@id": "_:Nc8baeb1878b5478baced7b4c418909ef"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
+        "pubmed:26661513",
         {
           "@id": "https://doi.org/10.1039/c5mb00663e"
-        },
-        "pubmed:26661513"
+        }
       ],
       "sc:description": "This package provides functions for pathway analysis based on REACTOME pathway database. It implements enrichment analysis, gene set enrichment analysis and several functions for visualization.",
       "sc:featureList": {
@@ -81,9 +81,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ReactomePA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ReactomePA.html"
@@ -92,29 +92,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ReactomePA.html"
     },
     {
-      "@id": "_:Nc96b57d39fcc4bd3bcbd5337225c4e10",
+      "@id": "_:N596146213e644e60ad3fe6cdeb2fce48",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2600"
+        "@id": "edam:data_1027"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3547"
+        "@id": "edam:format_2330"
       },
-      "sc:name": "Pathway or network"
+      "sc:name": "Gene ID (NCBI)"
     },
     {
-      "@id": "_:N69fcab51a290412488b4cf760409e036",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N8f0531b137b34a09b9eeeecb7b5b94c4",
+      "@id": "_:N91da90cf119643c987378689352f9e97",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0862"
@@ -125,15 +114,26 @@
       "sc:name": "Dotplot"
     },
     {
-      "@id": "_:N0cf32dbc47f843769f2bb8e5000f18fd",
+      "@id": "_:N7ba89534102140aaa78bab352a23b359",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1027"
+        "@id": "edam:data_1669"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+        "@id": "edam:format_3547"
       },
-      "sc:name": "Gene ID (NCBI)"
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:Nc8baeb1878b5478baced7b4c418909ef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Pathway or network"
     },
     {
       "@id": "http://orcid.org/0000-0002-6485-8781",

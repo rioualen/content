@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt089",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/bioinformatics/btu411",
       "@type": "sc:CreativeWork"
     },
@@ -44,26 +48,22 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt089",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/tppred_2.0",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Piero Fariselli",
-        "Rita Casadio",
         {
           "@id": "https://orcid.org/0000-0002-7359-0633"
-        }
+        },
+        "Piero Fariselli",
+        "Rita Casadio"
       ],
       "bsc:input": {
-        "@id": "_:N6a57221e4b044a59b7d99b5686ba2127"
+        "@id": "_:Nbb11df0972b4411697f8d8db82da5cbc"
       },
       "bsc:output": {
-        "@id": "_:N28d14d01c0c64f0782ddb8dbcbb56f7f"
+        "@id": "_:Nf6434e3ca52b41858a5262dc80f93a8a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -73,10 +73,10 @@
           "@id": "edam:topic_0140"
         },
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_0160"
         },
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:author": {
@@ -85,17 +85,17 @@
       "sc:citation": [
         "pubmed:23428638",
         {
-          "@id": "https://doi.org/10.1093/bioinformatics/btu411"
+          "@id": "https://doi.org/10.1093/bioinformatics/btt089"
         },
         "pubmed:24974200",
         {
-          "@id": "https://doi.org/10.1093/bioinformatics/btt089"
+          "@id": "https://doi.org/10.1093/bioinformatics/btu411"
         }
       ],
       "sc:description": "Mitochondrial targeting peptide prediction.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0253"
+          "@id": "edam:operation_0422"
         },
         {
           "@id": "edam:operation_3092"
@@ -104,7 +104,7 @@
           "@id": "edam:operation_2489"
         },
         {
-          "@id": "edam:operation_0422"
+          "@id": "edam:operation_0253"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -112,8 +112,8 @@
       "sc:name": "TPpred 2.0",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": [
@@ -128,7 +128,7 @@
       "sc:url": "https://tppred2.biocomp.unibo.it"
     },
     {
-      "@id": "_:N6a57221e4b044a59b7d99b5686ba2127",
+      "@id": "_:Nbb11df0972b4411697f8d8db82da5cbc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -139,7 +139,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N28d14d01c0c64f0782ddb8dbcbb56f7f",
+      "@id": "_:Nf6434e3ca52b41858a5262dc80f93a8a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"

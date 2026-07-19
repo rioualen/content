@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,50 +36,54 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/RepetDB",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3460803f99f64757997eb6d81afe75df"
+          "@id": "_:N1f30c0a54f23429abfc1ed7a8e2d2773"
         },
         {
-          "@id": "_:N49d94177b5e547b4863a55d1f5b16bc7"
+          "@id": "_:N89fb494fb9a64cd68911a11bbe6ddef3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N03542c35fb3243bdb81079453907c3b0"
+          "@id": "_:Na52a47d3e41f48fa8506296bb49ce77f"
         },
         {
-          "@id": "_:Nf55e3d79293d48fbb6b6f7f9935e928a"
+          "@id": "_:N93effed897204e2b80ee16d667a53fe1"
         },
         {
-          "@id": "_:N5fae469a655948cc9aa8aaba0ed6ccfb"
+          "@id": "_:N0fc2981f1a724cd385ab8c262c626864"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
+        "Database portal",
         "Web application",
-        "Database portal"
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
+        "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pubmed:23023984",
-        "pmcid:PMC3516146"
+        }
       ],
       "sc:description": "Repeats intermine database",
       "sc:featureList": [
@@ -100,46 +104,22 @@
       "sc:license": "LGPL-2.1",
       "sc:name": "RepetDB",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://urgi.versailles.inra.fr/repetdb"
     },
     {
-      "@id": "_:N03542c35fb3243bdb81079453907c3b0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3753"
-      },
-      "sc:name": "Over-representation data"
-    },
-    {
-      "@id": "_:Nf55e3d79293d48fbb6b6f7f9935e928a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:N5fae469a655948cc9aa8aaba0ed6ccfb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N3460803f99f64757997eb6d81afe75df",
+      "@id": "_:N1f30c0a54f23429abfc1ed7a8e2d2773",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -147,7 +127,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N49d94177b5e547b4863a55d1f5b16bc7",
+      "@id": "_:N89fb494fb9a64cd68911a11bbe6ddef3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -155,8 +135,28 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na52a47d3e41f48fa8506296bb49ce77f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3753"
+      },
+      "sc:name": "Over-representation data"
+    },
+    {
+      "@id": "_:N93effed897204e2b80ee16d667a53fe1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:N0fc2981f1a724cd385ab8c262c626864",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

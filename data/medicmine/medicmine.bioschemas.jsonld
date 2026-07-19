@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/MedicMine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb4776bf8b37a4c0b99cc8f760273a60b"
+          "@id": "_:Nb299057bd6db4cbd8fcd9d4b342e3f25"
         },
         {
-          "@id": "_:N3572d55fc31c428689376ba4c86cf37a"
+          "@id": "_:N00d7224f7a9d4d2fa20e8c72b195c6a9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N61744ae51ab5487d89867ac53b590ab1"
+          "@id": "_:N0e03eddfac93439381bdfcf57a2dda62"
         },
         {
-          "@id": "_:Nde33ccc2aa914549b0d0e89476dc17c2"
+          "@id": "_:N82b8e66c405049c29a2a25676425eea3"
         },
         {
-          "@id": "_:N6631f3d6a94542cd8c5d933a97b70a7f"
+          "@id": "_:N5441dfc2cae94f448178aab8a3fed135"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
+        "Database portal",
         "Web application",
-        "Database portal"
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0121"
@@ -84,70 +88,38 @@
       "sc:description": "MedicMine integrates many types of data for Medicago truncatula. You can run flexible queries, export results and analyse lists of genes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
-        },
-        {
-          "@id": "edam:operation_0337"
-        },
-        {
           "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_2436"
+        },
+        {
+          "@id": "edam:operation_0224"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "MedicMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "1.3.0",
       "sc:url": "http://medicmine.jcvi.org/medicmine"
     },
     {
-      "@id": "_:N61744ae51ab5487d89867ac53b590ab1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nde33ccc2aa914549b0d0e89476dc17c2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3753"
-      },
-      "sc:name": "Over-representation data"
-    },
-    {
-      "@id": "_:N6631f3d6a94542cd8c5d933a97b70a7f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:Nb4776bf8b37a4c0b99cc8f760273a60b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N3572d55fc31c428689376ba4c86cf37a",
+      "@id": "_:Nb299057bd6db4cbd8fcd9d4b342e3f25",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -155,8 +127,36 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N00d7224f7a9d4d2fa20e8c72b195c6a9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N0e03eddfac93439381bdfcf57a2dda62",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3753"
+      },
+      "sc:name": "Over-representation data"
+    },
+    {
+      "@id": "_:N82b8e66c405049c29a2a25676425eea3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:N5441dfc2cae94f448178aab8a3fed135",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

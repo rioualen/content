@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3934/MBE.2021318",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/tyler",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N281197daabc84100aacbb81fecbc440f"
+        "@id": "_:N69cecf45eb644beca163e8ddc9cfbc7f"
       },
       "bsc:output": {
-        "@id": "_:Ncf84df801e9a4b4ba262fe80f309af2f"
+        "@id": "_:N656bae14b8284f02bcace80dbde4315b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3474"
+        },
         {
           "@id": "edam:topic_0078"
         },
@@ -58,41 +57,38 @@
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0160"
-        },
-        {
           "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
+        "pubmed:34517538",
         {
           "@id": "https://doi.org/10.3934/MBE.2021318"
-        },
-        "pubmed:34517538"
+        }
       ],
       "sc:description": "Fast method that accurately predicts cyclin-dependent proteins by using computation-based motifs and sequence-derived features.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0564"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_0564"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "TYLER",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "http://www.inforstation.com/webservers/TYLER/"
     },
     {
-      "@id": "_:N281197daabc84100aacbb81fecbc440f",
+      "@id": "_:N69cecf45eb644beca163e8ddc9cfbc7f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -103,12 +99,16 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Ncf84df801e9a4b4ba262fe80f309af2f",
+      "@id": "_:N656bae14b8284f02bcace80dbde4315b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.3934/MBE.2021318",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

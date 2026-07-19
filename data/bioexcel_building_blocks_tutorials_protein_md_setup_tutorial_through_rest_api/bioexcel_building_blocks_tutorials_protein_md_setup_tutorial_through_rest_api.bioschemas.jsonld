@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,44 +36,40 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bioexcel_building_blocks_tutorials_protein_md_setup_tutorial_through_rest_api",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Genís Bayarri",
       "bsc:input": {
-        "@id": "_:Nd67994d16de54899bfbc1c68506a82f1"
+        "@id": "_:N6b2f6ca59f9f4943aee8b3139c8bba06"
       },
       "bsc:output": [
         {
-          "@id": "_:N208494a2203c42acafc7058ca3ef58e0"
+          "@id": "_:N0042c4b69e2a4a6d8d87c96768700297"
         },
         {
-          "@id": "_:Nd8700b1714444469a8c5a2c28bb8e8c4"
+          "@id": "_:N17ec5c0218ba4f659a524f7a7a06acd8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web API",
         "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0176"
+        },
+        {
           "@id": "edam:topic_2814"
         },
         {
           "@id": "edam:topic_0081"
-        },
-        {
-          "@id": "edam:topic_0176"
         }
       ],
       "sc:author": "Genís Bayarri",
       "sc:citation": [
-        "pmcid:PMC6736963",
         "pubmed:31506435",
+        "pmcid:PMC6736963",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
         }
@@ -92,8 +88,8 @@
       "sc:name": "BioExcel Building Blocks tutorials: Protein MD Setup tutorial through REST API",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -107,23 +103,34 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb/availability/tutorials/rest-api"
     },
     {
-      "@id": "_:N208494a2203c42acafc7058ca3ef58e0",
+      "@id": "_:N6b2f6ca59f9f4943aee8b3139c8bba06",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N0042c4b69e2a4a6d8d87c96768700297",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3872"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3880"
+          "@id": "edam:format_3883"
         },
         {
-          "@id": "edam:format_3883"
+          "@id": "edam:format_3880"
         }
       ],
       "sc:name": "Topology data"
     },
     {
-      "@id": "_:Nd8700b1714444469a8c5a2c28bb8e8c4",
+      "@id": "_:N17ec5c0218ba4f659a524f7a7a06acd8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -134,15 +141,8 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:Nd67994d16de54899bfbc1c68506a82f1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
+      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

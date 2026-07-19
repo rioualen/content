@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,70 +36,74 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1089/OMI.2013.0119",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cov2html",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6ba7778721be4c7ab174865f7ab07edc"
+          "@id": "_:N1ee8534d079445bea6c3f8810ac182b8"
         },
         {
-          "@id": "_:N8abc6b85889e4196a2aa118e99befc0e"
+          "@id": "_:N876d03fa48e848f39ef241f00a264612"
         },
         {
-          "@id": "_:Nd379f3a3acfb4ab6bd30a483498b494e"
+          "@id": "_:N48c37db9e7714b4cbc45c98e93e39ecd"
         },
         {
-          "@id": "_:Nbb0c3435dad74de9a3f9840b2e2c14f4"
+          "@id": "_:N5b82337b16d94728bd3a9f7f66450cc9"
         },
         {
-          "@id": "_:N91c47c300a4b42b5a2be0f0d1f106313"
+          "@id": "_:N5d012239309d4342afc3a3a132dbb6d3"
         },
         {
-          "@id": "_:N42f996bed5b6486bbf671e8d4408ed1e"
+          "@id": "_:Naff3b64f81d74df7ad5e83fe3d1d86a9"
         },
         {
-          "@id": "_:N11e2b8cb69e4463a94b0c048240d3ae0"
+          "@id": "_:N8929ae6630624b0884623db176e8602e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2b47bdef0a854b87b4e57cf8201722db"
+          "@id": "_:Neb5a569896fb42aa84240f499f0959ee"
         },
         {
-          "@id": "_:Nc5651e51097446c696d6063d5182f8b5"
+          "@id": "_:N7428ebf6d7e64720a24fe7aa3a9b3248"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0102"
-        },
-        {
-          "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_3170"
-        },
-        {
           "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:topic_0102"
         },
         {
           "@id": "edam:topic_3301"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
+        "pubmed:24512253",
+        "pmcid:PMC3934542",
         {
           "@id": "https://doi.org/10.1089/OMI.2013.0119"
         },
-        "pubmed:24512253",
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        "pmcid:PMC3934542"
+        }
       ],
       "sc:description": "Visualization and Analysis Tool of Bacterial Next Generation Sequencing (NGS) Data for Postgenomics Life Scientists.",
       "sc:featureList": {
@@ -109,9 +113,9 @@
       "sc:license": "Unlicense",
       "sc:name": "COV2HTML",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://mmonot.eu/COV2HTML/connexion.php"
@@ -119,7 +123,18 @@
       "sc:url": "https://mmonot.eu/COV2HTML"
     },
     {
-      "@id": "_:N6ba7778721be4c7ab174865f7ab07edc",
+      "@id": "_:N1ee8534d079445bea6c3f8810ac182b8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1975"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N876d03fa48e848f39ef241f00a264612",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -135,14 +150,14 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N8abc6b85889e4196a2aa118e99befc0e",
+      "@id": "_:N48c37db9e7714b4cbc45c98e93e39ecd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3005"
+          "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_2330"
@@ -151,7 +166,45 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nd379f3a3acfb4ab6bd30a483498b494e",
+      "@id": "_:N5b82337b16d94728bd3a9f7f66450cc9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N5d012239309d4342afc3a3a132dbb6d3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Naff3b64f81d74df7ad5e83fe3d1d86a9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3005"
+        }
+      ],
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N8929ae6630624b0884623db176e8602e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -162,18 +215,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nbb0c3435dad74de9a3f9840b2e2c14f4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1975"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N91c47c300a4b42b5a2be0f0d1f106313",
+      "@id": "_:Neb5a569896fb42aa84240f499f0959ee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -184,7 +226,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N42f996bed5b6486bbf671e8d4408ed1e",
+      "@id": "_:N7428ebf6d7e64720a24fe7aa3a9b3248",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -193,48 +235,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Data"
-    },
-    {
-      "@id": "_:N11e2b8cb69e4463a94b0c048240d3ae0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N2b47bdef0a854b87b4e57cf8201722db",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Nc5651e51097446c696d6063d5182f8b5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "https://doi.org/10.1089/OMI.2013.0119",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

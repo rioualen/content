@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,15 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,19 +52,19 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N93bc05fa09244094827dd5730a4f590e"
+          "@id": "_:N85fa06365f074ccd8df45d604f044007"
         },
         {
-          "@id": "_:Nc178020fae9e45efadcbe5a6afd5e85e"
+          "@id": "_:N30a0586b166c4eae8fb0d3fd3685e885"
         },
         {
-          "@id": "_:N829c2a5aa72847488b9dc43ae4826cb7"
+          "@id": "_:N70f2ecec521044159916c71b97cd7d11"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ncb4a508b227546d4a3ba179a070c31b7"
+        "@id": "_:Nf645a3d3c3f14d3fbb98a81b1a42e753"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
@@ -66,16 +74,16 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "Wellcome Trust",
-        "UK MRC",
         "UK BBSRC",
+        "UK MRC",
+        "Wellcome Trust",
         "EMBOSS Contributors"
       ],
       "sc:description": "Needleman-Wunsch rapid global alignment of two sequences.",
@@ -83,17 +91,17 @@
         "@id": "edam:operation_0491"
       },
       "sc:funder": [
+        "UK BBSRC",
         "UK MRC",
-        "Wellcome Trust",
-        "UK BBSRC"
+        "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "stretcher",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -104,33 +112,17 @@
           "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/stretcher.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/stretcher.html"
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/stretcher.html"
     },
     {
-      "@id": "_:N93bc05fa09244094827dd5730a4f590e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Nc178020fae9e45efadcbe5a6afd5e85e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:N829c2a5aa72847488b9dc43ae4826cb7",
+      "@id": "_:N85fa06365f074ccd8df45d604f044007",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0874"
@@ -138,20 +130,28 @@
       "sc:name": "Comparison matrix"
     },
     {
-      "@id": "_:Ncb4a508b227546d4a3ba179a070c31b7",
+      "@id": "_:N30a0586b166c4eae8fb0d3fd3685e885",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N70f2ecec521044159916c71b97cd7d11",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:Nf645a3d3c3f14d3fbb98a81b1a42e753",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1381"
       },
       "sc:name": "Sequence alignment (pair)"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

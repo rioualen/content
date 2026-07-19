@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-15-S7-S11",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/risa",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-3499-8262"
       },
       "bsc:input": {
-        "@id": "_:N594f2f28d51641dd9382f2ba1756c9c2"
+        "@id": "_:N31e0a330846c4a869f95d2157d660b91"
       },
       "bsc:output": {
-        "@id": "_:Nd0a0190729a74eb69aa04802a1d15e19"
+        "@id": "_:N591bad65cc56410498607ce9b5f98d33"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3361"
       },
       "sc:citation": [
-        "pmcid:PMC4015122",
         "pubmed:24564732",
+        "pmcid:PMC4015122",
         {
           "@id": "https://doi.org/10.1186/1471-2105-15-S7-S11"
         }
@@ -73,9 +69,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Risa",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/Risa.html"
@@ -84,23 +80,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Risa.html"
     },
     {
-      "@id": "_:N594f2f28d51641dd9382f2ba1756c9c2",
+      "@id": "_:N31e0a330846c4a869f95d2157d660b91",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_3162"
         },
         {
-          "@id": "edam:format_3162"
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nd0a0190729a74eb69aa04802a1d15e19",
+      "@id": "_:N591bad65cc56410498607ce9b5f98d33",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -113,6 +109,10 @@
     {
       "@id": "http://orcid.org/0000-0003-3499-8262",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-15-S7-S11",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

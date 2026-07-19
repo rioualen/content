@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,25 +40,25 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Simon Andrews",
       "bsc:input": {
-        "@id": "_:N1f600072238a48aaab5724031b94865d"
+        "@id": "_:Nc990d42316294554a4605aea21583e96"
       },
       "bsc:output": {
-        "@id": "_:Na30813b6d0c145148223312ff7ae1e49"
+        "@id": "_:N754ae893aeed4017ae2c78200afeef42"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": {
@@ -67,20 +67,20 @@
       "sc:description": "This tool aims to provide a QC report which can spot problems or biases which originate either in the sequencer or in the starting library material. It can be run in one of two modes. It can either run as a stand alone interactive application for the immediate analysis of small numbers of FastQ files, or it can be run in a non-interactive mode where it would be suitable for integrating into a larger analysis pipeline for the systematic processing of large numbers of files.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0236"
+        },
+        {
           "@id": "edam:operation_3218"
         },
         {
           "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_0236"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "FastQC",
       "sc:operatingSystem": [
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/csf-ngs/fastqc/tree/master/Help"
@@ -88,20 +88,20 @@
       "sc:url": "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
     },
     {
-      "@id": "_:N1f600072238a48aaab5724031b94865d",
+      "@id": "_:Nc990d42316294554a4605aea21583e96",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0848"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2572"
+        },
+        {
           "@id": "edam:format_1930"
         },
         {
           "@id": "edam:format_2182"
-        },
-        {
-          "@id": "edam:format_2572"
         },
         {
           "@id": "edam:format_2573"
@@ -110,7 +110,7 @@
       "sc:name": "Raw sequence"
     },
     {
-      "@id": "_:Na30813b6d0c145148223312ff7ae1e49",
+      "@id": "_:N754ae893aeed4017ae2c78200afeef42",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"

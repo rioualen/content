@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/coverageview",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ernesto Lowy",
       "bsc:input": [
         {
-          "@id": "_:Na4db35799bf049c987c352d068d546e9"
+          "@id": "_:N0bc1bfb72f3d452aafc22f8d292c7e6e"
         },
         {
-          "@id": "_:Nd9b3c392c5d445d2b2e8fdb0f9b838c8"
+          "@id": "_:N3b982850ecac4fe9b1eaa70c41119bb1"
         },
         {
-          "@id": "_:N1c68c32d393b4860ae9ce7f040970c8e"
+          "@id": "_:N41f2a8dfcfbb40e2bbe216ca9721d2f4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ndc200cd3c7e24c11b0c48f67387c64da"
+          "@id": "_:N23cf3111bb5b421586d0d9ee384016fb"
         },
         {
-          "@id": "_:N48c075accb4141b2963b6e1238b648c1"
+          "@id": "_:Nf35b3fe71fe6444b90584c8cbd76b417"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3511"
+          "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_0092"
@@ -74,15 +78,15 @@
           "@id": "edam:topic_3295"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_3511"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "This package provides a framework for the visualization of genome coverage profiles. It can be used for ChIP-seq experiments, but it can be also used for genome-wide nucleosome positioning experiments or other experiment types where it is important to have a framework in order to inspect how the coverage distributed across the genome.",
       "sc:featureList": [
@@ -96,8 +100,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "CoverageView",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -107,7 +111,64 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/CoverageView.html"
     },
     {
-      "@id": "_:Ndc200cd3c7e24c11b0c48f67387c64da",
+      "@id": "_:N0bc1bfb72f3d452aafc22f8d292c7e6e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3006"
+        }
+      ],
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N3b982850ecac4fe9b1eaa70c41119bb1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3006"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N41f2a8dfcfbb40e2bbe216ca9721d2f4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3006"
+        }
+      ],
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N23cf3111bb5b421586d0d9ee384016fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -118,7 +179,7 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N48c075accb4141b2963b6e1238b648c1",
+      "@id": "_:Nf35b3fe71fe6444b90584c8cbd76b417",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -127,67 +188,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Na4db35799bf049c987c352d068d546e9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3006"
-        },
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nd9b3c392c5d445d2b2e8fdb0f9b838c8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3006"
-        },
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N1c68c32d393b4860ae9ce7f040970c8e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3006"
-        },
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

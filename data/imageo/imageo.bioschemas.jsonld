@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-6173-7255",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/ImaGEO",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,21 +43,21 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nbc0e5a412849479086163222d3cc90af"
+          "@id": "_:N3260f444a39b419e9ab0e80c249009a4"
         },
         {
-          "@id": "_:Naeead6db7cb949a5a3d3fe763e9ce869"
+          "@id": "_:N4f73fd3db41b4990b196aede582076c6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb54ed139554e403c9f4b9f20d5c48800"
+          "@id": "_:N125341ba0c954fb3b93c8ce6c100f5ae"
         },
         {
-          "@id": "_:Nb19c5836852244469178f1d3934679ee"
+          "@id": "_:Na06cd041221d4b91a4875cd07307b86e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -86,10 +82,10 @@
           "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_0531"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_0531"
         },
         {
           "@id": "edam:operation_3435"
@@ -99,14 +95,22 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ImaGEO",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://imageo.genyo.es"
     },
     {
-      "@id": "_:Nbc0e5a412849479086163222d3cc90af",
+      "@id": "_:N3260f444a39b419e9ab0e80c249009a4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1147"
+      },
+      "sc:name": "GEO accession number"
+    },
+    {
+      "@id": "_:N4f73fd3db41b4990b196aede582076c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -116,32 +120,16 @@
           "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_1964"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_1964"
         }
       ],
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Naeead6db7cb949a5a3d3fe763e9ce869",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1147"
-      },
-      "sc:name": "GEO accession number"
-    },
-    {
-      "@id": "_:Nb54ed139554e403c9f4b9f20d5c48800",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Nb19c5836852244469178f1d3934679ee",
+      "@id": "_:N125341ba0c954fb3b93c8ce6c100f5ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -149,12 +137,24 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "https://orcid.org/0000-0002-5186-0735",
-      "@type": "sc:Person"
+      "@id": "_:Na06cd041221d4b91a4875cd07307b86e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:name": "Heat map"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/bty721",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6173-7255",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5186-0735",
+      "@type": "sc:Person"
     }
   ]
 }

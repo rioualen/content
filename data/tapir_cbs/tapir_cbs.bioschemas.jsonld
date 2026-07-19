@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,20 +44,20 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ole Lund",
       "bsc:input": {
-        "@id": "_:Nc4beac084dcc45618e9fcd283dbf4480"
+        "@id": "_:N69b01e76f1e5472bb995abcfc0d5670b"
       },
       "bsc:output": {
-        "@id": "_:Nf597ddfe56354ab3a1553f3a3904ae6c"
+        "@id": "_:Ned935c799aa343e88148ea0efe2a348a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "Laurent Gautier",
       "sc:citation": [
-        "pmcid:PMC3877093",
         "pubmed:24391826",
+        "pmcid:PMC3877093",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0083784"
         }
@@ -69,8 +69,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Tapir",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "CBS",
@@ -81,7 +81,23 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/webtools/tapir/"
     },
     {
-      "@id": "_:Nf597ddfe56354ab3a1553f3a3904ae6c",
+      "@id": "_:N69b01e76f1e5472bb995abcfc0d5670b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Ned935c799aa343e88148ea0efe2a348a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -89,22 +105,6 @@
       "sc:encodingFormat": {
         "@id": "edam:format_1212"
       },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nc4beac084dcc45618e9fcd283dbf4480",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
       "sc:name": "Sequence"
     }
   ]

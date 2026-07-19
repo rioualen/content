@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2020.02.28.969469",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/stig",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6eaea46004224925b0718f69aa399695"
+        "@id": "_:N7211a419b0e648bb9f544e3287c02a0b"
       },
       "bsc:output": [
         {
-          "@id": "_:N6826e2a917934d938761af1dad3f780d"
+          "@id": "_:N189089f60cd644f7a4773d1a6ea51627"
         },
         {
-          "@id": "_:Nb7debf8933744785a659d84137769344"
+          "@id": "_:Nb7f46133c9cb4f3abbb3495a90cc06ce"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2830"
@@ -65,8 +69,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "STIG",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -75,29 +79,7 @@
       "sc:url": "https://github.com/Benjamin-Vincent-Lab/stig"
     },
     {
-      "@id": "_:N6826e2a917934d938761af1dad3f780d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nb7debf8933744785a659d84137769344",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N6eaea46004224925b0718f69aa399695",
+      "@id": "_:N7211a419b0e648bb9f544e3287c02a0b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -108,8 +90,26 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1101/2020.02.28.969469",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N189089f60cd644f7a4773d1a6ea51627",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nb7f46133c9cb4f3abbb3495a90cc06ce",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Sequence report"
     }
   ]
 }

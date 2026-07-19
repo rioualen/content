@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3389/fgene.2020.00578",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/impute.me",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7b4b6170e6d84317817b37cc7a749e99"
+        "@id": "_:N26cf72c6915142a781a1de6b54d84ba2"
       },
       "bsc:output": {
-        "@id": "_:Nc0a47c66533b403d9a2096c59f8eb441"
+        "@id": "_:Nb70de2654e0f4fe5b301d1833c1e40d3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0625"
-        },
-        {
-          "@id": "edam:topic_3577"
-        },
-        {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_2885"
         },
         {
           "@id": "edam:topic_3517"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_0625"
+        },
+        {
+          "@id": "edam:topic_0634"
+        },
+        {
+          "@id": "edam:topic_3577"
         }
       ],
       "sc:citation": [
@@ -80,13 +76,13 @@
       "sc:description": "An open source, non-profit tool for using data from DTC genetic testing to calculate and interpret polygenic risk scores.\n\nThis is the code behind the www.impute.me site. It contains algorithms for imputing personal genomes, as well as a range of custom-made analysis for genetics-based disease and health.\n\nNon-profit web-based engine that will analyze common direct-to-consumer genetic data such as 23andme and ancestry-com. Provides cutting edge- trait and disease genetic scores, based on advanced polygenic risk scoring.\n\nAdvanced analysis of your DNA: Beyond one SNP at the time",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3197"
+        },
+        {
           "@id": "edam:operation_3196"
         },
         {
           "@id": "edam:operation_3557"
-        },
-        {
-          "@id": "edam:operation_3197"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -95,36 +91,40 @@
       "sc:url": "http://Impute.me"
     },
     {
-      "@id": "_:Nc0a47c66533b403d9a2096c59f8eb441",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1668"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_3812"
-        }
-      ],
-      "sc:name": "Z-value"
-    },
-    {
-      "@id": "_:N7b4b6170e6d84317817b37cc7a749e99",
+      "@id": "_:N26cf72c6915142a781a1de6b54d84ba2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1964"
+          "@id": "edam:format_3016"
         },
         {
-          "@id": "edam:format_3016"
+          "@id": "edam:format_1964"
         }
       ],
       "sc:name": "Raw microarray data"
+    },
+    {
+      "@id": "_:Nb70de2654e0f4fe5b301d1833c1e40d3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1668"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3812"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Z-value"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fgene.2020.00578",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

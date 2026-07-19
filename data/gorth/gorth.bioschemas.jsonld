@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,49 +36,53 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw199",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gorth",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nffc4fac1a67e4a77a66bf4161f604266"
+        "@id": "_:N9324ae8e0672479abf1e8bb27768c1b6"
       },
       "bsc:output": {
-        "@id": "_:N392e8e60226b4eec8731903f11bfce74"
+        "@id": "_:N565f1ee516ee4ba9b18e27d5da070ec9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3299"
+          "@id": "edam:topic_3345"
         },
         {
-          "@id": "edam:topic_3345"
+          "@id": "edam:topic_3299"
         }
       ],
       "sc:citation": [
         "pubmed:27098042",
+        "pmcid:PMC4987867",
         {
           "@id": "https://doi.org/10.1093/nar/gkw199"
-        },
-        "pmcid:PMC4987867"
+        }
       ],
       "sc:description": "A tool of the g:Profiler web server. It maps a list of genes of interest to homologous genes in another related target organism.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0224"
-        },
         {
           "@id": "edam:operation_3663"
         },
         {
           "@id": "edam:operation_3282"
+        },
+        {
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Freeware",
       "sc:name": "gOrth",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-EE",
@@ -94,7 +98,7 @@
       "sc:url": "http://biit.cs.ut.ee/gprofiler/gorth.cgi"
     },
     {
-      "@id": "_:Nffc4fac1a67e4a77a66bf4161f604266",
+      "@id": "_:N9324ae8e0672479abf1e8bb27768c1b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -105,7 +109,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N392e8e60226b4eec8731903f11bfce74",
+      "@id": "_:N565f1ee516ee4ba9b18e27d5da070ec9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -114,10 +118,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Identifier"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw199",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

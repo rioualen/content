@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-0581-149X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.25375/uct.14405990.v2",
       "@type": "sc:CreativeWork"
     },
@@ -50,22 +46,22 @@
         "@id": "https://orcid.org/0000-0002-0581-149X"
       },
       "bsc:input": {
-        "@id": "_:Nf74d3524a77b4dfbb1fb63a4da3a42be"
+        "@id": "_:N3e3b7f35f46c4ffeb3b1ab358b2468ee"
       },
       "bsc:output": {
-        "@id": "_:N9a61f4be452b4a2fa9c3066416ab95fd"
+        "@id": "_:N3daddd008c474d35b9c62b5ebe067d40"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0654"
         },
         {
           "@id": "edam:topic_3517"
         },
         {
-          "@id": "edam:topic_0654"
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": {
@@ -85,8 +81,8 @@
       "sc:license": "MIT",
       "sc:name": "H3AGWAS",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/h3abionet/h3agwas/blob/master/README.md"
@@ -95,15 +91,7 @@
       "sc:url": "https://github.com/h3abionet/h3agwas"
     },
     {
-      "@id": "_:N9a61f4be452b4a2fa9c3066416ab95fd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0920"
-      },
-      "sc:name": "Genotype/phenotype report"
-    },
-    {
-      "@id": "_:Nf74d3524a77b4dfbb1fb63a4da3a42be",
+      "@id": "_:N3e3b7f35f46c4ffeb3b1ab358b2468ee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -112,6 +100,18 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N3daddd008c474d35b9c62b5ebe067d40",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0920"
+      },
+      "sc:name": "Genotype/phenotype report"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0581-149X",
+      "@type": "sc:Person"
     }
   ]
 }

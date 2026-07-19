@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkm825",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/unitrap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9281ddeec9bf4314ba5e327730083a88"
+        "@id": "_:N80e6af8e93ec47cc8a0618b27ce57ef4"
       },
       "bsc:output": {
-        "@id": "_:N8f9eb1f4411c433e9f37e8541e74c1b4"
+        "@id": "_:Nb91cb68f07e44809bc586c77bd443958"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0114"
       },
       "sc:citation": [
+        "pubmed:17942430",
+        "pmcid:PMC2238955",
         {
           "@id": "https://doi.org/10.1093/nar/gkm825"
-        },
-        "pmcid:PMC2238955",
-        "pubmed:17942430"
+        }
       ],
       "sc:description": "Tools for the biologist enabling optimized use of gene trap clones.",
       "sc:featureList": {
@@ -62,9 +66,9 @@
       },
       "sc:name": "UniTrap gene trap clones",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://unitrap.crg.es/about.php"
@@ -72,7 +76,15 @@
       "sc:url": "http://unitrap.crg.es/about.php"
     },
     {
-      "@id": "_:N8f9eb1f4411c433e9f37e8541e74c1b4",
+      "@id": "_:N80e6af8e93ec47cc8a0618b27ce57ef4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1033"
+      },
+      "sc:name": "Ensembl gene ID"
+    },
+    {
+      "@id": "_:Nb91cb68f07e44809bc586c77bd443958",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -81,18 +93,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N9281ddeec9bf4314ba5e327730083a88",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1033"
-      },
-      "sc:name": "Ensembl gene ID"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkm825",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

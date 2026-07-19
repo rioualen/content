@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/ct300494q",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mddmd",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Institute for Research in Biomedicine Barcelona",
       "bsc:input": {
-        "@id": "_:N9ded7f0ae5544928a53735a07ec0820a"
+        "@id": "_:N4a4368573db843299659729cf8b6b74e"
       },
       "bsc:output": {
-        "@id": "_:N3a784a92e7174d8fa11f0feb2865c304"
+        "@id": "_:Ncdd5c9e1e9934c9c87e78e63aa9c3249"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0176"
       },
       "sc:citation": [
+        "pubmed:26605625",
         {
           "@id": "https://doi.org/10.1021/ct300494q"
-        },
-        "pubmed:26605625"
+        }
       ],
       "sc:description": "A web portal for determining pathways for conformational transitions in macromolecules based on the use of discrete molecular dynamics and biasing techniques based on a combination of essential dynamics and Maxwell-Demon sampling techniques.",
       "sc:featureList": {
@@ -65,8 +69,8 @@
       "sc:name": "MDdMD",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://mmb.irbbarcelona.org/MDdMD/about.php"
@@ -74,18 +78,7 @@
       "sc:url": "http://mmb.irbbarcelona.org/MDdMD"
     },
     {
-      "@id": "_:N3a784a92e7174d8fa11f0feb2865c304",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:N9ded7f0ae5544928a53735a07ec0820a",
+      "@id": "_:N4a4368573db843299659729cf8b6b74e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -96,8 +89,15 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "https://doi.org/10.1021/ct300494q",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncdd5c9e1e9934c9c87e78e63aa9c3249",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Structure"
     }
   ]
 }

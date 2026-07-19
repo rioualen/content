@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-019-2877-3",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/GenePy",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Command-line tool"
+        "Command-line tool",
+        "Script"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3676"
         },
         {
-          "@id": "edam:topic_3676"
+          "@id": "edam:topic_0199"
         },
         {
           "@id": "edam:topic_0625"
@@ -68,10 +64,10 @@
       "sc:description": "Score for estimating gene pathogenicity in individuals using next-generation sequencing data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3196"
         },
         {
-          "@id": "edam:operation_3196"
+          "@id": "edam:operation_3435"
         },
         {
           "@id": "edam:operation_3227"
@@ -85,6 +81,10 @@
         "@id": "https://github.com/UoS-HGIG/GenePy/blob/master/README.md"
       },
       "sc:url": "https://github.com/UoS-HGIG/GenePy"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-019-2877-3",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

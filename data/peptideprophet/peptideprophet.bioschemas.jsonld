@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/ac025747h",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/peptideprophet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N634537c832474c56b287d7c02828856b"
+        "@id": "_:Nf6071c1684c0454eabd60dd9bf283928"
       },
       "bsc:output": {
-        "@id": "_:Nb58480f04048439d98817d47193ae6c9"
+        "@id": "_:N7869ed33bc1b4685a86bea0674301388"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -73,20 +69,20 @@
           "@id": "edam:operation_3631"
         },
         {
+          "@id": "edam:operation_3664"
+        },
+        {
           "@id": "edam:operation_3649"
         },
         {
           "@id": "edam:operation_3675"
-        },
-        {
-          "@id": "edam:operation_3664"
         }
       ],
       "sc:name": "PeptideProphet",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://tools.proteomecenter.org/wiki/index.php?title=Software:PeptideProphet"
@@ -94,7 +90,7 @@
       "sc:url": "http://peptideprophet.sourceforge.net/index.html"
     },
     {
-      "@id": "_:Nb58480f04048439d98817d47193ae6c9",
+      "@id": "_:Nf6071c1684c0454eabd60dd9bf283928",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -110,20 +106,24 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N634537c832474c56b287d7c02828856b",
+      "@id": "_:N7869ed33bc1b4685a86bea0674301388",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3655"
+          "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_2331"
+          "@id": "edam:format_3655"
         }
       ],
       "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "https://doi.org/10.1021/ac025747h",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

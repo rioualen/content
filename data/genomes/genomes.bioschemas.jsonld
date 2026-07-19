@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genomes",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chris Stubben",
       "bsc:input": {
-        "@id": "_:N4fc8e462ddd14686b1d3f6e811df0b19"
+        "@id": "_:N5f2238bd8cf64a9589898747469076be"
       },
       "bsc:output": [
         {
-          "@id": "_:N2036d2518e2648c79d6f5a778f66cc0d"
+          "@id": "_:Nf07529077f6c487da5466abb3bf319e6"
         },
         {
-          "@id": "_:N92b051b6805545dfa36c3999ca27a41f"
+          "@id": "_:N84af111691fd4853896aff791fecb6da"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -59,11 +63,11 @@
         "@id": "edam:topic_0622"
       },
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "Download genome and assembly reports from NCBI.",
       "sc:featureList": {
@@ -72,9 +76,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "genomes",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/genomes.html"
@@ -83,29 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/genomes.html"
     },
     {
-      "@id": "_:N2036d2518e2648c79d6f5a778f66cc0d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2711"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Genome report"
-    },
-    {
-      "@id": "_:N92b051b6805545dfa36c3999ca27a41f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3181"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence assembly report"
-    },
-    {
-      "@id": "_:N4fc8e462ddd14686b1d3f6e811df0b19",
+      "@id": "_:N5f2238bd8cf64a9589898747469076be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1050"
@@ -116,8 +98,26 @@
       "sc:name": "File name"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf07529077f6c487da5466abb3bf319e6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2711"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Genome report"
+    },
+    {
+      "@id": "_:N84af111691fd4853896aff791fecb6da",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3181"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence assembly report"
     }
   ]
 }

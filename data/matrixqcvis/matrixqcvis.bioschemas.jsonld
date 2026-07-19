@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2021.06.17.448827",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/matrixqcvis",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ndad36f8a5f70417f9e35ff07c5d86471"
+        "@id": "_:N6238ca7db2174981b90a8a29e2ad78c5"
       },
       "bsc:output": [
         {
-          "@id": "_:N48b8cc33d44a4d1fbf581a0adc355ee4"
+          "@id": "_:Naa0c1865399b4c0bb0d23fb0859b35d9"
         },
         {
-          "@id": "_:N5048878fd231473b8e36bd17c1130599"
+          "@id": "_:Ncdba338ac3574cd999b503938d48e21c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -62,10 +66,10 @@
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3308"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": {
@@ -74,22 +78,22 @@
       "sc:description": "shiny-based interactive data quality exploration for omics data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
-        },
-        {
           "@id": "edam:operation_2495"
         },
         {
           "@id": "edam:operation_3799"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "MatrixQCvis",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -102,7 +106,7 @@
       "sc:url": "https://www.bioconductor.org/packages/release/bioc/html/MatrixQCvis.html"
     },
     {
-      "@id": "_:Ndad36f8a5f70417f9e35ff07c5d86471",
+      "@id": "_:N6238ca7db2174981b90a8a29e2ad78c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -113,18 +117,7 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "_:N48b8cc33d44a4d1fbf581a0adc355ee4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3914"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Quality control report"
-    },
-    {
-      "@id": "_:N5048878fd231473b8e36bd17c1130599",
+      "@id": "_:Naa0c1865399b4c0bb0d23fb0859b35d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -135,8 +128,15 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.1101/2021.06.17.448827",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncdba338ac3574cd999b503938d48e21c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3914"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Quality control report"
     }
   ]
 }

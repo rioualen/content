@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/sysbio/syab033",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/opentree",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Emily Jane Mctavish",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
+        "Library",
         "Web API",
-        "Library"
+        "Web application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3293"
-        },
         {
           "@id": "edam:topic_3050"
         },
         {
-          "@id": "edam:topic_0194"
+          "@id": "edam:topic_3944"
         },
         {
-          "@id": "edam:topic_3944"
+          "@id": "edam:topic_3293"
+        },
+        {
+          "@id": "edam:topic_0194"
         },
         {
           "@id": "edam:topic_0637"
@@ -75,13 +79,13 @@
           "@id": "edam:operation_3907"
         },
         {
-          "@id": "edam:operation_0567"
+          "@id": "edam:operation_0323"
         },
         {
           "@id": "edam:operation_0326"
         },
         {
-          "@id": "edam:operation_0323"
+          "@id": "edam:operation_0567"
         },
         {
           "@id": "edam:operation_3460"
@@ -91,20 +95,16 @@
       "sc:name": "opentree",
       "sc:softwareHelp": [
         {
+          "@id": "https://github.com/OpenTreeOfLife/germinator/wiki/Open-Tree-of-Life-Web-APIs"
+        },
+        {
           "@id": "https://github.com/OpenTreeOfLife/germinator/wiki/Open-Tree-FAQ"
         },
         {
           "@id": "https://opentree.readthedocs.io"
-        },
-        {
-          "@id": "https://github.com/OpenTreeOfLife/germinator/wiki/Open-Tree-of-Life-Web-APIs"
         }
       ],
       "sc:url": "https://github.com/OpenTreeOfLife/python-opentree"
-    },
-    {
-      "@id": "https://doi.org/10.1093/sysbio/syab033",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

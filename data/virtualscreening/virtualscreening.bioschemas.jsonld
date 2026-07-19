@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.5281/zenodo.263965",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/virtualscreening",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pau Andrio",
       "bsc:input": [
         {
-          "@id": "_:N63d5372bdce941a8a7e4b294461f24d9"
+          "@id": "_:N92115d4b83474fa69b8e91adfbe69e60"
         },
         {
-          "@id": "_:N341239c568cb4e148776df28bbeb3c21"
+          "@id": "_:Nae22fcdfc1ce41e6a7081cfdc23141be"
         }
       ],
       "bsc:output": {
-        "@id": "_:N12f12c30606a4f75b2a24dd6314afab1"
+        "@id": "_:N795c4270232a495ca7872e560568f6a2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3307"
-        },
         {
           "@id": "edam:topic_3344"
         },
         {
           "@id": "edam:topic_3314"
+        },
+        {
+          "@id": "edam:topic_3307"
         }
       ],
       "sc:citation": {
@@ -69,10 +73,10 @@
       "sc:description": "VirtualScreening is a Python package inheriting from pymdsetup to perform virtual screening on a set of predefined targets.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2425"
+          "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_2425"
         },
         {
           "@id": "edam:operation_2423"
@@ -83,8 +87,8 @@
       "sc:name": "BioExcel Virtual Screening pipeline",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/bioexcel/virtualscreening/blob/master/README.md"
@@ -93,7 +97,7 @@
       "sc:url": "https://github.com/bioexcel/virtualscreening"
     },
     {
-      "@id": "_:N12f12c30606a4f75b2a24dd6314afab1",
+      "@id": "_:N92115d4b83474fa69b8e91adfbe69e60",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -104,7 +108,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N63d5372bdce941a8a7e4b294461f24d9",
+      "@id": "_:Nae22fcdfc1ce41e6a7081cfdc23141be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -115,7 +119,7 @@
       "sc:name": "Structure"
     },
     {
-      "@id": "_:N341239c568cb4e148776df28bbeb3c21",
+      "@id": "_:N795c4270232a495ca7872e560568f6a2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -124,10 +128,6 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
-    },
-    {
-      "@id": "https://doi.org/10.5281/zenodo.263965",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

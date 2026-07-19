@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,22 +44,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Timothy Grant",
       "bsc:input": {
-        "@id": "_:N35bb05656303445fa1e3bf1a64e76271"
+        "@id": "_:N84670ec2f3e1454dab53fd360aa00714"
       },
       "bsc:output": {
-        "@id": "_:N62d1ebe9153b45aba33b629eb42e45e2"
+        "@id": "_:Nd3686143153b443d9756ce093ba5a71b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0081"
-        },
         {
           "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_0611"
+        },
+        {
+          "@id": "edam:topic_0081"
         },
         {
           "@id": "edam:topic_0769"
@@ -71,6 +71,9 @@
       "sc:description": "cisTEM (computational imaging system for transmission electron microscopy) is a complete software solution for processing cryo-electron microscopy images of macromolecular complexes and obtain high-resolution 3D reconstructions from them.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3096"
+        },
+        {
           "@id": "edam:operation_3552"
         },
         {
@@ -78,9 +81,6 @@
         },
         {
           "@id": "edam:operation_0570"
-        },
-        {
-          "@id": "edam:operation_3096"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -92,18 +92,7 @@
       "sc:url": "https://cistem.org/"
     },
     {
-      "@id": "_:N62d1ebe9153b45aba33b629eb42e45e2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1710"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Structure image"
-    },
-    {
-      "@id": "_:N35bb05656303445fa1e3bf1a64e76271",
+      "@id": "_:N84670ec2f3e1454dab53fd360aa00714",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
@@ -112,6 +101,17 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:Nd3686143153b443d9756ce093ba5a71b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1710"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Structure image"
     }
   ]
 }

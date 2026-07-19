@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1128/SPECTRUM.05059-22",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/misurv",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne58212eaf9df406393d86b4d05033e79"
+          "@id": "_:Nc1be2dbfebe0466799ecb6d5045d2f20"
         },
         {
-          "@id": "_:Ncea20cad47a444b99019f880c7f354e3"
+          "@id": "_:N51d6d9f100c54b88b9d24dfe12145b1b"
         },
         {
-          "@id": "_:N640135de23084d73a46b6813a7bf3d88"
+          "@id": "_:N287ed181b4184618bb51d65285ae8ac7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ncc29d73da40c43f8b4ea2dc59d6f187f"
+          "@id": "_:N1a3db699ebcb4a1f8681d63f3f6ae3e8"
         },
         {
-          "@id": "_:N5683d93a170d42c985a076b3c0335420"
+          "@id": "_:Nae66bdd79940499f94b4c7a5cdeacc33"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
         "Web application"
@@ -67,7 +71,7 @@
           "@id": "edam:topic_3316"
         },
         {
-          "@id": "edam:topic_3379"
+          "@id": "edam:topic_3063"
         },
         {
           "@id": "edam:topic_3697"
@@ -76,12 +80,12 @@
           "@id": "edam:topic_0634"
         },
         {
-          "@id": "edam:topic_3063"
+          "@id": "edam:topic_3379"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC10269532",
         "pubmed:37039671",
+        "pmcid:PMC10269532",
         {
           "@id": "https://doi.org/10.1128/SPECTRUM.05059-22"
         }
@@ -89,42 +93,26 @@
       "sc:description": "Integrative web cloud platform for user-friendly microbiome data analysis with survival responses.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3797"
-        },
-        {
           "@id": "edam:operation_3431"
         },
         {
           "@id": "edam:operation_3503"
+        },
+        {
+          "@id": "edam:operation_3797"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "MiSurv",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://misurv.micloud.kr"
     },
     {
-      "@id": "_:Ne58212eaf9df406393d86b4d05033e79",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:Ncea20cad47a444b99019f880c7f354e3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2337"
-      },
-      "sc:name": "Resource metadata"
-    },
-    {
-      "@id": "_:N640135de23084d73a46b6813a7bf3d88",
+      "@id": "_:Nc1be2dbfebe0466799ecb6d5045d2f20",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -132,7 +120,23 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:Ncc29d73da40c43f8b4ea2dc59d6f187f",
+      "@id": "_:N51d6d9f100c54b88b9d24dfe12145b1b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2337"
+      },
+      "sc:name": "Resource metadata"
+    },
+    {
+      "@id": "_:N287ed181b4184618bb51d65285ae8ac7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N1a3db699ebcb4a1f8681d63f3f6ae3e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3743"
@@ -140,16 +144,12 @@
       "sc:name": "Ordination plot"
     },
     {
-      "@id": "_:N5683d93a170d42c985a076b3c0335420",
+      "@id": "_:Nae66bdd79940499f94b4c7a5cdeacc33",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3914"
       },
       "sc:name": "Quality control report"
-    },
-    {
-      "@id": "https://doi.org/10.1128/SPECTRUM.05059-22",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

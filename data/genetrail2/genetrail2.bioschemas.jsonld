@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv770",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genetrail2",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Prof. Dr. Hans-Peter Lenhof",
       "bsc:input": [
         {
-          "@id": "_:Ne6383d0434104299bf6182b6b0680f9a"
+          "@id": "_:N15d670d8c2cf4444a17face8df16357d"
         },
         {
-          "@id": "_:Ndcdf1ff32a9943aab15745aace064b42"
+          "@id": "_:N0ad22d9009f748d6a34c397a01793cde"
         }
       ],
       "bsc:output": {
-        "@id": "_:N00e55deafc99428e86c5e8a4fc51f7ce"
+        "@id": "_:N6580cc752eb24b8ab2ee7e48c5e08a22"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web API",
         "Web application"
@@ -71,9 +75,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "GeneTrail2",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "lumc.nl",
       "sc:softwareHelp": {
@@ -83,7 +87,15 @@
       "sc:url": "http://genetrail2.bioinf.uni-sb.de/"
     },
     {
-      "@id": "_:Ne6383d0434104299bf6182b6b0680f9a",
+      "@id": "_:N15d670d8c2cf4444a17face8df16357d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N0ad22d9009f748d6a34c397a01793cde",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -94,15 +106,7 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Ndcdf1ff32a9943aab15745aace064b42",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N00e55deafc99428e86c5e8a4fc51f7ce",
+      "@id": "_:N6580cc752eb24b8ab2ee7e48c5e08a22",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -111,10 +115,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv770",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

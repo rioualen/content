@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gku955",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/open_tg-gates",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Hiroshi Yamada",
       "bsc:input": [
         {
-          "@id": "_:Nb6d728106a3c40a691b241447e759139"
+          "@id": "_:N553d38bafb0e4c44a3e9904defd7b025"
         },
         {
-          "@id": "_:N1d64deecf3ba43f5b3eee127d406553d"
+          "@id": "_:N6971079756a14f43a103809a349081e8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7d0b45b49c7648bf892d7ea3cc610af0"
+          "@id": "_:N0da26f7b24494dc19d6ec329b984858e"
         },
         {
-          "@id": "_:N89c40df14cba4f6aa32e440605fadd18"
+          "@id": "_:N80715af942bb430a83f739f5a62067e3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
-        "Database portal"
+        "Database portal",
+        "Web API"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
@@ -80,8 +76,8 @@
       },
       "sc:name": "Open TG-GATEs API",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -90,7 +86,15 @@
       "sc:url": "http://toxico.nibiohn.go.jp/english/"
     },
     {
-      "@id": "_:Nb6d728106a3c40a691b241447e759139",
+      "@id": "_:N553d38bafb0e4c44a3e9904defd7b025",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N6971079756a14f43a103809a349081e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -98,7 +102,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N1d64deecf3ba43f5b3eee127d406553d",
+      "@id": "_:N0da26f7b24494dc19d6ec329b984858e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -106,7 +110,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N7d0b45b49c7648bf892d7ea3cc610af0",
+      "@id": "_:N80715af942bb430a83f739f5a62067e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -114,12 +118,8 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N89c40df14cba4f6aa32e440605fadd18",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:name": "Data"
+      "@id": "https://doi.org/10.1093/nar/gku955",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,78 +36,80 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-7575-2085",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku1283",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/proteoformer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "https://orcid.org/0000-0001-9441-9539"
+          "@id": "https://orcid.org/0000-0002-7575-2085"
         },
         {
-          "@id": "https://orcid.org/0000-0002-7575-2085"
+          "@id": "https://orcid.org/0000-0001-9441-9539"
         }
       ],
       "bsc:input": {
-        "@id": "_:N3b75d7b63f1e476bb5bc422166c2f547"
+        "@id": "_:Ned42e92ccec444a49517aaec651d1165"
       },
       "bsc:output": [
         {
-          "@id": "_:N6205d984e9594f04b4cad33f6b807a0f"
+          "@id": "_:N7e74e66166b24cfb8df19b398c7d3909"
         },
         {
-          "@id": "_:N788c780273804965838f558b4d6d9baa"
+          "@id": "_:N7eb06859a17344c0855999c1e6511566"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3308"
-        },
         {
           "@id": "edam:topic_3120"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:author": [
-        "Elvis Ndah",
+        {
+          "@id": "https://orcid.org/0000-0001-9441-9539"
+        },
         {
           "@id": "https://orcid.org/0000-0003-1677-9533"
         },
-        {
-          "@id": "https://orcid.org/0000-0001-9441-9539"
-        }
+        "Elvis Ndah"
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gku1283"
-        },
+        "pubmed:31040227",
+        "pmcid:PMC6692777",
         {
           "@id": "https://doi.org/10.1074/mcp.ra118.001218"
         },
         "pubmed:25510491",
         "pmcid:PMC4357689",
-        "pmcid:PMC6692777",
-        "pubmed:31040227"
+        {
+          "@id": "https://doi.org/10.1093/nar/gku1283"
+        }
       ],
       "sc:contributor": [
-        "Sandra Steyaert",
-        "Alexander Koch",
         {
           "@id": "https://orcid.org/0000-0002-7575-2085"
-        }
+        },
+        "Alexander Koch",
+        "Sandra Steyaert"
       ],
       "sc:description": "Proteogenomic pipeline integrating ribosome profiling (RIBO-seq) data in the search for new proteoforms in proteomic validation data. The pipeline does a genome-wide construction of candidate translation products based on ribosome occupancy.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3661"
-        },
-        {
-          "@id": "edam:operation_3563"
-        },
-        {
-          "@id": "edam:operation_3225"
+          "@id": "edam:operation_3182"
         },
         {
           "@id": "edam:operation_0362"
@@ -116,24 +118,30 @@
           "@id": "edam:operation_2284"
         },
         {
-          "@id": "edam:operation_3182"
+          "@id": "edam:operation_2423"
         },
         {
-          "@id": "edam:operation_2423"
+          "@id": "edam:operation_3800"
+        },
+        {
+          "@id": "edam:operation_3563"
         },
         {
           "@id": "edam:operation_3198"
         },
         {
-          "@id": "edam:operation_3800"
+          "@id": "edam:operation_3661"
+        },
+        {
+          "@id": "edam:operation_3225"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "PROTEOFORMER",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
@@ -144,35 +152,13 @@
         }
       ],
       "sc:softwareVersion": [
-        "2.0",
-        "1.0"
+        "1.0",
+        "2.0"
       ],
       "sc:url": "https://github.com/Biobix/proteoformer"
     },
     {
-      "@id": "_:N6205d984e9594f04b4cad33f6b807a0f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "_:N788c780273804965838f558b4d6d9baa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3621"
-      },
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N3b75d7b63f1e476bb5bc422166c2f547",
+      "@id": "_:Ned42e92ccec444a49517aaec651d1165",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3496"
@@ -183,24 +169,38 @@
       "sc:name": "RNA sequence (raw)"
     },
     {
-      "@id": "https://orcid.org/0000-0001-9441-9539",
-      "@type": "sc:Person"
+      "@id": "_:N7e74e66166b24cfb8df19b398c7d3909",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3621"
+      },
+      "sc:name": "Database search results"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gku1283",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7eb06859a17344c0855999c1e6511566",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence record"
     },
     {
       "@id": "https://orcid.org/0000-0003-1677-9533",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1074/mcp.ra118.001218",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0001-9441-9539",
+      "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0002-7575-2085",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1074/mcp.ra118.001218",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

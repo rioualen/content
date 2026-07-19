@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/011700",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cellosaurus",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Neb2aea745b8d4bb98181de882c975175"
+          "@id": "_:N62be05d8773b4b1bbf8364f956241fc4"
         },
         {
-          "@id": "_:N80b907c07eab4002b44bc0f98c75b5f2"
+          "@id": "_:N54bee6784c88476ca5e3f83662bfb425"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7ef85587509446b1a2c26c1dfc51e6e7"
+        "@id": "_:Nc7036c4ad5224bd8872a84bdeab8e7fd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_3067"
+        },
+        {
+          "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_3067"
+          "@id": "edam:topic_0634"
         },
         {
           "@id": "edam:topic_2259"
-        },
-        {
-          "@id": "edam:topic_2229"
         }
       ],
       "sc:citation": {
@@ -78,8 +82,8 @@
       "sc:name": "Cellosaurus",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
       "sc:softwareHelp": {
@@ -88,23 +92,7 @@
       "sc:url": "http://web.expasy.org/cellosaurus/"
     },
     {
-      "@id": "_:N7ef85587509446b1a2c26c1dfc51e6e7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0963"
-      },
-      "sc:name": "Cell line report"
-    },
-    {
-      "@id": "_:Neb2aea745b8d4bb98181de882c975175",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3671"
-      },
-      "sc:name": "Text"
-    },
-    {
-      "@id": "_:N80b907c07eab4002b44bc0f98c75b5f2",
+      "@id": "_:N62be05d8773b4b1bbf8364f956241fc4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -112,8 +100,20 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "https://doi.org/10.1101/011700",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N54bee6784c88476ca5e3f83662bfb425",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3671"
+      },
+      "sc:name": "Text"
+    },
+    {
+      "@id": "_:Nc7036c4ad5224bd8872a84bdeab8e7fd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0963"
+      },
+      "sc:name": "Cell line report"
     }
   ]
 }

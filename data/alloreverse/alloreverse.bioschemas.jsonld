@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,60 +36,64 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkad279",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/alloreverse",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3296b23821184c42bad5ee8ab85d7595"
+        "@id": "_:Nea17806f7ba149f8bf0a316b513fcc37"
       },
       "bsc:output": [
         {
-          "@id": "_:N5a6931f9fd7f49cb917790c01f3e793c"
+          "@id": "_:N341737ffee47498282f329a7b5b3c858"
         },
         {
-          "@id": "_:Na3a560ddd8474caf99c584122a2ab382"
+          "@id": "_:N14c1093113f04327b780e418398ac95c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0154"
-        },
         {
           "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_0209"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
+        "pubmed:37070199",
+        "pmcid:PMC10320067",
         {
           "@id": "https://doi.org/10.1093/nar/gkad279"
-        },
-        "pubmed:37070199",
-        "pmcid:PMC10320067"
+        }
       ],
       "sc:description": "Web server for multiscale analysis of multiple allosteric regulations.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0321"
-        },
-        {
-          "@id": "edam:operation_4009"
+          "@id": "edam:operation_3928"
         },
         {
           "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3928"
+          "@id": "edam:operation_0321"
+        },
+        {
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "AlloReverse",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://mdl.shsmu.edu.cn/AlloReverse/module/help/help.jsp"
@@ -97,23 +101,7 @@
       "sc:url": "https://mdl.shsmu.edu.cn/AlloReverse/"
     },
     {
-      "@id": "_:N5a6931f9fd7f49cb917790c01f3e793c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0897"
-      },
-      "sc:name": "Protein property"
-    },
-    {
-      "@id": "_:Na3a560ddd8474caf99c584122a2ab382",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2984"
-      },
-      "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "_:N3296b23821184c42bad5ee8ab85d7595",
+      "@id": "_:Nea17806f7ba149f8bf0a316b513fcc37",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -124,8 +112,20 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkad279",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N341737ffee47498282f329a7b5b3c858",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2984"
+      },
+      "sc:name": "Pathway or network report"
+    },
+    {
+      "@id": "_:N14c1093113f04327b780e418398ac95c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0897"
+      },
+      "sc:name": "Protein property"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,39 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0692-z",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/lebibipqp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jean-Pierre Flandrois",
       "bsc:input": [
         {
-          "@id": "_:N20c646da3aec4541a16f2505b16a16d3"
+          "@id": "_:N5552e430d3cd4cdeabfbc260a4c4fdad"
         },
         {
-          "@id": "_:Ne7161f1790ff4c5688718e1a0acafa26"
+          "@id": "_:N1bd913d97d2b4351928ca4d2a9937e71"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N73ef0a3807664da99573a6dc28266370"
+          "@id": "_:N0d677c2f817444148fee55df3da07a09"
         },
         {
-          "@id": "_:Nbcbe3c3299d644ca9a39ec7484fe084f"
+          "@id": "_:N09ee88bf67904f93869682b5aff7f4af"
         },
         {
-          "@id": "_:Ne8d7b20a706b4ecc9f897f5c4816ab0e"
+          "@id": "_:N428d4b94a97c4a6cb195e6d415498ffe"
         },
         {
-          "@id": "_:Na9b60902a26e40e0ab64f769e25960a5"
+          "@id": "_:N7a8589b2feb04dff909ae05806a98e7f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0084"
+          "@id": "edam:topic_0621"
         },
         {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_0084"
         }
       ],
       "sc:citation": [
@@ -85,9 +81,6 @@
       "sc:description": "The BioInformatics Prokaryotes Quick Phylogeny is designed to reconstruct the phylogeny of an Archaea or a Bacteria from its nucleic acid sequence. It is also giving the useful informations if species identification is needed.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0338"
-        },
-        {
           "@id": "edam:operation_0567"
         },
         {
@@ -95,13 +88,16 @@
         },
         {
           "@id": "edam:operation_0258"
+        },
+        {
+          "@id": "edam:operation_0338"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "leBIBIpqp",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "IFB ELIXIR-FR",
@@ -112,29 +108,34 @@
       "sc:url": "https://umr5558-bibiserv.univ-lyon1.fr/lebibi/lebibi.cgi"
     },
     {
-      "@id": "_:N73ef0a3807664da99573a6dc28266370",
+      "@id": "_:N5552e430d3cd4cdeabfbc260a4c4fdad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0857"
+        "@id": "edam:data_1056"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1333"
-      },
-      "sc:name": "Sequence search results"
+      "sc:name": "Database name"
     },
     {
-      "@id": "_:Nbcbe3c3299d644ca9a39ec7484fe084f",
+      "@id": "_:N1bd913d97d2b4351928ca4d2a9937e71",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0863"
+        "@id": "edam:data_2044"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1984"
+        "@id": "edam:format_1929"
       },
-      "sc:name": "Sequence alignment"
+      "sc:name": "Sequence"
     },
     {
-      "@id": "_:Ne8d7b20a706b4ecc9f897f5c4816ab0e",
+      "@id": "_:N0d677c2f817444148fee55df3da07a09",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3272"
+      },
+      "sc:name": "Species tree"
+    },
+    {
+      "@id": "_:N09ee88bf67904f93869682b5aff7f4af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -145,31 +146,30 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Na9b60902a26e40e0ab64f769e25960a5",
+      "@id": "_:N428d4b94a97c4a6cb195e6d415498ffe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3272"
-      },
-      "sc:name": "Species tree"
-    },
-    {
-      "@id": "_:N20c646da3aec4541a16f2505b16a16d3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1056"
-      },
-      "sc:name": "Database name"
-    },
-    {
-      "@id": "_:Ne7161f1790ff4c5688718e1a0acafa26",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
+        "@id": "edam:data_0863"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_1984"
       },
-      "sc:name": "Sequence"
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N7a8589b2feb04dff909ae05806a98e7f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1333"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-015-0692-z",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,41 +36,45 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkg535",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/blast2srs",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2228e8faff064ffe9c6c84462179ec20"
+          "@id": "_:Ncba10cec002041f2ad59e4a470aa1f9b"
         },
         {
-          "@id": "_:N93c4836b78bd41ec827995e5304a14de"
+          "@id": "_:N6e10c4253cb04790b752dc8783ef1254"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0338de06dd824264884197903486bfd0"
+        "@id": "_:N31de0cf35f184ef98f4bb01061757b79"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0623"
         },
         {
           "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_0623"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
         "pubmed:12824420",
+        "pmcid:PMC168942",
         {
           "@id": "https://doi.org/10.1093/nar/gkg535"
-        },
-        "pmcid:PMC168942"
+        }
       ],
       "sc:description": "Tool to retrieve protein sequences using similarity (BLAST) and keyword searches.",
       "sc:featureList": {
@@ -80,15 +84,7 @@
       "sc:url": "http://blast2srs.embl.de/"
     },
     {
-      "@id": "_:N2228e8faff064ffe9c6c84462179ec20",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N93c4836b78bd41ec827995e5304a14de",
+      "@id": "_:Ncba10cec002041f2ad59e4a470aa1f9b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
@@ -96,16 +92,20 @@
       "sc:name": "Keyword"
     },
     {
-      "@id": "_:N0338de06dd824264884197903486bfd0",
+      "@id": "_:N6e10c4253cb04790b752dc8783ef1254",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N31de0cf35f184ef98f4bb01061757b79",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkg535",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

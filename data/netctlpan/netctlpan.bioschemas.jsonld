@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,22 +42,22 @@
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N1576415965034657ab83438efd0b3fab"
+        "@id": "_:N2f341b81fc854efba2609aa7f1e9c7a7"
       },
       "bsc:output": {
-        "@id": "_:N5a0161abfc2149be891f5067131a111a"
+        "@id": "_:N3b708f73b60e4168862d952e1820368d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3534"
       },
       "sc:citation": [
+        "pubmed:20379710",
+        "pmcid:PMC2875469",
         {
           "@id": "https://doi.org/10.1007/s00251-010-0441-4"
-        },
-        "pubmed:20379710",
-        "pmcid:PMC2875469"
+        }
       ],
       "sc:description": "Predict CTL epitopes in protein sequences.",
       "sc:featureList": [
@@ -72,9 +72,9 @@
       "sc:license": "Other",
       "sc:name": "NetCTLpan",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -84,18 +84,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetCTLpan/"
     },
     {
-      "@id": "_:N5a0161abfc2149be891f5067131a111a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N1576415965034657ab83438efd0b3fab",
+      "@id": "_:N2f341b81fc854efba2609aa7f1e9c7a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -106,12 +95,23 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
+      "@id": "_:N3b708f73b60e4168862d952e1820368d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
     },
     {
       "@id": "https://doi.org/10.1007/s00251-010-0441-4",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
     }
   ]
 }

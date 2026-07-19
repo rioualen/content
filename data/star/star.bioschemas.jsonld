@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,17 +40,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "rna-styar team",
       "bsc:input": {
-        "@id": "_:N4088c1a3f94a4461a1deb6d359142c42"
+        "@id": "_:N35187996510c417fa755f7c97834e70b"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc07159b92b854f4ab52f27befe15d6fc"
+          "@id": "_:N1e07729a7785405983f16fa619d5f73a"
         },
         {
-          "@id": "_:N0efbb6c3a60b4736bda61e55d7212dfa"
+          "@id": "_:Nf2a7d6cc0981494e8c1fb3e96f01ee6f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -61,20 +61,20 @@
         }
       ],
       "sc:citation": [
+        "pubmed:27941783",
         "pmcid:PMC5792058",
-        "pubmed:24626854",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/bts635"
-        },
-        "pubmed:23104886",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btu146"
-        },
-        "pmcid:PMC3530905",
         {
           "@id": "https://doi.org/10.1038/nmeth.4106"
         },
-        "pubmed:27941783"
+        "pubmed:23104886",
+        "pmcid:PMC3530905",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/bts635"
+        },
+        "pubmed:24626854",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btu146"
+        }
       ],
       "sc:description": "Ultrafast universal RNA-seq data aligner",
       "sc:featureList": {
@@ -83,22 +83,41 @@
       "sc:license": "GPL-3.0",
       "sc:name": "STAR",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf"
+          "@id": "https://github.com/alexdobin/STAR/releases"
         },
         {
-          "@id": "https://github.com/alexdobin/STAR/releases"
+          "@id": "https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf"
         }
       ],
       "sc:softwareVersion": "2.7.11",
       "sc:url": "http://code.google.com/p/rna-star/"
     },
     {
-      "@id": "_:Nc07159b92b854f4ab52f27befe15d6fc",
+      "@id": "_:N35187996510c417fa755f7c97834e70b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N1e07729a7785405983f16fa619d5f73a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Nf2a7d6cc0981494e8c1fb3e96f01ee6f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -112,25 +131,6 @@
         }
       ],
       "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:N0efbb6c3a60b4736bda61e55d7212dfa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N4088c1a3f94a4461a1deb6d359142c42",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "RNA sequence"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/bts635",

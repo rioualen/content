@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,29 +40,33 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cshl_fastx_clipper",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:Nd6b894e1a9714e3a887c89d145a1bdf8"
+        "@id": "_:N443220a7247541a898f4a4d1bbd12f59"
       },
       "bsc:output": {
-        "@id": "_:Ndeb209e375da41f4b585d8da0b50b9e5"
+        "@id": "_:N896424f84a6b42c5a8b3c036e88b2593"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
+        "pubmed:27137889",
         "pmcid:PMC4987906",
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
-        "pubmed:27137889"
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        }
       ],
       "sc:description": "This tool clips adapters from the 3'end of the sequences in a FASTA/FASTQ file.",
       "sc:featureList": {
@@ -71,8 +75,8 @@
       "sc:name": "cshl_fastx_clipper",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://hannonlab.cshl.edu/fastx_toolkit/galaxy.html"
@@ -81,25 +85,14 @@
       "sc:url": "http://hannonlab.cshl.edu/fastx_toolkit/"
     },
     {
-      "@id": "_:Ndeb209e375da41f4b585d8da0b50b9e5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Nd6b894e1a9714e3a887c89d145a1bdf8",
+      "@id": "_:N443220a7247541a898f4a4d1bbd12f59",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1933"
+          "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_1931"
@@ -108,14 +101,21 @@
           "@id": "edam:format_1932"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1933"
         }
       ],
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N896424f84a6b42c5a8b3c036e88b2593",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
     }
   ]
 }

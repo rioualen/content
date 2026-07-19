@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkn1006",
       "@type": "sc:CreativeWork"
     },
@@ -44,12 +48,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N3c5c2c7f3b7b4ae6adc70dd9ddea55bf"
+        "@id": "_:Nbd1eedf405dd4da498d323031e61cbe9"
       },
       "bsc:output": {
-        "@id": "_:N380e1b802584433fa390d88fcaa3467d"
+        "@id": "_:N90da28ebc60040919ac4e2b0822d3512"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
@@ -58,24 +62,24 @@
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Timo Lassmann",
-        "Erik Sonnhammer"
+        "Erik Sonnhammer",
+        "Timo Lassmann"
       ],
       "sc:citation": [
         "pubmed:35412617",
-        "pmcid:PMC11223882",
         "pmcid:PMC9252731",
-        "pubmed:38597606",
-        "pmcid:PMC2647288",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkn1006"
-        },
-        "pubmed:19103665",
+        "pubmed:38597606",
+        "pmcid:PMC11223882",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
+        },
+        "pubmed:19103665",
+        "pmcid:PMC2647288",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkn1006"
         }
       ],
       "sc:description": "Fast and accurate multiple sequence alignment which handles large sequences.",
@@ -84,9 +88,9 @@
       },
       "sc:name": "Kalign (EBI)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -94,20 +98,20 @@
       ],
       "sc:softwareHelp": [
         {
+          "@id": "https://github.com/TimoLassmann/kalign"
+        },
+        {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
-        {
-          "@id": "https://github.com/TimoLassmann/kalign"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/jdispatcher/msa/kalign/"
     },
     {
-      "@id": "_:N3c5c2c7f3b7b4ae6adc70dd9ddea55bf",
+      "@id": "_:Nbd1eedf405dd4da498d323031e61cbe9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -115,16 +119,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N380e1b802584433fa390d88fcaa3467d",
+      "@id": "_:N90da28ebc60040919ac4e2b0822d3512",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkae241",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,46 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.7717/peerj.1420",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.7717/peerj.593",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/swarm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8a0ba045de9c45c18e291c15c81a1101"
+        "@id": "_:Naeaa0a5202654fa1a1f5c5e256fbbadc"
       },
       "bsc:output": {
-        "@id": "_:N6ce0572aafcc4270aa97247670f23c4e"
+        "@id": "_:N36624c4e021845d4a16b3d15d6f659d9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3050"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3301"
         },
         {
           "@id": "edam:topic_3047"
         },
         {
-          "@id": "edam:topic_3301"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4690345",
         "pubmed:26713226",
+        "pmcid:PMC4690345",
         {
           "@id": "https://doi.org/10.7717/peerj.1420"
         },
-        "pmcid:PMC4178461",
         "pubmed:25276506",
+        "pmcid:PMC4178461",
         {
           "@id": "https://doi.org/10.7717/peerj.593"
         }
@@ -80,23 +88,23 @@
       "sc:license": "AGPL-3.0",
       "sc:name": "Swarm",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "UiO",
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/torognes/swarm"
+          "@id": "http://dx.doi.org/10.7717/peerj.593"
         },
         {
-          "@id": "http://dx.doi.org/10.7717/peerj.593"
+          "@id": "https://github.com/torognes/swarm"
         }
       ],
       "sc:softwareVersion": "2.1.6",
       "sc:url": "https://github.com/torognes/swarm"
     },
     {
-      "@id": "_:N8a0ba045de9c45c18e291c15c81a1101",
+      "@id": "_:Naeaa0a5202654fa1a1f5c5e256fbbadc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -107,7 +115,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N6ce0572aafcc4270aa97247670f23c4e",
+      "@id": "_:N36624c4e021845d4a16b3d15d6f659d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1235"
@@ -116,14 +124,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence cluster"
-    },
-    {
-      "@id": "https://doi.org/10.7717/peerj.1420",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7717/peerj.593",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

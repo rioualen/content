@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/category",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BioConductor Package Maintainer",
       "bsc:input": {
-        "@id": "_:N74886603e0d84393849e721dc6ef54f2"
+        "@id": "_:Ncb5d1571fef54d8ca3ec40502bfe9b76"
       },
       "bsc:output": [
         {
-          "@id": "_:N48e2727c47674171894110072c5800fb"
+          "@id": "_:N83baa159d1124e1e8b707ae309f48419"
         },
         {
-          "@id": "_:N91b2cb634611448d86dd8d1b8ef50c53"
+          "@id": "_:Nd8c8bb4aa78d43eb9e2948bf01b18b2b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
@@ -77,9 +81,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "Category",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/Category.html"
@@ -88,29 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Category.html"
     },
     {
-      "@id": "_:N48e2727c47674171894110072c5800fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N91b2cb634611448d86dd8d1b8ef50c53",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N74886603e0d84393849e721dc6ef54f2",
+      "@id": "_:Ncb5d1571fef54d8ca3ec40502bfe9b76",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -121,8 +103,26 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N83baa159d1124e1e8b707ae309f48419",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:Nd8c8bb4aa78d43eb9e2948bf01b18b2b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

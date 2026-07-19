@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/ncomms5698",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1038/s41467-020-20578-2",
       "@type": "sc:CreativeWork"
     },
@@ -44,26 +48,26 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N74d88db3833146669d1bc31decf779b1"
+          "@id": "_:N49d53fa7f6f24233a0401a3c83fbd26d"
         },
         {
-          "@id": "_:N3f809c9252654d3ba032e38758755675"
+          "@id": "_:N61cb5348f47a46b78f52a555857a3a88"
         },
         {
-          "@id": "_:N39a8154f6c53451aaa8e99923fcd1fa4"
+          "@id": "_:Ne90cf2c38bb043469c8409cd0e2ae0e3"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc01dc600660647e38b5079ef3b70b6fc"
+        "@id": "_:Ne621b561e76d4d67b563d67bdf550b15"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3320"
+          "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3320"
         },
         {
           "@id": "edam:topic_3170"
@@ -77,13 +81,13 @@
         "pubmed:25140736",
         "pmcid:PMC4143934",
         {
-          "@id": "https://doi.org/10.1038/s41467-020-20578-2"
-        },
-        {
           "@id": "https://doi.org/10.1038/ncomms5698"
         },
         "pubmed:33526779",
-        "pmcid:PMC7851174"
+        "pmcid:PMC7851174",
+        {
+          "@id": "https://doi.org/10.1038/s41467-020-20578-2"
+        }
       ],
       "sc:description": "Nextflow pipeline for splicing quantitative trait loci (sQTL) mapping based on sQTLseekeR2.\nThe pipeline performs the following analysis steps: 1) Index the genotype file, 2) Preprocess the transcript expression data, 3) Test for association between splicing ratios (a multivariate phenotype) and genetic variants in cis (nominal pass), 4) Obtain an empirical P-value for each phenotype (permutation pass, optional), 5) Control for multiple testing.",
       "sc:featureList": [
@@ -98,26 +102,15 @@
       "sc:license": "GPL-3.0",
       "sc:name": "sqtlseeker2-nf",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "R. Guigó Lab: Computational Biology of RNA processing @ CRG, Barcelona.",
       "sc:softwareVersion": "1.0.0",
       "sc:url": "https://github.com/guigolab/sqtlseeker2-nf"
     },
     {
-      "@id": "_:N74d88db3833146669d1bc31decf779b1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N3f809c9252654d3ba032e38758755675",
+      "@id": "_:N49d53fa7f6f24233a0401a3c83fbd26d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -128,7 +121,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N39a8154f6c53451aaa8e99923fcd1fa4",
+      "@id": "_:N61cb5348f47a46b78f52a555857a3a88",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -139,7 +132,18 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Nc01dc600660647e38b5079ef3b70b6fc",
+      "@id": "_:Ne90cf2c38bb043469c8409cd0e2ae0e3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Ne621b561e76d4d67b563d67bdf550b15",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -148,10 +152,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "https://doi.org/10.1038/ncomms5698",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkj074",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mfungd",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N665585b306924b319c5345415d227c39"
+        "@id": "_:N4ea0fe14e4cb4b16898d435dcf8ade9c"
       },
       "bsc:output": {
-        "@id": "_:Nac7cc68ef8cf4288a0dd91cca6e23960"
+        "@id": "_:Nb693c68566ec4ae4a1c58b58ab3c6cdb"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
       },
       "sc:citation": [
-        "pmcid:PMC1347437",
         "pubmed:16381934",
+        "pmcid:PMC1347437",
         {
           "@id": "https://doi.org/10.1093/nar/gkj074"
         }
@@ -66,8 +62,8 @@
       },
       "sc:name": "MIPS mouse functional genome database (MfunGD)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -76,7 +72,7 @@
       "sc:url": "http://bio2rdf.org/describe/?uri=http://bio2rdf.org/lsr:mfungd"
     },
     {
-      "@id": "_:N665585b306924b319c5345415d227c39",
+      "@id": "_:N4ea0fe14e4cb4b16898d435dcf8ade9c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2799"
@@ -84,7 +80,7 @@
       "sc:name": "Gene ID (MfunGD)"
     },
     {
-      "@id": "_:Nac7cc68ef8cf4288a0dd91cca6e23960",
+      "@id": "_:Nb693c68566ec4ae4a1c58b58ab3c6cdb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -93,6 +89,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkj074",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

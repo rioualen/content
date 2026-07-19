@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N610151e8262a4f3fab82bf6e4472bf65"
+          "@id": "_:Nc10ac6e8b7024f34ab031f57ed5e5d5c"
         },
         {
-          "@id": "_:Nb5e675a39ed04bb9acbc34902c7cda20"
+          "@id": "_:N934ace7a1f6546ec942de43f22c2fec8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N358d91003ca94a7bad9968196aade091"
+          "@id": "_:Nfa8d2372d27c4d1686e18ccc00692648"
         },
         {
-          "@id": "_:N83338e7ba5ef45dfa8a07d88824f8f61"
+          "@id": "_:N922b2c24d85d4d64a8eaf9f1efe662de"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:description": "HapCUT2 is a maximum-likelihood-based tool for assembling haplotypes from DNA sequence reads, designed to \"just work\" with excellent speed and accuracy across a range of long- and short-read sequencing technologies.\nThe output is in Haplotype block format described here: https://github.com/vibansal/HapCUT2/blob/master/outputformat.md",
       "sc:featureList": [
         {
@@ -66,16 +66,38 @@
       ],
       "sc:name": "HapCUT2",
       "sc:softwareVersion": [
-        "1.3",
-        "1.1",
         "1.0",
-        "1.3.1",
-        "1.2"
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.3.1"
       ],
       "sc:url": "https://github.com/vibansal/HapCUT2"
     },
     {
-      "@id": "_:N358d91003ca94a7bad9968196aade091",
+      "@id": "_:Nc10ac6e8b7024f34ab031f57ed5e5d5c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N934ace7a1f6546ec942de43f22c2fec8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Nfa8d2372d27c4d1686e18ccc00692648",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1863"
@@ -86,7 +108,7 @@
       "sc:name": "Haplotype map"
     },
     {
-      "@id": "_:N83338e7ba5ef45dfa8a07d88824f8f61",
+      "@id": "_:N922b2c24d85d4d64a8eaf9f1efe662de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -95,28 +117,6 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N610151e8262a4f3fab82bf6e4472bf65",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:Nb5e675a39ed04bb9acbc34902c7cda20",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
     }
   ]
 }

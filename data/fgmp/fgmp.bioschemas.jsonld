@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/049619",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fgmp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ousmane Cissé",
       "bsc:input": {
-        "@id": "_:Nfe4c6785e5c7440984186395e0b7b854"
+        "@id": "_:N34422272de204af3ad6833879d7e6c59"
       },
       "bsc:output": {
-        "@id": "_:Naf1b166cadf7421bb4af7b91352b73db"
+        "@id": "_:N68ce5a401f4c4df0a6576313a2d4fd95"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0196"
-        },
         {
           "@id": "edam:topic_0797"
         },
         {
           "@id": "edam:topic_0097"
+        },
+        {
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:author": "Ousmane Cissé",
@@ -75,14 +71,22 @@
       "sc:license": "MIT",
       "sc:name": "FGMP",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": "1.0.0",
       "sc:url": "http://github.com/stajichlab/FGMP"
     },
     {
-      "@id": "_:Naf1b166cadf7421bb4af7b91352b73db",
+      "@id": "_:N34422272de204af3ad6833879d7e6c59",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N68ce5a401f4c4df0a6576313a2d4fd95",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3181"
@@ -90,12 +94,8 @@
       "sc:name": "Sequence assembly report"
     },
     {
-      "@id": "_:Nfe4c6785e5c7440984186395e0b7b854",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:name": "Sequence assembly"
+      "@id": "https://doi.org/10.1101/049619",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

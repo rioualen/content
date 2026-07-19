@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,6 +40,10 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1038/msb.2011.75",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1002/0471250953.bi0313s48",
       "@type": "sc:CreativeWork"
     },
@@ -48,33 +52,33 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Clustal helpdesk",
       "bsc:input": {
-        "@id": "_:Nfe6424f0bda94ed4bd9dd88961555644"
+        "@id": "_:N8ac6180425f440a8849ed81068c05da5"
       },
       "bsc:output": {
-        "@id": "_:N11caf9440f9945ac83058dbae362de33"
+        "@id": "_:N930beaac59e84aa8aeecc27e8c6ad88e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1002/pro.3290"
-        },
-        "pmcid:PMC5734385",
-        "pubmed:28884485",
-        "pmcid:PMC3261699",
-        "pubmed:21988835",
-        {
-          "@id": "https://doi.org/10.1038/msb.2011.75"
-        },
         "pubmed:25501942",
         {
           "@id": "https://doi.org/10.1002/0471250953.bi0313s48"
+        },
+        "pubmed:28884485",
+        "pmcid:PMC5734385",
+        {
+          "@id": "https://doi.org/10.1002/pro.3290"
+        },
+        "pubmed:21988835",
+        "pmcid:PMC3261699",
+        {
+          "@id": "https://doi.org/10.1038/msb.2011.75"
         }
       ],
       "sc:description": "Multiple sequence alignment software. The name is occassionally spelled as ClustalOmega, Clustal Ω, ClustalΩ, Clustal O, ClustalO.",
@@ -86,16 +90,16 @@
       "sc:license": "GPL-2.0",
       "sc:name": "Clustal Omega",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.clustal.org/omega/#Documentation"
+          "@id": "http://www.clustal.org/omega/README"
         },
         {
-          "@id": "http://www.clustal.org/omega/README"
+          "@id": "http://www.clustal.org/omega/#Documentation"
         },
         {
           "@id": "http://www.clustal.org/omega/INSTALL"
@@ -105,18 +109,7 @@
       "sc:url": "http://www.clustal.org/omega/"
     },
     {
-      "@id": "_:N11caf9440f9945ac83058dbae362de33",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nfe6424f0bda94ed4bd9dd88961555644",
+      "@id": "_:N8ac6180425f440a8849ed81068c05da5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -127,8 +120,15 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1038/msb.2011.75",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N930beaac59e84aa8aeecc27e8c6ad88e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

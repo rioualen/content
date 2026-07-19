@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1107/s0907444904026460",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pdbefold",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Michael Wainwright",
       "bsc:input": {
-        "@id": "_:N7d97a2d6584c45fbbccfa576ed51acc8"
+        "@id": "_:N0b3de422d9b645f6a738cf6beda01670"
       },
       "bsc:output": [
         {
-          "@id": "_:N841e398c31114aa191f31dd7d3521ac3"
+          "@id": "_:Nd92c1568a4064368b7c30a0c80c030f0"
         },
         {
-          "@id": "_:N228c5c8a62f442e794c8a69ec8f46ffd"
+          "@id": "_:N53cd509459cc4364aeb0f3421742bddc"
         },
         {
-          "@id": "_:N113618b8fbf1471b9386d93f6db24142"
+          "@id": "_:N12126266456545d6b1a4b323fdbf7a4f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -72,28 +68,28 @@
         "PDBe development team"
       ],
       "sc:citation": [
+        "pubmed:15572779",
         {
           "@id": "https://doi.org/10.1107/s0907444904026460"
-        },
-        "pubmed:15572779"
+        }
       ],
       "sc:description": "Identification and comparison of similar proteins based on secondary structure.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0570"
-        },
         {
           "@id": "edam:operation_0360"
         },
         {
           "@id": "edam:operation_0295"
+        },
+        {
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:name": "PDBeFold",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -108,31 +104,7 @@
       "sc:url": "http://pdbe.org/fold"
     },
     {
-      "@id": "_:N841e398c31114aa191f31dd7d3521ac3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1481"
-      },
-      "sc:name": "Structure alignment (protein)"
-    },
-    {
-      "@id": "_:N228c5c8a62f442e794c8a69ec8f46ffd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N113618b8fbf1471b9386d93f6db24142",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:N7d97a2d6584c45fbbccfa576ed51acc8",
+      "@id": "_:N0b3de422d9b645f6a738cf6beda01670",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -141,6 +113,34 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nd92c1568a4064368b7c30a0c80c030f0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:N53cd509459cc4364aeb0f3421742bddc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:N12126266456545d6b1a4b323fdbf7a4f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1481"
+      },
+      "sc:name": "Structure alignment (protein)"
+    },
+    {
+      "@id": "https://doi.org/10.1107/s0907444904026460",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

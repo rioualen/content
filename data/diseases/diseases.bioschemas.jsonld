@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.ymeth.2014.11.020",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/diseases",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Lars Juhl Jensen",
       "bsc:input": [
         {
-          "@id": "_:Nf0d7a9ccc0064750b60c8579911283a4"
+          "@id": "_:N32cea39a155a45c08ea145950396e7be"
         },
         {
-          "@id": "_:Nb507f7ed13574c47a43e62e3fc67fe3b"
+          "@id": "_:Nd759d9aac5a4420d97a6c39f3eb91feb"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ncd39d9b622274b9cadc138899d8da830"
+          "@id": "_:N62d2316108b24c74892258eddfd981c3"
         },
         {
-          "@id": "_:N5ddc49223c1c46fa89143806cd36e475"
+          "@id": "_:Nd28a40547ed6455c882c355291f12310"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -66,10 +70,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25484339",
         {
           "@id": "https://doi.org/10.1016/j.ymeth.2014.11.020"
-        },
-        "pubmed:25484339"
+        }
       ],
       "sc:description": "DISEASES is a weekly updated web resource that integrates evidence on disease-gene associations from automatic text mining, manually curated literature, cancer mutation data, and genome-wide association studies. We further unify the evidence by assigning confidence scores that facilitate comparison of the different types and sources of evidence.",
       "sc:featureList": {
@@ -79,14 +83,14 @@
       "sc:license": "CC-BY-4.0",
       "sc:name": "DISEASES",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://diseases.jensenlab.org/"
     },
     {
-      "@id": "_:Ncd39d9b622274b9cadc138899d8da830",
+      "@id": "_:N32cea39a155a45c08ea145950396e7be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3667"
@@ -94,7 +98,7 @@
       "sc:name": "Disease identifier"
     },
     {
-      "@id": "_:N5ddc49223c1c46fa89143806cd36e475",
+      "@id": "_:Nd759d9aac5a4420d97a6c39f3eb91feb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1025"
@@ -102,7 +106,7 @@
       "sc:name": "Gene identifier"
     },
     {
-      "@id": "_:Nf0d7a9ccc0064750b60c8579911283a4",
+      "@id": "_:N62d2316108b24c74892258eddfd981c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1025"
@@ -110,16 +114,12 @@
       "sc:name": "Gene identifier"
     },
     {
-      "@id": "_:Nb507f7ed13574c47a43e62e3fc67fe3b",
+      "@id": "_:Nd28a40547ed6455c882c355291f12310",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3667"
       },
       "sc:name": "Disease identifier"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.ymeth.2014.11.020",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

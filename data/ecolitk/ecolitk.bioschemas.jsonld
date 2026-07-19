@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ecolitk",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Laurent Gautier",
       "bsc:input": [
         {
-          "@id": "_:N586571d814e14659b7c61a52480261ae"
+          "@id": "_:N6476ba20266b46deaa753b7b17ad74c5"
         },
         {
-          "@id": "_:N7af0cdf691d747d982527bbcc197b2be"
+          "@id": "_:N2bd69fd7cded4ea486650c5ed287af8e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N26f1139bc4a04e2aac674eb819fb06c3"
+          "@id": "_:N4f554275ea3d4a8dbb43eaabfb394e04"
         },
         {
-          "@id": "_:N0292cba3f42e4ce7aeba1e1784ad649b"
+          "@id": "_:N8deba2a8bda54858808b6fdc7cb851b3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0092"
       },
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "Meta-data and tools to work with E. coli. The tools are mostly plotting functions to work with circular genomes. They can used with other genomes/plasmids.",
       "sc:featureList": [
@@ -82,9 +86,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ecolitk",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ecolitk.html"
@@ -93,55 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ecolitk.html"
     },
     {
-      "@id": "_:N26f1139bc4a04e2aac674eb819fb06c3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1286"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plasmid map"
-    },
-    {
-      "@id": "_:N0292cba3f42e4ce7aeba1e1784ad649b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N586571d814e14659b7c61a52480261ae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1920"
-        },
-        {
-          "@id": "edam:format_1919"
-        }
-      ],
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N7af0cdf691d747d982527bbcc197b2be",
+      "@id": "_:N6476ba20266b46deaa753b7b17ad74c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -157,8 +113,52 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2bd69fd7cded4ea486650c5ed287af8e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1920"
+        },
+        {
+          "@id": "edam:format_1919"
+        }
+      ],
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N4f554275ea3d4a8dbb43eaabfb394e04",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1286"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plasmid map"
+    },
+    {
+      "@id": "_:N8deba2a8bda54858808b6fdc7cb851b3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence features"
     }
   ]
 }

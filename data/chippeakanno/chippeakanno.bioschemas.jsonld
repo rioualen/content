@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/978-1-62703-607-8_8",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/chippeakanno",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,50 +47,50 @@
         "Lihua Julie Zhu"
       ],
       "bsc:input": {
-        "@id": "_:Nd9d8ba4199684c5bbc2e4967e0aba299"
+        "@id": "_:N57f556eb696342d2b3e7a1be53f2877b"
       },
       "bsc:output": [
         {
-          "@id": "_:N4442cb2b112c420dafab5177ba10323a"
+          "@id": "_:N68a79d1717ec4e558e2574e7492b6a37"
         },
         {
-          "@id": "_:N32088bb3412d4b8c8daab250df075a41"
+          "@id": "_:N31053bb752fa45d7914a4cd3ca494eee"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_3179"
         },
         {
-          "@id": "edam:topic_3179"
+          "@id": "edam:topic_3169"
         }
       ],
       "sc:citation": [
+        "pubmed:23975789",
         {
           "@id": "https://doi.org/10.1007/978-1-62703-607-8_8"
-        },
-        "pubmed:23975789"
+        }
       ],
       "sc:description": "The package includes functions to retrieve the sequences around the peak, obtain enriched GO terms, find the nearest gene, exon, miRNA or custom features such as most conserved elements and other TF binding sites supplied by users. New functions have been added for finding the peaks with bi-directional promoters with summary statistics, for summarizing the occurrence of motifs in peaks and for adding other IDs to annotated peaks or enrichedGO.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "ChIPpeakAnno",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ChIPpeakAnno.html"
@@ -95,7 +99,26 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ChIPpeakAnno.html"
     },
     {
-      "@id": "_:N4442cb2b112c420dafab5177ba10323a",
+      "@id": "_:N57f556eb696342d2b3e7a1be53f2877b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2305"
+        },
+        {
+          "@id": "edam:format_2078"
+        }
+      ],
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N68a79d1717ec4e558e2574e7492b6a37",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -106,7 +129,7 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N32088bb3412d4b8c8daab250df075a41",
+      "@id": "_:N31053bb752fa45d7914a4cd3ca494eee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -115,29 +138,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nd9d8ba4199684c5bbc2e4967e0aba299",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2078"
-        },
-        {
-          "@id": "edam:format_2305"
-        }
-      ],
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "https://doi.org/10.1007/978-1-62703-607-8_8",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

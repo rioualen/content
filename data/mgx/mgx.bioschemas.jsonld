@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s40168-018-0460-1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mgx",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne524256775424d5bafbd050097a2e4f8"
+        "@id": "_:N8762c24f845e496d9a9eba4a0e1f1ede"
       },
       "bsc:output": [
         {
-          "@id": "_:N9232d4d37872416d9361b0109ebfc52c"
+          "@id": "_:N5e4ff58de2344628bb8eba9253d2e39c"
         },
         {
-          "@id": "_:N467af6ec8fd343d28e109cbe135ddd5c"
+          "@id": "_:N79fd593a27d8431e9f32a5b0692e85d6"
         },
         {
-          "@id": "_:N8bde610e034641989ce8a0b04cabd371"
+          "@id": "_:N9a6f06c6000648889f499abdc9fd5303"
         },
         {
-          "@id": "_:N0f3cf8658530477dbed0a96f6fa0d4b5"
+          "@id": "_:N9915182a716948d287145bfb54588627"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3174"
       },
       "sc:citation": [
+        "pubmed:29690922",
+        "pmcid:PMC5937802",
         {
           "@id": "https://doi.org/10.1186/s40168-018-0460-1"
-        },
-        "pubmed:29690922",
-        "pmcid:PMC5937802"
+        }
       ],
       "sc:description": "Open source client/server framework for the analysis of shotgun metagenome data. Flexible analysis workflows based on the Conveyor workflow engine provide the user with a wide range of recent algorithms for taxonomic, functional and statistical analysis. The ability to integrate own datasources and custom analysis pipelines enables researchers to address highly specific study aims and generate high-quality charts as well as interactive visualizations.",
       "sc:featureList": [
@@ -84,9 +80,9 @@
       "sc:license": "AGPL-3.0",
       "sc:name": "MGX",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "bigi",
       "sc:softwareHelp": {
@@ -96,7 +92,7 @@
       "sc:url": "https://mgx-metagenomics.github.io/"
     },
     {
-      "@id": "_:Ne524256775424d5bafbd050097a2e4f8",
+      "@id": "_:N8762c24f845e496d9a9eba4a0e1f1ede",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
@@ -106,6 +102,9 @@
           "@id": "edam:format_1927"
         },
         {
+          "@id": "edam:format_1929"
+        },
+        {
           "@id": "edam:format_1930"
         },
         {
@@ -113,15 +112,12 @@
         },
         {
           "@id": "edam:format_3284"
-        },
-        {
-          "@id": "edam:format_1929"
         }
       ],
       "sc:name": "Nucleic acid sequence (raw)"
     },
     {
-      "@id": "_:N9232d4d37872416d9361b0109ebfc52c",
+      "@id": "_:N5e4ff58de2344628bb8eba9253d2e39c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -129,7 +125,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N467af6ec8fd343d28e109cbe135ddd5c",
+      "@id": "_:N79fd593a27d8431e9f32a5b0692e85d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -137,7 +133,15 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N8bde610e034641989ce8a0b04cabd371",
+      "@id": "_:N9a6f06c6000648889f499abdc9fd5303",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N9915182a716948d287145bfb54588627",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -145,12 +149,8 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N0f3cf8658530477dbed0a96f6fa0d4b5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
+      "@id": "https://doi.org/10.1186/s40168-018-0460-1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

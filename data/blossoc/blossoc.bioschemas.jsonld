@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1534/genetics.108.092643",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1186/1471-2105-7-454",
       "@type": "sc:CreativeWork"
     },
@@ -45,31 +49,31 @@
       "biotools:primaryContact": "Thomas Mailund",
       "bsc:input": [
         {
-          "@id": "_:N0562186727b54d3e94c14b21bbbc65f2"
+          "@id": "_:N206df9e7af854b14a10256d906f588a8"
         },
         {
-          "@id": "_:N7f182d28ca534d50949dc0ddbb340ef2"
+          "@id": "_:N8121b9e5e8c34d42b5e6ac6b366d0b7a"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5a2994840d14427ea00ac448bae06a11"
+        "@id": "_:Nde7658d1823a4675aa553cd51c6eecce"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0102"
       },
       "sc:citation": [
+        "pubmed:17042942",
+        "pmcid:PMC1624851",
         {
           "@id": "https://doi.org/10.1186/1471-2105-7-454"
         },
-        "pubmed:17042942",
         "pubmed:19064712",
+        "pmcid:PMC2644962",
         {
           "@id": "https://doi.org/10.1534/genetics.108.092643"
-        },
-        "pmcid:PMC1624851",
-        "pmcid:PMC2644962"
+        }
       ],
       "sc:description": "Block-Association Mapping.",
       "sc:featureList": {
@@ -77,8 +81,8 @@
       },
       "sc:name": "Blossoc",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "birc.au.dk",
       "sc:softwareHelp": {
@@ -88,15 +92,7 @@
       "sc:url": "http://www.daimi.au.dk/~mailund/Blossoc/"
     },
     {
-      "@id": "_:N0562186727b54d3e94c14b21bbbc65f2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N7f182d28ca534d50949dc0ddbb340ef2",
+      "@id": "_:N206df9e7af854b14a10256d906f588a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1863"
@@ -104,16 +100,20 @@
       "sc:name": "Haplotype map"
     },
     {
-      "@id": "_:N5a2994840d14427ea00ac448bae06a11",
+      "@id": "_:N8121b9e5e8c34d42b5e6ac6b366d0b7a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:Nde7658d1823a4675aa553cd51c6eecce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1534/genetics.108.092643",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

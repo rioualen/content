@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pfamscan_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": [
         {
-          "@id": "_:Nba68a14cd8ca4ba2b5139bd765b6620d"
+          "@id": "_:Ne2630b15f6784cfaa9f1c03fb529075e"
         },
         {
-          "@id": "_:Nd199e076f8a24ea2aad33bd0fe7c20f9"
+          "@id": "_:Ne632d931acdc41a5b804c60e4d20699c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N81a4735dc9a3498fa45ee9c1dcfb19ed"
+          "@id": "_:N568ca5fbc89f45d392378b521e24ad99"
         },
         {
-          "@id": "_:N69175fd47cca4366b7c999b65412dcc6"
+          "@id": "_:Ne48ef082cf4e4d75aaec8694f49e1c80"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -70,21 +74,21 @@
       ],
       "sc:author": "Rob Finn",
       "sc:citation": [
+        "pubmed:35412617",
+        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
+        "pubmed:38597606",
+        "pmcid:PMC11223882",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
-        "pubmed:35412617",
-        "pmcid:PMC11223882",
-        "pmcid:PMC9252731",
-        "pubmed:38597606",
+        "pubmed:17688688",
         "pmcid:PMC2025603",
         {
           "@id": "https://doi.org/10.1186/1471-2105-8-298"
-        },
-        "pubmed:17688688"
+        }
       ],
       "sc:description": "PfamScan is used to search a FASTA sequence against a library of Pfam HMM.",
       "sc:featureList": {
@@ -92,27 +96,27 @@
       },
       "sc:name": "PfamScan (EBI)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://xfam.org/"
         },
         {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
-          "@id": "http://xfam.org/"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/pfa/pfamscan"
     },
     {
-      "@id": "_:Nba68a14cd8ca4ba2b5139bd765b6620d",
+      "@id": "_:Ne2630b15f6784cfaa9f1c03fb529075e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1364"
@@ -120,7 +124,7 @@
       "sc:name": "Hidden Markov model"
     },
     {
-      "@id": "_:Nd199e076f8a24ea2aad33bd0fe7c20f9",
+      "@id": "_:Ne632d931acdc41a5b804c60e4d20699c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -128,7 +132,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N81a4735dc9a3498fa45ee9c1dcfb19ed",
+      "@id": "_:N568ca5fbc89f45d392378b521e24ad99",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -136,7 +140,7 @@
       "sc:name": "Sequence search results"
     },
     {
-      "@id": "_:N69175fd47cca4366b7c999b65412dcc6",
+      "@id": "_:Ne48ef082cf4e4d75aaec8694f49e1c80",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
@@ -145,10 +149,6 @@
     },
     {
       "@id": "https://doi.org/10.1186/1471-2105-8-298",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
       "@type": "sc:CreativeWork"
     },
     {

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq642",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/plexy",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd7eb5870cd7b4eba83017f4ff91f661c"
+        "@id": "_:Ne980de44fd2f476ba0f63da47367a334"
       },
       "bsc:output": {
-        "@id": "_:N89286b5fa73140eb9a03152e90435b28"
+        "@id": "_:Ne9f628b36e92442bbaab1e708b386c59"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0082"
@@ -66,7 +70,7 @@
       "sc:url": "http://www.bioinf.uni-leipzig.de/Software/PLEXY/"
     },
     {
-      "@id": "_:Nd7eb5870cd7b4eba83017f4ff91f661c",
+      "@id": "_:Ne980de44fd2f476ba0f63da47367a334",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -77,7 +81,7 @@
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:N89286b5fa73140eb9a03152e90435b28",
+      "@id": "_:Ne9f628b36e92442bbaab1e708b386c59",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0880"
@@ -86,10 +90,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "RNA secondary structure"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq642",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

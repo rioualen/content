@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkq1090",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/odb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Shujiro Okuda",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0114"
-        },
-        {
-          "@id": "edam:topic_0621"
-        },
         {
           "@id": "edam:topic_3489"
         },
@@ -59,7 +49,13 @@
           "@id": "edam:topic_0203"
         },
         {
+          "@id": "edam:topic_0114"
+        },
+        {
           "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:topic_0621"
         }
       ],
       "sc:citation": [
@@ -72,10 +68,10 @@
       "sc:description": "Contains all known and conserved operons in completely sequenced genomes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3501"
+          "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_0308"
+          "@id": "edam:operation_3501"
         },
         {
           "@id": "edam:operation_0579"
@@ -84,19 +80,23 @@
           "@id": "edam:operation_0435"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_0308"
         }
       ],
       "sc:name": "ODB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://operondb.jp/help"
       },
       "sc:url": "http://operondb.jp/"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkq1090",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

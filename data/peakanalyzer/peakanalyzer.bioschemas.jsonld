@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-11-415",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/peakanalyzer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mali Salmon-Divon",
       "bsc:input": [
         {
-          "@id": "_:N727f7b8f77fa4dcba643795aa4260d9e"
+          "@id": "_:Ne10b9895a5b740c8bcb53bce438289ce"
         },
         {
-          "@id": "_:Nd41b9d8871af4288904ff581f3423b03"
+          "@id": "_:N50eb8f42c38f41c5b0fb7e9280499f90"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2dc17469f80e43b6bdd891f7451854e2"
+          "@id": "_:N0e34d62059b8461b94b12ad90fadc98c"
         },
         {
-          "@id": "_:N98ccbfa0e54445cab59d15b9feca305c"
+          "@id": "_:N4686b824bc444e48a1b7d936abf53555"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Suite",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3656"
-        },
         {
           "@id": "edam:topic_0085"
         },
         {
           "@id": "edam:topic_3517"
+        },
+        {
+          "@id": "edam:topic_3656"
         }
       ],
       "sc:citation": {
@@ -93,14 +89,41 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "PeakAnalyzer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://www.bioinformatics.org/peakanalyzer/wiki/"
     },
     {
-      "@id": "_:N2dc17469f80e43b6bdd891f7451854e2",
+      "@id": "_:Ne10b9895a5b740c8bcb53bce438289ce",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2531"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3005"
+      },
+      "sc:name": "Experiment report"
+    },
+    {
+      "@id": "_:N50eb8f42c38f41c5b0fb7e9280499f90",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2530"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2305"
+        }
+      ],
+      "sc:name": "Organism report"
+    },
+    {
+      "@id": "_:N0e34d62059b8461b94b12ad90fadc98c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -108,7 +131,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N98ccbfa0e54445cab59d15b9feca305c",
+      "@id": "_:N4686b824bc444e48a1b7d936abf53555",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -119,31 +142,8 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N727f7b8f77fa4dcba643795aa4260d9e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2530"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2305"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Organism report"
-    },
-    {
-      "@id": "_:Nd41b9d8871af4288904ff581f3423b03",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2531"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3005"
-      },
-      "sc:name": "Experiment report"
+      "@id": "https://doi.org/10.1186/1471-2105-11-415",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

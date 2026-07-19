@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.4499",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/litemol",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "David Sehnal",
       "bsc:input": [
         {
-          "@id": "_:Nc80de0debe564c4e93290d57f46dc165"
+          "@id": "_:Nd233650f64ef4ce88f4ba7e56ea36849"
         },
         {
-          "@id": "_:N09aec9789c2c4a7580060de6ffdcda8a"
+          "@id": "_:Nd9c99097a8df4825bd3b1e636ec0e22b"
         },
         {
-          "@id": "_:Ndf908800690b4a038e809c2ba06d40b8"
+          "@id": "_:Nfbd68ccc5607419ca2831719edb7d904"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc6777352567f45c9b209c78917eda061"
+        "@id": "_:N557f1a5a7b2f4edbaddfecc0c7b7168a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0092"
       },
       "sc:author": "David Sehnal",
       "sc:citation": [
+        "pubmed:29190272",
         {
           "@id": "https://doi.org/10.1038/nmeth.4499"
-        },
-        "pubmed:29190272"
+        }
       ],
       "sc:description": "An HTML5 web application for very fast 3D visualization of molecules and other related data. Very fast even for extremely large protein structures.",
       "sc:featureList": {
@@ -77,13 +73,13 @@
       "sc:license": "Apache-2.0",
       "sc:name": "LiteMol",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
-        "ELIXIR-CZ",
-        "CEITEC-MU"
+        "CEITEC-MU",
+        "ELIXIR-CZ"
       ],
       "sc:softwareHelp": {
         "@id": "https://webchem.ncbr.muni.cz/Wiki/LiteMol:UserManual"
@@ -92,18 +88,7 @@
       "sc:url": "https://www.litemol.org"
     },
     {
-      "@id": "_:Nc80de0debe564c4e93290d57f46dc165",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1477"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N09aec9789c2c4a7580060de6ffdcda8a",
+      "@id": "_:Nd233650f64ef4ce88f4ba7e56ea36849",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -111,7 +96,7 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:Ndf908800690b4a038e809c2ba06d40b8",
+      "@id": "_:Nd9c99097a8df4825bd3b1e636ec0e22b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0940"
@@ -122,12 +107,27 @@
       "sc:name": "Electron microscopy volume map"
     },
     {
-      "@id": "_:Nc6777352567f45c9b209c78917eda061",
+      "@id": "_:Nfbd68ccc5607419ca2831719edb7d904",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1477"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N557f1a5a7b2f4edbaddfecc0c7b7168a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2992"
       },
       "sc:name": "Protein structure image"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.4499",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

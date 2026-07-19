@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13321-016-0115-9",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/metfrag",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne0f316e73ab64008aad43e30141ef025"
+        "@id": "_:N4a7dfeda925946a0a3bcc38d63c99c01"
       },
       "bsc:output": {
-        "@id": "_:Ne2f85364edb54980a172a9dcb88cba0b"
+        "@id": "_:N42459ef1b03843009bb791d6b2cc8fa4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3391"
       },
       "sc:citation": [
         "pubmed:26834843",
+        "pmcid:PMC4732001",
         {
           "@id": "https://doi.org/10.1186/s13321-016-0115-9"
-        },
-        "pmcid:PMC4732001"
+        }
       ],
       "sc:description": "It combines compound database searching and fragmentation prediction for small molecule identification from tandem mass spectrometry data. It supports candidate structure retrieval from the compound databases PubChem, ChemSpider and KEGG or user defined structure data file(SDF). After in silico fragmentation in a combinatorial manner, candidates get filtered and scored on criteria like: occurrence of certain elements/substructures, retention time information and reference information.",
       "sc:featureList": {
@@ -66,9 +62,9 @@
       },
       "sc:name": "MetFrag",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://msbi.ipb-halle.de/MetFragBeta/"
@@ -77,15 +73,7 @@
       "sc:url": "http://msbi.ipb-halle.de/MetFragBeta/"
     },
     {
-      "@id": "_:Ne2f85364edb54980a172a9dcb88cba0b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:Ne0f316e73ab64008aad43e30141ef025",
+      "@id": "_:N4a7dfeda925946a0a3bcc38d63c99c01",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -94,6 +82,18 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N42459ef1b03843009bb791d6b2cc8fa4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:name": "Structure"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13321-016-0115-9",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

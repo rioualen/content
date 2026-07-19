@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,11 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1074/mcp.RA118.001240",
+      "@id": "https://doi.org/10.1021/ACS.JPROTEOME.0C00960",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1021/ACS.JPROTEOME.0C00960",
+      "@id": "https://doi.org/10.1074/mcp.RA118.001240",
       "@type": "sc:CreativeWork"
     },
     {
@@ -48,38 +48,35 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na90f4efe5b424244a85b34eec096bb61"
+          "@id": "_:N42f60043ca404cfeaafdec11498eb62c"
         },
         {
-          "@id": "_:Nc39714535a644e17934e27a1b8964aa1"
+          "@id": "_:Ndf82a43174294e2db733d735677d60ca"
         },
         {
-          "@id": "_:Ncbcd6dbf95264fe5a5f75677b68f32d7"
+          "@id": "_:N8e01a1a7fb4a4b34bef43df00e7df9ea"
         },
         {
-          "@id": "_:N55539376484e4ca9b05ced8c99f4440d"
+          "@id": "_:Naa46b2eaa4ed4dd494ececb4011483bd"
         },
         {
-          "@id": "_:N2790e777a66941ff9cfb33ef164ecc95"
+          "@id": "_:Nee4cc57a3827483ca000f06c0446fda3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N99b8a23b225a447ea73391eb05a85bf4"
+          "@id": "_:N5ab1ba4c69d04d45a4da6db41ec08c17"
         },
         {
-          "@id": "_:N0bab6186dc7647e5aac72fe338406be0"
+          "@id": "_:Ne19cd51ebe5948448c9439e8fcfb99a2"
         },
         {
-          "@id": "_:Nca111eae28584163aa4e75186d23a1b6"
+          "@id": "_:N779a093492e9412ba3ea25085f2c4db5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Suite",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_3174"
         },
@@ -90,42 +87,42 @@
           "@id": "edam:topic_3697"
         },
         {
+          "@id": "edam:topic_0121"
+        },
+        {
           "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pubmed:31235611",
         "pmcid:PMC6692774",
         {
           "@id": "https://doi.org/10.1074/mcp.RA118.001240"
         },
+        "pubmed:33683127",
         {
           "@id": "https://doi.org/10.1021/ACS.JPROTEOME.0C00960"
-        },
-        "pubmed:33683127",
-        "pubmed:31235611"
+        }
       ],
       "sc:description": "metaQuantome software suite analyzes the state of a microbiome by leveraging complex taxonomic and functional hierarchies to summarize peptide-level quantitative information. metaQuantome offers differential abundance analysis, principal components analysis, and clustered heat map visualizations, as well as exploratory analysis for a single sample or experimental condition.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2939"
-        },
-        {
-          "@id": "edam:operation_0337"
-        },
-        {
           "@id": "edam:operation_3741"
         },
         {
-          "@id": "edam:operation_3658"
-        },
-        {
-          "@id": "edam:operation_0227"
+          "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_3459"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_0531"
+        },
+        {
+          "@id": "edam:operation_0227"
+        },
+        {
+          "@id": "edam:operation_2939"
         },
         {
           "@id": "edam:operation_3799"
@@ -134,7 +131,10 @@
           "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0531"
+          "@id": "edam:operation_3658"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:name": "metaQuantome",
@@ -142,51 +142,7 @@
       "sc:url": "https://github.com/galaxyproteomics/metaquantome"
     },
     {
-      "@id": "_:Na90f4efe5b424244a85b34eec096bb61",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Taxonomic classification"
-    },
-    {
-      "@id": "_:Nc39714535a644e17934e27a1b8964aa1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2583"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "GO concept ID (molecular function)"
-    },
-    {
-      "@id": "_:Ncbcd6dbf95264fe5a5f75677b68f32d7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N55539376484e4ca9b05ced8c99f4440d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:N2790e777a66941ff9cfb33ef164ecc95",
+      "@id": "_:N42f60043ca404cfeaafdec11498eb62c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1011"
@@ -197,7 +153,62 @@
       "sc:name": "EC number"
     },
     {
-      "@id": "_:N99b8a23b225a447ea73391eb05a85bf4",
+      "@id": "_:Ndf82a43174294e2db733d735677d60ca",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:N8e01a1a7fb4a4b34bef43df00e7df9ea",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2583"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "GO concept ID (molecular function)"
+    },
+    {
+      "@id": "_:Naa46b2eaa4ed4dd494ececb4011483bd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:Nee4cc57a3827483ca000f06c0446fda3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Taxonomic classification"
+    },
+    {
+      "@id": "_:N5ab1ba4c69d04d45a4da6db41ec08c17",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:Ne19cd51ebe5948448c9439e8fcfb99a2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2583"
@@ -208,7 +219,7 @@
       "sc:name": "GO concept ID (molecular function)"
     },
     {
-      "@id": "_:N0bab6186dc7647e5aac72fe338406be0",
+      "@id": "_:N779a093492e9412ba3ea25085f2c4db5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -217,17 +228,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:Nca111eae28584163aa4e75186d23a1b6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Expression data"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2024.03.15.585306",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/neuromorpho",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_4045"
+        },
+        {
+          "@id": "edam:topic_4012"
+        },
         {
           "@id": "edam:topic_3304"
         },
@@ -52,12 +54,6 @@
         },
         {
           "@id": "edam:topic_0634"
-        },
-        {
-          "@id": "edam:topic_4012"
-        },
-        {
-          "@id": "edam:topic_4045"
         }
       ],
       "sc:citation": {
@@ -66,10 +62,10 @@
       "sc:description": "NeuroMorpho.Org is a curated inventory of digitally reconstructed neurons and glia, continuously updated with new uploads to facilitate quantitative analysis and computational modeling of neuronal morphology. It's the largest collection of publicly accessible 3D neuronal reconstructions and associated metadata.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3891"
+          "@id": "edam:operation_4043"
         },
         {
-          "@id": "edam:operation_4043"
+          "@id": "edam:operation_3891"
         },
         {
           "@id": "edam:operation_3450"
@@ -80,6 +76,10 @@
       ],
       "sc:name": "NeuroMorpho.Org",
       "sc:url": "http://NeuroMorpho.org"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2024.03.15.585306",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

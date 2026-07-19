@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkh273",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netutr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N05df1e1ec4564c01a70a5d3907cf743c"
+        "@id": "_:Nd68d7f4cbb1448e99741cf74091b7ed8"
       },
       "bsc:output": {
-        "@id": "_:N2f6d1493b3134958b051d7f0f56eaeae"
+        "@id": "_:N77801ab46def46d78559b6a09699bc73"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3320"
       },
       "sc:citation": [
-        "pmcid:PMC373407",
         "pubmed:14960723",
+        "pmcid:PMC373407",
         {
           "@id": "https://doi.org/10.1093/nar/gkh273"
         }
@@ -64,9 +68,9 @@
       "sc:license": "Other",
       "sc:name": "NetUTR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -76,18 +80,7 @@
       "sc:url": "http://cbs.dtu.dk/services/NetUTR/"
     },
     {
-      "@id": "_:N2f6d1493b3134958b051d7f0f56eaeae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2305"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N05df1e1ec4564c01a70a5d3907cf743c",
+      "@id": "_:Nd68d7f4cbb1448e99741cf74091b7ed8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -98,8 +91,15 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkh273",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N77801ab46def46d78559b6a09699bc73",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2305"
+      },
+      "sc:name": "Protein features"
     }
   ]
 }

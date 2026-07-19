@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/S13059-021-02587-6",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/strainline",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0cce048dc42e43959b99c4248ac73d20"
+        "@id": "_:N41dd5a0bb89d464ab4c49662a3130174"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -59,17 +55,14 @@
         }
       ],
       "sc:citation": [
+        "pubmed:35057847",
+        "pmcid:PMC8771625",
         {
           "@id": "https://doi.org/10.1186/S13059-021-02587-6"
-        },
-        "pubmed:35057847",
-        "pmcid:PMC8771625"
+        }
       ],
       "sc:description": "Full-length de novo viral haplotype reconstruction from noisy long reads.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0487"
-        },
         {
           "@id": "edam:operation_0524"
         },
@@ -77,10 +70,13 @@
           "@id": "edam:operation_0525"
         },
         {
-          "@id": "edam:operation_3644"
+          "@id": "edam:operation_0487"
         },
         {
           "@id": "edam:operation_3192"
+        },
+        {
+          "@id": "edam:operation_3644"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -88,13 +84,13 @@
       "sc:name": "Strainline",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://github.com/HaploKit/Strainline"
     },
     {
-      "@id": "_:N0cce048dc42e43959b99c4248ac73d20",
+      "@id": "_:N41dd5a0bb89d464ab4c49662a3130174",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -103,6 +99,10 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1186/S13059-021-02587-6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

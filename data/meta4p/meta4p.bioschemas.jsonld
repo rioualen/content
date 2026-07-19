@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-6066-7048",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/meta4p",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,22 +47,22 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N29a296c3eef3428d90fef8001e1d7a6d"
+          "@id": "_:Ne2a554e4448e42eda2feff8ec77c42b6"
         },
         {
-          "@id": "_:N1587f9d65d0343deb226b0b0c0d58db8"
+          "@id": "_:Na8eacc306635490784ed7ed887706f61"
         },
         {
-          "@id": "_:N8e67727de10c4e9fa2ecdf01871a412f"
+          "@id": "_:N09845f9e74224dd2afbc7824d9afebcf"
         },
         {
-          "@id": "_:Nfaca81ab972e4ddca3cf8c37abf4e647"
+          "@id": "_:Nf66cf8eaf16d4bc58e5f9baa8cffd446"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nb97a265348df4a21ac7ff1631af47914"
+        "@id": "_:N484f1d0a101342778e9b373881a77302"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -67,26 +71,26 @@
       "sc:description": "Meta4P (MetaProteins-Peptides-PSMs Parser) is an easy-to-use bioinformatic application designed to integrate label-free quantitative metaproteomic data with taxonomic and functional annotations. Meta4P can retrieve, filter and process identification and quantification data from three types of inputs (proteins, peptides, PSMs) in different file formats. Abundance data can be combined with taxonomic and functional information and aggregated at different and customizable levels, including taxa, functions, pathways, as well as taxon-specific functions. Meta4P output tables, available in various formats, are ready to be used as inputs for downstream statistical analyses.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_3436"
         },
         {
           "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_1812"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "Meta4P",
       "sc:operatingSystem": [
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareVersion": "1.4.4",
       "sc:url": "https://github.com/TheMassimo/Meta4P"
     },
     {
-      "@id": "_:N29a296c3eef3428d90fef8001e1d7a6d",
+      "@id": "_:Ne2a554e4448e42eda2feff8ec77c42b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1154"
@@ -97,7 +101,18 @@
       "sc:name": "KEGG object identifier"
     },
     {
-      "@id": "_:N1587f9d65d0343deb226b0b0c0d58db8",
+      "@id": "_:Na8eacc306635490784ed7ed887706f61",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N09845f9e74224dd2afbc7824d9afebcf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -108,18 +123,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N8e67727de10c4e9fa2ecdf01871a412f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:Nfaca81ab972e4ddca3cf8c37abf4e647",
+      "@id": "_:Nf66cf8eaf16d4bc58e5f9baa8cffd446",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -130,7 +134,7 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:Nb97a265348df4a21ac7ff1631af47914",
+      "@id": "_:N484f1d0a101342778e9b373881a77302",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -139,10 +143,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Expression data"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6066-7048",
-      "@type": "sc:Person"
     }
   ]
 }

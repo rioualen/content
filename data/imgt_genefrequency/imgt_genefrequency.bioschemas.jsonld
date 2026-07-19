@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,55 +36,47 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-7-224",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku1056",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/IMGT_GeneFrequency",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na0375296679c409183ef1078a1d03550"
+          "@id": "_:Nc9778f82afaf45dc8ea8f021ee88ce4f"
         },
         {
-          "@id": "_:N6ffa863aebf745c9af09188024756baf"
+          "@id": "_:Nc0202293f89a4699af88aaaf09329aed"
         }
       ],
       "bsc:output": {
-        "@id": "_:N71dab587a8af4a158f94148750d6aa50"
+        "@id": "_:Nc4e82ccdfe6e4e51a767e11b2e3844db"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0804"
+          "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_3930"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_3948"
         },
         {
-          "@id": "edam:topic_3948"
+          "@id": "edam:topic_0804"
         }
       ],
       "sc:citation": [
+        "pubmed:25378316",
+        "pmcid:PMC4383898",
         {
           "@id": "https://doi.org/10.1093/nar/gku1056"
         },
+        "pubmed:16640788",
+        "pmcid:PMC1482724",
         {
           "@id": "https://doi.org/10.1186/1471-2105-7-224"
         },
-        "pubmed:15972004",
-        "pmcid:PMC1482724",
-        "pubmed:25378316",
-        "pmcid:PMC4383898",
-        "pubmed:16640788"
+        "pubmed:15972004"
       ],
       "sc:description": "IMGT/GeneFrequency is the IMGT® tool providing the frequency usage of immunoglobulin (IG) and T cell receptor (TR) variable (V), diversity (D) and joining (J) genes in Homo sapiens and Mus musculus rearranged sequences from IMGT/LIGM-DB.\nAnalysis is based on the IMGT-ONTOLOGY concepts.",
       "sc:featureList": {
@@ -94,8 +86,8 @@
       "sc:name": "IMGT GeneFrequency",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.imgt.org/genefrequency/doc/documentation"
@@ -103,7 +95,7 @@
       "sc:url": "http://www.imgt.org/genefrequency/query"
     },
     {
-      "@id": "_:Na0375296679c409183ef1078a1d03550",
+      "@id": "_:Nc9778f82afaf45dc8ea8f021ee88ce4f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -114,7 +106,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N6ffa863aebf745c9af09188024756baf",
+      "@id": "_:Nc0202293f89a4699af88aaaf09329aed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
@@ -125,7 +117,7 @@
       "sc:name": "Keyword"
     },
     {
-      "@id": "_:N71dab587a8af4a158f94148750d6aa50",
+      "@id": "_:Nc4e82ccdfe6e4e51a767e11b2e3844db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -134,6 +126,14 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Identifier"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-7-224",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku1056",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

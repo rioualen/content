@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41598-023-34323-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mzion",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nef68571bf138440ba3a183b862271f8b"
+          "@id": "_:N82bae0006daf4b60bae1f86f632f447b"
         },
         {
-          "@id": "_:N83166f3df7264ada9748ba0813764ec7"
+          "@id": "_:N17df418b322c413aa0b02b82f80412c5"
         }
       ],
       "bsc:output": {
-        "@id": "_:N60a843f2b93544eab896530633fc18fd"
+        "@id": "_:N14d99b10c90348e081a10e567789fb12"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
         "pubmed:37120666",
         "pmcid:PMC10148867",
@@ -65,18 +69,7 @@
       "sc:url": "https://github.com/qzhang503/mzion"
     },
     {
-      "@id": "_:Nef68571bf138440ba3a183b862271f8b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1233"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (protein)"
-    },
-    {
-      "@id": "_:N83166f3df7264ada9748ba0813764ec7",
+      "@id": "_:N82bae0006daf4b60bae1f86f632f447b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -87,7 +80,18 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N60a843f2b93544eab896530633fc18fd",
+      "@id": "_:N17df418b322c413aa0b02b82f80412c5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1233"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "_:N14d99b10c90348e081a10e567789fb12",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -96,10 +100,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41598-023-34323-4",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

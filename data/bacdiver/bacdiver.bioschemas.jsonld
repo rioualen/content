@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.5281/zenodo.1308060",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5135-5758",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/bacdiver",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-5135-5758"
       },
       "bsc:input": {
-        "@id": "_:N0395f2f5ca0c4a91b85290ca79eb10f1"
+        "@id": "_:N6b11dc6a86d241c880301bfa77c043dd"
       },
       "bsc:output": {
-        "@id": "_:N9eea381d5fa74f8292e1b1124ccff021"
+        "@id": "_:N2c287f01cc3f4532869860b18c4e8fe4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
         "Command-line tool",
+        "Library",
         "Plug-in",
         "Script",
-        "Library"
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3301"
@@ -77,32 +69,32 @@
       "sc:license": "MIT",
       "sc:name": "BacDiveR: A Programmatic Interface For BacDive",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://tibhannover.github.io/BacDiveR/articles/logic-checking-bacdive-datasets.html"
-        },
-        {
           "@id": "https://tibhannover.github.io/BacDiveR/reference/index.html"
-        },
-        {
-          "@id": "https://tibhannover.github.io/BacDiveR/articles/BacDive-ing-in.html"
         },
         {
           "@id": "https://tibhannover.github.io/BacDiveR/index.html#how-to-cite"
         },
         {
+          "@id": "https://tibhannover.github.io/BacDiveR/articles/BacDive-ing-in.html"
+        },
+        {
           "@id": "https://tibhannover.github.io/BacDiveR/articles/advanced-search.html"
+        },
+        {
+          "@id": "https://tibhannover.github.io/BacDiveR/articles/logic-checking-bacdive-datasets.html"
         }
       ],
       "sc:softwareVersion": "0.7.0",
       "sc:url": "https://tibhannover.github.io/BacDiveR/"
     },
     {
-      "@id": "_:N0395f2f5ca0c4a91b85290ca79eb10f1",
+      "@id": "_:N6b11dc6a86d241c880301bfa77c043dd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -110,12 +102,20 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N9eea381d5fa74f8292e1b1124ccff021",
+      "@id": "_:N2c287f01cc3f4532869860b18c4e8fe4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:name": "Data"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5135-5758",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.1308060",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3390/biology11081113",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/genetolist",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1ea7340f8149414388161a358cc12f89"
+          "@id": "_:N4d8ed69d410343c7945c6520c7a1f4e7"
         },
         {
-          "@id": "_:Ne9a7ef8640c14b7f83c4ca2c26f1e101"
+          "@id": "_:N019b328fb05a4091a48843e3605facb1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3342"
+          "@id": "edam:topic_3174"
         },
         {
           "@id": "edam:topic_0089"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3342"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC9332626",
         "pubmed:35892968",
+        "pmcid:PMC9332626",
         {
           "@id": "https://doi.org/10.3390/biology11081113"
         }
@@ -77,14 +73,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "GeneToList",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://www.genetolist.com/"
     },
     {
-      "@id": "_:N1ea7340f8149414388161a358cc12f89",
+      "@id": "_:N4d8ed69d410343c7945c6520c7a1f4e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -92,12 +88,16 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:Ne9a7ef8640c14b7f83c4ca2c26f1e101",
+      "@id": "_:N019b328fb05a4091a48843e3605facb1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1904"
       },
       "sc:name": "Locus ID (EntrezGene)"
+    },
+    {
+      "@id": "https://doi.org/10.3390/biology11081113",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

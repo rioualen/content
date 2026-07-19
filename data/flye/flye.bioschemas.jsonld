@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41592-020-00971-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1099/mgen.0.000294",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/Flye",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N928d03730dc34d809866d4ee579560c5"
+        "@id": "_:Na066de80bb6841e4ade2e2c255a2ae4a"
       },
       "bsc:output": {
-        "@id": "_:N4e452552316044fabc59d76c953b33e8"
+        "@id": "_:N0aa31849ed04449aa1bb95a86dd96cff"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Workflow"
@@ -54,13 +62,13 @@
           "@id": "edam:topic_0622"
         },
         {
+          "@id": "edam:topic_3174"
+        },
+        {
           "@id": "edam:topic_0196"
         },
         {
           "@id": "edam:topic_3673"
-        },
-        {
-          "@id": "edam:topic_3174"
         }
       ],
       "sc:author": [
@@ -69,31 +77,31 @@
         "Yu Lin"
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1038/s41587-019-0072-8"
-        },
+        "pubmed:33020656",
+        "pmcid:PMC10699202",
         {
           "@id": "https://doi.org/10.1038/s41592-020-00971-x"
         },
-        "pmcid:PMC10699202",
         "pubmed:31483244",
-        "pubmed:30936562",
-        "pubmed:33020656",
         "pmcid:PMC6807382",
         {
           "@id": "https://doi.org/10.1099/mgen.0.000294"
+        },
+        "pubmed:30936562",
+        {
+          "@id": "https://doi.org/10.1038/s41587-019-0072-8"
         }
       ],
       "sc:description": "Flye is a de novo assembler for single molecule sequencing reads, such as those produced by PacBio and Oxford Nanopore Technologies. It is designed for a wide range of datasets, from small bacterial projects to large mammalian-scale assemblies. The package represents a complete pipeline: it takes raw PB / ONT reads as input and outputs polished contigs.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0525"
+          "@id": "edam:operation_3730"
         },
         {
           "@id": "edam:operation_0524"
         },
         {
-          "@id": "edam:operation_3730"
+          "@id": "edam:operation_0525"
         },
         {
           "@id": "edam:operation_0523"
@@ -103,14 +111,14 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "Flye",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": "2.9.6",
       "sc:url": "https://github.com/fenderglass/Flye"
     },
     {
-      "@id": "_:N928d03730dc34d809866d4ee579560c5",
+      "@id": "_:Na066de80bb6841e4ade2e2c255a2ae4a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -121,7 +129,7 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:N4e452552316044fabc59d76c953b33e8",
+      "@id": "_:N0aa31849ed04449aa1bb95a86dd96cff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -130,14 +138,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1099/mgen.0.000294",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41592-020-00971-x",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1038/s41587-019-0072-8",

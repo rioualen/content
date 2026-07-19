@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,35 +39,35 @@
       "@id": "https://bio.tools/ggsashimi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfeda086e3e2a489b9da5f430bd14e084"
+        "@id": "_:N3f731ab2db3b44e7b02698cdd1f56c71"
       },
       "bsc:output": {
-        "@id": "_:N62bbb52b02fa43d295b132666c9ce668"
+        "@id": "_:N52ff0dfe88324219a34ff6ab6020c336"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0092"
+        },
         {
           "@id": "edam:topic_3320"
         },
         {
           "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_0092"
         }
       ],
       "sc:author": [
-        "Emilio Palumbo",
         "Diego Garrido",
+        "Emilio Palumbo",
         "Alessandra Breschi"
       ],
       "sc:citation": [
+        "pubmed:30118475",
         "pmcid:PMC6114895",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1006360"
-        },
-        "pubmed:30118475"
+        }
       ],
       "sc:description": "Command-line tool for the visualization of splicing events across multiple samples",
       "sc:featureList": [
@@ -82,40 +82,15 @@
       "sc:license": "MIT",
       "sc:name": "ggsashimi",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "R. Guigó Lab: Computational Biology of RNA processing @ CRG, Barcelona.",
       "sc:softwareVersion": "1.0.0",
       "sc:url": "https://github.com/guigolab/ggsashimi"
     },
     {
-      "@id": "_:N62bbb52b02fa43d295b132666c9ce668",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nfeda086e3e2a489b9da5f430bd14e084",
+      "@id": "_:N3f731ab2db3b44e7b02698cdd1f56c71",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -124,6 +99,31 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N52ff0dfe88324219a34ff6ab6020c336",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_3591"
+        }
+      ],
+      "sc:name": "Plot"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pcbi.1006360",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
@@ -43,12 +47,12 @@
       "@id": "https://bio.tools/octanol",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbb76b3c853c0414ebe90c92818430405"
+        "@id": "_:Naa06c5942160418aa103bae1de87f103"
       },
       "bsc:output": {
-        "@id": "_:N4ce882a74c1b4b04ab0ca095afde75fe"
+        "@id": "_:Ncd15051cf71947d8a6b45a701589a25f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0123"
@@ -58,25 +62,25 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
         "UK BBSRC",
         "UK MRC",
-        "EMBOSS Contributors",
-        "Wellcome Trust"
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Draw a White-Wimley protein hydropathy plot.",
       "sc:featureList": {
         "@id": "edam:operation_0250"
       },
       "sc:funder": [
-        "UK MRC",
         "UK BBSRC",
+        "UK MRC",
         "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
@@ -84,8 +88,8 @@
       "sc:name": "octanol",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -93,10 +97,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/octanol.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/octanol.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
@@ -106,15 +110,7 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/octanol.html"
     },
     {
-      "@id": "_:N4ce882a74c1b4b04ab0ca095afde75fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1522"
-      },
-      "sc:name": "Protein sequence hydropathy plot"
-    },
-    {
-      "@id": "_:Nbb76b3c853c0414ebe90c92818430405",
+      "@id": "_:Naa06c5942160418aa103bae1de87f103",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1507"
@@ -122,11 +118,15 @@
       "sc:name": "Amino acid index (White-Wimley data)"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncd15051cf71947d8a6b45a701589a25f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1522"
+      },
+      "sc:name": "Protein sequence hydropathy plot"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,53 +36,49 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13244-021-01081-8",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dicomseg_converter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nfc3ea4d38c0b42db930bc218a92360a1"
+          "@id": "_:N7fd9a46e6ad24040afb51359e995b015"
         },
         {
-          "@id": "_:Nf040b4b47336441e8fb436fcfb946b89"
+          "@id": "_:N104070bfff5e49349f0ff1c45e1f2787"
         },
         {
-          "@id": "_:N807c0529868948b89fa4d7e8e643782c"
+          "@id": "_:N4d0118133ce24bb78a3b8eef4f665e30"
         },
         {
-          "@id": "_:N82d6ee73de1441c18e68e6ad754e6116"
+          "@id": "_:N423fb46d4d8747d8ad3ba4f485f55d6d"
         },
         {
-          "@id": "_:N468af9ad1d404ab29ba027bc7946b3da"
+          "@id": "_:N1730304305564341b7f9d14db57a8d91"
         },
         {
-          "@id": "_:N11848ef317de4b52a42637c6adc5623d"
+          "@id": "_:N1acf5c1602bd4146b772de02d3c2a336"
         },
         {
-          "@id": "_:N42f482c1d1f0407f87fd5b8cd0fcbb31"
+          "@id": "_:Nc8bf29a59f3f405384dcb01765aa91de"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6aef654fc5d84fd889a24154464e237c"
+          "@id": "_:N52d7c229b5b24d48876c49a01460440e"
         },
         {
-          "@id": "_:N3f8c8bc0efad43338d7ae1199c5ca2f6"
+          "@id": "_:N1123b1fec2c042df9eed8e674d8d055b"
         },
         {
-          "@id": "_:N326e0d02204e46849691e9a5032266a9"
+          "@id": "_:N0fb4ffd52b3348e1874f3d1fd7ecc70e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3063"
+          "@id": "edam:topic_0219"
         },
         {
-          "@id": "edam:topic_0219"
+          "@id": "edam:topic_3063"
         }
       ],
       "sc:citation": {
@@ -91,18 +87,18 @@
       "sc:description": "This repository provides tools for segmentation files conversion in DicomSEG, with a primary focus on: DICOM RTSTRUCT to DICOM SEG: A Python script (rtstruct/rtstruct2dcmseg.py) converts DICOM Radiotherapy Structure Set (RTSTRUCT) files, along with their referenced DICOM image series, into DICOM Segmentation (SEG) objects. It can also optionally convert the individual Regions of Interest (ROIs) defined in the RTSTRUCT into separate NIfTI (.nii.gz) files. Nifti Conversions via dcmqi and Custom Scripts: The Docker image built from this repository also includes command-line tools from dcmqi (DICOM Quantitative Imaging Toolkit) and custom Python scripts for various conversions, such as: ITK image formats (NIfTI, NRRD) to/from DICOM SEG. DICOM series to NIfTI. DICOM SEG to NIfTI (custom alternative).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0226"
+          "@id": "edam:operation_3553"
         },
         {
-          "@id": "edam:operation_3553"
+          "@id": "edam:operation_0226"
         }
       ],
       "sc:license": "Apache-2.0",
       "sc:name": "Annotation Seg Converter",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/marver17/DICOMSEG_Converter"
@@ -111,7 +107,7 @@
       "sc:url": "https://github.com/marver17/DICOMSEG_Converter"
     },
     {
-      "@id": "_:Nfc3ea4d38c0b42db930bc218a92360a1",
+      "@id": "_:N7fd9a46e6ad24040afb51359e995b015",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -119,7 +115,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nf040b4b47336441e8fb436fcfb946b89",
+      "@id": "_:N104070bfff5e49349f0ff1c45e1f2787",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -130,18 +126,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N807c0529868948b89fa4d7e8e643782c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N82d6ee73de1441c18e68e6ad754e6116",
+      "@id": "_:N4d0118133ce24bb78a3b8eef4f665e30",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -152,7 +137,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N468af9ad1d404ab29ba027bc7946b3da",
+      "@id": "_:N423fb46d4d8747d8ad3ba4f485f55d6d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -163,7 +148,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N11848ef317de4b52a42637c6adc5623d",
+      "@id": "_:N1730304305564341b7f9d14db57a8d91",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -174,7 +159,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N42f482c1d1f0407f87fd5b8cd0fcbb31",
+      "@id": "_:N1acf5c1602bd4146b772de02d3c2a336",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -185,7 +170,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N6aef654fc5d84fd889a24154464e237c",
+      "@id": "_:Nc8bf29a59f3f405384dcb01765aa91de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -196,7 +181,18 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N3f8c8bc0efad43338d7ae1199c5ca2f6",
+      "@id": "_:N52d7c229b5b24d48876c49a01460440e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N1123b1fec2c042df9eed8e674d8d055b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -207,7 +203,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N326e0d02204e46849691e9a5032266a9",
+      "@id": "_:N0fb4ffd52b3348e1874f3d1fd7ecc70e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -216,6 +212,10 @@
         "@id": "edam:format_3548"
       },
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13244-021-01081-8",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

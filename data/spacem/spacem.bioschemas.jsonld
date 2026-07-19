@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,21 +44,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf6d73f1365254f7c92c8307ba013d115"
+          "@id": "_:N0a39755c6e2c4b6caed7eef9b789f792"
         },
         {
-          "@id": "_:N733c079e5d4f411ab95345932eac7647"
+          "@id": "_:N89046946e7ab4164a44949174c56d980"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8493059a54534486b233c53cf2a60749"
+          "@id": "_:N8cd79767440e426aa680b467947bf441"
         },
         {
-          "@id": "_:N85f2f7badc9344aeb00afd96731bc73a"
+          "@id": "_:N0bf797563f4540edbed69375ca206325"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -68,15 +68,15 @@
           "@id": "edam:topic_3382"
         },
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC7611214",
         "pubmed:34226721",
+        "pmcid:PMC7611214",
         {
           "@id": "https://doi.org/10.1038/S41592-021-01198-0"
         }
@@ -84,36 +84,36 @@
       "sc:description": "A method for in situ single-cell metabolomics of cultured cells that integrates microscopy with MALDI-imaging mass spectrometry.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3283"
+        },
+        {
+          "@id": "edam:operation_3891"
+        },
+        {
           "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_3443"
         },
         {
-          "@id": "edam:operation_3860"
-        },
-        {
-          "@id": "edam:operation_3891"
-        },
-        {
-          "@id": "edam:operation_3283"
-        },
-        {
           "@id": "edam:operation_3553"
+        },
+        {
+          "@id": "edam:operation_3860"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "SpaceM",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://metaspace2020.eu/project/Rappez_2021_SpaceM"
     },
     {
-      "@id": "_:Nf6d73f1365254f7c92c8307ba013d115",
+      "@id": "_:N0a39755c6e2c4b6caed7eef9b789f792",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -124,29 +124,51 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N733c079e5d4f411ab95345932eac7647",
+      "@id": "_:N89046946e7ab4164a44949174c56d980",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3591"
+          "@id": "edam:format_3579"
         },
         {
           "@id": "edam:format_3727"
         },
         {
-          "@id": "edam:format_3579"
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3591"
         }
       ],
       "sc:name": "Raw image"
     },
     {
-      "@id": "_:N8493059a54534486b233c53cf2a60749",
+      "@id": "_:N8cd79767440e426aa680b467947bf441",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3727"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3591"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N0bf797563f4540edbed69375ca206325",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -160,28 +182,6 @@
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N85f2f7badc9344aeb00afd96731bc73a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3727"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Image"
     }
   ]
 }

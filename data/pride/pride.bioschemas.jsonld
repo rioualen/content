@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/0471250953.bi1308s21",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pride",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "PRIDE Feedback",
       "bsc:input": [
         {
-          "@id": "_:N152b706676c343d2986ec97cdd600a2b"
+          "@id": "_:Nf4a9f333c025431587b9ab1f0b80b4b1"
         },
         {
-          "@id": "_:N6894be0b0b144264a4ccf553d6b4ab27"
+          "@id": "_:Ncd08245ebe4343cebac418624371c4f7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1c2a166710464597a92d92b94562431f"
+          "@id": "_:N1434ee22149148d8bd6fd237a3715a73"
         },
         {
-          "@id": "_:Nf4f5d762725342f2a6b467f66a30b1d7"
+          "@id": "_:Nd4eafeedab9e4204b9246e776327030f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0078"
+        },
         {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
-        },
-        {
-          "@id": "edam:topic_0078"
         }
       ],
       "sc:citation": [
@@ -77,17 +81,17 @@
       "sc:description": "Centralized, standards compliant, public data repository that provides protein and peptide identifications together with supporting evidence. This collection references experiments and assays.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:name": "PRIDE",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI Databases",
@@ -99,18 +103,23 @@
       "sc:url": "http://www.ebi.ac.uk/pride/"
     },
     {
-      "@id": "_:N1c2a166710464597a92d92b94562431f",
+      "@id": "_:Nf4a9f333c025431587b9ab1f0b80b4b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2536"
+        "@id": "edam:data_1145"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Mass spectrometry data"
+      "sc:name": "PRIDE experiment accession number"
     },
     {
-      "@id": "_:Nf4f5d762725342f2a6b467f66a30b1d7",
+      "@id": "_:Ncd08245ebe4343cebac418624371c4f7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N1434ee22149148d8bd6fd237a3715a73",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -121,24 +130,15 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N152b706676c343d2986ec97cdd600a2b",
+      "@id": "_:Nd4eafeedab9e4204b9246e776327030f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1145"
+        "@id": "edam:data_2536"
       },
-      "sc:name": "PRIDE experiment accession number"
-    },
-    {
-      "@id": "_:N6894be0b0b144264a4ccf553d6b4ab27",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
       },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "https://doi.org/10.1002/0471250953.bi1308s21",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Mass spectrometry data"
     }
   ]
 }

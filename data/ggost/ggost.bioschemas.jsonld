@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkr378",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ggost",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,41 +47,41 @@
         "Jüri Reimand"
       ],
       "bsc:input": {
-        "@id": "_:Na260501b8e3042b8bd61da36a4adb523"
+        "@id": "_:N98a033d0c6284b98aea94d8674f39b7a"
       },
       "bsc:output": {
-        "@id": "_:N9d21f23a036c4e42b1329a5e40430a40"
+        "@id": "_:N190f59bab484416cba1b0c828fc6e2e6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3345"
         },
         {
-          "@id": "edam:topic_0089"
-        },
-        {
-          "@id": "edam:topic_2269"
-        },
-        {
           "@id": "edam:topic_3473"
         },
         {
           "@id": "edam:topic_1775"
+        },
+        {
+          "@id": "edam:topic_0089"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:17478515",
         "pmcid:PMC1933153",
         {
           "@id": "https://doi.org/10.1093/nar/gkm226"
         },
-        "pmcid:PMC3125778",
         "pubmed:21646343",
-        "pubmed:17478515",
+        "pmcid:PMC3125778",
         {
           "@id": "https://doi.org/10.1093/nar/gkr378"
         }
@@ -88,37 +92,37 @@
           "@id": "edam:operation_2422"
         },
         {
+          "@id": "edam:operation_3672"
+        },
+        {
           "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_3672"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Freeware",
       "sc:name": "gGost",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-EE",
       "sc:softwareHelp": [
         {
-          "@id": "https://biit.cs.ut.ee/gprofiler/page.cgi?welcome"
+          "@id": "https://biit.cs.ut.ee/gprofiler/help.cgi?help_id=56"
         },
         {
-          "@id": "https://biit.cs.ut.ee/gprofiler/help.cgi?help_id=56"
+          "@id": "https://biit.cs.ut.ee/gprofiler/page.cgi?welcome"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://biit.cs.ut.ee/gprofiler/index.cgi"
     },
     {
-      "@id": "_:Na260501b8e3042b8bd61da36a4adb523",
+      "@id": "_:N98a033d0c6284b98aea94d8674f39b7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -129,7 +133,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N9d21f23a036c4e42b1329a5e40430a40",
+      "@id": "_:N190f59bab484416cba1b0c828fc6e2e6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1176"
@@ -138,10 +142,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "GO concept ID"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkr378",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkm226",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,55 +36,63 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/gb-2007-8-7-r129",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flymine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf096c038ce414a7fa0af9b1f79a4b5ca"
+          "@id": "_:Nd9727c5f21ab43fbaaa4ebd4bc73a721"
         },
         {
-          "@id": "_:Nea231e9d62b9462a90a0f84d1c6a0483"
+          "@id": "_:N2c008152246c4287af03227ce6e63a02"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N73cc0db69312413e8d002772e5e0eda3"
+          "@id": "_:Nc80bb43c5e2c40378a0dd2c6a5e0be89"
         },
         {
-          "@id": "_:N6c51902af81e4c3fb458e683bbe74b9a"
+          "@id": "_:N3c8b37a0cd03465291a6809545824e53"
         },
         {
-          "@id": "_:N9852986b9a0f42aa891dc0fc3d01d07a"
+          "@id": "_:N0fde0bb174c6468c8ee1745dce2d4533"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
+        "Database portal",
         "Web application",
-        "Database portal"
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
-        "pubmed:17615057",
+        "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
         },
-        "pubmed:23023984",
+        "pubmed:17615057",
         "pmcid:PMC2323218",
         {
           "@id": "https://doi.org/10.1186/gb-2007-8-7-r129"
-        },
-        "pmcid:PMC3516146"
+        }
       ],
       "sc:description": "An integrated database for Drosophila and Anopheles genomics.",
       "sc:featureList": [
@@ -105,8 +113,8 @@
       "sc:license": "LGPL-2.1",
       "sc:name": "FlyMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
@@ -120,7 +128,7 @@
       "sc:url": "https://flymine.org/flymine"
     },
     {
-      "@id": "_:Nf096c038ce414a7fa0af9b1f79a4b5ca",
+      "@id": "_:Nd9727c5f21ab43fbaaa4ebd4bc73a721",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -128,7 +136,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:Nea231e9d62b9462a90a0f84d1c6a0483",
+      "@id": "_:N2c008152246c4287af03227ce6e63a02",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -136,23 +144,7 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:N73cc0db69312413e8d002772e5e0eda3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N6c51902af81e4c3fb458e683bbe74b9a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:N9852986b9a0f42aa891dc0fc3d01d07a",
+      "@id": "_:Nc80bb43c5e2c40378a0dd2c6a5e0be89",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -160,12 +152,20 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "https://doi.org/10.1186/gb-2007-8-7-r129",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N3c8b37a0cd03465291a6809545824e53",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0fde0bb174c6468c8ee1745dce2d4533",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

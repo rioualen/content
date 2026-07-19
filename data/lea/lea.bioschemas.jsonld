@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,49 +36,53 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1111/2041-210X.12382",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/lea",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Eric Frichot",
       "bsc:input": {
-        "@id": "_:N063dcc6d0a3a4d478dcbdf3642ac40be"
+        "@id": "_:Ne02a3aa57254446db3f66c117108e10a"
       },
       "bsc:output": [
         {
-          "@id": "_:Nef24dc8891714b4cbf4df102d86c64ef"
+          "@id": "_:Nb64d1154cc264bafb89eff2c07b3e69f"
         },
         {
-          "@id": "_:Ne5a6da4739684e52b69081a339bf77c6"
+          "@id": "_:N71010f87b88a4e2b97cc562632f70d51"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3517"
+          "@id": "edam:topic_2885"
         },
         {
           "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3056"
-        },
-        {
-          "@id": "edam:topic_2885"
-        },
-        {
           "@id": "edam:topic_0610"
+        },
+        {
+          "@id": "edam:topic_3517"
+        },
+        {
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3056"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": {
@@ -99,9 +103,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "LEA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/LEA.html"
@@ -110,7 +114,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/LEA.html"
     },
     {
-      "@id": "_:Nef24dc8891714b4cbf4df102d86c64ef",
+      "@id": "_:Ne02a3aa57254446db3f66c117108e10a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3286"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Nb64d1154cc264bafb89eff2c07b3e69f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -126,7 +146,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Ne5a6da4739684e52b69081a339bf77c6",
+      "@id": "_:N71010f87b88a4e2b97cc562632f70d51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -140,26 +160,6 @@
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N063dcc6d0a3a4d478dcbdf3642ac40be",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_3286"
-        }
-      ],
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "https://doi.org/10.1111/2041-210X.12382",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

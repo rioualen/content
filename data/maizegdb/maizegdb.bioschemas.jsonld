@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/maizegdb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N03cb8c848244476592274b20904f7f6f"
+        "@id": "_:Ncda22530d6494554bdbe3b244c5b4391"
       },
       "bsc:output": {
-        "@id": "_:N6a7a78df96cd4a4e9dc924daa55d30cf"
+        "@id": "_:N5a94d87a79ba48599d0eb2f6574f3d1d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0780"
@@ -67,8 +67,8 @@
       "sc:name": "Maize genetics and genomics database (MaizeGDB)",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.maizegdb.org/doc"
@@ -76,7 +76,15 @@
       "sc:url": "http://www.maizegdb.org/"
     },
     {
-      "@id": "_:N6a7a78df96cd4a4e9dc924daa55d30cf",
+      "@id": "_:Ncda22530d6494554bdbe3b244c5b4391",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2798"
+      },
+      "sc:name": "MaizeDB ID"
+    },
+    {
+      "@id": "_:N5a94d87a79ba48599d0eb2f6574f3d1d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3134"
@@ -85,14 +93,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene transcript report"
-    },
-    {
-      "@id": "_:N03cb8c848244476592274b20904f7f6f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2798"
-      },
-      "sc:name": "MaizeDB ID"
     }
   ]
 }

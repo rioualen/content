@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,46 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mpileup_vcf",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N35501dd4b3474e65b18e184ba188094e"
+          "@id": "_:N1316fc737f40439bbec3037777b85403"
         },
         {
-          "@id": "_:Nc9e9e525d12e4ffc9482989478afd447"
+          "@id": "_:N2c1789d8986b4f7cb665a57ebd68f972"
         },
         {
-          "@id": "_:Nf4d6511199274c64b5ecb466818f178a"
+          "@id": "_:N27f0cf88fd704ac68f9d9f7cb7b296ac"
         },
         {
-          "@id": "_:N9a1d4279fefd47d68bafc00538379239"
+          "@id": "_:Ne7e9617ee4b64a67b08051cbff3b3fee"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne82d5a466a2841e9a458b61520c9bfe9"
+        "@id": "_:N8146bcae26f24ceb8e835dc9d0874624"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "On coverage and SNPs and output a vcf file.",
@@ -80,15 +84,15 @@
       },
       "sc:name": "mpileup_vcf",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareVersion": "1.0.2",
       "sc:url": "http://www.htslib.org/"
     },
     {
-      "@id": "_:N35501dd4b3474e65b18e184ba188094e",
+      "@id": "_:N1316fc737f40439bbec3037777b85403",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -99,29 +103,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nc9e9e525d12e4ffc9482989478afd447",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:Nf4d6511199274c64b5ecb466818f178a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N9a1d4279fefd47d68bafc00538379239",
+      "@id": "_:N2c1789d8986b4f7cb665a57ebd68f972",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -132,7 +114,29 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Ne82d5a466a2841e9a458b61520c9bfe9",
+      "@id": "_:N27f0cf88fd704ac68f9d9f7cb7b296ac",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Ne7e9617ee4b64a67b08051cbff3b3fee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N8146bcae26f24ceb8e835dc9d0874624",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -141,10 +145,6 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

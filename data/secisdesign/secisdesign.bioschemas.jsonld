@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,38 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/bti507",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/secisdesign",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Anke Busch",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Anke Busch"
       ],
       "bsc:input": {
-        "@id": "_:N11f280ecbcf34bbdb785b421e2a5b1b4"
+        "@id": "_:Nd45d353df8b3496aa5ba5ed95f8e0c5c"
       },
       "bsc:output": {
-        "@id": "_:Nd99cb126eb8848f19b3963782ffb3f50"
+        "@id": "_:N627ca2ecb45841fe95e86893fae4c615"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Anke Busch",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Anke Busch"
       ],
       "sc:citation": [
         "pubmed:15919727",
@@ -87,8 +87,8 @@
         "Windows"
       ],
       "sc:provider": [
-        "rnateam",
-        "University Freiburg"
+        "University Freiburg",
+        "rnateam"
       ],
       "sc:softwareHelp": {
         "@id": "http://rna.informatik.uni-freiburg.de/Help.jsp"
@@ -97,18 +97,7 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/SECISDesign/"
     },
     {
-      "@id": "_:Nd99cb126eb8848f19b3963782ffb3f50",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N11f280ecbcf34bbdb785b421e2a5b1b4",
+      "@id": "_:Nd45d353df8b3496aa5ba5ed95f8e0c5c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -117,6 +106,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N627ca2ecb45841fe95e86893fae4c615",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

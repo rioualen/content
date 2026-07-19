@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-10-203",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sim",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Renee X. de Menezes",
       "bsc:input": {
-        "@id": "_:N890058d7da2546f7b6e2b3423ea093d6"
+        "@id": "_:N466bdeb2475348fc8005a516a1950e69"
       },
       "bsc:output": {
-        "@id": "_:N21cd391ee36545e28802c6d02f351e2b"
+        "@id": "_:N6b730043b9af46d197f35356c3d8e8ce"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": [
@@ -72,18 +68,18 @@
       "sc:description": "Finds associations between two human genomic datasets.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3649"
+          "@id": "edam:operation_3215"
         },
         {
-          "@id": "edam:operation_3215"
+          "@id": "edam:operation_3649"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "SIM",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SIM.html"
@@ -92,7 +88,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SIM.html"
     },
     {
-      "@id": "_:N21cd391ee36545e28802c6d02f351e2b",
+      "@id": "_:N466bdeb2475348fc8005a516a1950e69",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3245"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N6b730043b9af46d197f35356c3d8e8ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -103,15 +110,8 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N890058d7da2546f7b6e2b3423ea093d6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3245"
-      },
-      "sc:name": "Mass spectrometry spectra"
+      "@id": "https://doi.org/10.1186/1471-2105-10-203",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

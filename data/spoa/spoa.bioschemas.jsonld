@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.48550/arXiv.1611.06115",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/spoa",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nade31bb99f9446b49bccd225165acfb0"
+        "@id": "_:N1fac708716774f899771e513c4e1b1bc"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
@@ -61,14 +57,14 @@
       "sc:license": "MIT",
       "sc:name": "Spoa",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://github.com/rvaser/spoa"
     },
     {
-      "@id": "_:Nade31bb99f9446b49bccd225165acfb0",
+      "@id": "_:N1fac708716774f899771e513c4e1b1bc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1193"
@@ -77,6 +73,10 @@
         "@id": "edam:format_3987"
       },
       "sc:name": "Tool name (FASTA)"
+    },
+    {
+      "@id": "https://doi.org/10.48550/arXiv.1611.06115",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

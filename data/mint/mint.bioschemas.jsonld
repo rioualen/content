@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,15 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-5084-9000",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1002/cpbi.93",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkp983",
       "@type": "sc:CreativeWork"
     },
     {
@@ -46,17 +54,20 @@
         "@id": "https://orcid.org/0000-0001-5084-9000"
       },
       "bsc:input": {
-        "@id": "_:N187091d7f88947bea4a3ae58418251aa"
+        "@id": "_:Nfb7d0de9799341f289e7acdc5fa19e50"
       },
       "bsc:output": {
-        "@id": "_:N84fc090abc7d47a39a4806e95e407ea4"
+        "@id": "_:Neb710def0f564646b07381feb0fdd196"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3366"
+        },
         {
           "@id": "edam:topic_0602"
         },
@@ -65,9 +76,6 @@
         },
         {
           "@id": "edam:topic_3325"
-        },
-        {
-          "@id": "edam:topic_3366"
         }
       ],
       "sc:author": [
@@ -76,51 +84,51 @@
       ],
       "sc:citation": [
         "pubmed:22096227",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkp983"
-        },
         "pmcid:PMC3244991",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkr930"
+        },
+        "pubmed:24234451",
         {
           "@id": "https://doi.org/10.1093/nar/gkt1115"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkr930"
+          "@id": "https://doi.org/10.1002/cpbi.93"
         },
         "pubmed:19897547",
         {
-          "@id": "https://doi.org/10.1002/cpbi.93"
-        },
-        "pubmed:24234451"
+          "@id": "https://doi.org/10.1093/nar/gkp983"
+        }
       ],
       "sc:contributor": [
-        "Marta Iannuccelli",
+        "Gianni Cesareni",
         "Livia Perfetto",
-        "Gianni Cesareni"
+        "Marta Iannuccelli"
       ],
       "sc:description": "Molecular interaction Database (MINT) - public repository for protein-protein interactions (PPI) reported in peer-reviewed journals. The web interface allows the users to search, visualize and download interactions data",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2422"
+        },
         {
           "@id": "edam:operation_3431"
         },
         {
           "@id": "edam:operation_2497"
-        },
-        {
-          "@id": "edam:operation_2422"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "MINT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Dept. of Molecular Biology, University of Rome Tor Vergata, Via della Ricerca Scientifica, Rome",
       "sc:url": "https://mint.bio.uniroma2.it/"
     },
     {
-      "@id": "_:N187091d7f88947bea4a3ae58418251aa",
+      "@id": "_:Nfb7d0de9799341f289e7acdc5fa19e50",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
@@ -128,7 +136,7 @@
       "sc:name": "Text data"
     },
     {
-      "@id": "_:N84fc090abc7d47a39a4806e95e407ea4",
+      "@id": "_:Neb710def0f564646b07381feb0fdd196",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0906"
@@ -139,20 +147,12 @@
       "sc:name": "Protein interaction data"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkt1115",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkr930",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkp983",
+      "@id": "https://doi.org/10.1093/nar/gkt1115",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5084-9000",
-      "@type": "sc:Person"
     }
   ]
 }

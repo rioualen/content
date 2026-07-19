@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2021.02.26.432990",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dentist",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,28 +43,28 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N1ed10e0364ac46039a3b32bfa3ff725a"
+          "@id": "_:Na0abafd675fc4f879302d7de36d09664"
         },
         {
-          "@id": "_:Nc5aba0b1a54e4588b1fcd0a159d4d33d"
+          "@id": "_:N40815f56753a4c71882e4deca7a786f9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd56ccdab9f924e42940384632707a880"
+          "@id": "_:N7eb8e2793e9b4bf59ed7fe4de49f04a6"
         },
         {
-          "@id": "_:Ne09f24dcdc1d427287dd0a9ac4b2912a"
+          "@id": "_:N73de515a88984a5b8faf916d4b18ca3b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_0196"
         },
         {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:author": {
@@ -80,10 +76,10 @@
       "sc:description": "DENTIST uses long reads to close assembly gaps at high accuracy.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3216"
+          "@id": "edam:operation_0525"
         },
         {
-          "@id": "edam:operation_0525"
+          "@id": "edam:operation_3216"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -92,14 +88,14 @@
       "sc:operatingSystem": "Linux",
       "sc:softwareVersion": [
         "1.0.0",
+        "1.0.1",
         "1.0.2",
-        "2.0.0",
-        "1.0.1"
+        "2.0.0"
       ],
       "sc:url": "https://a-ludi.github.io/dentist/"
     },
     {
-      "@id": "_:Nd56ccdab9f924e42940384632707a880",
+      "@id": "_:Na0abafd675fc4f879302d7de36d09664",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -110,7 +106,29 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:Ne09f24dcdc1d427287dd0a9ac4b2912a",
+      "@id": "_:N40815f56753a4c71882e4deca7a786f9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N7eb8e2793e9b4bf59ed7fe4de49f04a6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N73de515a88984a5b8faf916d4b18ca3b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -126,26 +144,8 @@
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:N1ed10e0364ac46039a3b32bfa3ff725a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:Nc5aba0b1a54e4588b1fcd0a159d4d33d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
+      "@id": "https://doi.org/10.1101/2021.02.26.432990",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0003-3024-1449",

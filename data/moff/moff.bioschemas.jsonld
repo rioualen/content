@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,21 +44,21 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Lennart Martens",
       "bsc:input": {
-        "@id": "_:Ne9a1094e505f4b239d7ea9001df7933f"
+        "@id": "_:Ndcf871927a724e7e8aeb92c1e0b91285"
       },
       "bsc:output": {
-        "@id": "_:Nb637135d0cc2486f9150907050d99576"
+        "@id": "_:Nc6310a3144da43f4ac10d5cb5a38f0b6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
+        "pubmed:27898063",
         {
           "@id": "https://doi.org/10.1038/nmeth.4075"
-        },
-        "pubmed:27898063"
+        }
       ],
       "sc:description": "A modest Feature Finder to extract features in MS1 Data.",
       "sc:featureList": {
@@ -66,9 +66,9 @@
       },
       "sc:name": "MoFF",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -78,20 +78,20 @@
       "sc:url": "https://github.com/compomics/moFF"
     },
     {
-      "@id": "_:Nb637135d0cc2486f9150907050d99576",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2071"
-      },
-      "sc:name": "Sequence motif (protein)"
-    },
-    {
-      "@id": "_:Ne9a1094e505f4b239d7ea9001df7933f",
+      "@id": "_:Ndcf871927a724e7e8aeb92c1e0b91285",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nc6310a3144da43f4ac10d5cb5a38f0b6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2071"
+      },
+      "sc:name": "Sequence motif (protein)"
     }
   ]
 }

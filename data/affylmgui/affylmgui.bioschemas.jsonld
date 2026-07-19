@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-9221-2892",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btl025",
       "@type": "sc:CreativeWork"
     },
@@ -47,32 +43,32 @@
       "@id": "https://bio.tools/affylmgui",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Keith Satterley",
         {
           "@id": "http://orcid.org/0000-0001-9221-2892"
         },
-        "Yifang Hu"
+        "Yifang Hu",
+        "Keith Satterley"
       ],
       "bsc:input": {
-        "@id": "_:Na8abc219db064eddb074f383e1e177bf"
+        "@id": "_:N6d6edadfd54e47c9a8e3fb22cd3242ab"
       },
       "bsc:output": {
-        "@id": "_:N471b5079ca7e40d0b91c996a194dd5ae"
+        "@id": "_:Nd233af41b45041debee130d9b0f06f4c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0203"
-        },
         {
           "@id": "edam:topic_3473"
         },
         {
           "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
@@ -88,9 +84,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "affylmGUI",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/affylmGUI.html"
@@ -99,7 +95,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/affylmGUI.html"
     },
     {
-      "@id": "_:N471b5079ca7e40d0b91c996a194dd5ae",
+      "@id": "_:N6d6edadfd54e47c9a8e3fb22cd3242ab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Nd233af41b45041debee130d9b0f06f4c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -110,15 +117,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Na8abc219db064eddb074f383e1e177bf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Gene expression profile"
+      "@id": "http://orcid.org/0000-0001-9221-2892",
+      "@type": "sc:Person"
     }
   ]
 }

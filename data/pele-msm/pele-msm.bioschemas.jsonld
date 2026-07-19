@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/ACS.JCTC.9B00753",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/PELE-MSM",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3375"
+        },
         {
           "@id": "edam:topic_3315"
         },
@@ -56,9 +55,6 @@
         },
         {
           "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_3375"
         }
       ],
       "sc:citation": [
@@ -73,10 +69,10 @@
           "@id": "edam:operation_3896"
         },
         {
-          "@id": "edam:operation_0482"
+          "@id": "edam:operation_2476"
         },
         {
-          "@id": "edam:operation_2476"
+          "@id": "edam:operation_0482"
         }
       ],
       "sc:name": "PELE-MSM",
@@ -84,6 +80,10 @@
         "@id": "https://nostrumbiodiscovery.github.io/msm_pele/"
       },
       "sc:url": "https://github.com/miniaoshi/MSM_PELE.git"
+    },
+    {
+      "@id": "https://doi.org/10.1021/ACS.JCTC.9B00753",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,22 +40,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Stein Aerts",
       "bsc:input": {
-        "@id": "_:N39f871124ea24686bf316ec43a5d256d"
+        "@id": "_:N47cf3848fe7a49e6bf25f1ab7ad149d4"
       },
       "bsc:output": {
-        "@id": "_:N2b5284e60e1145369483e3edfa921a26"
+        "@id": "_:N0bcf1978e3ae4912bc589860d7c6518b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3170"
-        },
         {
           "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_0749"
@@ -71,21 +71,21 @@
       "sc:description": "A computational method for simultaneous gene regulatory network reconstruction and cell-state identification from single-cell RNA-seq data.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2495"
+        },
+        {
           "@id": "edam:operation_1781"
         },
         {
           "@id": "edam:operation_3680"
-        },
-        {
-          "@id": "edam:operation_2495"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "SCENIC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -95,18 +95,7 @@
       "sc:url": "http://scenic.aertslab.org"
     },
     {
-      "@id": "_:N2b5284e60e1145369483e3edfa921a26",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2032"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N39f871124ea24686bf316ec43a5d256d",
+      "@id": "_:N47cf3848fe7a49e6bf25f1ab7ad149d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -115,6 +104,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N0bcf1978e3ae4912bc589860d7c6518b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2032"
+      },
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth.4463",

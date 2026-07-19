@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,27 +39,27 @@
       "@id": "https://bio.tools/met4j",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N93d9a6ae1c5b4ece8e64f7e7d6ee2a03"
+        "@id": "_:N6a31c678e2c14214ab4334a3a87926c5"
       },
       "bsc:output": {
-        "@id": "_:Na3693acb1baa478b86f812118edcf9c2"
+        "@id": "_:Nca89252e2eac41aaa9a3f0b8ecdc9958"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
       },
       "sc:author": [
-        "Ludovic Cottret",
-        "Clément Frainay"
+        "Clément Frainay",
+        "Ludovic Cottret"
       ],
       "sc:description": "Java library for metabolic networks. Singularity and docker containers allow to use met4j without installing Java or computational skills. Met4j apps allow to parse and edit SBML and to analyse the network with graph analysis.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3929"
+          "@id": "edam:operation_3660"
         },
         {
-          "@id": "edam:operation_3660"
+          "@id": "edam:operation_3929"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -72,7 +72,18 @@
       "sc:url": "https://forgemia.inra.fr/metexplore/met4j"
     },
     {
-      "@id": "_:Na3693acb1baa478b86f812118edcf9c2",
+      "@id": "_:N6a31c678e2c14214ab4334a3a87926c5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2585"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Nca89252e2eac41aaa9a3f0b8ecdc9958",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -85,17 +96,6 @@
           "@id": "edam:format_2585"
         }
       ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N93d9a6ae1c5b4ece8e64f7e7d6ee2a03",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2585"
-      },
       "sc:name": "Pathway or network"
     }
   ]

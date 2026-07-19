@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,6 +40,10 @@
       "@type": "sc:Person"
     },
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq441",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/xcms",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,35 +51,35 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Na19183f4db09438dbf23fb752e56dba8"
+          "@id": "_:N88fd3ceb4b3240dcb1ab10f8d3bd4b59"
         },
         {
-          "@id": "_:N0b7a3b392dda491c92ee40acc3080d88"
+          "@id": "_:N1126463d95d3448089a8a3c48ae9d979"
         },
         {
-          "@id": "_:N0b75da53a7c440afab1a6dd949121813"
+          "@id": "_:N970f4aa3f4bc48e9ad2fe39fa644c1e4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5a513dd6260b468f9144cca155882e96"
+          "@id": "_:N6b20e74c1df94f9597c7d134e080522a"
         },
         {
-          "@id": "_:Ne4f25d3d425943b78617c6534b6163cc"
+          "@id": "_:Ne273312689ce41829bc1b15812188e13"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
-        "Web application",
-        "Library"
+        "Library",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3172"
         }
       ],
       "sc:citation": [
@@ -86,9 +90,6 @@
       ],
       "sc:description": "Framework for processing and visualization of chromatographically separated and single-spectra mass spectral data.  The packages enables imports from AIA/ANDI NetCDF, mzXML, mzData and mzML files and preprocesses data for high-throughput, untargeted analyte profiling.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3215"
-        },
         {
           "@id": "edam:operation_3628"
         },
@@ -102,6 +103,9 @@
           "@id": "edam:operation_3694"
         },
         {
+          "@id": "edam:operation_3215"
+        },
+        {
           "@id": "edam:operation_2428"
         },
         {
@@ -111,29 +115,48 @@
       "sc:license": "GPL-2.0",
       "sc:name": "xcms",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
           "@id": "https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html"
         },
         {
+          "@id": "https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
+        },
+        {
           "@id": "https://jorainer.github.io/xcmsTutorials/"
         },
         {
           "@id": "http://bioconductor.org/packages/release/bioc/html/xcms.html"
-        },
-        {
-          "@id": "https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html"
         }
       ],
       "sc:softwareVersion": "3.0.2",
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/xcms.html"
     },
     {
-      "@id": "_:Na19183f4db09438dbf23fb752e56dba8",
+      "@id": "_:N88fd3ceb4b3240dcb1ab10f8d3bd4b59",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3650"
+        },
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
+        }
+      ],
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N1126463d95d3448089a8a3c48ae9d979",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -143,35 +166,16 @@
           "@id": "edam:format_3650"
         },
         {
-          "@id": "edam:format_3654"
+          "@id": "edam:format_3244"
         },
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N0b7a3b392dda491c92ee40acc3080d88",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3650"
-        },
-        {
-          "@id": "edam:format_3654"
-        }
-      ],
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N0b75da53a7c440afab1a6dd949121813",
+      "@id": "_:N970f4aa3f4bc48e9ad2fe39fa644c1e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -182,7 +186,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N5a513dd6260b468f9144cca155882e96",
+      "@id": "_:N6b20e74c1df94f9597c7d134e080522a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -198,7 +202,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Ne4f25d3d425943b78617c6534b6163cc",
+      "@id": "_:Ne273312689ce41829bc1b15812188e13",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -207,10 +211,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq441",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

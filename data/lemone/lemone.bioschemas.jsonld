@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,22 +44,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Tom Michoel",
       "bsc:input": {
-        "@id": "_:N4dbb3aa44d854045881d2c25b2c33016"
+        "@id": "_:Nfcdb51834ca14dcfbab1f8abacb03e43"
       },
       "bsc:output": {
-        "@id": "_:N4cf3dc488de84a188fea23fd67c457a6"
+        "@id": "_:Na9b67e13b8d34cdba734adf255819503"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
       },
       "sc:citation": [
         "pubmed:20823333",
+        "pmcid:PMC2935430",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btq395"
-        },
-        "pmcid:PMC2935430"
+        }
       ],
       "sc:description": "A software package for Learning Module Networks from gene expression data.",
       "sc:featureList": {
@@ -67,9 +67,9 @@
       },
       "sc:name": "LeMoNe",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "PSB",
       "sc:softwareHelp": {
@@ -79,20 +79,20 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/software/details/LeMoNe"
     },
     {
-      "@id": "_:N4cf3dc488de84a188fea23fd67c457a6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2984"
-      },
-      "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "_:N4dbb3aa44d854045881d2c25b2c33016",
+      "@id": "_:Nfcdb51834ca14dcfbab1f8abacb03e43",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
       },
       "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Na9b67e13b8d34cdba734adf255819503",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2984"
+      },
+      "sc:name": "Pathway or network report"
     }
   ]
 }

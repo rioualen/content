@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,29 +44,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Xiaojing Wang",
       "bsc:input": {
-        "@id": "_:N3c818ca7b6fd415ca32f89c003bc17a2"
+        "@id": "_:Nfacf0ab18c8e4e44bd75a0ff4f427449"
       },
       "bsc:output": {
-        "@id": "_:N1e21616e54dc4de4a05754faffdcb184"
+        "@id": "_:Na0aacfe69e21499286f593cbae9fc47e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_3308"
-        },
-        {
-          "@id": "edam:topic_0622"
-        },
         {
           "@id": "edam:topic_0092"
         },
@@ -74,7 +62,19 @@
           "@id": "edam:topic_0114"
         },
         {
+          "@id": "edam:topic_0622"
+        },
+        {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_3168"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": {
@@ -83,17 +83,17 @@
       "sc:description": "Mapping PSMs back to genome. The package builds SAM file from shotgun proteomics data The package also provides function to prepare annotation from GTF file.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_0335"
         },
         {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_3631"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "proBAMr",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -103,7 +103,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/proBAMr.html"
     },
     {
-      "@id": "_:N1e21616e54dc4de4a05754faffdcb184",
+      "@id": "_:Nfacf0ab18c8e4e44bd75a0ff4f427449",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2306"
+        }
+      ],
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Na0aacfe69e21499286f593cbae9fc47e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -112,22 +128,6 @@
         "@id": "edam:format_2573"
       },
       "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N3c818ca7b6fd415ca32f89c003bc17a2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2306"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Mass spectrometry data"
     }
   ]
 }

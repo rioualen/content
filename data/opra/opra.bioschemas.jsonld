@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-7502-3157",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1002/prot.22527",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/OPRA",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N58aa36ed0cbe465293b204a165c90e5b"
+        "@id": "_:N423c4972f49f474eb2ba9b16ecaf84d4"
       },
       "bsc:output": {
-        "@id": "_:Nadd279759dfd45a38647f48795b12dd4"
+        "@id": "_:Neb6cd940cc174412812b964ee11a1d8d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0128"
@@ -58,10 +66,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:19714772",
         {
           "@id": "https://doi.org/10.1002/prot.22527"
-        },
-        "pubmed:19714772"
+        }
       ],
       "sc:description": "OPRA (Optimal Protein-RNA Area) is useful for identifying potential RNA-binding sites on proteins and can help to model protein-RNA interactions of biological and therapeutic interest.",
       "sc:featureList": {
@@ -70,8 +78,8 @@
       "sc:name": "OPRA",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "Barcelona Supercomputing Center",
       "sc:softwareHelp": [
@@ -85,7 +93,7 @@
       "sc:url": "https://life.bsc.es/pid/opra"
     },
     {
-      "@id": "_:N58aa36ed0cbe465293b204a165c90e5b",
+      "@id": "_:N423c4972f49f474eb2ba9b16ecaf84d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -96,7 +104,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nadd279759dfd45a38647f48795b12dd4",
+      "@id": "_:Neb6cd940cc174412812b964ee11a1d8d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2042"
@@ -105,14 +113,6 @@
         "@id": "edam:format_3981"
       },
       "sc:name": "Evidence"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7502-3157",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1002/prot.22527",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "http://orcid.org/0000-0001-7786-2109",

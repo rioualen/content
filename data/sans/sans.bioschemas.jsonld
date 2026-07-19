@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13015-020-00164-3",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sans",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf997903d342948288b00d46128bddf58"
+          "@id": "_:N2683f7b7019243339485c611b50a6cee"
         },
         {
-          "@id": "_:N89a5b1ea8f5e42a88b963155fe313aa5"
+          "@id": "_:N6c595b9c4ced42838e2d1a98de7c8794"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7d09be8903d84da0bf6ef0469c6788fe"
+          "@id": "_:N0c6eedf2e1d143f4966b7e437581c6b5"
         },
         {
-          "@id": "_:N2e5a937a18d2487885421058e0673497"
+          "@id": "_:N1b40db83a16c47d1b082675aca907164"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -69,11 +65,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:32280365",
         "pmcid:PMC7137503",
         {
           "@id": "https://doi.org/10.1186/s13015-020-00164-3"
-        },
-        "pubmed:32280365"
+        }
       ],
       "sc:description": "SANS is a freely available command line tool for phylogenetic \nreconstruction. It is alignment- and reference-free, and accepts \n(multiple) FASTA or FASTQ files containing complete genomes, assembled \ncontigs, or raw reads as input. Sequence segments (in terms of k-mers) \nthat are shared by a set of genomes are used as indicators for \nphylogenetic splits. Splits are combined, weighted, filtered and output \nin tab separated format or Newick format. They can visualized as a phylogenetic tree or \nnetwork using existing tools such as SplitsTree. SANS is implemented in \nC++.",
       "sc:featureList": {
@@ -83,8 +79,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "SANS",
       "sc:provider": [
-        "Genome Informatics",
-        "Bielefeld University"
+        "Bielefeld University",
+        "Genome Informatics"
       ],
       "sc:softwareHelp": {
         "@id": "https://gitlab.ub.uni-bielefeld.de/gi/sans/-/blob/master/README.md"
@@ -92,7 +88,29 @@
       "sc:url": "https://gitlab.ub.uni-bielefeld.de/gi/sans"
     },
     {
-      "@id": "_:N7d09be8903d84da0bf6ef0469c6788fe",
+      "@id": "_:N2683f7b7019243339485c611b50a6cee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1919"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N6c595b9c4ced42838e2d1a98de7c8794",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1919"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N0c6eedf2e1d143f4966b7e437581c6b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3272"
@@ -103,7 +121,7 @@
       "sc:name": "Species tree"
     },
     {
-      "@id": "_:N2e5a937a18d2487885421058e0673497",
+      "@id": "_:N1b40db83a16c47d1b082675aca907164",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -114,26 +132,8 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:Nf997903d342948288b00d46128bddf58",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1919"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:N89a5b1ea8f5e42a88b963155fe313aa5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1919"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
+      "@id": "https://doi.org/10.1186/s13015-020-00164-3",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

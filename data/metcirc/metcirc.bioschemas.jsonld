@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btx159",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metcirc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Naake",
       "bsc:input": {
-        "@id": "_:Nb26bdcb55de546f1bbbe48959691efd5"
+        "@id": "_:N518a728476fe4bdd8bf3f0b3b056a3af"
       },
       "bsc:output": [
         {
-          "@id": "_:N8d095cd6791546f59ecacc38cda6dadc"
+          "@id": "_:N097293e8393046539294d2b57e3e201b"
         },
         {
-          "@id": "_:Na9d87193469443988584307565c2737e"
+          "@id": "_:N9bc47e4b746e4b4b8edee518bbd4ae21"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -60,10 +64,10 @@
           "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
@@ -75,13 +79,13 @@
       "sc:description": "This tool comprises a workflow to interactively explore metabolomics data by creating MSP or calculating m/z values and the similarity between precursors.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3925"
-        },
-        {
           "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_3694"
+        },
+        {
+          "@id": "edam:operation_3925"
         },
         {
           "@id": "edam:operation_3801"
@@ -92,8 +96,8 @@
       "sc:name": "MetCirc",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -107,29 +111,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/MetCirc.html"
     },
     {
-      "@id": "_:N8d095cd6791546f59ecacc38cda6dadc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Na9d87193469443988584307565c2737e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2855"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Distance matrix"
-    },
-    {
-      "@id": "_:Nb26bdcb55de546f1bbbe48959691efd5",
+      "@id": "_:N518a728476fe4bdd8bf3f0b3b056a3af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -145,8 +127,26 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx159",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N097293e8393046539294d2b57e3e201b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2855"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Distance matrix"
+    },
+    {
+      "@id": "_:N9bc47e4b746e4b4b8edee518bbd4ae21",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

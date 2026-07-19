@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cancer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Karim Mezhoud",
       "bsc:input": [
         {
-          "@id": "_:Nabd566ded9444018b88ee2e917eddebc"
+          "@id": "_:N5ebedaf20dbf4dc6a756e97bef6e34f3"
         },
         {
-          "@id": "_:Ne529a590afce4e4ab35990a59ffe535b"
+          "@id": "_:N13b9a40ee9d8479e852c3fa172368d48"
         },
         {
-          "@id": "_:Ne72d7267243142c0ae3a9e90d61b3e8f"
+          "@id": "_:N1579b787f06a4bfb85d4fa4567ff11e6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N54a5ef0c10564a9381cda98587147ee0"
+          "@id": "_:Na217b35a64294dc0a813d23654dacf1e"
         },
         {
-          "@id": "_:N465655acf9c24c65b047d622b9d915af"
+          "@id": "_:N3b45775fa6314c6ca8e3a0fc16fd2c70"
         },
         {
-          "@id": "_:Ne68c7d174cfa4d699cb4d4caca066492"
+          "@id": "_:N5d6cb028f91e4c5782f110fafc950848"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -71,10 +75,10 @@
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3053"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": {
@@ -95,9 +99,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "canceR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/canceR.html"
@@ -106,55 +110,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/canceR.html"
     },
     {
-      "@id": "_:N54a5ef0c10564a9381cda98587147ee0",
+      "@id": "_:N5ebedaf20dbf4dc6a756e97bef6e34f3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2984"
+        "@id": "edam:data_2603"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2058"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1920"
         }
       ],
-      "sc:name": "Pathway or network report"
+      "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N465655acf9c24c65b047d622b9d915af",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Ne68c7d174cfa4d699cb4d4caca066492",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0920"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Genotype/phenotype report"
-    },
-    {
-      "@id": "_:Nabd566ded9444018b88ee2e917eddebc",
+      "@id": "_:N13b9a40ee9d8479e852c3fa172368d48",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -170,40 +142,68 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:Ne529a590afce4e4ab35990a59ffe535b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1920"
-        },
-        {
-          "@id": "edam:format_2058"
-        }
-      ],
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:Ne72d7267243142c0ae3a9e90d61b3e8f",
+      "@id": "_:N1579b787f06a4bfb85d4fa4567ff11e6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1920"
+          "@id": "edam:format_2058"
         },
         {
-          "@id": "edam:format_2058"
+          "@id": "edam:format_1920"
         }
       ],
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na217b35a64294dc0a813d23654dacf1e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0920"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Genotype/phenotype report"
+    },
+    {
+      "@id": "_:N3b45775fa6314c6ca8e3a0fc16fd2c70",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2984"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Pathway or network report"
+    },
+    {
+      "@id": "_:N5d6cb028f91e4c5782f110fafc950848",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2021.06.20.449169",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-5-113",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkh340",
       "@type": "sc:CreativeWork"
     },
@@ -45,40 +57,40 @@
       "biotools:primaryContact": "Robert Edgar",
       "bsc:input": [
         {
-          "@id": "_:Necca8693588c4fecb7097b5285fef70f"
+          "@id": "_:N8ec9d1f68e204773b39667487cec532d"
         },
         {
-          "@id": "_:Nd0e585f219114257b05cc5e78078fd6c"
+          "@id": "_:N5894ce6c43b043d3ac31032225c0daea"
         }
       ],
       "bsc:output": {
-        "@id": "_:N97963b7038a14d908a7323e818fb1ce3"
+        "@id": "_:Na57be862e4b74b84bbc05962ccb25f9b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
-        "Command-line tool"
+        "Command-line tool",
+        "Web API"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "Robert Edgar",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1101/2021.06.20.449169"
-        },
         "pubmed:15034147",
         "pmcid:PMC390337",
-        "pmcid:PMC517706",
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        "pubmed:15318951",
         {
           "@id": "https://doi.org/10.1093/nar/gkh340"
         },
+        "pubmed:15318951",
+        "pmcid:PMC517706",
         {
           "@id": "https://doi.org/10.1186/1471-2105-5-113"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2021.06.20.449169"
+        },
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "This tool performs multiple sequence alignments of nucleotide or amino acid sequences.",
@@ -89,42 +101,36 @@
       "sc:license": "Other",
       "sc:name": "MUSCLE",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://www.drive5.com/muscle/manual/"
+          "@id": "http://bioconductor.org/packages/release/bioc/html/muscle.html"
         },
         {
-          "@id": "http://bioconductor.org/packages/release/bioc/html/muscle.html"
+          "@id": "https://www.ebi.ac.uk/seqdb/confluence/display/WEBSERVICES/muscle_rest"
         },
         {
           "@id": "https://www.drive5.com/muscle/manual/install.html"
         },
         {
-          "@id": "https://www.ebi.ac.uk/seqdb/confluence/display/WEBSERVICES/muscle_rest"
+          "@id": "https://www.drive5.com/muscle/manual/"
         }
       ],
       "sc:softwareVersion": "5",
       "sc:url": "https://www.drive5.com/muscle/"
     },
     {
-      "@id": "_:Necca8693588c4fecb7097b5285fef70f",
+      "@id": "_:N8ec9d1f68e204773b39667487cec532d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1936"
-        },
-        {
-          "@id": "edam:format_1948"
-        },
-        {
-          "@id": "edam:format_1997"
+          "@id": "edam:format_1927"
         },
         {
           "@id": "edam:format_1929"
@@ -133,20 +139,26 @@
           "@id": "edam:format_1935"
         },
         {
-          "@id": "edam:format_1927"
+          "@id": "edam:format_1936"
+        },
+        {
+          "@id": "edam:format_1997"
+        },
+        {
+          "@id": "edam:format_1948"
         }
       ],
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nd0e585f219114257b05cc5e78078fd6c",
+      "@id": "_:N5894ce6c43b043d3ac31032225c0daea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1997"
+          "@id": "edam:format_1927"
         },
         {
           "@id": "edam:format_1929"
@@ -155,10 +167,10 @@
           "@id": "edam:format_1935"
         },
         {
-          "@id": "edam:format_1927"
+          "@id": "edam:format_1936"
         },
         {
-          "@id": "edam:format_1936"
+          "@id": "edam:format_1997"
         },
         {
           "@id": "edam:format_1948"
@@ -167,14 +179,14 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N97963b7038a14d908a7323e818fb1ce3",
+      "@id": "_:Na57be862e4b74b84bbc05962ccb25f9b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1997"
+          "@id": "edam:format_1982"
         },
         {
           "@id": "edam:format_1929"
@@ -186,22 +198,10 @@
           "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_1982"
+          "@id": "edam:format_1997"
         }
       ],
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2021.06.20.449169",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-5-113",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

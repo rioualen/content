@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/genatlas",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4757cdef34e14e34adfd9c5bdc6ba8aa"
+        "@id": "_:Nfcbdf2bf5bc94936b024a19924d0f2cc"
       },
       "bsc:output": {
-        "@id": "_:N089dd36d0368417788ae3c1e030531c4"
+        "@id": "_:N657335b55cd6430fb21db573941d955a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -64,8 +64,8 @@
       "sc:name": "GenAtlas human gene database",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "UNIVERSITE PARIS DESCARTES",
       "sc:softwareHelp": {
@@ -74,7 +74,15 @@
       "sc:url": "http://www.dsi.univ-paris5.fr/genatlas/"
     },
     {
-      "@id": "_:N089dd36d0368417788ae3c1e030531c4",
+      "@id": "_:Nfcbdf2bf5bc94936b024a19924d0f2cc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N657335b55cd6430fb21db573941d955a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -83,14 +91,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N4757cdef34e14e34adfd9c5bdc6ba8aa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
     },
     {
       "@id": "https://doi.org/10.1016/S0764-4469(99)80021-3",

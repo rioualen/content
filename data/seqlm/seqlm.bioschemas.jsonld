@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw304",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/seqlm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N19c5bf3569ac4301b7bde37ec5034363"
+        "@id": "_:N47ada21b8bab4cde8a6b2fe8dcfb5f18"
       },
       "bsc:output": {
-        "@id": "_:Nd8c0d8eaaaf040fe81b4b83cdb878454"
+        "@id": "_:Nef2f152f31ed4f1c95fb20e09d3dc517"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
+        "pubmed:27187204",
+        "pmcid:PMC5013909",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw304"
-        },
-        "pubmed:27187204",
-        "pmcid:PMC5013909"
+        }
       ],
       "sc:description": "An R package for identification of differentially methylated regions (DMRs) from high density chip, for example Illumina 450K, data.",
       "sc:featureList": {
@@ -62,8 +66,8 @@
       },
       "sc:name": "seqlm",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-EE",
@@ -74,7 +78,7 @@
       "sc:url": "https://github.com/raivokolde/seqlm"
     },
     {
-      "@id": "_:N19c5bf3569ac4301b7bde37ec5034363",
+      "@id": "_:N47ada21b8bab4cde8a6b2fe8dcfb5f18",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -82,16 +86,12 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:Nd8c0d8eaaaf040fe81b4b83cdb878454",
+      "@id": "_:Nef2f152f31ed4f1c95fb20e09d3dc517",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw304",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

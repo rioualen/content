@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,48 +36,44 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt475",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fmcsr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Girke",
       "bsc:input": {
-        "@id": "_:Nf8f05d37e80e4effbdcba2d082bffc3b"
+        "@id": "_:N283aba061028404ea18b6b6099c2f75b"
       },
       "bsc:output": [
         {
-          "@id": "_:N026d781c418743028824538ffd976aa9"
+          "@id": "_:Nc905eb7f593d4496842026d83d6ca60a"
         },
         {
-          "@id": "_:N90b72b8e43c94ad4a7406d3638808bd7"
+          "@id": "_:Nb1f3bdcc9c8c4dd68fe49acbb6b94e37"
         },
         {
-          "@id": "_:N332c4fd9f2fa4edb9b0ed9914081d15d"
+          "@id": "_:Nc0a68fb9eda846f1b7d5fb95e9fb6284"
         },
         {
-          "@id": "_:Nfb0d34351df544578320ad7ecaaa1894"
+          "@id": "_:N0d931280db96412f8c7d477883d0528b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
+        "pubmed:23962615",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt475"
-        },
-        "pubmed:23962615"
+        }
       ],
       "sc:description": "This package introduces an efficient maximum common substructure (MCS) algorithm combined with a novel matching strategy that allows for atom and/or bond mismatches in the substructures shared among two small molecules. The output flexible MCSs (FMCSs) are often larger than strict MCSs, resulting in the identification of more common features in their source structures, as well as a higher sensitivity in finding compounds with weak structural similarities.",
       "sc:featureList": [
@@ -91,9 +87,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "fmcsR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/fmcsR.html"
@@ -102,7 +98,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/fmcsR.html"
     },
     {
-      "@id": "_:N026d781c418743028824538ffd976aa9",
+      "@id": "_:N283aba061028404ea18b6b6099c2f75b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2033"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nc905eb7f593d4496842026d83d6ca60a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1712"
@@ -118,7 +125,7 @@
       "sc:name": "Chemical structure image"
     },
     {
-      "@id": "_:N90b72b8e43c94ad4a7406d3638808bd7",
+      "@id": "_:Nb1f3bdcc9c8c4dd68fe49acbb6b94e37",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -134,7 +141,7 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N332c4fd9f2fa4edb9b0ed9914081d15d",
+      "@id": "_:Nc0a68fb9eda846f1b7d5fb95e9fb6284",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -150,7 +157,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nfb0d34351df544578320ad7ecaaa1894",
+      "@id": "_:N0d931280db96412f8c7d477883d0528b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2856"
@@ -166,15 +173,8 @@
       "sc:name": "Structural distance matrix"
     },
     {
-      "@id": "_:Nf8f05d37e80e4effbdcba2d082bffc3b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1463"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2033"
-      },
-      "sc:name": "Small molecule structure"
+      "@id": "https://doi.org/10.1093/bioinformatics/btt475",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

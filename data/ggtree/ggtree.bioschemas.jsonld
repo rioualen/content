@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,20 +40,20 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Guangchuang Yu",
       "bsc:input": {
-        "@id": "_:N592a4c9d243740cd897e448b03e8002d"
+        "@id": "_:Nfa5d2f8b466a45aab782ef46f271eb53"
       },
       "bsc:output": [
         {
-          "@id": "_:N559e8bb298e140da94a613394fe8476c"
+          "@id": "_:N95dde876db5141c5837b8270dc8afdf3"
         },
         {
-          "@id": "_:N55206609e0a945b0b181b2b5b0f654a3"
+          "@id": "_:Ne3a3589c92f949d1bb4e513f4377b036"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -69,18 +69,18 @@
       "sc:description": "Extend the 'ggplot2' plotting system which implemented the grammar of graphics. It is designed for visualization and annotation of phylogenetic trees with their covariates and other associated data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0567"
+          "@id": "edam:operation_0558"
         },
         {
-          "@id": "edam:operation_0558"
+          "@id": "edam:operation_0567"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "ggtree",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ggtree.html"
@@ -89,7 +89,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ggtree.html"
     },
     {
-      "@id": "_:N559e8bb298e140da94a613394fe8476c",
+      "@id": "_:Nfa5d2f8b466a45aab782ef46f271eb53",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1912"
+        },
+        {
+          "@id": "edam:format_1435"
+        },
+        {
+          "@id": "edam:format_2006"
+        },
+        {
+          "@id": "edam:format_1910"
+        }
+      ],
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N95dde876db5141c5837b8270dc8afdf3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -105,7 +127,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N55206609e0a945b0b181b2b5b0f654a3",
+      "@id": "_:Ne3a3589c92f949d1bb4e513f4377b036",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1707"
@@ -119,28 +141,6 @@
         }
       ],
       "sc:name": "Phylogenetic tree image"
-    },
-    {
-      "@id": "_:N592a4c9d243740cd897e448b03e8002d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1435"
-        },
-        {
-          "@id": "edam:format_1912"
-        },
-        {
-          "@id": "edam:format_1910"
-        },
-        {
-          "@id": "edam:format_2006"
-        }
-      ],
-      "sc:name": "Phylogenetic tree"
     },
     {
       "@id": "https://doi.org/10.1111/2041-210X.12628",

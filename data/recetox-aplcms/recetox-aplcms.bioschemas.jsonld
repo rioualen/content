@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,20 +40,20 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "RECETOX SpecDatRI",
       "bsc:input": {
-        "@id": "_:N0f626bae4b3a40b68a4e67459bc0c2b4"
+        "@id": "_:Neb324d22aa864d30a5e454d23e8f2c78"
       },
       "bsc:output": [
         {
-          "@id": "_:N43b7e5fd1ac941f5b1ff78fce64604a7"
+          "@id": "_:N9a10b63f63ca4ea397c7e765c4bfe402"
         },
         {
-          "@id": "_:N63693252e14f4a71872a4ee9e68ad2d3"
+          "@id": "_:N981afc8370c6485b8eeafedddd02d878"
         },
         {
-          "@id": "_:N7c2bc13a833c43d8922e4114103d43cc"
+          "@id": "_:N84e87f53d6cd44a7bd0280d3e46207c0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Library",
         "Web service"
@@ -65,34 +65,45 @@
       "sc:description": "recetox-aplcms is a tool for peak detection in mass spectrometry data. The tool performs (1) noise removal, (2) peak detection, (3) retention time drift correction, (4) peak alignment and (5) weaker signal recovery as well as (6) suspect screening.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3628"
+          "@id": "edam:operation_2928"
         },
         {
-          "@id": "edam:operation_3799"
+          "@id": "edam:operation_3628"
         },
         {
           "@id": "edam:operation_3937"
         },
         {
-          "@id": "edam:operation_2928"
+          "@id": "edam:operation_3215"
         },
         {
-          "@id": "edam:operation_3215"
+          "@id": "edam:operation_3799"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "recetox-aplcms",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "RECETOX SpecDatRI",
       "sc:softwareVersion": "0.11.0",
       "sc:url": "https://github.com/RECETOX/recetox-aplcms"
     },
     {
-      "@id": "_:N43b7e5fd1ac941f5b1ff78fce64604a7",
+      "@id": "_:Neb324d22aa864d30a5e454d23e8f2c78",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3244"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N9a10b63f63ca4ea397c7e765c4bfe402",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -103,7 +114,7 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:N63693252e14f4a71872a4ee9e68ad2d3",
+      "@id": "_:N981afc8370c6485b8eeafedddd02d878",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -114,7 +125,7 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N7c2bc13a833c43d8922e4114103d43cc",
+      "@id": "_:N84e87f53d6cd44a7bd0280d3e46207c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -123,17 +134,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N0f626bae4b3a40b68a4e67459bc0c2b4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3244"
-      },
-      "sc:name": "Mass spectrometry data"
     }
   ]
 }

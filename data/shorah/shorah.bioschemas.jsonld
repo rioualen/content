@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkq655",
+      "@id": "https://doi.org/10.1089/cmb.2009.0164",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,89 +44,69 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1089/cmb.2009.0164",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4739-5110",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7459-8186",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2164-14-501",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-9082-8607",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/shorah",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N056617644899422fa480d357c6890cf6"
+          "@id": "_:N981c1a7a0eda4dccb979472aeab2ab39"
         },
         {
-          "@id": "_:Nda99eff2353f4ac992d1ae1d229f2bc8"
+          "@id": "_:Nbe7bb5b1f2e14bc9abc73760f6c89b63"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2ec9629a966d4dbca8d458558147f633"
+          "@id": "_:N8eeea686511c4d05a84924d4cc88340e"
         },
         {
-          "@id": "_:N5991ff3bd1234a498ce7dfa2718614f2"
+          "@id": "_:Ne55ec683d45e467ca477bc8c3cb89b48"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3053"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3174"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-7459-8186"
+          "@id": "https://orcid.org/0000-0002-9082-8607"
         },
         {
           "@id": "https://orcid.org/0000-0003-4739-5110"
         },
         {
-          "@id": "https://orcid.org/0000-0002-9082-8607"
+          "@id": "https://orcid.org/0000-0002-7459-8186"
         },
         "Kerensa McElroy"
       ],
       "sc:citation": [
-        "pubmed:23879730",
-        "pubmed:21521499",
-        "pmcid:PMC3848937",
-        {
-          "@id": "https://doi.org/10.1089/cmb.2009.0164"
-        },
-        {
-          "@id": "https://doi.org/10.1186/1471-2105-12-119"
-        },
         "pubmed:20671025",
+        "pmcid:PMC2995073",
         {
           "@id": "https://doi.org/10.1093/nar/gkq655"
         },
+        "pubmed:21521499",
+        "pmcid:PMC3113935",
+        {
+          "@id": "https://doi.org/10.1186/1471-2105-12-119"
+        },
+        "pubmed:23879730",
+        "pmcid:PMC3848937",
         {
           "@id": "https://doi.org/10.1186/1471-2164-14-501"
         },
-        "pmcid:PMC2995073",
-        "pmcid:PMC3113935",
-        "pubmed:20377454"
+        "pubmed:20377454",
+        {
+          "@id": "https://doi.org/10.1089/cmb.2009.0164"
+        }
       ],
       "sc:description": "Inference of a population from a set of short reads. The package contains programs that support mapping of reads to a reference genome, correcting sequencing errors by locally clustering reads in small windows of the alignment, reconstructing a minimal set of global haplotypes that explain the reads, and estimating the frequencies of the inferred haplotypes.",
       "sc:featureList": [
@@ -141,8 +121,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "ShoRAH",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/cbg-ethz/shorah/blob/master/README.md"
@@ -154,7 +134,29 @@
       "sc:url": "https://github.com/cbg-ethz/shorah"
     },
     {
-      "@id": "_:N2ec9629a966d4dbca8d458558147f633",
+      "@id": "_:N981c1a7a0eda4dccb979472aeab2ab39",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nbe7bb5b1f2e14bc9abc73760f6c89b63",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N8eeea686511c4d05a84924d4cc88340e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -170,7 +172,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:N5991ff3bd1234a498ce7dfa2718614f2",
+      "@id": "_:Ne55ec683d45e467ca477bc8c3cb89b48",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1863"
@@ -181,26 +183,24 @@
       "sc:name": "Haplotype map"
     },
     {
-      "@id": "_:N056617644899422fa480d357c6890cf6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
+      "@id": "https://orcid.org/0000-0002-9082-8607",
+      "@type": "sc:Person"
     },
     {
-      "@id": "_:Nda99eff2353f4ac992d1ae1d229f2bc8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
+      "@id": "https://orcid.org/0000-0002-7459-8186",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2164-14-501",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkq655",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4739-5110",
+      "@type": "sc:Person"
     }
   ]
 }

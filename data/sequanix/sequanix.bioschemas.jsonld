@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/162701",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sequanix",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Cokelaer",
       "bsc:input": {
-        "@id": "_:N86c347068b2449dcbf3efbd9a90334f6"
+        "@id": "_:N67de607c5f5c4b00bf7e64db1fe66537"
       },
       "bsc:output": {
-        "@id": "_:N52c37f8e5281433db711f31f58659a02"
+        "@id": "_:N1f4ffba311c240fb88f445446dc75476"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
         "Workflow"
@@ -68,8 +64,8 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "sequanix",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://sequana.readthedocs.io"
@@ -78,7 +74,15 @@
       "sc:url": "http://sequana.readthedocs.io"
     },
     {
-      "@id": "_:N52c37f8e5281433db711f31f58659a02",
+      "@id": "_:N67de607c5f5c4b00bf7e64db1fe66537",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N1f4ffba311c240fb88f445446dc75476",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -86,12 +90,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N86c347068b2449dcbf3efbd9a90334f6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:name": "Data"
+      "@id": "https://doi.org/10.1101/162701",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

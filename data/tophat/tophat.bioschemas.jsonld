@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,54 +40,50 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/tophat",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Daehwan Kim",
       "bsc:input": [
         {
-          "@id": "_:N501fcb3d89dd4ce8838e966759705095"
+          "@id": "_:N5216b8e04d364fd1a2232b65eb299968"
         },
         {
-          "@id": "_:Nf3e14e37515146ac992f8d4de115ca36"
+          "@id": "_:Naa47f8dd1bb647b5be0f4f2970cbf5bc"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N73c67da4509e4ff2bfa3787f0455f478"
+          "@id": "_:Nf0eaf1fee7e147a7b99a31b5f942a40d"
         },
         {
-          "@id": "_:N0571bdc936e64d9eb4c64633c781964a"
+          "@id": "_:N4a78b5444d0440a7831b0f830be23cbe"
         },
         {
-          "@id": "_:Nfddd77f1022648058f7df48828204ecd"
+          "@id": "_:N1f642f6a36f84454b0650c53672006fe"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_3325"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
+        "pubmed:19289445",
         "pmcid:PMC2672628",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp120"
         },
-        "pubmed:19289445"
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        }
       ],
       "sc:description": "Program that aligns RNA-Seq reads to a genome in order to identify exon-exon splice junctions. It is built on the ultrafast short read mapping program Bowtie. A stable SAMtools version is now packaged with the program.",
       "sc:featureList": [
@@ -101,8 +97,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "TopHat",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://ccb.jhu.edu/software/tophat/manual.shtml"
@@ -111,7 +107,15 @@
       "sc:url": "http://ccb.jhu.edu/software/tophat/index.shtml"
     },
     {
-      "@id": "_:N501fcb3d89dd4ce8838e966759705095",
+      "@id": "_:N5216b8e04d364fd1a2232b65eb299968",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2749"
+      },
+      "sc:name": "Genome identifier"
+    },
+    {
+      "@id": "_:Naa47f8dd1bb647b5be0f4f2970cbf5bc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -127,15 +131,29 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:Nf3e14e37515146ac992f8d4de115ca36",
+      "@id": "_:Nf0eaf1fee7e147a7b99a31b5f942a40d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2749"
+        "@id": "edam:data_3002"
       },
-      "sc:name": "Genome identifier"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N73c67da4509e4ff2bfa3787f0455f478",
+      "@id": "_:N4a78b5444d0440a7831b0f830be23cbe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N1f642f6a36f84454b0650c53672006fe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -146,26 +164,8 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N0571bdc936e64d9eb4c64633c781964a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:Nfddd77f1022648058f7df48828204ecd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

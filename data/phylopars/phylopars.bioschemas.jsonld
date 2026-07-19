@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -37,17 +37,17 @@
   "@id": "https://bio.tools/phylopars",
   "@type": "sc:SoftwareApplication",
   "biotools:primaryContact": "Webmaster",
-  "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
   "sc:additionalType": "Web application",
   "sc:applicationSubCategory": [
+    {
+      "@id": "edam:topic_3407"
+    },
     {
       "@id": "edam:topic_0625"
     },
     {
       "@id": "edam:topic_3293"
-    },
-    {
-      "@id": "edam:topic_3407"
     },
     {
       "@id": "edam:topic_0084"
@@ -57,6 +57,9 @@
   "sc:description": "Allows for easy, efficient estimation of metabolic parameters as inferred from observations on species that are phylogenetically related.",
   "sc:featureList": [
     {
+      "@id": "edam:operation_0327"
+    },
+    {
       "@id": "edam:operation_0544"
     },
     {
@@ -64,16 +67,13 @@
     },
     {
       "@id": "edam:operation_3221"
-    },
-    {
-      "@id": "edam:operation_0327"
     }
   ],
   "sc:name": "PhyloPars",
   "sc:operatingSystem": [
-    "Windows",
+    "Linux",
     "Mac",
-    "Linux"
+    "Windows"
   ],
   "sc:softwareHelp": {
     "@id": "http://www.ibi.vu.nl/programs/phylopars/help/methodology.pdf"

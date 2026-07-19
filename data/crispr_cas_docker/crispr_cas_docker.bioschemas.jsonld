@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,42 +40,42 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf34b3e7cb54a4df585b297b6bc0bedd6"
+          "@id": "_:Nf352a2c16260484b80cad685bcd9429b"
         },
         {
-          "@id": "_:Nb171c50a57224093895e916a2f30066b"
+          "@id": "_:N2a1d9bdd404f49448abeb7026dae8d7b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N77d206d1e4334f738e395a010d0c69d1"
+          "@id": "_:N1acbeb857f2a4a21af3b3bf3a26bb8f5"
         },
         {
-          "@id": "_:N05a2081c1a8c40de95f6dc65ff4958fe"
+          "@id": "_:N5a9b7cedf90546c381f6f4cf1c15ec03"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3474"
+        },
+        {
           "@id": "edam:topic_3174"
+        },
+        {
+          "@id": "edam:topic_2275"
         },
         {
           "@id": "edam:topic_2814"
         },
         {
           "@id": "edam:topic_0099"
-        },
-        {
-          "@id": "edam:topic_3474"
-        },
-        {
-          "@id": "edam:topic_2275"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC10127312",
         "pubmed:37098485",
+        "pmcid:PMC10127312",
         {
           "@id": "https://doi.org/10.1186/s12859-023-05296-y"
         }
@@ -83,7 +83,7 @@
       "sc:description": "Web-based in silico docking and machine learning-based classification of crRNAs with Cas proteins.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_4009"
+          "@id": "edam:operation_3899"
         },
         {
           "@id": "edam:operation_2441"
@@ -92,32 +92,53 @@
           "@id": "edam:operation_3901"
         },
         {
-          "@id": "edam:operation_3899"
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "CRISPR-Cas-Docker",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://www.crisprcasdocker.org"
     },
     {
-      "@id": "_:N77d206d1e4334f738e395a010d0c69d1",
+      "@id": "_:Nf352a2c16260484b80cad685bcd9429b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1465"
+        "@id": "edam:data_2976"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "RNA structure"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N05a2081c1a8c40de95f6dc65ff4958fe",
+      "@id": "_:N2a1d9bdd404f49448abeb7026dae8d7b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N1acbeb857f2a4a21af3b3bf3a26bb8f5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -128,36 +149,15 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nf34b3e7cb54a4df585b297b6bc0bedd6",
+      "@id": "_:N5a9b7cedf90546c381f6f4cf1c15ec03",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2976"
+        "@id": "edam:data_1465"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1476"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nb171c50a57224093895e916a2f30066b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1476"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "RNA sequence"
+      "sc:name": "RNA structure"
     },
     {
       "@id": "https://doi.org/10.1186/s12859-023-05296-y",

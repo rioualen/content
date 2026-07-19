@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/152579",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pride_toolsuite",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N81f1f4c8de3245d79dbb2013ccc9b214"
+        "@id": "_:N2a46bacbca574fb9a67095e90647bd71"
       },
       "bsc:output": {
-        "@id": "_:N4488f83657d64e50a50ba8710e6122cb"
+        "@id": "_:Nb813a8d2cf7b42e4b51657637c2a8905"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
         "Suite"
@@ -58,10 +54,10 @@
           "@id": "edam:topic_0219"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": {
@@ -82,7 +78,18 @@
       "sc:url": "https://github.com/PRIDE-Toolsuite"
     },
     {
-      "@id": "_:N4488f83657d64e50a50ba8710e6122cb",
+      "@id": "_:N2a46bacbca574fb9a67095e90647bd71",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3244"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Nb813a8d2cf7b42e4b51657637c2a8905",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -93,15 +100,8 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N81f1f4c8de3245d79dbb2013ccc9b214",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3244"
-      },
-      "sc:name": "Data"
+      "@id": "https://doi.org/10.1101/152579",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

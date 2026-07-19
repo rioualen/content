@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/192302",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/hichipper",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Caleb Lareau",
       "bsc:input": {
-        "@id": "_:N029b941bf4a04bfabcbbb088462050b3"
+        "@id": "_:N1b9577b247d6423c9e0874e83bd26d7d"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd143e44951664c5fb21350f9c808a2c1"
+          "@id": "_:Ne0600eb9e5a84ffcab996476e5169e90"
         },
         {
-          "@id": "_:N89a9b20cceaf43f2a88d5cdc42f19cc5"
+          "@id": "_:N13cb0a3ef3bf4729894a66c5a1837fe4"
         },
         {
-          "@id": "_:N0ff17eb054d14363821adf3b7f19a096"
+          "@id": "_:N3a254ee0041e4bab8a0dc26a8b23fced"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0097"
-        },
         {
           "@id": "edam:topic_3656"
         },
         {
           "@id": "edam:topic_0607"
+        },
+        {
+          "@id": "edam:topic_0097"
         }
       ],
       "sc:citation": {
@@ -72,21 +76,21 @@
       "sc:description": "A Python package for HiChIP data processing and quality control pipeline.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2428"
-        },
-        {
           "@id": "edam:operation_0279"
         },
         {
           "@id": "edam:operation_0570"
+        },
+        {
+          "@id": "edam:operation_2428"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "hichipper",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://hichipper.readthedocs.io/en/latest/"
@@ -94,37 +98,7 @@
       "sc:url": "http://aryee.mgh.harvard.edu/hichipper/"
     },
     {
-      "@id": "_:Nd143e44951664c5fb21350f9c808a2c1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N89a9b20cceaf43f2a88d5cdc42f19cc5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N0ff17eb054d14363821adf3b7f19a096",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0889"
-      },
-      "sc:name": "Structural profile"
-    },
-    {
-      "@id": "_:N029b941bf4a04bfabcbbb088462050b3",
+      "@id": "_:N1b9577b247d6423c9e0874e83bd26d7d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -135,8 +109,34 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1101/192302",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne0600eb9e5a84ffcab996476e5169e90",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0889"
+      },
+      "sc:name": "Structural profile"
+    },
+    {
+      "@id": "_:N13cb0a3ef3bf4729894a66c5a1837fe4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N3a254ee0041e4bab8a0dc26a8b23fced",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     }
   ]
 }

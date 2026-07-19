@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,9 +43,12 @@
       "@id": "https://bio.tools/cddb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mark Bathe",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0611"
+        },
         {
           "@id": "edam:topic_3382"
         },
@@ -54,9 +57,6 @@
         },
         {
           "@id": "edam:topic_0736"
-        },
-        {
-          "@id": "edam:topic_0611"
         },
         {
           "@id": "edam:topic_0078"
@@ -72,22 +72,22 @@
       "sc:description": "Database for comprehensive results on the conformational dynamics of high molecular weight proteins and protein assemblies. Analysis is performed using a coarse-grained computational approach that is applied to most structures present in the electron microscopy data bank (EMDB). Results include equilibrium thermal fluctuations and elastic strain energy distributions that identify protein domains flexibility, functional-transitions associated domains, and correlations in molecular motions.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0310"
+          "@id": "edam:operation_2476"
+        },
+        {
+          "@id": "edam:operation_0244"
         },
         {
           "@id": "edam:operation_0398"
         },
         {
-          "@id": "edam:operation_2476"
-        },
-        {
-          "@id": "edam:operation_0244"
+          "@id": "edam:operation_0310"
         }
       ],
       "sc:name": "CDDB",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

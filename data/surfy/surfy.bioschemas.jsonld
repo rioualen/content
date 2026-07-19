@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1073/pnas.1808790115",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/SURFY",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N957b1d5d276e4ae4a6f32cdb502dba79"
+        "@id": "_:N211506b99bb6432fb5452c73209bb925"
       },
       "bsc:output": {
-        "@id": "_:Naba8da3722a043c796a3ff64e8823d36"
+        "@id": "_:N01da46d9011946bd8278e61a6c9fe495"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0140"
@@ -59,33 +63,22 @@
       "sc:description": "Visualize the human surface proteome (surfaceome) and load your own expression data to inspect and uncover cellular phenotypes and new surfaceome markers.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2942"
+          "@id": "edam:operation_2489"
         },
         {
-          "@id": "edam:operation_2489"
+          "@id": "edam:operation_2942"
         }
       ],
       "sc:name": "SURFY",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://wlab.ethz.ch/surfaceome/"
     },
     {
-      "@id": "_:Naba8da3722a043c796a3ff64e8823d36",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N957b1d5d276e4ae4a6f32cdb502dba79",
+      "@id": "_:N211506b99bb6432fb5452c73209bb925",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -96,8 +89,15 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "https://doi.org/10.1073/pnas.1808790115",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N01da46d9011946bd8278e61a6c9fe495",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Heat map"
     }
   ]
 }

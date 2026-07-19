@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,14 +42,14 @@
     {
       "@id": "https://bio.tools/findpc",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_3337"
         },
         {
-          "@id": "edam:topic_3337"
+          "@id": "edam:topic_0102"
         },
         {
           "@id": "edam:topic_3170"
@@ -64,6 +64,9 @@
       "sc:description": "An R package to automatically select number of principal components in single-cell analysis.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3935"
+        },
+        {
           "@id": "edam:operation_3891"
         },
         {
@@ -71,18 +74,15 @@
         },
         {
           "@id": "edam:operation_3435"
-        },
-        {
-          "@id": "edam:operation_3935"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "findPC",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://htmlpreview.github.io/?https://github.com/haotian-zhuang/findPC/blob/main/vignettes/UserManual.html"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.jasms.2007.07.018",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/msalign",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na1c01e87f1f64299baf487e3e29b857a"
+          "@id": "_:N198f3af70c50485b854f46ff2b9d8a0f"
         },
         {
-          "@id": "_:N40103d1bf00f48828357c2e2bbf2c899"
+          "@id": "_:N550611ce034f4407ad86ca1e8755dea5"
         }
       ],
       "bsc:output": {
-        "@id": "_:N49bb96f7968147c0abdfe1b642c6109c"
+        "@id": "_:N685377da4ff543efabaa337736417981"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0083"
         },
         {
-          "@id": "edam:topic_0083"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
@@ -79,8 +75,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "msalign",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.ms-utils.org/msalign/index.html"
@@ -88,18 +84,18 @@
       "sc:url": "http://www.ms-utils.org/msalign/index.html"
     },
     {
-      "@id": "_:N49bb96f7968147c0abdfe1b642c6109c",
+      "@id": "_:N198f3af70c50485b854f46ff2b9d8a0f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1916"
+        "@id": "edam:data_0943"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1921"
+        "@id": "edam:format_3654"
       },
-      "sc:name": "Alignment"
+      "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Na1c01e87f1f64299baf487e3e29b857a",
+      "@id": "_:N550611ce034f4407ad86ca1e8755dea5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -110,15 +106,19 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N40103d1bf00f48828357c2e2bbf2c899",
+      "@id": "_:N685377da4ff543efabaa337736417981",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_1916"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3654"
+        "@id": "edam:format_1921"
       },
-      "sc:name": "Mass spectrometry spectra"
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jasms.2007.07.018",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

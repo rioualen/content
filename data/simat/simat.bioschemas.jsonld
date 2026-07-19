@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-015-0681-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/simat",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mo R. Nezami Ranjbar",
       "bsc:input": {
-        "@id": "_:Nb05507b6b7ab4fe6903ac445ef6759a1"
+        "@id": "_:N3c794337088941a1950bdceecd915119"
       },
       "bsc:output": {
-        "@id": "_:Na12c69bc68b04b98b384650799611092"
+        "@id": "_:N2b5c8e035de84250998910ca7e75d2bc"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -59,8 +63,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4539696",
         "pubmed:26283310",
+        "pmcid:PMC4539696",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0681-2"
         }
@@ -77,9 +81,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "SIMAT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SIMAT.html"
@@ -88,7 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SIMAT.html"
     },
     {
-      "@id": "_:Nb05507b6b7ab4fe6903ac445ef6759a1",
+      "@id": "_:N3c794337088941a1950bdceecd915119",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -99,7 +103,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Na12c69bc68b04b98b384650799611092",
+      "@id": "_:N2b5c8e035de84250998910ca7e75d2bc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -108,10 +112,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Score"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-015-0681-2",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

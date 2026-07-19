@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,47 +36,51 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13073-022-01119-6",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ctpathway",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N80be66d547704e098c3cf212a0601460"
+          "@id": "_:N690b91730f1f4bc8aa69d97f50f9df95"
         },
         {
-          "@id": "_:N397d97c21753480e8dd2ee1af2ba7557"
+          "@id": "_:N21727c5f0014494f8aed5f46a9993a99"
         },
         {
-          "@id": "_:Nc03a731afa114a3cabe9bc193d56bf9e"
+          "@id": "_:N9b905e8c42ed4fb2b73744b8c4b4f7e6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0203"
+        },
+        {
           "@id": "edam:topic_0602"
-        },
-        {
-          "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_0634"
         },
         {
           "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0634"
+        },
+        {
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
         "pubmed:36229842",
+        "pmcid:PMC9563764",
         {
           "@id": "https://doi.org/10.1186/s13073-022-01119-6"
-        },
-        "pmcid:PMC9563764"
+        }
       ],
       "sc:description": "A CrossTalk-based pathway enrichment analysis method for cancer research.",
       "sc:featureList": [
@@ -97,14 +101,14 @@
       "sc:license": "GPL-3.0",
       "sc:name": "CTpathway",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://www.jianglab.cn/CTpathway/"
     },
     {
-      "@id": "_:N80be66d547704e098c3cf212a0601460",
+      "@id": "_:N690b91730f1f4bc8aa69d97f50f9df95",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -112,7 +116,7 @@
       "sc:name": "Gene ID"
     },
     {
-      "@id": "_:N397d97c21753480e8dd2ee1af2ba7557",
+      "@id": "_:N21727c5f0014494f8aed5f46a9993a99",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -120,16 +124,12 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:Nc03a731afa114a3cabe9bc193d56bf9e",
+      "@id": "_:N9b905e8c42ed4fb2b73744b8c4b4f7e6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1904"
       },
       "sc:name": "Locus ID (EntrezGene)"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s13073-022-01119-6",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

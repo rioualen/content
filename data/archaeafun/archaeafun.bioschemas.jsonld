@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1110/ps.0225102",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/archaeafun",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-0316-5866"
       },
       "bsc:input": {
-        "@id": "_:N3dea5486735749e4bdc89047fee07bc5"
+        "@id": "_:N2ff3429127e540898727a99df52c1310"
       },
       "bsc:output": [
         {
-          "@id": "_:Nbf8cbea46a4d48a29afabb9307b2b28b"
+          "@id": "_:N7b9d3ff9431e4a57a14d720b5a460ff9"
         },
         {
-          "@id": "_:N1774804872d042d4b0343723805f928e"
+          "@id": "_:N41dcd5497a534124a6da63dc4a385c4e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_1775"
       },
       "sc:citation": [
         "pubmed:12441387",
+        "pmcid:PMC2373754",
         {
           "@id": "https://doi.org/10.1110/ps.0225102"
-        },
-        "pmcid:PMC2373754"
+        }
       ],
       "sc:description": "Ab initio predictions of enzyme class (if any) from sequence.",
       "sc:featureList": {
@@ -77,8 +73,8 @@
       "sc:name": "ArchaeaFun",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": [
@@ -93,7 +89,7 @@
       "sc:url": "http://cbs.dtu.dk/services/ArchaeaFun/"
     },
     {
-      "@id": "_:N3dea5486735749e4bdc89047fee07bc5",
+      "@id": "_:N2ff3429127e540898727a99df52c1310",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -104,7 +100,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nbf8cbea46a4d48a29afabb9307b2b28b",
+      "@id": "_:N7b9d3ff9431e4a57a14d720b5a460ff9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -115,7 +111,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N1774804872d042d4b0343723805f928e",
+      "@id": "_:N41dcd5497a534124a6da63dc4a385c4e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -124,6 +120,10 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Sequence report"
+    },
+    {
+      "@id": "https://doi.org/10.1110/ps.0225102",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0003-0316-5866",

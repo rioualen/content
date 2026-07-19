@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
@@ -44,16 +48,16 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N2589345b88ba475fbf86b032da804f4b"
+        "@id": "_:Nc418a38883534916a3d1542e8be69ad8"
       },
       "bsc:output": {
-        "@id": "_:N1a7eca81353e44d0822c9ceec34e0a67"
+        "@id": "_:N37ce0bb5aaba41b580abdb65a82de469"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
         "Web API",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -61,17 +65,17 @@
       "sc:author": "EMBOSS",
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1093/nar/gkae241"
-        },
-        "pubmed:35412617",
-        "pmcid:PMC11223882",
-        "pmcid:PMC9252731",
-        {
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
-        "pubmed:38597606",
+        "pubmed:35412617",
+        "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
+        },
+        "pubmed:38597606",
+        "pmcid:PMC11223882",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkae241"
         }
       ],
       "sc:description": "Back-translate a protein sequence to ambiguous nucleotide sequence. It reads a protein sequence and writes the nucleic acid sequence it could have come from. It does this by using nucleotide ambiguity codes that represent all possible codons for each amino acid.",
@@ -80,35 +84,27 @@
       },
       "sc:name": "backtranambig (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
-        {
           "@id": "https://emboss.sourceforge.net/"
         },
         {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+        },
+        {
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/jdispatcher/st/emboss_backtranambig/"
     },
     {
-      "@id": "_:N1a7eca81353e44d0822c9ceec34e0a67",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N2589345b88ba475fbf86b032da804f4b",
+      "@id": "_:Nc418a38883534916a3d1542e8be69ad8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -116,8 +112,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N37ce0bb5aaba41b580abdb65a82de469",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:name": "Nucleic acid sequence"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkae241",

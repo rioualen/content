@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0156132",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sgseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Leonard Goldstein",
       "bsc:input": {
-        "@id": "_:N2510911a70744aca8c528254af9678c4"
+        "@id": "_:N2c571dd254b644d1930eb85b2cea7723"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne24dbf5d2c7d415a931e42fbaa46d150"
+          "@id": "_:Nffdde51510664234a70f7a68354bc76e"
         },
         {
-          "@id": "_:N6dd97930b4e54642b0798ca6eb16a560"
+          "@id": "_:N09d568744dc34a40860cf8329605f1d4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -81,9 +77,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "SGSeq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SGSeq.html"
@@ -92,18 +88,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SGSeq.html"
     },
     {
-      "@id": "_:Ne24dbf5d2c7d415a931e42fbaa46d150",
+      "@id": "_:N2c571dd254b644d1930eb85b2cea7723",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_3495"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3547"
+        "@id": "edam:format_2572"
       },
-      "sc:name": "Plot"
+      "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N6dd97930b4e54642b0798ca6eb16a560",
+      "@id": "_:Nffdde51510664234a70f7a68354bc76e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -114,15 +110,19 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N2510911a70744aca8c528254af9678c4",
+      "@id": "_:N09d568744dc34a40860cf8329605f1d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3495"
+        "@id": "edam:data_2884"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2572"
+        "@id": "edam:format_3547"
       },
-      "sc:name": "RNA sequence"
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0156132",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

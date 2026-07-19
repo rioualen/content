@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1005351",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/aspasia",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Kieran Alden",
       "bsc:input": {
-        "@id": "_:Nbfe19685822748b4a380b48586d06b4c"
+        "@id": "_:N1e53962475fb47f983a63e51982a17c6"
       },
       "bsc:output": {
-        "@id": "_:N06ad41c35d6d4a398f698b225b44c7f5"
+        "@id": "_:Na53310c32d8e4f0e97380fddb29288c2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Suite",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC5315406",
         "pubmed:28158307",
+        "pmcid:PMC5315406",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1005351"
         }
@@ -84,7 +80,15 @@
       "sc:url": "https://www.york.ac.uk/computational-immunology/software/aspasia/"
     },
     {
-      "@id": "_:N06ad41c35d6d4a398f698b225b44c7f5",
+      "@id": "_:N1e53962475fb47f983a63e51982a17c6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "_:Na53310c32d8e4f0e97380fddb29288c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -95,12 +99,8 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:Nbfe19685822748b4a380b48586d06b4c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:name": "Mathematical model"
+      "@id": "https://doi.org/10.1371/journal.pcbi.1005351",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/exfilms",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N62a17727ce7b405c87776b33c0dbf313"
+        "@id": "_:N3674c1ce98484f52b234e39657a9457c"
       },
       "bsc:output": {
-        "@id": "_:N1512a568e75c4b008892169ee3399be3"
+        "@id": "_:Nb20f7e38c32646b682ca1859c0db4f7c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3172"
@@ -67,15 +67,26 @@
       "sc:license": "MIT",
       "sc:name": "ExfilMS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareVersion": "1.3.0",
       "sc:url": "https://github.com/vmalnathnambiar/exfilms"
     },
     {
-      "@id": "_:N1512a568e75c4b008892169ee3399be3",
+      "@id": "_:N3674c1ce98484f52b234e39657a9457c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3244"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nb20f7e38c32646b682ca1859c0db4f7c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -88,17 +99,6 @@
           "@id": "edam:format_3475"
         }
       ],
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N62a17727ce7b405c87776b33c0dbf313",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3244"
-      },
       "sc:name": "Mass spectrometry data"
     }
   ]

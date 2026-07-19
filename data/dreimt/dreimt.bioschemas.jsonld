@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,39 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2020.06.24.168468",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dreimt",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-4146-0551"
       },
       "bsc:input": {
-        "@id": "_:N57b1a6127b0b41e7ad1a22d94dabbd72"
+        "@id": "_:N062b66bacda8463886e120a5d6c32089"
       },
       "bsc:output": [
         {
-          "@id": "_:N64f4343272104a7db172751354bfe046"
+          "@id": "_:Nb2ae1666e89e4ef58451e826752b19a9"
         },
         {
-          "@id": "_:N9b98a0beddb3462cb883d8eede3560e3"
+          "@id": "_:N7055059a2db24f5e921300c3928a69a0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_3400"
         },
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_0634"
         },
         {
-          "@id": "edam:topic_3400"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": {
@@ -81,19 +77,19 @@
       "sc:description": "DREIMT is a bioinformatics tool for hypothesis generation and prioritization of drugs capable of modulating immune cell activity from transcriptomics data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "DREIMT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "BU_CNIO",
@@ -103,17 +99,17 @@
       "sc:url": "http://www.dreimt.org"
     },
     {
-      "@id": "_:N57b1a6127b0b41e7ad1a22d94dabbd72",
+      "@id": "_:N062b66bacda8463886e120a5d6c32089",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_2330"
@@ -122,7 +118,23 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N64f4343272104a7db172751354bfe046",
+      "@id": "_:Nb2ae1666e89e4ef58451e826752b19a9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N7055059a2db24f5e921300c3928a69a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1621"
@@ -133,20 +145,8 @@
       "sc:name": "Pharmacogenomic test report"
     },
     {
-      "@id": "_:N9b98a0beddb3462cb883d8eede3560e3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Gene expression profile"
+      "@id": "https://doi.org/10.1101/2020.06.24.168468",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-4146-0551",

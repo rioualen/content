@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Owen Marshall",
       "bsc:input": {
-        "@id": "_:N42f3bb5e9958432faadee7f07e6a666a"
+        "@id": "_:N223c63ffd9444c44b9e78055052d6d64"
       },
       "bsc:output": {
-        "@id": "_:Na7378aa0a41b43d9888f1dc68d95af10"
+        "@id": "_:N4fd29f305cfa45a7b976b821c4b5adfd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Script",
         "Workflow"
@@ -59,10 +59,10 @@
           "@id": "edam:topic_3169"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -75,20 +75,20 @@
       "sc:description": "Single script that automatically handles sequence alignment, read extension, binned counts, normalisation, pseudocount addition and final ratio file generation.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3222"
+        },
+        {
           "@id": "edam:operation_3798"
         },
         {
           "@id": "edam:operation_3435"
-        },
-        {
-          "@id": "edam:operation_3222"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "damidseq_pipeline",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/owenjm/damidseq_pipeline/blob/master/README.md"
@@ -96,23 +96,7 @@
       "sc:url": "http://owenjm.github.io/damidseq_pipeline/"
     },
     {
-      "@id": "_:Na7378aa0a41b43d9888f1dc68d95af10",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2305"
-        },
-        {
-          "@id": "edam:format_3583"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N42f3bb5e9958432faadee7f07e6a666a",
+      "@id": "_:N223c63ffd9444c44b9e78055052d6d64",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -126,6 +110,22 @@
         }
       ],
       "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:N4fd29f305cfa45a7b976b821c4b5adfd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2305"
+        },
+        {
+          "@id": "edam:format_3583"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

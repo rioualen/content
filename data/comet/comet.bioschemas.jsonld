@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,28 +40,24 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1007/s13361-015-1179-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/comet",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Comet's Google group",
       "bsc:input": [
         {
-          "@id": "_:N73f9c50a8e7640fd9cc0c8536afbdf5f"
+          "@id": "_:N120b7370fc974bab8070627fe0fc622e"
         },
         {
-          "@id": "_:N32db5a860838462da477c0fe6fa5cab4"
+          "@id": "_:N1416c8e0ac05422fa915d9918a545544"
         }
       ],
       "bsc:output": {
-        "@id": "_:Na4ea515947cf49728be81b614e0a6d79"
+        "@id": "_:Nb602b3c7d9f44d8abca1cec56fdf6547"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -73,14 +69,14 @@
       ],
       "sc:citation": [
         "pubmed:26115965",
-        {
-          "@id": "https://doi.org/10.1002/pmic.201200439"
-        },
         "pmcid:PMC4607604",
         {
           "@id": "https://doi.org/10.1007/s13361-015-1179-x"
         },
-        "pubmed:23148064"
+        "pubmed:23148064",
+        {
+          "@id": "https://doi.org/10.1002/pmic.201200439"
+        }
       ],
       "sc:description": "Comet is an open source tandem mass spectrometry (MS/MS) sequence database search tool.",
       "sc:featureList": {
@@ -90,9 +86,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "Comet",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "lumc.nl",
       "sc:softwareHelp": [
@@ -110,26 +106,26 @@
       "sc:url": "http://comet-ms.sourceforge.net/"
     },
     {
-      "@id": "_:Na4ea515947cf49728be81b614e0a6d79",
+      "@id": "_:N120b7370fc974bab8070627fe0fc622e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0945"
+        "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3247"
+          "@id": "edam:format_3651"
         },
         {
-          "@id": "edam:format_3655"
+          "@id": "edam:format_3244"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3654"
         }
       ],
-      "sc:name": "Peptide identification"
+      "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N73f9c50a8e7640fd9cc0c8536afbdf5f",
+      "@id": "_:N1416c8e0ac05422fa915d9918a545544",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -140,23 +136,27 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N32db5a860838462da477c0fe6fa5cab4",
+      "@id": "_:Nb602b3c7d9f44d8abca1cec56fdf6547",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_0945"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3654"
+          "@id": "edam:format_3247"
         },
         {
-          "@id": "edam:format_3651"
+          "@id": "edam:format_3655"
         }
       ],
-      "sc:name": "Mass spectrometry spectra"
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "https://doi.org/10.1007/s13361-015-1179-x",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

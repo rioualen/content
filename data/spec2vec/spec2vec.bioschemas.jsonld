@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,33 +44,33 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc97f35107aa141a8be3b62afc43d8d55"
+          "@id": "_:N1bae6a10dd2f496f81b259a71472277c"
         },
         {
-          "@id": "_:Nd157c2eb4d494abdabc8d4641e16587e"
+          "@id": "_:N9a787689b258472194f59fe253e90c11"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2f2462b448214f73ac9bc05b864b66de"
+          "@id": "_:N9617689727064f078e9a3e1cc9952eb7"
         },
         {
-          "@id": "_:Nc8767d3259e948bab95f03bf8f87fcfa"
+          "@id": "_:N20d8e92e78bd49dc83d95b02d8803536"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3172"
+        },
+        {
+          "@id": "edam:topic_0218"
         },
         {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
-        },
-        {
-          "@id": "edam:topic_0218"
         }
       ],
       "sc:citation": {
@@ -79,19 +79,19 @@
       "sc:description": "Improved mass spectral similarity scoring through learning of structural relationships.\n\nSpec2vec is a novel spectral similarity score inspired by a natural language processing algorithm -- Word2Vec. Where Word2Vec learns relationships between words in sentences, spec2vec does so for mass fragments and neutral losses in MS/MS spectra. The spectral similarity score is based on spectral embeddings learnt from the fragmental relationships within a large set of spectral data.\n\nAnalysis and benchmarking of mass spectra similarity measures using gnps data set.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2421"
-        },
-        {
-          "@id": "edam:operation_3801"
+          "@id": "edam:operation_2426"
         },
         {
           "@id": "edam:operation_2424"
         },
         {
+          "@id": "edam:operation_2421"
+        },
+        {
           "@id": "edam:operation_3803"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_3801"
         }
       ],
       "sc:license": "Apache-2.0",
@@ -99,7 +99,15 @@
       "sc:url": "https://github.com/iomega/spec2vec"
     },
     {
-      "@id": "_:Nc97f35107aa141a8be3b62afc43d8d55",
+      "@id": "_:N1bae6a10dd2f496f81b259a71472277c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N9a787689b258472194f59fe253e90c11",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -109,24 +117,24 @@
           "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_4039"
+          "@id": "edam:format_3651"
         },
         {
-          "@id": "edam:format_3651"
+          "@id": "edam:format_4039"
         }
       ],
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:Nd157c2eb4d494abdabc8d4641e16587e",
+      "@id": "_:N9617689727064f078e9a3e1cc9952eb7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_0950"
       },
-      "sc:name": "Mass spectrum"
+      "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N2f2462b448214f73ac9bc05b864b66de",
+      "@id": "_:N20d8e92e78bd49dc83d95b02d8803536",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -140,14 +148,6 @@
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:Nc8767d3259e948bab95f03bf8f87fcfa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:name": "Mathematical model"
     }
   ]
 }

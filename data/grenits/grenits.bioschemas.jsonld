@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/grenits",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Edward Morrissey",
       "bsc:input": {
-        "@id": "_:Nf8917a9b3bb34e4386c3582d607009d9"
+        "@id": "_:N0c0fbc8fff274636a784d35892810163"
       },
       "bsc:output": [
         {
-          "@id": "_:Ndfa224e0d70a4e05b71471d1556c8e51"
+          "@id": "_:N0f54d8911bf4434abb254243effeb77a"
         },
         {
-          "@id": "_:N3f56edee82a0406c9be4a7f7a4e30839"
+          "@id": "_:N80b1913d8f5a483390be94613b51915c"
         },
         {
-          "@id": "_:N1609f92cb08c4ee2a8271f5178f3421a"
+          "@id": "_:Nd356d9990a58421a9b273917e8b8793d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0204"
         },
         {
-          "@id": "edam:topic_0204"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
@@ -85,9 +89,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "GRENITS",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/GRENITS.html"
@@ -96,7 +100,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GRENITS.html"
     },
     {
-      "@id": "_:Nf8917a9b3bb34e4386c3582d607009d9",
+      "@id": "_:N0c0fbc8fff274636a784d35892810163",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -107,56 +111,52 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Ndfa224e0d70a4e05b71471d1556c8e51",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N3f56edee82a0406c9be4a7f7a4e30839",
+      "@id": "_:N0f54d8911bf4434abb254243effeb77a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N1609f92cb08c4ee2a8271f5178f3421a",
+      "@id": "_:N80b1913d8f5a483390be94613b51915c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nd356d9990a58421a9b273917e8b8793d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

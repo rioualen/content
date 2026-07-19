@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,45 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13062-016-0159-9",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8187-1980",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/ipc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-8187-1980"
       },
       "bsc:input": {
-        "@id": "_:N7b46e067122e4c7583cf41549c17a3bd"
+        "@id": "_:Nb6e01c56cafe4d3dac2317b73c14a50e"
       },
       "bsc:output": {
-        "@id": "_:N84a90a6191ea42aebb5823cdd74d146c"
+        "@id": "_:Nc74d01464bb44cc191dfd158dfdd54d0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool"
+        "Command-line tool",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3047"
+          "@id": "edam:topic_3292"
         },
         {
-          "@id": "edam:topic_3292"
+          "@id": "edam:topic_3047"
         },
         {
           "@id": "edam:topic_0123"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
@@ -84,9 +92,9 @@
       "sc:license": "Other",
       "sc:name": "IPC",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://isoelectric.org/algorithms.html"
@@ -95,7 +103,7 @@
       "sc:url": "http://isoelectric.org"
     },
     {
-      "@id": "_:N7b46e067122e4c7583cf41549c17a3bd",
+      "@id": "_:Nb6e01c56cafe4d3dac2317b73c14a50e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -103,7 +111,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N84a90a6191ea42aebb5823cdd74d146c",
+      "@id": "_:Nc74d01464bb44cc191dfd158dfdd54d0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1528"
@@ -112,14 +120,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein isoelectric point"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-8187-1980",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s13062-016-0159-9",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,41 +44,49 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btl484",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bti573",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/Isodyn",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5c696a628fd04600b0db3ee550e2f1e5"
+          "@id": "_:N639bb5788f3b4dce8d465cad8c1c16e7"
         },
         {
-          "@id": "_:N0596adecde0241378651a936b3b0c027"
+          "@id": "_:N4ac2f939cc74415e8c40c8e1ea74afc8"
         }
       ],
       "bsc:output": {
-        "@id": "_:N4be8de534fd941d0a5766c86b9871d97"
+        "@id": "_:N071b5c99de4847649cdf121ccc5c6584"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3955"
       },
       "sc:citation": [
-        "pubmed:15256408",
+        "pubmed:31893378",
         {
           "@id": "https://doi.org/10.1007/978-1-0716-0159-4_12"
         },
-        "pubmed:31893378",
+        "pubmed:15256408",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/bth412"
+        },
         "pubmed:16002431",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bti573"
         },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/bth412"
-        },
+        "pubmed:17000750",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btl484"
-        },
-        "pubmed:17000750"
+        }
       ],
       "sc:description": "“C++”-program simulating the dynamics of metabolites and their isotopic isomers in the central metabolic network using a corresponding kinetic model. Supports the final step of 13C assisted the fluxomic analysis: evaluation of metabolic fluxes consistent with a given mass isotopomer distribution. The previous steps are supported by Ramid, Midcor, Isoform.",
       "sc:featureList": {
@@ -94,18 +102,7 @@
       "sc:url": "https://github.com/seliv55/isodyn"
     },
     {
-      "@id": "_:N5c696a628fd04600b0db3ee550e2f1e5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3835"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N0596adecde0241378651a936b3b0c027",
+      "@id": "_:N639bb5788f3b4dce8d465cad8c1c16e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -116,7 +113,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N4be8de534fd941d0a5766c86b9871d97",
+      "@id": "_:N4ac2f939cc74415e8c40c8e1ea74afc8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -127,12 +124,15 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bti573",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl484",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N071b5c99de4847649cdf121ccc5c6584",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3835"
+      },
+      "sc:name": "Mass spectrum"
     }
   ]
 }

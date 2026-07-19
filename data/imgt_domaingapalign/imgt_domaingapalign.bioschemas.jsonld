@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,50 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/pdb.prot5636",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkp946",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/IMGT_DomainGapAlign",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0bb3a5442bea42c09c7eca745f307508"
+        "@id": "_:N4292aa9c62f54e3bacd0451b2cdae5a9"
       },
       "bsc:output": {
-        "@id": "_:N5003d0baa347484c8e123fc2fec3de27"
+        "@id": "_:Nf13393db049b40f493c3074add174673"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0804"
-        },
         {
           "@id": "edam:topic_3930"
         },
         {
           "@id": "edam:topic_3948"
+        },
+        {
+          "@id": "edam:topic_0804"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gku1056"
-        },
         "pubmed:19900967",
-        {
-          "@id": "https://doi.org/10.1101/pdb.prot5636"
-        },
         "pmcid:PMC2808948",
         {
           "@id": "https://doi.org/10.1093/nar/gkp946"
         },
-        "pubmed:21632775",
         "pubmed:25378316",
-        "pmcid:PMC4383898"
+        "pmcid:PMC4383898",
+        {
+          "@id": "https://doi.org/10.1093/nar/gku1056"
+        },
+        "pubmed:21632775",
+        {
+          "@id": "https://doi.org/10.1101/pdb.prot5636"
+        }
       ],
       "sc:description": "IMGT/DomainGapAlign is the IMGT® tool for the analysis of amino acid sequences of variable (V), constant (C) or groove (G) domains. Analysis is based on the IMGT-ONTOLOGY concepts.",
       "sc:featureList": [
@@ -95,18 +103,7 @@
       "sc:url": "http://www.imgt.org/3Dstructure-DB/cgi/DomainGapAlign.cgi"
     },
     {
-      "@id": "_:N5003d0baa347484c8e123fc2fec3de27",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3154"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Protein alignment"
-    },
-    {
-      "@id": "_:N0bb3a5442bea42c09c7eca745f307508",
+      "@id": "_:N4292aa9c62f54e3bacd0451b2cdae5a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -117,15 +114,18 @@
       "sc:name": "Protein sequence"
     },
     {
+      "@id": "_:Nf13393db049b40f493c3074add174673",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3154"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein alignment"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gku1056",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkp946",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1101/pdb.prot5636",
       "@type": "sc:CreativeWork"
     }
   ]

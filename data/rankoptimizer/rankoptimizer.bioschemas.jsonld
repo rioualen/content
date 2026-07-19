@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,45 +36,49 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rankoptimizer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N87c6f90e0ee44d22b72ad48dccd58de6"
+        "@id": "_:Na3eb1501ca86483fb3b8ca27885df06e"
       },
       "bsc:output": [
         {
-          "@id": "_:Na2a4ef23ac224a79b1cb26da6552f21e"
+          "@id": "_:N9e0a562e9e494e91a9ecc677e9a52e92"
         },
         {
-          "@id": "_:Nc8d2ee3db61d40cf9fed6bd20af6e88d"
+          "@id": "_:N26096999e90d436fb393f79467513f23"
         },
         {
-          "@id": "_:Nfe2f4c5ad4ad429ba239fed4c5d17433"
+          "@id": "_:N2265a52086564bb7be51ef832726be58"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3299"
+        },
         {
           "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0637"
-        },
-        {
-          "@id": "edam:topic_3299"
         }
       ],
       "sc:citation": [
+        "pubmed:27137889",
         "pmcid:PMC4987906",
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
-        "pubmed:27137889"
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        }
       ],
       "sc:description": "Report taxonomic abundance, based on BLAST hits.",
       "sc:featureList": {
@@ -82,9 +86,9 @@
       },
       "sc:name": "rankoptimizer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Fodoppelt%2Ftaxonomy_analysis%2Frankoptimizer%2F0.0.5"
@@ -93,7 +97,7 @@
       "sc:url": "https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/odoppelt/taxonomy_analysis/rankoptimizer/0.0.5"
     },
     {
-      "@id": "_:N87c6f90e0ee44d22b72ad48dccd58de6",
+      "@id": "_:Na3eb1501ca86483fb3b8ca27885df06e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -104,29 +108,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Na2a4ef23ac224a79b1cb26da6552f21e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nc8d2ee3db61d40cf9fed6bd20af6e88d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2332"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Nfe2f4c5ad4ad429ba239fed4c5d17433",
+      "@id": "_:N9e0a562e9e494e91a9ecc677e9a52e92",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -137,8 +119,26 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N26096999e90d436fb393f79467513f23",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2332"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N2265a52086564bb7be51ef832726be58",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

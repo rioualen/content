@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0029851",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/lipidxplorer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N38dfde5cb99c4b2ba4fac135b3dbab92"
+          "@id": "_:N1c6a7ad1e1f24a2b8bf668221e1c03ce"
         },
         {
-          "@id": "_:N17399865f8f34533baca73fbb6159823"
+          "@id": "_:Ne9d4b1900ad343b4a15ccf7cf36b4b20"
         }
       ],
       "bsc:output": {
-        "@id": "_:N063e1a00b614451ab0cfbc18fa4bf6e0"
+        "@id": "_:N61249b623cd84393bf214839241706be"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -65,34 +69,78 @@
       "sc:description": "LipidXplorer is a software that supports the quantitative characterization of complex lipidomes by interpreting large datasets of shotgun mass spectra.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3629"
+        },
+        {
           "@id": "edam:operation_3694"
         },
         {
           "@id": "edam:operation_3803"
-        },
-        {
-          "@id": "edam:operation_3629"
         }
       ],
       "sc:name": "LipidXplorer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "BioInfra.Prot",
       "sc:softwareHelp": {
         "@id": "https://lifs-tools.org/wiki/index.php/LipidXplorer_Documentation"
       },
       "sc:softwareVersion": [
-        "1.2.9",
         "1.2.8",
-        "1.2.8.1"
+        "1.2.8.1",
+        "1.2.9"
       ],
       "sc:url": "https://lifs-tools.org/lipidxplorer"
     },
     {
-      "@id": "_:N063e1a00b614451ab0cfbc18fa4bf6e0",
+      "@id": "_:N1c6a7ad1e1f24a2b8bf668221e1c03ce",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3652"
+        },
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
+        }
+      ],
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Ne9d4b1900ad343b4a15ccf7cf36b4b20",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3652"
+        },
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N61249b623cd84393bf214839241706be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -101,54 +149,6 @@
         "@id": "edam:format_3620"
       },
       "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N38dfde5cb99c4b2ba4fac135b3dbab92",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3652"
-        },
-        {
-          "@id": "edam:format_3244"
-        }
-      ],
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N17399865f8f34533baca73fbb6159823",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3652"
-        },
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0029851",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

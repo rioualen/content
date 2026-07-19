@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,38 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/database/baq030",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/germonline",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5ca026b1e0184fd98e10fc5aa4f3fbc3"
+          "@id": "_:Ne592b447d73d46ee91793a25b12e2068"
         },
         {
-          "@id": "_:N2eeff46d85da4d00aaf4dd60c9da93f1"
+          "@id": "_:N4ec421bc53d049f8a0edd44e8c45cfe0"
         },
         {
-          "@id": "_:N188a57e05e40461ca9407fab16a8cbf1"
+          "@id": "_:N9f4331a5893b45988dc80160a6fe2f9e"
         },
         {
-          "@id": "_:Nf869e726ecfc4cf28d9aeca969905ae3"
+          "@id": "_:Nffc4e235361848378563bf5e693ff716"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N71efa961414c4fe8ad36888edee783b1"
+          "@id": "_:Nf56ff670dfe249fd95f0a71908cdbd05"
         },
         {
-          "@id": "_:N9cd00ba47cb4438da23b64928b050dab"
+          "@id": "_:N1c3bcaeb682a4b98939b3be6246cd0e4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0623"
       },
       "sc:citation": [
-        "pmcid:PMC3004465",
         "pubmed:21149299",
+        "pmcid:PMC3004465",
         {
           "@id": "https://doi.org/10.1093/database/baq030"
         }
@@ -82,8 +78,8 @@
       },
       "sc:name": "Gametogenesis and reproductive tissue expression",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -92,29 +88,7 @@
       "sc:url": "http://www.germonline.org/"
     },
     {
-      "@id": "_:N71efa961414c4fe8ad36888edee783b1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N9cd00ba47cb4438da23b64928b050dab",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N5ca026b1e0184fd98e10fc5aa4f3fbc3",
+      "@id": "_:Ne592b447d73d46ee91793a25b12e2068",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -122,7 +96,15 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:N2eeff46d85da4d00aaf4dd60c9da93f1",
+      "@id": "_:N4ec421bc53d049f8a0edd44e8c45cfe0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1045"
+      },
+      "sc:name": "Species name"
+    },
+    {
+      "@id": "_:N9f4331a5893b45988dc80160a6fe2f9e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -130,7 +112,7 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N188a57e05e40461ca9407fab16a8cbf1",
+      "@id": "_:Nffc4e235361848378563bf5e693ff716",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1045"
@@ -138,12 +120,30 @@
       "sc:name": "Species name"
     },
     {
-      "@id": "_:Nf869e726ecfc4cf28d9aeca969905ae3",
+      "@id": "_:Nf56ff670dfe249fd95f0a71908cdbd05",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1045"
+        "@id": "edam:data_0916"
       },
-      "sc:name": "Species name"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Gene report"
+    },
+    {
+      "@id": "_:N1c3bcaeb682a4b98939b3be6246cd0e4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0916"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Gene report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/database/baq030",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

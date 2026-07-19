@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkq1154",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/effectivedb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfb4782f9dba74c959adf83fed2cb9947"
+        "@id": "_:N145cc5d16e064b64a3faf635c68586a9"
       },
       "bsc:output": {
-        "@id": "_:Nd675302d7c9c4b77b657c9c34f26035e"
+        "@id": "_:N912cf9f174b64b97a92ad41826023cb8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -73,22 +77,22 @@
       "sc:description": "Prediction of intact bacterial protein secretion systems and putative secreted proteins.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3461"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_3461"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "EffectiveDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "CUBE - Computational Systems Biology",
-        "AT-CUBE"
+        "AT-CUBE",
+        "CUBE - Computational Systems Biology"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.effectivedb.org/"
@@ -96,18 +100,7 @@
       "sc:url": "http://www.effectivedb.org/"
     },
     {
-      "@id": "_:Nd675302d7c9c4b77b657c9c34f26035e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0896"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Protein report"
-    },
-    {
-      "@id": "_:Nfb4782f9dba74c959adf83fed2cb9947",
+      "@id": "_:N145cc5d16e064b64a3faf635c68586a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -118,8 +111,15 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkq1154",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N912cf9f174b64b97a92ad41826023cb8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein report"
     }
   ]
 }

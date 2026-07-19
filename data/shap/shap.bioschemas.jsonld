@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,20 +43,14 @@
       "@id": "https://bio.tools/shap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3bf536a062584d5c978f43c2f1ef0bc1"
+        "@id": "_:N8fe3a48765d9449e9966d28380b81c8a"
       },
       "bsc:output": {
-        "@id": "_:N7d8dcf7879e74844976e44b197578878"
+        "@id": "_:N4dc8fdc674654347b0e300b6e5cbf40a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0602"
-        },
-        {
-          "@id": "edam:topic_3474"
-        },
         {
           "@id": "edam:topic_3375"
         },
@@ -64,47 +58,42 @@
           "@id": "edam:topic_3407"
         },
         {
+          "@id": "edam:topic_3474"
+        },
+        {
           "@id": "edam:topic_0209"
+        },
+        {
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
+        "pubmed:34579792",
         "pmcid:PMC8477573",
         {
           "@id": "https://doi.org/10.1186/S13321-021-00542-Y"
-        },
-        "pubmed:34579792"
+        }
       ],
       "sc:description": "Evaluation of structural contributions to metabolic stability predictions with the use of SHAP values",
       "sc:featureList": [
         {
-          "@id": "edam:operation_4009"
+          "@id": "edam:operation_3929"
         },
         {
-          "@id": "edam:operation_3929"
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "SHAP",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://metstab-shap.matinf.uj.edu.pl/"
     },
     {
-      "@id": "_:N7d8dcf7879e74844976e44b197578878",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N3bf536a062584d5c978f43c2f1ef0bc1",
+      "@id": "_:N8fe3a48765d9449e9966d28380b81c8a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
@@ -113,6 +102,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "SMILES string"
+    },
+    {
+      "@id": "_:N4dc8fdc674654347b0e300b6e5cbf40a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Feature table"
     }
   ]
 }

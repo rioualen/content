@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,31 +38,31 @@
     {
       "@id": "https://bio.tools/metapredict",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
-        },
-        {
-          "@id": "edam:topic_0080"
-        },
-        {
           "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_3538"
         },
         {
           "@id": "edam:topic_0736"
         },
         {
-          "@id": "edam:topic_3538"
+          "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:34480923",
         "pmcid:PMC8553642",
         {
           "@id": "https://doi.org/10.1016/j.bpj.2021.08.039"
-        },
-        "pubmed:34480923"
+        }
       ],
       "sc:description": "A machine learning-based tool for predicting protein disorder.",
       "sc:featureList": [
@@ -80,8 +80,8 @@
       "sc:license": "MIT",
       "sc:name": "metapredict",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://metapredict.readthedocs.io/"

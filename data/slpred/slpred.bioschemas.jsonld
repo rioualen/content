@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btac458",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/slpred",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5a9ca4f52b7b4f9087a6a4c41124790c"
+        "@id": "_:N63043a4043574cfb8af04929f7b4f443"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -54,10 +58,10 @@
           "@id": "edam:topic_0820"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0140"
         },
         {
-          "@id": "edam:topic_0140"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
@@ -69,10 +73,10 @@
       "sc:description": "A Multi-view Subcellular Localization Prediction Tool for Multi-location Human Proteins.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_0224"
         },
         {
           "@id": "edam:operation_2489"
@@ -82,14 +86,14 @@
       "sc:license": "GPL-3.0",
       "sc:name": "SLPred",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://slpred.kansil.org"
     },
     {
-      "@id": "_:N5a9ca4f52b7b4f9087a6a4c41124790c",
+      "@id": "_:N63043a4043574cfb8af04929f7b4f443",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -98,10 +102,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btac458",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

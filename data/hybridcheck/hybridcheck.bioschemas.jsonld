@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1111/1755-0998.12469",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/hybridcheck",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Ben J. Ward",
-        "Dr. Cock van Oosterhout"
+        "Dr. Cock van Oosterhout",
+        "Ben J. Ward"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0654"
+        },
+        {
+          "@id": "edam:topic_3127"
+        },
         {
           "@id": "edam:topic_0092"
         },
@@ -52,13 +62,7 @@
           "@id": "edam:topic_3053"
         },
         {
-          "@id": "edam:topic_0654"
-        },
-        {
           "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_3127"
         }
       ],
       "sc:citation": [
@@ -70,31 +74,27 @@
       "sc:description": "Software package to visualise the recombination signal in large DNA sequence dataset, and it can be used to analyse recombination, genetic introgression, hybridisation and horizontal gene transfer.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0564"
         },
         {
-          "@id": "edam:operation_0564"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:name": "HybridCheck",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://ward9250.github.io/HybridCheck/manual.html"
+          "@id": "http://ward9250.github.io/HybridCheck/about.html"
         },
         {
-          "@id": "http://ward9250.github.io/HybridCheck/about.html"
+          "@id": "http://ward9250.github.io/HybridCheck/manual.html"
         }
       ],
       "sc:url": "https://github.com/BenJWard/HybridCheck"
-    },
-    {
-      "@id": "https://doi.org/10.1111/1755-0998.12469",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

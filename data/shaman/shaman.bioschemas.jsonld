@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,63 +36,59 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1073/pnas.1523899113",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/shaman",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "SHAMAN team",
       "bsc:input": {
-        "@id": "_:N4c4ead0f43674754b01af78522f01e37"
+        "@id": "_:N88adf4149dd64de5880480c25a45e2af"
       },
       "bsc:output": {
-        "@id": "_:Nfd427acdf87945eca87f9776591b767b"
+        "@id": "_:N72d51550207f4f8fbe3eebca65f856a5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3174"
       },
       "sc:author": [
+        "Amine Ghozlane",
         "Hugo Varet",
-        "Stevenn Volant",
         "Pierre Lechat",
-        "Amine Ghozlane"
+        "Stevenn Volant"
       ],
       "sc:citation": [
+        "pubmed:27140611",
         "pmcid:PMC4878514",
         {
           "@id": "https://doi.org/10.1073/pnas.1523899113"
-        },
-        "pubmed:27140611"
+        }
       ],
       "sc:description": "SHiny application for Metagenomic ANalysis including the normalization, the differential analysis and mutiple visualization. It is based on DESeq2 R package [Anders and Huber 2010] for the analysis of metagenomic data, as suggested in [McMurdie and Holmes 2014, Jonsson2016]. It robustly identifies the differential abundant genera with the Generalized Linear Model implemented in DESeq2 [Love 2014].",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3435"
-        },
-        {
-          "@id": "edam:operation_0337"
-        },
         {
           "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_3221"
+        },
+        {
+          "@id": "edam:operation_3435"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "SHAMAN",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "Institut Pasteur",
-        "Bioinformatics and Biostatistics Hub"
+        "Bioinformatics and Biostatistics Hub",
+        "Institut Pasteur"
       ],
       "sc:softwareHelp": {
         "@id": "http://shaman.c3bi.pasteur.fr/"
@@ -100,15 +96,7 @@
       "sc:url": "http://shaman.c3bi.pasteur.fr/"
     },
     {
-      "@id": "_:Nfd427acdf87945eca87f9776591b767b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N4c4ead0f43674754b01af78522f01e37",
+      "@id": "_:N88adf4149dd64de5880480c25a45e2af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -117,6 +105,18 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "_:N72d51550207f4f8fbe3eebca65f856a5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1073/pnas.1523899113",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

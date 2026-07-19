@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.3390/brainsci12050638",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/brhd",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3304"
+          "@id": "edam:topic_3067"
         },
         {
           "@id": "edam:topic_3697"
         },
         {
-          "@id": "edam:topic_0634"
-        },
-        {
-          "@id": "edam:topic_3067"
-        },
-        {
           "@id": "edam:topic_0218"
+        },
+        {
+          "@id": "edam:topic_3304"
+        },
+        {
+          "@id": "edam:topic_0634"
         }
       ],
       "sc:citation": [
@@ -73,25 +77,21 @@
           "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-SA-3.0",
       "sc:name": "BRHD",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://www.brainresearch.cn/"
-    },
-    {
-      "@id": "https://doi.org/10.3390/brainsci12050638",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

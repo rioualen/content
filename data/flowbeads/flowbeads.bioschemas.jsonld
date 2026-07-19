@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,61 +36,65 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowbeads",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nikolas Pontikos",
       "bsc:input": {
-        "@id": "_:Nb61db5a98d8b4a27a7c6ebc46bddc368"
+        "@id": "_:N5a90fe4cc0664c84a2b3d34afb098b23"
       },
       "bsc:output": [
         {
-          "@id": "_:N7cbeea7d574444c88fc38355db580761"
+          "@id": "_:N4fca4cdad6a04a009bdc1eaeb816a5a5"
         },
         {
-          "@id": "_:Ne212175f3cce4453a0709496d7d6fabd"
+          "@id": "_:N819333ae413e44388903f1c04a267050"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_3306"
         },
         {
           "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3306"
+          "@id": "edam:topic_3361"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "This package extends flowCore to provide functionality specific to bead data. One of the goals of this package is to automate analysis of bead data for the purpose of normalisation.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0337"
-        },
         {
           "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_3435"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "flowBeads",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/flowBeads.html"
@@ -99,7 +103,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowBeads.html"
     },
     {
-      "@id": "_:Nb61db5a98d8b4a27a7c6ebc46bddc368",
+      "@id": "_:N5a90fe4cc0664c84a2b3d34afb098b23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -110,26 +114,7 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N7cbeea7d574444c88fc38355db580761",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Ne212175f3cce4453a0709496d7d6fabd",
+      "@id": "_:N4fca4cdad6a04a009bdc1eaeb816a5a5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -148,8 +133,23 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N819333ae413e44388903f1c04a267050",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

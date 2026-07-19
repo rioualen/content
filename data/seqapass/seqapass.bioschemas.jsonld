@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,11 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3791/63970",
+      "@id": "https://doi.org/10.1002/etc.5591",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1002/etc.5591",
+      "@id": "https://doi.org/10.3791/63970",
       "@type": "sc:CreativeWork"
     },
     {
@@ -48,23 +48,29 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N145ef6fce2404a93ac385dd25020a385"
+          "@id": "_:N09ae46bea3e240faac5a368086e91af6"
         },
         {
-          "@id": "_:Nb9c7b334af1e41b1959eec3f92fa5a77"
+          "@id": "_:N4b620ca2c2644f0cb8fb793db6ccf8da"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N529707b64f7e43e6a5508db409b215a3"
+          "@id": "_:Ndba8531758f04d628a79718cacfa3c46"
         },
         {
-          "@id": "_:Naf670d707c7d485f8daeb7f70acaa5fa"
+          "@id": "_:N7982af2684f3419fa4a7aa994ee70dd1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3314"
+        },
+        {
+          "@id": "edam:topic_0621"
+        },
         {
           "@id": "edam:topic_2275"
         },
@@ -72,25 +78,19 @@
           "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_3314"
-        },
-        {
           "@id": "edam:topic_2840"
-        },
-        {
-          "@id": "edam:topic_0621"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1002/etc.5591"
-        },
+        "pubmed:36847398",
+        "pmcid:PMC10758989",
         {
           "@id": "https://doi.org/10.3791/63970"
         },
-        "pubmed:36847398",
         "pubmed:36825751",
-        "pmcid:PMC10758989"
+        {
+          "@id": "https://doi.org/10.1002/etc.5591"
+        }
       ],
       "sc:description": "A web-based tool for addressing the challenges of cross-species extrapolation of chemical toxicity.",
       "sc:featureList": [
@@ -98,17 +98,17 @@
           "@id": "edam:operation_2423"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "SeqAPASS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -117,23 +117,7 @@
       "sc:url": "https://seqapass.epa.gov/seqapass"
     },
     {
-      "@id": "_:N529707b64f7e43e6a5508db409b215a3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:Naf670d707c7d485f8daeb7f70acaa5fa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N145ef6fce2404a93ac385dd25020a385",
+      "@id": "_:N09ae46bea3e240faac5a368086e91af6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2327"
@@ -141,12 +125,28 @@
       "sc:name": "GI number (protein)"
     },
     {
-      "@id": "_:Nb9c7b334af1e41b1959eec3f92fa5a77",
+      "@id": "_:N4b620ca2c2644f0cb8fb793db6ccf8da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1179"
       },
       "sc:name": "NCBI taxonomy ID"
+    },
+    {
+      "@id": "_:Ndba8531758f04d628a79718cacfa3c46",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:N7982af2684f3419fa4a7aa994ee70dd1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
     }
   ]
 }

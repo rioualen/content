@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,39 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/clpt.2012.96",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pharmgkb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0f348159e75b486c9e401fbeac474aab"
+        "@id": "_:N29ca2c7da85945e98d7a7c7c09dc5875"
       },
       "bsc:output": {
-        "@id": "_:Nbecb11e6f78347e1807783caef94ad40"
+        "@id": "_:N89c13c471bc24bc7864037ac71dc5ad2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3325"
+          "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_2815"
         },
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_0208"
         },
         {
           "@id": "edam:topic_0202"
         },
         {
-          "@id": "edam:topic_0208"
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3660037",
         "pubmed:22992668",
+        "pmcid:PMC3660037",
         {
           "@id": "https://doi.org/10.1038/clpt.2012.96"
         }
@@ -85,9 +81,9 @@
       "sc:license": "CC-BY-NC-SA-4.0",
       "sc:name": "PharmGKB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.pharmgkb.org/page/overview"
@@ -95,7 +91,15 @@
       "sc:url": "http://www.pharmgkb.org"
     },
     {
-      "@id": "_:Nbecb11e6f78347e1807783caef94ad40",
+      "@id": "_:N29ca2c7da85945e98d7a7c7c09dc5875",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2649"
+      },
+      "sc:name": "PharmGKB ID"
+    },
+    {
+      "@id": "_:N89c13c471bc24bc7864037ac71dc5ad2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -106,12 +110,8 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N0f348159e75b486c9e401fbeac474aab",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2649"
-      },
-      "sc:name": "PharmGKB ID"
+      "@id": "https://doi.org/10.1038/clpt.2012.96",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

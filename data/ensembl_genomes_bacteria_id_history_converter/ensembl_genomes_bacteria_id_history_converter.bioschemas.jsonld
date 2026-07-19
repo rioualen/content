@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ensembl_genomes_bacteria_id_history_converter",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N02d57d1d335341bdbad34f64d44a0385"
+        "@id": "_:N67ab7d276d2d4a08a3599fa7951faa19"
       },
       "bsc:output": {
-        "@id": "_:Na5f7623ded6b47ef9397544304e55d78"
+        "@id": "_:Na3f942e0ba6d42bdb1f30e88f28bbdec"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3345"
       },
       "sc:author": "Ensembl team",
       "sc:citation": [
-        "pmcid:PMC4702834",
         "pubmed:26687719",
+        "pmcid:PMC4702834",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
         }
@@ -64,8 +68,8 @@
       },
       "sc:name": "Ensembl Genomes Bacteria ID history converter",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
@@ -81,7 +85,7 @@
       "sc:url": "http://bacteria.ensembl.org/tools.html"
     },
     {
-      "@id": "_:N02d57d1d335341bdbad34f64d44a0385",
+      "@id": "_:N67ab7d276d2d4a08a3599fa7951faa19",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
@@ -89,16 +93,12 @@
       "sc:name": "Ensembl ID"
     },
     {
-      "@id": "_:Na5f7623ded6b47ef9397544304e55d78",
+      "@id": "_:Na3f942e0ba6d42bdb1f30e88f28bbdec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
       },
       "sc:name": "Ensembl ID"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

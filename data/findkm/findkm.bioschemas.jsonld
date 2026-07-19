@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/findkm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc29e498bed094c04876ec67cb9cc1fb2"
+        "@id": "_:Nf17598ae51c443d1bee4a6ab416b3587"
       },
       "bsc:output": [
         {
-          "@id": "_:N33c18f0327244c4c967d45a15a3fa1a4"
+          "@id": "_:Nb3cb5c7bd77e4f73bf78e9a112d38657"
         },
         {
-          "@id": "_:N220b1737dd114b6580a0855c1970e825"
+          "@id": "_:Nfb39620a978546cd8b87c50143ca5895"
         },
         {
-          "@id": "_:Nc046bfe7c04a473fbd38e90979924228"
+          "@id": "_:Naf58c1543cdb40cb923e351753a0a3c3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0821"
@@ -70,34 +70,34 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
         "UK BBSRC",
-        "EMBOSS Contributors",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Calculate and plot enzyme reaction data.",
       "sc:featureList": {
         "@id": "edam:operation_0334"
       },
       "sc:funder": [
-        "Wellcome Trust",
         "UK BBSRC",
-        "UK MRC"
+        "UK MRC",
+        "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "findkm",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -105,10 +105,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/findkm.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/findkm.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
@@ -118,31 +118,7 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/findkm.html"
     },
     {
-      "@id": "_:N33c18f0327244c4c967d45a15a3fa1a4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2978"
-      },
-      "sc:name": "Reaction data"
-    },
-    {
-      "@id": "_:N220b1737dd114b6580a0855c1970e825",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2025"
-      },
-      "sc:name": "Michaelis Menten plot"
-    },
-    {
-      "@id": "_:Nc046bfe7c04a473fbd38e90979924228",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2026"
-      },
-      "sc:name": "Hanes Woolf plot"
-    },
-    {
-      "@id": "_:Nc29e498bed094c04876ec67cb9cc1fb2",
+      "@id": "_:Nf17598ae51c443d1bee4a6ab416b3587",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2024"
@@ -150,7 +126,31 @@
       "sc:name": "Enzyme kinetics data"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@id": "_:Nb3cb5c7bd77e4f73bf78e9a112d38657",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2026"
+      },
+      "sc:name": "Hanes Woolf plot"
+    },
+    {
+      "@id": "_:Nfb39620a978546cd8b87c50143ca5895",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2025"
+      },
+      "sc:name": "Michaelis Menten plot"
+    },
+    {
+      "@id": "_:Naf58c1543cdb40cb923e351753a0a3c3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2978"
+      },
+      "sc:name": "Reaction data"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     }
   ]

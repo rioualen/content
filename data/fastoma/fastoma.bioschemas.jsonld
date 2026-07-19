@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,53 +36,49 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41592-024-02552-8",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fastoma",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N799866502cae4105bdf194af280881e6"
+          "@id": "_:N81a43e983a534833a89ec6222e9b2646"
         },
         {
-          "@id": "_:N4be2320e85524cd48d928e935165a3b8"
+          "@id": "_:N099c1dbdaf044fb58d6af9a42ec322cd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf8f605390a4840679311e6ba072cc197"
+          "@id": "_:N687c83a3eddd4d5b89e20c993dffdc60"
         },
         {
-          "@id": "_:Nd4431b0ba2e846a7a7bc814933248f52"
+          "@id": "_:N8a7a6123fbdc49c890ec18d3dc9916e9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0797"
       },
       "sc:citation": [
+        "pubmed:39753922",
+        "pmcid:PMC11810774",
         {
           "@id": "https://doi.org/10.1038/s41592-024-02552-8"
-        },
-        "pmcid:PMC11810774",
-        "pubmed:39753922"
+        }
       ],
       "sc:description": "FastOMA is a scalable software package to infer orthology relationship.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3947"
-        },
-        {
           "@id": "edam:operation_3209"
         },
         {
-          "@id": "edam:operation_2479"
+          "@id": "edam:operation_0540"
         },
         {
-          "@id": "edam:operation_0540"
+          "@id": "edam:operation_3947"
+        },
+        {
+          "@id": "edam:operation_2479"
         },
         {
           "@id": "edam:operation_0291"
@@ -92,8 +88,8 @@
       "sc:license": "MPL-2.0",
       "sc:name": "FastOMA",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/DessimozLab/FastOMA/blob/main/README.md"
@@ -102,18 +98,7 @@
       "sc:url": "https://github.com/dessimozlab/FastOMA"
     },
     {
-      "@id": "_:N799866502cae4105bdf194af280881e6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:N4be2320e85524cd48d928e935165a3b8",
+      "@id": "_:N81a43e983a534833a89ec6222e9b2646",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -124,7 +109,26 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:Nf8f605390a4840679311e6ba072cc197",
+      "@id": "_:N099c1dbdaf044fb58d6af9a42ec322cd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N687c83a3eddd4d5b89e20c993dffdc60",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1245"
+      },
+      "sc:name": "Sequence cluster (protein)"
+    },
+    {
+      "@id": "_:N8a7a6123fbdc49c890ec18d3dc9916e9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3148"
@@ -135,12 +139,8 @@
       "sc:name": "Gene family report"
     },
     {
-      "@id": "_:Nd4431b0ba2e846a7a7bc814933248f52",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1245"
-      },
-      "sc:name": "Sequence cluster (protein)"
+      "@id": "https://doi.org/10.1038/s41592-024-02552-8",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

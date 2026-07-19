@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2021.06.10.447854",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mgenrichment",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8a06eb8e7913437ab4e11355d1a98a2e"
+          "@id": "_:N148c65bb984d46e6b591a83174a9d2a7"
         },
         {
-          "@id": "_:N517aff69c8214c069628ea82867ffea8"
+          "@id": "_:N07b7268a5a064e59acad89d96850b8bd"
         },
         {
-          "@id": "_:Na30f51c3c2bc47d5bea3f480866a3d01"
+          "@id": "_:N7f494e98911741dab7187d02364cc16d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -78,30 +82,30 @@
       "sc:license": "GPL-3.0",
       "sc:name": "MGEnrichment",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://ciernialab.shinyapps.io/MGEnrichmentApp/"
     },
     {
-      "@id": "_:N8a06eb8e7913437ab4e11355d1a98a2e",
+      "@id": "_:N148c65bb984d46e6b591a83174a9d2a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_3475"
         }
       ],
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:N517aff69c8214c069628ea82867ffea8",
+      "@id": "_:N07b7268a5a064e59acad89d96850b8bd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2298"
@@ -117,24 +121,20 @@
       "sc:name": "Gene ID (HGNC)"
     },
     {
-      "@id": "_:Na30f51c3c2bc47d5bea3f480866a3d01",
+      "@id": "_:N7f494e98911741dab7187d02364cc16d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3274"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_3475"
         }
       ],
       "sc:name": "MGI accession"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2021.06.10.447854",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

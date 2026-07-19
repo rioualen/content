@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/picardasmetrics",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Nf498c6fe7280403ab278db3d2f32f18f"
+          "@id": "_:Nf473e0464a9a4dd8aab2aceab20c01e8"
         },
         {
-          "@id": "_:N354ed28bc9b84437a12d67baea96683d"
+          "@id": "_:Nc810ede8b3334ce2ab0a6e6c3f877b25"
         }
       ],
       "bsc:output": {
-        "@id": "_:Na1ab23d75db544389433ec4eff857981"
+        "@id": "_:N58ef8a3b04e44317b87d4c292bdce4b9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
+        "pubmed:27137889",
         "pmcid:PMC4987906",
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
-        "pubmed:27137889"
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        }
       ],
       "sc:description": "Reports high-level measures of alignment based on a provided sam or bam file.",
       "sc:featureList": {
@@ -71,9 +75,9 @@
       },
       "sc:name": "picardasmetrics",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://broadinstitute.github.io/picard/command-line-overview.html#CollectAlignmentSummaryMetrics"
@@ -82,34 +86,23 @@
       "sc:url": "https://broadinstitute.github.io/picard/"
     },
     {
-      "@id": "_:Na1ab23d75db544389433ec4eff857981",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nf498c6fe7280403ab278db3d2f32f18f",
+      "@id": "_:Nf473e0464a9a4dd8aab2aceab20c01e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2573"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_2573"
         }
       ],
       "sc:name": "Data"
     },
     {
-      "@id": "_:N354ed28bc9b84437a12d67baea96683d",
+      "@id": "_:Nc810ede8b3334ce2ab0a6e6c3f877b25",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -120,8 +113,15 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N58ef8a3b04e44317b87d4c292bdce4b9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

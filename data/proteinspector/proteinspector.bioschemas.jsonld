@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jproteome.6b00028",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/proteinspector",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N39925599f3cf438c83b8dbd6d32f3896"
+        "@id": "_:N58e054d5a27749e797955ab90e6216a1"
       },
       "bsc:output": {
-        "@id": "_:N035bf568ede54cc494dc31dc8a05eac2"
+        "@id": "_:Nf66ddc190dd34e42841d9b1dfed7dfa0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
+        "pubmed:26974716",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.6b00028"
-        },
-        "pubmed:26974716"
+        }
       ],
       "sc:description": "Analysis of mass spectrometry proteomics quality control metrics.",
       "sc:featureList": {
@@ -66,8 +62,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "Proteinspector",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -78,7 +74,18 @@
       "sc:url": "https://bitbucket.org/proteinspector/qc_analysis/"
     },
     {
-      "@id": "_:N035bf568ede54cc494dc31dc8a05eac2",
+      "@id": "_:N58e054d5a27749e797955ab90e6216a1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nf66ddc190dd34e42841d9b1dfed7dfa0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -89,15 +96,8 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N39925599f3cf438c83b8dbd6d32f3896",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mass spectrometry data"
+      "@id": "https://doi.org/10.1021/acs.jproteome.6b00028",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

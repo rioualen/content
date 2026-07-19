@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl504",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/foldunfold",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nceaacba60c7540428906decc9b4a75f6"
+          "@id": "_:N63c50511003541da9c2d3c7ff264a945"
         },
         {
-          "@id": "_:Ndb075e82eab540468aa2c95c4ab70962"
+          "@id": "_:N2024066ac8e349dd883e730f8fd73e0c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3538"
         },
         {
-          "@id": "edam:topic_3538"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -73,14 +69,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "FoldUnfold",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://skuld.protres.ru/~mlobanov/ogu/ogu.cgi"
     },
     {
-      "@id": "_:Nceaacba60c7540428906decc9b4a75f6",
+      "@id": "_:N63c50511003541da9c2d3c7ff264a945",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -88,7 +84,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Ndb075e82eab540468aa2c95c4ab70962",
+      "@id": "_:N2024066ac8e349dd883e730f8fd73e0c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -97,6 +93,10 @@
         "@id": "edam:format_1208"
       },
       "sc:name": "Protein features"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btl504",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

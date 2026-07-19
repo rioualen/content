@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
@@ -44,19 +48,15 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/seqxrefget",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbd36f81fdea04ac5ae4666d5b5019f28"
+        "@id": "_:N270266996ee545488b9c0100f152e81b"
       },
       "bsc:output": {
-        "@id": "_:N5abd667db2b14475a9e2adedfbd9c6b1"
+        "@id": "_:N5ea97791aeb94f6993a02fa812f91406"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3077"
@@ -66,17 +66,17 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
-        "EMBOSS Contributors",
         "UK BBSRC",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Retrieve all cross-referenced data for a sequence entry.",
       "sc:featureList": {
@@ -91,8 +91,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "seqxrefget",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -101,10 +101,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/seqxrefget.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/seqxrefget.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
@@ -114,20 +114,20 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/seqxrefget.html"
     },
     {
-      "@id": "_:N5abd667db2b14475a9e2adedfbd9c6b1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:Nbd36f81fdea04ac5ae4666d5b5019f28",
+      "@id": "_:N270266996ee545488b9c0100f152e81b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
       },
       "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N5ea97791aeb94f6993a02fa812f91406",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:name": "Data reference"
     }
   ]
 }

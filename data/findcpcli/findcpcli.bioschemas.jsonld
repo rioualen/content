@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-7271-733X",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/findcpcli",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N12b0821875914e31b37725bbad4f88ff"
+        "@id": "_:N4b108b0225e94568a453e5c2b8104ccf"
       },
       "bsc:output": {
-        "@id": "_:N0a654d56acb043fb8918309d6f53fa3c"
+        "@id": "_:Ndc117ef1371142b29725e408bc65d4d5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
@@ -70,7 +74,7 @@
       "sc:url": "https://github.com/findCP/findCPcli"
     },
     {
-      "@id": "_:N12b0821875914e31b37725bbad4f88ff",
+      "@id": "_:N4b108b0225e94568a453e5c2b8104ccf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -81,7 +85,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N0a654d56acb043fb8918309d6f53fa3c",
+      "@id": "_:Ndc117ef1371142b29725e408bc65d4d5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -90,10 +94,6 @@
         "@id": "edam:format_3468"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7271-733X",
-      "@type": "sc:Person"
     }
   ]
 }

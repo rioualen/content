@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,44 +36,48 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac367",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gecoviz",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N20c2555172274353af1ee59a1e0dfcee"
+        "@id": "_:Nb468147295344cd1be2de513ae59d3fa"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3293"
-        },
-        {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3382"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0102"
         },
         {
           "@id": "edam:topic_3174"
+        },
+        {
+          "@id": "edam:topic_3293"
         }
       ],
       "sc:citation": [
+        "pubmed:35639770",
+        "pmcid:PMC9252766",
         {
           "@id": "https://doi.org/10.1093/nar/gkac367"
-        },
-        "pubmed:35639770",
-        "pmcid:PMC9252766"
+        }
       ],
       "sc:description": "Genomic context visualisation of prokaryotic genes from a functional and evolutionary perspective.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3208"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_3208"
         },
         {
           "@id": "edam:operation_3663"
@@ -82,9 +86,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "GeCoViz",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://gecoviz.cgmlab.org/help/"
@@ -92,16 +96,12 @@
       "sc:url": "https://gecoviz.cgmlab.org"
     },
     {
-      "@id": "_:N20c2555172274353af1ee59a1e0dfcee",
+      "@id": "_:Nb468147295344cd1be2de513ae59d3fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac367",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

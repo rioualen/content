@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.7554/eLife.07009",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/biojs-io-gff",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "greenify",
       "bsc:input": {
-        "@id": "_:N3ede84a18bee4b51813960b32f9f1eea"
+        "@id": "_:N758f652371244e338932c44824a94d01"
       },
       "bsc:output": {
-        "@id": "_:N32063795eff94073bf7796856eb6fbd7"
+        "@id": "_:N69d528d5b1b541fc9c71a62170e745b2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3071"
@@ -61,8 +65,8 @@
       "sc:name": "biojs-io-gff",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "BioJS",
       "sc:softwareHelp": {
@@ -72,18 +76,7 @@
       "sc:url": "https://github.com/greenify/biojs-io-gff"
     },
     {
-      "@id": "_:N32063795eff94073bf7796856eb6fbd7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3464"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N3ede84a18bee4b51813960b32f9f1eea",
+      "@id": "_:N758f652371244e338932c44824a94d01",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -94,8 +87,15 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "https://doi.org/10.7554/eLife.07009",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N69d528d5b1b541fc9c71a62170e745b2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3464"
+      },
+      "sc:name": "Data"
     }
   ]
 }

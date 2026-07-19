@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N42d06d10ad8a43ceb98939c9adaf48fe"
+          "@id": "_:N6bb3e2cfacc240e5bd6545e4d946ed4d"
         },
         {
-          "@id": "_:N81c4e7b8c3944bb6bdad7837d847cc62"
+          "@id": "_:N266b3ef42af044988dac1fb8ac87d42a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N83397c0cbd9b489f8ad85f910e99f047"
+          "@id": "_:Nbe66d20dfbb143f898c1192928110966"
         },
         {
-          "@id": "_:Nf13636b3b12f40338432152cbc53c1aa"
+          "@id": "_:Nf2b02b9cc3724be3bd4894961e8bb55b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -63,11 +63,11 @@
         "@id": "edam:topic_3308"
       },
       "sc:citation": [
+        "pubmed:19265557",
+        "pmcid:PMC2690998",
         {
           "@id": "https://doi.org/10.1186/gb-2009-10-3-r27"
-        },
-        "pmcid:PMC2690998",
-        "pubmed:19265557"
+        }
       ],
       "sc:description": "Data integration system to identify links in expression regulation.",
       "sc:featureList": {
@@ -75,9 +75,9 @@
       },
       "sc:name": "DISTILLER",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -87,15 +87,7 @@
       "sc:url": "http://bioinformatics.intec.ugent.be/kmarchal/Supplementary_Information_Lemmens_2008/Index.html"
     },
     {
-      "@id": "_:N42d06d10ad8a43ceb98939c9adaf48fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2070"
-      },
-      "sc:name": "Sequence motif (nucleic acid)"
-    },
-    {
-      "@id": "_:N81c4e7b8c3944bb6bdad7837d847cc62",
+      "@id": "_:N6bb3e2cfacc240e5bd6545e4d946ed4d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -103,20 +95,28 @@
       "sc:name": "Raw microarray data"
     },
     {
-      "@id": "_:N83397c0cbd9b489f8ad85f910e99f047",
+      "@id": "_:N266b3ef42af044988dac1fb8ac87d42a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2968"
+        "@id": "edam:data_2070"
       },
-      "sc:name": "Image"
+      "sc:name": "Sequence motif (nucleic acid)"
     },
     {
-      "@id": "_:Nf13636b3b12f40338432152cbc53c1aa",
+      "@id": "_:Nbe66d20dfbb143f898c1192928110966",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Nf2b02b9cc3724be3bd4894961e8bb55b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:name": "Image"
     },
     {
       "@id": "https://doi.org/10.1186/gb-2009-10-3-r27",

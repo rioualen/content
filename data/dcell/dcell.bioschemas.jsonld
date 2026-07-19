@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4627",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dcell",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Keiichiro Ono",
       "bsc:input": {
-        "@id": "_:N654d21af49bf4732ae631e2f7062c34b"
+        "@id": "_:N05a5b22b0089419db8711c90d383c342"
       },
       "bsc:output": {
-        "@id": "_:N8fef9cf50b934db3b2b3dbc2bebc5316"
+        "@id": "_:Nc65d9dc824664db794371f057ee54fb6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3473"
         },
         {
-          "@id": "edam:topic_3524"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_3524"
         }
       ],
       "sc:citation": {
@@ -74,9 +78,9 @@
       "sc:license": "MIT",
       "sc:name": "DCell",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/idekerlab/DCell/wiki/Quick-Start-Guide"
@@ -84,18 +88,7 @@
       "sc:url": "http://d-cell.ucsd.edu/"
     },
     {
-      "@id": "_:N8fef9cf50b934db3b2b3dbc2bebc5316",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N654d21af49bf4732ae631e2f7062c34b",
+      "@id": "_:N05a5b22b0089419db8711c90d383c342",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0976"
@@ -106,8 +99,15 @@
       "sc:name": "Identifier (by type of data)"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.4627",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc65d9dc824664db794371f057ee54fb6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Pathway or network"
     }
   ]
 }

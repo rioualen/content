@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,20 +40,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Elsa Bernard",
       "bsc:input": {
-        "@id": "_:N814ecae0c4104eec92daffb5e03d0dd6"
+        "@id": "_:N45384fc56e564c84a55c2a807030da0c"
       },
       "bsc:output": {
-        "@id": "_:N41b90245d2394cd29c4802cdd5643f92"
+        "@id": "_:Nf9a65178879241099912de8838f9eb25"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3170"
-        },
         {
           "@id": "edam:topic_3512"
         },
@@ -62,6 +59,9 @@
         },
         {
           "@id": "edam:topic_3320"
+        },
+        {
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
@@ -83,34 +83,23 @@
       "sc:license": "GPL-3.0",
       "sc:name": "flipflop",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://bioconductor.org/packages/release/bioc/html/flipflop.html"
+          "@id": "http://projects.cbio.mines-paristech.fr/flipflop/"
         },
         {
-          "@id": "http://projects.cbio.mines-paristech.fr/flipflop/"
+          "@id": "http://bioconductor.org/packages/release/bioc/html/flipflop.html"
         }
       ],
       "sc:softwareVersion": "1.12.0",
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flipflop.html"
     },
     {
-      "@id": "_:N41b90245d2394cd29c4802cdd5643f92",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2306"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N814ecae0c4104eec92daffb5e03d0dd6",
+      "@id": "_:N45384fc56e564c84a55c2a807030da0c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -119,6 +108,17 @@
         "@id": "edam:format_2573"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Nf9a65178879241099912de8838f9eb25",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2306"
+      },
+      "sc:name": "Sequence features"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btu317",

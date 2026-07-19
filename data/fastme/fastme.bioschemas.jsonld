@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1089/106652702761034136",
+      "@id": "https://doi.org/10.1093/molbev/msv150",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Vincent Lefort",
       "bsc:input": {
-        "@id": "_:Ndd9d5d9ab89946c38a695fd2e6ec7edc"
+        "@id": "_:Ne9ead9ad895540caa645ccb5abd3368b"
       },
       "bsc:output": {
-        "@id": "_:N465cf0d1e57440d5ac5663a191e5dcef"
+        "@id": "_:N280ef586a54242328440cb50deccec38"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -63,14 +63,14 @@
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1089/106652702761034136"
-        },
-        "pmcid:PMC4576710",
-        "pubmed:12487758",
         "pubmed:26130081",
+        "pmcid:PMC4576710",
         {
           "@id": "https://doi.org/10.1093/molbev/msv150"
+        },
+        "pubmed:12487758",
+        {
+          "@id": "https://doi.org/10.1089/106652702761034136"
         }
       ],
       "sc:description": "Distance algorithms to infer phylogenies. It's based on balanced minimum evolution, which is the very principle of NJ. It includes Nearest Neighbor Interchange (NNI) and also Subtree Pruning and Regrafting (SPR), while remaining as fast as NJ and providing a number of facilities: distance estimation for DNA and proteins with various models and options, bootstrapping, and parallel computations.",
@@ -86,8 +86,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "FastME",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "LIRMM",
       "sc:softwareHelp": {
@@ -97,23 +97,7 @@
       "sc:url": "http://www.atgc-montpellier.fr/fastme/"
     },
     {
-      "@id": "_:N465cf0d1e57440d5ac5663a191e5dcef",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1910"
-        },
-        {
-          "@id": "edam:format_1445"
-        }
-      ],
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:Ndd9d5d9ab89946c38a695fd2e6ec7edc",
+      "@id": "_:Ne9ead9ad895540caa645ccb5abd3368b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -129,7 +113,23 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/molbev/msv150",
+      "@id": "_:N280ef586a54242328440cb50deccec38",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1445"
+        },
+        {
+          "@id": "edam:format_1910"
+        }
+      ],
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "https://doi.org/10.1089/106652702761034136",
       "@type": "sc:CreativeWork"
     }
   ]

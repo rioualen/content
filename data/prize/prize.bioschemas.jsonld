@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,45 +36,49 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/prize",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Daryanaz Dargahi",
       "bsc:input": {
-        "@id": "_:N5437876530a5475d8f686171030e1463"
+        "@id": "_:N7059ea2b693a4c6ab62c7eee42122627"
       },
       "bsc:output": [
         {
-          "@id": "_:N15596bfacd7949e8a202694be12a0f8f"
+          "@id": "_:N2ed7799695a84ef29d8397b4d25309b9"
         },
         {
-          "@id": "_:N2c7b368fb1334c7aa3c27e46d65f0025"
+          "@id": "_:N885a1a67dc144265994f3c083170706c"
         },
         {
-          "@id": "_:Nadf54e27dc0d487d90281a71991b6134"
+          "@id": "_:N006dcb14c6e841aea51f4b9a387d744c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "This tool offers a novel approach to narrow down long lists of candidates by prioritizing them based on how well they meet the research goal. It organizes and analyzes complex decisions where multiple criteria are involved. The technique structures problems into a hierarchy of elements, and helps to specify numerical weights representing the relative importance of each element.",
       "sc:featureList": {
@@ -83,9 +87,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "Prize",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/Prize.html"
@@ -94,7 +98,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Prize.html"
     },
     {
-      "@id": "_:N5437876530a5475d8f686171030e1463",
+      "@id": "_:N7059ea2b693a4c6ab62c7eee42122627",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -110,56 +114,52 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:N15596bfacd7949e8a202694be12a0f8f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N2c7b368fb1334c7aa3c27e46d65f0025",
+      "@id": "_:N2ed7799695a84ef29d8397b4d25309b9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Nadf54e27dc0d487d90281a71991b6134",
+      "@id": "_:N885a1a67dc144265994f3c083170706c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N006dcb14c6e841aea51f4b9a387d744c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Score"
     }
   ]
 }

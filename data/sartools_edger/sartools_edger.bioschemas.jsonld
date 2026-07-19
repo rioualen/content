@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,55 +36,59 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sartools_edger",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N0c954a23596e4de0a1c86c8e9501339d"
+          "@id": "_:Nf6507ea0004042c3b5aa256a6ff44ded"
         },
         {
-          "@id": "_:Nb5bf5961dffa49c9a3871ebf23657437"
+          "@id": "_:N0566257fe6aa44548066b255de42b670"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na26ac514e6da47c7931fa23c6e06652b"
+          "@id": "_:N05c8b3429db14e6da27b2c54803cc0a4"
         },
         {
-          "@id": "_:Nabd71b0c51164a6fbc5b1ebf1c2f2f87"
+          "@id": "_:Nb3d4b02f624d445fbf1a390b6e5e4d21"
         },
         {
-          "@id": "_:N13d4ec9555364c728bf4b2ba52747f6c"
+          "@id": "_:Ndffadfa257ea48acadf6322d62092b9e"
         },
         {
-          "@id": "_:Nf8b2cca0a19e46dc964e3278ca05c579"
+          "@id": "_:N3264be6e97b349bfb597dfb8c0d1c701"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        "pubmed:27280887",
+        "pubmed:27137889",
+        "pmcid:PMC4987906",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
+        "pubmed:27280887",
         "pmcid:PMC4900645",
-        "pubmed:27137889",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0157022"
         },
-        "pmcid:PMC4987906"
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        }
       ],
       "sc:description": "Compare two or more biological conditions in a RNA-Seq framework with edgeR.",
       "sc:featureList": {
@@ -92,9 +96,9 @@
       },
       "sc:name": "sartools_edger",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/PF2-pasteur-fr/SARTools"
@@ -103,62 +107,7 @@
       "sc:url": "https://github.com/PF2-pasteur-fr/SARTools"
     },
     {
-      "@id": "_:Na26ac514e6da47c7931fa23c6e06652b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nabd71b0c51164a6fbc5b1ebf1c2f2f87",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N13d4ec9555364c728bf4b2ba52747f6c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nf8b2cca0a19e46dc964e3278ca05c579",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N0c954a23596e4de0a1c86c8e9501339d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Nb5bf5961dffa49c9a3871ebf23657437",
+      "@id": "_:Nf6507ea0004042c3b5aa256a6ff44ded",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -169,8 +118,59 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0566257fe6aa44548066b255de42b670",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N05c8b3429db14e6da27b2c54803cc0a4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Nb3d4b02f624d445fbf1a390b6e5e4d21",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Ndffadfa257ea48acadf6322d62092b9e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N3264be6e97b349bfb597dfb8c0d1c701",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pone.0157022",

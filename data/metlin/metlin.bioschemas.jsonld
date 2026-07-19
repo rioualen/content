@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1097/01.ftd.0000179845.53213.39",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metlin",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9aacd4723ab0479c819035dd9ee60797"
+          "@id": "_:N5143ca4b33a04ca7bd3b2d0e38413c08"
         },
         {
-          "@id": "_:N602279eab30f4bd684f785acc8daa38a"
+          "@id": "_:N938eec79989e4564874d3c4486f2b780"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N993e761c745540d6a904eb20498a00b1"
+          "@id": "_:N838a2992e2db47d2b8adb7249f49bc2b"
         },
         {
-          "@id": "_:Nf238e39b434643bc99296e2632292398"
+          "@id": "_:N046f9f063e4545779847da8c209fd95a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3172"
@@ -74,18 +78,7 @@
       "sc:url": "https://metlin.scripps.edu/"
     },
     {
-      "@id": "_:N9aacd4723ab0479c819035dd9ee60797",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0844"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Molecular mass"
-    },
-    {
-      "@id": "_:N602279eab30f4bd684f785acc8daa38a",
+      "@id": "_:N5143ca4b33a04ca7bd3b2d0e38413c08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2605"
@@ -96,7 +89,18 @@
       "sc:name": "Compound ID (KEGG)"
     },
     {
-      "@id": "_:N993e761c745540d6a904eb20498a00b1",
+      "@id": "_:N938eec79989e4564874d3c4486f2b780",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0844"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Molecular mass"
+    },
+    {
+      "@id": "_:N838a2992e2db47d2b8adb7249f49bc2b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0982"
@@ -107,7 +111,7 @@
       "sc:name": "Molecule identifier"
     },
     {
-      "@id": "_:Nf238e39b434643bc99296e2632292398",
+      "@id": "_:N046f9f063e4545779847da8c209fd95a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -116,10 +120,6 @@
         "@id": "edam:format_3603"
       },
       "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "https://doi.org/10.1097/01.ftd.0000179845.53213.39",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

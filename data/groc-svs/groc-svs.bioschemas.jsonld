@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4366",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/groc-svs",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na6ad0bfc6f3b4766be3e04d0088e66fa"
+        "@id": "_:Nc223a93a2b3c4a349adb51f6ce07c159"
       },
       "bsc:output": {
-        "@id": "_:N2a4bc92180c643ea8d02bb825238cc8b"
+        "@id": "_:N125e6e1403bc4c91a4144bbaf9cf1a03"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3175"
         },
         {
-          "@id": "edam:topic_3175"
+          "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_3168"
@@ -77,8 +81,8 @@
       "sc:license": "MIT",
       "sc:name": "GROC-SVs",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,7 +91,7 @@
       "sc:url": "https://github.com/grocsvs/grocsvs"
     },
     {
-      "@id": "_:Na6ad0bfc6f3b4766be3e04d0088e66fa",
+      "@id": "_:Nc223a93a2b3c4a349adb51f6ce07c159",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -98,7 +102,7 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "_:N2a4bc92180c643ea8d02bb825238cc8b",
+      "@id": "_:N125e6e1403bc4c91a4144bbaf9cf1a03",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -107,10 +111,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence report"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4366",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

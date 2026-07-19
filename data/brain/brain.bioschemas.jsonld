@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,29 +45,26 @@
       "biotools:primaryContact": "Piotr Dittwald",
       "bsc:input": [
         {
-          "@id": "_:Nffef25376f2d4235a6c6992f4c013b19"
+          "@id": "_:N6ff9c97ddb974a64beda288f27953545"
         },
         {
-          "@id": "_:Na7d325ee691f400089cd8daefc5472c9"
+          "@id": "_:Nfbff13bc60224c818a7ba07d81530871"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne53e4aac90d9474b98b86319b4c3ce6c"
+        "@id": "_:N2fe0aa79b4ef44488eb209432efe55f7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0153"
-        },
-        {
-          "@id": "edam:topic_2269"
-        },
-        {
           "@id": "edam:topic_3370"
+        },
+        {
+          "@id": "edam:topic_0153"
         },
         {
           "@id": "edam:topic_3172"
@@ -77,6 +74,9 @@
         },
         {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": {
@@ -85,20 +85,20 @@
       "sc:description": "Package for calculating aggregated isotopic distributions and exact center-masses for chemical substances (in this version composed of C, H, N, O and S). This is an implementation of the BRAIN algorithm.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_3632"
         },
         {
           "@id": "edam:operation_3441"
         },
         {
-          "@id": "edam:operation_3632"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "BRAIN",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -108,23 +108,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/BRAIN.html"
     },
     {
-      "@id": "_:Ne53e4aac90d9474b98b86319b4c3ce6c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nffef25376f2d4235a6c6992f4c013b19",
+      "@id": "_:N6ff9c97ddb974a64beda288f27953545",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1857"
@@ -135,7 +119,7 @@
       "sc:name": "Atomic occupancy"
     },
     {
-      "@id": "_:Na7d325ee691f400089cd8daefc5472c9",
+      "@id": "_:Nfbff13bc60224c818a7ba07d81530871",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -144,6 +128,22 @@
         "@id": "edam:format_3554"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N2fe0aa79b4ef44488eb209432efe55f7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

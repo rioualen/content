@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/guides",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9de67e4300774cf3bd33cfd935c405ef"
+        "@id": "_:Nf8ed0b462899452489a652f4f53b9826"
       },
       "bsc:output": {
-        "@id": "_:Nc6e8b79bcd4b491191784289f53e68bd"
+        "@id": "_:N29694ac76fae4056a5bf8c644e78ed60"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -58,44 +58,33 @@
         }
       ],
       "sc:citation": [
+        "pubmed:28858339",
+        "pmcid:PMC5870754",
         {
           "@id": "https://doi.org/10.1038/nmeth.4423"
-        },
-        "pubmed:28858339",
-        "pmcid:PMC5870754"
+        }
       ],
       "sc:description": "Graphical User Interface for DNA Editing Screens (GUIDES) is a web application that designs CRISPR knockout libraries to target custom subsets of genes in the human or mouse genome",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2419"
+          "@id": "edam:operation_3672"
         },
         {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_2419"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "GUIDES",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://guides.sanjanalab.org/#/"
     },
     {
-      "@id": "_:Nc6e8b79bcd4b491191784289f53e68bd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2032"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:N9de67e4300774cf3bd33cfd935c405ef",
+      "@id": "_:Nf8ed0b462899452489a652f4f53b9826",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1048"
@@ -104,6 +93,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Database ID"
+    },
+    {
+      "@id": "_:N29694ac76fae4056a5bf8c644e78ed60",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2032"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth.4423",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw544",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/desubs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -47,17 +43,17 @@
         "Anastasios Bezerianos"
       ],
       "bsc:input": {
-        "@id": "_:N1558f78eb33c457aa35aa79faffd8312"
+        "@id": "_:Nf0976c43c80147999e14bed4f50b524e"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd35ad7a4d5eb425cb86daac8f1df2f2d"
+          "@id": "_:Nb6db9bb661a047a28ff10d40012344e4"
         },
         {
-          "@id": "_:N08f9e0c776ce4220bc4cebf479a478a4"
+          "@id": "_:N6788d9c437384397904fb4ad02511591"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -67,17 +63,17 @@
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_2259"
         },
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
+        "pubmed:27542770",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw544"
-        },
-        "pubmed:27542770"
+        }
       ],
       "sc:description": "A network-based systems biology package that extracts disease-perturbed subpathways within a pathway network as recorded by RNA-seq experiments. It contains framework covering a broad range of operation modes at all stages of the subpathway analysis, enabling a case-specific approach. The operation modes refer to the pathway network construction and processing, the subpathway extraction, visualization and enrichment analysis with regard to various biological and pharmacological features.",
       "sc:featureList": [
@@ -92,9 +88,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "DEsubs",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/manuals/DEsubs/man/DEsubs.pdf"
@@ -103,15 +99,15 @@
       "sc:url": "http://bioconductor.org/packages/DEsubs/"
     },
     {
-      "@id": "_:Nd35ad7a4d5eb425cb86daac8f1df2f2d",
+      "@id": "_:Nf0976c43c80147999e14bed4f50b524e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_3112"
       },
-      "sc:name": "Plot"
+      "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N08f9e0c776ce4220bc4cebf479a478a4",
+      "@id": "_:Nb6db9bb661a047a28ff10d40012344e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -119,12 +115,16 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N1558f78eb33c457aa35aa79faffd8312",
+      "@id": "_:N6788d9c437384397904fb4ad02511591",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3112"
+        "@id": "edam:data_2884"
       },
-      "sc:name": "Gene expression matrix"
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw544",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

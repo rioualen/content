@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,21 +44,18 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc07250fff2284276871a0de68811582e"
+          "@id": "_:N0c3796ee9a334c64a3defcdff4f8946c"
         },
         {
-          "@id": "_:Ne3df4c2932bd44319757b12474a6dbf5"
+          "@id": "_:Nc8a16ef0b10a4a6a8b0b9b49bc4e498f"
         },
         {
-          "@id": "_:Nd06aad4249e043d78acf8b45a51acdcd"
+          "@id": "_:N4b0cb9c779d94f5a93e665e70ad8c80a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3293"
-        },
         {
           "@id": "edam:topic_0091"
         },
@@ -66,15 +63,18 @@
           "@id": "edam:topic_3174"
         },
         {
+          "@id": "edam:topic_3293"
+        },
+        {
           "@id": "edam:topic_0637"
         }
       ],
       "sc:author": "Benjamin Linard",
       "sc:citation": [
+        "pubmed:30698645",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btz068"
-        },
-        "pubmed:30698645"
+        }
       ],
       "sc:description": "RAPPAS stands for Rapid Alignment-free Phylogenetic Placement via Ancestral Sequences. It uses an alignment-free approach for phylogenetic placement, thus removing the hurdle of query sequence alignment.",
       "sc:featureList": {
@@ -90,7 +90,7 @@
       "sc:url": "http://www.atgc-montpellier.fr/RAPPAS/"
     },
     {
-      "@id": "_:Nc07250fff2284276871a0de68811582e",
+      "@id": "_:N0c3796ee9a334c64a3defcdff4f8946c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -98,20 +98,20 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Ne3df4c2932bd44319757b12474a6dbf5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3272"
-      },
-      "sc:name": "Species tree"
-    },
-    {
-      "@id": "_:Nd06aad4249e043d78acf8b45a51acdcd",
+      "@id": "_:Nc8a16ef0b10a4a6a8b0b9b49bc4e498f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N4b0cb9c779d94f5a93e665e70ad8c80a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3272"
+      },
+      "sc:name": "Species tree"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/bioinformatics/bts240",
       "@type": "sc:CreativeWork"
     },
@@ -44,41 +48,41 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N8f6496c4f5f043fea5b8e08b9159b7a4"
+        "@id": "_:Na587d66f658a492fa02a9910d33b4e0d"
       },
       "bsc:output": [
         {
-          "@id": "_:Na3521957dad04d0c9893a27cf9213452"
+          "@id": "_:N18238855ac794f40a920949d2d99c9ad"
         },
         {
-          "@id": "_:Nf7d84ea204254ac4a6f15600d1fc7602"
+          "@id": "_:Ne821beef938c4d04a8d24af67d5764cb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "Bill Pearson",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
+        "pubmed:22539666",
+        "pmcid:PMC3371869",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts240"
         },
-        "pmcid:PMC3371869",
+        "pubmed:35412617",
+        "pmcid:PMC9252731",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        },
+        "pubmed:38597606",
+        "pmcid:PMC11223882",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
-        },
-        "pubmed:35412617",
-        "pmcid:PMC11223882",
-        "pmcid:PMC9252731",
-        "pubmed:38597606",
-        "pubmed:22539666"
+        }
       ],
       "sc:description": "Iterative protein sequence similarity search based on Smith & Waterman algorithm with PSI-BLAST profile construction : find distantly related protein sequences.",
       "sc:featureList": {
@@ -86,8 +90,8 @@
       },
       "sc:name": "PSI-Search (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -96,20 +100,20 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
-        {
           "@id": "https://github.com/wrpearson/fasta36"
         },
         {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+        },
+        {
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/sss/psisearch"
     },
     {
-      "@id": "_:N8f6496c4f5f043fea5b8e08b9159b7a4",
+      "@id": "_:Na587d66f658a492fa02a9910d33b4e0d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -117,15 +121,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Na3521957dad04d0c9893a27cf9213452",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:Nf7d84ea204254ac4a6f15600d1fc7602",
+      "@id": "_:N18238855ac794f40a920949d2d99c9ad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2854"
@@ -133,8 +129,12 @@
       "sc:name": "Position-specific scoring matrix"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne821beef938c4d04a8d24af67d5764cb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkae241",

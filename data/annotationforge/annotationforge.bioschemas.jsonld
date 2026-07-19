@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/annotationforge",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BioConductor Package Maintainer",
       "bsc:input": [
         {
-          "@id": "_:N4fc1cb73d17f4e72945a6b5bb0a98311"
+          "@id": "_:N60e4555685f74539b932a52c542a2629"
         },
         {
-          "@id": "_:N6dbe8c3b598b42eaa2de3e33838d5c07"
+          "@id": "_:N55850092bc2b43e282ee586ea8fb24b9"
         }
       ],
       "bsc:output": {
-        "@id": "_:N6a9a1ba050df444fa17e385404d6b6ef"
+        "@id": "_:N83a585fc213b4b9c8a440ee9511c7be0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -64,26 +68,26 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "Provides code for generating Annotation packages and their databases. Packages produced are intended to be used with AnnotationDbi.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_2421"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "AnnotationForge",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -93,7 +97,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/AnnotationForge.html"
     },
     {
-      "@id": "_:N4fc1cb73d17f4e72945a6b5bb0a98311",
+      "@id": "_:N60e4555685f74539b932a52c542a2629",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2031"
+        },
+        {
+          "@id": "edam:format_2195"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N55850092bc2b43e282ee586ea8fb24b9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -109,23 +129,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N6dbe8c3b598b42eaa2de3e33838d5c07",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2195"
-        },
-        {
-          "@id": "edam:format_2031"
-        }
-      ],
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N6a9a1ba050df444fa17e385404d6b6ef",
+      "@id": "_:N83a585fc213b4b9c8a440ee9511c7be0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -134,10 +138,6 @@
         "@id": "edam:format_3621"
       },
       "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

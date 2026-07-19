@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cutadapt",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Marcel Martin",
       "bsc:input": [
         {
-          "@id": "_:N42453bc7eaab4561b39f3ac61f3b87cf"
+          "@id": "_:N859b3a6e361643d7a7bf7a6cfbc083e9"
         },
         {
-          "@id": "_:Nee972a0a77784160962d048081f2648e"
+          "@id": "_:N6f0a41a8fdfa4ba8823a0355e9711319"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbbe4b9dc1d56464c843e71c962731cf3"
+          "@id": "_:N99128f7cc7b640409e049c103694ea5a"
         },
         {
-          "@id": "_:N5c96d04f13884a50a737d608610541dd"
+          "@id": "_:Nd607b34ecd5949feb1f10c7a106313bf"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0632"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0632"
         },
         {
           "@id": "edam:topic_3168"
@@ -79,20 +83,20 @@
       "sc:description": "Find and remove adapter sequences, primers, poly-A tails and other types of unwanted sequence from your high-throughput sequencing reads.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3237"
+        },
+        {
           "@id": "edam:operation_3219"
         },
         {
           "@id": "edam:operation_3192"
-        },
-        {
-          "@id": "edam:operation_3237"
         }
       ],
       "sc:license": "MIT",
       "sc:name": "Cutadapt",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -101,23 +105,7 @@
       "sc:url": "https://pypi.org/project/cutadapt/"
     },
     {
-      "@id": "_:N42453bc7eaab4561b39f3ac61f3b87cf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:Nee972a0a77784160962d048081f2648e",
+      "@id": "_:N859b3a6e361643d7a7bf7a6cfbc083e9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -128,23 +116,23 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:Nbbe4b9dc1d56464c843e71c962731cf3",
+      "@id": "_:N6f0a41a8fdfa4ba8823a0355e9711319",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1930"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1930"
         }
       ],
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N5c96d04f13884a50a737d608610541dd",
+      "@id": "_:N99128f7cc7b640409e049c103694ea5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -153,13 +141,25 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Nd607b34ecd5949feb1f10c7a106313bf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "RNA sequence"
     },
     {
       "@id": "https://doi.org/10.14806/ej.17.1.200",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/prolipipe",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1d6e034ac81e478397e62f1538a97f20"
+        "@id": "_:Nce58f215d4d04661a3929d809368400d"
       },
       "bsc:output": {
-        "@id": "_:N888ccac0f4814e559edb4d9d220fbde0"
+        "@id": "_:N6805f7865c6142f2a2e881443c61d412"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
@@ -58,7 +58,23 @@
       "sc:url": "https://github.com/AuReMe/prolipipe"
     },
     {
-      "@id": "_:N888ccac0f4814e559edb4d9d220fbde0",
+      "@id": "_:Nce58f215d4d04661a3929d809368400d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N6805f7865c6142f2a2e881443c61d412",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
@@ -72,22 +88,6 @@
         }
       ],
       "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "_:N1d6e034ac81e478397e62f1538a97f20",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Pathway or network"
     }
   ]
 }

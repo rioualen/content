@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,32 +40,26 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb1621486d6494fc9b0f729ffecf25bcd"
+          "@id": "_:Nb634d25ab2aa4585a6113e69d060ed3f"
         },
         {
-          "@id": "_:Nfd8a80151aa1433793b2e1f53c87d1e2"
+          "@id": "_:N3b9b4b60fd8a4c6888533da48c6a55f3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6f2df6148ae942b996b9307dcaa34643"
+          "@id": "_:N140a334fae2644fda5757977ee2c609d"
         },
         {
-          "@id": "_:Ncea8004b66cd4b1a83d5a92801990ce1"
+          "@id": "_:N8308aaebb2da436d80dd27a50fac62db"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Desktop application"
+        "Desktop application",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0749"
-        },
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_3382"
         },
@@ -74,11 +68,17 @@
         },
         {
           "@id": "edam:topic_3794"
+        },
+        {
+          "@id": "edam:topic_3168"
+        },
+        {
+          "@id": "edam:topic_0749"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC10320144",
         "pubmed:37144464",
+        "pmcid:PMC10320144",
         {
           "@id": "https://doi.org/10.1093/nar/gkad345"
         }
@@ -86,22 +86,22 @@
       "sc:description": "Shiny-based framework for interactive analysis, visualization and integration of genomic data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
-        },
-        {
           "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_0525"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "ChroKit",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://ocroci.github.io/ChroKit/"
@@ -109,23 +109,7 @@
       "sc:url": "https://github.com/ocroci/ChroKit"
     },
     {
-      "@id": "_:Nb1621486d6494fc9b0f729ffecf25bcd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1017"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2305"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Sequence range"
-    },
-    {
-      "@id": "_:Nfd8a80151aa1433793b2e1f53c87d1e2",
+      "@id": "_:Nb634d25ab2aa4585a6113e69d060ed3f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -141,20 +125,36 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N6f2df6148ae942b996b9307dcaa34643",
+      "@id": "_:N3b9b4b60fd8a4c6888533da48c6a55f3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3753"
+        "@id": "edam:data_1017"
       },
-      "sc:name": "Over-representation data"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2305"
+        }
+      ],
+      "sc:name": "Sequence range"
     },
     {
-      "@id": "_:Ncea8004b66cd4b1a83d5a92801990ce1",
+      "@id": "_:N140a334fae2644fda5757977ee2c609d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
       },
       "sc:name": "Ontology data"
+    },
+    {
+      "@id": "_:N8308aaebb2da436d80dd27a50fac62db",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3753"
+      },
+      "sc:name": "Over-representation data"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkad345",

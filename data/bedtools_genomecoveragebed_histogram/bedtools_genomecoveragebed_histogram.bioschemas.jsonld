@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/0471250953.bi1112s47",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bedtools_genomecoveragebed_histogram",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N156076f008b546afb4c0aae32e946747"
+        "@id": "_:Nf00144f8c65e48dd9df88d04e901b907"
       },
       "bsc:output": {
-        "@id": "_:N59a43aad624a40b4ae7c4631e31c1d71"
+        "@id": "_:N8856a8f213f04fa2be88e282e6ae2535"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
         "pubmed:25199790",
         "pmcid:PMC4213956",
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1002/0471250953.bi1112s47"
         },
         {
-          "@id": "https://doi.org/10.1002/0471250953.bi1112s47"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Calculate a histogram of genome coverage depth based on mapped reads in BAM format or intervals in BED format.",
@@ -74,8 +78,8 @@
       },
       "sc:name": "bedtools_genomecoveragebed_histogram",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -85,18 +89,7 @@
       "sc:url": "https://github.com/arq5x/bedtools4"
     },
     {
-      "@id": "_:N59a43aad624a40b4ae7c4631e31c1d71",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N156076f008b546afb4c0aae32e946747",
+      "@id": "_:Nf00144f8c65e48dd9df88d04e901b907",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -112,11 +105,18 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8856a8f213f04fa2be88e282e6ae2535",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1002/0471250953.bi1112s47",
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     }
   ]

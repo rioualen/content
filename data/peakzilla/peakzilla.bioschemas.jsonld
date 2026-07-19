@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt470",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/peakzilla",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Anaïs Bardet",
       "bsc:input": {
-        "@id": "_:N7ba8462b32f7487b973088b002f82138"
+        "@id": "_:N7efd77086c4d4e7c90c471f3d19f9f00"
       },
       "bsc:output": {
-        "@id": "_:Nfea26565a18a430181740daa9f6e370a"
+        "@id": "_:N989d4c37e398465e8011f926600b9065"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0749"
       },
       "sc:citation": [
+        "pubmed:23980024",
+        "pmcid:PMC3799470",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt470"
-        },
-        "pubmed:23980024",
-        "pmcid:PMC3799470"
+        }
       ],
       "sc:description": "Identify transcription factor binding sites from ChIP-seq data at high resolution.",
       "sc:featureList": {
@@ -74,7 +78,7 @@
       "sc:url": "https://github.com/steinmann/peakzilla"
     },
     {
-      "@id": "_:N7ba8462b32f7487b973088b002f82138",
+      "@id": "_:N7efd77086c4d4e7c90c471f3d19f9f00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -85,7 +89,7 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:Nfea26565a18a430181740daa9f6e370a",
+      "@id": "_:N989d4c37e398465e8011f926600b9065",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -94,10 +98,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt470",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

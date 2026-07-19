@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btab166",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/tiger-dna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-7144-2602"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0654"
         },
         {
-          "@id": "edam:topic_0199"
-        },
-        {
-          "@id": "edam:topic_3673"
-        },
-        {
           "@id": "edam:topic_3173"
         },
         {
+          "@id": "edam:topic_0199"
+        },
+        {
           "@id": "edam:topic_0196"
+        },
+        {
+          "@id": "edam:topic_3673"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC8913259",
         "pubmed:33704387",
+        "pmcid:PMC8913259",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btab166"
         }
@@ -70,10 +74,10 @@
       "sc:description": "TIGER is a tool for inferring DNA replication timing from whole-genome sequence data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3196"
+          "@id": "edam:operation_0525"
         },
         {
-          "@id": "edam:operation_0525"
+          "@id": "edam:operation_3196"
         },
         {
           "@id": "edam:operation_3454"
@@ -82,10 +86,6 @@
       "sc:license": "GPL-3.0",
       "sc:name": "TIGER",
       "sc:url": "https://github.com/TheKorenLab/TIGER"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btab166",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-7144-2602",

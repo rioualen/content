@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-13-48",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mapsembler",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pierre Peterlongo",
       "bsc:input": [
         {
-          "@id": "_:N216a38cb15844757b0009aaf3f3d9eac"
+          "@id": "_:N1c368d58a11043ce93b1b44fffa1749a"
         },
         {
-          "@id": "_:N9079a48591eb4592bf3a7c27fee982fb"
+          "@id": "_:Nb7a1d3208f034143b13ffac7fe301766"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3c985fcda453498294d4903d8a089243"
+          "@id": "_:N665533fbae3142f285be8b4894a530a8"
         },
         {
-          "@id": "_:N0003850c116f4aaaa45e19ccbb7da0cc"
+          "@id": "_:N113473283e3140cf882fd758209897a9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0196"
       },
       "sc:citation": [
+        "pubmed:22443449",
+        "pmcid:PMC3514201",
         {
           "@id": "https://doi.org/10.1186/1471-2105-13-48"
-        },
-        "pmcid:PMC3514201",
-        "pubmed:22443449"
+        }
       ],
       "sc:description": "A targeted assembly software.",
       "sc:featureList": {
@@ -87,7 +83,7 @@
       "sc:url": "https://colibread.inria.fr/mapsembler2/"
     },
     {
-      "@id": "_:N216a38cb15844757b0009aaf3f3d9eac",
+      "@id": "_:N1c368d58a11043ce93b1b44fffa1749a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -98,7 +94,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N9079a48591eb4592bf3a7c27fee982fb",
+      "@id": "_:Nb7a1d3208f034143b13ffac7fe301766",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
@@ -109,7 +105,18 @@
       "sc:name": "Nucleic acid sequence (raw)"
     },
     {
-      "@id": "_:N3c985fcda453498294d4903d8a089243",
+      "@id": "_:N665533fbae3142f285be8b4894a530a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N113473283e3140cf882fd758209897a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -120,15 +127,8 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N0003850c116f4aaaa45e19ccbb7da0cc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence"
+      "@id": "https://doi.org/10.1186/1471-2105-13-48",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

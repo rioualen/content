@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-10-10",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mbpcr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "P.M.V. Rancoita",
       "bsc:input": [
         {
-          "@id": "_:Nb58aec47f7ca4176ba9bc443798db5fb"
+          "@id": "_:N4459fb95953d402d9ca038d0238c97c8"
         },
         {
-          "@id": "_:Ndc6d7b8ac0e34d9b8e3d1e61aa051eda"
+          "@id": "_:N9f3e05dfa96b42b6b65493c96e0048f1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N51c3414531934856a83af796aed72f50"
+          "@id": "_:N354efba8abc94c678f4336983aa0d70e"
         },
         {
-          "@id": "_:N49768ce7abd341e388536e8e5820da58"
+          "@id": "_:N125e347d82f44d6f8040239147b8a391"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -69,11 +73,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:19133123",
         "pmcid:PMC2674052",
         {
           "@id": "https://doi.org/10.1186/1471-2105-10-10"
-        },
-        "pubmed:19133123"
+        }
       ],
       "sc:description": "Estimates the DNA copy number profile by detecting regions with copy number changes.",
       "sc:featureList": {
@@ -82,9 +86,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "mBPCR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/mBPCR.html"
@@ -93,72 +97,68 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/mBPCR.html"
     },
     {
-      "@id": "_:N51c3414531934856a83af796aed72f50",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N49768ce7abd341e388536e8e5820da58",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:Nb58aec47f7ca4176ba9bc443798db5fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2058"
-        }
-      ],
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:Ndc6d7b8ac0e34d9b8e3d1e61aa051eda",
+      "@id": "_:N4459fb95953d402d9ca038d0238c97c8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_2058"
         },
         {
-          "@id": "edam:format_2058"
+          "@id": "edam:format_3475"
         }
       ],
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-10-10",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9f3e05dfa96b42b6b65493c96e0048f1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2058"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N354efba8abc94c678f4336983aa0d70e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N125e347d82f44d6f8040239147b8a391",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

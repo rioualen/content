@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,46 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/intansv",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Wen Yao",
       "bsc:input": [
         {
-          "@id": "_:N135674c835f84a38b8f733b5a993694c"
+          "@id": "_:N521955c36c4b44f4a5e0568b5bcbc7ce"
         },
         {
-          "@id": "_:Na4b9df7c2dec4c7cb8fde1c43a2ef9e5"
+          "@id": "_:Ndefec5ef83f840be91e9ebb1f92f0a9c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N895a78aea7ec4bc8b93fdff1ce5bd7c1"
+          "@id": "_:Nb76494ba22cc4e67a9233d49ba8259bb"
         },
         {
-          "@id": "_:Ndf8c7e38c63f40659a60e34131e7a56b"
+          "@id": "_:N1b1a1113ea3745aa9faf8144ae714438"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0092"
-        },
         {
           "@id": "edam:topic_3175"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_3053"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -84,17 +88,17 @@
       "sc:description": "This package provides efficient tools to read and integrate structural variations predicted by popular softwares. Annotation and visulation of structural variations are also implemented in the package.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_2518"
         },
         {
-          "@id": "edam:operation_2518"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "intansv",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -104,7 +108,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/intansv.html"
     },
     {
-      "@id": "_:N135674c835f84a38b8f733b5a993694c",
+      "@id": "_:N521955c36c4b44f4a5e0568b5bcbc7ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1027"
@@ -115,7 +119,7 @@
       "sc:name": "Gene ID (NCBI)"
     },
     {
-      "@id": "_:Na4b9df7c2dec4c7cb8fde1c43a2ef9e5",
+      "@id": "_:Ndefec5ef83f840be91e9ebb1f92f0a9c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -126,23 +130,23 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N895a78aea7ec4bc8b93fdff1ce5bd7c1",
+      "@id": "_:Nb76494ba22cc4e67a9233d49ba8259bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0954"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "Database cross-mapping"
     },
     {
-      "@id": "_:Ndf8c7e38c63f40659a60e34131e7a56b",
+      "@id": "_:N1b1a1113ea3745aa9faf8144ae714438",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1288"
@@ -156,10 +160,6 @@
         }
       ],
       "sc:name": "Genome map"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

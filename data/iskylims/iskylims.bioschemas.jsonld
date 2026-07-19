@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,50 +36,54 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-0740-6324",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/iskylims",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2f82279e22934214a1176f8b2d9e410f"
+          "@id": "_:N19119e328dd14c98a285d31ccc0d8ab5"
         },
         {
-          "@id": "_:Nb4f979c75d4f4e32ac6d29bc7bac0bfe"
+          "@id": "_:N9e59ff070db44c049fd1364aa629e265"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N37b43013a1464a24bd097d351cd4b3cc"
+          "@id": "_:N7a52402acc084800a85f1ef36ffc5f20"
         },
         {
-          "@id": "_:N6085f658a63842c29b36f62d1bd8318b"
+          "@id": "_:Nce8b0279a8904ec2923c53104dd61782"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0607"
+          "@id": "edam:topic_3489"
         },
         {
-          "@id": "edam:topic_3489"
+          "@id": "edam:topic_0607"
         }
       ],
       "sc:author": [
-        "Luis Chapado",
         {
           "@id": "https://orcid.org/0000-0002-0740-6324"
-        }
+        },
+        "Luis Chapado"
       ],
       "sc:description": "Open-source LIMS (laboratory Information Management System) for Next Generation Sequencing sample management, statistics and reports, and bioinformatics analysis service management.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3218"
+          "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_3218"
         },
         {
           "@id": "edam:operation_0337"
@@ -96,29 +100,23 @@
       "sc:url": "https://github.com/BU-ISCIII/iSkyLIMS"
     },
     {
-      "@id": "_:N37b43013a1464a24bd097d351cd4b3cc",
+      "@id": "_:N19119e328dd14c98a285d31ccc0d8ab5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_3914"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Plot"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Quality control report"
     },
     {
-      "@id": "_:N6085f658a63842c29b36f62d1bd8318b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N2f82279e22934214a1176f8b2d9e410f",
+      "@id": "_:N9e59ff070db44c049fd1364aa629e265",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -137,24 +135,26 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "_:Nb4f979c75d4f4e32ac6d29bc7bac0bfe",
+      "@id": "_:N7a52402acc084800a85f1ef36ffc5f20",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3914"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2333"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "Quality control report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Plot"
     },
     {
-      "@id": "https://orcid.org/0000-0002-0740-6324",
-      "@type": "sc:Person"
+      "@id": "_:Nce8b0279a8904ec2923c53104dd61782",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     }
   ]
 }

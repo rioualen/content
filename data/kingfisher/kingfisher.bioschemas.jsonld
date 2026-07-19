@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/kingfisher",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1b2549c2db7a4d1381faa0f123057122"
+        "@id": "_:N31bfa4b757044892a658fe0b501aef5e"
       },
       "bsc:output": {
-        "@id": "_:N928b6d682bdb4b41b96c5a722305ab16"
+        "@id": "_:N02c469c1ac6e4049aa70dd6f7f2dd3c0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0077"
       },
       "sc:description": "Easier download/extract of FASTA/Q read data and metadata from the ENA, NCBI, AWS or GCP.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0349"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_0349"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -70,7 +70,15 @@
       "sc:url": "https://github.com/wwood/kingfisher-download"
     },
     {
-      "@id": "_:N928b6d682bdb4b41b96c5a722305ab16",
+      "@id": "_:N31bfa4b757044892a658fe0b501aef5e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2091"
+      },
+      "sc:name": "Accession"
+    },
+    {
+      "@id": "_:N02c469c1ac6e4049aa70dd6f7f2dd3c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -87,14 +95,6 @@
         }
       ],
       "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N1b2549c2db7a4d1381faa0f123057122",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2091"
-      },
-      "sc:name": "Accession"
     }
   ]
 }

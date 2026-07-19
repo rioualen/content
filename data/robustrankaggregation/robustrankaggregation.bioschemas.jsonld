@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr709",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/robustrankaggregation",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Raivo Kolde",
       "bsc:input": {
-        "@id": "_:N85402da27bb246b3a699fd7e8e144374"
+        "@id": "_:Ndfdc36a8f93840ce8a5daba745e093f9"
       },
       "bsc:output": [
         {
-          "@id": "_:Nda1a4ce66f734cdbaf6473bf6f63aaae"
+          "@id": "_:N6606546b67674216958e4cc27c914a46"
         },
         {
-          "@id": "_:N376c29514eb34e85977a78b598c4f2e8"
+          "@id": "_:N4a90e8c951f740a1895065c9708c6234"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -77,8 +73,8 @@
       },
       "sc:name": "RobustRankAggregation",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-EE",
@@ -89,7 +85,7 @@
       "sc:url": "http://cran.r-project.org/web/packages/RobustRankAggreg/"
     },
     {
-      "@id": "_:N85402da27bb246b3a699fd7e8e144374",
+      "@id": "_:Ndfdc36a8f93840ce8a5daba745e093f9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -97,7 +93,7 @@
       "sc:name": "ID list"
     },
     {
-      "@id": "_:Nda1a4ce66f734cdbaf6473bf6f63aaae",
+      "@id": "_:N6606546b67674216958e4cc27c914a46",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -105,12 +101,16 @@
       "sc:name": "ID list"
     },
     {
-      "@id": "_:N376c29514eb34e85977a78b598c4f2e8",
+      "@id": "_:N4a90e8c951f740a1895065c9708c6234",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:name": "P-value"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr709",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

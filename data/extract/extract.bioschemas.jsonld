@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/database/baw005",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/extract",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Lars Juhl Jensen",
       "bsc:input": {
-        "@id": "_:N40d354e4cd9a402eaa90f981783a93f7"
+        "@id": "_:Ne1921ed4d057495e9a9fa330d381b40e"
       },
       "bsc:output": {
-        "@id": "_:Nd8a65e15f43a477d8152f6136d75bcd0"
+        "@id": "_:N9ba4dc1d20a6406986ee1ef2394e1988"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Web API",
         "Web application",
-        "Web service",
-        "Web API"
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0218"
       },
       "sc:citation": [
-        "pmcid:PMC4761108",
         "pubmed:26896844",
+        "pmcid:PMC4761108",
         {
           "@id": "https://doi.org/10.1093/database/baw005"
         }
@@ -70,22 +74,14 @@
       "sc:name": "EXTRACT",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareVersion": "2.0",
       "sc:url": "https://extract.jensenlab.org/"
     },
     {
-      "@id": "_:Nd8a65e15f43a477d8152f6136d75bcd0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3779"
-      },
-      "sc:name": "Annotated text"
-    },
-    {
-      "@id": "_:N40d354e4cd9a402eaa90f981783a93f7",
+      "@id": "_:Ne1921ed4d057495e9a9fa330d381b40e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -93,8 +89,12 @@
       "sc:name": "Text"
     },
     {
-      "@id": "https://doi.org/10.1093/database/baw005",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9ba4dc1d20a6406986ee1ef2394e1988",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3779"
+      },
+      "sc:name": "Annotated text"
     }
   ]
 }

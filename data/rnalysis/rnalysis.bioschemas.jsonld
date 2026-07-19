@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,51 +44,51 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na0b1376f5595484db00058afbcfb6138"
+          "@id": "_:N785e0451c50341c3a08ff2c59ccda6b9"
         },
         {
-          "@id": "_:Nf1ee451300c240799a66cffdfec5534a"
+          "@id": "_:N3cd6e9efdc7b451abb3054e364e3fd10"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4c76d82e945a4e719581fe89cdde7f28"
+          "@id": "_:Na63ace6f80f1448c8e15587d647b0a8d"
         },
         {
-          "@id": "_:N467d32035ea24cf9b36b3c484309c1d5"
+          "@id": "_:N0c9c0100b59d460d97ec77481b6739e8"
         },
         {
-          "@id": "_:Nc12790285bdc4eadaf4c32cd31bce4f7"
+          "@id": "_:Nda255a96bb294cbba6236100c0a4792d"
         },
         {
-          "@id": "_:N7d3f362fb77d47ae90fb088ad13305a4"
+          "@id": "_:Nbd1ba6166464428ebfdf404129c34bb8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Desktop application"
+        "Desktop application",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0099"
-        },
-        {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3518"
         },
         {
+          "@id": "edam:topic_0099"
+        },
+        {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC10080885",
         "pubmed:37024838",
+        "pmcid:PMC10080885",
         {
           "@id": "https://doi.org/10.1186/s12915-023-01574-6"
         }
@@ -96,13 +96,13 @@
       "sc:description": "Python-based software for analyzing RNA sequencing data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3800"
+          "@id": "edam:operation_3891"
         },
         {
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_3891"
+          "@id": "edam:operation_3800"
         },
         {
           "@id": "edam:operation_3192"
@@ -115,54 +115,22 @@
       "sc:license": "MIT",
       "sc:name": "RNAlysis",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://guyteichman.github.io/RNAlysis/build/tutorial.html"
+          "@id": "https://guyteichman.github.io/RNAlysis/build/api_reference.html"
         },
         {
-          "@id": "https://guyteichman.github.io/RNAlysis/build/api_reference.html"
+          "@id": "https://guyteichman.github.io/RNAlysis/build/tutorial.html"
         }
       ],
       "sc:url": "https://github.com/GuyTeichman/RNAlysis"
     },
     {
-      "@id": "_:N4c76d82e945a4e719581fe89cdde7f28",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:name": "Clustered expression profiles"
-    },
-    {
-      "@id": "_:N467d32035ea24cf9b36b3c484309c1d5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3953"
-      },
-      "sc:name": "Pathway overrepresentation data"
-    },
-    {
-      "@id": "_:Nc12790285bdc4eadaf4c32cd31bce4f7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3754"
-      },
-      "sc:name": "GO-term enrichment data"
-    },
-    {
-      "@id": "_:N7d3f362fb77d47ae90fb088ad13305a4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:Na0b1376f5595484db00058afbcfb6138",
+      "@id": "_:N785e0451c50341c3a08ff2c59ccda6b9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -173,7 +141,7 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "_:Nf1ee451300c240799a66cffdfec5534a",
+      "@id": "_:N3cd6e9efdc7b451abb3054e364e3fd10",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -182,6 +150,38 @@
         "@id": "edam:format_2182"
       },
       "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:Na63ace6f80f1448c8e15587d647b0a8d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "_:N0c9c0100b59d460d97ec77481b6739e8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3754"
+      },
+      "sc:name": "GO-term enrichment data"
+    },
+    {
+      "@id": "_:Nda255a96bb294cbba6236100c0a4792d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Nbd1ba6166464428ebfdf404129c34bb8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3953"
+      },
+      "sc:name": "Pathway overrepresentation data"
     }
   ]
 }

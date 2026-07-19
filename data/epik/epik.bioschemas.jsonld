@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAD692",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/epik",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5ab5dd3c0d2543b7b4c2668d51aa2d75"
+          "@id": "_:N17db45bd0a9c4ea989f43191808c1abe"
         },
         {
-          "@id": "_:N431ff53c27c840389568e4014398d732"
+          "@id": "_:N7eab2f4ab4e6435a859fe32e1fc9cb3c"
         },
         {
-          "@id": "_:Naf8dd03884c741ad804139d4d00e7d62"
+          "@id": "_:N5d6c96d17bd141e0b6176848c1cfa34e"
         },
         {
-          "@id": "_:N8d1363b675f14ee6bcd94e3b78dbcafb"
+          "@id": "_:N66dbe3cbdba949409937fdfdfa2fd3ae"
         }
       ],
       "bsc:output": {
-        "@id": "_:N8986112fdb174471aee3b6963455295f"
+        "@id": "_:N06bb07efc6db4d45a58013829961ec11"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0084"
       },
       "sc:citation": [
+        "pubmed:37975872",
         "pmcid:PMC10701097",
         {
           "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAD692"
-        },
-        "pubmed:37975872"
+        }
       ],
       "sc:description": "Precise and scalable evolutionary placement with informative k-mers.",
       "sc:featureList": {
@@ -79,47 +75,14 @@
       "sc:license": "MIT",
       "sc:name": "EPIK",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": "0.2.0",
       "sc:url": "https://github.com/phylo42/EPIK"
     },
     {
-      "@id": "_:N5ab5dd3c0d2543b7b4c2668d51aa2d75",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N431ff53c27c840389568e4014398d732",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Naf8dd03884c741ad804139d4d00e7d62",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Data index"
-    },
-    {
-      "@id": "_:N8d1363b675f14ee6bcd94e3b78dbcafb",
+      "@id": "_:N17db45bd0a9c4ea989f43191808c1abe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -130,7 +93,40 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N8986112fdb174471aee3b6963455295f",
+      "@id": "_:N7eab2f4ab4e6435a859fe32e1fc9cb3c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Data index"
+    },
+    {
+      "@id": "_:N5d6c96d17bd141e0b6176848c1cfa34e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N66dbe3cbdba949409937fdfdfa2fd3ae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N06bb07efc6db4d45a58013829961ec11",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -139,6 +135,10 @@
         "@id": "edam:format_3464"
       },
       "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAD692",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

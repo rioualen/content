@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,8 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-6261-7370",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1002/0471250953.bi0403s18",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1101/gr.10.4.511",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/geneid",
@@ -47,12 +51,12 @@
         "Support"
       ],
       "bsc:input": {
-        "@id": "_:N892a65809ea344d39b10cd9d0b466ab2"
+        "@id": "_:N81244c2a8ae24f7e9afd644d070a5ac4"
       },
       "bsc:output": {
-        "@id": "_:Nd370c0a491644cc883197586a575c4d1"
+        "@id": "_:Nf84f7ec4b9e440069adb40aa9dd02240"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -62,26 +66,26 @@
           "@id": "edam:topic_0654"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0114"
+        },
+        {
+          "@id": "edam:topic_3321"
         },
         {
           "@id": "edam:topic_3511"
         },
         {
-          "@id": "edam:topic_0114"
-        },
-        {
-          "@id": "edam:topic_3321"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": "Roderic Guigo",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1101/gr.10.4.511"
-        },
         "pubmed:18428791",
         {
           "@id": "https://doi.org/10.1002/0471250953.bi0403s18"
+        },
+        {
+          "@id": "https://doi.org/10.1101/gr.10.4.511"
         }
       ],
       "sc:contributor": [
@@ -98,24 +102,24 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Geneid",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Centre for Genomic Regulation (CRG), Parc de Recerca Biomedica (PRBB)",
       "sc:softwareHelp": [
         {
-          "@id": "http://genome.crg.es/software/geneid/"
+          "@id": "http://genome.crg.es/software/geneid/index.html"
         },
         {
-          "@id": "http://genome.crg.es/software/geneid/index.html"
+          "@id": "http://genome.crg.es/software/geneid/"
         }
       ],
       "sc:softwareVersion": "1.4.4",
       "sc:url": "http://genome.crg.es/software/geneid/index.html"
     },
     {
-      "@id": "_:N892a65809ea344d39b10cd9d0b466ab2",
+      "@id": "_:N81244c2a8ae24f7e9afd644d070a5ac4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -123,7 +127,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nd370c0a491644cc883197586a575c4d1",
+      "@id": "_:Nf84f7ec4b9e440069adb40aa9dd02240",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -131,12 +135,8 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "https://doi.org/10.1002/0471250953.bi0403s18",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1101/gr.10.4.511",
-      "@type": "sc:CreativeWork"
+      "@id": "http://orcid.org/0000-0001-6261-7370",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,36 +43,36 @@
       "@id": "https://bio.tools/kma",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6faa061cbf2747dcad49dd7f539c8c89"
+        "@id": "_:N07b746e3e9224eacb6585f9c586f06a0"
       },
       "bsc:output": [
         {
-          "@id": "_:N17dd3866d65c446fb731cec8a11eec09"
+          "@id": "_:Nf7e1d6ab5aad4451a32f941648ec9c99"
         },
         {
-          "@id": "_:Nb08eb4eb495041d298fa1e8dc2f5270e"
+          "@id": "_:Nd97e40a7ac524f0cac64584e3a35fc37"
         },
         {
-          "@id": "_:Nbd2ad3f30e0f46cba21e6820b1f95a06"
+          "@id": "_:N242b95e6697943d98e25f1bb9feb94da"
         },
         {
-          "@id": "_:Ne6c5d81605cf46e19b3eed92e923c12d"
+          "@id": "_:Ne3f870e416084d99a87666ca363c80ca"
         },
         {
-          "@id": "_:N59cb8b3db7544bf4a6eed36f20671342"
+          "@id": "_:N5a6f8a557078470db34c37a4371160b2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
         "pubmed:30157759",
+        "pmcid:PMC6116485",
         {
           "@id": "https://doi.org/10.1186/s12859-018-2336-6"
-        },
-        "pmcid:PMC6116485"
+        }
       ],
       "sc:description": "KMA is mapping a method designed to map raw reads directly against redundant databases, in an ultra-fast manner using seed and extend.",
       "sc:featureList": {
@@ -82,9 +82,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "KMA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bitbucket.org/genomicepidemiology/kma/src/master/README.md"
@@ -93,56 +93,34 @@
       "sc:url": "https://bitbucket.org/genomicepidemiology/kma/src/master/"
     },
     {
-      "@id": "_:N6faa061cbf2747dcad49dd7f539c8c89",
+      "@id": "_:N07b746e3e9224eacb6585f9c586f06a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1930"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1930"
         }
       ],
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N17dd3866d65c446fb731cec8a11eec09",
+      "@id": "_:Nf7e1d6ab5aad4451a32f941648ec9c99",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nb08eb4eb495041d298fa1e8dc2f5270e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1984"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:Nbd2ad3f30e0f46cba21e6820b1f95a06",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0858"
+        "@id": "edam:data_3917"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_1915"
       },
-      "sc:name": "Sequence signature matches"
+      "sc:name": "Count matrix"
     },
     {
-      "@id": "_:Ne6c5d81605cf46e19b3eed92e923c12d",
+      "@id": "_:Nd97e40a7ac524f0cac64584e3a35fc37",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2019"
@@ -153,15 +131,37 @@
       "sc:name": "Map data"
     },
     {
-      "@id": "_:N59cb8b3db7544bf4a6eed36f20671342",
+      "@id": "_:N242b95e6697943d98e25f1bb9feb94da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3917"
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1984"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Ne3f870e416084d99a87666ca363c80ca",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N5a6f8a557078470db34c37a4371160b2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0858"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_1915"
       },
-      "sc:name": "Count matrix"
+      "sc:name": "Sequence signature matches"
     }
   ]
 }

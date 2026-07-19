@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2021.10.28.466232",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mandrake",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3a22dcdb2ce84c0796a9a034be173c03"
+        "@id": "_:N76ba203c1d68454eb3c25f3dcaa611b2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0196"
-        },
-        {
-          "@id": "edam:topic_3305"
-        },
         {
           "@id": "edam:topic_2885"
         },
@@ -62,6 +52,12 @@
         },
         {
           "@id": "edam:topic_3796"
+        },
+        {
+          "@id": "edam:topic_3305"
+        },
+        {
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:citation": {
@@ -70,25 +66,25 @@
       "sc:description": "Visualising microbial population structure by embedding millions of genomes into a low-dimensional representation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0525"
-        },
-        {
           "@id": "edam:operation_3935"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_3891"
         },
         {
-          "@id": "edam:operation_3891"
+          "@id": "edam:operation_0525"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "Mandrake",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://mandrake.readthedocs.io/en/latest/"
@@ -96,12 +92,16 @@
       "sc:url": "https://gtonkinhill.github.io/mandrake-web/"
     },
     {
-      "@id": "_:N3a22dcdb2ce84c0796a9a034be173c03",
+      "@id": "_:N76ba203c1d68454eb3c25f3dcaa611b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2021.10.28.466232",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

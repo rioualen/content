@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,47 +36,43 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1155/2009/356141",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/platecore",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Errol Strain",
       "bsc:input": {
-        "@id": "_:Nc115737572fd47779d856daae193c165"
+        "@id": "_:N7b5d106db6e0464b9fda32bbb4607b14"
       },
       "bsc:output": [
         {
-          "@id": "_:N43796bfb5ccd4b8ea0ede5e7022640a6"
+          "@id": "_:N44058ec9b8534e12894e2fbf9453bbf4"
         },
         {
-          "@id": "_:N58d5f19916b84eb58f6ad2f1dafaa7bc"
+          "@id": "_:N76540d0bb5484900ab31b9d424238a5b"
         },
         {
-          "@id": "_:N7ec43b785ac644cfa52f93818acd5ff7"
+          "@id": "_:N2ec1c16a27ef4416bcf6a29e5dd1c7b2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0108"
+          "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3382"
-        },
-        {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_3382"
+        },
+        {
+          "@id": "edam:topic_0108"
         }
       ],
       "sc:citation": {
@@ -85,18 +81,18 @@
       "sc:description": "Provides basic S4 data structures and routines for analyzing plate based flow cytometry data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3741"
         },
         {
-          "@id": "edam:operation_3741"
+          "@id": "edam:operation_3695"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "plateCore",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/plateCore.html"
@@ -105,17 +101,28 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/plateCore.html"
     },
     {
-      "@id": "_:N43796bfb5ccd4b8ea0ede5e7022640a6",
+      "@id": "_:N7b5d106db6e0464b9fda32bbb4607b14",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N44058ec9b8534e12894e2fbf9453bbf4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         },
         {
           "@id": "edam:format_2330"
@@ -124,26 +131,7 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:N58d5f19916b84eb58f6ad2f1dafaa7bc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N7ec43b785ac644cfa52f93818acd5ff7",
+      "@id": "_:N76540d0bb5484900ab31b9d424238a5b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -162,15 +150,27 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nc115737572fd47779d856daae193c165",
+      "@id": "_:N2ec1c16a27ef4416bcf6a29e5dd1c7b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3108"
+        "@id": "edam:data_1772"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Experimental measurement"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.1155/2009/356141",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

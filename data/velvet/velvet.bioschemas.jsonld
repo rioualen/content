@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/gr.074492.107",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/velvet",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Daniel Zerbino",
       "bsc:input": [
         {
-          "@id": "_:Nea079c18272c40a7ab54ba51da9ed34d"
+          "@id": "_:N903eb4ab854342359608f9971ab4a501"
         },
         {
-          "@id": "_:Ncde41058b5d54e24bffd65c612a8e591"
+          "@id": "_:N56e79954cc994beca1d9749a54ead0b5"
         },
         {
-          "@id": "_:N8466057e0afd4348bfe7e8e013ef0559"
+          "@id": "_:N652cd114c17342bf9f5ed2a054b72946"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7f254623e49e4c2c9f0f7f6aca48367b"
+          "@id": "_:N33c8a3da203d4161b16f83f4ee28a68c"
         },
         {
-          "@id": "_:N8153375bdcda41f5b08ca363722b4ec1"
+          "@id": "_:Nb08acc40fe4d4211b7fb02d3fab64092"
         },
         {
-          "@id": "_:N92291ebd545b4469b439e950c53a1fc8"
+          "@id": "_:Nac5feafeb70041c3b9a005afe3a87c6a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0196"
@@ -76,17 +80,17 @@
       "sc:description": "A de novo genomic assembler specially designed for short read sequencing technologies, such as Solexa or 454 or SOLiD.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_0524"
         },
         {
-          "@id": "edam:operation_0524"
+          "@id": "edam:operation_0335"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "Velvet",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/dzerbino/velvet/blob/master/Manual.pdf"
@@ -94,37 +98,7 @@
       "sc:url": "https://github.com/dzerbino/velvet"
     },
     {
-      "@id": "_:Nea079c18272c40a7ab54ba51da9ed34d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Ncde41058b5d54e24bffd65c612a8e591",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_2573"
-        },
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N8466057e0afd4348bfe7e8e013ef0559",
+      "@id": "_:N903eb4ab854342359608f9971ab4a501",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -132,7 +106,7 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "_:N7f254623e49e4c2c9f0f7f6aca48367b",
+      "@id": "_:N56e79954cc994beca1d9749a54ead0b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -140,7 +114,29 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N8153375bdcda41f5b08ca363722b4ec1",
+      "@id": "_:N652cd114c17342bf9f5ed2a054b72946",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_2573"
+        }
+      ],
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N33c8a3da203d4161b16f83f4ee28a68c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -148,7 +144,7 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:N92291ebd545b4469b439e950c53a1fc8",
+      "@id": "_:Nb08acc40fe4d4211b7fb02d3fab64092",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -156,8 +152,12 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "https://doi.org/10.1101/gr.074492.107",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nac5feafeb70041c3b9a005afe3a87c6a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,58 +36,54 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/ACS.ANALCHEM.9B05765",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/retip",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8de93f6b1317447a966dc161ff5a6100"
+          "@id": "_:N41c8a5923570402589f7702a60b9c4a5"
         },
         {
-          "@id": "_:Nf53ac4e761bf4f36a6336a5f36707296"
+          "@id": "_:Ncab0e9f9fef64c5391aaa52199a0c6c1"
         },
         {
-          "@id": "_:Nea166c2c6e304fb783a608bbdd91116a"
+          "@id": "_:Na70fd85d42024b95bebd3b47b347f91c"
         },
         {
-          "@id": "_:N8dacfbe2cf584d1294f437f8780e4fc3"
+          "@id": "_:Ne0fb30ddbafe4e7f966da4f25f266cc9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N987610a9ce434e10845363058ee8a80a"
+          "@id": "_:Ndff4e1795a29405d8fcea4611ad12439"
         },
         {
-          "@id": "_:Ne4f90bf62d4a4403ab1675092d121844"
+          "@id": "_:N238328c888484f3e96fad751c4c94266"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_2258"
         },
         {
           "@id": "edam:topic_3314"
         },
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_2258"
+          "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pubmed:32390414",
         {
           "@id": "https://doi.org/10.1021/ACS.ANALCHEM.9B05765"
-        },
-        "pubmed:32390414"
+        }
       ],
       "sc:description": "Retention Time Prediction for Compound Annotation in Untargeted Metabolomics.\n\nRetip is an R package for predicting Retention Time (RT) for small molecules in a high pressure liquid chromatography (HPLC) Mass Spectrometry analysis.\n\nRetip - Retention Time prediction for Metabolomics.\n\nRetip: Retention Time Prediction for Compound Annotation in Untargeted Metabolomics Paolo Bonini, Tobias Kind, Hiroshi Tsugawa, Dinesh Kumar Barupal, and Oliver Fiehn Analytical Chemistry 2020 92 (11), 7515-7522 DOI: 10.1021/acs.analchem.9b05765.",
       "sc:featureList": [
@@ -107,29 +103,7 @@
       "sc:url": "https://www.retip.app"
     },
     {
-      "@id": "_:N8de93f6b1317447a966dc161ff5a6100",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3464"
-      },
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:Nf53ac4e761bf4f36a6336a5f36707296",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0982"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1196"
-      },
-      "sc:name": "Molecule identifier"
-    },
-    {
-      "@id": "_:Nea166c2c6e304fb783a608bbdd91116a",
+      "@id": "_:N41c8a5923570402589f7702a60b9c4a5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -140,7 +114,7 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N8dacfbe2cf584d1294f437f8780e4fc3",
+      "@id": "_:Ncab0e9f9fef64c5391aaa52199a0c6c1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0982"
@@ -151,7 +125,7 @@
       "sc:name": "Molecule identifier"
     },
     {
-      "@id": "_:N987610a9ce434e10845363058ee8a80a",
+      "@id": "_:Na70fd85d42024b95bebd3b47b347f91c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -162,7 +136,29 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:Ne4f90bf62d4a4403ab1675092d121844",
+      "@id": "_:Ne0fb30ddbafe4e7f966da4f25f266cc9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0982"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1196"
+      },
+      "sc:name": "Molecule identifier"
+    },
+    {
+      "@id": "_:Ndff4e1795a29405d8fcea4611ad12439",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3464"
+      },
+      "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "_:N238328c888484f3e96fad751c4c94266",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2087"
@@ -171,6 +167,10 @@
         "@id": "edam:format_3751"
       },
       "sc:name": "Molecular property"
+    },
+    {
+      "@id": "https://doi.org/10.1021/ACS.ANALCHEM.9B05765",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

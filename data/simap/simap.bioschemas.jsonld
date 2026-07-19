@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/simap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd764951fd9e340509da9a98413309661"
+        "@id": "_:Nb57ef13ac3da4c82bd5c8e68d3736b2d"
       },
       "bsc:output": [
         {
-          "@id": "_:N7ca89564e2b344b6a48fb1997d63c3d8"
+          "@id": "_:Ndef6dee4e8a94a9db221a1c1706fb849"
         },
         {
-          "@id": "_:N1910064810b94aa795586b14f0778c97"
+          "@id": "_:N1bfc034579664cae93a68ca65c2f2180"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -72,8 +72,8 @@
       "sc:name": "SIMAP",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "AT-CUBE",
       "sc:softwareHelp": {
@@ -82,7 +82,15 @@
       "sc:url": "http://cube.univie.ac.at/resources/simap"
     },
     {
-      "@id": "_:N7ca89564e2b344b6a48fb1997d63c3d8",
+      "@id": "_:Nb57ef13ac3da4c82bd5c8e68d3736b2d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1096"
+      },
+      "sc:name": "Sequence accession (protein)"
+    },
+    {
+      "@id": "_:Ndef6dee4e8a94a9db221a1c1706fb849",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1381"
@@ -90,20 +98,12 @@
       "sc:name": "Sequence alignment (pair)"
     },
     {
-      "@id": "_:N1910064810b94aa795586b14f0778c97",
+      "@id": "_:N1bfc034579664cae93a68ca65c2f2180",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
       },
       "sc:name": "Sequence alignment (protein)"
-    },
-    {
-      "@id": "_:Nd764951fd9e340509da9a98413309661",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1096"
-      },
-      "sc:name": "Sequence accession (protein)"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkt970",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,49 +36,45 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/046904",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mogsa",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chen Meng",
       "bsc:input": [
         {
-          "@id": "_:N8c136069f3304200a38c547bfdd49dda"
+          "@id": "_:Nc42b433c901d45bb825460e1372e24cf"
         },
         {
-          "@id": "_:Ne612cdc06b4d4ce28385f5a16d8e24c9"
+          "@id": "_:Ne8b26d61f90f4c16afafb0fe67508f44"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0b1385380f2d40e592b1539c1ef22198"
+          "@id": "_:N12bf8a8e90af4a29be4202aeb79a54bb"
         },
         {
-          "@id": "_:N9ca624d5f24e43208bdf42a891cfdf02"
+          "@id": "_:Ncc030ba5139b45c3853cc1192cd29a52"
         },
         {
-          "@id": "_:N4842ab0aab8842629a1bcd224d1e1837"
+          "@id": "_:N0aa9baec28914aeba51d795d8f250878"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_3391"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3391"
+        },
+        {
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": {
@@ -87,18 +83,18 @@
       "sc:description": "This package provide a method for doing gene set analysis based on multiple omics data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3744"
+          "@id": "edam:operation_0571"
         },
         {
-          "@id": "edam:operation_0571"
+          "@id": "edam:operation_3744"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "mogsa",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/mogsa.html"
@@ -107,23 +103,45 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/mogsa.html"
     },
     {
-      "@id": "_:N0b1385380f2d40e592b1539c1ef22198",
+      "@id": "_:Nc42b433c901d45bb825460e1372e24cf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Ne8b26d61f90f4c16afafb0fe67508f44",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3115"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Microarray metadata"
+    },
+    {
+      "@id": "_:N12bf8a8e90af4a29be4202aeb79a54bb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
-      "sc:name": "Score"
+      "sc:name": "Heat map"
     },
     {
-      "@id": "_:N9ca624d5f24e43208bdf42a891cfdf02",
+      "@id": "_:Ncc030ba5139b45c3853cc1192cd29a52",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -139,42 +157,24 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N4842ab0aab8842629a1bcd224d1e1837",
+      "@id": "_:N0aa9baec28914aeba51d795d8f250878",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1636"
+        "@id": "edam:data_1772"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
-      "sc:name": "Heat map"
+      "sc:name": "Score"
     },
     {
-      "@id": "_:N8c136069f3304200a38c547bfdd49dda",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:Ne612cdc06b4d4ce28385f5a16d8e24c9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3115"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Microarray metadata"
+      "@id": "https://doi.org/10.1101/046904",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

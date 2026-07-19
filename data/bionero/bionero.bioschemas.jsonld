@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,17 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2021.04.10.439287",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-2215-8082",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/bionero",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -61,10 +53,10 @@
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-5314-2964"
+          "@id": "https://orcid.org/0000-0002-2215-8082"
         },
         {
-          "@id": "https://orcid.org/0000-0002-2215-8082"
+          "@id": "https://orcid.org/0000-0002-5314-2964"
         }
       ],
       "sc:citation": {
@@ -73,6 +65,9 @@
       "sc:description": "BioNERO is an all-in-one R/Bioconductor package for comprehensive and easy biological network reconstruction. BioNERO aims to integrate all aspects of biological network inference in a single package, including data preprocessing, exploratory analyses, network inference, and analyses for biological interpretations.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3463"
+        },
+        {
           "@id": "edam:operation_1781"
         },
         {
@@ -80,9 +75,6 @@
         },
         {
           "@id": "edam:operation_3766"
-        },
-        {
-          "@id": "edam:operation_3463"
         }
       ],
       "sc:license": "GPL-3.0",
@@ -91,6 +83,14 @@
         "@id": "https://almeidasilvaf.github.io/BioNERO/"
       },
       "sc:url": "http://bioconductor.org/packages/BioNERO"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2215-8082",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2021.04.10.439287",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-5314-2964",

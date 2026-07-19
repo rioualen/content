@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,91 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://bio.tools/bedtools_coveragebed_counts",
-      "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": "Galaxy Support Team",
-      "bsc:input": [
-        {
-          "@id": "_:N4fea5637d94f41c5a04ef08cc4ae4c17"
-        },
-        {
-          "@id": "_:Ne4b6ab944d9944e594bdd3d68a407556"
-        }
-      ],
-      "bsc:output": {
-        "@id": "_:N18daf8e103aa4c2e8397e1648c061797"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Web application",
-      "sc:applicationSubCategory": {
-        "@id": "edam:topic_3168"
-      },
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btq033"
-        },
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
-        }
-      ],
-      "sc:description": "Count the number of intervals in a BAM or BED file (the source) that overlap another BED file (the target).",
-      "sc:featureList": {
-        "@id": "edam:operation_0335"
-      },
-      "sc:name": "bedtools_coveragebed_counts",
-      "sc:operatingSystem": [
-        "Mac",
-        "Linux",
-        "Windows"
-      ],
-      "sc:softwareHelp": {
-        "@id": "http://quinlanlab.org/tutorials/bedtools/bedtools.html"
-      },
-      "sc:softwareVersion": "0.1.0",
-      "sc:url": "https://github.com/arq5x/bedtools3"
-    },
-    {
-      "@id": "_:N4fea5637d94f41c5a04ef08cc4ae4c17",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:Ne4b6ab944d9944e594bdd3d68a407556",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N18daf8e103aa4c2e8397e1648c061797",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     },
@@ -131,6 +46,91 @@
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/bedtools_coveragebed_counts",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "Galaxy Support Team",
+      "bsc:input": [
+        {
+          "@id": "_:Nd037b58afc0e46ea93a408e974c153b8"
+        },
+        {
+          "@id": "_:N13871821c7ec456da713d7d86d38f517"
+        }
+      ],
+      "bsc:output": {
+        "@id": "_:N0ed10eddecfb4da48f832ff1adac27f3"
+      },
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Web application",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3168"
+      },
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btq033"
+        },
+        {
+          "@id": "https://doi.org/10.1093/nar/gkw343"
+        },
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        }
+      ],
+      "sc:description": "Count the number of intervals in a BAM or BED file (the source) that overlap another BED file (the target).",
+      "sc:featureList": {
+        "@id": "edam:operation_0335"
+      },
+      "sc:name": "bedtools_coveragebed_counts",
+      "sc:operatingSystem": [
+        "Linux",
+        "Mac",
+        "Windows"
+      ],
+      "sc:softwareHelp": {
+        "@id": "http://quinlanlab.org/tutorials/bedtools/bedtools.html"
+      },
+      "sc:softwareVersion": "0.1.0",
+      "sc:url": "https://github.com/arq5x/bedtools3"
+    },
+    {
+      "@id": "_:Nd037b58afc0e46ea93a408e974c153b8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N13871821c7ec456da713d7d86d38f517",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3003"
+        }
+      ],
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N0ed10eddecfb4da48f832ff1adac27f3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
     }
   ]
 }

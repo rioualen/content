@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,61 +36,65 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/graph",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BioConductor Package Maintainer",
       "bsc:input": {
-        "@id": "_:N29c078dd55834dff8c3cf49924be1ad9"
+        "@id": "_:N52fe9bef75b74c69a9e7314d2e606706"
       },
       "bsc:output": [
         {
-          "@id": "_:N7640da1ee7594588a6adf37031524875"
+          "@id": "_:N16c11a6c4b344096a15d2a89590b89f2"
         },
         {
-          "@id": "_:N65ea96cc86ed4a4a8eb8dc84f7bef6b5"
+          "@id": "_:N5383edcf76964c3c8824cb56090c95da"
         },
         {
-          "@id": "_:N30e2711de5c240cfa81f6effe504eeaa"
+          "@id": "_:Nb12c049cb5e54d55bee09dbadcdcf059"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
         "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "A package that implements some simple graph handling capabilities.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2422"
+        },
         {
           "@id": "edam:operation_3282"
         },
         {
           "@id": "edam:operation_2497"
-        },
-        {
-          "@id": "edam:operation_2422"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "graph",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/graph.html"
@@ -99,29 +103,32 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/graph.html"
     },
     {
-      "@id": "_:N29c078dd55834dff8c3cf49924be1ad9",
+      "@id": "_:N52fe9bef75b74c69a9e7314d2e606706",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_3156"
         },
         {
-          "@id": "edam:format_3156"
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N7640da1ee7594588a6adf37031524875",
+      "@id": "_:N16c11a6c4b344096a15d2a89590b89f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3156"
+        },
+        {
           "@id": "edam:format_3547"
         },
         {
@@ -129,21 +136,21 @@
         },
         {
           "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_3156"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:N65ea96cc86ed4a4a8eb8dc84f7bef6b5",
+      "@id": "_:N5383edcf76964c3c8824cb56090c95da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3156"
+        },
+        {
           "@id": "edam:format_3547"
         },
         {
@@ -151,21 +158,21 @@
         },
         {
           "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_3156"
         }
       ],
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N30e2711de5c240cfa81f6effe504eeaa",
+      "@id": "_:Nb12c049cb5e54d55bee09dbadcdcf059",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3156"
+        },
+        {
           "@id": "edam:format_3547"
         },
         {
@@ -173,16 +180,9 @@
         },
         {
           "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_3156"
         }
       ],
       "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

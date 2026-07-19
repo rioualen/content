@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,75 +36,79 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/abarray",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yongming Andrew Sun",
       "bsc:input": [
         {
-          "@id": "_:Nd0b24a6ff77f441b836936e9aa0c712a"
+          "@id": "_:Nbd55e661bfdd4a4f98301bcf442432bb"
         },
         {
-          "@id": "_:Nfc9c28dcf5104b8f91c711476591a797"
+          "@id": "_:N766aac19548d472593338468e25a06a2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N01edbdbf3b264b33ae1636fad4c137cb"
+          "@id": "_:N66ccedc8d68e423991b28d54bff76be6"
         },
         {
-          "@id": "_:N4b54107c5c7e46a69a5a7647abb29440"
+          "@id": "_:N690778de297349509078594d7e685114"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0203"
         },
         {
+          "@id": "edam:topic_3518"
+        },
+        {
           "@id": "edam:topic_2269"
         },
         {
           "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_3518"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "An R package which functions provide an automated pipeline to perform expression analysis for Applied Biosystems Genome Survey Microarray (AB1700) data format. Functions include data preprocessing, filtering, control probe analysis, statistical analysis. A GUI interface is also provided.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
-        },
-        {
           "@id": "edam:operation_2409"
-        },
-        {
-          "@id": "edam:operation_0337"
         },
         {
           "@id": "edam:operation_2495"
         },
         {
+          "@id": "edam:operation_2238"
+        },
+        {
           "@id": "edam:operation_2428"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "ABarray",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ABarray.html"
@@ -113,29 +117,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ABarray.html"
     },
     {
-      "@id": "_:N01edbdbf3b264b33ae1636fad4c137cb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3617"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N4b54107c5c7e46a69a5a7647abb29440",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2032"
-      },
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:Nd0b24a6ff77f441b836936e9aa0c712a",
+      "@id": "_:Nbd55e661bfdd4a4f98301bcf442432bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -146,7 +128,7 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:Nfc9c28dcf5104b8f91c711476591a797",
+      "@id": "_:N766aac19548d472593338468e25a06a2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -157,8 +139,26 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N66ccedc8d68e423991b28d54bff76be6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2032"
+      },
+      "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "_:N690778de297349509078594d7e685114",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3617"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

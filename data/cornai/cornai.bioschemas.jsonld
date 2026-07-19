@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,58 +44,58 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Elin Axelsson",
       "bsc:input": {
-        "@id": "_:Neb90b339e74c4b9cbdf14bd1e5694521"
+        "@id": "_:N9eb89a3b88c644eb97e6f2f714d1eb7a"
       },
       "bsc:output": [
         {
-          "@id": "_:N8a2b5ec3d3aa4e1086311f7589a09221"
+          "@id": "_:Nb7eb7754902d4766b34c429c47e9c70e"
         },
         {
-          "@id": "_:N4b03890e341246eda7a4b4e998182ae0"
+          "@id": "_:N4fd1115641f149c88b72f25161cab757"
         },
         {
-          "@id": "_:N512e1a4493844f4d95fdc14807b05a91"
+          "@id": "_:N29193960c61a447183767a35492d896e"
         },
         {
-          "@id": "_:Nf1ec4dfdfa4d463f9008b4846d1f9f00"
+          "@id": "_:Ndf8fd342ae234dde9c2d19a61e8736e4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3071"
+        },
         {
           "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3523"
-        },
-        {
-          "@id": "edam:topic_3071"
         }
       ],
       "sc:citation": [
+        "pubmed:21849035",
+        "pmcid:PMC3230910",
         {
           "@id": "https://doi.org/10.1186/1471-2105-12-342"
-        },
-        "pubmed:21849035",
-        "pmcid:PMC3230910"
+        }
       ],
       "sc:description": "Analysis of combinatorial cell-based RNAi screens.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3435"
-        },
-        {
-          "@id": "edam:operation_3439"
-        },
         {
           "@id": "edam:operation_2495"
         },
         {
           "@id": "edam:operation_1812"
+        },
+        {
+          "@id": "edam:operation_3439"
+        },
+        {
+          "@id": "edam:operation_3435"
         },
         {
           "@id": "edam:operation_2428"
@@ -104,8 +104,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "coRNAi",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -115,7 +115,7 @@
       "sc:url": "https://bioconductor.org/packages/3.4/bioc/html/coRNAi.html"
     },
     {
-      "@id": "_:Neb90b339e74c4b9cbdf14bd1e5694521",
+      "@id": "_:N9eb89a3b88c644eb97e6f2f714d1eb7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -126,23 +126,7 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N8a2b5ec3d3aa4e1086311f7589a09221",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N4b03890e341246eda7a4b4e998182ae0",
+      "@id": "_:Nb7eb7754902d4766b34c429c47e9c70e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -158,23 +142,7 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N512e1a4493844f4d95fdc14807b05a91",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nf1ec4dfdfa4d463f9008b4846d1f9f00",
+      "@id": "_:N4fd1115641f149c88b72f25161cab757",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -188,6 +156,38 @@
         }
       ],
       "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N29193960c61a447183767a35492d896e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Ndf8fd342ae234dde9c2d19a61e8736e4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

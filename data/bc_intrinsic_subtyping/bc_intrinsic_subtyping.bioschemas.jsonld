@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41598-020-70832-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bc_intrinsic_subtyping",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-2574-1174"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Script",
-        "Workflow",
-        "Web service"
+        "Web service",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0091"
+        },
         {
           "@id": "edam:topic_3345"
         },
@@ -59,24 +58,21 @@
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_3308"
-        },
-        {
-          "@id": "edam:topic_2640"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0002-5628-9101"
       },
       "sc:citation": [
+        "pubmed:32826944",
+        "pmcid:PMC7442834",
         {
           "@id": "https://doi.org/10.1038/s41598-020-70832-2"
-        },
-        "pubmed:32826944",
-        "pmcid:PMC7442834"
+        }
       ],
       "sc:description": "BC_subtyping allows the stratification of breast cancer (BC) expression profiles from RNA-seq data into intrinsic molecular subtypes using improved versions of the dataset-level PAM50 test or single-sample machine learning-based classifiers.",
       "sc:name": "BC_Intrinsic_subtyping",
@@ -86,6 +82,10 @@
     {
       "@id": "https://orcid.org/0000-0003-2574-1174",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-020-70832-2",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-5628-9101",

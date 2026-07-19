@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/pro.5560040817",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pratt",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N15cabec54cfb4dff93d4e66feb125765"
+        "@id": "_:N131ec44d782741b4a3ce45a6c27bd3e6"
       },
       "bsc:output": {
-        "@id": "_:N8ce53b1632a54fb0876b8ba437d3b5fa"
+        "@id": "_:Nccd3bb8e77d54ce6b4788bac5bb28376"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -64,21 +60,21 @@
       ],
       "sc:author": "Inge Jonassen",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkae241"
-        },
+        "pubmed:8520485",
+        "pmcid:PMC2143188",
         {
           "@id": "https://doi.org/10.1002/pro.5560040817"
         },
         "pubmed:35412617",
-        "pmcid:PMC11223882",
-        "pubmed:8520485",
         "pmcid:PMC9252731",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac240"
+        },
         "pubmed:38597606",
-        "pmcid:PMC2143188"
+        "pmcid:PMC11223882",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkae241"
+        }
       ],
       "sc:description": "Discover patterns in unaligned protein sequences.",
       "sc:featureList": {
@@ -86,20 +82,20 @@
       },
       "sc:name": "Pratt (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
-        "University of Bergen",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "University of Bergen"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://www.ii.uib.no/~inge/Pratt.html"
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+          "@id": "https://www.ii.uib.no/~inge/Pratt.html"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
@@ -109,15 +105,7 @@
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/pfa/pratt"
     },
     {
-      "@id": "_:N8ce53b1632a54fb0876b8ba437d3b5fa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2762"
-      },
-      "sc:name": "Sequence signature report"
-    },
-    {
-      "@id": "_:N15cabec54cfb4dff93d4e66feb125765",
+      "@id": "_:N131ec44d782741b4a3ce45a6c27bd3e6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -125,7 +113,19 @@
       "sc:name": "Protein sequence"
     },
     {
+      "@id": "_:Nccd3bb8e77d54ce6b4788bac5bb28376",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2762"
+      },
+      "sc:name": "Sequence signature report"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/pro.5560040817",
       "@type": "sc:CreativeWork"
     },
     {

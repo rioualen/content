@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,30 +43,30 @@
         "Hao Chen"
       ],
       "bsc:input": {
-        "@id": "_:N5d6f889b8f1845118a9fd734797fbda1"
+        "@id": "_:N0b85d745f507440d9776cdd46435cc79"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb9d252d3816243b28083239b6e23d956"
+          "@id": "_:Na855e2e7bb7a40f1a14aea7b051c533a"
         },
         {
-          "@id": "_:N44dd0dd7a8604bf4827b7a7110de7805"
+          "@id": "_:Ne7aa6735430a44fd80ccce5402b90328"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3361"
-        },
         {
           "@id": "edam:topic_3473"
         },
         {
           "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_3361"
         }
       ],
       "sc:citation": [
@@ -79,21 +79,21 @@
       "sc:description": "An integrated mass cytometry data analysis pipeline that enables simultaneous illustration of cellular diversity and progression.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
-        },
-        {
           "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_3214"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "cytofkit",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/cytofkit.html"
@@ -102,7 +102,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/cytofkit.html"
     },
     {
-      "@id": "_:N5d6f889b8f1845118a9fd734797fbda1",
+      "@id": "_:N0b85d745f507440d9776cdd46435cc79",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -113,29 +113,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Nb9d252d3816243b28083239b6e23d956",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2333"
-        },
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N44dd0dd7a8604bf4827b7a7110de7805",
+      "@id": "_:Na855e2e7bb7a40f1a14aea7b051c533a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -145,16 +123,38 @@
           "@id": "edam:format_2333"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         },
         {
           "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Ne7aa6735430a44fd80ccce5402b90328",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1016/j.celrep.2015.05.022",

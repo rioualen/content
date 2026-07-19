@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv185",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-0173-3009",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/sparse",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -57,20 +45,20 @@
         "Sebastian Will"
       ],
       "bsc:input": {
-        "@id": "_:N927e8ed6913642d39ea4a2e534637c59"
+        "@id": "_:N99d27bcb2400425c84af946d26a6649a"
       },
       "bsc:output": [
         {
-          "@id": "_:Na4b591194fd648089cdb232e1fdee9cc"
+          "@id": "_:N65e864b93fe94c6bb4b55b461b4cc919"
         },
         {
-          "@id": "_:N41d6a89c747f43a3b95d6a1ea5f5878d"
+          "@id": "_:Neab8511f7a4d4f0da7d7773456feda63"
         },
         {
-          "@id": "_:Nf7c9953b37fe44b5a00605b0cfe01776"
+          "@id": "_:N10734458217d4cd0a78080abd5c9e4e4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -81,18 +69,18 @@
         }
       ],
       "sc:author": [
-        "Sebastian Will",
         {
           "@id": "http://orcid.org/0000-0002-0173-3009"
         },
-        "Rolf Backofen"
+        "Rolf Backofen",
+        "Sebastian Will"
       ],
       "sc:citation": [
+        "pubmed:25838465",
         "pmcid:PMC4514930",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv185"
-        },
-        "pubmed:25838465"
+        }
       ],
       "sc:contributor": "Sebastian Will",
       "sc:description": "Very efficient structure-based alignment of RNAs.",
@@ -103,12 +91,12 @@
       "sc:license": "GPL-3.0",
       "sc:name": "SPARSE",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "rnateam",
-        "University Freiburg"
+        "University Freiburg",
+        "rnateam"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.bioinf.uni-freiburg.de/Software/SPARSE/"
@@ -117,48 +105,7 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/SPARSE"
     },
     {
-      "@id": "_:Na4b591194fd648089cdb232e1fdee9cc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N41d6a89c747f43a3b95d6a1ea5f5878d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:Nf7c9953b37fe44b5a00605b0cfe01776",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1465"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3466"
-      },
-      "sc:name": "RNA structure"
-    },
-    {
-      "@id": "_:N927e8ed6913642d39ea4a2e534637c59",
+      "@id": "_:N99d27bcb2400425c84af946d26a6649a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -172,6 +119,59 @@
         }
       ],
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N65e864b93fe94c6bb4b55b461b4cc919",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:Neab8511f7a4d4f0da7d7773456feda63",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N10734458217d4cd0a78080abd5c9e4e4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1465"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3466"
+      },
+      "sc:name": "RNA structure"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-0173-3009",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv185",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

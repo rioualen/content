@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/patchwork_protein",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nce9ab493dafb4281acfce5d0c73a8482"
+          "@id": "_:N3c36a77d766941b4b5004a2962e70c63"
         },
         {
-          "@id": "_:N9bb5f6eab5b14763a016f99c5a5938fc"
+          "@id": "_:N364c6f23e2c94ed9bd9c62a76d263c80"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0154"
-        },
         {
           "@id": "edam:topic_0130"
         },
@@ -60,52 +61,44 @@
         },
         {
           "@id": "edam:topic_0601"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
+        "pubmed:35438792",
         "pmcid:PMC9252814",
         {
           "@id": "https://doi.org/10.1093/nar/gkac252"
-        },
-        "pubmed:35438792"
+        }
       ],
       "sc:description": "patcHwork is a user-friendly web-server that identifies amino acids of proteins that undergo a charge-shift when the pH assumes two user-defined values. For sequence functionality, users may submit a FASTA file with up to ten thousand amino acid sequences (max 20MB). For structure functionality, users may submit a single 3D structure (PDB) file or a zip file with multiple PDB files (max 20MB) for batch processing.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0272"
-        },
-        {
-          "@id": "edam:operation_0337"
-        },
-        {
           "@id": "edam:operation_0394"
         },
         {
+          "@id": "edam:operation_0272"
+        },
+        {
           "@id": "edam:operation_1839"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "patcHwork",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://patchwork.biologie.uni-freiburg.de/"
     },
     {
-      "@id": "_:Nce9ab493dafb4281acfce5d0c73a8482",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N9bb5f6eab5b14763a016f99c5a5938fc",
+      "@id": "_:N3c36a77d766941b4b5004a2962e70c63",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -116,8 +109,15 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N364c6f23e2c94ed9bd9c62a76d263c80",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
     }
   ]
 }

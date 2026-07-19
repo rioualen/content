@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/inforesidue",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N61e1b4a64a6343bbaad5c93a107624e0"
+          "@id": "_:N3f3e6fd19ccd47d6abacbaf4f7517fca"
         },
         {
-          "@id": "_:N25a003c118014ebd90c01a897a99c688"
+          "@id": "_:N154aecfc4f1541a8aedba300eedb28af"
         }
       ],
       "bsc:output": {
-        "@id": "_:N85c5efbeb49e41388c09428eca4d99f7"
+        "@id": "_:Na6bc2de97b644150b85e505bf4919a0f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0154"
@@ -71,33 +59,33 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
         "UK BBSRC",
-        "EMBOSS Contributors",
         "UK MRC",
-        "Wellcome Trust"
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Return information on a given amino acid residue.",
       "sc:featureList": {
         "@id": "edam:operation_0224"
       },
       "sc:funder": [
-        "UK MRC",
         "UK BBSRC",
+        "UK MRC",
         "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "inforesidue",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -106,10 +94,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/inforesidue.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/inforesidue.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
@@ -119,15 +107,15 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/inforesidue.html"
     },
     {
-      "@id": "_:N85c5efbeb49e41388c09428eca4d99f7",
+      "@id": "_:N3f3e6fd19ccd47d6abacbaf4f7517fca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1276"
+        "@id": "edam:data_1502"
       },
-      "sc:name": "Nucleic acid features"
+      "sc:name": "Amino acid index (chemical classes)"
     },
     {
-      "@id": "_:N61e1b4a64a6343bbaad5c93a107624e0",
+      "@id": "_:N154aecfc4f1541a8aedba300eedb28af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1505"
@@ -135,12 +123,24 @@
       "sc:name": "Amino acid index (molecular weight)"
     },
     {
-      "@id": "_:N25a003c118014ebd90c01a897a99c688",
+      "@id": "_:Na6bc2de97b644150b85e505bf4919a0f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1502"
+        "@id": "edam:data_1276"
       },
-      "sc:name": "Amino acid index (chemical classes)"
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -51,50 +51,50 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N48c2d653592d40f1bc3b8ed55ce1ba6f"
+          "@id": "_:N6a8fbf4ad69d49a8a702cd03db173408"
         },
         {
-          "@id": "_:N851c92e84d5c4ba68cb2a3f6f7d54bfe"
+          "@id": "_:Nf09628b7fef74ba582349af274f085e4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N68cff3b60f2b49a9af584bd3e0f8d9d1"
+          "@id": "_:N4bdde961cb9e45c4adc536669d0706e1"
         },
         {
-          "@id": "_:N0e796cf6e9714acc9b140c236b81b9c0"
+          "@id": "_:N8aa53ac28ced4bf9b5bd19c5c67c7aba"
         },
         {
-          "@id": "_:N9120bae5b74d46c08710838ba3a2bb76"
+          "@id": "_:Nf462b06f7bbd43fdb74b38a22e17e78c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3892"
+        },
         {
           "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_0128"
-        },
-        {
-          "@id": "edam:topic_3892"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0003-0513-0288"
+          "@id": "https://orcid.org/0000-0002-8291-8071"
         },
         {
-          "@id": "https://orcid.org/0000-0002-8291-8071"
+          "@id": "https://orcid.org/0000-0003-0513-0288"
         }
       ],
       "sc:citation": [
+        "pubmed:31506435",
+        "pmcid:PMC6736963",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
-        },
-        "pmcid:PMC6736963",
-        "pubmed:31506435"
+        }
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0003-0513-0288"
@@ -102,27 +102,27 @@
       "sc:description": "This tutorial aims to illustrate the process of computing classical molecular interaction potentials from protein structures step by step, using the BioExcel Building Blocks library (biobb)",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_2949"
         },
         {
           "@id": "edam:operation_0272"
         },
         {
-          "@id": "edam:operation_2949"
+          "@id": "edam:operation_0248"
         },
         {
           "@id": "edam:operation_2480"
         },
         {
-          "@id": "edam:operation_0248"
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks tutorials: Molecular Interaction Potentials",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "BioExcel CoE",
@@ -133,18 +133,29 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/cmip"
     },
     {
-      "@id": "_:N68cff3b60f2b49a9af584bd3e0f8d9d1",
+      "@id": "_:N6a8fbf4ad69d49a8a702cd03db173408",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0906"
+        "@id": "edam:data_1460"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+        "@id": "edam:format_1476"
       },
-      "sc:name": "Protein interaction data"
+      "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N0e796cf6e9714acc9b140c236b81b9c0",
+      "@id": "_:Nf09628b7fef74ba582349af274f085e4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Trajectory data"
+    },
+    {
+      "@id": "_:N4bdde961cb9e45c4adc536669d0706e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -155,7 +166,18 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N9120bae5b74d46c08710838ba3a2bb76",
+      "@id": "_:N8aa53ac28ced4bf9b5bd19c5c67c7aba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0906"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "_:Nf462b06f7bbd43fdb74b38a22e17e78c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -164,28 +186,6 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N48c2d653592d40f1bc3b8ed55ce1ba6f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N851c92e84d5c4ba68cb2a3f6f7d54bfe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Trajectory data"
     },
     {
       "@id": "https://doi.org/10.1038/s41597-019-0177-4",

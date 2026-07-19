@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.48550/arXiv.2412.04111",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1109/ISBI56570.2024.10635469",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1007/978-3-031-76163-8_20",
       "@type": "sc:CreativeWork"
     },
     {
@@ -52,34 +44,38 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1007/978-3-031-76163-8_20",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pediatric_brain_tumor_segmenter",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "María Jesus Ledesma-Carbayo",
-        "Marius George Linguraru",
         {
           "@id": "https://orcid.org/0000-0002-9743-0845"
-        }
+        },
+        "María Jesus Ledesma-Carbayo",
+        "Marius George Linguraru"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Command-line tool",
         "Web application",
-        "Workflow",
-        "Command-line tool"
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_3444"
         },
         {
-          "@id": "edam:topic_3444"
+          "@id": "edam:topic_3474"
         }
       ],
       "sc:author": [
-        "Abhijeet Parida",
         {
           "@id": "https://orcid.org/0000-0002-9743-0845"
         },
+        "Abhijeet Parida",
         "Zhifan Jiang"
       ],
       "sc:citation": [
@@ -97,12 +93,12 @@
         }
       ],
       "sc:contributor": [
-        "Marius George Linguraru",
-        "Abhijeet Parida",
         {
           "@id": "https://orcid.org/0000-0002-9743-0845"
         },
         "María Jesus Ledesma-Carbayo",
+        "Abhijeet Parida",
+        "Marius George Linguraru",
         "Zhifan Jiang"
       ],
       "sc:description": "The Pediatric Brain Tumor Segmenter is a software tool developed by researchers from Universidad Politécnica de Madrid and Children’s National Hospital for the segmentation and analysis of pediatric brain tumors in magnetic resonance imaging (MRI). Built in Python, it enables precise quantitative analysis of pediatric brain tumors in MRI scans to support clinical decision-making in both diagnosis and prognosis.",
@@ -113,15 +109,19 @@
       "sc:license": "CC-BY-NC-SA-4.0",
       "sc:name": "Pediatric Brain Tumor Segmenter",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://docs.hope4kids.io/HOPE-Segmenter-Kids/"
       },
       "sc:softwareVersion": "v1.0",
       "sc:url": "https://github.com/BIT-UPM/EUCAIM/pediatric_brain_tumor_segmenter"
+    },
+    {
+      "@id": "https://doi.org/10.48550/arXiv.2412.04111",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-9743-0845",

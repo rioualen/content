@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-7359-0633",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/ddgemb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,16 +43,16 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Ncc527629365a48259c55e8ff91a11c01"
+          "@id": "_:N55a2333c0c7f48c69c76ad263d4e8016"
         },
         {
-          "@id": "_:Ne3e939c734854fe3be80c7e229d54a25"
+          "@id": "_:N377c0c7979c14ecfafeec4b613bb2430"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne38baf612c6b40eebc769e5c316ac8e0"
+        "@id": "_:N3649445b4ea742ba86dd7d03bb2d9d38"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0199"
@@ -72,11 +68,11 @@
         "@id": "https://orcid.org/0000-0002-7359-0633"
       },
       "sc:citation": [
+        "pubmed:39799516",
         "pmcid:PMC11783275",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btaf019"
-        },
-        "pubmed:39799516"
+        }
       ],
       "sc:description": "Predicting the impact of mutations on protein stability from sequence using protein language models",
       "sc:featureList": {
@@ -92,23 +88,7 @@
       "sc:url": "https://ddgemb.biocomp.unibo.it"
     },
     {
-      "@id": "_:Ne38baf612c6b40eebc769e5c316ac8e0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0896"
-      },
-      "sc:name": "Protein report"
-    },
-    {
-      "@id": "_:Ncc527629365a48259c55e8ff91a11c01",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:Ne3e939c734854fe3be80c7e229d54a25",
+      "@id": "_:N55a2333c0c7f48c69c76ad263d4e8016",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -116,8 +96,28 @@
       "sc:name": "Protein sequence"
     },
     {
+      "@id": "_:N377c0c7979c14ecfafeec4b613bb2430",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N3649445b4ea742ba86dd7d03bb2d9d38",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:name": "Protein report"
+    },
+    {
       "@id": "https://doi.org/10.1093/bioinformatics/btaf019",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7359-0633",
+      "@type": "sc:Person"
     }
   ]
 }

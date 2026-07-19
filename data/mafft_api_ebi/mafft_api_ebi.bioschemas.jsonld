@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bib/bbn013",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/MAFFT_API_EBI",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd7e42b070c99446194a902713f6a386d"
+        "@id": "_:Naae3dd812b40417d973b0f361d750682"
       },
       "bsc:output": {
-        "@id": "_:Nd35647f1231d4adbbc3a055d2c4bf6ee"
+        "@id": "_:N46486b07b0ed492cb79222a889a55bf3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -62,8 +66,8 @@
       "sc:name": "MAFFT API (EBI)",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.ebi.ac.uk/Tools/webservices/services/msa/mafft_rest"
@@ -72,7 +76,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/webservices/services/msa/mafft_rest"
     },
     {
-      "@id": "_:Nd35647f1231d4adbbc3a055d2c4bf6ee",
+      "@id": "_:Naae3dd812b40417d973b0f361d750682",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -83,7 +87,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nd7e42b070c99446194a902713f6a386d",
+      "@id": "_:N46486b07b0ed492cb79222a889a55bf3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -92,10 +96,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bib/bbn013",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

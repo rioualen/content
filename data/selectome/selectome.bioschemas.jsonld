@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkt1065",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/selectome",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N22bf851b27174af389abb633597ce183"
+          "@id": "_:N6b4768a44aaa4fa08195af8954b5da83"
         },
         {
-          "@id": "_:Na0c079e440664b7eb07f42020e82984b"
+          "@id": "_:N7e6d35f7925e41a79acc010cbde4be32"
         },
         {
-          "@id": "_:N4138617a93c84ccd890eb522a14d6676"
+          "@id": "_:N2c54b8ab816345f9ab919d88575807a3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3d0d3243c55e4c4d806805c43f851187"
+          "@id": "_:N6442ed10cabb4940ac163d86ddd7df09"
         },
         {
-          "@id": "_:N6bd887be2fde4c0b8c9214750c9df6dd"
+          "@id": "_:Necade0ae34244bcfb59dcd6ce5b163dd"
         },
         {
-          "@id": "_:N09447e40c90a4c9a8f8b144d3025c809"
+          "@id": "_:N0e199d28634d42ddbbc9c4a7d1f293bd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3293"
@@ -79,9 +83,9 @@
       "sc:license": "CC0-1.0",
       "sc:name": "Selectome",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
       "sc:softwareHelp": {
@@ -90,31 +94,7 @@
       "sc:url": "https://selectome.org/"
     },
     {
-      "@id": "_:N3d0d3243c55e4c4d806805c43f851187",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N6bd887be2fde4c0b8c9214750c9df6dd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N09447e40c90a4c9a8f8b144d3025c809",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:N22bf851b27174af389abb633597ce183",
+      "@id": "_:N6b4768a44aaa4fa08195af8954b5da83",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -122,7 +102,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:Na0c079e440664b7eb07f42020e82984b",
+      "@id": "_:N7e6d35f7925e41a79acc010cbde4be32",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1075"
@@ -130,7 +110,7 @@
       "sc:name": "Protein family identifier"
     },
     {
-      "@id": "_:N4138617a93c84ccd890eb522a14d6676",
+      "@id": "_:N2c54b8ab816345f9ab919d88575807a3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1868"
@@ -138,8 +118,28 @@
       "sc:name": "Taxon"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkt1065",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N6442ed10cabb4940ac163d86ddd7df09",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:name": "Data reference"
+    },
+    {
+      "@id": "_:Necade0ae34244bcfb59dcd6ce5b163dd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0916"
+      },
+      "sc:name": "Gene report"
+    },
+    {
+      "@id": "_:N0e199d28634d42ddbbc9c4a7d1f293bd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:name": "Phylogenetic tree"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.2165/00822942-200594030-00002",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cabri",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Paolo Romano",
       "bsc:input": [
         {
-          "@id": "_:N62861988518c42bb920ee1d9bea8d2d8"
+          "@id": "_:Ndd5bfeb156154dc08ad984c33152f080"
         },
         {
-          "@id": "_:N61ea0b8047c3458d9da2af15cb342acb"
+          "@id": "_:N4508dfc6efa34f9eb63a9a31a9764dae"
         }
       ],
       "bsc:output": {
-        "@id": "_:N9a067f18a66848519a4bf6a86bd6ab88"
+        "@id": "_:Na99d6636ded945a3ab165e6e844948a4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -68,9 +64,9 @@
         }
       ],
       "sc:author": [
-        "Francesca Piersigilli",
+        "Brendan Vaughan",
         "Domenico Marra",
-        "Brendan Vaughan"
+        "Francesca Piersigilli"
       ],
       "sc:citation": [
         "pubmed:16231959",
@@ -79,14 +75,14 @@
         }
       ],
       "sc:contributor": [
-        "Louis Rechaussat",
-        "Manfred Kracht",
-        "Gerrit Stegehuis",
-        "Francois Guissart",
-        "Herbert Milch",
-        "Beatrice Dutertre",
         "Common Access to Biological Resources and Information (CABRI), EU 5th FP (1996-1999)",
-        "Louis Jones"
+        "Beatrice Dutertre",
+        "Francois Guissart",
+        "Gerrit Stegehuis",
+        "Herbert Milch",
+        "Louis Jones",
+        "Louis Rechaussat",
+        "Manfred Kracht"
       ],
       "sc:description": "Common Access to Biological Resources and Information - A collection of European Biological Resource Centre catalogues.",
       "sc:featureList": {
@@ -103,15 +99,7 @@
       "sc:url": "http://www.cabri.org/"
     },
     {
-      "@id": "_:N62861988518c42bb920ee1d9bea8d2d8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2597"
-      },
-      "sc:name": "CABRI catalogue name"
-    },
-    {
-      "@id": "_:N61ea0b8047c3458d9da2af15cb342acb",
+      "@id": "_:Ndd5bfeb156154dc08ad984c33152f080",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2380"
@@ -119,7 +107,15 @@
       "sc:name": "CABRI accession"
     },
     {
-      "@id": "_:N9a067f18a66848519a4bf6a86bd6ab88",
+      "@id": "_:N4508dfc6efa34f9eb63a9a31a9764dae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2597"
+      },
+      "sc:name": "CABRI catalogue name"
+    },
+    {
+      "@id": "_:Na99d6636ded945a3ab165e6e844948a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0963"
@@ -128,6 +124,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Cell line report"
+    },
+    {
+      "@id": "https://doi.org/10.2165/00822942-200594030-00002",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

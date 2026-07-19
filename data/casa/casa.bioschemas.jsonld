@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,12 +42,15 @@
     {
       "@id": "https://bio.tools/casa",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3512"
+        },
         {
           "@id": "edam:topic_3324"
         },
@@ -55,41 +58,38 @@
           "@id": "edam:topic_3320"
         },
         {
-          "@id": "edam:topic_3512"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_0749"
-        },
-        {
-          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pubmed:36266726",
         "pmcid:PMC9583055",
         {
           "@id": "https://doi.org/10.1186/s12967-022-03699-8"
-        },
-        "pubmed:36266726"
+        }
       ],
       "sc:description": "A database resource for the COVID-19 Alternative Splicing Atlas.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3901"
+          "@id": "edam:operation_0264"
         },
         {
           "@id": "edam:operation_3800"
         },
         {
-          "@id": "edam:operation_0264"
+          "@id": "edam:operation_3901"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "CASA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://www.splicedb.net/casa/"
     }

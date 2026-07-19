@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,20 +40,24 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "http://orcid.org/0000-0001-7787-7853",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/netphosyeast",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6862b75d84824d8fa2781c462da517cb"
+        "@id": "_:N652487c9304d4c70b0d3224b3c9146d7"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd6b478ea9a7d4f0583e15849a7ee3f76"
+          "@id": "_:N99052675e3244ee59eb74596e5d1aa06"
         },
         {
-          "@id": "_:Nf3d909a2a4384566818c7aabba3c07df"
+          "@id": "_:Nc781789cb58f41309b849587c7c8f80c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0601"
@@ -62,10 +66,10 @@
         "@id": "http://orcid.org/0000-0001-7787-7853"
       },
       "sc:citation": [
+        "pubmed:17282998",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btm020"
-        },
-        "pubmed:17282998"
+        }
       ],
       "sc:description": "Predict serine and threonine phosphorylation sites in yeast proteins.",
       "sc:featureList": {
@@ -75,9 +79,9 @@
       "sc:license": "Other",
       "sc:name": "NetPhosYeast",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -87,29 +91,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetPhosYeast/"
     },
     {
-      "@id": "_:Nd6b478ea9a7d4f0583e15849a7ee3f76",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nf3d909a2a4384566818c7aabba3c07df",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N6862b75d84824d8fa2781c462da517cb",
+      "@id": "_:N652487c9304d4c70b0d3224b3c9146d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -120,8 +102,26 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "http://orcid.org/0000-0001-7787-7853",
-      "@type": "sc:Person"
+      "@id": "_:N99052675e3244ee59eb74596e5d1aa06",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nc781789cb58f41309b849587c7c8f80c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Sequence report"
     }
   ]
 }

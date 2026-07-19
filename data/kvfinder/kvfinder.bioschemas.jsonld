@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,39 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-15-197",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/kvfinder",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5877113bf57d445e890243939e66f6a6"
+        "@id": "_:N686e72d925804dcaa01a1ab142bf3cfb"
       },
       "bsc:output": {
-        "@id": "_:N7bb1265ca98e4e02ada7e33bb8f9ad7a"
+        "@id": "_:Ne09590efb1094b5c8df7a27e4450baf6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Plug-in"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0081"
+          "@id": "edam:topic_3332"
         },
         {
-          "@id": "edam:topic_3332"
+          "@id": "edam:topic_2814"
         },
         {
           "@id": "edam:topic_1317"
         },
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
         "pubmed:24938294",
+        "pmcid:PMC4071799",
         {
           "@id": "https://doi.org/10.1186/1471-2105-15-197"
-        },
-        "pmcid:PMC4071799"
+        }
       ],
       "sc:description": "The KVFinder software, originally published in 2014, is DEPRECATED.\n\nWe published more recent software: parKVFinder and pyKVFinder.",
       "sc:featureList": [
@@ -96,7 +92,7 @@
       "sc:url": "https://sourceforge.net/projects/kvfinder"
     },
     {
-      "@id": "_:N5877113bf57d445e890243939e66f6a6",
+      "@id": "_:N686e72d925804dcaa01a1ab142bf3cfb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -107,20 +103,24 @@
       "sc:name": "Structure"
     },
     {
-      "@id": "_:N7bb1265ca98e4e02ada7e33bb8f9ad7a",
+      "@id": "_:Ne09590efb1094b5c8df7a27e4450baf6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2878"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Protein structural motif"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-15-197",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

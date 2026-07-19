@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv705",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ledpred",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Aitor Gonzalez",
       "bsc:input": [
         {
-          "@id": "_:Ncdef27e42fa64aaba7a7d33f41306476"
+          "@id": "_:Nbb3da026f2f34e60bc448e31e2b0deb7"
         },
         {
-          "@id": "_:N13b0fa4773ea482487f59cf7cfeee048"
+          "@id": "_:Nd166210bac5947ae9b18309cb10ca910"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb2529a55b94f43ddad61e504f30fac40"
+          "@id": "_:N2f663a6e608a443c978ad7d394e7d28b"
         },
         {
-          "@id": "_:N4889b76beed84201aeafe883101555e5"
+          "@id": "_:N8a1005228a9942e3923d0a63e5013c35"
         },
         {
-          "@id": "_:Nfe96932963a745e795c151d43a54d6b7"
+          "@id": "_:Ncc3cf46d28f2499ea37e74f106153a03"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -91,8 +87,8 @@
       "sc:license": "MIT",
       "sc:name": "LedPred",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -102,55 +98,26 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/LedPred.html"
     },
     {
-      "@id": "_:Nb2529a55b94f43ddad61e504f30fac40",
+      "@id": "_:Nbb3da026f2f34e60bc448e31e2b0deb7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_1276"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3003"
         },
         {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N4889b76beed84201aeafe883101555e5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3005"
         }
       ],
-      "sc:name": "Plot"
+      "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:Nfe96932963a745e795c151d43a54d6b7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:Ncdef27e42fa64aaba7a7d33f41306476",
+      "@id": "_:Nd166210bac5947ae9b18309cb10ca910",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2854"
@@ -169,23 +136,56 @@
       "sc:name": "Position-specific scoring matrix"
     },
     {
-      "@id": "_:N13b0fa4773ea482487f59cf7cfeee048",
+      "@id": "_:N2f663a6e608a443c978ad7d394e7d28b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1276"
+        "@id": "edam:data_0950"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3005"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Nucleic acid features"
+      "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "_:N8a1005228a9942e3923d0a63e5013c35",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Ncc3cf46d28f2499ea37e74f106153a03",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv705",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

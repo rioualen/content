@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4262",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/digenome-seq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N994907a5c093470ea2b38246a40b732d"
+        "@id": "_:N8848a7e6ed7b4eaa9c878a190d506994"
       },
       "bsc:output": {
-        "@id": "_:Naa56056f83694bf584a771df8ac03221"
+        "@id": "_:N1c8174ba4cbc4c98a61546429f5312e1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -66,20 +70,20 @@
       "sc:description": "A web tool for in vitro identification of potential nuclease (e.g. CRISPR-Cas method) off-target sites from whole-genome sequencing data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2428"
-        },
-        {
           "@id": "edam:operation_0415"
         },
         {
           "@id": "edam:operation_0292"
+        },
+        {
+          "@id": "edam:operation_2428"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "Digenome-seq web tool",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -88,7 +92,7 @@
       "sc:url": "http://www.rgenome.net/digenome-js/#!"
     },
     {
-      "@id": "_:N994907a5c093470ea2b38246a40b732d",
+      "@id": "_:N8848a7e6ed7b4eaa9c878a190d506994",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0848"
@@ -99,7 +103,7 @@
       "sc:name": "Raw sequence"
     },
     {
-      "@id": "_:Naa56056f83694bf584a771df8ac03221",
+      "@id": "_:N1c8174ba4cbc4c98a61546429f5312e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -108,10 +112,6 @@
         "@id": "edam:format_3617"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4262",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

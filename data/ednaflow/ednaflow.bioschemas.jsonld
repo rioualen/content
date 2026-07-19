@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-2299-2050",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1111/1755-0998.13356",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ednaflow",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-2299-2050"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
@@ -71,10 +63,10 @@
           "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_3933"
         },
         {
-          "@id": "edam:operation_3933"
+          "@id": "edam:operation_3460"
         },
         {
           "@id": "edam:operation_2428"
@@ -83,6 +75,14 @@
       "sc:license": "GPL-3.0",
       "sc:name": "eDNAFlow",
       "sc:url": "https://github.com/mahsa-mousavi/eDNAFlow"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2299-2050",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1111/1755-0998.13356",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13059-015-0783-1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gesper",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Fabian Schmich",
       "bsc:input": {
-        "@id": "_:Nd374570b77ab423493f006b4791856b5"
+        "@id": "_:N01eaae5c2ad7458f8db1e958a8771740"
       },
       "bsc:output": [
         {
-          "@id": "_:N6d55bc31d55a44508da46a246a9768b7"
+          "@id": "_:Nc1e9baad458c4c35a7f14fa99b6d8e27"
         },
         {
-          "@id": "_:N9ed19a5309814c2a9179f0dcfae808fb"
+          "@id": "_:Nfa0c41e62ff6469ab54dee17fa15b414"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -82,9 +86,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "gespeR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/gespeR.html"
@@ -93,7 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gespeR.html"
     },
     {
-      "@id": "_:Nd374570b77ab423493f006b4791856b5",
+      "@id": "_:N01eaae5c2ad7458f8db1e958a8771740",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -104,7 +108,7 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N6d55bc31d55a44508da46a246a9768b7",
+      "@id": "_:Nc1e9baad458c4c35a7f14fa99b6d8e27",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -120,7 +124,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N9ed19a5309814c2a9179f0dcfae808fb",
+      "@id": "_:Nfa0c41e62ff6469ab54dee17fa15b414",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -134,10 +138,6 @@
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s13059-015-0783-1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

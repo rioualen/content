@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,89 +40,97 @@
       "@type": "sc:Person"
     },
     {
+      "@id": "https://orcid.org/0000-0002-7848-8216",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9373-7930",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/fireprot-asr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "FireProt ASR team",
       "bsc:input": {
-        "@id": "_:N74d49cabb1df402a9f2c591257ec5198"
+        "@id": "_:N9840e8c6246d4800bbfebdfa57dbd74f"
       },
       "bsc:output": [
         {
-          "@id": "_:N05394704dcfe4c39b60afff093338d08"
+          "@id": "_:Nfccf3f0d148940b4b196885b5ad2c245"
         },
         {
-          "@id": "_:N877062fb76d54723bae49c82a9aad7cf"
+          "@id": "_:Nfb76d750e3f24374bcd60484eb131be2"
         },
         {
-          "@id": "_:N245b9334e3614c4f8137da78176104c0"
+          "@id": "_:Nf1f7639e6f124a618a520418375adc18"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3293"
         },
         {
           "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0001-9373-7930"
+          "@id": "https://orcid.org/0000-0003-3139-3700"
         },
         {
-          "@id": "https://orcid.org/0000-0003-3139-3700"
+          "@id": "https://orcid.org/0000-0001-9373-7930"
         }
       ],
       "sc:contributor": [
-        "Rayyan Khan",
+        {
+          "@id": "https://orcid.org/0000-0002-7848-8216"
+        },
         {
           "@id": "https://orcid.org/0000-0002-6803-0340"
         },
-        {
-          "@id": "https://orcid.org/0000-0002-7848-8216"
-        }
+        "Rayyan Khan"
       ],
       "sc:description": "FireProt-ASR is a web server for an automated calculation of ancestral sequences. Fireprot-ASR allows you to perform ancestral sequence reconstruction starting from a single protein sequence. The pipeline first compiles a dataset of catalytically similar protein sequences, aligns them, construct their phylogenetic tree, and then reconstruct ancestral nodes. It also allows user to input their own data and start from a different point in the pipeline.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3478"
+          "@id": "edam:operation_3745"
         },
         {
           "@id": "edam:operation_0492"
         },
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_3478"
         },
         {
-          "@id": "edam:operation_3745"
+          "@id": "edam:operation_0346"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Proprietary",
       "sc:name": "FireProt ASR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "Masaryk University, Brno, Czech Republic",
-        "Loschmidt Laboratories",
+        "Brno University of Technology, Brno, Czech Republic",
         "ELIXIR-CZ",
         "International Centre for Clinical Research, Brno, Czech Republic",
-        "Brno University of Technology, Brno, Czech Republic"
+        "Loschmidt Laboratories",
+        "Masaryk University, Brno, Czech Republic"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://loschmidt.chemi.muni.cz/fireprotasr/?action=example&"
+          "@id": "https://loschmidt.chemi.muni.cz/fireprotasr/?action=terms&"
         },
         {
-          "@id": "https://loschmidt.chemi.muni.cz/fireprotasr/?action=terms&"
+          "@id": "https://loschmidt.chemi.muni.cz/fireprotasr/?action=example&"
         },
         {
           "@id": "https://loschmidt.chemi.muni.cz/fireprotasr/?action=help&"
@@ -132,7 +140,7 @@
       "sc:url": "https://loschmidt.chemi.muni.cz/fireprotasr/"
     },
     {
-      "@id": "_:N74d49cabb1df402a9f2c591257ec5198",
+      "@id": "_:N9840e8c6246d4800bbfebdfa57dbd74f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -143,7 +151,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N05394704dcfe4c39b60afff093338d08",
+      "@id": "_:Nfccf3f0d148940b4b196885b5ad2c245",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -154,18 +162,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N877062fb76d54723bae49c82a9aad7cf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1384"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1984"
-      },
-      "sc:name": "Protein sequence alignment"
-    },
-    {
-      "@id": "_:N245b9334e3614c4f8137da78176104c0",
+      "@id": "_:Nfb76d750e3f24374bcd60484eb131be2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -176,15 +173,18 @@
       "sc:name": "Protein sequence"
     },
     {
+      "@id": "_:Nf1f7639e6f124a618a520418375adc18",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1384"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1984"
+      },
+      "sc:name": "Protein sequence alignment"
+    },
+    {
       "@id": "https://orcid.org/0000-0003-3139-3700",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9373-7930",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7848-8216",
       "@type": "sc:Person"
     }
   ]

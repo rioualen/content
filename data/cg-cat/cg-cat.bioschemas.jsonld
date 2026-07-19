@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,52 +36,44 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1748-7188-5-3",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp690",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cg-cat",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0a69bc4a50eb4da8861ac7b7e4e584e3"
+          "@id": "_:Nd8cd72c1528c45b897ba74466dae160e"
         },
         {
-          "@id": "_:Na92fb7d1f4434af8b5a1664cae31874a"
+          "@id": "_:Na413e6fc32544062a513ed57c272ce05"
         },
         {
-          "@id": "_:N9822ccdc4c64413db4328a4cf1d0ffbf"
+          "@id": "_:N782747a99d8d40c3be9bfc12cba1b557"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb85cd13e29e34e30be06f20e25f9c1b3"
+          "@id": "_:Nd544abee43764e2da2bc491db8f41c8a"
         },
         {
-          "@id": "_:N518ec261b29040698f6d0be110ee2424"
+          "@id": "_:N9620994494f84bd488bd4b4cac2e41bc"
         },
         {
-          "@id": "_:Nde3f2ed8da0840a09636a9fe93750324"
+          "@id": "_:N903ca3c486dc41768a343323a6daaa29"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0196"
       },
       "sc:author": "Peter Husemann",
       "sc:citation": [
-        "pmcid:PMC2826331",
-        "pubmed:20047659",
+        "pubmed:20015948",
+        "pmcid:PMC2820676",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp690"
         },
-        "pmcid:PMC2820676",
-        "pubmed:20015948",
+        "pubmed:20047659",
+        "pmcid:PMC2826331",
         {
           "@id": "https://doi.org/10.1186/1748-7188-5-3"
         }
@@ -89,26 +81,26 @@
       "sc:description": "With current sequencing technologies, it is feasible to generate a lot of reads for a given genome. However, the assembly usually ends up in a set of contigs with gaps between them. If the sequences of one (or several) related genome(s) are already known, this information can be used to estimate the order and orientation of the contigs towards each other. This helps in the finishing phase of a sequencing project since it eases the design of specific primer sequences to fill the gaps.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0564"
-        },
-        {
           "@id": "edam:operation_0490"
         },
         {
           "@id": "edam:operation_3216"
+        },
+        {
+          "@id": "edam:operation_0564"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "CG-CAT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "Bielefeld University",
         "BiBiServ",
+        "Bielefeld University",
         "CeBiTec"
       ],
       "sc:softwareHelp": {
@@ -118,31 +110,7 @@
       "sc:url": "http://bibiserv.cebitec.uni-bielefeld.de/cgcat"
     },
     {
-      "@id": "_:Nb85cd13e29e34e30be06f20e25f9c1b3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0862"
-      },
-      "sc:name": "Dotplot"
-    },
-    {
-      "@id": "_:N518ec261b29040698f6d0be110ee2424",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3181"
-      },
-      "sc:name": "Sequence assembly report"
-    },
-    {
-      "@id": "_:Nde3f2ed8da0840a09636a9fe93750324",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3181"
-      },
-      "sc:name": "Sequence assembly report"
-    },
-    {
-      "@id": "_:N0a69bc4a50eb4da8861ac7b7e4e584e3",
+      "@id": "_:Nd8cd72c1528c45b897ba74466dae160e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
@@ -153,7 +121,18 @@
       "sc:name": "Nucleic acid sequence (raw)"
     },
     {
-      "@id": "_:Na92fb7d1f4434af8b5a1664cae31874a",
+      "@id": "_:Na413e6fc32544062a513ed57c272ce05",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2975"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1954"
+      },
+      "sc:name": "Nucleic acid sequence (raw)"
+    },
+    {
+      "@id": "_:N782747a99d8d40c3be9bfc12cba1b557",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -164,15 +143,36 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N9822ccdc4c64413db4328a4cf1d0ffbf",
+      "@id": "_:Nd544abee43764e2da2bc491db8f41c8a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2975"
+        "@id": "edam:data_0862"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1954"
+      "sc:name": "Dotplot"
+    },
+    {
+      "@id": "_:N9620994494f84bd488bd4b4cac2e41bc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3181"
       },
-      "sc:name": "Nucleic acid sequence (raw)"
+      "sc:name": "Sequence assembly report"
+    },
+    {
+      "@id": "_:N903ca3c486dc41768a343323a6daaa29",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3181"
+      },
+      "sc:name": "Sequence assembly report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp690",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1748-7188-5-3",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,8 +40,12 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkt1127",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0001-9046-6370",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5092-1284",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/firedb",
@@ -51,53 +55,53 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nf471430830f848328e74684d35fba2b2"
+          "@id": "_:Nf3480a7899c14640a35128989226d3f4"
         },
         {
-          "@id": "_:N2f7539696f8447c3bf3f4b2a70c3aa0b"
+          "@id": "_:N81522f64bc1d49b1803825b07895f5af"
         },
         {
-          "@id": "_:N8da54c0d317848fd89367921fbec9ca2"
+          "@id": "_:N8386192c6b6f4e06905325ce4441d68d"
         }
       ],
       "bsc:output": {
-        "@id": "_:N128ec329703e401b8168a51782389654"
+        "@id": "_:N35e7a02a0a4342e69e368675b5c82d35"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_0154"
-        },
         {
           "@id": "edam:topic_3534"
         },
         {
           "@id": "edam:topic_3510"
+        },
+        {
+          "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-9446-8063"
+          "@id": "https://orcid.org/0000-0002-5092-1284"
         },
         {
-          "@id": "https://orcid.org/0000-0002-5092-1284"
+          "@id": "https://orcid.org/0000-0002-9446-8063"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC1716728",
-        "pubmed:24243844",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkt1127"
-        },
         "pubmed:17132832",
+        "pmcid:PMC1716728",
         {
           "@id": "https://doi.org/10.1093/nar/gkl897"
         },
-        "pmcid:PMC3965074"
+        "pubmed:24243844",
+        "pmcid:PMC3965074",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkt1127"
+        }
       ],
       "sc:description": "A curated inventory of catalytic and biologically relevant small ligand-binding sites.",
       "sc:featureList": {
@@ -107,9 +111,9 @@
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "FireDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://firedb.bioinfo.cnio.es/html/FireDB_help.html"
@@ -118,29 +122,7 @@
       "sc:url": "http://firedb.bioinfo.cnio.es/"
     },
     {
-      "@id": "_:Nf471430830f848328e74684d35fba2b2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2007"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "UniProt keyword"
-    },
-    {
-      "@id": "_:N2f7539696f8447c3bf3f4b2a70c3aa0b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:N8da54c0d317848fd89367921fbec9ca2",
+      "@id": "_:Nf3480a7899c14640a35128989226d3f4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -151,7 +133,29 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N128ec329703e401b8168a51782389654",
+      "@id": "_:N81522f64bc1d49b1803825b07895f5af",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:N8386192c6b6f4e06905325ce4441d68d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2007"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "UniProt keyword"
+    },
+    {
+      "@id": "_:N35e7a02a0a4342e69e368675b5c82d35",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -159,15 +163,11 @@
       "sc:name": "Protein features"
     },
     {
+      "@id": "https://doi.org/10.1093/nar/gkt1127",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-9446-8063",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9046-6370",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5092-1284",
       "@type": "sc:Person"
     }
   ]

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/elbow",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,36 +47,36 @@
         "Xiangli Zhang"
       ],
       "bsc:input": {
-        "@id": "_:N5b045b7886e1416d9c2571c6bc24a701"
+        "@id": "_:Nb573ffa331b846d58049613c9eaf082f"
       },
       "bsc:output": [
         {
-          "@id": "_:N98a34e7531de49b8997434edd03da703"
+          "@id": "_:N24ce0a67d3e342abab81abd4151e6277"
         },
         {
-          "@id": "_:N58fd1a5f476646e786ccc02846f484b7"
+          "@id": "_:N752cbdc67d40498aaaaa294301f687d1"
         },
         {
-          "@id": "_:Ne7be0bf82de14214b65f92042a998905"
+          "@id": "_:N6c9cbaac85ff4731838947136b48f239"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3518"
-        },
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3518"
         },
         {
           "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
@@ -88,9 +92,9 @@
       },
       "sc:name": "ELBOW",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ELBOW.html"
@@ -99,23 +103,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ELBOW.html"
     },
     {
-      "@id": "_:N98a34e7531de49b8997434edd03da703",
+      "@id": "_:Nb573ffa331b846d58049613c9eaf082f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_0928"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N58fd1a5f476646e786ccc02846f484b7",
+      "@id": "_:N24ce0a67d3e342abab81abd4151e6277",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -131,35 +130,36 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Ne7be0bf82de14214b65f92042a998905",
+      "@id": "_:N752cbdc67d40498aaaaa294301f687d1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N6c9cbaac85ff4731838947136b48f239",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:N5b045b7886e1416d9c2571c6bc24a701",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.6b00174",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/swisssimilarity",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd7caf68023cf4695b2f499f6df37cf3b"
+        "@id": "_:Ne45205d65603473ea7318294f51ca6c3"
       },
       "bsc:output": {
-        "@id": "_:Na604a9f724204840b2dc461b2f6ca119"
+        "@id": "_:Na19d60532cd1414c8404dba41e29eaed"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0209"
+          "@id": "edam:topic_2258"
         },
         {
-          "@id": "edam:topic_2258"
+          "@id": "edam:topic_0209"
         }
       ],
       "sc:citation": [
+        "pubmed:27391578",
         {
           "@id": "https://doi.org/10.1021/acs.jcim.6b00174"
-        },
-        "pubmed:27391578"
+        }
       ],
       "sc:description": "Allows the rapid screening of small to very large-scale libraries of drugs, bioactive small molecules, commercially available compounds, and an ultra-large library of virtual compounds readily synthesizable from commercially available reagents. The virtual screening can be performed using molecular fingerprints, as well as superpositional or fast non-superpositional 3D shape similarity approaches.",
       "sc:featureList": {
@@ -71,8 +67,8 @@
       "sc:name": "SwissSimilarity",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
       "sc:softwareHelp": {
@@ -82,7 +78,7 @@
       "sc:url": "http://www.swisssimilarity.ch/"
     },
     {
-      "@id": "_:Nd7caf68023cf4695b2f499f6df37cf3b",
+      "@id": "_:Ne45205d65603473ea7318294f51ca6c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
@@ -90,12 +86,16 @@
       "sc:name": "SMILES string"
     },
     {
-      "@id": "_:Na604a9f724204840b2dc461b2f6ca119",
+      "@id": "_:Na19d60532cd1414c8404dba41e29eaed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jcim.6b00174",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw393",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/conspred",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Rattei",
       "bsc:input": {
-        "@id": "_:Ncacabf5137a34f619e9dbc322922817b"
+        "@id": "_:N60f423095de24a02ad72def5a63e75d9"
       },
       "bsc:output": {
-        "@id": "_:N282cff030dc6422b912362f4cebf7a87"
+        "@id": "_:N299d9f6435f448038f6c5c1a96f681da"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2259"
@@ -66,8 +62,8 @@
       },
       "sc:name": "Conspred",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://cube.univie.ac.at/conspred"
@@ -76,7 +72,7 @@
       "sc:url": "https://sourceforge.net/projects/conspred/"
     },
     {
-      "@id": "_:Ncacabf5137a34f619e9dbc322922817b",
+      "@id": "_:N60f423095de24a02ad72def5a63e75d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -84,12 +80,16 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N282cff030dc6422b912362f4cebf7a87",
+      "@id": "_:N299d9f6435f448038f6c5c1a96f681da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
       },
       "sc:name": "Feature table"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw393",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

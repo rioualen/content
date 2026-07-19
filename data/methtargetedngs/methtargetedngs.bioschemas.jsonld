@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/methtargetedngs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Muhammad Ahmer Jamil",
       "bsc:input": {
-        "@id": "_:N324853fb8a974ccdad6a250bd22e8cf3"
+        "@id": "_:N819176988a81499d8db0bd9703b523da"
       },
       "bsc:output": {
-        "@id": "_:Nb3b59559ded14edaa4d7165d5a32c35b"
+        "@id": "_:Nefc23699e37740c58d93df7562e3ecdc"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3295"
         },
         {
-          "@id": "edam:topic_3295"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
         "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "Perform step by step methylation analysis of Next Generation Sequencing data.",
       "sc:featureList": {
@@ -73,8 +77,8 @@
       "sc:name": "MethTargetedNGS",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/MethTargetedNGS.html"
@@ -83,18 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/MethTargetedNGS.html"
     },
     {
-      "@id": "_:Nb3b59559ded14edaa4d7165d5a32c35b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N324853fb8a974ccdad6a250bd22e8cf3",
+      "@id": "_:N819176988a81499d8db0bd9703b523da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -105,8 +98,15 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nefc23699e37740c58d93df7562e3ecdc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Heat map"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/pro.5560051107",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netpicorna",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3b8404fc2907485ab053fbd742e2f83c"
+        "@id": "_:N3bbc3d25d924443ea5f35c9b4f03e40e"
       },
       "bsc:output": [
         {
-          "@id": "_:N6d299992ff8e45718ef338df88664920"
+          "@id": "_:N4cf1dd10503344459a7e270c1e34d9d6"
         },
         {
-          "@id": "_:N5ac86f32b6b9410abffe2613a8734222"
+          "@id": "_:N9e5c4c5fc9194a83ab4b8fa129079c3b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_3510"
         },
         {
-          "@id": "edam:topic_3510"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
         "pubmed:8931139",
+        "pmcid:PMC2143287",
         {
           "@id": "https://doi.org/10.1002/pro.5560051107"
-        },
-        "pmcid:PMC2143287"
+        }
       ],
       "sc:description": "Neural network predictions of cleavage sites of picornaviral proteases.",
       "sc:featureList": {
@@ -82,29 +86,7 @@
       "sc:url": "http://cbs.dtu.dk/services/NetPicoRNA/"
     },
     {
-      "@id": "_:N6d299992ff8e45718ef338df88664920",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N5ac86f32b6b9410abffe2613a8734222",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N3b8404fc2907485ab053fbd742e2f83c",
+      "@id": "_:N3bbc3d25d924443ea5f35c9b4f03e40e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -115,8 +97,26 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1002/pro.5560051107",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4cf1dd10503344459a7e270c1e34d9d6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N9e5c4c5fc9194a83ab4b8fa129079c3b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Sequence report"
     }
   ]
 }

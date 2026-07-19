@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jproteome.9b00099",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mineXpert",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na4824e8600bc4da29c463333cdffcea6"
+        "@id": "_:Nc1a4332015f24e46a6da5ad2554d7481"
       },
       "bsc:output": {
-        "@id": "_:N6674c433070447018cda0fe79b9e2ba8"
+        "@id": "_:N6159269f431b4abcb8c7b37b38b23410"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Desktop application"
+        "Desktop application",
+        "Script"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3332"
+          "@id": "edam:topic_3370"
         },
         {
           "@id": "edam:topic_3292"
         },
         {
-          "@id": "edam:topic_3370"
+          "@id": "edam:topic_3332"
         }
       ],
       "sc:citation": [
@@ -76,19 +72,19 @@
           "@id": "edam:operation_3203"
         },
         {
-          "@id": "edam:operation_3694"
+          "@id": "edam:operation_3632"
         },
         {
-          "@id": "edam:operation_3632"
+          "@id": "edam:operation_3694"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "mineXpert",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://msxpertsuite.org/wiki/pmwiki.php/Main/UserManual"
@@ -96,7 +92,15 @@
       "sc:url": "http://msxpertsuite.org"
     },
     {
-      "@id": "_:N6674c433070447018cda0fe79b9e2ba8",
+      "@id": "_:Nc1a4332015f24e46a6da5ad2554d7481",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N6159269f431b4abcb8c7b37b38b23410",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -104,12 +108,8 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Na4824e8600bc4da29c463333cdffcea6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:name": "Mass spectrometry data"
+      "@id": "https://doi.org/10.1021/acs.jproteome.9b00099",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

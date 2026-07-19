@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1005350",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mindboggle",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Arno Klein",
       "bsc:input": {
-        "@id": "_:N40ebddadcbb547c39be85a9b361091d4"
+        "@id": "_:N65fcbceab54a44fd9b19d53a57f9b819"
       },
       "bsc:output": {
-        "@id": "_:N3f1de9666d6d47378491b003032fea6c"
+        "@id": "_:Nf546ea68f00541a2b74b35f396a4292b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3334"
+          "@id": "edam:topic_3444"
         },
         {
-          "@id": "edam:topic_3444"
+          "@id": "edam:topic_3334"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC5322885",
         "pubmed:28231282",
+        "pmcid:PMC5322885",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1005350"
         }
@@ -81,15 +85,7 @@
       "sc:url": "http://mindboggle.info/"
     },
     {
-      "@id": "_:N3f1de9666d6d47378491b003032fea6c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N40ebddadcbb547c39be85a9b361091d4",
+      "@id": "_:N65fcbceab54a44fd9b19d53a57f9b819",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3442"
@@ -100,8 +96,12 @@
       "sc:name": "MRI image"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1005350",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf546ea68f00541a2b74b35f396a4292b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
     }
   ]
 }

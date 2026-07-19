@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,16 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2021.11.04.467355",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/niqki",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N2f204efa6b714e2997ddcb664df14989"
+        "@id": "_:Nb9d88b020ae543369f3daeab5bfd0a8f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -60,24 +64,24 @@
           "@id": "edam:operation_3211"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_1812"
         },
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "AGPL-3.0",
       "sc:name": "NIQKI",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://github.com/Malfoy/NIQKI"
     },
     {
-      "@id": "_:N2f204efa6b714e2997ddcb664df14989",
+      "@id": "_:Nb9d88b020ae543369f3daeab5bfd0a8f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -91,10 +95,6 @@
         }
       ],
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2021.11.04.467355",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,7 +39,7 @@
       "@id": "https://bio.tools/orderedlist",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Claudio Lottaz",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -56,10 +56,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:16844712",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btl385"
-        },
-        "pubmed:16844712"
+        }
       ],
       "sc:description": "Detection of similarities between ordered lists of genes. Thereby, either simple lists can be compared or gene expression data can be used to deduce the lists. Significance of similarities is evaluated by shuffling lists or by resampling in microarray data, respectively.",
       "sc:featureList": {
@@ -69,8 +69,8 @@
       "sc:name": "OrderedList",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/OrderedList.html"

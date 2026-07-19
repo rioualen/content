@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,58 +36,62 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bsgenome",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "H. Pagès",
       "bsc:input": {
-        "@id": "_:Nf4eb4b0d017147e8807fea9a06caf60c"
+        "@id": "_:N560da6ebc174412b95b8ec9c58e43efd"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb891b4030cd342d186e6ad36b0d49258"
+          "@id": "_:N099bdadbfd38469081806701e21e570f"
         },
         {
-          "@id": "_:Nc76fec1f501b417385f2ae4e3ae05317"
+          "@id": "_:Na81a707c4a0749478641a7ee2468374e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "Infrastructure shared by all the Biostrings-based genome data packages.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_1812"
+        },
         {
           "@id": "edam:operation_2403"
         },
         {
           "@id": "edam:operation_0368"
-        },
-        {
-          "@id": "edam:operation_1812"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "BSgenome",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/BSgenome.html"
@@ -96,18 +100,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/BSgenome.html"
     },
     {
-      "@id": "_:Nb891b4030cd342d186e6ad36b0d49258",
+      "@id": "_:N560da6ebc174412b95b8ec9c58e43efd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1919"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:Nc76fec1f501b417385f2ae4e3ae05317",
+      "@id": "_:N099bdadbfd38469081806701e21e570f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -118,24 +127,15 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nf4eb4b0d017147e8807fea9a06caf60c",
+      "@id": "_:Na81a707c4a0749478641a7ee2468374e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_1919"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
       "sc:name": "Sequence record"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

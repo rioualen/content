@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku1161",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/imgt_hla-sequence_alignment",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "James Robinson",
       "bsc:input": {
-        "@id": "_:Na162d847087b4291a38018a57ab241e0"
+        "@id": "_:Na215f820519043faab7bdb8cc8547d1b"
       },
       "bsc:output": {
-        "@id": "_:N62da3a14cde74061a39778dd179a7dcd"
+        "@id": "_:Nc7068a73015b45329701b878708e7239"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -71,9 +75,9 @@
       ],
       "sc:name": "IMGT HLA Sequence Alignment",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -88,15 +92,7 @@
       "sc:url": "http://www.ebi.ac.uk/ipd/imgt/hla/align.html"
     },
     {
-      "@id": "_:N62da3a14cde74061a39778dd179a7dcd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Na162d847087b4291a38018a57ab241e0",
+      "@id": "_:Na215f820519043faab7bdb8cc8547d1b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -104,8 +100,12 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gku1161",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc7068a73015b45329701b878708e7239",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

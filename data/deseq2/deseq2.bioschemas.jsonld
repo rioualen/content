@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13059-014-0550-8",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/deseq2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbec8c653b8ab45b4ad8a7c1d2abc8713"
+        "@id": "_:N78ab4e97940d4b24945eecc8d855c0f7"
       },
       "bsc:output": {
-        "@id": "_:N82e22aba274e4e51a60955d573765e80"
+        "@id": "_:Nea5e23ea08304a22b1688584743024c6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3170"
@@ -59,11 +55,11 @@
         "Wolfgang Huber"
       ],
       "sc:citation": [
+        "pubmed:25516281",
+        "pmcid:PMC4302049",
         {
           "@id": "https://doi.org/10.1186/s13059-014-0550-8"
-        },
-        "pmcid:PMC4302049",
-        "pubmed:25516281"
+        }
       ],
       "sc:description": "R/Bioconductor package for differential gene expression analysis based on the negative binomial distribution. Estimate variance-mean dependence in count data from high-throughput sequencing assays and test for differential expression based on a model using the negative binomial distribution.",
       "sc:featureList": [
@@ -78,8 +74,8 @@
       "sc:license": "LGPL-2.1",
       "sc:name": "DESeq2",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "hdhub",
@@ -90,7 +86,7 @@
       "sc:url": "http://bioconductor.org/packages/DESeq2/"
     },
     {
-      "@id": "_:Nbec8c653b8ab45b4ad8a7c1d2abc8713",
+      "@id": "_:N78ab4e97940d4b24945eecc8d855c0f7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -101,7 +97,7 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "_:N82e22aba274e4e51a60955d573765e80",
+      "@id": "_:Nea5e23ea08304a22b1688584743024c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -110,6 +106,10 @@
         "@id": "edam:format_3751"
       },
       "sc:name": "Gene name"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13059-014-0550-8",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

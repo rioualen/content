@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ensembl_genomes_plants_data_slicer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": [
         {
-          "@id": "_:N7768514f8fc1470caa763405a3970ade"
+          "@id": "_:N933f386731a14fcebce9f88054f63a63"
         },
         {
-          "@id": "_:N4e03e6e643e24c97b8e8b54a7f1c85ce"
+          "@id": "_:Naf14179fe0c743f6a3d774c31eb3df32"
         },
         {
-          "@id": "_:N92fe435233074053835acd748dac5c0f"
+          "@id": "_:N444cef2611094b5d8c485ee87730350b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3071"
       },
       "sc:author": "Ensembl Genomes team",
       "sc:citation": [
+        "pubmed:26687719",
+        "pmcid:PMC4702834",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
-        },
-        "pubmed:26687719",
-        "pmcid:PMC4702834"
+        }
       ],
       "sc:description": "Get a subset of data from a BAM | VCF file.",
       "sc:featureList": {
@@ -69,9 +73,9 @@
       },
       "sc:name": "Ensembl Genomes Plants data slicer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -86,39 +90,7 @@
       "sc:url": "http://plants.ensembl.org/tools.html"
     },
     {
-      "@id": "_:N7768514f8fc1470caa763405a3970ade",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N4e03e6e643e24c97b8e8b54a7f1c85ce",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N92fe435233074053835acd748dac5c0f",
+      "@id": "_:N933f386731a14fcebce9f88054f63a63",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -134,8 +106,36 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Naf14179fe0c743f6a3d774c31eb3df32",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N444cef2611094b5d8c485ee87730350b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.3897/BDJ.9.E71378",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/macer",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_0621"
         },
         {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:citation": [
@@ -61,36 +65,32 @@
       "sc:description": "Molecular Acquisition, Cleaning, and Evaluation in R (MACER) is an R package to assist biological researchers in assembling taxonomically and marker focused molecular sequence data set.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3200"
+        },
+        {
           "@id": "edam:operation_0310"
         },
         {
           "@id": "edam:operation_3192"
-        },
-        {
-          "@id": "edam:operation_3200"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "MACER",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://cran.r-project.org/web/packages/MACER/MACER.pdf"
+          "@id": "https://github.com/rgyoung6/MACER_example"
         },
         {
-          "@id": "https://github.com/rgyoung6/MACER_example"
+          "@id": "https://cran.r-project.org/web/packages/MACER/MACER.pdf"
         }
       ],
       "sc:url": "https://github.com/rgyoung6/MACER"
-    },
-    {
-      "@id": "https://doi.org/10.3897/BDJ.9.E71378",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

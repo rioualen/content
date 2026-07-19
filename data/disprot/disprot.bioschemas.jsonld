@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkab1082",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/disprot",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,38 +43,38 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N47b0807688494c79a6da94f8b87381c9"
+          "@id": "_:Nebfe3edf7ed44dbda3658eb68e7b08ae"
         },
         {
-          "@id": "_:N0b3e77c57fdc40daba615b0349e81222"
+          "@id": "_:N1fee228e9dfb440ebd2b4471d2b89322"
         },
         {
-          "@id": "_:Na111771ad2134c058623fac6dd63383a"
+          "@id": "_:N0ad7abc4cefd43ccac16d1607c3bd8f9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na3dab10ac5af4c8bb792bc4927e5c187"
+          "@id": "_:N29a383ff803f44d89704b40d1d18e326"
         },
         {
-          "@id": "_:Nf656d488cb2843609b582a1a34308bcb"
+          "@id": "_:N81fbd29ac9e24cc0955f133908daecfb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Database portal",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3538"
       },
       "sc:citation": [
+        "pubmed:34850135",
         "pmcid:PMC8728214",
         {
           "@id": "https://doi.org/10.1093/nar/gkab1082"
-        },
-        "pubmed:34850135"
+        }
       ],
       "sc:description": "Database of protein disorder. It is a community resource annotating protein sequences for intrinsically disordered regions from the literature.",
       "sc:featureList": [
@@ -96,9 +88,9 @@
       "sc:license": "CC-BY-NC-1.0",
       "sc:name": "Database of protein disorder (DisProt)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Padua, Department of Biomedical Sciences, BioComputing UP lab",
       "sc:softwareHelp": {
@@ -108,7 +100,7 @@
       "sc:url": "https://disprot.org/"
     },
     {
-      "@id": "_:N47b0807688494c79a6da94f8b87381c9",
+      "@id": "_:Nebfe3edf7ed44dbda3658eb68e7b08ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2723"
@@ -116,15 +108,7 @@
       "sc:name": "Protein ID (DisProt)"
     },
     {
-      "@id": "_:N0b3e77c57fdc40daba615b0349e81222",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Na111771ad2134c058623fac6dd63383a",
+      "@id": "_:N1fee228e9dfb440ebd2b4471d2b89322",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1009"
@@ -132,7 +116,15 @@
       "sc:name": "Protein name"
     },
     {
-      "@id": "_:Na3dab10ac5af4c8bb792bc4927e5c187",
+      "@id": "_:N0ad7abc4cefd43ccac16d1607c3bd8f9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N29a383ff803f44d89704b40d1d18e326",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -148,7 +140,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nf656d488cb2843609b582a1a34308bcb",
+      "@id": "_:N81fbd29ac9e24cc0955f133908daecfb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
@@ -162,6 +154,14 @@
         }
       ],
       "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkab1082",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

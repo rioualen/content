@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-5168-7074",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-1425-3530",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/scte",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,37 +43,37 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nabd761e3cef3477380370ec089f7413e"
+          "@id": "_:Naac02cf9d5a44b1c99d19635de98ebd9"
         },
         {
-          "@id": "_:N3745256977f34fd0a399c1e9b7b9ef6b"
+          "@id": "_:N1f36c9ebe15c42f4bf3abfd6df6115c8"
         },
         {
-          "@id": "_:Na011899009e24f0c8efb5d5917859f2c"
+          "@id": "_:Nc53d672b73384b00922b5a0721d9310c"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3902255e5d6c405982bdd3d2f0d1ca37"
+        "@id": "_:N4cb61e29e26647efa6d819ef068a291f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0659"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0798"
         },
         {
-          "@id": "edam:topic_0798"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:author": {
         "@id": "http://orcid.org/0000-0002-1425-3530"
       },
       "sc:citation": [
-        "pmcid:PMC7935913",
         "pubmed:33674594",
+        "pmcid:PMC7935913",
         {
           "@id": "https://doi.org/10.1038/s41467-021-21808-x"
         }
@@ -89,10 +81,10 @@
       "sc:description": "scTE builds genome indices for the fast alignment of reads to genes and Transposable elements (TEs).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_3800"
         },
         {
-          "@id": "edam:operation_3800"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -103,7 +95,40 @@
       "sc:url": "https://github.com/JiekaiLab/scTE"
     },
     {
-      "@id": "_:N3902255e5d6c405982bdd3d2f0d1ca37",
+      "@id": "_:Naac02cf9d5a44b1c99d19635de98ebd9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N1f36c9ebe15c42f4bf3abfd6df6115c8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2306"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:Nc53d672b73384b00922b5a0721d9310c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N4cb61e29e26647efa6d819ef068a291f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -119,37 +144,12 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nabd761e3cef3477380370ec089f7413e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2306"
-      },
-      "sc:name": "Nucleic acid features"
+      "@id": "http://orcid.org/0000-0002-1425-3530",
+      "@type": "sc:Person"
     },
     {
-      "@id": "_:N3745256977f34fd0a399c1e9b7b9ef6b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:Na011899009e24f0c8efb5d5917859f2c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
+      "@id": "http://orcid.org/0000-0001-5168-7074",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-021-21808-x",

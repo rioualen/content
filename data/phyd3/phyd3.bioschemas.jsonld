@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btx324",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/phyd3",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -44,21 +48,21 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nd1121c517dfa44a78432b566ee796477"
+          "@id": "_:N38263e7c9e094e218cd26c929ec877a0"
         },
         {
-          "@id": "_:N3b5c5c12a13846f3be00800d530b3e6f"
+          "@id": "_:N88f907dbc5be46dc994767233d8fe344"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb1d87f7d8303468eb5aab75ef2ce40c3"
+          "@id": "_:N1bedf7f44b76460cb3c30ce267ea978d"
         },
         {
-          "@id": "_:N84db13d1d11749a4b845f0cbb5786e6f"
+          "@id": "_:N92d389c1b99a41c295305cbc21e16dc9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3293"
@@ -74,33 +78,49 @@
       "sc:description": "Phylogenetic tree viewer based on d3.js. It was developed as an alternative to Archaeopteryx.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0567"
+          "@id": "edam:operation_0558"
         },
         {
-          "@id": "edam:operation_0558"
+          "@id": "edam:operation_0567"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "PhyD3",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "VIB",
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/vibbits/phyd3/blob/master/README.md"
+          "@id": "https://phyd3.bits.vib.be/documentation.html"
         },
         {
-          "@id": "https://phyd3.bits.vib.be/documentation.html"
+          "@id": "https://github.com/vibbits/phyd3/blob/master/README.md"
         }
       ],
       "sc:softwareVersion": "1.1",
       "sc:url": "https://phyd3.bits.vib.be"
     },
     {
-      "@id": "_:Nd1121c517dfa44a78432b566ee796477",
+      "@id": "_:N38263e7c9e094e218cd26c929ec877a0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1910"
+        },
+        {
+          "@id": "edam:format_3159"
+        }
+      ],
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N88f907dbc5be46dc994767233d8fe344",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -111,23 +131,15 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "_:N3b5c5c12a13846f3be00800d530b3e6f",
+      "@id": "_:N1bedf7f44b76460cb3c30ce267ea978d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0872"
+        "@id": "edam:data_1707"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3159"
-        },
-        {
-          "@id": "edam:format_1910"
-        }
-      ],
-      "sc:name": "Phylogenetic tree"
+      "sc:name": "Phylogenetic tree image"
     },
     {
-      "@id": "_:Nb1d87f7d8303468eb5aab75ef2ce40c3",
+      "@id": "_:N92d389c1b99a41c295305cbc21e16dc9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -136,18 +148,6 @@
         "@id": "edam:format_3159"
       },
       "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N84db13d1d11749a4b845f0cbb5786e6f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1707"
-      },
-      "sc:name": "Phylogenetic tree image"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx324",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

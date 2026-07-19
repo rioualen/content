@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,44 +40,44 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Micha Sammeth",
       "bsc:input": {
-        "@id": "_:N81c98dddc0aa444ca19c9d668a8cf15a"
+        "@id": "_:Nf72e777b08084784a1ca4a022db7ddcb"
       },
       "bsc:output": {
-        "@id": "_:Nb7fa3cab77624e34b02e2d10e40d4cde"
+        "@id": "_:N7826b447f5374f0f8daa710b894db589"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
       },
       "sc:author": "Micha Sammeth",
       "sc:citation": [
+        "pubmed:22113879",
+        "pmcid:PMC3290788",
         {
           "@id": "https://doi.org/10.1101/gr.121947.111"
-        },
-        "pmcid:PMC3290788",
-        "pubmed:22113879"
+        }
       ],
       "sc:description": "Alternative splicing trascriptional landscape visualization tool retrieves all alternative splicing events from generic transcript annotations.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0564"
+          "@id": "edam:operation_0361"
         },
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_0564"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "AStalavista",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "crg.eu",
-        "Lab Roderic Guigo Group"
+        "Lab Roderic Guigo Group",
+        "crg.eu"
       ],
       "sc:softwareHelp": {
         "@id": "http://sammeth.net/confluence/display/ASTA/2+-+Download"
@@ -86,7 +86,15 @@
       "sc:url": "http://sammeth.net/confluence/display/ASTA/Home"
     },
     {
-      "@id": "_:Nb7fa3cab77624e34b02e2d10e40d4cde",
+      "@id": "_:Nf72e777b08084784a1ca4a022db7ddcb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N7826b447f5374f0f8daa710b894db589",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -95,14 +103,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N81c98dddc0aa444ca19c9d668a8cf15a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:name": "Nucleic acid features"
     },
     {
       "@id": "https://doi.org/10.1101/gr.121947.111",

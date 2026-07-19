@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,27 +44,27 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd96ddc8a65664c4c805279f021b571fd"
+          "@id": "_:N457572ea8a9f410db8cf44c941237980"
         },
         {
-          "@id": "_:N3f8b268d51ea4a32a200f4b0054e4429"
+          "@id": "_:N180329ecf7454865b6dc66056a7588d7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8f788f4c016541ffb0c233ad4e853fd6"
+          "@id": "_:Nc984a5a43fc9420eafc765a5708030fb"
         },
         {
-          "@id": "_:N6bd4dd3838b545c185480e85b43b1ad9"
+          "@id": "_:Nb7fce437570d40dd9415569222a08f54"
         },
         {
-          "@id": "_:Ncf66501ec5d749eebd3b01666cfe15c0"
+          "@id": "_:N75c3c257fe414605bdc79bc609dbb929"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Database portal",
+        "Web application",
         "Web service"
       ],
       "sc:applicationSubCategory": [
@@ -72,24 +72,21 @@
           "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
+        "pubmed:23023984",
         "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pubmed:23023984"
+        }
       ],
       "sc:description": "A mine with peanut data from Legume Information Systems (LIS) PeanutBase",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0337"
-        },
         {
           "@id": "edam:operation_2422"
         },
@@ -98,28 +95,39 @@
         },
         {
           "@id": "edam:operation_0224"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "PeanutMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "0.10",
       "sc:url": "https://mines.legumeinfo.org/peanutmine"
     },
     {
-      "@id": "_:N8f788f4c016541ffb0c233ad4e853fd6",
+      "@id": "_:N457572ea8a9f410db8cf44c941237980",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2353"
+      },
+      "sc:name": "Ontology data"
+    },
+    {
+      "@id": "_:N180329ecf7454865b6dc66056a7588d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -127,15 +135,7 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:N6bd4dd3838b545c185480e85b43b1ad9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:Ncf66501ec5d749eebd3b01666cfe15c0",
+      "@id": "_:Nc984a5a43fc9420eafc765a5708030fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -143,20 +143,20 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:Nd96ddc8a65664c4c805279f021b571fd",
+      "@id": "_:Nb7fce437570d40dd9415569222a08f54",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:N75c3c257fe414605bdc79bc609dbb929",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N3f8b268d51ea4a32a200f4b0054e4429",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2353"
-      },
-      "sc:name": "Ontology data"
     }
   ]
 }

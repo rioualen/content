@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,70 +36,66 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1099/mgen.0.000927",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/transaap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7152c17323bf416bbf94eabf8a77e520"
+          "@id": "_:Nd875d8e7adcf46ef9c0dfebaf6a7436e"
         },
         {
-          "@id": "_:N3b9c3ec3c37444e5b6cdffcd499b871e"
+          "@id": "_:N60fa073640f14974baa15c83f9da2565"
         },
         {
-          "@id": "_:N2718e08a88294ca9875f825a6ddfd055"
+          "@id": "_:Nd65f2f9dd7fd4065a92470f22b1503ea"
         },
         {
-          "@id": "_:N0aaabebb51004676836a210f18c11961"
+          "@id": "_:N1dc898c03b534f3e9bf8ec688ce6a301"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3390"
+          "@id": "edam:topic_3297"
+        },
+        {
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_3301"
         },
         {
-          "@id": "edam:topic_3297"
+          "@id": "edam:topic_3390"
         },
         {
           "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": [
+        "pubmed:36748555",
+        "pmcid:PMC9973855",
         {
           "@id": "https://doi.org/10.1099/mgen.0.000927"
-        },
-        "pubmed:36748555",
-        "pmcid:PMC9973855"
+        }
       ],
       "sc:description": "an automated annotation pipeline for membrane transporter prediction in bacterial genomes.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2422"
+        },
         {
           "@id": "edam:operation_0362"
         },
         {
           "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_2422"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "TransAAP",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.membranetransport.org/transportDB2/downloads/TransAAP_userguide.pdf"
@@ -107,7 +103,31 @@
       "sc:url": "http://www.membranetransport.org/transportDB2/TransAAP_login.html"
     },
     {
-      "@id": "_:N7152c17323bf416bbf94eabf8a77e520",
+      "@id": "_:Nd875d8e7adcf46ef9c0dfebaf6a7436e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1870"
+      },
+      "sc:name": "Genus name"
+    },
+    {
+      "@id": "_:N60fa073640f14974baa15c83f9da2565",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1045"
+      },
+      "sc:name": "Species name"
+    },
+    {
+      "@id": "_:Nd65f2f9dd7fd4065a92470f22b1503ea",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1046"
+      },
+      "sc:name": "Strain name"
+    },
+    {
+      "@id": "_:N1dc898c03b534f3e9bf8ec688ce6a301",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -118,28 +138,8 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N3b9c3ec3c37444e5b6cdffcd499b871e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1046"
-      },
-      "sc:name": "Strain name"
-    },
-    {
-      "@id": "_:N2718e08a88294ca9875f825a6ddfd055",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1870"
-      },
-      "sc:name": "Genus name"
-    },
-    {
-      "@id": "_:N0aaabebb51004676836a210f18c11961",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1045"
-      },
-      "sc:name": "Species name"
+      "@id": "https://doi.org/10.1099/mgen.0.000927",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

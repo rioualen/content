@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1261/rna.079263.122",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mason_rna",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5059d8d561424d4a8834aee46311803c"
+          "@id": "_:N972329d8f34147559692ae5a250022df"
         },
         {
-          "@id": "_:N0cef492a73d74674bf8d2c1753bb6413"
+          "@id": "_:N5524c71792b94c0187ecbcf0023d985b"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc93356290491477ab72b806899f64ac1"
+        "@id": "_:Nc1317b2c6c76451484c32094fb045cb5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3512"
+        },
         {
           "@id": "edam:topic_0108"
         },
@@ -65,35 +72,32 @@
           "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_3512"
-        },
-        {
           "@id": "edam:topic_0749"
         }
       ],
       "sc:citation": [
+        "pubmed:36750372",
         "pmcid:PMC10158992",
         {
           "@id": "https://doi.org/10.1261/rna.079263.122"
-        },
-        "pubmed:36750372"
+        }
       ],
       "sc:description": "Design and off-target prediction for antisense oligomers targeting bacterial mRNAs with the MASON web server.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3095"
+          "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_3891"
         },
         {
-          "@id": "edam:operation_3223"
-        },
-        {
-          "@id": "edam:operation_3192"
+          "@id": "edam:operation_3095"
         },
         {
           "@id": "edam:operation_3680"
+        },
+        {
+          "@id": "edam:operation_3192"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -106,7 +110,7 @@
       "sc:url": "https://www.helmholtz-hiri.de/en/datasets/mason"
     },
     {
-      "@id": "_:N5059d8d561424d4a8834aee46311803c",
+      "@id": "_:N972329d8f34147559692ae5a250022df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1893"
@@ -114,32 +118,28 @@
       "sc:name": "Locus ID"
     },
     {
-      "@id": "_:N0cef492a73d74674bf8d2c1753bb6413",
+      "@id": "_:N5524c71792b94c0187ecbcf0023d985b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2305"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_2305"
         }
       ],
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nc93356290491477ab72b806899f64ac1",
+      "@id": "_:Nc1317b2c6c76451484c32094fb045cb5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
       },
       "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1261/rna.079263.122",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

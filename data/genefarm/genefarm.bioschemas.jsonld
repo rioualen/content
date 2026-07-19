@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,44 +36,40 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gki115",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/genefarm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd8a7f4ad986d4618a3d0e22cd471fd22"
+          "@id": "_:N031d284d2fec4adb94cc31aad380bb24"
         },
         {
-          "@id": "_:Nb59bc7dc79f547e5be50d50ca4f1e263"
+          "@id": "_:Nd1a02eaa0d9c40e080f2499ef1111654"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7b9834475b7b48cb9a16c36f788bccd9"
+          "@id": "_:Nfabfb4d2bd2b4879978c9ac82959bbc5"
         },
         {
-          "@id": "_:N44ee8f1c5980477aa5241f0b17b6a75a"
+          "@id": "_:N4e8d69c268ae49af9dcf471b87d86ee2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0780"
+          "@id": "edam:topic_0623"
         },
         {
-          "@id": "edam:topic_0623"
+          "@id": "edam:topic_0780"
         }
       ],
       "sc:citation": [
+        "pubmed:15608279",
+        "pmcid:PMC540069",
         {
           "@id": "https://doi.org/10.1093/nar/gki115"
-        },
-        "pubmed:15608279",
-        "pmcid:PMC540069"
+        }
       ],
       "sc:description": "Structural and functionnal annotation of plant gene and protein families by a network of experts.",
       "sc:featureList": {
@@ -83,7 +79,23 @@
       "sc:url": "http://urgi.versailles.inra.fr/Genefarm/index.htpl"
     },
     {
-      "@id": "_:N7b9834475b7b48cb9a16c36f788bccd9",
+      "@id": "_:N031d284d2fec4adb94cc31aad380bb24",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2295"
+      },
+      "sc:name": "Gene ID"
+    },
+    {
+      "@id": "_:Nd1a02eaa0d9c40e080f2499ef1111654",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2731"
+      },
+      "sc:name": "Protein family ID (GeneFarm)"
+    },
+    {
+      "@id": "_:Nfabfb4d2bd2b4879978c9ac82959bbc5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -94,7 +106,7 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N44ee8f1c5980477aa5241f0b17b6a75a",
+      "@id": "_:N4e8d69c268ae49af9dcf471b87d86ee2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0907"
@@ -105,20 +117,8 @@
       "sc:name": "Protein family report"
     },
     {
-      "@id": "_:Nd8a7f4ad986d4618a3d0e22cd471fd22",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2731"
-      },
-      "sc:name": "Protein family ID (GeneFarm)"
-    },
-    {
-      "@id": "_:Nb59bc7dc79f547e5be50d50ca4f1e263",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2295"
-      },
-      "sc:name": "Gene ID"
+      "@id": "https://doi.org/10.1093/nar/gki115",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

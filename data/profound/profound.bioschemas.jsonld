@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/ac991363o",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/profound",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nce2d436687bd499a920500846ef77e4a"
+        "@id": "_:N0c887ac83f22469cbfe98364ac4a6558"
       },
       "bsc:output": {
-        "@id": "_:N8fb83753e71e4be59a1875bbbcc2ec31"
+        "@id": "_:N16457ebef01d4ae7b3c85fc631bb137d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -59,24 +55,15 @@
         }
       ],
       "sc:citation": [
+        "pubmed:10857624",
         {
           "@id": "https://doi.org/10.1021/ac991363o"
-        },
-        "pubmed:10857624"
+        }
       ],
       "sc:description": "A tool for searching a protein sequence collections with peptide mass maps. A Bayesian algorithm is used to rank the protein sequences in the database according to their probability of producing the peptide map.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3649"
-        },
-        {
-          "@id": "edam:operation_3767"
-        },
-        {
-          "@id": "edam:operation_3643"
-        },
-        {
-          "@id": "edam:operation_2929"
+          "@id": "edam:operation_3647"
         },
         {
           "@id": "edam:operation_3646"
@@ -85,14 +72,23 @@
           "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_3647"
+          "@id": "edam:operation_2929"
+        },
+        {
+          "@id": "edam:operation_3767"
+        },
+        {
+          "@id": "edam:operation_3643"
+        },
+        {
+          "@id": "edam:operation_3649"
         }
       ],
       "sc:name": "ProFound",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://prowl.rockefeller.edu/prowl-cgi/profound.exe"
@@ -100,7 +96,18 @@
       "sc:url": "http://prowl.rockefeller.edu/prowl-cgi/profound.exe"
     },
     {
-      "@id": "_:N8fb83753e71e4be59a1875bbbcc2ec31",
+      "@id": "_:N0c887ac83f22469cbfe98364ac4a6558",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Peptide mass fingerprint"
+    },
+    {
+      "@id": "_:N16457ebef01d4ae7b3c85fc631bb137d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -111,15 +118,8 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nce2d436687bd499a920500846ef77e4a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Peptide mass fingerprint"
+      "@id": "https://doi.org/10.1021/ac991363o",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

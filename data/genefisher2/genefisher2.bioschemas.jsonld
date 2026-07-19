@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,33 +40,33 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5e875fda42254445bcb6d65ddad8b1ed"
+          "@id": "_:N2a6287cad9dc47279a59ab2a827f1408"
         },
         {
-          "@id": "_:N5d4ca3814b664fe4accef229b12ba6c2"
+          "@id": "_:N59a41897c65b45b59c94d50400d1a678"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na1d40d131da5472b8fad529cda4e7a48"
+          "@id": "_:N46c3aeaff2474d5c9b19e4e383716f49"
         },
         {
-          "@id": "_:Nfa329e453fc64d3aa3efcd3387035ea2"
+          "@id": "_:N6770e4330d2f4cafb1d0d0a4a970cbd3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Command-line tool",
         "Web API",
-        "Web application",
-        "Command-line tool"
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": [
         "Chris Schleiermacher",
-        "Thomas Gatter",
-        "Daniel Hagemeier"
+        "Daniel Hagemeier",
+        "Thomas Gatter"
       ],
       "sc:citation": "pubmed:8877506",
       "sc:description": "Based on the assumption that genes with related function from different organisms show high sequence similarity, degenerate primers can be designed from sequences of homologues genes. It is an interactive web-based program for designing degenerate primers.",
@@ -76,14 +76,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "genefisher2",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "CeBiTec",
+        "BiBiServ",
         "Bielefeld University",
-        "BiBiServ"
+        "CeBiTec"
       ],
       "sc:softwareHelp": {
         "@id": "https://bibiserv.cebitec.uni-bielefeld.de/genefisher2?id=genefisher_manual_manual"
@@ -92,73 +92,20 @@
       "sc:url": "http://bibiserv.cebitec.uni-bielefeld.de/genefisher2"
     },
     {
-      "@id": "_:Na1d40d131da5472b8fad529cda4e7a48",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1240"
-      },
-      "sc:name": "PCR primers"
-    },
-    {
-      "@id": "_:Nfa329e453fc64d3aa3efcd3387035ea2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N5e875fda42254445bcb6d65ddad8b1ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1921"
-        },
-        {
-          "@id": "edam:format_1925"
-        },
-        {
-          "@id": "edam:format_1210"
-        },
-        {
-          "@id": "edam:format_2555"
-        },
-        {
-          "@id": "edam:format_1942"
-        },
-        {
-          "@id": "edam:format_1219"
-        },
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1948"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_1997"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N5d4ca3814b664fe4accef229b12ba6c2",
+      "@id": "_:N2a6287cad9dc47279a59ab2a827f1408",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1948"
+          "@id": "edam:format_1927"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
         },
         {
           "@id": "edam:format_2330"
@@ -167,31 +114,84 @@
           "@id": "edam:format_2332"
         },
         {
-          "@id": "edam:format_1209"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1927"
-        },
-        {
           "@id": "edam:format_1925"
         },
         {
-          "@id": "edam:format_1210"
+          "@id": "edam:format_1209"
+        },
+        {
+          "@id": "edam:format_1942"
+        },
+        {
+          "@id": "edam:format_1948"
         },
         {
           "@id": "edam:format_1215"
         },
         {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1942"
+          "@id": "edam:format_1210"
         }
       ],
       "sc:name": "Nucleic acid sequence (raw)"
+    },
+    {
+      "@id": "_:N59a41897c65b45b59c94d50400d1a678",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1921"
+        },
+        {
+          "@id": "edam:format_2555"
+        },
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1997"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_1925"
+        },
+        {
+          "@id": "edam:format_1942"
+        },
+        {
+          "@id": "edam:format_1948"
+        },
+        {
+          "@id": "edam:format_1210"
+        },
+        {
+          "@id": "edam:format_1219"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N46c3aeaff2474d5c9b19e4e383716f49",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N6770e4330d2f4cafb1d0d0a4a970cbd3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1240"
+      },
+      "sc:name": "PCR primers"
     }
   ]
 }

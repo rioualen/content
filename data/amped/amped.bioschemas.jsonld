@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.17952/24aps.2015.105",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/amped",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Lenore M Martin",
       "bsc:input": {
-        "@id": "_:N7ffee0e5fad44859ba9b218c6b682f7d"
+        "@id": "_:N46ef64068b7a4131bf12b3af104d7254"
       },
       "bsc:output": {
-        "@id": "_:N3db765ee207c40eeba77c81edca2767e"
+        "@id": "_:N8610f2f08bd9485596e995493b3da1fb"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Suite",
         "Database portal",
+        "Suite",
         "Web service"
       ],
       "sc:applicationSubCategory": {
@@ -83,7 +79,18 @@
       "sc:url": "https://amped.uri.edu/"
     },
     {
-      "@id": "_:N3db765ee207c40eeba77c81edca2767e",
+      "@id": "_:N46ef64068b7a4131bf12b3af104d7254",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2531"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2332"
+      },
+      "sc:name": "Experiment report"
+    },
+    {
+      "@id": "_:N8610f2f08bd9485596e995493b3da1fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -94,15 +101,8 @@
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:N7ffee0e5fad44859ba9b218c6b682f7d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2531"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2332"
-      },
-      "sc:name": "Experiment report"
+      "@id": "https://doi.org/10.17952/24aps.2015.105",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

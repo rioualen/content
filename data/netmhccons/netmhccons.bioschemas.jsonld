@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,38 +42,38 @@
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N027b5da437844aa9bda7f8f35291ecf4"
+        "@id": "_:N874904f497c24c1a8ad899cf451d4183"
       },
       "bsc:output": {
-        "@id": "_:Nab83bd048a434673a8670df740c5faa2"
+        "@id": "_:N83f70cd1963f45c79f1d931142d39947"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3534"
       },
       "sc:citation": [
+        "pubmed:22009319",
         {
           "@id": "https://doi.org/10.1007/s00251-011-0579-8"
-        },
-        "pubmed:22009319"
+        }
       ],
       "sc:description": "Predict binding of peptides to any known MHC class I molecule.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2575"
+          "@id": "edam:operation_0416"
         },
         {
-          "@id": "edam:operation_0416"
+          "@id": "edam:operation_2575"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "NetMHCcons",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -83,18 +83,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetMHCcons/"
     },
     {
-      "@id": "_:Nab83bd048a434673a8670df740c5faa2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N027b5da437844aa9bda7f8f35291ecf4",
+      "@id": "_:N874904f497c24c1a8ad899cf451d4183",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -105,12 +94,23 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
+      "@id": "_:N83f70cd1963f45c79f1d931142d39947",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein features"
     },
     {
       "@id": "https://doi.org/10.1007/s00251-011-0579-8",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
     }
   ]
 }

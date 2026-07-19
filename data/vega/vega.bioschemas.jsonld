@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq586",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/vega",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Sandro Morganella",
       "bsc:input": {
-        "@id": "_:N6134233d05a246b1bd18b20b4d39f396"
+        "@id": "_:N991ee010a6b24742a135a90815f4a1a5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_2533"
         },
         {
-          "@id": "edam:topic_2533"
+          "@id": "edam:topic_3518"
         }
       ],
       "sc:citation": [
@@ -64,10 +68,10 @@
       "sc:description": "The Variational Estimator for Genomic Aberrations is an algorithm that adapts a very popular variational model (Mumford and Shah) used in image segmentation so that chromosomal aberrant regions can be efficiently detected.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3209"
+          "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_3209"
         },
         {
           "@id": "edam:operation_3202"
@@ -76,8 +80,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "Vega",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,7 +91,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Vega.html"
     },
     {
-      "@id": "_:N6134233d05a246b1bd18b20b4d39f396",
+      "@id": "_:N991ee010a6b24742a135a90815f4a1a5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3117"
@@ -96,10 +100,6 @@
         "@id": "edam:format_2056"
       },
       "sc:name": "Microarray hybridisation data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq586",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,55 +36,59 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw127",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/snphood",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Christian Arnold",
       "bsc:input": {
-        "@id": "_:N3cbd56cf68484b4fb164d347e399d003"
+        "@id": "_:N48ac73113f2545a49c8ccf43c2603d7f"
       },
       "bsc:output": [
         {
-          "@id": "_:Nca3d5a6996ce400f9a39f7fd485cb960"
+          "@id": "_:N6698efb8950f408eb9bea1dbb18efed2"
         },
         {
-          "@id": "_:Ncdb560948ffd4872ab26404d22babbe9"
+          "@id": "_:N9ff739f2c408436ab782a4e0cc4eb9c5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3169"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": [
+        "pubmed:27153574",
         "pmcid:PMC4965630",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw127"
-        },
-        "pubmed:27153574"
+        }
       ],
       "sc:description": "This R package investigates and visualizes the local neighborhood of a set of SNPs of interest for NGS data such as chromatin marks or TF binding sites from ChIP-Seq or RNA-Seq experiments. It comprises a set of easy-to-use functions to extract, normalize and summarize reads for a genomic region.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "SNPhood",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SNPhood.html"
@@ -93,34 +97,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SNPhood.html"
     },
     {
-      "@id": "_:N3cbd56cf68484b4fb164d347e399d003",
+      "@id": "_:N48ac73113f2545a49c8ccf43c2603d7f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3003"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_3003"
         }
       ],
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nca3d5a6996ce400f9a39f7fd485cb960",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Ncdb560948ffd4872ab26404d22babbe9",
+      "@id": "_:N6698efb8950f408eb9bea1dbb18efed2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -131,8 +124,15 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw127",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9ff739f2c408436ab782a4e0cc4eb9c5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,8 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-7522-4007",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1021/acs.jproteome.8b00723",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/pia",
@@ -46,32 +46,32 @@
         "@id": "http://orcid.org/0000-0001-7522-4007"
       },
       "bsc:input": {
-        "@id": "_:Nb27bd6112d2442a59fbc3da262198ea9"
+        "@id": "_:N5bbcd6137ed540469a86649f41b29fcd"
       },
       "bsc:output": [
         {
-          "@id": "_:Nfe1608fbf21546129c7ad704268cb307"
+          "@id": "_:Nf402e040d5a948a9b3ac827b53ec5e41"
         },
         {
-          "@id": "_:Nbcfcb3e498d04c74aa93cec9da57dabb"
+          "@id": "_:N85d7b237b8f24c8bb7bd214537081052"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
-        "Library",
+        "Command-line tool",
         "Desktop application",
-        "Command-line tool"
+        "Library",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3120"
         },
         {
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_3120"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:author": {
@@ -82,27 +82,27 @@
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.8b00723"
         },
+        "pubmed:25938255",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.5b00121"
-        },
-        "pubmed:25938255"
+        }
       ],
       "sc:description": "The main focus lays on the integrated inference algorithms, concluding the proteins from a set of identified spectra. But it also allows you to integrate results of various search engines, inspect your peptide spectrum matches, calculate FDR values across different results and visualize the correspondence between PSMs, peptides and proteins.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3649"
+          "@id": "edam:operation_3767"
         },
         {
-          "@id": "edam:operation_3767"
+          "@id": "edam:operation_3649"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "PIA - Protein Inference Algorithms",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CUBiMed.RUB",
       "sc:softwareHelp": {
@@ -112,14 +112,23 @@
       "sc:url": "https://github.com/medbioinf/pia"
     },
     {
-      "@id": "_:Nb27bd6112d2442a59fbc3da262198ea9",
+      "@id": "_:N5bbcd6137ed540469a86649f41b29fcd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3681"
+          "@id": "edam:format_3702"
+        },
+        {
+          "@id": "edam:format_3713"
+        },
+        {
+          "@id": "edam:format_3684"
+        },
+        {
+          "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_3711"
@@ -128,22 +137,41 @@
           "@id": "edam:format_3247"
         },
         {
-          "@id": "edam:format_3702"
-        },
-        {
-          "@id": "edam:format_3684"
-        },
-        {
-          "@id": "edam:format_3713"
-        },
-        {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3681"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nfe1608fbf21546129c7ad704268cb307",
+      "@id": "_:Nf402e040d5a948a9b3ac827b53ec5e41",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3765"
+        },
+        {
+          "@id": "edam:format_2206"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3764"
+        },
+        {
+          "@id": "edam:format_3247"
+        },
+        {
+          "@id": "edam:format_3681"
+        }
+      ],
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:N85d7b237b8f24c8bb7bd214537081052",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0989"
@@ -153,58 +181,30 @@
           "@id": "edam:format_3765"
         },
         {
-          "@id": "edam:format_3475"
-        },
-        {
           "@id": "edam:format_2206"
         },
         {
-          "@id": "edam:format_3681"
+          "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_3764"
         },
         {
           "@id": "edam:format_3247"
+        },
+        {
+          "@id": "edam:format_3681"
         }
       ],
       "sc:name": "Protein identifier"
     },
     {
-      "@id": "_:Nbcfcb3e498d04c74aa93cec9da57dabb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3247"
-        },
-        {
-          "@id": "edam:format_3765"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2206"
-        },
-        {
-          "@id": "edam:format_3764"
-        },
-        {
-          "@id": "edam:format_3681"
-        }
-      ],
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jproteome.8b00723",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1021/acs.jproteome.5b00121",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-7522-4007",
+      "@type": "sc:Person"
     }
   ]
 }

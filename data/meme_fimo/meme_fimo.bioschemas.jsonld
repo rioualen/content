@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr064",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     },
     {
@@ -53,38 +45,35 @@
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N6c9091d7fe464b8382f07b93fb70bd0f"
+          "@id": "_:N891b35d143ad4f29b3a52c5de1571177"
         },
         {
-          "@id": "_:N4ebded20690a41c3b62fb0bab56f33f0"
+          "@id": "_:N8a0b49bb757144e9b4584b6699283d1c"
         },
         {
-          "@id": "_:N6db355cd5d2c4616a670ac9a4e115f40"
+          "@id": "_:N9431e3ad72354305a38f5c17656f6252"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbba36c0307af4859913dc2b91a73fde9"
+          "@id": "_:Nc97d330121b343218686d20cbefa9406"
         },
         {
-          "@id": "_:N243d7146bf864de99cb1aba2a7f4ffb6"
+          "@id": "_:N7fb876051f294195890dca672dfedbf6"
         },
         {
-          "@id": "_:N7e4e7b8d8a6d48aaa63ef2c750b98662"
+          "@id": "_:N432f0cd90c65486c91cf45957529be55"
         },
         {
-          "@id": "_:N0b0097cb5118479e99dcb7a4cd21cef6"
+          "@id": "_:N96ff6cc95c234aecbe8b9b4a237b2b1a"
         },
         {
-          "@id": "_:N40ae8a63ea374e9facb23e075d55c250"
+          "@id": "_:N16cbdb6044ab4afe9af0ea4bf4877987"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0080"
-        },
         {
           "@id": "edam:topic_3473"
         },
@@ -92,22 +81,25 @@
           "@id": "edam:topic_0199"
         },
         {
+          "@id": "edam:topic_0080"
+        },
+        {
           "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:21330290",
+        "pmcid:PMC3065696",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr064"
         },
-        "pmcid:PMC3065696",
         "pubmed:27137889",
-        "pubmed:21330290",
         "pmcid:PMC4987906",
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "A software tool for scanning DNA or protein sequences with motifs described as position-specific scoring matrices.",
@@ -116,20 +108,20 @@
           "@id": "edam:operation_0415"
         },
         {
+          "@id": "edam:operation_3092"
+        },
+        {
           "@id": "edam:operation_0238"
         },
         {
           "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_3092"
         }
       ],
       "sc:name": "meme_fimo",
       "sc:operatingSystem": [
+        "Linux",
         "Mac",
-        "Windows",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=meme_fimo"
@@ -138,29 +130,7 @@
       "sc:url": "http://meme-suite.org/tools/meme"
     },
     {
-      "@id": "_:N6c9091d7fe464b8382f07b93fb70bd0f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N4ebded20690a41c3b62fb0bab56f33f0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2332"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N6db355cd5d2c4616a670ac9a4e115f40",
+      "@id": "_:N891b35d143ad4f29b3a52c5de1571177",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -171,7 +141,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nbba36c0307af4859913dc2b91a73fde9",
+      "@id": "_:N8a0b49bb757144e9b4584b6699283d1c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -182,7 +152,18 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N243d7146bf864de99cb1aba2a7f4ffb6",
+      "@id": "_:N9431e3ad72354305a38f5c17656f6252",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Nc97d330121b343218686d20cbefa9406",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -193,7 +174,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N7e4e7b8d8a6d48aaa63ef2c750b98662",
+      "@id": "_:N7fb876051f294195890dca672dfedbf6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -204,7 +185,29 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N0b0097cb5118479e99dcb7a4cd21cef6",
+      "@id": "_:N432f0cd90c65486c91cf45957529be55",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N96ff6cc95c234aecbe8b9b4a237b2b1a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2332"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N16cbdb6044ab4afe9af0ea4bf4877987",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -215,15 +218,12 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N40ae8a63ea374e9facb23e075d55c250",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Data"
+      "@id": "https://doi.org/10.1093/bioinformatics/btr064",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

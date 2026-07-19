@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu205",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/readxplorer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7c51b8c6323c4ba3983989e71ea4131c"
+          "@id": "_:N5175f7d4577341b6a959a8514ada2c22"
         },
         {
-          "@id": "_:N54079a77a3b041ec9b456c4b77850b48"
+          "@id": "_:N8af425cc5a56438593a535a3a3cc725a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3308"
-        },
         {
           "@id": "edam:topic_0797"
         },
         {
           "@id": "edam:topic_0122"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
+        "pubmed:24790157",
+        "pmcid:PMC4217279",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu205"
-        },
-        "pmcid:PMC4217279",
-        "pubmed:24790157"
+        }
       ],
       "sc:description": "Freely available comprehensive exploration and evaluation tool for NGS data. It extracts and adds quantity and quality measures to each alignment in order to classify the mapped reads. This classification is then taken into account for the different data views and all supported automatic analysis functions.",
       "sc:featureList": {
@@ -74,9 +78,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ReadXplorer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "bigi",
       "sc:softwareHelp": {
@@ -86,31 +90,20 @@
       "sc:url": "http://readxplorer.org"
     },
     {
-      "@id": "_:N7c51b8c6323c4ba3983989e71ea4131c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N54079a77a3b041ec9b456c4b77850b48",
+      "@id": "_:N5175f7d4577341b6a959a8514ada2c22",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_1927"
+        },
+        {
           "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_1975"
-        },
-        {
-          "@id": "edam:format_1927"
         },
         {
           "@id": "edam:format_1936"
@@ -119,8 +112,15 @@
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu205",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8af425cc5a56438593a535a3a3cc725a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

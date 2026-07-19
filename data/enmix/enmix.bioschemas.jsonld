@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -46,30 +46,30 @@
         "@id": "http://orcid.org/0000-0002-9034-8902"
       },
       "bsc:input": {
-        "@id": "_:N96477d4140c045229e518edb867e6d01"
+        "@id": "_:N1ff2f0fbb5e540bfb04383fe15d2f562"
       },
       "bsc:output": [
         {
-          "@id": "_:N02521cb0f03b4539831823b57f8707dd"
+          "@id": "_:Na316ed302ad3452f86b68142e47baa84"
         },
         {
-          "@id": "_:N651120a2b16947e19b8229da884a6cf0"
+          "@id": "_:Ne10569117350492ba57e9a4e9e530f0c"
         },
         {
-          "@id": "_:N43d75e5cbd2946c092a89ec24c0358ac"
+          "@id": "_:N1577b747469246249814382ffccc20d0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3295"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_3295"
         },
         {
           "@id": "edam:topic_3518"
@@ -77,26 +77,26 @@
       ],
       "sc:citation": [
         "pubmed:28049437",
+        "pmcid:PMC5209853",
         {
           "@id": "https://doi.org/10.1186/s12864-016-3426-3"
-        },
-        "pmcid:PMC5209853"
+        }
       ],
       "sc:description": "This package provides an efficient data pre-processing tool designed to reduce background noise and improve signal for DNA methylation estimation from Illumina Methylation BeadChip array measurements. It is a model based background correction method that can significantly improve accuracy and reproducibility of methylation measures.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3204"
+          "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_3204"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "ENmix",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ENmix.html"
@@ -105,7 +105,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ENmix.html"
     },
     {
-      "@id": "_:N02521cb0f03b4539831823b57f8707dd",
+      "@id": "_:N1ff2f0fbb5e540bfb04383fe15d2f562",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3117"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3578"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Microarray hybridisation data"
+    },
+    {
+      "@id": "_:Na316ed302ad3452f86b68142e47baa84",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3117"
@@ -121,7 +137,7 @@
       "sc:name": "Microarray hybridisation data"
     },
     {
-      "@id": "_:N651120a2b16947e19b8229da884a6cf0",
+      "@id": "_:Ne10569117350492ba57e9a4e9e530f0c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -137,7 +153,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N43d75e5cbd2946c092a89ec24c0358ac",
+      "@id": "_:N1577b747469246249814382ffccc20d0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -151,22 +167,6 @@
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N96477d4140c045229e518edb867e6d01",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3117"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3578"
-        }
-      ],
-      "sc:name": "Microarray hybridisation data"
     },
     {
       "@id": "https://doi.org/10.1186/s12864-016-3426-3",

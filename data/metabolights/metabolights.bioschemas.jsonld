@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gks1004",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/metabolights",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne56dd760384842cbaef1bcf1e09ecd1c"
+          "@id": "_:N839ccafb488b4951aad1c11908610694"
         },
         {
-          "@id": "_:Nc12b5fd4b8d34e9da9f6e6331d5ef173"
+          "@id": "_:Nc2527604dd0045c0823b7c485695691b"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nef741efb5e3c4d93a017d051d490a39f"
+        "@id": "_:N6146387ac76c436db53e933ba3415603"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3172"
@@ -78,22 +74,41 @@
       "sc:name": "MetaboLights",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI Databases",
       "sc:softwareHelp": [
         {
-          "@id": "https://ebi-metabolights.github.io/guides/"
+          "@id": "https://www.ebi.ac.uk/metabolights/help"
         },
         {
-          "@id": "https://www.ebi.ac.uk/metabolights/help"
+          "@id": "https://ebi-metabolights.github.io/guides/"
         }
       ],
       "sc:url": "http://www.ebi.ac.uk/metabolights/"
     },
     {
-      "@id": "_:Nef741efb5e3c4d93a017d051d490a39f",
+      "@id": "_:N839ccafb488b4951aad1c11908610694",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3244"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nc2527604dd0045c0823b7c485695691b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2091"
+      },
+      "sc:name": "Accession"
+    },
+    {
+      "@id": "_:N6146387ac76c436db53e933ba3415603",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -104,23 +119,8 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Ne56dd760384842cbaef1bcf1e09ecd1c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2091"
-      },
-      "sc:name": "Accession"
-    },
-    {
-      "@id": "_:Nc12b5fd4b8d34e9da9f6e6331d5ef173",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3244"
-      },
-      "sc:name": "Mass spectrometry data"
+      "@id": "https://doi.org/10.1093/nar/gks1004",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

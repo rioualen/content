@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Leonardo Collado-Torres",
       "bsc:input": {
-        "@id": "_:N2fa6c3e7bfb548c79b516da7c18b678f"
+        "@id": "_:Na5b622d8c0e14684ab186e49ba0f8a66"
       },
       "bsc:output": {
-        "@id": "_:Nbfcad8d35c724e67bc50a5e3d4000714"
+        "@id": "_:N9081d7e7d6164889b46ef609c81623b8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -58,8 +58,8 @@
         "@id": "edam:topic_3170"
       },
       "sc:citation": [
-        "pmcid:PMC5314792",
         "pubmed:27694310",
+        "pmcid:PMC5314792",
         {
           "@id": "https://doi.org/10.1093/nar/gkw852"
         }
@@ -71,9 +71,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "regionReport",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/regionReport.html"
@@ -82,23 +82,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/regionReport.html"
     },
     {
-      "@id": "_:Nbfcad8d35c724e67bc50a5e3d4000714",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N2fa6c3e7bfb548c79b516da7c18b678f",
+      "@id": "_:Na5b622d8c0e14684ab186e49ba0f8a66",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -107,6 +91,22 @@
         "@id": "edam:format_2078"
       },
       "sc:name": "Sequence range"
+    },
+    {
+      "@id": "_:N9081d7e7d6164889b46ef609c81623b8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

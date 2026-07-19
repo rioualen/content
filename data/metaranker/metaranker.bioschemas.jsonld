@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,61 +36,56 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-0207-4831",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt387",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/metaranker",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-0207-4831"
       },
       "bsc:input": {
-        "@id": "_:N1fa40f2c0383452ebbe593e431925e35"
+        "@id": "_:N07254a19a49c4d878fb472dae8e9abcd"
       },
       "bsc:output": [
         {
-          "@id": "_:N890474e8849843e29f30b7a80bc08a0a"
+          "@id": "_:N4a5ee8a58cc54e0a89644742766e70da"
         },
         {
-          "@id": "_:N6517356577d24767b0e6f708c9384503"
+          "@id": "_:N4b6c8e944830461397a28cfe2e5eb63a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2259"
-        },
-        {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_3678"
         },
         {
           "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_0602"
-        },
-        {
-          "@id": "edam:topic_3678"
+          "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_0102"
+        },
+        {
+          "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
         "pubmed:23703204",
+        "pmcid:PMC3692047",
         {
           "@id": "https://doi.org/10.1093/nar/gkt387"
-        },
-        "pmcid:PMC3692047"
+        }
       ],
       "sc:description": "Prioritization of the entire protein-coding part of the human genome based on heterogeneous user-specified data sets.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2423"
+        },
         {
           "@id": "edam:operation_3233"
         },
@@ -98,25 +93,22 @@
           "@id": "edam:operation_3501"
         },
         {
+          "@id": "edam:operation_2495"
+        },
+        {
           "@id": "edam:operation_3197"
         },
         {
           "@id": "edam:operation_3196"
-        },
-        {
-          "@id": "edam:operation_2423"
-        },
-        {
-          "@id": "edam:operation_2495"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "MetaRanker",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -126,7 +118,7 @@
       "sc:url": "http://cbs.dtu.dk/services/MetaRanker/"
     },
     {
-      "@id": "_:N1fa40f2c0383452ebbe593e431925e35",
+      "@id": "_:N07254a19a49c4d878fb472dae8e9abcd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -137,7 +129,7 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:N890474e8849843e29f30b7a80bc08a0a",
+      "@id": "_:N4a5ee8a58cc54e0a89644742766e70da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -148,7 +140,7 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N6517356577d24767b0e6f708c9384503",
+      "@id": "_:N4b6c8e944830461397a28cfe2e5eb63a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
@@ -157,6 +149,14 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Pathway or network report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkt387",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0207-4831",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.7554/eLife.07009",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/biojs-io-blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "greenify",
       "bsc:input": {
-        "@id": "_:Naaae16c27c484dc29bdfd4dbc1d0e017"
+        "@id": "_:N46e12b84cfc2485880c0da59c6b17dab"
       },
       "bsc:output": {
-        "@id": "_:N72c07e22e1d6451fb17a995518ffc561"
+        "@id": "_:N03adbdca274847f78a2d470e14061b83"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -70,8 +66,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "biojs-io-blast",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "BioJS",
@@ -82,7 +78,18 @@
       "sc:url": "https://github.com/greenify/biojs-io-blast"
     },
     {
-      "@id": "_:N72c07e22e1d6451fb17a995518ffc561",
+      "@id": "_:N46e12b84cfc2485880c0da59c6b17dab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1192"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3331"
+      },
+      "sc:name": "Tool name (BLAST)"
+    },
+    {
+      "@id": "_:N03adbdca274847f78a2d470e14061b83",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1192"
@@ -93,15 +100,8 @@
       "sc:name": "Tool name (BLAST)"
     },
     {
-      "@id": "_:Naaae16c27c484dc29bdfd4dbc1d0e017",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1192"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3331"
-      },
-      "sc:name": "Tool name (BLAST)"
+      "@id": "https://doi.org/10.7554/eLife.07009",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

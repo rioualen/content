@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/gr.2496804",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/worfdb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfe40388e688240e3acdae9dba9c76876"
+        "@id": "_:N3980dc7a5e954f88b0587b6433aaccbe"
       },
       "bsc:output": {
-        "@id": "_:N4bc793b629e94d9f9a2edce2b376479e"
+        "@id": "_:Nf24171896b30472bb513d4c3e26f808e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
       },
       "sc:citation": [
+        "pubmed:15489327",
+        "pmcid:PMC528921",
         {
           "@id": "https://doi.org/10.1101/gr.2496804"
-        },
-        "pmcid:PMC528921",
-        "pubmed:15489327"
+        }
       ],
       "sc:description": "The Caenorhabditis elegans ORFeome cloning project.",
       "sc:featureList": {
@@ -62,9 +66,9 @@
       },
       "sc:name": "WORFDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://worfdb.dfci.harvard.edu/index.php?page=race"
@@ -72,7 +76,15 @@
       "sc:url": "http://worfdb.dfci.harvard.edu/"
     },
     {
-      "@id": "_:N4bc793b629e94d9f9a2edce2b376479e",
+      "@id": "_:N3980dc7a5e954f88b0587b6433aaccbe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1807"
+      },
+      "sc:name": "ORF name"
+    },
+    {
+      "@id": "_:Nf24171896b30472bb513d4c3e26f808e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -81,18 +93,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:Nfe40388e688240e3acdae9dba9c76876",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1807"
-      },
-      "sc:name": "ORF name"
-    },
-    {
-      "@id": "https://doi.org/10.1101/gr.2496804",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

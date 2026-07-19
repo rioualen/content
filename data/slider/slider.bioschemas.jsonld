@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btn565",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/slider",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Slider support",
       "bsc:input": [
         {
-          "@id": "_:N58eb4d4869764aab9997136aad44ad96"
+          "@id": "_:N3b292e59370342368e3462605394a550"
         },
         {
-          "@id": "_:Nc8e63af46c6f4b428df9f96e1a21528c"
+          "@id": "_:N35bccf88f53940daae5a909a63e01939"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9a431b57b19140d8a70a10f3c9ea84f2"
+          "@id": "_:N5a3a4c4a33534f919e7511af59b6d00f"
         },
         {
-          "@id": "_:N9b3ec964b7c84224a1c859f6191f7f1d"
+          "@id": "_:Nb5332284fa374ddd9c2ecb8e1947008b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Suite",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2533"
+        },
         {
           "@id": "edam:topic_2885"
         },
@@ -70,14 +69,11 @@
         },
         {
           "@id": "edam:topic_2269"
-        },
-        {
-          "@id": "edam:topic_2533"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2638935",
         "pubmed:18974170",
+        "pmcid:PMC2638935",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btn565"
         }
@@ -97,33 +93,25 @@
       "sc:license": "AFL-3.0",
       "sc:name": "Slider",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://www.bcgsc.ca/platform/bioinfo/software/slider"
     },
     {
-      "@id": "_:N9a431b57b19140d8a70a10f3c9ea84f2",
+      "@id": "_:N3b292e59370342368e3462605394a550",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:N9b3ec964b7c84224a1c859f6191f7f1d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
+        "@id": "edam:data_2093"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1921"
+        "@id": "edam:format_3033"
       },
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "sc:name": "Data reference"
     },
     {
-      "@id": "_:N58eb4d4869764aab9997136aad44ad96",
+      "@id": "_:N35bccf88f53940daae5a909a63e01939",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2959"
@@ -134,15 +122,27 @@
       "sc:name": "Nucleic acid probability profile"
     },
     {
-      "@id": "_:Nc8e63af46c6f4b428df9f96e1a21528c",
+      "@id": "_:N5a3a4c4a33534f919e7511af59b6d00f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2093"
+        "@id": "edam:data_0867"
+      },
+      "sc:name": "Sequence alignment report"
+    },
+    {
+      "@id": "_:Nb5332284fa374ddd9c2ecb8e1947008b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3033"
+        "@id": "edam:format_1921"
       },
-      "sc:name": "Data reference"
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btn565",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-8-401",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/picr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "PRIDE support",
       "bsc:input": [
         {
-          "@id": "_:Ncc4c52e52d2a47ada6c22ad96699531a"
+          "@id": "_:N004d6bb1182942c2bd62e08cd4808bce"
         },
         {
-          "@id": "_:Naa5df16825794c89bf290ade95ec9cbb"
+          "@id": "_:N405bd838f16f45b28559b196eb4ed742"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nbe588e381fc54842b9942a1b6e5e6c5a"
+        "@id": "_:N9d2ec7ab2c2d4b49aae642ee37588f5a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -66,8 +62,8 @@
       ],
       "sc:author": "Richard Cote",
       "sc:citation": [
-        "pmcid:PMC2151082",
         "pubmed:17945017",
+        "pmcid:PMC2151082",
         {
           "@id": "https://doi.org/10.1186/1471-2105-8-401"
         }
@@ -78,17 +74,17 @@
       },
       "sc:name": "PICR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/Tools/picr/init.do#documentation"
+          "@id": "http://www.ebi.ac.uk/Tools/picr/RESTDocumentation.do"
         },
         {
-          "@id": "http://www.ebi.ac.uk/Tools/picr/RESTDocumentation.do"
+          "@id": "http://www.ebi.ac.uk/Tools/picr/init.do#documentation"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
@@ -98,7 +94,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/picr/"
     },
     {
-      "@id": "_:Ncc4c52e52d2a47ada6c22ad96699531a",
+      "@id": "_:N004d6bb1182942c2bd62e08cd4808bce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2907"
@@ -106,7 +102,7 @@
       "sc:name": "Protein accession"
     },
     {
-      "@id": "_:Naa5df16825794c89bf290ade95ec9cbb",
+      "@id": "_:N405bd838f16f45b28559b196eb4ed742",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -114,12 +110,16 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nbe588e381fc54842b9942a1b6e5e6c5a",
+      "@id": "_:N9d2ec7ab2c2d4b49aae642ee37588f5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2907"
       },
       "sc:name": "Protein accession"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-8-401",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

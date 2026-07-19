@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkm788",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pubmeth",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pubmeth Support",
       "bsc:input": [
         {
-          "@id": "_:N16f422e6f2674b83a1bd539c9528fa35"
+          "@id": "_:Ncb2cb23dd7c34e328ade4c4a186865c6"
         },
         {
-          "@id": "_:Nf6f4cd15c5794a9b8acd381e751de162"
+          "@id": "_:N12c101da94174f47a1eba13d96ae80e6"
         },
         {
-          "@id": "_:N1081d0da481e4b25807e8c257e35e6d7"
+          "@id": "_:Nd93892c85a734dbba2237d24da1992e9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N28847dc9bdf24f7ca476e68ed549857d"
+          "@id": "_:Nbd87b49c4b13424882e8397f2f8fce25"
         },
         {
-          "@id": "_:Na0f6ce9bc45c492ea8986095a95ca766"
+          "@id": "_:N14c1316a5dfb4e7783386707c405591e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -77,8 +81,8 @@
       },
       "sc:name": "PubMeth reviewed methylation database in cancer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,29 +91,23 @@
       "sc:url": "http://www.pubmeth.org"
     },
     {
-      "@id": "_:N28847dc9bdf24f7ca476e68ed549857d",
+      "@id": "_:Ncb2cb23dd7c34e328ade4c4a186865c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0916"
+        "@id": "edam:data_1026"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Gene report"
+      "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:Na0f6ce9bc45c492ea8986095a95ca766",
+      "@id": "_:N12c101da94174f47a1eba13d96ae80e6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0916"
+        "@id": "edam:data_1026"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Gene report"
+      "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N16f422e6f2674b83a1bd539c9528fa35",
+      "@id": "_:Nd93892c85a734dbba2237d24da1992e9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0976"
@@ -117,24 +115,26 @@
       "sc:name": "Identifier (by type of data)"
     },
     {
-      "@id": "_:Nf6f4cd15c5794a9b8acd381e751de162",
+      "@id": "_:Nbd87b49c4b13424882e8397f2f8fce25",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1026"
+        "@id": "edam:data_0916"
       },
-      "sc:name": "Gene symbol"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Gene report"
     },
     {
-      "@id": "_:N1081d0da481e4b25807e8c257e35e6d7",
+      "@id": "_:N14c1316a5dfb4e7783386707c405591e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1026"
+        "@id": "edam:data_0916"
       },
-      "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkm788",
-      "@type": "sc:CreativeWork"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Gene report"
     }
   ]
 }

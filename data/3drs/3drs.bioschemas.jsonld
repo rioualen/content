@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/3drs",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3dc9b4d7529f49b5ada2e051bc26f9cf"
+          "@id": "_:N7154e180a2c14ff8a0c1daead5f45919"
         },
         {
-          "@id": "_:N40f149df83044291a58641bd411fe179"
+          "@id": "_:Nb26f94c2c3c5424fa14234363977fc9f"
         },
         {
-          "@id": "_:Nd55023215abb4729a36728b87f155ce7"
+          "@id": "_:N21dbeda27fd3477fa405b67cf51f8f68"
         }
       ],
       "bsc:output": {
-        "@id": "_:N16c25f88a9c74bbeb02652317ab5a6d0"
+        "@id": "_:Naa8cf955d3b0494eb02033332f14c753"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0081"
+          "@id": "edam:topic_3892"
         },
         {
           "@id": "edam:topic_3307"
@@ -68,7 +72,7 @@
           "@id": "edam:topic_1317"
         },
         {
-          "@id": "edam:topic_3892"
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:author": "Genís Bayarri",
@@ -88,9 +92,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "3DRS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://3drs-documentation.readthedocs.io/en/latest/index.html"
@@ -99,18 +103,7 @@
       "sc:url": "https://mmb.irbbarcelona.org/3dRS/"
     },
     {
-      "@id": "_:N3dc9b4d7529f49b5ada2e051bc26f9cf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N40f149df83044291a58641bd411fe179",
+      "@id": "_:N7154e180a2c14ff8a0c1daead5f45919",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1459"
@@ -121,15 +114,23 @@
       "sc:name": "Nucleic acid structure"
     },
     {
-      "@id": "_:Nd55023215abb4729a36728b87f155ce7",
+      "@id": "_:Nb26f94c2c3c5424fa14234363977fc9f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N21dbeda27fd3477fa405b67cf51f8f68",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3910"
-        },
         {
           "@id": "edam:format_3885"
         },
@@ -138,12 +139,15 @@
         },
         {
           "@id": "edam:format_3650"
+        },
+        {
+          "@id": "edam:format_3910"
         }
       ],
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:N16c25f88a9c74bbeb02652317ab5a6d0",
+      "@id": "_:Naa8cf955d3b0494eb02033332f14c753",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -152,10 +156,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/biostatistics/kxr054",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/conditional_quantile_normalization",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Bioconductor",
       "bsc:input": {
-        "@id": "_:N8ae38b46bd4c47deae61a400c344ecb7"
+        "@id": "_:N72d721cc536a475bab186d0bcc16fe61"
       },
       "bsc:output": {
-        "@id": "_:Nfff35bc42ac34e25bad6c46a67497dbb"
+        "@id": "_:N2e930dcd903c4c3bb919500c2d9b7bdf"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0085"
@@ -68,8 +72,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Conditional quantile normalization",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "sanger.ac.uk",
@@ -80,7 +84,7 @@
       "sc:url": "http://www.bioconductor.org/packages/release/bioc/html/cqn.html"
     },
     {
-      "@id": "_:N8ae38b46bd4c47deae61a400c344ecb7",
+      "@id": "_:N72d721cc536a475bab186d0bcc16fe61",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -91,16 +95,12 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nfff35bc42ac34e25bad6c46a67497dbb",
+      "@id": "_:N2e930dcd903c4c3bb919500c2d9b7bdf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
       },
       "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "https://doi.org/10.1093/biostatistics/kxr054",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btad226",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/fas",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N945cf0c16ca04c26959f728eed0eceec"
+        "@id": "_:N969c17f84e614b72a8ce669d9e37ac94"
       },
       "bsc:output": {
-        "@id": "_:Nc15e5bd3695a4d66a3d1994a2f4782e5"
+        "@id": "_:N07fb39d439894438a9b0ee3206bd6a9d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
-        },
-        {
           "@id": "edam:topic_0621"
-        },
-        {
-          "@id": "edam:topic_3520"
         },
         {
           "@id": "edam:topic_0089"
         },
         {
           "@id": "edam:topic_0736"
+        },
+        {
+          "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
@@ -76,35 +80,24 @@
           "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2474"
+          "@id": "edam:operation_3672"
         },
         {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_2474"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "FAS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://pypi.org/project/greedyFAS/"
     },
     {
-      "@id": "_:Nc15e5bd3695a4d66a3d1994a2f4782e5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2332"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N945cf0c16ca04c26959f728eed0eceec",
+      "@id": "_:N969c17f84e614b72a8ce669d9e37ac94",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -115,8 +108,15 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btad226",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N07fb39d439894438a9b0ee3206bd6a9d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2332"
+      },
+      "sc:name": "Protein features"
     }
   ]
 }

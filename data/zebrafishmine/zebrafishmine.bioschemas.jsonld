@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,50 +36,54 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ZebrafishMine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0a5d833551bc47208fd53598da6509ab"
+          "@id": "_:Nd20394a4698b47ebb1c11fd97ddb7e25"
         },
         {
-          "@id": "_:N5bf1fd214a99425bbbe899f33f581e78"
+          "@id": "_:N88d861e7e7d9450fa6641d0c05a5c7cd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc339b20e05a24f23a97130727d6fa7d7"
+          "@id": "_:N2c4c941c9f2a4efb9955242dbe9e8f33"
         },
         {
-          "@id": "_:N500deb79cddb4a7289ef1855095f7d4e"
+          "@id": "_:N61142bb7cc0147acbaf165915f5a44fa"
         },
         {
-          "@id": "_:N352438f6b74a4fe5ad2991468f73f046"
+          "@id": "_:N8129f157b4094e829fd820c9de45b0b6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
+        "Database portal",
         "Web application",
-        "Database portal"
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
+        "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pubmed:23023984",
-        "pmcid:PMC3516146"
+        }
       ],
       "sc:description": "ZebrafishMine is powered by the InterMIne data warehouse system, and integrates biological data sets from multiple sources.\r\nIt currently includes updates of data from ZFIN, the zebrafish model organism database. There is also data from the Panther database.",
       "sc:featureList": [
@@ -100,46 +104,22 @@
       "sc:license": "LGPL-2.1",
       "sc:name": "ZebrafishMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "Last Build: 03.28.2013",
       "sc:url": "http://zebrafishmine.org"
     },
     {
-      "@id": "_:Nc339b20e05a24f23a97130727d6fa7d7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N500deb79cddb4a7289ef1855095f7d4e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:N352438f6b74a4fe5ad2991468f73f046",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3753"
-      },
-      "sc:name": "Over-representation data"
-    },
-    {
-      "@id": "_:N0a5d833551bc47208fd53598da6509ab",
+      "@id": "_:Nd20394a4698b47ebb1c11fd97ddb7e25",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -147,7 +127,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N5bf1fd214a99425bbbe899f33f581e78",
+      "@id": "_:N88d861e7e7d9450fa6641d0c05a5c7cd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -155,8 +135,28 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2c4c941c9f2a4efb9955242dbe9e8f33",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3753"
+      },
+      "sc:name": "Over-representation data"
+    },
+    {
+      "@id": "_:N61142bb7cc0147acbaf165915f5a44fa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:N8129f157b4094e829fd820c9de45b0b6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

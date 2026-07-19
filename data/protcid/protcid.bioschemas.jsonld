@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkq1059",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/protcid",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "ProtCID Support",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -56,8 +60,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3013667",
         "pubmed:21036862",
+        "pmcid:PMC3013667",
         {
           "@id": "https://doi.org/10.1093/nar/gkq1059"
         }
@@ -68,16 +72,16 @@
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_0303"
-        },
-        {
-          "@id": "edam:operation_0477"
+          "@id": "edam:operation_0247"
         },
         {
           "@id": "edam:operation_2475"
         },
         {
-          "@id": "edam:operation_0247"
+          "@id": "edam:operation_0303"
+        },
+        {
+          "@id": "edam:operation_0477"
         }
       ],
       "sc:name": "ProtCID",
@@ -85,10 +89,6 @@
         "@id": "http://dunbrack2.fccc.edu/ProtCiD/Help/HelpSummary.aspx"
       },
       "sc:url": "http://dunbrack2.fccc.edu/protcid"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkq1059",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

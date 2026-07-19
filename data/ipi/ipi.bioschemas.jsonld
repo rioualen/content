@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,50 +43,58 @@
       "@id": "https://bio.tools/ipi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbde296e2916c494e9d4c3f64159e71d5"
+        "@id": "_:N39caf11328244cc8b6563155abbe24eb"
       },
       "bsc:output": {
-        "@id": "_:N495255d8c7714464a65ba251a794cbbc"
+        "@id": "_:N15f8f2751df347c3985f1ddbec726dfd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_3571"
         },
         {
           "@id": "edam:topic_3366"
         },
         {
-          "@id": "edam:topic_3571"
+          "@id": "edam:topic_0085"
         },
         {
-          "@id": "edam:topic_0085"
+          "@id": "edam:topic_0078"
         }
       ],
       "sc:citation": [
+        "pubmed:15221759",
         {
           "@id": "https://doi.org/10.1002/pmic.200300721"
-        },
-        "pubmed:15221759"
+        }
       ],
       "sc:description": "Provides a top level guide to the main databases that describe the proteomes of higher eukaryotic organisms. It effectively maintains a database of cross references between the primary data sources, provides minimally redundant yet maximally complete sets of proteins for featured species (one sequence per transcript) and maintains stable identifiers (with incremental versioning) to allow the tracking of sequences.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0338"
-        },
         {
           "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_3672"
+        },
+        {
+          "@id": "edam:operation_0338"
         }
       ],
       "sc:name": "International protein index (IPI)",
       "sc:url": "http://www.ebi.ac.uk/IPI"
     },
     {
-      "@id": "_:N495255d8c7714464a65ba251a794cbbc",
+      "@id": "_:N39caf11328244cc8b6563155abbe24eb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2384"
+      },
+      "sc:name": "IPI protein ID"
+    },
+    {
+      "@id": "_:N15f8f2751df347c3985f1ddbec726dfd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -95,14 +103,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Nbde296e2916c494e9d4c3f64159e71d5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2384"
-      },
-      "sc:name": "IPI protein ID"
     }
   ]
 }

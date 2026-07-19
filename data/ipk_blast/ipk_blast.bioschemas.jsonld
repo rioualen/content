@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.3835/plantgenome2015.06.0038",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ipk_blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Dr. Uwe Scholz",
       "bsc:input": {
-        "@id": "_:N84317719be1442caad19188861cbe773"
+        "@id": "_:Nb5e3020ef6824025abf2843eba56b4b1"
       },
       "bsc:output": {
-        "@id": "_:Ned80626d2ef54c9c8fbc74fa60230abf"
+        "@id": "_:N9a98fb0acd224152ae72a611e152d1e0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3053"
       },
       "sc:citation": [
+        "pubmed:27898761",
         {
           "@id": "https://doi.org/10.3835/plantgenome2015.06.0038"
-        },
-        "pubmed:27898761"
+        }
       ],
       "sc:description": "A homology search against the current barley sequences resources is provided. The complete sequences data set comprises the whole genome shotgun assemblies of the cultivars Morex, Barke and Bowman as well as the high and low confidence gene sets. The newest POPSEQ anchoring data is integrated. Furthermore, the barley exome capture targets are provided. Additionally, resources like bacterial artificial chromosome assemblies, BAC end sequences and full length cDNAs are included.",
       "sc:featureList": {
@@ -68,10 +72,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://webblast.ipk-gatersleben.de/barley_ibsc/docs/blast_databases.html"
+          "@id": "http://dx.doi.org/10.3835/plantgenome2015.06.0038"
         },
         {
-          "@id": "http://dx.doi.org/10.3835/plantgenome2015.06.0038"
+          "@id": "http://webblast.ipk-gatersleben.de/barley_ibsc/docs/blast_databases.html"
         },
         {
           "@id": "http://webblast.ipk-gatersleben.de/ryeselect/docs/blast_databases.html"
@@ -81,18 +85,7 @@
       "sc:url": "http://webblast.ipk-gatersleben.de"
     },
     {
-      "@id": "_:Ned80626d2ef54c9c8fbc74fa60230abf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1921"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N84317719be1442caad19188861cbe773",
+      "@id": "_:Nb5e3020ef6824025abf2843eba56b4b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -103,8 +96,15 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.3835/plantgenome2015.06.0038",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N9a98fb0acd224152ae72a611e152d1e0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1921"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

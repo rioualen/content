@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,20 +40,20 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Simina M. Boca",
       "bsc:input": {
-        "@id": "_:N8747925a56e347fea82a965d44f113f9"
+        "@id": "_:Nddd9a4869d73459c8e5420846d0c0d6a"
       },
       "bsc:output": [
         {
-          "@id": "_:Na19744feb88d4284841f8076846b4a9f"
+          "@id": "_:N06332cce61d94714904d491387de9e87"
         },
         {
-          "@id": "_:N1e0946df4db54f77a4f3df07b1dfe5de"
+          "@id": "_:N13a8091653054db2aa7c82500edeba20"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -64,11 +64,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:24202540",
+        "pmcid:PMC3892685",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt633"
-        },
-        "pmcid:PMC3892685",
-        "pubmed:24202540"
+        }
       ],
       "sc:description": "Implements permutation method with joint correction for testing multiple mediators.",
       "sc:featureList": {
@@ -77,9 +77,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "MultiMed",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/MultiMed.html"
@@ -88,7 +88,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/MultiMed.html"
     },
     {
-      "@id": "_:Na19744feb88d4284841f8076846b4a9f",
+      "@id": "_:Nddd9a4869d73459c8e5420846d0c0d6a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:N06332cce61d94714904d491387de9e87",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -99,7 +110,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N1e0946df4db54f77a4f3df07b1dfe5de",
+      "@id": "_:N13a8091653054db2aa7c82500edeba20",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -108,17 +119,6 @@
         "@id": "edam:format_3033"
       },
       "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:N8747925a56e347fea82a965d44f113f9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Matrix"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btt633",

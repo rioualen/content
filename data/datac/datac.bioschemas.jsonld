@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.scitotenv.2020.141424",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/datac",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb862b986760b433582445746777dd929"
+        "@id": "_:Nf3f7853cd7b942cb901eabdd02059aa4"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb507ce829f834d14bdc92d5ba6d97575"
+          "@id": "_:N5f08bf8963f847369f393006f5b33e90"
         },
         {
-          "@id": "_:Ncb55d68099a84d729c1abed97c42acc6"
+          "@id": "_:N85f55a001c504315b0ecefccc1be3146"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3305"
       },
       "sc:citation": [
+        "pubmed:32853931",
+        "pmcid:PMC7399783",
         {
           "@id": "https://doi.org/10.1016/j.scitotenv.2020.141424"
-        },
-        "pmcid:PMC7399783",
-        "pubmed:32853931"
+        }
       ],
       "sc:description": "DatAC (Data Against COVID-19), a data fusion project with an interactive web frontend that integrates COVID-19 and environmental data in Spain. DatAC is provided with powerful data analysis and statistical capabilities that allow users to explore and analyze individual trends and associations among the provided data.",
       "sc:featureList": [
@@ -80,14 +76,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "DatAC",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://covid19.genyo.es"
     },
     {
-      "@id": "_:Nb862b986760b433582445746777dd929",
+      "@id": "_:Nf3f7853cd7b942cb901eabdd02059aa4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -95,7 +91,7 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "_:Nb507ce829f834d14bdc92d5ba6d97575",
+      "@id": "_:N5f08bf8963f847369f393006f5b33e90",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3905"
@@ -103,12 +99,16 @@
       "sc:name": "Histogram"
     },
     {
-      "@id": "_:Ncb55d68099a84d729c1abed97c42acc6",
+      "@id": "_:N85f55a001c504315b0ecefccc1be3146",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
       },
       "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.scitotenv.2020.141424",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,54 +40,54 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N683cc3d23347468da169e15b19b952e5"
+          "@id": "_:Nc300bd117ff947d085d9ed6c16f7e22f"
         },
         {
-          "@id": "_:Ne2f19936c2d64ade9a9c55383a848fe8"
+          "@id": "_:Na1eaed4f1f544f6085881e1af3a8f38c"
         },
         {
-          "@id": "_:N18de4f1bcfe64c0686e2b1e920a2156c"
+          "@id": "_:N81ae8fed1c6e4f8689af0a132b178750"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8b45b1a1d9964558b8f6b46e9cb568c6"
+          "@id": "_:Ne2133b4ce6554a978e2ece04e544e462"
         },
         {
-          "@id": "_:N73a85a7b505c443798a52f7b27b8ec4b"
+          "@id": "_:Nf41f3bb46e5d4462aa3d72da2ced3c12"
         },
         {
-          "@id": "_:N065f103ee14c477fb3605ca693c33e88"
+          "@id": "_:Nfb18641370214e7c95689a7057d307ab"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Database portal"
+        "Database portal",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_0797"
         },
         {
           "@id": "edam:topic_0623"
+        },
+        {
+          "@id": "edam:topic_3293"
         },
         {
           "@id": "edam:topic_0194"
         },
         {
           "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_0797"
         }
       ],
       "sc:citation": [
+        "pubmed:19534752",
+        "pmcid:PMC2697650",
         {
           "@id": "https://doi.org/10.1186/1471-2105-10-s6-s3"
-        },
-        "pubmed:19534752",
-        "pmcid:PMC2697650"
+        }
       ],
       "sc:description": "It allows selection of sets of homologous genes among species, and visualisation of multiple alignments and phylogenetic trees. It is useful for comparative sequence analysis, phylogeny, molecular evolution studies and to get a view of what is known about a peculiar gene family.",
       "sc:featureList": {
@@ -95,8 +95,8 @@
       },
       "sc:name": "HOGENOM",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
@@ -110,7 +110,31 @@
       "sc:url": "http://pbil.univ-lyon1.fr/databases/hogenom3.html"
     },
     {
-      "@id": "_:N8b45b1a1d9964558b8f6b46e9cb568c6",
+      "@id": "_:Nc300bd117ff947d085d9ed6c16f7e22f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Na1eaed4f1f544f6085881e1af3a8f38c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N81ae8fed1c6e4f8689af0a132b178750",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Ne2133b4ce6554a978e2ece04e544e462",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -121,7 +145,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N73a85a7b505c443798a52f7b27b8ec4b",
+      "@id": "_:Nf41f3bb46e5d4462aa3d72da2ced3c12",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -132,7 +156,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N065f103ee14c477fb3605ca693c33e88",
+      "@id": "_:Nfb18641370214e7c95689a7057d307ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -141,30 +165,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N683cc3d23347468da169e15b19b952e5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Ne2f19936c2d64ade9a9c55383a848fe8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N18de4f1bcfe64c0686e2b1e920a2156c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
     },
     {
       "@id": "https://doi.org/10.1186/1471-2105-10-s6-s3",

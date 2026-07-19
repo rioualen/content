@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,51 +36,55 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btl158",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cd-hit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N2d6750df74ef44139745a9696dcea562"
+        "@id": "_:N7a10922eb05f494184111157afe88d41"
       },
       "bsc:output": [
         {
-          "@id": "_:N80a3809f3a874538ab29e288144898cc"
+          "@id": "_:Nf138089c3c854567b977fe05fb082fe0"
         },
         {
-          "@id": "_:Nf5eb7679caca4cc2889c37de2c5910b4"
+          "@id": "_:N1d4bf01161d849b398dc8bc770b28b7b"
         },
         {
-          "@id": "_:N6e83bad592e04ee580a6def54f81e16a"
+          "@id": "_:N965757d9869044c3a825576f1c740bb5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
-        "pubmed:16731699",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/18.1.77"
-        },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/17.3.282"
-        },
-        "pubmed:11836214",
         "pubmed:20053844",
+        "pmcid:PMC2828112",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btq003"
-        },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btl158"
         },
         "pubmed:23060610",
         "pmcid:PMC3516142",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts565"
         },
-        "pmcid:PMC2828112",
-        "pubmed:11294794"
+        "pubmed:11294794",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/17.3.282"
+        },
+        "pubmed:11836214",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/18.1.77"
+        },
+        "pubmed:16731699",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btl158"
+        }
       ],
       "sc:description": "Cluster a nucleotide dataset into representative sequences.",
       "sc:featureList": {
@@ -88,9 +92,9 @@
       },
       "sc:name": "cd-hit",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/weizhongli/cdhit/wiki"
@@ -99,18 +103,7 @@
       "sc:url": "https://github.com/weizhongli/cdhit"
     },
     {
-      "@id": "_:N80a3809f3a874538ab29e288144898cc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:Nf5eb7679caca4cc2889c37de2c5910b4",
+      "@id": "_:N7a10922eb05f494184111157afe88d41",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -121,7 +114,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N6e83bad592e04ee580a6def54f81e16a",
+      "@id": "_:Nf138089c3c854567b977fe05fb082fe0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -132,7 +125,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N2d6750df74ef44139745a9696dcea562",
+      "@id": "_:N1d4bf01161d849b398dc8bc770b28b7b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -143,7 +136,18 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/18.1.77",
+      "@id": "_:N965757d9869044c3a825576f1c740bb5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/17.3.282",
       "@type": "sc:CreativeWork"
     },
     {
@@ -151,15 +155,11 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/17.3.282",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl158",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btq003",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/18.1.77",
       "@type": "sc:CreativeWork"
     }
   ]

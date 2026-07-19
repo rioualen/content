@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,16 +44,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N82765856eb564bd9bd6c66ed558bc0eb"
+          "@id": "_:N1ae79544bfc34ec8ac3e69c2e1ca5a86"
         },
         {
-          "@id": "_:N6b220d22b907406cad17037af4d5b38c"
+          "@id": "_:N84b154a7d8c644a7a44ca4d472ef6595"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nbf9bf7ea5abd4d91ab5d5e80cfbdb160"
+        "@id": "_:N6a468d05450a4f328112afe758d57bef"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
         "Web application"
@@ -76,10 +76,13 @@
       "sc:description": "Web based tools for peptide identification and quantitation.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3647"
+        },
+        {
           "@id": "edam:operation_3645"
         },
         {
-          "@id": "edam:operation_3767"
+          "@id": "edam:operation_3755"
         },
         {
           "@id": "edam:operation_3646"
@@ -88,10 +91,7 @@
           "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_3647"
-        },
-        {
-          "@id": "edam:operation_3755"
+          "@id": "edam:operation_3767"
         },
         {
           "@id": "edam:operation_3801"
@@ -102,8 +102,8 @@
       ],
       "sc:name": "MassMatrix",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -112,37 +112,26 @@
       "sc:url": "http://www.massmatrix.net"
     },
     {
-      "@id": "_:Nbf9bf7ea5abd4d91ab5d5e80cfbdb160",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N82765856eb564bd9bd6c66ed558bc0eb",
+      "@id": "_:N1ae79544bfc34ec8ac3e69c2e1ca5a86",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3654"
-        },
-        {
           "@id": "edam:format_3651"
         },
         {
           "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N6b220d22b907406cad17037af4d5b38c",
+      "@id": "_:N84b154a7d8c644a7a44ca4d472ef6595",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -151,6 +140,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "_:N6a468d05450a4f328112afe758d57bef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Peptide identification"
     }
   ]
 }

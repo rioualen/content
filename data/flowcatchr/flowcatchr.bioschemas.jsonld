@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,46 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowcatchr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Federico Marini",
       "bsc:input": {
-        "@id": "_:N5239758f7bc747658be657a5fddb13e1"
+        "@id": "_:N0951c5c1a5d54a359dc1a38b28414cab"
       },
       "bsc:output": [
         {
-          "@id": "_:Neb4cf6cd62bd4db882b917e8d6670787"
+          "@id": "_:N048650e8a5b5492e9765354c767f3e78"
         },
         {
-          "@id": "_:Nb675a61babaf4190ae8aecd6f7254c94"
+          "@id": "_:N43950135eddc428e885dad4ccb91ee8b"
         },
         {
-          "@id": "_:N9632b2fa2a48493ebeb17aa393b99fda"
+          "@id": "_:N672513de94d04844b2525aa4d1b4de04"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3383"
         },
         {
-          "@id": "edam:topic_3383"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "Set of tools to analyze in vivo microscopy imaging data, focused on tracking flowing blood cells. It guides the steps from segmentation to calculation of features, filtering out particles not of interest, providing also a set of utilities to help checking the quality of the performed operations (e.g. how good the segmentation was). It allows investigating the issue of tracking flowing cells such as in blood vessels, to categorize the particles in flowing, rolling and adherent.",
       "sc:featureList": {
@@ -80,9 +84,9 @@
       "sc:license": "BSD-4-Clause",
       "sc:name": "flowcatchR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/flowcatchR.html"
@@ -91,7 +95,45 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowcatchR.html"
     },
     {
-      "@id": "_:Neb4cf6cd62bd4db882b917e8d6670787",
+      "@id": "_:N0951c5c1a5d54a359dc1a38b28414cab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3449"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3591"
+        }
+      ],
+      "sc:name": "Cell migration track image"
+    },
+    {
+      "@id": "_:N048650e8a5b5492e9765354c767f3e78",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3449"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Cell migration track image"
+    },
+    {
+      "@id": "_:N43950135eddc428e885dad4ccb91ee8b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -107,23 +149,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nb675a61babaf4190ae8aecd6f7254c94",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3449"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Cell migration track image"
-    },
-    {
-      "@id": "_:N9632b2fa2a48493ebeb17aa393b99fda",
+      "@id": "_:N672513de94d04844b2525aa4d1b4de04",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -137,32 +163,6 @@
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N5239758f7bc747658be657a5fddb13e1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3449"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Cell migration track image"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

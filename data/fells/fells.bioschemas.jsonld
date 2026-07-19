@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx085",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/fells",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-4525-7793"
       },
       "bsc:input": {
-        "@id": "_:Ne5fcb97524cb46ad91126ddcd2027ae3"
+        "@id": "_:N24c6103c7fbe4a96aaaff760b2f269fa"
       },
       "bsc:output": {
-        "@id": "_:N2dfead217ff64d30bb5452a55631c33d"
+        "@id": "_:Na22dd251fc4f47d190faf803d616e3dc"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web API",
         "Web application"
@@ -77,10 +69,10 @@
       "sc:description": "This tool features secondary structure, disorder, aggragation, sequence complexity predictions along with amino acid propensity from sequence.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0474"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_0474"
         }
       ],
       "sc:license": "CC-BY-NC-ND-4.0",
@@ -98,7 +90,18 @@
       "sc:url": "http://protein.bio.unipd.it/fells/"
     },
     {
-      "@id": "_:N2dfead217ff64d30bb5452a55631c33d",
+      "@id": "_:N24c6103c7fbe4a96aaaff760b2f269fa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Na22dd251fc4f47d190faf803d616e3dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -108,24 +111,21 @@
           "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_3603"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3603"
         }
       ],
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Ne5fcb97524cb46ad91126ddcd2027ae3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1093/bioinformatics/btx085",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
     }
   ]
 }

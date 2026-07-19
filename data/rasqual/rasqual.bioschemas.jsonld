@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/018788",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rasqual",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "GitHub Issues",
       "bsc:input": [
         {
-          "@id": "_:N807d96a607dd419eb3912939cac4affc"
+          "@id": "_:Ndc25a693e2ed4c90a0dacdb1a006fa3c"
         },
         {
-          "@id": "_:N6e640912b1834aa5af592701f172fa0a"
+          "@id": "_:N426d157b44ae47fa9445e2f9100aec8c"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne13079c581bb4a7e81968842fe0c8301"
+        "@id": "_:N30c0e1bbe3684d358dd2d8fe88c5b9f8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3055"
-        },
         {
           "@id": "edam:topic_3307"
         },
@@ -67,10 +60,13 @@
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3055"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:author": "Natsuhiko Kumasaka",
@@ -84,9 +80,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "RASQUAL",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "sanger.ac.uk",
       "sc:softwareHelp": {
@@ -96,7 +92,7 @@
       "sc:url": "https://github.com/dg13/rasqual"
     },
     {
-      "@id": "_:N807d96a607dd419eb3912939cac4affc",
+      "@id": "_:Ndc25a693e2ed4c90a0dacdb1a006fa3c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -107,7 +103,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N6e640912b1834aa5af592701f172fa0a",
+      "@id": "_:N426d157b44ae47fa9445e2f9100aec8c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -118,7 +114,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:Ne13079c581bb4a7e81968842fe0c8301",
+      "@id": "_:N30c0e1bbe3684d358dd2d8fe88c5b9f8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -127,6 +123,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Genotype/phenotype report"
+    },
+    {
+      "@id": "https://doi.org/10.1101/018788",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-8189-0823",
-      "@type": "sc:Organization"
-    },
-    {
       "@id": "https://bio.tools/ocean_read_atlas",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N901a8fd994b540ddb056ced26b3d19be"
+        "@id": "_:N89ce7281024d464183539954c4377e9b"
       },
       "bsc:output": [
         {
-          "@id": "_:N0733053dd77a44c4ae463980fd056e5a"
+          "@id": "_:N7c7e7e317429466abc647f46c5e4c255"
         },
         {
-          "@id": "_:N89da5b96d01740bf9eaf6979e620c12e"
+          "@id": "_:N51e582d71e6c4bf3b2dca9cbf4e98492"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0610"
         },
         {
-          "@id": "edam:topic_3941"
-        },
-        {
           "@id": "edam:topic_3387"
         },
         {
           "@id": "edam:topic_3174"
+        },
+        {
+          "@id": "edam:topic_3941"
         }
       ],
       "sc:citation": [
@@ -81,10 +77,10 @@
       "sc:description": "The « Ocean Read Atlas » web service allows to search one or several sequences across all of Tara Oceans metagenomic raw sequencing data using kmindex, a new tool that performs indexing and queries using orders of magnitudes with less resources. It enables the visualization of the results on a geographic map and their correlation with each of the 56 environmental variables collected during the circumnavigation campaign. This server enables to perform instant searches on a large and complex dataset, providing new perspectives on the deep exploitation of Tara Oceans resources.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3211"
+          "@id": "edam:operation_3946"
         },
         {
-          "@id": "edam:operation_3946"
+          "@id": "edam:operation_3211"
         },
         {
           "@id": "edam:operation_0292"
@@ -94,8 +90,8 @@
       "sc:license": "Freeware",
       "sc:name": "Ocean Read Atlas",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -104,37 +100,7 @@
       "sc:url": "https://ora.mio.osupytheas.fr"
     },
     {
-      "@id": "_:N0733053dd77a44c4ae463980fd056e5a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3917"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Count matrix"
-    },
-    {
-      "@id": "_:N89da5b96d01740bf9eaf6979e620c12e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N901a8fd994b540ddb056ced26b3d19be",
+      "@id": "_:N89ce7281024d464183539954c4377e9b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -145,8 +111,42 @@
       "sc:name": "DNA sequence"
     },
     {
+      "@id": "_:N7c7e7e317429466abc647f46c5e4c255",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3917"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Count matrix"
+    },
+    {
+      "@id": "_:N51e582d71e6c4bf3b2dca9cbf4e98492",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3604"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
       "@id": "https://doi.org/10.1038/s43588-024-00596-6",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8189-0823",
+      "@type": "sc:Organization"
     }
   ]
 }

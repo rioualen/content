@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/envisionquery",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -44,27 +48,27 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N71e1978e2f214f1f8b67bf2c1bb500f8"
+          "@id": "_:Ne8855158499b4bce8570444130606bbb"
         },
         {
-          "@id": "_:Nab610e374c5b4c60a04c11186e0b442b"
+          "@id": "_:N1a00fa832e034d2fa131a3889d8d96f9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc5a9b02cd11c4ed594338798655e8700"
+          "@id": "_:Nfd9fb2e5583d4a29abbb57b18f7426d2"
         },
         {
-          "@id": "_:N49e2f23a6a34466fa7c653f574801774"
+          "@id": "_:N5c048b3523754190865bcd3261748be0"
         },
         {
-          "@id": "_:Nfc30ed82eb004f508138032a7a338d4d"
+          "@id": "_:N1d9c156499e449f09b0f78022be88a62"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0091"
@@ -88,8 +92,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ENVISIONQuery",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -99,7 +103,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ENVISIONQuery.html"
     },
     {
-      "@id": "_:Nc5a9b02cd11c4ed594338798655e8700",
+      "@id": "_:Ne8855158499b4bce8570444130606bbb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:N1a00fa832e034d2fa131a3889d8d96f9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:Nfd9fb2e5583d4a29abbb57b18f7426d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -115,39 +151,7 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N49e2f23a6a34466fa7c653f574801774",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:Nfc30ed82eb004f508138032a7a338d4d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:N71e1978e2f214f1f8b67bf2c1bb500f8",
+      "@id": "_:N5c048b3523754190865bcd3261748be0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -163,7 +167,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:Nab610e374c5b4c60a04c11186e0b442b",
+      "@id": "_:N1d9c156499e449f09b0f78022be88a62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2291"
@@ -177,10 +181,6 @@
         }
       ],
       "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-12-388",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/irefscape",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0fb5aad1a2fe45b1aea0c5c0ba0d787f"
+        "@id": "_:N0b9cc448f8384b51aadbc434eb25efc6"
       },
       "bsc:output": {
-        "@id": "_:Nd5e2a17d717c43b5888cfe11c6bd9bc2"
+        "@id": "_:N49f9caf00c76434b92afa0f6466afa30"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0128"
       },
       "sc:author": [
-        "Sabry Razick",
-        "Ian Donaldson"
+        "Ian Donaldson",
+        "Sabry Razick"
       ],
       "sc:citation": [
         "pubmed:21975162",
@@ -68,8 +72,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "iRefScape",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "UiO",
@@ -85,18 +89,7 @@
       "sc:url": "http://irefindex.org/wiki/index.php?title=iRefScape"
     },
     {
-      "@id": "_:Nd5e2a17d717c43b5888cfe11c6bd9bc2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N0fb5aad1a2fe45b1aea0c5c0ba0d787f",
+      "@id": "_:N0b9cc448f8384b51aadbc434eb25efc6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -107,8 +100,15 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-12-388",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N49f9caf00c76434b92afa0f6466afa30",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Pathway or network"
     }
   ]
 }

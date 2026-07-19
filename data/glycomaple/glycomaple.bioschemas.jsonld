@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,47 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.devcel.2021.02.023",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/glycomaple",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7d3cbe7268f24fb782a991883d057f20"
+        "@id": "_:Nc7f003c95b234c81abab3318a6a573a4"
       },
       "bsc:output": {
-        "@id": "_:N76d1aaeb91b143ef947d986d682fb16d"
+        "@id": "_:Nd652c56a35114db9b099feaf747b368b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
+        "pubmed:33730547",
+        "pmcid:PMC8086148",
         {
           "@id": "https://doi.org/10.1016/j.devcel.2021.02.023"
-        },
-        "pubmed:33730547",
-        "pmcid:PMC8086148"
+        }
       ],
       "sc:description": "A visualization tool for gene expression data onto glycan-related pathways.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3926"
+          "@id": "edam:operation_0571"
         },
         {
-          "@id": "edam:operation_0571"
+          "@id": "edam:operation_3926"
         }
       ],
       "sc:name": "GlycoMaple",
       "sc:url": "https://glycosmos.org/glycomaple"
     },
     {
-      "@id": "_:N76d1aaeb91b143ef947d986d682fb16d",
+      "@id": "_:Nc7f003c95b234c81abab3318a6a573a4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Nd652c56a35114db9b099feaf747b368b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -80,15 +87,8 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N7d3cbe7268f24fb782a991883d057f20",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression profile"
+      "@id": "https://doi.org/10.1016/j.devcel.2021.02.023",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

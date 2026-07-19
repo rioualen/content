@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx015",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mobidb-lite",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Silvio C.E. Tosatto",
       "bsc:input": {
-        "@id": "_:N42d764daf9334ebaba2ed8e122563aff"
+        "@id": "_:Nb87b82f0ff88433e8e7c10f6417f6953"
       },
       "bsc:output": {
-        "@id": "_:Na179f99f3ccc4bba807bbe115ec88d77"
+        "@id": "_:N50632c9dee6740eea1a6764f00918929"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3510"
@@ -63,10 +59,10 @@
       "sc:description": "MobiDB-lite is an optimized method for highly specific predictions of long intrinsically disordered regions",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2480"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_2480"
         }
       ],
       "sc:license": "CC-BY-NC-ND-4.0",
@@ -79,7 +75,18 @@
       "sc:url": "http://protein.bio.unipd.it/mobidblite/"
     },
     {
-      "@id": "_:Na179f99f3ccc4bba807bbe115ec88d77",
+      "@id": "_:Nb87b82f0ff88433e8e7c10f6417f6953",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N50632c9dee6740eea1a6764f00918929",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -95,15 +102,8 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N42d764daf9334ebaba2ed8e122563aff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1093/bioinformatics/btx015",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,33 +43,33 @@
         "Yasir Rahmatallah"
       ],
       "bsc:input": {
-        "@id": "_:N7dc5b7bae46d4860bfeb878d6ace1b7b"
+        "@id": "_:Nd294298f1e6d436c8a9dad741eb4631d"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb25c2e6f7e3d46d48ddf02f99002fb58"
+          "@id": "_:Nd481b59fc2b042f3b9407e58a0274067"
         },
         {
-          "@id": "_:N3ff31fe04abe4cd08ccc849352fa425f"
+          "@id": "_:N0626fdd4fd4f4a289235cd93bad223bb"
         },
         {
-          "@id": "_:Nb1eec8ca65ec479eb12333fbd34ce621"
+          "@id": "_:Nf0c4502f62974f7294fa0b8cc330158d"
         },
         {
-          "@id": "_:N5adf245473b841ada06e456f09e4d174"
+          "@id": "_:N0b373940cd03496ea60dc0b76884dd86"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3518"
         },
         {
           "@id": "edam:topic_3170"
@@ -79,27 +79,27 @@
         }
       ],
       "sc:citation": [
+        "pubmed:23044539",
         "pmcid:PMC3509490",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts579"
-        },
-        "pubmed:23044539"
+        }
       ],
       "sc:description": "Gene set analysis using specific alternative hypotheses. Tests for differential expression, scale and net correlation structure.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3463"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3463"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "GSAR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/GSAR.html"
@@ -108,55 +108,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GSAR.html"
     },
     {
-      "@id": "_:Nb25c2e6f7e3d46d48ddf02f99002fb58",
+      "@id": "_:Nd294298f1e6d436c8a9dad741eb4631d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_0928"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N3ff31fe04abe4cd08ccc849352fa425f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Nb1eec8ca65ec479eb12333fbd34ce621",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N5adf245473b841ada06e456f09e4d174",
+      "@id": "_:Nd481b59fc2b042f3b9407e58a0274067",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -172,15 +135,52 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N7dc5b7bae46d4860bfeb878d6ace1b7b",
+      "@id": "_:N0626fdd4fd4f4a289235cd93bad223bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0928"
+        "@id": "edam:data_2600"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Nf0c4502f62974f7294fa0b8cc330158d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
       },
-      "sc:name": "Gene expression profile"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N0b373940cd03496ea60dc0b76884dd86",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/bts579",

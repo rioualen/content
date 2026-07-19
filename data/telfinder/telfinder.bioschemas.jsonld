@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,14 +39,17 @@
       "@id": "https://bio.tools/telfinder",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N748d1009e1a24d16a9783d00d81a06d0"
+        "@id": "_:N594754822936469dbe7c99040ffafcd3"
       },
       "bsc:output": {
-        "@id": "_:N51253a933815409ab2536c3b479da062"
+        "@id": "_:N41cb03218264451e83cf1c31a6cee670"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0621"
+        },
         {
           "@id": "edam:topic_0196"
         },
@@ -58,9 +61,6 @@
         },
         {
           "@id": "edam:topic_3673"
-        },
-        {
-          "@id": "edam:topic_0621"
         }
       ],
       "sc:citation": [
@@ -73,51 +73,51 @@
       "sc:description": "TelFinder: a program for de novo detection of telomeric motif sequences.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3644"
-        },
-        {
           "@id": "edam:operation_0240"
         },
         {
-          "@id": "edam:operation_3472"
+          "@id": "edam:operation_0239"
         },
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_3644"
+        },
+        {
+          "@id": "edam:operation_3472"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-4.0",
       "sc:name": "TelFinder",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/bio-tombow/TelFinder"
     },
     {
-      "@id": "_:N51253a933815409ab2536c3b479da062",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N748d1009e1a24d16a9783d00d81a06d0",
+      "@id": "_:N594754822936469dbe7c99040ffafcd3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1930"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1930"
         }
       ],
       "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N41cb03218264451e83cf1c31a6cee670",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
     },
     {
       "@id": "https://doi.org/10.1128/spectrum.03928-22",

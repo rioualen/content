@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq099",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bubastis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "James Malone",
       "bsc:input": {
-        "@id": "_:Nb87d8f3a79e24042bf37ff3c1ae81d8d"
+        "@id": "_:Nd6092349a92b48b48ba835aa82039920"
       },
       "bsc:output": {
-        "@id": "_:N14e1467468404137a45508b646eea17c"
+        "@id": "_:Nefc82f3c43124ad3a8928ac3de163edd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_3571"
         },
         {
           "@id": "edam:topic_0203"
@@ -62,37 +58,37 @@
           "@id": "edam:topic_0218"
         },
         {
-          "@id": "edam:topic_3571"
+          "@id": "edam:topic_0089"
         }
       ],
       "sc:author": "James Malone",
       "sc:citation": [
+        "pubmed:20200009",
         "pmcid:PMC2853691",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btq099"
-        },
-        "pubmed:20200009"
+        }
       ],
       "sc:description": "An ontology change tool which is able to analyse two ontologies (typically two versions of the same ontology) to highlight logical changes which have occurred and to present these changes in more or less detail, as required.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3352"
-        },
-        {
-          "@id": "edam:operation_3559"
+          "@id": "edam:operation_0226"
         },
         {
           "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_0226"
+          "@id": "edam:operation_3352"
+        },
+        {
+          "@id": "edam:operation_3559"
         }
       ],
       "sc:name": "Bubastis",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -107,7 +103,15 @@
       "sc:url": "http://www.ebi.ac.uk/efo/bubastis/"
     },
     {
-      "@id": "_:N14e1467468404137a45508b646eea17c",
+      "@id": "_:Nd6092349a92b48b48ba835aa82039920",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0582"
+      },
+      "sc:name": "Ontology"
+    },
+    {
+      "@id": "_:Nefc82f3c43124ad3a8928ac3de163edd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2223"
@@ -115,12 +119,8 @@
       "sc:name": "Ontology metadata"
     },
     {
-      "@id": "_:Nb87d8f3a79e24042bf37ff3c1ae81d8d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0582"
-      },
-      "sc:name": "Ontology"
+      "@id": "https://doi.org/10.1093/bioinformatics/btq099",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

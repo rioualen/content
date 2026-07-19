@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-017-1549-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bbcanalyzer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Sarah Sandmann",
       "bsc:input": {
-        "@id": "_:N9cf2272b9130446aa75737c3eb36e759"
+        "@id": "_:N074c4b176e8641b699903efdd6af19a1"
       },
       "bsc:output": [
         {
-          "@id": "_:N85a6f0936b8c4611b944cee788ec5625"
+          "@id": "_:N652366dc382c42c78403d4ae3a8f2b56"
         },
         {
-          "@id": "_:Nf159713644c54c818a382c7b302ab9c8"
+          "@id": "_:N351cb176d742428aab0cfd0ad73b974c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -73,18 +77,18 @@
       "sc:description": "This package visualizes the relative or absolute number of bases, deletions and insertions at defined positions in sequence alignment data available as bam files in comparison to the reference bases. Markers for the relative base frequencies, the mean quality of the detected bases, known mutations or polymorphisms and variants called in the data may additionally be included in the plots.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0564"
+          "@id": "edam:operation_2478"
         },
         {
-          "@id": "edam:operation_2478"
+          "@id": "edam:operation_0564"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "BBCAnalyzer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/BBCAnalyzer.html"
@@ -93,7 +97,34 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/BBCAnalyzer.html"
     },
     {
-      "@id": "_:N85a6f0936b8c4611b944cee788ec5625",
+      "@id": "_:N074c4b176e8641b699903efdd6af19a1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N652366dc382c42c78403d4ae3a8f2b56",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1921"
+        },
+        {
+          "@id": "edam:format_2921"
+        }
+      ],
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N351cb176d742428aab0cfd0ad73b974c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2166"
@@ -107,37 +138,6 @@
         }
       ],
       "sc:name": "Sequence composition plot"
-    },
-    {
-      "@id": "_:Nf159713644c54c818a382c7b302ab9c8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1921"
-        },
-        {
-          "@id": "edam:format_2921"
-        }
-      ],
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "_:N9cf2272b9130446aa75737c3eb36e759",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-017-1549-4",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

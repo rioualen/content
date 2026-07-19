@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/NAR/GKAC1094",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ribo-uorf",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5269af291de44f05a11c0062d817dcec"
+          "@id": "_:Nd2794bb5ef57491e8ef86b9a5d1726e7"
         },
         {
-          "@id": "_:N136b0842b19b4a6f9cb2c3ceb671e68a"
+          "@id": "_:Naccba373e698478fb4ddb9a9fd0ef5c7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0108"
-        },
-        {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_0203"
@@ -69,15 +62,18 @@
           "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_0621"
+        },
+        {
+          "@id": "edam:topic_0108"
         }
       ],
       "sc:citation": [
+        "pubmed:36440758",
+        "pmcid:PMC9825487",
         {
           "@id": "https://doi.org/10.1093/NAR/GKAC1094"
-        },
-        "pubmed:36440758",
-        "pmcid:PMC9825487"
+        }
       ],
       "sc:description": "A comprehensive data resource of upstream open reading frames (uORFs) based on ribosome profiling.",
       "sc:featureList": [
@@ -95,14 +91,14 @@
       "sc:license": "Not licensed",
       "sc:name": "Ribo-uORF",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://rnainformatics.org.cn/RiboUORF"
     },
     {
-      "@id": "_:N5269af291de44f05a11c0062d817dcec",
+      "@id": "_:Nd2794bb5ef57491e8ef86b9a5d1726e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
@@ -110,12 +106,16 @@
       "sc:name": "Ensembl ID"
     },
     {
-      "@id": "_:N136b0842b19b4a6f9cb2c3ceb671e68a",
+      "@id": "_:Naccba373e698478fb4ddb9a9fd0ef5c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
       },
       "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "https://doi.org/10.1093/NAR/GKAC1094",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

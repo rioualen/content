@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/s13258-016-0466-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ivas",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Seonggyun Han",
       "bsc:input": [
         {
-          "@id": "_:N9f91aff4e1764a5180ae56efa0e983d0"
+          "@id": "_:Nc1399f319d49476cb821760e9b38ac35"
         },
         {
-          "@id": "_:Nd964d333666a451c951b7288dfa7f434"
+          "@id": "_:N4435bdc0732d466fb74397c5b453b8b2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd86b8f56267544f2b170a45028b211fe"
+          "@id": "_:Nfca26c6476dd41419462620663095ad8"
         },
         {
-          "@id": "_:N5a4777f726d74fdcb3d34324c7744c01"
+          "@id": "_:N56bc189c2143400bbb41baa8f1cea175"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3320"
         },
         {
-          "@id": "edam:topic_3320"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": {
@@ -87,9 +83,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "IVAS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/IVAS.html"
@@ -98,29 +94,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/IVAS.html"
     },
     {
-      "@id": "_:Nd86b8f56267544f2b170a45028b211fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N5a4777f726d74fdcb3d34324c7744c01",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N9f91aff4e1764a5180ae56efa0e983d0",
+      "@id": "_:Nc1399f319d49476cb821760e9b38ac35",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -131,7 +105,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nd964d333666a451c951b7288dfa7f434",
+      "@id": "_:N4435bdc0732d466fb74397c5b453b8b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -140,6 +114,32 @@
         "@id": "edam:format_2306"
       },
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:Nfca26c6476dd41419462620663095ad8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N56bc189c2143400bbb41baa8f1cea175",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1007/s13258-016-0466-7",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

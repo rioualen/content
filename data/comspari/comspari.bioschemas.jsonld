@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.jasms.2003.12.011",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/comspari",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N92b87cbc966547618207959115f2569b"
+          "@id": "_:N6d60384edf324d8cad7dd78abddf1d80"
         },
         {
-          "@id": "_:N01b738b94049413697fb4edade2bacd1"
+          "@id": "_:Nf02733edca03426d8d0dc6bbc0d433b7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0fd3dae4653d4d0d9c4546d753c5f8ac"
+          "@id": "_:N0fbf6acab6a5487f938834f907b8f6e4"
         },
         {
-          "@id": "_:Nb66d6c3302644159ba7221c84907a4c8"
+          "@id": "_:Na4e1fb3ca775474e883ab11f9ba850ef"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -77,26 +73,26 @@
       "sc:description": "Compares two datasets in netCDF or ASCII format.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1812"
-        },
-        {
-          "@id": "edam:operation_0335"
-        },
-        {
-          "@id": "edam:operation_3694"
+          "@id": "edam:operation_3203"
         },
         {
           "@id": "edam:operation_2424"
         },
         {
-          "@id": "edam:operation_3203"
+          "@id": "edam:operation_3694"
+        },
+        {
+          "@id": "edam:operation_1812"
+        },
+        {
+          "@id": "edam:operation_0335"
         }
       ],
       "sc:name": "COMSPARI",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.biomechanic.org/comspari/COMSPARI/README"
@@ -104,7 +100,18 @@
       "sc:url": "http://www.biomechanic.org/comspari"
     },
     {
-      "@id": "_:N92b87cbc966547618207959115f2569b",
+      "@id": "_:N6d60384edf324d8cad7dd78abddf1d80",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:Nf02733edca03426d8d0dc6bbc0d433b7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -115,7 +122,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N01b738b94049413697fb4edade2bacd1",
+      "@id": "_:N0fbf6acab6a5487f938834f907b8f6e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -126,7 +133,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N0fd3dae4653d4d0d9c4546d753c5f8ac",
+      "@id": "_:Na4e1fb3ca775474e883ab11f9ba850ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -137,15 +144,8 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nb66d6c3302644159ba7221c84907a4c8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mass spectrometry spectra"
+      "@id": "https://doi.org/10.1016/j.jasms.2003.12.011",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

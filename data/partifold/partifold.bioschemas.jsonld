@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1089/cmb.2013.0163",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/partifold",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0130"
+          "@id": "edam:topic_0820"
         },
         {
-          "@id": "edam:topic_0820"
+          "@id": "edam:topic_0130"
         },
         {
           "@id": "edam:topic_0078"
@@ -65,22 +61,26 @@
       "sc:description": "Software to investigate the folding landscape of TMBs (Transmembrane Beta-barrel Proteins).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0303"
         },
         {
-          "@id": "edam:operation_0303"
+          "@id": "edam:operation_0292"
         }
       ],
       "sc:name": "partiFold",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://partifold.csail.mit.edu/TMB/instructions.html"
       },
       "sc:url": "http://partifold.csail.mit.edu/"
+    },
+    {
+      "@id": "https://doi.org/10.1089/cmb.2013.0163",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

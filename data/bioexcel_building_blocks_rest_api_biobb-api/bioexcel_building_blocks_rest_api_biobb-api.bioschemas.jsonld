@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-0513-0288",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/bioexcel_building_blocks_rest_api_biobb-api",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,63 +51,63 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N96a01f2114074e4093c6dd737446aaab"
+          "@id": "_:Na843b91fca254906963bd85f96d333de"
         },
         {
-          "@id": "_:Nf5166fb9bd284799895cf9840ec1609b"
+          "@id": "_:N817a889dc5c24397a0dae2feeaffea59"
         },
         {
-          "@id": "_:Nfa03dc794f1e49fbadc1c0e3019c2432"
+          "@id": "_:N7bae0097d68b4d1ab7e93a742c16aa06"
         },
         {
-          "@id": "_:N03da9c8ae4ad499e875003ac59973c2e"
+          "@id": "_:Ndb0115555c4e4f089711f27e7f6ba12b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na6ac82ebadcb4a6caa6ccd345654e835"
+          "@id": "_:N58554b50f530445ebbf353e0f6f589c6"
         },
         {
-          "@id": "_:N23112ed5fac94e0cbb074ca5f5432beb"
+          "@id": "_:N71b5db188ee3433588f4e4d60342e311"
         },
         {
-          "@id": "_:N5635b16cac1c41c0b0f97e16c98b8f91"
+          "@id": "_:Nb286a518e7b944edb33291b30d99b6ea"
         },
         {
-          "@id": "_:Na505740afdb44d0ba4fdbc1dad125726"
+          "@id": "_:N188b57c3087c4977b0efa5022c613f75"
         },
         {
-          "@id": "_:N9cb82f4025de4e7081378aae86fd9197"
+          "@id": "_:N3b866addb04c48199e0845ab5f0b3520"
         },
         {
-          "@id": "_:N1bc62156ad334b42aa7246e0e5945668"
+          "@id": "_:N602027122b304443a8db26a4e13eedf1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web API"
+        "Web API",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0081"
+          "@id": "edam:topic_3892"
         },
         {
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_3892"
+          "@id": "edam:topic_2275"
         },
         {
-          "@id": "edam:topic_2275"
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0003-2116-3880"
+          "@id": "https://orcid.org/0000-0003-0513-0288"
         },
         {
-          "@id": "https://orcid.org/0000-0003-0513-0288"
+          "@id": "https://orcid.org/0000-0003-2116-3880"
         }
       ],
       "sc:contributor": [
@@ -116,13 +124,10 @@
       "sc:description": "BioBB REST API extends and complements the BioBB library offering programmatic access to the collection of biomolecular simulation tools included in the BioExcel Building Blocks library. Molecular Dynamics setup, docking, structure modeling, free energy simulations, and flexibility analyses are examples of functionalities included in the endpoints collection. All functionalities are accessible through standard REST API calls, eluding the need of tools installation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2406"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2844"
-        },
-        {
-          "@id": "edam:operation_0475"
+          "@id": "edam:operation_3893"
         },
         {
           "@id": "edam:operation_0478"
@@ -134,22 +139,25 @@
           "@id": "edam:operation_2481"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_0475"
         },
         {
           "@id": "edam:operation_0477"
         },
         {
-          "@id": "edam:operation_3893"
+          "@id": "edam:operation_2406"
+        },
+        {
+          "@id": "edam:operation_2844"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks REST API (BioBB-API)",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "BioExcel Center of Excellence for Computational Biomolecular Research",
       "sc:softwareHelp": {
@@ -159,43 +167,7 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb-api/"
     },
     {
-      "@id": "_:N96a01f2114074e4093c6dd737446aaab",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3650"
-        },
-        {
-          "@id": "edam:format_3878"
-        },
-        {
-          "@id": "edam:format_3875"
-        },
-        {
-          "@id": "edam:format_3885"
-        },
-        {
-          "@id": "edam:format_3876"
-        }
-      ],
-      "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:Nf5166fb9bd284799895cf9840ec1609b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:Nfa03dc794f1e49fbadc1c0e3019c2432",
+      "@id": "_:Na843b91fca254906963bd85f96d333de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -206,7 +178,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N03da9c8ae4ad499e875003ac59973c2e",
+      "@id": "_:N817a889dc5c24397a0dae2feeaffea59",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1459"
@@ -217,26 +189,7 @@
       "sc:name": "Nucleic acid structure"
     },
     {
-      "@id": "_:Na6ac82ebadcb4a6caa6ccd345654e835",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3750"
-        },
-        {
-          "@id": "edam:format_1637"
-        },
-        {
-          "@id": "edam:format_3464"
-        }
-      ],
-      "sc:name": "Text data"
-    },
-    {
-      "@id": "_:N23112ed5fac94e0cbb074ca5f5432beb",
+      "@id": "_:N7bae0097d68b4d1ab7e93a742c16aa06",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -247,7 +200,48 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N5635b16cac1c41c0b0f97e16c98b8f91",
+      "@id": "_:Ndb0115555c4e4f089711f27e7f6ba12b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3885"
+        },
+        {
+          "@id": "edam:format_3876"
+        },
+        {
+          "@id": "edam:format_3875"
+        },
+        {
+          "@id": "edam:format_3878"
+        },
+        {
+          "@id": "edam:format_3650"
+        }
+      ],
+      "sc:name": "Trajectory data"
+    },
+    {
+      "@id": "_:N58554b50f530445ebbf353e0f6f589c6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N71b5db188ee3433588f4e4d60342e311",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1459"
@@ -258,48 +252,18 @@
       "sc:name": "Nucleic acid structure"
     },
     {
-      "@id": "_:Na505740afdb44d0ba4fdbc1dad125726",
+      "@id": "_:Nb286a518e7b944edb33291b30d99b6ea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2968"
+        "@id": "edam:data_1460"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Image"
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N9cb82f4025de4e7081378aae86fd9197",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3875"
-        },
-        {
-          "@id": "edam:format_3878"
-        },
-        {
-          "@id": "edam:format_3650"
-        },
-        {
-          "@id": "edam:format_3885"
-        },
-        {
-          "@id": "edam:format_3876"
-        }
-      ],
-      "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:N1bc62156ad334b42aa7246e0e5945668",
+      "@id": "_:N188b57c3087c4977b0efa5022c613f75",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2085"
@@ -318,12 +282,48 @@
       "sc:name": "Structure report"
     },
     {
-      "@id": "https://orcid.org/0000-0003-0513-0288",
-      "@type": "sc:Person"
+      "@id": "_:N3b866addb04c48199e0845ab5f0b3520",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3750"
+        },
+        {
+          "@id": "edam:format_1637"
+        }
+      ],
+      "sc:name": "Text data"
     },
     {
-      "@id": "https://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
+      "@id": "_:N602027122b304443a8db26a4e13eedf1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3885"
+        },
+        {
+          "@id": "edam:format_3876"
+        },
+        {
+          "@id": "edam:format_3875"
+        },
+        {
+          "@id": "edam:format_3878"
+        },
+        {
+          "@id": "edam:format_3650"
+        }
+      ],
+      "sc:name": "Trajectory data"
     },
     {
       "@id": "https://orcid.org/0000-0003-2116-3880",

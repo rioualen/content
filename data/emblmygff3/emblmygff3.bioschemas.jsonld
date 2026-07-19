@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jacques Dainat",
       "bsc:input": {
-        "@id": "_:N6853fe65ebff41ba854445019a4233f8"
+        "@id": "_:N704d080dcf78416ba0de7bfb9c14b2b1"
       },
       "bsc:output": {
-        "@id": "_:N2238fbc7be4646b6a1e1d71ce30d6a1c"
+        "@id": "_:N1826833af55e42b4a21b96912bd55085"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0219"
@@ -66,32 +66,21 @@
       "sc:license": "GPL-3.0",
       "sc:name": "EMBLmyGFF3",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/NBISweden/EMBLmyGFF3"
       },
       "sc:softwareVersion": [
-        "1.3",
         "1.2.6",
-        "1.2.8"
+        "1.2.8",
+        "1.3"
       ],
       "sc:url": "https://github.com/NBISweden/EMBLmyGFF3"
     },
     {
-      "@id": "_:N2238fbc7be4646b6a1e1d71ce30d6a1c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1927"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N6853fe65ebff41ba854445019a4233f8",
+      "@id": "_:N704d080dcf78416ba0de7bfb9c14b2b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -102,11 +91,22 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "https://doi.org/10.1186/s13104-018-3686-x",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N1826833af55e42b4a21b96912bd55085",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1927"
+      },
+      "sc:name": "Sequence features"
     },
     {
       "@id": "https://doi.org/10.5281/zenodo.2647048",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13104-018-3686-x",
       "@type": "sc:CreativeWork"
     }
   ]

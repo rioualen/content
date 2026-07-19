@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu829",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jchemed.0c00579",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/3dmol",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2275"
+          "@id": "edam:topic_3314"
         },
         {
           "@id": "edam:topic_3382"
         },
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_2275"
         },
         {
-          "@id": "edam:topic_3314"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC9416521",
-        "pubmed:36035779",
+        "pubmed:25505090",
+        "pmcid:PMC4393526",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu829"
         },
-        "pubmed:25505090",
-        "pmcid:PMC4393526",
+        "pubmed:36035779",
+        "pmcid:PMC9416521",
         {
           "@id": "https://doi.org/10.1021/acs.jchemed.0c00579"
         }
@@ -82,13 +74,21 @@
       "sc:name": "3Dmol.js",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://3dmol.csb.pitt.edu/doc/index.html"
       },
       "sc:url": "http://3dmol.csb.pitt.edu/"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu829",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jchemed.0c00579",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/ernwin",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6df3d9f5b85e4db39174aa41f8f45519"
+        "@id": "_:N589043bade08456eaaa1a55004e42d94"
       },
       "bsc:output": {
-        "@id": "_:Nba22930faf224fefa0f2f554e803b391"
+        "@id": "_:N38f578f8286e410f9e42b36d56185cfc"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
       },
       "sc:citation": [
-        "pmcid:PMC4436664",
         "pubmed:25904133",
+        "pmcid:PMC4436664",
         {
           "@id": "https://doi.org/10.1261/rna.047522.114"
         }
@@ -62,8 +62,8 @@
       },
       "sc:name": "Ernwin",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "bioinf.uni-leipzig.de",
       "sc:softwareHelp": {
@@ -73,7 +73,15 @@
       "sc:url": "https://github.com/pkerpedjiev/ernwin"
     },
     {
-      "@id": "_:Nba22930faf224fefa0f2f554e803b391",
+      "@id": "_:N589043bade08456eaaa1a55004e42d94",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N38f578f8286e410f9e42b36d56185cfc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -82,14 +90,6 @@
         "@id": "edam:format_2033"
       },
       "sc:name": "Structure"
-    },
-    {
-      "@id": "_:N6df3d9f5b85e4db39174aa41f8f45519",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
     },
     {
       "@id": "https://doi.org/10.1261/rna.047522.114",

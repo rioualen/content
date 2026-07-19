@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-3196-0173",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/toxcodan-genome",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd26f8eac87104670bd422f3becdff3c6"
+        "@id": "_:N3bf68d2afa5f405888a722eea1cdb605"
       },
       "bsc:output": {
-        "@id": "_:Nacf0b0f417ef45549a39c46eeac9818a"
+        "@id": "_:Nde80e402b6034ec78eb54162a7e9bb2b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
@@ -69,7 +73,7 @@
       "sc:url": "https://github.com/pedronachtigall/ToxCodAn-Genome"
     },
     {
-      "@id": "_:Nd26f8eac87104670bd422f3becdff3c6",
+      "@id": "_:N3bf68d2afa5f405888a722eea1cdb605",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -80,7 +84,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nacf0b0f417ef45549a39c46eeac9818a",
+      "@id": "_:Nde80e402b6034ec78eb54162a7e9bb2b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -89,10 +93,6 @@
         "@id": "edam:format_2306"
       },
       "sc:name": "Annotation track"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-3196-0173",
-      "@type": "sc:Person"
     }
   ]
 }

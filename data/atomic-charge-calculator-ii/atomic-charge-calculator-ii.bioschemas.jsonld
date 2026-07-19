@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-0296-2452",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkaa367",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/atomic-charge-calculator-ii",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,17 +43,17 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N790c44925e414e54b63b8467463ea8b4"
+          "@id": "_:N7725a6e680ba4b2b8a6cd0a77d6526f6"
         },
         {
-          "@id": "_:Nd0f88c1a06484192b4221c9e5406b01c"
+          "@id": "_:N0031b18a1ee44d189b4bb4ad3e121d6b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3332"
@@ -70,11 +62,11 @@
         "@id": "https://orcid.org/0000-0002-0296-2452"
       },
       "sc:citation": [
+        "pubmed:32402071",
         "pmcid:PMC7319571",
         {
           "@id": "https://doi.org/10.1093/nar/gkaa367"
-        },
-        "pubmed:32402071"
+        }
       ],
       "sc:description": "Atomic Charge Calculator II (ACC II) is a web application for fast calculation of partial atomic charges.",
       "sc:featureList": {
@@ -93,7 +85,7 @@
       "sc:url": "https://acc2.ncbr.muni.cz"
     },
     {
-      "@id": "_:N790c44925e414e54b63b8467463ea8b4",
+      "@id": "_:N7725a6e680ba4b2b8a6cd0a77d6526f6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -109,7 +101,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nd0f88c1a06484192b4221c9e5406b01c",
+      "@id": "_:N0031b18a1ee44d189b4bb4ad3e121d6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -125,8 +117,16 @@
       "sc:name": "Small molecule structure"
     },
     {
+      "@id": "https://orcid.org/0000-0002-0296-2452",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-3840-8760",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkaa367",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/pro.5560040318",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/phdhtm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfc08f39facdb4b579163eabc34d9a2ff"
+        "@id": "_:N82460ff5ede1453189ac60938750667e"
       },
       "bsc:output": {
-        "@id": "_:N56a4ef99a7184abdb27019c8503824f6"
+        "@id": "_:N46238f8ae37940f6b33fe8526f3609e3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_0820"
         },
         {
-          "@id": "edam:topic_0820"
+          "@id": "edam:topic_2814"
         },
         {
           "@id": "edam:topic_0082"
@@ -81,9 +77,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "PHDhtm",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "EMBL Heidelberg",
@@ -96,7 +92,18 @@
       "sc:url": "http://ppopen.informatik.tu-muenchen.de/"
     },
     {
-      "@id": "_:N56a4ef99a7184abdb27019c8503824f6",
+      "@id": "_:N82460ff5ede1453189ac60938750667e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:N46238f8ae37940f6b33fe8526f3609e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -107,15 +114,8 @@
       "sc:name": "Protein report"
     },
     {
-      "@id": "_:Nfc08f39facdb4b579163eabc34d9a2ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence record"
+      "@id": "https://doi.org/10.1002/pro.5560040318",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

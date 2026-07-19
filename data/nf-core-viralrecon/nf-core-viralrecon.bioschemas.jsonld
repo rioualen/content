@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41587-020-0439-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2245-210X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0740-6324",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-1541-042X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2827-9261",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4101-2502",
       "@type": "sc:Person"
     },
     {
@@ -50,41 +70,53 @@
           "@id": "https://orcid.org/0000-0002-1541-042X"
         },
         {
+          "@id": "https://orcid.org/0000-0002-2245-210X"
+        },
+        {
           "@id": "https://orcid.org/0000-0002-0740-6324"
         },
         {
           "@id": "https://orcid.org/0000-0003-2827-9261"
         },
         {
-          "@id": "https://orcid.org/0000-0002-2245-210X"
-        },
-        {
           "@id": "https://orcid.org/0000-0003-4101-2502"
         }
       ],
       "bsc:input": {
-        "@id": "_:N1228e8ffd4834a86ad4b85e2d6667e46"
+        "@id": "_:N22d5bf3d825749ac8ba127faa5964641"
       },
       "bsc:output": [
         {
-          "@id": "_:Na1e124aadde6465182fbbb232034e58f"
+          "@id": "_:Ne6076625fa0f4bc8adc361d4c547dcec"
         },
         {
-          "@id": "_:N14aa34b9641a48c690958086e9713957"
+          "@id": "_:N1fa98b20ab2e41dfa683fe2179bd7603"
         },
         {
-          "@id": "_:Ncf8c8940fb5b49dfaed7c5ba4f28c0d5"
+          "@id": "_:Nccbce5fb11624b20811ff4c386a76546"
         },
         {
-          "@id": "_:N73ffea478bad46f0b737eec685c89610"
+          "@id": "_:N4ab161971c1b45979f65c26d1ce299b0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
-        "Command-line tool"
+        "Command-line tool",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0199"
+        },
+        {
+          "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:topic_0102"
+        },
+        {
+          "@id": "edam:topic_3796"
+        },
         {
           "@id": "edam:topic_3168"
         },
@@ -93,26 +125,14 @@
         },
         {
           "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_0199"
-        },
-        {
-          "@id": "edam:topic_3796"
-        },
-        {
-          "@id": "edam:topic_0622"
-        },
-        {
-          "@id": "edam:topic_0102"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-2245-210X"
+          "@id": "https://orcid.org/0000-0003-2707-7940"
         },
         {
-          "@id": "https://orcid.org/0000-0003-2707-7940"
+          "@id": "https://orcid.org/0000-0002-2245-210X"
         },
         {
           "@id": "https://orcid.org/0000-0002-0740-6324"
@@ -127,22 +147,22 @@
       "sc:description": "nfcore/viralrecon is a bioinformatics analysis pipeline used to perform assembly and intra-host/low-frequency variant calling for viral samples. The pipeline supports short-read Illumina sequencing data from both shotgun (e.g. sequencing directly from clinical samples) and enrichment-based library preparation methods (e.g. amplicon-based: ARTIC SARS-CoV-2 enrichment protocol; or probe-capture-based).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_3197"
+        },
+        {
+          "@id": "edam:operation_0525"
         },
         {
           "@id": "edam:operation_3731"
         },
         {
-          "@id": "edam:operation_3227"
-        },
-        {
-          "@id": "edam:operation_3197"
+          "@id": "edam:operation_0292"
         },
         {
           "@id": "edam:operation_0346"
         },
         {
-          "@id": "edam:operation_0525"
+          "@id": "edam:operation_3227"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -151,68 +171,41 @@
       "sc:operatingSystem": "Linux",
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/nf-core/viralrecon/blob/master/LICENSE"
+          "@id": "https://nf-co.re/viralrecon"
         },
         {
-          "@id": "https://nf-co.re/viralrecon"
+          "@id": "https://github.com/nf-core/viralrecon/blob/master/LICENSE"
         },
         {
           "@id": "https://nf-co.re/viralrecon/usage"
         }
       ],
       "sc:softwareVersion": [
-        "2.4.1",
         "1.0.0",
-        "2.3.1",
-        "2.0",
-        "2.4",
         "1.1.0",
+        "2.0",
         "2.1",
+        "2.2",
         "2.3",
-        "2.2"
+        "2.3.1",
+        "2.4",
+        "2.4.1"
       ],
       "sc:url": "https://nf-co.re/viralrecon"
     },
     {
-      "@id": "_:Na1e124aadde6465182fbbb232034e58f",
+      "@id": "_:N22d5bf3d825749ac8ba127faa5964641",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3498"
+        "@id": "edam:data_3494"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3016"
+        "@id": "edam:format_1930"
       },
-      "sc:name": "Sequence variations"
+      "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N14aa34b9641a48c690958086e9713957",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3975"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:Ncf8c8940fb5b49dfaed7c5ba4f28c0d5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3914"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Quality control report"
-    },
-    {
-      "@id": "_:N73ffea478bad46f0b737eec685c89610",
+      "@id": "_:Ne6076625fa0f4bc8adc361d4c547dcec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -228,35 +221,42 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:N1228e8ffd4834a86ad4b85e2d6667e46",
+      "@id": "_:N1fa98b20ab2e41dfa683fe2179bd7603",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
+        "@id": "edam:data_3914"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1930"
+        "@id": "edam:format_2331"
       },
-      "sc:name": "DNA sequence"
+      "sc:name": "Quality control report"
     },
     {
-      "@id": "https://orcid.org/0000-0003-2827-9261",
-      "@type": "sc:Person"
+      "@id": "_:Nccbce5fb11624b20811ff4c386a76546",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_3975"
+        }
+      ],
+      "sc:name": "Sequence assembly"
     },
     {
-      "@id": "https://doi.org/10.1038/s41587-020-0439-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-2245-210X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4101-2502",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0740-6324",
-      "@type": "sc:Person"
+      "@id": "_:N4ab161971c1b45979f65c26d1ce299b0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
     },
     {
       "@id": "https://orcid.org/0000-0003-2707-7940",

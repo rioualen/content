@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,109 +36,81 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cpgplot",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N71f81f1d1d254e5fb098cb6e71013ce0"
+        "@id": "_:N1da0af65bf5e4374a3f57dcd9724fb28"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne84a28d3f143465a85929c248f8df8d5"
+          "@id": "_:Ne4b6d441216a4a06993173dfb9960015"
         },
         {
-          "@id": "_:N11bb4a9047954bda92d78370f03694ef"
+          "@id": "_:N1665a66ec2ce45c58a51c1b708580846"
         },
         {
-          "@id": "_:Nbeab5d39a3f749579640c69166e5a9d7"
+          "@id": "_:N957271f6377e42e889bb3c52fe5fcda2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0157"
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
           "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "Wellcome Trust",
-        "EMBOSS Contributors",
+        "UK BBSRC",
         "UK MRC",
-        "UK BBSRC"
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Identify and plot CpG islands in nucleotide sequence(s).",
       "sc:featureList": {
         "@id": "edam:operation_0430"
       },
       "sc:funder": [
-        "Wellcome Trust",
         "UK BBSRC",
-        "UK MRC"
+        "UK MRC",
+        "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "cpgplot",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "EMBOSS",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "EMBOSS"
       ],
       "sc:softwareHelp": [
         {
           "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/cpgplot.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/cpgplot.html"
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/cpgplot.html"
     },
     {
-      "@id": "_:Ne84a28d3f143465a85929c248f8df8d5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N11bb4a9047954bda92d78370f03694ef",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nbeab5d39a3f749579640c69166e5a9d7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N71f81f1d1d254e5fb098cb6e71013ce0",
+      "@id": "_:N1da0af65bf5e4374a3f57dcd9724fb28",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -146,11 +118,39 @@
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@id": "_:Ne4b6d441216a4a06993173dfb9960015",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N1665a66ec2ce45c58a51c1b708580846",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N957271f6377e42e889bb3c52fe5fcda2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     }
   ]

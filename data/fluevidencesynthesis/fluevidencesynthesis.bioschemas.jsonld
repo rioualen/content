@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,57 +36,53 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1005838",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fluevidencesynthesis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Edwin van Leeuwen",
       "bsc:input": {
-        "@id": "_:N4183fa0e5367440289e2a4a6cb24961a"
+        "@id": "_:N5ba9c33f2ef54a509685a54789e80201"
       },
       "bsc:output": {
-        "@id": "_:Ned42f7d15df54147b230e32da79771c0"
+        "@id": "_:N7721746c99cc4185a912da969982f20a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3305"
         },
         {
-          "@id": "edam:topic_3305"
+          "@id": "edam:topic_2269"
         },
         {
           "@id": "edam:topic_0781"
         }
       ],
       "sc:citation": [
+        "pubmed:29155812",
+        "pmcid:PMC5714397",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1005838"
-        },
-        "pmcid:PMC5714397",
-        "pubmed:29155812"
+        }
       ],
       "sc:description": "Code for reconstructing influenza dynamics from surveillance data using evidence synthesis techniques.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_2497"
         },
         {
           "@id": "edam:operation_2423"
         },
         {
-          "@id": "edam:operation_2497"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "fluEvidenceSynthesis",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -95,15 +91,7 @@
       "sc:url": "https://github.com/MJomaba/flu-evidence-synthesis"
     },
     {
-      "@id": "_:Ned42f7d15df54147b230e32da79771c0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N4183fa0e5367440289e2a4a6cb24961a",
+      "@id": "_:N5ba9c33f2ef54a509685a54789e80201",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2042"
@@ -112,6 +100,18 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Evidence"
+    },
+    {
+      "@id": "_:N7721746c99cc4185a912da969982f20a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1005838",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-7359-0633",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btt089",
       "@type": "sc:CreativeWork"
     },
@@ -47,58 +43,58 @@
       "@id": "https://bio.tools/tppred_1.0",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Piero Fariselli",
-        "Rita Casadio",
         {
           "@id": "https://orcid.org/0000-0002-7359-0633"
-        }
+        },
+        "Piero Fariselli",
+        "Rita Casadio"
       ],
       "bsc:input": {
-        "@id": "_:N941ddf53ed6d4f45be0eb599598662db"
+        "@id": "_:Nb956a88cc3554d2c8dcd60364a340f6c"
       },
       "bsc:output": {
-        "@id": "_:N7cb0696d9be74c75976d01fd18c86a3c"
+        "@id": "_:N8a5dc872618d49b1aaec1caa5646591b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_0140"
         },
         {
           "@id": "edam:topic_0160"
         },
         {
-          "@id": "edam:topic_0140"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0002-7359-0633"
       },
       "sc:citation": [
+        "pubmed:23428638",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt089"
-        },
-        "pubmed:23428638"
+        }
       ],
       "sc:description": "Organelle targeting peptide prediction.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0253"
-        },
         {
           "@id": "edam:operation_3092"
         },
         {
           "@id": "edam:operation_2489"
+        },
+        {
+          "@id": "edam:operation_0253"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "TPpred 1.0",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -108,7 +104,7 @@
       "sc:url": "http://tppred.biocomp.unibo.it/tppred/default/index"
     },
     {
-      "@id": "_:N941ddf53ed6d4f45be0eb599598662db",
+      "@id": "_:Nb956a88cc3554d2c8dcd60364a340f6c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -119,7 +115,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N7cb0696d9be74c75976d01fd18c86a3c",
+      "@id": "_:N8a5dc872618d49b1aaec1caa5646591b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -128,6 +124,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Protein report"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7359-0633",
+      "@type": "sc:Person"
     }
   ]
 }

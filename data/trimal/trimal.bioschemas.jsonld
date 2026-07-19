@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp348",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/trimal",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Salvador Capella-Gutierrez",
       "bsc:input": {
-        "@id": "_:N78b38d25eb66458b8688d28ba0c79efc"
+        "@id": "_:N2506f479ae4c46de8c92dc5397473990"
       },
       "bsc:output": [
         {
-          "@id": "_:N9eb7962ac620408d86a5338dea686634"
+          "@id": "_:Nb3af380d40754f6892965ad8931046bb"
         },
         {
-          "@id": "_:N49ccee08d97f4ef99250f75b8217bbca"
+          "@id": "_:N52253202813a461080cd75d6f1379f3c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0160"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -81,9 +77,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "trimAl",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -94,13 +90,43 @@
         }
       ],
       "sc:softwareVersion": [
-        "2.0-RC",
-        "1.5.1"
+        "1.5.1",
+        "2.0-RC"
       ],
       "sc:url": "https://trimal.readthedocs.io"
     },
     {
-      "@id": "_:N9eb7962ac620408d86a5338dea686634",
+      "@id": "_:N2506f479ae4c46de8c92dc5397473990",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Nb3af380d40754f6892965ad8931046bb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1997"
+        },
+        {
+          "@id": "edam:format_1998"
+        }
+      ],
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:N52253202813a461080cd75d6f1379f3c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -111,34 +137,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N49ccee08d97f4ef99250f75b8217bbca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1998"
-        },
-        {
-          "@id": "edam:format_1997"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N78b38d25eb66458b8688d28ba0c79efc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
+      "@id": "https://doi.org/10.1093/bioinformatics/btp348",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

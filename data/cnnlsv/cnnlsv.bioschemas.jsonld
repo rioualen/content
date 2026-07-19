@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-023-05243-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cnnlsv",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_3168"
         },
         {
           "@id": "edam:topic_3175"
@@ -68,19 +64,19 @@
       "sc:description": "Detection of structural variants by encoding long-read alignment information and convolutional neural network.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3675"
+          "@id": "edam:operation_3891"
         },
         {
           "@id": "edam:operation_3454"
         },
         {
-          "@id": "edam:operation_3227"
-        },
-        {
           "@id": "edam:operation_3960"
         },
         {
-          "@id": "edam:operation_3891"
+          "@id": "edam:operation_3227"
+        },
+        {
+          "@id": "edam:operation_3675"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -88,10 +84,14 @@
       "sc:name": "cnnLSV",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://github.com/mhuidong/cnnLSV"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-023-05243-x",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

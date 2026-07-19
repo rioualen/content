@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.1c01198",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pdfdataextractor",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3314"
+        },
         {
           "@id": "edam:topic_3473"
         },
@@ -53,9 +52,6 @@
         },
         {
           "@id": "edam:topic_3318"
-        },
-        {
-          "@id": "edam:topic_3314"
         }
       ],
       "sc:citation": [
@@ -68,13 +64,13 @@
       "sc:description": "A Tool for Reading Scientific Text and Interpreting Metadata from the Typeset Literature in the Portable Document Format.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3625"
-        },
-        {
           "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_3907"
+        },
+        {
+          "@id": "edam:operation_3625"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -82,13 +78,17 @@
       "sc:name": "PDFDataExtractor",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://pdfdataextractor.readthedocs.io/en/latest/index.html"
       },
       "sc:url": "https://github.com/cat-lemonade/PDFDataExtractor"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jcim.1c01198",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

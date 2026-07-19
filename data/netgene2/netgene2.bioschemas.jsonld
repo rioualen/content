@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/24.17.3439",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netgene2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N07a96e8db56c4faf829ec272db7818fc"
+        "@id": "_:Nbb2a352dafa3424094258f8264546d7e"
       },
       "bsc:output": [
         {
-          "@id": "_:N631936d34dfa4e8d9d441d297cbe8b92"
+          "@id": "_:N34f0353c66f94ebfad13ffe7a781b0fa"
         },
         {
-          "@id": "_:Nb8dc8e51cb3448d7b0f043fac6d8bba1"
+          "@id": "_:N35868e75c75c4899a26ed42e5b4f49c6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -63,11 +67,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:8811101",
         "pmcid:PMC146109",
         {
           "@id": "https://doi.org/10.1093/nar/24.17.3439"
-        },
-        "pubmed:8811101"
+        }
       ],
       "sc:description": "Neural network predictions of splice sites in human, C. elegans and A. thaliana DNA.",
       "sc:featureList": {
@@ -78,8 +82,8 @@
       "sc:name": "NetGene2",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -89,29 +93,7 @@
       "sc:url": "http://cbs.dtu.dk/services/NetGene2/"
     },
     {
-      "@id": "_:N631936d34dfa4e8d9d441d297cbe8b92",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:Nb8dc8e51cb3448d7b0f043fac6d8bba1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N07a96e8db56c4faf829ec272db7818fc",
+      "@id": "_:Nbb2a352dafa3424094258f8264546d7e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -122,8 +104,26 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/24.17.3439",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N34f0353c66f94ebfad13ffe7a781b0fa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N35868e75c75c4899a26ed42e5b4f49c6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Sequence report"
     }
   ]
 }

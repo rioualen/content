@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,47 +36,51 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/hr/uhad195",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bioscitools",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9ef2b1bc146e4d95b68c0caa471e77ed"
+          "@id": "_:Nf116d4d21128457b83eae185345c3083"
         },
         {
-          "@id": "_:Na391a056273b4926acd1adef1a11bfa5"
+          "@id": "_:Nde7aeb543214414baa3e574b2e9be4d6"
         },
         {
-          "@id": "_:N6f76f7de779043c58f6f8afaae9c1b2b"
+          "@id": "_:Ncc80297a41e4430fbdcfb22dad2bf486"
         },
         {
-          "@id": "_:N7677e91f77f048609c3dd9e40c74fa3b"
+          "@id": "_:N7aa5c34178074ec98543476d80735cf4"
         },
         {
-          "@id": "_:N8c2beea5d9b641c4991d7fda342b9116"
+          "@id": "_:Nd3c09fc37ebb4374b769e2522b9b997c"
         },
         {
-          "@id": "_:N948bc742d37e4bdfb3a7e26105f4e46f"
+          "@id": "_:N992af773abcd4290abd72cf27c2f67f2"
         }
       ],
       "bsc:output": {
-        "@id": "_:N8d33f97d62c04397bd90707a59302345"
+        "@id": "_:Neda4f720086741e087c7e4834cde2310"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Bioinformatics portal",
         "Desktop application",
         "Plug-in",
-        "Bioinformatics portal",
+        "Suite",
         "Web application",
-        "Workflow",
         "Workbench",
-        "Suite"
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3315"
+          "@id": "edam:topic_3070"
         },
         {
-          "@id": "edam:topic_3070"
+          "@id": "edam:topic_3315"
         },
         {
           "@id": "edam:topic_3391"
@@ -105,23 +109,7 @@
       "sc:url": "https://github.com/OmicsSuite/"
     },
     {
-      "@id": "_:N9ef2b1bc146e4d95b68c0caa471e77ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:Na391a056273b4926acd1adef1a11bfa5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N6f76f7de779043c58f6f8afaae9c1b2b",
+      "@id": "_:Nf116d4d21128457b83eae185345c3083",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -129,23 +117,7 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:N7677e91f77f048609c3dd9e40c74fa3b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:N8c2beea5d9b641c4991d7fda342b9116",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:name": "Text data"
-    },
-    {
-      "@id": "_:N948bc742d37e4bdfb3a7e26105f4e46f",
+      "@id": "_:Nde7aeb543214414baa3e574b2e9be4d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -153,27 +125,55 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N8d33f97d62c04397bd90707a59302345",
+      "@id": "_:Ncc80297a41e4430fbdcfb22dad2bf486",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "_:N7aa5c34178074ec98543476d80735cf4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Nd3c09fc37ebb4374b769e2522b9b997c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N992af773abcd4290abd72cf27c2f67f2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:name": "Text data"
+    },
+    {
+      "@id": "_:Neda4f720086741e087c7e4834cde2310",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2333"
         },
         {
           "@id": "edam:format_2376"
         },
         {
-          "@id": "edam:format_2333"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1093/hr/uhad195",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

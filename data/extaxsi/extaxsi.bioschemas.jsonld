@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,30 +40,38 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N775224b38ce441b3b6391c1044330cfe"
+          "@id": "_:Nfa78ba93fec74d5fbd154124c0f7866a"
         },
         {
-          "@id": "_:N65370387042047859ab530253b9daa13"
+          "@id": "_:N228bd3a424fc4b75af9a48070da681c6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0637"
       },
       "sc:description": "ExTaxsI (Exploring Taxonomy Information)I is a bioinformatic tool aimed to elaborate and visualize molecular and taxonomic informations. This open-source user friendly project, written in Python 3.7, allows the creation of interactive plots starting from NCBI search query or directly from offline taxonomic files.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:name": "ExTaxsI",
       "sc:url": "https://github.com/qLSLab/ExTaxsI"
     },
     {
-      "@id": "_:N775224b38ce441b3b6391c1044330cfe",
+      "@id": "_:Nfa78ba93fec74d5fbd154124c0f7866a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N228bd3a424fc4b75af9a48070da681c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1872"
@@ -72,14 +80,6 @@
         "@id": "edam:format_3996"
       },
       "sc:name": "Taxonomic classification"
-    },
-    {
-      "@id": "_:N65370387042047859ab530253b9daa13",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:name": "Taxonomy"
     }
   ]
 }

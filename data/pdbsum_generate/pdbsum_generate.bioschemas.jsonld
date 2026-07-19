@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/29.1.221",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pdbsum_generate",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Roman Laskowski",
       "bsc:input": {
-        "@id": "_:N37d6757843cd42b7b6d294a094fa229e"
+        "@id": "_:Nc1b8f1a058b04f9d91ecf02d88e0c6af"
       },
       "bsc:output": {
-        "@id": "_:N4dac867430fb4758aecec38a912ec5e6"
+        "@id": "_:Nbec071e08f8c484bbd381e03d363f9a1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2814"
       },
       "sc:author": [
-        "Thornton Group",
-        "Roman Laskowski"
+        "Roman Laskowski",
+        "Thornton Group"
       ],
       "sc:citation": [
+        "pubmed:11125097",
+        "pmcid:PMC29784",
         {
           "@id": "https://doi.org/10.1093/nar/29.1.221"
-        },
-        "pmcid:PMC29784",
-        "pubmed:11125097"
+        }
       ],
       "sc:contributor": "Victor Chiskoff",
       "sc:description": "Generate a full set of PDBsum structural analyses.",
@@ -68,24 +72,24 @@
       },
       "sc:name": "PDBsum Generate",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/pdbsum/GetPage.pl?doc=TRUE&template=doc_index.html&pdbcode=n/a"
         },
         {
-          "@id": "http://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/pdbsum/GetPage.pl?doc=TRUE&template=doc_index.html&pdbcode=n/a"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/thornton-srv/databases/pdbsum/Generate.html"
     },
     {
-      "@id": "_:N37d6757843cd42b7b6d294a094fa229e",
+      "@id": "_:Nc1b8f1a058b04f9d91ecf02d88e0c6af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -96,16 +100,12 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N4dac867430fb4758aecec38a912ec5e6",
+      "@id": "_:Nbec071e08f8c484bbd381e03d363f9a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
       },
       "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/29.1.221",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

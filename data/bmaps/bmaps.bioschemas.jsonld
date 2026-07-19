@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/acs.jcim.3c00209",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bmaps",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0102"
+        },
+        {
           "@id": "edam:topic_0209"
+        },
+        {
+          "@id": "edam:topic_2275"
         },
         {
           "@id": "edam:topic_0196"
         },
         {
           "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0102"
-        },
-        {
-          "@id": "edam:topic_2275"
         }
       ],
       "sc:citation": [
@@ -69,24 +73,20 @@
           "@id": "edam:operation_2429"
         },
         {
-          "@id": "edam:operation_4009"
+          "@id": "edam:operation_0310"
         },
         {
-          "@id": "edam:operation_0310"
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "BMaps",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://www.boltzmannmaps.com"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jcim.3c00209",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

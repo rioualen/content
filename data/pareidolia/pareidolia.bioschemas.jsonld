@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-1126-1535",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/pareidolia",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N725f9325477d4922b1e9bf42cbc2b7a9"
+        "@id": "_:Nd6c917b339de469d813d506accafa9af"
       },
       "bsc:output": {
-        "@id": "_:N8d63f6c25f8c410b8d42722462dec93f"
+        "@id": "_:Nbf07718e99ed4b1c900580744bf71b69"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_0654"
         },
         {
-          "@id": "edam:topic_0654"
+          "@id": "edam:topic_3473"
         },
         {
           "@id": "edam:topic_3173"
@@ -71,33 +75,22 @@
       "sc:license": "MIT",
       "sc:name": "pareidolia",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/koszullab/pareidolia"
+          "@id": "https://pareidolia.readthedocs.io/en/latest/"
         },
         {
-          "@id": "https://pareidolia.readthedocs.io/en/latest/"
+          "@id": "https://github.com/koszullab/pareidolia"
         }
       ],
       "sc:softwareVersion": "1.2.0",
       "sc:url": "https://github.com/koszullab/pareidolia"
     },
     {
-      "@id": "_:N8d63f6c25f8c410b8d42722462dec93f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:N725f9325477d4922b1e9bf42cbc2b7a9",
+      "@id": "_:Nd6c917b339de469d813d506accafa9af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2856"
@@ -108,8 +101,15 @@
       "sc:name": "Structural distance matrix"
     },
     {
-      "@id": "https://orcid.org/0000-0002-1126-1535",
-      "@type": "sc:Person"
+      "@id": "_:Nbf07718e99ed4b1c900580744bf71b69",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Statistical estimate score"
     }
   ]
 }

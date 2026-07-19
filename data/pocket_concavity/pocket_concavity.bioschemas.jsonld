@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,52 +36,56 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btad212",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pocket_concavity",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1a27d98272fd4d98a590e6c8e17a058d"
+          "@id": "_:N80ce6b0c8e2941688c6dd3ca9030625a"
         },
         {
-          "@id": "_:Nd5c86ecd6d364a58acedbe3142ef3d9b"
+          "@id": "_:N8ba82365905046eb99a786213fb5cffe"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0166"
-        },
-        {
-          "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_3534"
-        },
         {
           "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_0209"
+        },
+        {
+          "@id": "edam:topic_3534"
+        },
+        {
+          "@id": "edam:topic_0166"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
+        "pubmed:37086438",
+        "pmcid:PMC10148677",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btad212"
-        },
-        "pubmed:37086438",
-        "pmcid:PMC10148677"
+        }
       ],
       "sc:description": "Tool for the refinement of protein-ligand binding site shape from alpha spheres.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2575"
+        },
         {
           "@id": "edam:operation_3216"
         },
         {
           "@id": "edam:operation_4009"
-        },
-        {
-          "@id": "edam:operation_2575"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -91,7 +95,7 @@
       "sc:url": "https://github.com/genki-kudo/Pocket-to-Concavity"
     },
     {
-      "@id": "_:N1a27d98272fd4d98a590e6c8e17a058d",
+      "@id": "_:N80ce6b0c8e2941688c6dd3ca9030625a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -102,7 +106,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nd5c86ecd6d364a58acedbe3142ef3d9b",
+      "@id": "_:N8ba82365905046eb99a786213fb5cffe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -111,10 +115,6 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btad212",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

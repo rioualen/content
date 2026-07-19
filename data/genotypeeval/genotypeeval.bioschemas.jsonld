@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genotypeeval",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jennifer Tom",
       "bsc:input": [
         {
-          "@id": "_:N7fb81b43e29d4589a63de8742e6bb2bb"
+          "@id": "_:N34343922994e4f63af1604cf50ed0ace"
         },
         {
-          "@id": "_:Nd2232fd8df6940a885e767b82b72f06a"
+          "@id": "_:N68d32a16274f4bdfa7ebb7b20d0516f0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1de0f52917e44d36b5faa3c1a6b73842"
+          "@id": "_:N331099f1347f4adf874008af3bc8ae08"
         },
         {
-          "@id": "_:N98a0b98686f047e787220142ce340f72"
+          "@id": "_:Nf9af344627a14ddfba9965403bb73a7c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -69,11 +73,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503",
-        "pmcid:PMC4509590"
+        }
       ],
       "sc:description": "Takes in a gVCF or VCF and reports metrics to assess quality of calls.",
       "sc:featureList": {
@@ -81,9 +85,9 @@
       },
       "sc:name": "genotypeeval",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/genotypeeval.html"
@@ -92,39 +96,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/genotypeeval.html"
     },
     {
-      "@id": "_:N7fb81b43e29d4589a63de8742e6bb2bb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:Nd2232fd8df6940a885e767b82b72f06a",
+      "@id": "_:N34343922994e4f63af1604cf50ed0ace",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3016"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3016"
         }
       ],
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N1de0f52917e44d36b5faa3c1a6b73842",
+      "@id": "_:N68d32a16274f4bdfa7ebb7b20d0516f0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N331099f1347f4adf874008af3bc8ae08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -140,7 +144,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N98a0b98686f047e787220142ce340f72",
+      "@id": "_:Nf9af344627a14ddfba9965403bb73a7c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -154,10 +158,6 @@
         }
       ],
       "sc:name": "Sequence report"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

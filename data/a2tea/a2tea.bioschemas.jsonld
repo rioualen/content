@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,92 +40,92 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7bef30920f5c4264943f35f6a47b9492"
+          "@id": "_:Nb0b2e981fb834c8584b19804c46ee67c"
         },
         {
-          "@id": "_:Ncb25c292f5ce419a8a55c69fbb500d2f"
+          "@id": "_:Ne2760d1d27a94f809b4cc8bc52aa29ae"
         },
         {
-          "@id": "_:Nbdab5e0bf971415984cb411007b7cf5c"
+          "@id": "_:Ncf083704c0d34727b165e5fcc4f8b205"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na8b04dfb77b441d184d895a878785509"
+          "@id": "_:Na75076cdf3a249d6b9be2759a30a89e4"
         },
         {
-          "@id": "_:Ne5f1ab4e9abe4cfcb24174cd500fadb3"
+          "@id": "_:Nc772f82f4e2348fabb874c2bd9729961"
         },
         {
-          "@id": "_:N1176ccce72e8491284410efc9cc95748"
+          "@id": "_:Na9cac7b4ffa1494fa4d1c3b9c1bcbd33"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Desktop application",
         "Web application",
-        "Workflow",
-        "Desktop application"
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0084"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_0084"
         },
         {
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_3308"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
+        "pubmed:37224329",
+        "pmcid:PMC10186066",
         {
           "@id": "https://doi.org/10.12688/F1000RESEARCH.126463.2"
-        },
-        "pmcid:PMC10186066",
-        "pubmed:37224329"
+        }
       ],
       "sc:description": "A2TEA is a software workflow facilitating identification of candidate genes for stress adaptation based on comparative genomics and transcriptomics. It combines differential gene expression with gene family expansion as an indicator for the evolution of adaptive traits.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_3501"
+          "@id": "edam:operation_3431"
         },
         {
           "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3431"
+          "@id": "edam:operation_3501"
         },
         {
           "@id": "edam:operation_3192"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "A2TEA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://github.com/tgstoecker/A2TEA.Workflow"
     },
     {
-      "@id": "_:N7bef30920f5c4264943f35f6a47b9492",
+      "@id": "_:Nb0b2e981fb834c8584b19804c46ee67c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -136,18 +136,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Ncb25c292f5ce419a8a55c69fbb500d2f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2306"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nbdab5e0bf971415984cb411007b7cf5c",
+      "@id": "_:Ne2760d1d27a94f809b4cc8bc52aa29ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -158,7 +147,18 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Na8b04dfb77b441d184d895a878785509",
+      "@id": "_:Ncf083704c0d34727b165e5fcc4f8b205",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2306"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:Na75076cdf3a249d6b9be2759a30a89e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3754"
@@ -166,20 +166,20 @@
       "sc:name": "GO-term enrichment data"
     },
     {
-      "@id": "_:Ne5f1ab4e9abe4cfcb24174cd500fadb3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N1176ccce72e8491284410efc9cc95748",
+      "@id": "_:Nc772f82f4e2348fabb874c2bd9729961",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
       },
       "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Na9cac7b4ffa1494fa4d1c3b9c1bcbd33",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:name": "Phylogenetic tree"
     },
     {
       "@id": "https://doi.org/10.12688/F1000RESEARCH.126463.2",

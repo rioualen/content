@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkr355",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/contra_v2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N741f49cd779248d480f323a2b96e445c"
+        "@id": "_:N222a60184c1d4da79546ae64e81b7c47"
       },
       "bsc:output": {
-        "@id": "_:Nc087150e07bb4ef4b158d7042e8a1c6a"
+        "@id": "_:N362790890a664b6d9ade4b47ca6ba921"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3511"
       },
       "sc:citation": [
         "pubmed:21576231",
+        "pmcid:PMC3125763",
         {
           "@id": "https://doi.org/10.1093/nar/gkr355"
-        },
-        "pmcid:PMC3125763"
+        }
       ],
       "sc:description": "A tool to identify transcription factor binding sites across species.",
       "sc:featureList": {
@@ -63,8 +67,8 @@
       "sc:name": "ConTrav2",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -74,7 +78,7 @@
       "sc:url": "http://bioit.irc.ugent.be/contrav2/index.php?v2"
     },
     {
-      "@id": "_:N741f49cd779248d480f323a2b96e445c",
+      "@id": "_:N222a60184c1d4da79546ae64e81b7c47",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -82,16 +86,12 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nc087150e07bb4ef4b158d7042e8a1c6a",
+      "@id": "_:N362790890a664b6d9ade4b47ca6ba921",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2070"
       },
       "sc:name": "Sequence motif (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkr355",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

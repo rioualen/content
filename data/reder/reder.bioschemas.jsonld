@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/gb-2012-13-4-r29",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "http://orcid.org/0000-0003-4942-8131",
       "@type": "sc:Person"
     },
@@ -46,15 +50,15 @@
         "@id": "http://orcid.org/0000-0003-4942-8131"
       },
       "bsc:input": {
-        "@id": "_:N746c91724c92498b874d34969c310c4e"
+        "@id": "_:N09562cef96554332a99cb46d93bffcb2"
       },
       "bsc:output": {
-        "@id": "_:Neffaabb4e3254c1bb31733cb4b00e5fd"
+        "@id": "_:N6cdf3395131b433787af52691960a5d2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0092"
@@ -78,9 +82,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "RedeR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/RedeR.html"
@@ -89,43 +93,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/RedeR.html"
     },
     {
-      "@id": "_:Neffaabb4e3254c1bb31733cb4b00e5fd",
+      "@id": "_:N09562cef96554332a99cb46d93bffcb2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_3166"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N6cdf3395131b433787af52691960a5d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_3166"
+        },
         {
           "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3166"
-        },
-        {
-          "@id": "edam:format_2013"
         }
       ],
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N746c91724c92498b874d34969c310c4e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2013"
-        },
-        {
-          "@id": "edam:format_3166"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "https://doi.org/10.1186/gb-2012-13-4-r29",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,50 +36,54 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/hr/uhad195",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/omicssuite",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1ee5c6ab92fb422b9ea58f362926442d"
+          "@id": "_:Na4a855f0d7ff4ddfbf48bf9e13c3922f"
         },
         {
-          "@id": "_:N26be34d4b4af4b58a808669c4d26364a"
+          "@id": "_:N215fc532dbdb4ede8b2cc8900a15d854"
         },
         {
-          "@id": "_:N7014c12d398e414f93332e50091d2091"
+          "@id": "_:N1850cd4c3b6b4ef1990fb0d85e6d5e98"
         },
         {
-          "@id": "_:N5209c46e057d481b80c74540c22b5b6b"
+          "@id": "_:Nd040e9cc165c4102803bb46ee75effa9"
         },
         {
-          "@id": "_:N578f0f921b3f48d3b92e288a3fdee3c5"
+          "@id": "_:Ncbaebf81dab44d28a0b404fcb0b8a0ab"
         },
         {
-          "@id": "_:Nbf46135f99b34a29852dc68d2c137b85"
+          "@id": "_:N12a9fa7483d945deb304fae9284c2dd2"
         }
       ],
       "bsc:output": {
-        "@id": "_:N95984231efd346e8af5a8a00c171bb60"
+        "@id": "_:N52ddf1336b3049f39322c79165188471"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Bioinformatics portal",
+        "Desktop application",
         "Plug-in",
-        "Web application",
-        "Workflow",
-        "Workbench",
         "Suite",
-        "Desktop application"
+        "Web application",
+        "Workbench",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3070"
         },
         {
-          "@id": "edam:topic_3391"
+          "@id": "edam:topic_3315"
         },
         {
-          "@id": "edam:topic_3315"
+          "@id": "edam:topic_3391"
         }
       ],
       "sc:citation": {
@@ -88,13 +92,13 @@
       "sc:description": "OmicsSuite (https://omicssuite.github.io, https://github.com/OmicsSuite/), original name BioSciTools, a desktop program developed based on Java 11, aims to make new exploration and contribution to bioinformatics, and realize data analysis and visualization in the fields of sequence analysis, multi-omics (transcriptomics, genomics, protein omics, metabolomics, single cell), microbiology, clinical, etc.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2928"
+        },
+        {
           "@id": "edam:operation_2945"
         },
         {
           "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_2928"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -105,23 +109,7 @@
       "sc:url": "https://github.com/OmicsSuite/"
     },
     {
-      "@id": "_:N1ee5c6ab92fb422b9ea58f362926442d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:N26be34d4b4af4b58a808669c4d26364a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N7014c12d398e414f93332e50091d2091",
+      "@id": "_:Na4a855f0d7ff4ddfbf48bf9e13c3922f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -129,7 +117,7 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:N5209c46e057d481b80c74540c22b5b6b",
+      "@id": "_:N215fc532dbdb4ede8b2cc8900a15d854",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -137,15 +125,7 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N578f0f921b3f48d3b92e288a3fdee3c5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:name": "Text data"
-    },
-    {
-      "@id": "_:Nbf46135f99b34a29852dc68d2c137b85",
+      "@id": "_:N1850cd4c3b6b4ef1990fb0d85e6d5e98",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -153,27 +133,47 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N95984231efd346e8af5a8a00c171bb60",
+      "@id": "_:Nd040e9cc165c4102803bb46ee75effa9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Ncbaebf81dab44d28a0b404fcb0b8a0ab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N12a9fa7483d945deb304fae9284c2dd2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:name": "Text data"
+    },
+    {
+      "@id": "_:N52ddf1336b3049f39322c79165188471",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2376"
+          "@id": "edam:format_2333"
         },
         {
-          "@id": "edam:format_2333"
+          "@id": "edam:format_2376"
         },
         {
           "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1093/hr/uhad195",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

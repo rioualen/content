@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,11 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-7848-8216",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6803-0340",
+      "@id": "https://orcid.org/0000-0001-9677-5078",
       "@type": "sc:Person"
     },
     {
@@ -48,19 +44,7 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkx285",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3139-3700",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9677-5078",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8718-7493",
+      "@id": "https://orcid.org/0000-0002-7848-8216",
       "@type": "sc:Person"
     },
     {
@@ -68,77 +52,93 @@
       "@type": "sc:Person"
     },
     {
+      "@id": "https://orcid.org/0000-0001-8718-7493",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6803-0340",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9358-4081",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkx285",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/fireprot",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "FireProt team",
       "bsc:input": {
-        "@id": "_:Ne7836baa1c6d4745add346eabfdf0a12"
+        "@id": "_:Ne3b04cbcfd15419bb2865dbdc6a4d571"
       },
       "bsc:output": [
         {
-          "@id": "_:N94b98a5a97664e41a77393353eda3888"
+          "@id": "_:Ne74fba41754b456d81bec7af069cb9b7"
         },
         {
-          "@id": "_:N2f85f9aa5ba8423aa0937199b77c33ba"
+          "@id": "_:Nd27492b15e7644f1a26f567245509906"
         },
         {
-          "@id": "_:N20c8272d9adf4ef2af3b836d4739522d"
+          "@id": "_:Na5433af00a7a43a3959b464dde94fea3"
         },
         {
-          "@id": "_:N4218de69cbaa4a14ab9a1aeacc3811ad"
+          "@id": "_:N3a0bd8a9edc54c5da9799fb6599923f7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_1317"
-        },
         {
           "@id": "edam:topic_2814"
         },
         {
           "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_1317"
         }
       ],
       "sc:author": [
-        {
-          "@id": "https://orcid.org/0000-0001-9373-7930"
-        },
         {
           "@id": "https://orcid.org/0000-0001-9989-2720"
         },
         {
           "@id": "https://orcid.org/0000-0003-3139-3700"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9373-7930"
         }
       ],
       "sc:citation": [
+        "pubmed:28449074",
+        "pmcid:PMC5570187",
         {
           "@id": "https://doi.org/10.1093/nar/gkx285"
-        },
-        "pubmed:28449074",
-        "pmcid:PMC5570187"
+        }
       ],
       "sc:contributor": [
         {
           "@id": "https://orcid.org/0000-0002-7848-8216"
         },
-        "Tomas Martinek",
-        "European Regional Development Fund",
-        "Ministry of Education of the Czech Republic",
-        {
-          "@id": "https://orcid.org/0000-0001-9677-5078"
-        },
-        "Czech Science Foundation",
-        {
-          "@id": "https://orcid.org/0000-0001-9358-4081"
-        },
         {
           "@id": "https://orcid.org/0000-0002-6803-0340"
         },
         {
+          "@id": "https://orcid.org/0000-0001-9677-5078"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9358-4081"
+        },
+        {
           "@id": "https://orcid.org/0000-0001-8718-7493"
-        }
+        },
+        "Tomas Martinek",
+        "Czech Science Foundation",
+        "European Regional Development Fund",
+        "Ministry of Education of the Czech Republic"
       ],
       "sc:description": "FireProt is a web server for an automated design of thermostable mutants. The design of thermostable mutants is based on the integration of structural and evolutionary information obtained from several bioinformatics databases and computational tools.",
       "sc:featureList": [
@@ -150,24 +150,24 @@
         }
       ],
       "sc:funder": [
-        "Ministry of Education of the Czech Republic",
         "Czech Science Foundation",
-        "European Regional Development Fund"
+        "European Regional Development Fund",
+        "Ministry of Education of the Czech Republic"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Proprietary",
       "sc:name": "FireProt",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "Brno University of Technology, Brno, Czech Republic",
-        "Masaryk University, Brno, Czech Republic",
         "ELIXIR-CZ",
+        "International Centre for Clinical Research, Brno, Czech Republic",
         "Loschmidt Laboratories",
-        "International Centre for Clinical Research, Brno, Czech Republic"
+        "Masaryk University, Brno, Czech Republic"
       ],
       "sc:softwareHelp": [
         {
@@ -181,7 +181,7 @@
       "sc:url": "https://loschmidt.chemi.muni.cz/fireprot/"
     },
     {
-      "@id": "_:N94b98a5a97664e41a77393353eda3888",
+      "@id": "_:Ne3b04cbcfd15419bb2865dbdc6a4d571",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -192,18 +192,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N2f85f9aa5ba8423aa0937199b77c33ba",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1384"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment (protein)"
-    },
-    {
-      "@id": "_:N20c8272d9adf4ef2af3b836d4739522d",
+      "@id": "_:Ne74fba41754b456d81bec7af069cb9b7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -214,23 +203,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N4218de69cbaa4a14ab9a1aeacc3811ad",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1964"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:Ne7836baa1c6d4745add346eabfdf0a12",
+      "@id": "_:Nd27492b15e7644f1a26f567245509906",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -241,7 +214,34 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "https://orcid.org/0000-0001-9358-4081",
+      "@id": "_:Na5433af00a7a43a3959b464dde94fea3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_1964"
+        }
+      ],
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:N3a0bd8a9edc54c5da9799fb6599923f7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1384"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment (protein)"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3139-3700",
       "@type": "sc:Person"
     }
   ]

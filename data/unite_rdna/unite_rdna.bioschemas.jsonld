@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1111/mec.12481",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/unite_rdna",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ncb4859dc866c4d36975aa032775754ed"
+        "@id": "_:N03a959214bb14411acb4dabc3db5c13b"
       },
       "bsc:output": [
         {
-          "@id": "_:N8d0e5d5d77a346c0bd2ffc1d77b42e4c"
+          "@id": "_:N14a6200bc7b14f088adb2ed9a5c6a801"
         },
         {
-          "@id": "_:N4bb9f0732af54444a73a4eee8c5858b9"
+          "@id": "_:N7344f590274d4a9997bd6e613bd5dc73"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0654"
         },
         {
-          "@id": "edam:topic_0654"
+          "@id": "edam:topic_3572"
         }
       ],
       "sc:citation": [
@@ -72,28 +68,28 @@
       "sc:description": "UNITE is a database and sequence management environment centered on the eukaryotic nuclear ribosomal ITS region. All eukaryotic ITS sequences from the International Nucleotide Sequence Database Collaboration are clustered to approximately the species level (distance between species in steps of 0.5%), and all such species hypotheses are given a DOI to facilitate unambiguous scientific communication and data assembly.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3460"
-        },
-        {
           "@id": "edam:operation_3200"
-        },
-        {
-          "@id": "edam:operation_0566"
         },
         {
           "@id": "edam:operation_0224"
         },
         {
+          "@id": "edam:operation_0566"
+        },
+        {
           "@id": "edam:operation_0346"
+        },
+        {
+          "@id": "edam:operation_3460"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-SA-4.0",
       "sc:name": "UNITE database",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://unite.ut.ee/primers.php"
@@ -101,18 +97,15 @@
       "sc:url": "http://unite.ut.ee/"
     },
     {
-      "@id": "_:N8d0e5d5d77a346c0bd2ffc1d77b42e4c",
+      "@id": "_:N03a959214bb14411acb4dabc3db5c13b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3028"
+        "@id": "edam:data_2390"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Taxonomy"
+      "sc:name": "UNITE accession"
     },
     {
-      "@id": "_:N4bb9f0732af54444a73a4eee8c5858b9",
+      "@id": "_:N14a6200bc7b14f088adb2ed9a5c6a801",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -123,12 +116,19 @@
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:Ncb4859dc866c4d36975aa032775754ed",
+      "@id": "_:N7344f590274d4a9997bd6e613bd5dc73",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2390"
+        "@id": "edam:data_3028"
       },
-      "sc:name": "UNITE accession"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "https://doi.org/10.1111/mec.12481",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

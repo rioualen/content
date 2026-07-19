@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/changename",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N07fe6761fbb34d69a4b640438dc7767c"
+          "@id": "_:Ndfbe91a023094d719da7e5bed994a5b8"
         },
         {
-          "@id": "_:N41a59b961be546e1a0a4b1a354865445"
+          "@id": "_:N472ba68e092847ce8837c08d77efe77c"
         },
         {
-          "@id": "_:N2b40b47495d14d558ea6f72f9acd3459"
+          "@id": "_:Nd816ac785dc040ed8baebd378f904cc0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc12525ad6cb74267b0e4c7ac8bf7eed2"
+          "@id": "_:N5301b222a57b4774899813e79308474f"
         },
         {
-          "@id": "_:Nec5a426e07604d58833a2e52aa3b3c4b"
+          "@id": "_:N54ed743eeae74cd89119923b9f02cc2a"
         },
         {
-          "@id": "_:N2ce83ff83c3a424eb32fa1a1f48860c8"
+          "@id": "_:N1cce3531d93d414cbc580f0f8156ad42"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
@@ -70,10 +74,10 @@
         "pubmed:27137889",
         "pmcid:PMC4987906",
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Change the chromosome name or gene name of a singla fasta, gff or sam file. For this tool, it can not treat mutiple-chromosome, gene files.",
@@ -82,8 +86,8 @@
       },
       "sc:name": "changename",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -93,7 +97,7 @@
       "sc:url": "https://urgi.versailles.inra.fr/Tools/REPET"
     },
     {
-      "@id": "_:Nc12525ad6cb74267b0e4c7ac8bf7eed2",
+      "@id": "_:Ndfbe91a023094d719da7e5bed994a5b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -104,18 +108,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nec5a426e07604d58833a2e52aa3b3c4b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:N2ce83ff83c3a424eb32fa1a1f48860c8",
+      "@id": "_:N472ba68e092847ce8837c08d77efe77c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -126,7 +119,18 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N07fe6761fbb34d69a4b640438dc7767c",
+      "@id": "_:Nd816ac785dc040ed8baebd378f904cc0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N5301b222a57b4774899813e79308474f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -137,7 +141,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N41a59b961be546e1a0a4b1a354865445",
+      "@id": "_:N54ed743eeae74cd89119923b9f02cc2a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -148,7 +152,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N2b40b47495d14d558ea6f72f9acd3459",
+      "@id": "_:N1cce3531d93d414cbc580f0f8156ad42",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -157,10 +161,6 @@
         "@id": "edam:format_2573"
       },
       "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

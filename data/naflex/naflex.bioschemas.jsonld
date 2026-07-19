@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkt378",
       "@type": "sc:CreativeWork"
     },
@@ -50,12 +46,12 @@
         "@id": "http://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:Nbdbcb7514e1346b7abba0d4c0d2bcad9"
+        "@id": "_:N7a3ea098028c4737a199bba4f1464494"
       },
       "bsc:output": {
-        "@id": "_:Nb403332d0a0d433d871898aa975b22fa"
+        "@id": "_:N18f8a04f0c0548b19bae6f7e1ed26f59"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
@@ -64,22 +60,22 @@
         "@id": "http://orcid.org/0000-0002-8291-8071"
       },
       "sc:citation": [
+        "pubmed:23685436",
+        "pmcid:PMC3692121",
         {
           "@id": "https://doi.org/10.1093/nar/gkt378"
-        },
-        "pubmed:23685436",
-        "pmcid:PMC3692121"
+        }
       ],
       "sc:description": "Nucleic Acids flexibility analysis portal.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0570"
-        },
         {
           "@id": "edam:operation_2476"
         },
         {
           "@id": "edam:operation_2481"
+        },
+        {
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:name": "NAFlex",
@@ -90,38 +86,42 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://mmb.irbbarcelona.org/NAFlex/help.php?id=base"
+          "@id": "http://mmb.irbbarcelona.org/NAFlex/help.php?id=references"
         },
         {
-          "@id": "http://mmb.irbbarcelona.org/NAFlex/help.php?id=references"
+          "@id": "http://mmb.irbbarcelona.org/NAFlex/help.php?id=base"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://mmb.irbbarcelona.org/NAFlex/"
     },
     {
-      "@id": "_:Nbdbcb7514e1346b7abba0d4c0d2bcad9",
+      "@id": "_:N7a3ea098028c4737a199bba4f1464494",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_2546"
         },
         {
-          "@id": "edam:format_2546"
+          "@id": "edam:format_1476"
         }
       ],
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nb403332d0a0d433d871898aa975b22fa",
+      "@id": "_:N18f8a04f0c0548b19bae6f7e1ed26f59",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2086"
       },
       "sc:name": "Nucleic acid structure data"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-9506-9451",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/2d_digital_mammography_harmonization",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,37 +43,37 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N31fc30e0f7924bbc923f7bcdeb1274b8"
+          "@id": "_:Nab021a615664471bbe392ca9dafc869f"
         },
         {
-          "@id": "_:Nac8536ead7ab40c18abac2d25df0a7a6"
+          "@id": "_:Ncace147910f4449b82a55bb5626ab4fd"
         },
         {
-          "@id": "_:Na0ada1be5d1242ad811a2d4483a678f3"
+          "@id": "_:N426c9480c72e44e08c43a1d7e06e9ce2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N34489a4f5e85469f97c79a3d0ea96ec4"
+          "@id": "_:N59bbdbe37ee541ce8756e381c8b0a6b3"
         },
         {
-          "@id": "_:Nd76305dd7f41438bbf34690b5f6b9f3a"
+          "@id": "_:Nbc049951d1fd4afaa7e8acb17e868e85"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3071"
-        },
-        {
-          "@id": "edam:topic_3382"
-        },
         {
           "@id": "edam:topic_3316"
         },
         {
           "@id": "edam:topic_0219"
+        },
+        {
+          "@id": "edam:topic_3071"
+        },
+        {
+          "@id": "edam:topic_3382"
         }
       ],
       "sc:author": "Manuel Marfil-Trujillo",
@@ -89,23 +85,45 @@
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "2D Digital Mammography Harmonization (EUCAIM-SW-046_T-01-03-008)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://drive.google.com/file/d/1tlpW4J3ZWtyfY-4gy3_TvkEb9CtUtOf8/view?usp=drive_link"
+          "@id": "https://drive.google.com/file/d/1UK5qjmd0eHmMByYO1zC-2pRdP4gAmc0l/view?usp=drive_link"
         },
         {
-          "@id": "https://drive.google.com/file/d/1UK5qjmd0eHmMByYO1zC-2pRdP4gAmc0l/view?usp=drive_link"
+          "@id": "https://drive.google.com/file/d/1tlpW4J3ZWtyfY-4gy3_TvkEb9CtUtOf8/view?usp=drive_link"
         }
       ],
       "sc:softwareVersion": "1.1.0",
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/4/repositories/2d_digital_mammography_harmonization/artifacts-tab"
     },
     {
-      "@id": "_:N31fc30e0f7924bbc923f7bcdeb1274b8",
+      "@id": "_:Nab021a615664471bbe392ca9dafc869f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Ncace147910f4449b82a55bb5626ab4fd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N426c9480c72e44e08c43a1d7e06e9ce2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -116,7 +134,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nac8536ead7ab40c18abac2d25df0a7a6",
+      "@id": "_:N59bbdbe37ee541ce8756e381c8b0a6b3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -127,7 +145,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Na0ada1be5d1242ad811a2d4483a678f3",
+      "@id": "_:Nbc049951d1fd4afaa7e8acb17e868e85",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -138,26 +156,8 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N34489a4f5e85469f97c79a3d0ea96ec4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nd76305dd7f41438bbf34690b5f6b9f3a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
+      "@id": "https://orcid.org/0000-0002-9506-9451",
+      "@type": "sc:Person"
     }
   ]
 }

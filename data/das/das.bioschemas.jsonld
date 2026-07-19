@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/protein/10.6.673",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/das",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb4d5a32c0e3b4451809a7c099a23e30f"
+        "@id": "_:Nb235d39c8dda471c900c8402f0f06c16"
       },
       "bsc:output": {
-        "@id": "_:N3c566ee8f2174ec282cf9c46d9081c0d"
+        "@id": "_:Naea6b31f1ca84f7bbf667af727188cea"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0736"
@@ -67,8 +63,8 @@
       "sc:license": "Unlicense",
       "sc:name": "DAS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "bils.se",
@@ -79,7 +75,15 @@
       "sc:url": "https://tmdas.bioinfo.se/DAS/index.html"
     },
     {
-      "@id": "_:N3c566ee8f2174ec282cf9c46d9081c0d",
+      "@id": "_:Nb235d39c8dda471c900c8402f0f06c16",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Naea6b31f1ca84f7bbf667af727188cea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -87,12 +91,8 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nb4d5a32c0e3b4451809a7c099a23e30f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1093/protein/10.6.673",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/variantfiltering",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Robert Castelo",
       "bsc:input": [
         {
-          "@id": "_:N88d4cfbe876f47858f72406dea33e314"
+          "@id": "_:N65b6c6fa5fd64391ad3d81a5270f8d02"
         },
         {
-          "@id": "_:N5e5ebac4a74045c2849c2779ab4b030f"
+          "@id": "_:N4a39a6dcbe394bb6b1a757e6aab7bf59"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2885"
@@ -65,13 +69,13 @@
       "sc:description": "Filter genetic variants using different criteria such as inheritance model, amino acid change consequence, minor allele frequencies across human populations, splice site strength, conservation, etc.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3208"
+        },
+        {
           "@id": "edam:operation_3202"
         },
         {
           "@id": "edam:operation_3661"
-        },
-        {
-          "@id": "edam:operation_3208"
         },
         {
           "@id": "edam:operation_3225"
@@ -80,9 +84,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "VariantFiltering",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/VariantFiltering.html"
@@ -91,18 +95,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/VariantFiltering.html"
     },
     {
-      "@id": "_:N88d4cfbe876f47858f72406dea33e314",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N5e5ebac4a74045c2849c2779ab4b030f",
+      "@id": "_:N65b6c6fa5fd64391ad3d81a5270f8d02",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -113,8 +106,15 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4a39a6dcbe394bb6b1a757e6aab7bf59",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
     }
   ]
 }

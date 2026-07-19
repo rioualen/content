@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2022.01.03.474134",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/echinodb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4874a0f12ae64123b10d3e7fdd0636dd"
+          "@id": "_:N843a7f5031d44618acdffdb211927699"
         },
         {
-          "@id": "_:N0137e26dd4274208b3a0ec9aaa3ef125"
+          "@id": "_:Ne0e4c748d7014fc1831fb8adc35cfdf7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0196"
-        },
-        {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3304"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0196"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": {
@@ -90,14 +86,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "EchinoDB",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://echinodb.uncc.edu"
     },
     {
-      "@id": "_:N4874a0f12ae64123b10d3e7fdd0636dd",
+      "@id": "_:N843a7f5031d44618acdffdb211927699",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -105,12 +101,16 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:N0137e26dd4274208b3a0ec9aaa3ef125",
+      "@id": "_:Ne0e4c748d7014fc1831fb8adc35cfdf7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
       },
       "sc:name": "Keyword"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2022.01.03.474134",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

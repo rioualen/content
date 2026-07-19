@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41592-019-0667-5",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.immuni.2019.08.017",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/NicheNet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbda73bb8f25846409760fa792c17f9d3"
+        "@id": "_:N25d1c2a363214e48b7243d1d4909eae9"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd578be7c52e94e99adeb4573f0c92633"
+          "@id": "_:Nd6fb59ad463848a6855214f21afc0369"
         },
         {
-          "@id": "_:Nab1504f65fc64d03bbb430c7276ef905"
+          "@id": "_:N6c4195a5feb24d4d90475798b5e0943d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -68,23 +60,23 @@
         }
       ],
       "sc:citation": [
+        "pubmed:31561945",
+        "pmcid:PMC6876284",
         {
           "@id": "https://doi.org/10.1016/j.immuni.2019.08.017"
         },
-        "pmcid:PMC6876284",
         "pubmed:31819264",
         {
           "@id": "https://doi.org/10.1038/s41592-019-0667-5"
-        },
-        "pubmed:31561945"
+        }
       ],
       "sc:description": "A computational method to study intercellular communication. It uses human or mouse gene expression data of interacting cells in order to predict ligand-receptor interactions that might drive gene expression changes in cells of interest.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2423"
+          "@id": "edam:operation_2497"
         },
         {
-          "@id": "edam:operation_2497"
+          "@id": "edam:operation_2423"
         },
         {
           "@id": "edam:operation_2428"
@@ -94,9 +86,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "NicheNet",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/saeyslab/nichenetr/blob/master/vignettes/ligand_activity_geneset.md"
@@ -105,7 +97,18 @@
       "sc:url": "https://github.com/saeyslab/nichenetr"
     },
     {
-      "@id": "_:Nd578be7c52e94e99adeb4573f0c92633",
+      "@id": "_:N25d1c2a363214e48b7243d1d4909eae9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Nd6fb59ad463848a6855214f21afc0369",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -116,7 +119,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nab1504f65fc64d03bbb430c7276ef905",
+      "@id": "_:N6c4195a5feb24d4d90475798b5e0943d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -127,15 +130,12 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nbda73bb8f25846409760fa792c17f9d3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression matrix"
+      "@id": "https://doi.org/10.1038/s41592-019-0667-5",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.immuni.2019.08.017",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

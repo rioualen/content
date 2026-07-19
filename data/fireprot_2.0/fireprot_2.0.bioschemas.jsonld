@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,23 +44,23 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9b6fdab2352341a4b97551a5528dd6e7"
+          "@id": "_:N0844c52875774b7a91fc5e9367923b36"
         },
         {
-          "@id": "_:N53dee5fe7a034a0c8b8909e408644d2a"
+          "@id": "_:Nd6311e1e660e4ea3831d7fe62aebd885"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3307"
       },
       "sc:citation": [
+        "pubmed:38018911",
+        "pmcid:PMC10685400",
         {
           "@id": "https://doi.org/10.1093/bib/bbad425"
-        },
-        "pmcid:PMC10685400",
-        "pubmed:38018911"
+        }
       ],
       "sc:description": "FireProt 2.0 is an extension of the original FireProt web for the fully automated design of stable multiple-point mutants. FireProt constructs stable mutants using both structural and evolutionary information. FireProt 2.0 also integrates the AlphaFold database and the homology modelling for structure prediction, enabling calculations starting from a sequence. Multiple-point designs are constructed using the Bron–Kerbosch algorithm minimizing the antagonistic effect between the individual mutations. Users can newly limit the FireProt calculation to a set of user-defined mutations, run saturation mutagenesis of the whole protein or select rigidifying mutations based on B-factors. Evolution-based back-to-consensus strategy is complemented by ancestral sequence reconstruction.",
       "sc:featureList": {
@@ -71,20 +71,20 @@
       "sc:url": "https://loschmidt.chemi.muni.cz/fireprotweb/"
     },
     {
-      "@id": "_:N9b6fdab2352341a4b97551a5528dd6e7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N53dee5fe7a034a0c8b8909e408644d2a",
+      "@id": "_:N0844c52875774b7a91fc5e9367923b36",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nd6311e1e660e4ea3831d7fe62aebd885",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:name": "Protein structure"
     }
   ]
 }

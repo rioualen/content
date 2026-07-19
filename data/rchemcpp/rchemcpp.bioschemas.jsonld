@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv373",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-2861-5552",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/rchemcpp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-2861-5552"
       },
       "bsc:input": {
-        "@id": "_:N7f99e970666a46099bc4fd07423c7bc1"
+        "@id": "_:N39e135c7ca734e7a9c1af325e19edba2"
       },
       "bsc:output": [
         {
-          "@id": "_:N82afe24bd48e4d01a5c1fee981014060"
+          "@id": "_:Na38b08d4e55d441eaf96f2a7f4768f44"
         },
         {
-          "@id": "_:N791599330de3433d96e81e6e179bb4ca"
+          "@id": "_:N8f8617f401d3409a898e253ea2cab80f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -78,9 +86,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "Rchemcpp",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/Rchemcpp.html"
@@ -89,29 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Rchemcpp.html"
     },
     {
-      "@id": "_:N82afe24bd48e4d01a5c1fee981014060",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N791599330de3433d96e81e6e179bb4ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:N7f99e970666a46099bc4fd07423c7bc1",
+      "@id": "_:N39e135c7ca734e7a9c1af325e19edba2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -122,12 +108,26 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "http://orcid.org/0000-0003-2861-5552",
-      "@type": "sc:Person"
+      "@id": "_:Na38b08d4e55d441eaf96f2a7f4768f44",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Heat map"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv373",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8f8617f401d3409a898e253ea2cab80f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Matrix"
     }
   ]
 }

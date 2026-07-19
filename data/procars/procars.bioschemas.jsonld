@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2164-16-s5-s6",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/procars",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "PERRIN Amandine",
       "bsc:input": [
         {
-          "@id": "_:Nbd0152b8fd304253b88a3264be4f3d94"
+          "@id": "_:N54e9a18c7ddf4e51a0d53778aef2bcd0"
         },
         {
-          "@id": "_:N9dd7ca60831d4c30a9582be6f814aeae"
+          "@id": "_:Nd2815459ac544def9c6bae4bb5b2ac81"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1c7fec849a874ddcb42d8443aa9ee85d"
+          "@id": "_:N9f3980c6b9e24cf08c4c90fec0ce5110"
         },
         {
-          "@id": "_:Na1714b4163c64bd593b603be4723f0dc"
+          "@id": "_:Neef40d71b11041c18845245cd796188d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0084"
       },
       "sc:citation": [
+        "pubmed:26040958",
+        "pmcid:PMC4460626",
         {
           "@id": "https://doi.org/10.1186/1471-2164-16-s5-s6"
-        },
-        "pmcid:PMC4460626",
-        "pubmed:26040958"
+        }
       ],
       "sc:description": "Reconstruct Ancestral gene orders as CARs (Contiguous Ancestral Regions) with a progressive homology-based method. The method runs from a phylogeny tree (without branch lengths needed) with a marked ancestor and a block file. This homology-based method is based on iteratively detecting and assembling ancestral adjacencies, while allowing some micro-rearrangements of synteny blocks at the extremities of the progressively assembled CARs.",
       "sc:featureList": {
@@ -79,8 +75,8 @@
       "sc:license": "CECILL-B",
       "sc:name": "ProCARs",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioinfo.lifl.fr/procars/doc/index.html"
@@ -89,15 +85,7 @@
       "sc:url": "http://bioinfo.lifl.fr/procars/procars.php"
     },
     {
-      "@id": "_:N1c7fec849a874ddcb42d8443aa9ee85d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:Na1714b4163c64bd593b603be4723f0dc",
+      "@id": "_:N54e9a18c7ddf4e51a0d53778aef2bcd0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3479"
@@ -105,7 +93,7 @@
       "sc:name": "Gene order"
     },
     {
-      "@id": "_:Nbd0152b8fd304253b88a3264be4f3d94",
+      "@id": "_:Nd2815459ac544def9c6bae4bb5b2ac81",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3272"
@@ -116,12 +104,24 @@
       "sc:name": "Species tree"
     },
     {
-      "@id": "_:N9dd7ca60831d4c30a9582be6f814aeae",
+      "@id": "_:N9f3980c6b9e24cf08c4c90fec0ce5110",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3479"
       },
       "sc:name": "Gene order"
+    },
+    {
+      "@id": "_:Neef40d71b11041c18845245cd796188d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2164-16-s5-s6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

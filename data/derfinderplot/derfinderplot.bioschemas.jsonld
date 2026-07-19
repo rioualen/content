@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw852",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/derfinderplot",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Leonardo Collado-Torres",
       "bsc:input": {
-        "@id": "_:Nb1867afc1d2c4070b64951cfdc0fc5fd"
+        "@id": "_:N3e42a942dab441069b6fb938d2ed4915"
       },
       "bsc:output": {
-        "@id": "_:Ndfb4006ec05d4c82a3e14fc062dfa2ed"
+        "@id": "_:Ncc3b4450d388473fb4512bf4d41ffd4a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0092"
       },
       "sc:citation": [
+        "pubmed:27694310",
+        "pmcid:PMC5314792",
         {
           "@id": "https://doi.org/10.1093/nar/gkw852"
-        },
-        "pmcid:PMC5314792",
-        "pubmed:27694310"
+        }
       ],
       "sc:description": "This package provides plotting functions for results from the derfinder package.",
       "sc:featureList": {
@@ -67,8 +71,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "derfinderPlot",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -78,18 +82,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/derfinderPlot.html"
     },
     {
-      "@id": "_:Ndfb4006ec05d4c82a3e14fc062dfa2ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nb1867afc1d2c4070b64951cfdc0fc5fd",
+      "@id": "_:N3e42a942dab441069b6fb938d2ed4915",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -100,8 +93,15 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw852",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncc3b4450d388473fb4512bf4d41ffd4a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

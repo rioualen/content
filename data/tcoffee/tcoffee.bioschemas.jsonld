@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Cedric Notredame",
       "bsc:input": {
-        "@id": "_:N3072ee92f4424a2f9f69d1278d722b2e"
+        "@id": "_:Nae2705109ea3421694bd8e5fa5d6f587"
       },
       "bsc:output": {
-        "@id": "_:Nfd59aa2fe36c4ea1bee96cefa2a51a7a"
+        "@id": "_:Nd13a2f88e7ca4b8c821fa3992ca3ae26"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -69,11 +69,14 @@
       "sc:license": "GPL-3.0",
       "sc:name": "T-Coffee",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
+        {
+          "@id": "http://www.tcoffee.org/Projects/tcoffee/documentation/README"
+        },
         {
           "@id": "http://www.tcoffee.org/Projects/tcoffee/#FAQ"
         },
@@ -82,29 +85,26 @@
         },
         {
           "@id": "http://www.tcoffee.org/Projects/tcoffee/#INSTALLATION"
-        },
-        {
-          "@id": "http://www.tcoffee.org/Projects/tcoffee/documentation/README"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.tcoffee.org/Projects/tcoffee/"
     },
     {
-      "@id": "_:Nfd59aa2fe36c4ea1bee96cefa2a51a7a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N3072ee92f4424a2f9f69d1278d722b2e",
+      "@id": "_:Nae2705109ea3421694bd8e5fa5d6f587",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Nd13a2f88e7ca4b8c821fa3992ca3ae26",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
     },
     {
       "@id": "https://doi.org/10.1006/jmbi.2000.4042",

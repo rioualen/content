@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv784",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/hs-blastn",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9878546a0a6b456da9a7023e0900322c"
+        "@id": "_:Nc267ef142c2a499b8146a1ee1ae0c8df"
       },
       "bsc:output": {
-        "@id": "_:N6a6c4075c68147b89614a4cb0e78f96f"
+        "@id": "_:N5e739e14cd8f40be943cab6115a59164"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0654"
+        },
         {
           "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0196"
-        },
-        {
-          "@id": "edam:topic_0654"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4652774",
         "pubmed:26250111",
+        "pmcid:PMC4652774",
         {
           "@id": "https://doi.org/10.1093/nar/gkv784"
         }
@@ -71,10 +67,10 @@
       "sc:description": "Nucleotide-Nucleotide aligner that searches nucleotide queries against a large nucleotide database.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0346"
         }
       ],
       "sc:name": "HS-BLASTN",
@@ -85,7 +81,7 @@
       "sc:url": "https://github.com/chenying2016/queries"
     },
     {
-      "@id": "_:N9878546a0a6b456da9a7023e0900322c",
+      "@id": "_:Nc267ef142c2a499b8146a1ee1ae0c8df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -93,12 +89,16 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N6a6c4075c68147b89614a4cb0e78f96f",
+      "@id": "_:N5e739e14cd8f40be943cab6115a59164",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv784",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

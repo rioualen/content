@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,29 +39,29 @@
       "@id": "https://bio.tools/ccharppi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N49dd4afec55b4bbb9fe18aee30986511"
+        "@id": "_:Nca604d11b2924f369a5adda5a02a8d33"
       },
       "bsc:output": {
-        "@id": "_:N706b2edf006742b28b2c6bb10f62462b"
+        "@id": "_:N14ec2b1802114058ada0294ea64691bf"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3332"
       },
       "sc:author": [
         {
-          "@id": "http://orcid.org/0000-0001-7786-2109"
+          "@id": "https://orcid.org/0000-0002-7502-3157"
         },
         {
-          "@id": "https://orcid.org/0000-0002-7502-3157"
+          "@id": "http://orcid.org/0000-0001-7786-2109"
         }
       ],
       "sc:citation": [
+        "pubmed:25183488",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu594"
-        },
-        "pubmed:25183488"
+        }
       ],
       "sc:description": "Many of protein structural characterization tools integrated into a single web server. It calculates up to 108 parameters, including models of electrostatics, desolvation and hydrogen bonding, as well as interface packing and complementarity scores, empirical potentials at various resolutions, docking potentials and composite scoring functions.",
       "sc:featureList": {
@@ -70,38 +70,27 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "CCharPPI",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Barcelona Supercomputing Center",
       "sc:softwareHelp": [
-        {
-          "@id": "https://life.bsc.es/pid/ccharppi/info/terms"
-        },
         {
           "@id": "https://life.bsc.es/pid/ccharppi/info/faq_and_help#reference"
         },
         {
           "@id": "https://life.bsc.es/pid/ccharppi/info/faq_and_help"
+        },
+        {
+          "@id": "https://life.bsc.es/pid/ccharppi/info/terms"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://life.bsc.es/pid/ccharppi"
     },
     {
-      "@id": "_:N706b2edf006742b28b2c6bb10f62462b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N49dd4afec55b4bbb9fe18aee30986511",
+      "@id": "_:Nca604d11b2924f369a5adda5a02a8d33",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2877"
@@ -112,12 +101,23 @@
       "sc:name": "Protein complex"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu594",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N14ec2b1802114058ada0294ea64691bf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Score"
     },
     {
       "@id": "https://orcid.org/0000-0002-7502-3157",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu594",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "http://orcid.org/0000-0001-7786-2109",

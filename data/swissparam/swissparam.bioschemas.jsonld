@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/jcc.21816",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/swissparam",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7e8e2c90623b427194287be8b990520c"
+        "@id": "_:N7fec977487004639acf7246f9a294d6e"
       },
       "bsc:output": [
         {
-          "@id": "_:Ndb238340746342eba74c8754ad5eb0c6"
+          "@id": "_:Ne3e317b831104362afdb666af1ab8bd5"
         },
         {
-          "@id": "_:Nccbe9913c80442e9ae6f414b57860f86"
+          "@id": "_:N38afdc12b12742cf8872873e9c8a20dd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0176"
       },
       "sc:citation": [
+        "pubmed:21541964",
         {
           "@id": "https://doi.org/10.1002/jcc.21816"
-        },
-        "pubmed:21541964"
+        }
       ],
       "sc:description": "This service provides topology and parameters for small organic molecules compatible with the CHARMM all atoms force field, for use with CHARMM and GROMACS.",
       "sc:featureList": {
@@ -70,29 +74,7 @@
       "sc:url": "http://swissparam.ch"
     },
     {
-      "@id": "_:Ndb238340746342eba74c8754ad5eb0c6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3887"
-      },
-      "sc:name": "Topology data"
-    },
-    {
-      "@id": "_:Nccbe9913c80442e9ae6f414b57860f86",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3871"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3883"
-      },
-      "sc:name": "Forcefield parameters"
-    },
-    {
-      "@id": "_:N7e8e2c90623b427194287be8b990520c",
+      "@id": "_:N7fec977487004639acf7246f9a294d6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -103,8 +85,26 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "https://doi.org/10.1002/jcc.21816",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne3e317b831104362afdb666af1ab8bd5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3871"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3883"
+      },
+      "sc:name": "Forcefield parameters"
+    },
+    {
+      "@id": "_:N38afdc12b12742cf8872873e9c8a20dd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3887"
+      },
+      "sc:name": "Topology data"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp335",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/intermap3d",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc19c0ef8c4464ce79e18bdfda2cad5d3"
+        "@id": "_:N16317f1a21bc4ac1bd6da8c3d271da99"
       },
       "bsc:output": [
         {
-          "@id": "_:N65b81edfb5e5413eb4b414825d50b30f"
+          "@id": "_:Nc1592a1dcdfb4eb5b3ae2c341a234131"
         },
         {
-          "@id": "_:Nd5631590edd74dc7bee75546b59b33af"
+          "@id": "_:Nc491b8754fce4d059ae324cb14cc42cb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -77,9 +73,9 @@
       "sc:license": "Other",
       "sc:name": "InterMap3D",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -89,7 +85,7 @@
       "sc:url": "http://cbs.dtu.dk/services/InterMap3D/"
     },
     {
-      "@id": "_:Nc19c0ef8c4464ce79e18bdfda2cad5d3",
+      "@id": "_:N16317f1a21bc4ac1bd6da8c3d271da99",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -100,7 +96,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N65b81edfb5e5413eb4b414825d50b30f",
+      "@id": "_:Nc1592a1dcdfb4eb5b3ae2c341a234131",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -111,7 +107,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nd5631590edd74dc7bee75546b59b33af",
+      "@id": "_:Nc491b8754fce4d059ae324cb14cc42cb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
@@ -120,6 +116,10 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp335",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

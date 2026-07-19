@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.4172/jpb.1000003",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/upf",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "PD Dr. Martin Eisenacher",
       "bsc:input": {
-        "@id": "_:N8421a1b85cc2483b8cdb8d6cec0e8360"
+        "@id": "_:Nae005d72836e4158b1259ae92fe53897"
       },
       "bsc:output": {
-        "@id": "_:N868ab894f3754de5995af01dc94d7fef"
+        "@id": "_:N474c89fc9cbc4f7b89233b869a7e724c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -61,26 +65,15 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Unique Peptide Finder (UPF)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareVersion": "0.912",
       "sc:url": "https://www.ruhr-uni-bochum.de/mpc/software/legacy/index.html.en#UPF"
     },
     {
-      "@id": "_:N868ab894f3754de5995af01dc94d7fef",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N8421a1b85cc2483b8cdb8d6cec0e8360",
+      "@id": "_:Nae005d72836e4158b1259ae92fe53897",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -91,8 +84,15 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "https://doi.org/10.4172/jpb.1000003",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N474c89fc9cbc4f7b89233b869a7e724c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Feature table"
     }
   ]
 }

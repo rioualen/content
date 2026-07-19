@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41592-019-0582-9",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ilastik",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nae1428c2e59c46d1902c533ecf441327"
+        "@id": "_:Nbcfd95e1c631413c886655e006dfacf7"
       },
       "bsc:output": [
         {
-          "@id": "_:N8d0e090bd65448f69d7516b24a0d08e9"
+          "@id": "_:N7edb3db3a94e478b94b298c3edee53e5"
         },
         {
-          "@id": "_:N2be238c1319a4b35ab30d14105fedb9e"
+          "@id": "_:N46e8a0e725c4457fa7aa679119840371"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_3344"
         },
         {
-          "@id": "edam:topic_3344"
+          "@id": "edam:topic_3474"
         }
       ],
       "sc:citation": [
@@ -72,21 +68,21 @@
       "sc:description": "Tool for interactive bioimage classification, segmentation and analysis.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3799"
-        },
-        {
           "@id": "edam:operation_2990"
         },
         {
           "@id": "edam:operation_3443"
+        },
+        {
+          "@id": "edam:operation_3799"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "ilastik",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -95,7 +91,60 @@
       "sc:url": "https://www.ilastik.org/index.html"
     },
     {
-      "@id": "_:N8d0e090bd65448f69d7516b24a0d08e9",
+      "@id": "_:Nbcfd95e1c631413c886655e006dfacf7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3592"
+        },
+        {
+          "@id": "edam:format_3467"
+        },
+        {
+          "@id": "edam:format_3590"
+        },
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3591"
+        },
+        {
+          "@id": "edam:format_3601"
+        },
+        {
+          "@id": "edam:format_3602"
+        },
+        {
+          "@id": "edam:format_3596"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N7edb3db3a94e478b94b298c3edee53e5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3590"
+        },
+        {
+          "@id": "edam:format_3591"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N46e8a0e725c4457fa7aa679119840371",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -106,57 +155,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N2be238c1319a4b35ab30d14105fedb9e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3590"
-        },
-        {
-          "@id": "edam:format_3591"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nae1428c2e59c46d1902c533ecf441327",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3592"
-        },
-        {
-          "@id": "edam:format_3601"
-        },
-        {
-          "@id": "edam:format_3467"
-        },
-        {
-          "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3602"
-        },
-        {
-          "@id": "edam:format_3596"
-        },
-        {
-          "@id": "edam:format_3590"
-        }
-      ],
-      "sc:name": "Image"
+      "@id": "https://doi.org/10.1038/s41592-019-0582-9",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/0-387-29362-0_15",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/multtest",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Katherine S. Pollard",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -58,18 +62,14 @@
       "sc:name": "multtest",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/multtest.html"
       },
       "sc:softwareVersion": "2.30.0",
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/multtest.html"
-    },
-    {
-      "@id": "https://doi.org/10.1007/0-387-29362-0_15",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

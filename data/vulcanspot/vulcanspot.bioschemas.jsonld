@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -50,17 +50,17 @@
         "@id": "https://orcid.org/0000-0003-2373-769X"
       },
       "bsc:input": {
-        "@id": "_:N112cff23e7924b1188e30816890ea9ff"
+        "@id": "_:Na53258acadbd4614888838a1e3d98a4a"
       },
       "bsc:output": [
         {
-          "@id": "_:N925a953b494f420e84bdeced4ce8d038"
+          "@id": "_:N432d2ea950e2467eb37efacc3756b737"
         },
         {
-          "@id": "_:N7c8774e2fd064691b404dc85f92bc186"
+          "@id": "_:N250c9bcbe76b43b0a1c1913de08c6625"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web API",
@@ -68,10 +68,10 @@
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3053"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_0154"
@@ -87,26 +87,26 @@
       "sc:description": "Tool to prioritize therapeutic vulnerabilities in cancer.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3501"
+        },
+        {
           "@id": "edam:operation_3196"
         },
         {
           "@id": "edam:operation_0463"
-        },
-        {
-          "@id": "edam:operation_3501"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "APL-1.0",
       "sc:name": "vulcanSpot",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "CNIO",
-        "BU_CNIO"
+        "BU_CNIO",
+        "CNIO"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.vulcanspot.org/help"
@@ -115,7 +115,34 @@
       "sc:url": "http://www.vulcanspot.org/"
     },
     {
-      "@id": "_:N925a953b494f420e84bdeced4ce8d038",
+      "@id": "_:Na53258acadbd4614888838a1e3d98a4a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N432d2ea950e2467eb37efacc3756b737",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N250c9bcbe76b43b0a1c1913de08c6625",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0984"
@@ -129,33 +156,6 @@
         }
       ],
       "sc:name": "Molecule name"
-    },
-    {
-      "@id": "_:N7c8774e2fd064691b404dc85f92bc186",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene name"
-    },
-    {
-      "@id": "_:N112cff23e7924b1188e30816890ea9ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene name"
     }
   ]
 }

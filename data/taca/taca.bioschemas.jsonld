@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,47 +36,51 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/trc2.12350",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/taca",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N145f8878f63741459f1f164a2b29ccf4"
+          "@id": "_:N8f80dcbec2794f03b76f5813200f94e4"
         },
         {
-          "@id": "_:N5459b501110340f5a7f43c26b6893d24"
+          "@id": "_:N77fa8937c916456c85e49510a995d866"
         },
         {
-          "@id": "_:N546136ca333a415b82bb6158df2b7cd4"
+          "@id": "_:N181015dcd04741c39b0735a9a5c6709e"
         },
         {
-          "@id": "_:Nc378b93d89cc43c3b90e4fc9b5753a2f"
+          "@id": "_:N6cc64073ddf549e487dc8921b5034ca5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0634"
+        },
+        {
+          "@id": "edam:topic_0108"
         },
         {
           "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_0634"
-        },
-        {
-          "@id": "edam:topic_0108"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
         "pubmed:36254161",
+        "pmcid:PMC9558163",
         {
           "@id": "https://doi.org/10.1002/trc2.12350"
-        },
-        "pmcid:PMC9558163"
+        }
       ],
       "sc:description": "A single-cell molecular map for translational therapeutics accelerator in Alzheimer's disease.",
       "sc:featureList": [
@@ -84,26 +88,26 @@
           "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3938"
-        },
-        {
           "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_2492"
+        },
+        {
+          "@id": "edam:operation_3938"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "TACA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://taca.lerner.ccf.org/"
     },
     {
-      "@id": "_:N145f8878f63741459f1f164a2b29ccf4",
+      "@id": "_:N8f80dcbec2794f03b76f5813200f94e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2899"
@@ -111,15 +115,7 @@
       "sc:name": "Drug name"
     },
     {
-      "@id": "_:N5459b501110340f5a7f43c26b6893d24",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1904"
-      },
-      "sc:name": "Locus ID (EntrezGene)"
-    },
-    {
-      "@id": "_:N546136ca333a415b82bb6158df2b7cd4",
+      "@id": "_:N77fa8937c916456c85e49510a995d866",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2326"
@@ -127,7 +123,7 @@
       "sc:name": "DrugBank ID"
     },
     {
-      "@id": "_:Nc378b93d89cc43c3b90e4fc9b5753a2f",
+      "@id": "_:N181015dcd04741c39b0735a9a5c6709e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -135,8 +131,12 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "https://doi.org/10.1002/trc2.12350",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N6cc64073ddf549e487dc8921b5034ca5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1904"
+      },
+      "sc:name": "Locus ID (EntrezGene)"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu136",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mait",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Francesc Fernandez-Albert",
       "bsc:input": {
-        "@id": "_:Nb71683ffad4f4267a3c8d7919e800704"
+        "@id": "_:N61dd66cda34f435f8b5274ef53091975"
       },
       "bsc:output": [
         {
-          "@id": "_:Nfc3837f6645f4fb7a5e1a534f6a70682"
+          "@id": "_:Nbf834dd6aa204c8c8609ee35fa3119a8"
         },
         {
-          "@id": "_:N889c406da6964acc98f3f95a132d2888"
+          "@id": "_:N4d73de56c5ef4d608dfa5b0b71c5f438"
         },
         {
-          "@id": "_:N7f47120d1a38402b8dadd1524caaaaa7"
+          "@id": "_:Nb7389a9c5f8b4ee8a37eb771c2aef4fa"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_3361"
         },
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_3172"
         }
       ],
       "sc:citation": [
@@ -80,18 +76,18 @@
       "sc:description": "This package contains functions to perform end-to-end statistical analysis of LC/MS Metabolomic Data. Special emphasis is put on peak annotation and in modular function design of the functions.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_3215"
         },
         {
-          "@id": "edam:operation_3215"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "MAIT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/MAIT.html"
@@ -100,23 +96,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/MAIT.html"
     },
     {
-      "@id": "_:Nfc3837f6645f4fb7a5e1a534f6a70682",
+      "@id": "_:N61dd66cda34f435f8b5274ef53091975",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_2536"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3650"
+      },
+      "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N889c406da6964acc98f3f95a132d2888",
+      "@id": "_:Nbf834dd6aa204c8c8609ee35fa3119a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -132,7 +123,23 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N7f47120d1a38402b8dadd1524caaaaa7",
+      "@id": "_:N4d73de56c5ef4d608dfa5b0b71c5f438",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nb7389a9c5f8b4ee8a37eb771c2aef4fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -148,15 +155,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nb71683ffad4f4267a3c8d7919e800704",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3650"
-      },
-      "sc:name": "Mass spectrometry data"
+      "@id": "https://doi.org/10.1093/bioinformatics/btu136",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

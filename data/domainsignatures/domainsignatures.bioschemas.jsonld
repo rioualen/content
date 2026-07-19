@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-9-3",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/domainsignatures",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Florian Hahne",
       "bsc:input": [
         {
-          "@id": "_:Nb3bbc917c1c3410b92897f72825fdab2"
+          "@id": "_:Nee143a80f86f413880b20e7190e813ff"
         },
         {
-          "@id": "_:N6189abeaa3f94595979659c21353dedc"
+          "@id": "_:Nc1ec5aa041bb4da7b789c1f85dc7592e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nfaf83a0fba2b493294bc155e350e9dc8"
+          "@id": "_:Ne04686ac12f6421f970816056d83b44a"
         },
         {
-          "@id": "_:N126ef05dada542f6a6818a8d9c48d76e"
+          "@id": "_:N89e1444642c94af9b1a5378747930734"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -73,8 +69,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2245903",
         "pubmed:18177498",
+        "pmcid:PMC2245903",
         {
           "@id": "https://doi.org/10.1186/1471-2105-9-3"
         }
@@ -91,9 +87,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "domainsignatures",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/domainsignatures.html"
@@ -102,23 +98,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/domainsignatures.html"
     },
     {
-      "@id": "_:Nfaf83a0fba2b493294bc155e350e9dc8",
+      "@id": "_:Nee143a80f86f413880b20e7190e813ff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_1904"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Locus ID (EntrezGene)"
     },
     {
-      "@id": "_:N126ef05dada542f6a6818a8d9c48d76e",
+      "@id": "_:Nc1ec5aa041bb4da7b789c1f85dc7592e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1355"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein signature"
+    },
+    {
+      "@id": "_:Ne04686ac12f6421f970816056d83b44a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -134,26 +136,24 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Nb3bbc917c1c3410b92897f72825fdab2",
+      "@id": "_:N89e1444642c94af9b1a5378747930734",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1904"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Locus ID (EntrezGene)"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:N6189abeaa3f94595979659c21353dedc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1355"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein signature"
+      "@id": "https://doi.org/10.1186/1471-2105-9-3",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

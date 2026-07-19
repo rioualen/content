@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-0513-0288",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/bioexcel_building_blocks_tutorials_abc_md_setup",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:N1bf6e1acb1c54c0a83fab40e3442226f"
+        "@id": "_:Nb3699857f6884215b4be037f3df175a5"
       },
       "bsc:output": [
         {
-          "@id": "_:N7284345e3c204eee9b5bb58e6793b303"
+          "@id": "_:N76a0020d6d1948298996c724680c3f46"
         },
         {
-          "@id": "_:N8859819922484aefa92ace9a0d9bc3a1"
+          "@id": "_:N4336746ded164aa5ad5c6c81421a26f5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_0176"
         },
         {
-          "@id": "edam:topic_0176"
+          "@id": "edam:topic_0097"
         }
       ],
       "sc:author": [
@@ -71,8 +79,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC6736963",
         "pubmed:31506435",
+        "pmcid:PMC6736963",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
         }
@@ -90,9 +98,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks tutorials: ABC MD Setup",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "BioExcel Center of Excellence for Computational Biomolecular Research",
       "sc:softwareHelp": {
@@ -102,7 +110,29 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb/workflows/tutorials/amber_abcsetup"
     },
     {
-      "@id": "_:N7284345e3c204eee9b5bb58e6793b303",
+      "@id": "_:Nb3699857f6884215b4be037f3df175a5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N76a0020d6d1948298996c724680c3f46",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3881"
+      },
+      "sc:name": "Topology data"
+    },
+    {
+      "@id": "_:N4336746ded164aa5ad5c6c81421a26f5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -116,36 +146,6 @@
         }
       ],
       "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:N8859819922484aefa92ace9a0d9bc3a1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3881"
-      },
-      "sc:name": "Topology data"
-    },
-    {
-      "@id": "_:N1bf6e1acb1c54c0a83fab40e3442226f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0513-0288",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1038/s41597-019-0177-4",

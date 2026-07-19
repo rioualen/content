@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv523",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/inga",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,21 +47,21 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N33f79556b6e24cb7b9c5e5bd767948fb"
+          "@id": "_:N335e73628cd84471a46e17fc36d9059c"
         },
         {
-          "@id": "_:Nb543b0e033194d269b2397203fe79a8c"
+          "@id": "_:N43646590c8474986840700d7936a53ac"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N87b92f6245944a19a57b8a98203d069c"
+          "@id": "_:N613174a42e2e4671a99b83dfbbf60fd7"
         },
         {
-          "@id": "_:N547e00718802477d89456021c079fa11"
+          "@id": "_:N176ed0b0bdad4530ba76bc78edd1d802"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web API",
         "Web application"
@@ -78,9 +82,9 @@
       },
       "sc:name": "INGA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "ELIXIR-ITA-PADOVA",
@@ -93,7 +97,26 @@
       "sc:url": "https://inga.bio.unipd.it/"
     },
     {
-      "@id": "_:N87b92f6245944a19a57b8a98203d069c",
+      "@id": "_:N335e73628cd84471a46e17fc36d9059c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N43646590c8474986840700d7936a53ac",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N613174a42e2e4671a99b83dfbbf60fd7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2858"
@@ -104,7 +127,7 @@
       "sc:name": "Ontology concept"
     },
     {
-      "@id": "_:N547e00718802477d89456021c079fa11",
+      "@id": "_:N176ed0b0bdad4530ba76bc78edd1d802",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2858"
@@ -120,31 +143,8 @@
       "sc:name": "Ontology concept"
     },
     {
-      "@id": "_:N33f79556b6e24cb7b9c5e5bd767948fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nb543b0e033194d269b2397203fe79a8c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
       "@id": "http://orcid.org/0000-0003-4525-7793",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkv523",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

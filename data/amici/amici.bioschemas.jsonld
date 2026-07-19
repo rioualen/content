@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-4935-3312",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9963-6057",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1093/bioinformatics/btab227",
       "@type": "sc:CreativeWork"
     },
@@ -52,44 +60,44 @@
         "Fabian Fröhlich"
       ],
       "bsc:input": {
-        "@id": "_:N593101e55e6545049a65ae7d3ab1c6ab"
+        "@id": "_:Nf5ecbcfe86ae4ed79e2c252ff8898942"
       },
       "bsc:output": {
-        "@id": "_:N38400ab8af984a33adc2c5245579f18e"
+        "@id": "_:N44514cd66e444c8390ef3a9268f4d1e7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2259"
       },
       "sc:author": [
-        "Fabian Fröhlich",
         {
           "@id": "https://orcid.org/0000-0001-9963-6057"
-        }
+        },
+        "Fabian Fröhlich"
       ],
       "sc:citation": [
+        "pubmed:33821950",
+        "pmcid:PMC8545331",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btab227"
-        },
-        "pubmed:33821950",
-        "pmcid:PMC8545331"
+        }
       ],
       "sc:description": "AMICI provides a multi-language (Python, C++, Matlab) interface for the SUNDIALS solvers CVODES (for ordinary differential equations) and IDAS (for algebraic differential equations). AMICI allows the user to read differential equation models specified as SBML or PySB and automatically compiles such models into .mex simulation files (Matlab), C++ executables or Python modules.\n\nBeyond forward integration, the compiled simulation file also allows for forward sensitivity analysis, steady state sensitivity analysis and adjoint sensitivity analysis for likelihood-based output functions.\n\nThe interface was designed to provide routines for efficient gradient computation in parameter estimation of biochemical reaction models but it is also applicable to a wider range of differential equation constrained optimization problems.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3562"
+          "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_3562"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "AMICI",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -98,7 +106,23 @@
       "sc:url": "https://github.com/AMICI-dev/AMICI"
     },
     {
-      "@id": "_:N38400ab8af984a33adc2c5245579f18e",
+      "@id": "_:Nf5ecbcfe86ae4ed79e2c252ff8898942",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_4015"
+        },
+        {
+          "@id": "edam:format_2585"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N44514cd66e444c8390ef3a9268f4d1e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -107,30 +131,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:N593101e55e6545049a65ae7d3ab1c6ab",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2585"
-        },
-        {
-          "@id": "edam:format_4015"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9963-6057",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-4935-3312",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp100",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pannbuilder",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Li Hong",
       "bsc:input": [
         {
-          "@id": "_:N91ae942f5c474a72835c3fc7c21a91ec"
+          "@id": "_:N6806688941b0486284e166382c61a6e4"
         },
         {
-          "@id": "_:N4954887b1b8544c2a673dbc46961a506"
+          "@id": "_:N02b58e9fe52e4858a5d0272f49e507db"
         }
       ],
       "bsc:output": {
-        "@id": "_:N9197d9aa943540d7aaf230d80c97fc08"
+        "@id": "_:Nc99fef4c84df40dbaa418e0b4b850b4d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -64,28 +68,28 @@
         }
       ],
       "sc:citation": [
+        "pubmed:19237448",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp100"
-        },
-        "pubmed:19237448"
+        }
       ],
       "sc:description": "Processing annotation data from public data repositories and building protein-centric annotation data packages.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_3561"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "PAnnBuilder",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -95,18 +99,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/PAnnBuilder.html"
     },
     {
-      "@id": "_:N9197d9aa943540d7aaf230d80c97fc08",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3621"
-      },
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N91ae942f5c474a72835c3fc7c21a91ec",
+      "@id": "_:N6806688941b0486284e166382c61a6e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1084"
@@ -117,7 +110,7 @@
       "sc:name": "Data resource definition ID"
     },
     {
-      "@id": "_:N4954887b1b8544c2a673dbc46961a506",
+      "@id": "_:N02b58e9fe52e4858a5d0272f49e507db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1045"
@@ -128,8 +121,15 @@
       "sc:name": "Species name"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp100",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nc99fef4c84df40dbaa418e0b4b850b4d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3621"
+      },
+      "sc:name": "Database search results"
     }
   ]
 }

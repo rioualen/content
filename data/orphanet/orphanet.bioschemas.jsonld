@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/humu.22078",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/orphanet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8805cd9bde7841b4a277264ab8fd0ce3"
+        "@id": "_:Nbc97a5cfc71c4bb0a46742cf9060b279"
       },
       "bsc:output": {
-        "@id": "_:Nb4ed5b051c904e03923310be5cbfd003"
+        "@id": "_:N552867fb59d34afd9e4d3d4760fe9e7b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0634"
+        },
+        {
           "@id": "edam:topic_3325"
         },
         {
           "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0634"
         }
       ],
       "sc:citation": [
@@ -77,9 +73,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Orphanet",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Inserm US14",
       "sc:softwareHelp": {
@@ -88,7 +84,7 @@
       "sc:url": "http://www.orpha.net/consor/cgi-bin/index.php"
     },
     {
-      "@id": "_:N8805cd9bde7841b4a277264ab8fd0ce3",
+      "@id": "_:Nbc97a5cfc71c4bb0a46742cf9060b279",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2800"
@@ -96,7 +92,7 @@
       "sc:name": "Orpha number"
     },
     {
-      "@id": "_:Nb4ed5b051c904e03923310be5cbfd003",
+      "@id": "_:N552867fb59d34afd9e4d3d4760fe9e7b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1622"
@@ -105,6 +101,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Disease report"
+    },
+    {
+      "@id": "https://doi.org/10.1002/humu.22078",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

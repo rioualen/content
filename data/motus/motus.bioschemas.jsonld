@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,29 +44,33 @@
       "@type": "sc:Person"
     },
     {
+      "@id": "https://doi.org/10.1038/s41467-019-08844-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/motus",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N80df9e8eb2f34cad9a688483e266efd2"
+        "@id": "_:N5d258ff5e9e3428493b6ffc4d758cd3f"
       },
       "bsc:output": {
-        "@id": "_:N6cb5e487f61446dcb2615218cc8c1f34"
+        "@id": "_:Ne4dd5c0d97f14f199977c3f6532b3d31"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3174"
       },
       "sc:citation": [
+        "pubmed:30833550",
+        "pmcid:PMC6399450",
         {
           "@id": "https://doi.org/10.1038/s41467-019-08844-4"
         },
+        "pubmed:24141494",
         {
           "@id": "https://doi.org/10.1038/nmeth.2693"
-        },
-        "pubmed:24141494",
-        "pubmed:30833550",
-        "pmcid:PMC6399450"
+        }
       ],
       "sc:contributor": {
         "@id": "http://orcid.org/0000-0003-3065-0314"
@@ -79,12 +83,12 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Metagenomic operational taxonomic units (mOTUs)",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "HD-HuB",
-        "European Molecular Biology Laboratory (EMBL)"
+        "European Molecular Biology Laboratory (EMBL)",
+        "HD-HuB"
       ],
       "sc:softwareHelp": {
         "@id": "https://motu-tool.org/"
@@ -93,7 +97,7 @@
       "sc:url": "https://motu-tool.org/"
     },
     {
-      "@id": "_:N80df9e8eb2f34cad9a688483e266efd2",
+      "@id": "_:N5d258ff5e9e3428493b6ffc4d758cd3f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -104,7 +108,7 @@
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:N6cb5e487f61446dcb2615218cc8c1f34",
+      "@id": "_:Ne4dd5c0d97f14f199977c3f6532b3d31",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -113,10 +117,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Matrix"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41467-019-08844-4",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

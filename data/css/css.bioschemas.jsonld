@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,20 +44,20 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nick Furnham",
       "bsc:input": {
-        "@id": "_:Nc2a0c455784645f8826c26513bf5ba59"
+        "@id": "_:N3d62e4fc72484746851027859b08a9da"
       },
       "bsc:output": [
         {
-          "@id": "_:N402f8b1b36974abea86fedb1678def9b"
+          "@id": "_:N4cd0649a0598439888bb46f6e5fcf930"
         },
         {
-          "@id": "_:Ndf2c4a715e04456a8154f00f636fcb84"
+          "@id": "_:Nfb4d8f25dc544cef86e3d5d10c5de1de"
         },
         {
-          "@id": "_:N5690ca658be645458a3a69c5508707f0"
+          "@id": "_:N161cdc71fb124baea6611babc4180d2b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -68,16 +68,16 @@
         }
       ],
       "sc:author": [
-        "Thornton Group",
         "James Torrance",
-        "Nick Furnham"
+        "Nick Furnham",
+        "Thornton Group"
       ],
       "sc:citation": [
+        "pubmed:14681376",
         "pmcid:PMC308762",
         {
           "@id": "https://doi.org/10.1093/nar/gkh028"
-        },
-        "pubmed:14681376"
+        }
       ],
       "sc:contributor": "Craig Porter",
       "sc:description": "Search a protein structure for likely catalytic sites.",
@@ -88,41 +88,17 @@
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/thornton-srv/databases/CSS_NEW/help.php"
         },
         {
-          "@id": "http://www.ebi.ac.uk/thornton-srv/databases/CSS_NEW/help.php"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/thornton-srv/databases/CSS_NEW"
     },
     {
-      "@id": "_:N402f8b1b36974abea86fedb1678def9b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:Ndf2c4a715e04456a8154f00f636fcb84",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2992"
-      },
-      "sc:name": "Protein structure image"
-    },
-    {
-      "@id": "_:N5690ca658be645458a3a69c5508707f0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:Nc2a0c455784645f8826c26513bf5ba59",
+      "@id": "_:N3d62e4fc72484746851027859b08a9da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -131,6 +107,30 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N4cd0649a0598439888bb46f6e5fcf930",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:Nfb4d8f25dc544cef86e3d5d10c5de1de",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2992"
+      },
+      "sc:name": "Protein structure image"
+    },
+    {
+      "@id": "_:N161cdc71fb124baea6611babc4180d2b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:name": "Protein structure report"
     }
   ]
 }

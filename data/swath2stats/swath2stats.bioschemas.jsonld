@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-9105-6381",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/swath2stats",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-9105-6381"
       },
       "bsc:input": {
-        "@id": "_:Nbeb7f08a01b94e1d8996a8362e98c3e0"
+        "@id": "_:N2ce1cbbadf2c40fca8b107db8d7af355"
       },
       "bsc:output": {
-        "@id": "_:N6365a4c848364164b31eeff1ff2e414a"
+        "@id": "_:Ne6a1ccc30d004a08910e78f6d8f204ef"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -70,8 +74,8 @@
       "sc:name": "SWATH2stats",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/SWATH2stats.html"
@@ -80,23 +84,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SWATH2stats.html"
     },
     {
-      "@id": "_:N6365a4c848364164b31eeff1ff2e414a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3111"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Processed microarray data"
-    },
-    {
-      "@id": "_:Nbeb7f08a01b94e1d8996a8362e98c3e0",
+      "@id": "_:N2ce1cbbadf2c40fca8b107db8d7af355",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -107,12 +95,24 @@
       "sc:name": "Raw microarray data"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0153160",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne6a1ccc30d004a08910e78f6d8f204ef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3111"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Processed microarray data"
     },
     {
-      "@id": "http://orcid.org/0000-0001-9105-6381",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1371/journal.pone.0153160",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/s10822-008-9255-y",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/chemgps-np",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na237eec88b484c5fa602bb7b7a5b4e93"
+        "@id": "_:N68140a03bade49ff8261b70283b58cf4"
       },
       "bsc:output": {
-        "@id": "_:N50100bb6973c4d9eae7dbeab3272ac2e"
+        "@id": "_:N03e62c08e2a545a8bda3a1a3c3900bac"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
         "Web API",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3332"
@@ -62,8 +66,8 @@
       },
       "sc:name": "ChemGPS-NP",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "bils.se",
@@ -74,7 +78,7 @@
       "sc:url": "http://chemgps.bmc.uu.se/"
     },
     {
-      "@id": "_:N50100bb6973c4d9eae7dbeab3272ac2e",
+      "@id": "_:N68140a03bade49ff8261b70283b58cf4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2087"
@@ -82,16 +86,12 @@
       "sc:name": "Molecular property"
     },
     {
-      "@id": "_:Na237eec88b484c5fa602bb7b7a5b4e93",
+      "@id": "_:N03e62c08e2a545a8bda3a1a3c3900bac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2087"
       },
       "sc:name": "Molecular property"
-    },
-    {
-      "@id": "https://doi.org/10.1007/s10822-008-9255-y",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/water",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na4e9dc1084364814a9779af1743cf909"
+          "@id": "_:N7b7e5d109b7841b0840a9cd913ab289d"
         },
         {
-          "@id": "_:N3e2cc2a51f084fc9aa95087d3ec7aa67"
+          "@id": "_:Ncd9b56d40e644a9fa27f9059b234de17"
         },
         {
-          "@id": "_:Nb18858e238c64a4c8401bc406fd64559"
+          "@id": "_:N1c52758467aa4d8b905e789f72b14654"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5705b54948f1498d81f804ce33c193e3"
+        "@id": "_:N12ebbda4576e4e358d67e1f3a28afa7a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
@@ -74,17 +62,17 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
-        "EMBOSS Contributors",
         "UK BBSRC",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Smith-Waterman local alignment of sequences.",
       "sc:featureList": {
@@ -100,8 +88,8 @@
       "sc:name": "water",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -112,17 +100,17 @@
           "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/water.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/water.html"
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/water.html"
     },
     {
-      "@id": "_:Na4e9dc1084364814a9779af1743cf909",
+      "@id": "_:N7b7e5d109b7841b0840a9cd913ab289d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0874"
@@ -130,7 +118,7 @@
       "sc:name": "Comparison matrix"
     },
     {
-      "@id": "_:N3e2cc2a51f084fc9aa95087d3ec7aa67",
+      "@id": "_:Ncd9b56d40e644a9fa27f9059b234de17",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -138,7 +126,7 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:Nb18858e238c64a4c8401bc406fd64559",
+      "@id": "_:N1c52758467aa4d8b905e789f72b14654",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -146,12 +134,24 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N5705b54948f1498d81f804ce33c193e3",
+      "@id": "_:N12ebbda4576e4e358d67e1f3a28afa7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1381"
       },
       "sc:name": "Sequence alignment (pair)"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

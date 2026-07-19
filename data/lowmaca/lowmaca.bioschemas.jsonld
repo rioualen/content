@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,46 +36,42 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-1103-7688",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/lowmaca",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "http://orcid.org/0000-0003-1103-7688"
+          "@id": "http://orcid.org/0000-0001-6371-1334"
         },
         {
-          "@id": "http://orcid.org/0000-0001-6371-1334"
+          "@id": "http://orcid.org/0000-0003-1103-7688"
         }
       ],
       "bsc:input": [
         {
-          "@id": "_:N9fe7679a9ed94e04b4bf5f6558b33e63"
+          "@id": "_:N429669a99a9540ac992130478175c53c"
         },
         {
-          "@id": "_:N3d8158ee7a4a4c11be5e3eb34cde949a"
+          "@id": "_:Nf802c35e59c64da3a7e0498682cf709b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N102a3b9fc14e4ad28590c4e5a95a4241"
+          "@id": "_:N6dec0f0169e34b30a8eb2d19ab33134b"
         },
         {
-          "@id": "_:N327eb571e56742a0bc5ab88b6e750990"
+          "@id": "_:N183f8b2b5d6545cb9d63a6bb5606e32b"
         },
         {
-          "@id": "_:Na953da02855d43e19e5c2ac08bb48fde"
+          "@id": "_:N8daa36f6e6d1457cb79e644da5962e19"
         },
         {
-          "@id": "_:N7a41de3528d64595b1bf68e9f68302d1"
+          "@id": "_:N1672759727c44b558a20c7950fc41dd1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -87,18 +83,18 @@
       ],
       "sc:citation": [
         "pubmed:26860319",
+        "pmcid:PMC4748640",
         {
           "@id": "https://doi.org/10.1186/s12859-016-0935-7"
-        },
-        "pmcid:PMC4748640"
+        }
       ],
       "sc:description": "This package is a simple suite of tools to investigate and analyze the mutation profile of several proteins or PFAM domains via consensus alignment. You can conduct an hypothesis driven exploratory analysis using our package simply providing a set of genes or PFAM domains of your interest.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2479"
+          "@id": "edam:operation_0492"
         },
         {
-          "@id": "edam:operation_0492"
+          "@id": "edam:operation_2479"
         },
         {
           "@id": "edam:operation_0296"
@@ -107,9 +103,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "LowMACA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/LowMACA.html"
@@ -118,7 +114,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/LowMACA.html"
     },
     {
-      "@id": "_:N9fe7679a9ed94e04b4bf5f6558b33e63",
+      "@id": "_:N429669a99a9540ac992130478175c53c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -129,7 +125,7 @@
       "sc:name": "Gene ID"
     },
     {
-      "@id": "_:N3d8158ee7a4a4c11be5e3eb34cde949a",
+      "@id": "_:Nf802c35e59c64da3a7e0498682cf709b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1138"
@@ -140,26 +136,64 @@
       "sc:name": "Pfam accession number"
     },
     {
-      "@id": "_:N102a3b9fc14e4ad28590c4e5a95a4241",
+      "@id": "_:N6dec0f0169e34b30a8eb2d19ab33134b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N183f8b2b5d6545cb9d63a6bb5606e32b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1384"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Sequence alignment (protein)"
+    },
+    {
+      "@id": "_:N8daa36f6e6d1457cb79e644da5962e19",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3603"
-        },
-        {
           "@id": "edam:format_3547"
         },
         {
           "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3603"
         }
       ],
       "sc:name": "Sequence alignment report"
     },
     {
-      "@id": "_:N327eb571e56742a0bc5ab88b6e750990",
+      "@id": "_:N1672759727c44b558a20c7950fc41dd1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2166"
@@ -178,50 +212,16 @@
       "sc:name": "Sequence composition plot"
     },
     {
-      "@id": "_:Na953da02855d43e19e5c2ac08bb48fde",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1384"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Sequence alignment (protein)"
-    },
-    {
-      "@id": "_:N7a41de3528d64595b1bf68e9f68302d1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
+      "@id": "https://doi.org/10.1186/s12859-016-0935-7",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "http://orcid.org/0000-0001-6371-1334",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-016-0935-7",
-      "@type": "sc:CreativeWork"
+      "@id": "http://orcid.org/0000-0003-1103-7688",
+      "@type": "sc:Person"
     }
   ]
 }

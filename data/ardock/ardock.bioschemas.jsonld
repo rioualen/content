@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/2046-1682-5-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gky472",
       "@type": "sc:CreativeWork"
     },
@@ -49,16 +45,16 @@
       "biotools:primaryContact": "Guillaume Launay",
       "bsc:input": [
         {
-          "@id": "_:N5ebca7ae6e4745c9bf21097ede774e30"
+          "@id": "_:N7730e2a4205d472880db642c51b1fe8e"
         },
         {
-          "@id": "_:N137742a8da1944d986b6c3214aee25eb"
+          "@id": "_:N0e1ea9ba26dd4ecd80e604a24d87a281"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -70,20 +66,20 @@
       ],
       "sc:author": "G.Launay",
       "sc:citation": [
-        "pmcid:PMC3441232",
+        "pubmed:29905873",
+        "pmcid:PMC6031020",
         {
           "@id": "https://doi.org/10.1093/nar/gky472"
         },
+        "pubmed:22559010",
+        "pmcid:PMC3441232",
         {
           "@id": "https://doi.org/10.1186/2046-1682-5-7"
-        },
-        "pubmed:29905873",
-        "pmcid:PMC6031020",
-        "pubmed:22559010"
+        }
       ],
       "sc:contributor": [
-        "R.Lavery",
-        "J.Martin"
+        "J.Martin",
+        "R.Lavery"
       ],
       "sc:description": "Analysis of surfaces of protein structures.",
       "sc:featureList": [
@@ -96,13 +92,13 @@
       ],
       "sc:name": "arDock",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "UCBL",
         "CNRS",
+        "UCBL",
         "ibcp.fr"
       ],
       "sc:softwareHelp": {
@@ -112,7 +108,7 @@
       "sc:url": "http://ardock.ibcp.fr"
     },
     {
-      "@id": "_:N5ebca7ae6e4745c9bf21097ede774e30",
+      "@id": "_:N7730e2a4205d472880db642c51b1fe8e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -120,7 +116,7 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N137742a8da1944d986b6c3214aee25eb",
+      "@id": "_:N0e1ea9ba26dd4ecd80e604a24d87a281",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -129,6 +125,10 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "https://doi.org/10.1186/2046-1682-5-7",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

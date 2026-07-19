@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0026781",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/nnalign",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Morten Nielsen",
-        "Massimo Andreatta"
+        "Massimo Andreatta",
+        "Morten Nielsen"
       ],
       "bsc:input": {
-        "@id": "_:N8e0e25a2708344e68b9f5310002d1925"
+        "@id": "_:N35ec0ec7816d4b87b1ef796a95754ba7"
       },
       "bsc:output": {
-        "@id": "_:N813941f461c54942957ec73d664929fa"
+        "@id": "_:Nb22c3661ef2340508f1cf9f75218f1d0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -77,23 +81,7 @@
       "sc:url": "http://cbs.dtu.dk/services/NNAlign/"
     },
     {
-      "@id": "_:N813941f461c54942957ec73d664929fa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N8e0e25a2708344e68b9f5310002d1925",
+      "@id": "_:N35ec0ec7816d4b87b1ef796a95754ba7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -109,8 +97,20 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0026781",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nb22c3661ef2340508f1cf9f75218f1d0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Protein features"
     }
   ]
 }

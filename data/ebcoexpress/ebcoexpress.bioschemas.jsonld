@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,20 +44,20 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "John A. Dawson",
       "bsc:input": {
-        "@id": "_:Nc8d6292195894a68a243c82170f6b72d"
+        "@id": "_:Nd8aefcf312f7465290e5970d0c44181e"
       },
       "bsc:output": [
         {
-          "@id": "_:N6181f990030e4585af14e6b1626a6e5f"
+          "@id": "_:N849cc7fe3f20421196c6e56c4006ccea"
         },
         {
-          "@id": "_:N09285742b2e54618aafdba892521a03b"
+          "@id": "_:Nbfc60049ee6a4969bb73a9a5afbff005"
         },
         {
-          "@id": "_:N6bc35237b3064272bb623eb570008094"
+          "@id": "_:N8c0ecec4be6545ab944661f54e6c27ed"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -74,11 +74,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:22595207",
+        "pmcid:PMC3492001",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts268"
-        },
-        "pubmed:22595207",
-        "pmcid:PMC3492001"
+        }
       ],
       "sc:description": "An Empirical Bayesian Approach to Differential Co-Expression Analysis at the Gene-Pair Level.",
       "sc:featureList": {
@@ -87,9 +87,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "EBcoexpress",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/EBcoexpress.html"
@@ -98,64 +98,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/EBcoexpress.html"
     },
     {
-      "@id": "_:N6181f990030e4585af14e6b1626a6e5f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N09285742b2e54618aafdba892521a03b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N6bc35237b3064272bb623eb570008094",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:Nc8d6292195894a68a243c82170f6b72d",
+      "@id": "_:Nd8aefcf312f7465290e5970d0c44181e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -169,6 +112,63 @@
         }
       ],
       "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N849cc7fe3f20421196c6e56c4006ccea",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Nbfc60049ee6a4969bb73a9a5afbff005",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N8c0ecec4be6545ab944661f54e6c27ed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

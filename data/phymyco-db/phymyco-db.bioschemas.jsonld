@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0043117",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/phymyco-db",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "GenOuest",
       "bsc:input": {
-        "@id": "_:Nb353d1787991442881fa74da5697311c"
+        "@id": "_:Na822916d216a4048b68d4b41cc1cfefa"
       },
       "bsc:output": {
-        "@id": "_:Ne360845b1da04c33a0b236f5abd8b551"
+        "@id": "_:N02f71541462e4bcf80072850cae4fccd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0623"
       },
       "sc:citation": [
+        "pubmed:23028445",
         "pmcid:PMC3441585",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0043117"
-        },
-        "pubmed:23028445"
+        }
       ],
       "sc:description": "A database designed to help the mycologist community to access to fungal DNA markers data for phylogenetic analyses.",
       "sc:featureList": {
@@ -64,9 +68,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Phymyco-DB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "GenOuest",
       "sc:softwareHelp": {
@@ -75,7 +79,7 @@
       "sc:url": "http://phymycodb.genouest.org/"
     },
     {
-      "@id": "_:Nb353d1787991442881fa74da5697311c",
+      "@id": "_:Na822916d216a4048b68d4b41cc1cfefa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -86,7 +90,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Ne360845b1da04c33a0b236f5abd8b551",
+      "@id": "_:N02f71541462e4bcf80072850cae4fccd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -95,10 +99,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0043117",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

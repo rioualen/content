@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s42256-025-01019-5",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/instanovo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Konstantinos Kalogeropoulos",
-        "Kevin Eloff"
+        "Kevin Eloff",
+        "Konstantinos Kalogeropoulos"
       ],
       "bsc:input": {
-        "@id": "_:Naeb919af844a45d09598d2a913f04f6d"
+        "@id": "_:Nfcbc66f055114320a17d13d6bc12f4f6"
       },
       "bsc:output": {
-        "@id": "_:N74a73633cbbf43de94c5517ce954fc71"
+        "@id": "_:N2b78c561bf5845788dc885520df06c18"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": {
@@ -79,11 +75,14 @@
       "sc:license": "Apache-2.0",
       "sc:name": "InstaNovo",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
+        {
+          "@id": "https://instadeepai.github.io/InstaNovo/API/summary/"
+        },
         {
           "@id": "https://instadeepai.github.io/InstaNovo/citation/"
         },
@@ -91,42 +90,39 @@
           "@id": "https://instadeepai.github.io/InstaNovo/reference/cli/"
         },
         {
-          "@id": "https://instadeepai.github.io/InstaNovo/tutorials/getting_started/#installation"
-        },
-        {
           "@id": "https://instadeepai.github.io/InstaNovo/"
         },
         {
-          "@id": "https://instadeepai.github.io/InstaNovo/tutorials/getting_started/"
+          "@id": "https://instadeepai.github.io/InstaNovo/tutorials/getting_started/#installation"
         },
         {
-          "@id": "https://instadeepai.github.io/InstaNovo/API/summary/"
+          "@id": "https://instadeepai.github.io/InstaNovo/tutorials/getting_started/"
         }
       ],
       "sc:softwareVersion": "1.2.2",
       "sc:url": "https://github.com/instadeepai/instanovo"
     },
     {
-      "@id": "_:Naeb919af844a45d09598d2a913f04f6d",
+      "@id": "_:Nfcbc66f055114320a17d13d6bc12f4f6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3654"
-        },
-        {
           "@id": "edam:format_3651"
         },
         {
           "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N74a73633cbbf43de94c5517ce954fc71",
+      "@id": "_:N2b78c561bf5845788dc885520df06c18",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -135,6 +131,10 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s42256-025-01019-5",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

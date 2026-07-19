@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.2174/157489308784340702",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/eugene",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yves Van de Peer",
       "bsc:input": {
-        "@id": "_:Nad5618ba07514c14a78843503ef949fc"
+        "@id": "_:N4e393f49d5db4cdca77b2e6b2195cae4"
       },
       "bsc:output": {
-        "@id": "_:N6eff39fe6a0440078c64bb1087c61945"
+        "@id": "_:N28f7f1e6d54d4f2e80afef2a5cb1553e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -64,8 +60,8 @@
       "sc:name": "EuGene",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "PSB",
       "sc:softwareHelp": {
@@ -75,15 +71,7 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/webtools/EuGene/"
     },
     {
-      "@id": "_:N6eff39fe6a0440078c64bb1087c61945",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:Nad5618ba07514c14a78843503ef949fc",
+      "@id": "_:N4e393f49d5db4cdca77b2e6b2195cae4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -92,6 +80,18 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N28f7f1e6d54d4f2e80afef2a5cb1553e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "https://doi.org/10.2174/157489308784340702",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

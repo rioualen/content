@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,16 +43,16 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N23515649dd1243618dfa387cb5c1a0b3"
+          "@id": "_:N78d8ea81c93c496ab0f3bffdf87038d5"
         },
         {
-          "@id": "_:Nb7140db4285849afab11ffe89bfe938d"
+          "@id": "_:N5e8526cbdbe0417eb8eca3476e35d351"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ned3f9a662a3f4bc7b2a370d8fc7b1604"
+        "@id": "_:N7d08b305f3044702bd5e1d0f069d5cd4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -80,9 +80,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "FuzzyClust",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "bmb.sdu.dk",
       "sc:softwareHelp": {
@@ -92,7 +92,34 @@
       "sc:url": "http://computproteomics.bmb.sdu.dk/Apps/FuzzyClust"
     },
     {
-      "@id": "_:Ned3f9a662a3f4bc7b2a370d8fc7b1604",
+      "@id": "_:N78d8ea81c93c496ab0f3bffdf87038d5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N5e8526cbdbe0417eb8eca3476e35d351",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:N7d08b305f3044702bd5e1d0f069d5cd4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -108,39 +135,12 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N23515649dd1243618dfa387cb5c1a0b3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:Nb7140db4285849afab11ffe89bfe938d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Matrix"
+      "@id": "http://orcid.org/0000-0002-9708-6722",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btq534",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-9708-6722",
-      "@type": "sc:Person"
     }
   ]
 }

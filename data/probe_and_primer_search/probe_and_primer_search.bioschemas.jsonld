@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "James Robinson",
       "bsc:input": {
-        "@id": "_:N9529929170154dc086eac582575f708e"
+        "@id": "_:N9376c0a327b042aaaea2340ca7d2708b"
       },
       "bsc:output": {
-        "@id": "_:N79ccf722b424482a991581b5daeb04de"
+        "@id": "_:N170dfd41d6ab4e94b69b916148f3b61e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -66,8 +66,8 @@
       },
       "sc:name": "Probe and Primer Search",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
@@ -83,7 +83,15 @@
       "sc:url": "http://www.ebi.ac.uk/ipd/imgt/hla/probe.html"
     },
     {
-      "@id": "_:N79ccf722b424482a991581b5daeb04de",
+      "@id": "_:N9376c0a327b042aaaea2340ca7d2708b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N170dfd41d6ab4e94b69b916148f3b61e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -92,14 +100,6 @@
         "@id": "edam:format_3468"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N9529929170154dc086eac582575f708e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:name": "Nucleic acid sequence"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gku1161",

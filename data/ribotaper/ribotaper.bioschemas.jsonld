@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3688",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ribotaper",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N076cf83dc66f4535aad3d6d3e244b0e8"
+          "@id": "_:N643752e5700640f3a063ac94da4e0c4a"
         },
         {
-          "@id": "_:N3e101428387e4df79bed4d6773f9bfdf"
+          "@id": "_:N9001febdc35c4903aa4aa1a968fb6623"
         },
         {
-          "@id": "_:Nee9adb47e5394f629f0b387d3a04be76"
+          "@id": "_:Nc08c2e54b83d47f7a9e9b282c206c6a6"
         }
       ],
       "bsc:output": {
-        "@id": "_:N11859476bdde4505a51beb1f81eac185"
+        "@id": "_:N032946ffc72848339ec62c603cd5edbe"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0085"
       },
       "sc:citation": [
+        "pubmed:26657557",
         {
           "@id": "https://doi.org/10.1038/nmeth.3688"
-        },
-        "pubmed:26657557"
+        }
       ],
       "sc:description": "New analysis pipeline for Ribosome Profiling (Ribo-seq) experiments, which exploits the triplet periodicity of ribosomal footprints to call translated regions.",
       "sc:featureList": {
@@ -76,29 +80,7 @@
       "sc:url": "https://ohlerlab.mdc-berlin.de/software/RiboTaper_126/"
     },
     {
-      "@id": "_:N076cf83dc66f4535aad3d6d3e244b0e8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:N3e101428387e4df79bed4d6773f9bfdf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2305"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nee9adb47e5394f629f0b387d3a04be76",
+      "@id": "_:N643752e5700640f3a063ac94da4e0c4a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -109,27 +91,45 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N11859476bdde4505a51beb1f81eac185",
+      "@id": "_:N9001febdc35c4903aa4aa1a968fb6623",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:Nc08c2e54b83d47f7a9e9b282c206c6a6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2305"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N032946ffc72848339ec62c603cd5edbe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3003"
+        },
+        {
           "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3003"
         }
       ],
       "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3688",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

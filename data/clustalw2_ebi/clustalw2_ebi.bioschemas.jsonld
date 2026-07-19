@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/clustalw2_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nde0aaf5bc73d4b928f94efdcf0f10be0"
+        "@id": "_:Ncdec4deff70146188854d2804249fa43"
       },
       "bsc:output": {
-        "@id": "_:Nb90c0d9c279c446e9a022c102355c5c7"
+        "@id": "_:Ne511ecb922684ce79004f813a7da8e86"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "Des Higgins",
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btm404"
-        },
         "pubmed:35412617",
         "pmcid:PMC9252731",
-        "pubmed:17846036",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
+        },
+        "pubmed:17846036",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btm404"
         }
       ],
       "sc:description": "General purpose global multiple sequence alignment program for DNA or proteins.",
@@ -71,8 +75,8 @@
       },
       "sc:name": "ClustalW2 (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -94,15 +98,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/msa/clustalw2/"
     },
     {
-      "@id": "_:Nb90c0d9c279c446e9a022c102355c5c7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nde0aaf5bc73d4b928f94efdcf0f10be0",
+      "@id": "_:Ncdec4deff70146188854d2804249fa43",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -110,11 +106,15 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne511ecb922684ce79004f813a7da8e86",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
+      "@id": "https://doi.org/10.1093/nar/gkac240",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.8b00271",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/warpp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nff0128d7ab4f4040bf91ec27d7a179c3"
+        "@id": "_:Nde58290d735b4c36b93b487c20ad229b"
       },
       "bsc:output": [
         {
-          "@id": "_:N1bcf74c541b04b07aa95c82f6e0305c5"
+          "@id": "_:N84d85cc5111c4ae6a893b5937aaae044"
         },
         {
-          "@id": "_:N5c20e1f5bb7945578cf313c88e3f8ec5"
+          "@id": "_:N53de6b5c35eb48bb875bf128d57818db"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0123"
       },
       "sc:citation": [
+        "pubmed:30036062",
         {
           "@id": "https://doi.org/10.1021/acs.jcim.8b00271"
-        },
-        "pubmed:30036062"
+        }
       ],
       "sc:description": "WarPP places water molecules for the active site of a given PDB file. Based on interaction geometries previously derived from protein crystal structures potential water positions are generated for free interaction directions (lone pairs of acceptors or hydrogen atoms of donors). Every small molecule present in the PDB structure is used to generate an active site of 6.5 Å radius around each atom. Within these active sites water molecules are placed.\nIn the corresponding publication we showed that WarPP is able to place 80% of water molecules within 1.0 Å distance to a crystallographically observed one.",
       "sc:featureList": {
@@ -71,8 +67,8 @@
       "sc:name": "WarPP",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://proteinsplus.zbh.uni-hamburg.de/help/index"
@@ -80,7 +76,29 @@
       "sc:url": "http://proteinsplus.zbh.uni-hamburg.de/#warpp"
     },
     {
-      "@id": "_:N1bcf74c541b04b07aa95c82f6e0305c5",
+      "@id": "_:Nde58290d735b4c36b93b487c20ad229b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N84d85cc5111c4ae6a893b5937aaae044",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N53de6b5c35eb48bb875bf128d57818db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -91,26 +109,8 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N5c20e1f5bb7945578cf313c88e3f8ec5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:Nff0128d7ab4f4040bf91ec27d7a179c3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
+      "@id": "https://doi.org/10.1021/acs.jcim.8b00271",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

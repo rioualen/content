@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,38 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/17.12.1093",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/lucy",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Michael Holmes",
-        "Hui-Hsien Chou"
+        "Hui-Hsien Chou",
+        "Michael Holmes"
       ],
       "bsc:input": [
         {
-          "@id": "_:N5049ec3f30e142699d041523da94e04a"
+          "@id": "_:N753c456bc7b246128d896c882b0dd57c"
         },
         {
-          "@id": "_:N95f49217f574463b93e16cd828b4b6bb"
+          "@id": "_:N5cc1440df8b24d3cba5bb96c6168b9bd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6cb1bd36a7b347b7b3a460d754a348ba"
+          "@id": "_:N862e5afddc294b21887e0947cf39da7a"
         },
         {
-          "@id": "_:Nf1dab6ccd31c4d99a019cebc086f4d3a"
+          "@id": "_:Nacf2b03fb7e349c2948cb259f289d7de"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3572"
       },
       "sc:citation": [
+        "pubmed:11751217",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/17.12.1093"
-        },
-        "pubmed:11751217"
+        }
       ],
       "sc:description": "A program for DNA sequence quality trimming and vector removal. Its purpose is to process DNA sequence data acquired from DNA sequencers to prepare the data for downstream processing applications such as genome assembly.",
       "sc:featureList": [
@@ -95,7 +91,23 @@
       "sc:url": "https://sourceforge.net/projects/lucy/"
     },
     {
-      "@id": "_:N6cb1bd36a7b347b7b3a460d754a348ba",
+      "@id": "_:N753c456bc7b246128d896c882b0dd57c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3497"
+      },
+      "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "_:N5cc1440df8b24d3cba5bb96c6168b9bd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3497"
+      },
+      "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "_:N862e5afddc294b21887e0947cf39da7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -103,7 +115,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nf1dab6ccd31c4d99a019cebc086f4d3a",
+      "@id": "_:Nacf2b03fb7e349c2948cb259f289d7de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -111,20 +123,8 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N5049ec3f30e142699d041523da94e04a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3497"
-      },
-      "sc:name": "DNA sequence (raw)"
-    },
-    {
-      "@id": "_:N95f49217f574463b93e16cd828b4b6bb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3497"
-      },
-      "sc:name": "DNA sequence (raw)"
+      "@id": "https://doi.org/10.1093/bioinformatics/17.12.1093",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

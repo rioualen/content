@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/978-3-319-07953-0_10",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/takeabreak",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Claire Lemaitre",
       "bsc:input": {
-        "@id": "_:N984fbf607d9f4043a0b044a228c75296"
+        "@id": "_:N54875d2b0cea4fd987673ed04bdcdd61"
       },
       "bsc:output": {
-        "@id": "_:N726edf36ec1d455ba7b49c459ded5b15"
+        "@id": "_:N955e8e10c3144624b80e6617479135e5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0199"
@@ -64,9 +60,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "TakeABreak",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "GenOuest",
       "sc:softwareHelp": {
@@ -76,7 +72,18 @@
       "sc:url": "http://colibread.inria.fr/software/takeabreak/"
     },
     {
-      "@id": "_:N726edf36ec1d455ba7b49c459ded5b15",
+      "@id": "_:N54875d2b0cea4fd987673ed04bdcdd61",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2975"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2182"
+      },
+      "sc:name": "Nucleic acid sequence (raw)"
+    },
+    {
+      "@id": "_:N955e8e10c3144624b80e6617479135e5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -87,15 +94,8 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N984fbf607d9f4043a0b044a228c75296",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2975"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2182"
-      },
-      "sc:name": "Nucleic acid sequence (raw)"
+      "@id": "https://doi.org/10.1007/978-3-319-07953-0_10",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/gr.9.9.815",
+      "@id": "https://doi.org/10.1093/nar/gkac240",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,17 +44,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Na65ad03ed51246709786b89e42c26b32"
+        "@id": "_:N6cb816c9e2a944a9933094691cf46f5f"
       },
       "bsc:output": [
         {
-          "@id": "_:N35be0434d406402992a029460b81b6fe"
+          "@id": "_:N0ab3704535f94953937a12d58aff8f3f"
         },
         {
-          "@id": "_:N4238d6e9681344908df3542f6bf88dc4"
+          "@id": "_:Nbb4f4b0fd1864bbd984cb9abf0d88fa2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
@@ -64,31 +64,31 @@
       },
       "sc:author": "Ewan Birney",
       "sc:citation": [
+        "pubmed:35412617",
+        "pmcid:PMC9252731",
         {
-          "@id": "https://doi.org/10.1101/gr.9.9.815"
+          "@id": "https://doi.org/10.1093/nar/gkac240"
         },
         "pubmed:10508839",
         "pmcid:PMC310816",
         {
-          "@id": "https://doi.org/10.1093/nar/gkac240"
-        },
-        "pubmed:35412617",
-        "pmcid:PMC9252731"
+          "@id": "https://doi.org/10.1101/gr.9.9.815"
+        }
       ],
       "sc:description": "Align two sequences assuming the sequences share colinear conserved blocks separated by gaps.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0491"
+          "@id": "edam:operation_0495"
         },
         {
-          "@id": "edam:operation_0495"
+          "@id": "edam:operation_0491"
         }
       ],
       "sc:name": "Wise2DBA (EBI)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -103,23 +103,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/psa/wise2dba/"
     },
     {
-      "@id": "_:N35be0434d406402992a029460b81b6fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1381"
-      },
-      "sc:name": "Sequence alignment (pair)"
-    },
-    {
-      "@id": "_:N4238d6e9681344908df3542f6bf88dc4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "_:Na65ad03ed51246709786b89e42c26b32",
+      "@id": "_:N6cb816c9e2a944a9933094691cf46f5f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -127,7 +111,23 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@id": "_:N0ab3704535f94953937a12d58aff8f3f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:Nbb4f4b0fd1864bbd984cb9abf0d88fa2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1381"
+      },
+      "sc:name": "Sequence alignment (pair)"
+    },
+    {
+      "@id": "https://doi.org/10.1101/gr.9.9.815",
       "@type": "sc:CreativeWork"
     }
   ]

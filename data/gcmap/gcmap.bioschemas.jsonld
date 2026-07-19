@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt592",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gcmap",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Sandmann",
       "bsc:input": [
         {
-          "@id": "_:Nc33a9bf072d2483fb15203114cf789d7"
+          "@id": "_:Nec3d7d033e6347a6bbabfb56346a3209"
         },
         {
-          "@id": "_:Na4ce65ac0da84dcfb1262cd8c84b75b4"
+          "@id": "_:N5c7fa110812047439e474551be3f22e6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N08dd2027bf6c4648843bbf1cee045a30"
+          "@id": "_:Na56357ead4ad4720bffa06f99a5d76bc"
         },
         {
-          "@id": "_:Na4a3068e5a5d441bb7b093e7d345d0ac"
+          "@id": "_:N646125af9195427593ea6ad3436c0d7d"
         },
         {
-          "@id": "_:N5196b9068e0d435b9fcb96e9dfe6eb0a"
+          "@id": "_:N02da32cacbe8445abc1fa08c7b96263e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0203"
+        },
         {
           "@id": "edam:topic_3518"
         },
@@ -75,33 +74,30 @@
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_0203"
-        },
-        {
           "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:24132929",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt592"
-        },
-        "pubmed:24132929"
+        }
       ],
       "sc:description": "Toolkit for comparing differential gene expression profiles through gene set enrichment analysis. Starting from normalized microarray or RNA-seq gene expression values the package performs differential expression analysis. Supplying a simple list of gene identifiers, global differential expression profiles or data from complete experiments as input, users can use a unified set of well-known gene set enrichment analysis methods to retrieve experiments with similar changes in gene expression.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_2436"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "gCMAP",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/gCMAP.html"
@@ -110,18 +106,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gCMAP.html"
     },
     {
-      "@id": "_:Nc33a9bf072d2483fb15203114cf789d7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:Na4ce65ac0da84dcfb1262cd8c84b75b4",
+      "@id": "_:Nec3d7d033e6347a6bbabfb56346a3209",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -132,7 +117,50 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N08dd2027bf6c4648843bbf1cee045a30",
+      "@id": "_:N5c7fa110812047439e474551be3f22e6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:Na56357ead4ad4720bffa06f99a5d76bc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N646125af9195427593ea6ad3436c0d7d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N02da32cacbe8445abc1fa08c7b96263e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -148,36 +176,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Na4a3068e5a5d441bb7b093e7d345d0ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N5196b9068e0d435b9fcb96e9dfe6eb0a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
+      "@id": "https://doi.org/10.1093/bioinformatics/btt592",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

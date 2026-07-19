@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,42 +41,42 @@
       "biotools:primaryContact": "Ivana Ihnatova",
       "bsc:input": [
         {
-          "@id": "_:N026832e92a84497d8fa70e09fc2d127f"
+          "@id": "_:N97b4ab192da043d0b5476e696ba8e329"
         },
         {
-          "@id": "_:N34e6778d1e5446438ab749b7cdce97b5"
+          "@id": "_:Nfbb068befb36446187666c1d54f63996"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8a0964fa7f744c1480ef7c182cc4c8b1"
+          "@id": "_:N54b26bb87ca5420b960b54c838e0b7aa"
         },
         {
-          "@id": "_:Nf58d72c61a2143d89727946001aa67b2"
+          "@id": "_:Nc79946a35f744d3c93d5ccc36b8246bd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
+        "pubmed:26514335",
+        "pmcid:PMC4625615",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0763-1"
-        },
-        "pubmed:26514335",
-        "pmcid:PMC4625615"
+        }
       ],
       "sc:description": "Implementation of seven methods for topology-based pathway analysis of both RNASeq and microarray data: SPIA, DEGraph, TopologyGSA, TAPPA, PRS, PWEA and a visualization tool for a single pathway.",
       "sc:featureList": {
@@ -85,9 +85,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "ToPASeq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ToPASeq.html"
@@ -96,7 +96,23 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ToPASeq.html"
     },
     {
-      "@id": "_:N026832e92a84497d8fa70e09fc2d127f",
+      "@id": "_:N97b4ab192da043d0b5476e696ba8e329",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_2058"
+        }
+      ],
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Nfbb068befb36446187666c1d54f63996",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -112,23 +128,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N34e6778d1e5446438ab749b7cdce97b5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2058"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N8a0964fa7f744c1480ef7c182cc4c8b1",
+      "@id": "_:N54b26bb87ca5420b960b54c838e0b7aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -139,7 +139,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nf58d72c61a2143d89727946001aa67b2",
+      "@id": "_:Nc79946a35f744d3c93d5ccc36b8246bd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"

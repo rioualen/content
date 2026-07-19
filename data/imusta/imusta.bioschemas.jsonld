@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.3390/IJMS25158044",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/imusta",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_3577"
-        },
         {
           "@id": "edam:topic_0199"
         },
         {
           "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_2640"
+        },
+        {
+          "@id": "edam:topic_3577"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -66,10 +70,10 @@
       "sc:description": "MUSTA is a Python-based command-line tool and end-to-end pipeline for accurate somatic mutation analysis in cancer, designed to simplify complex workflows and improve reproducibility.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3227"
+          "@id": "edam:operation_3629"
         },
         {
-          "@id": "edam:operation_3629"
+          "@id": "edam:operation_3227"
         },
         {
           "@id": "edam:operation_3226"
@@ -77,10 +81,6 @@
       ],
       "sc:name": "MUSTA",
       "sc:url": "https://github.com/next-crs4/musta"
-    },
-    {
-      "@id": "https://doi.org/10.3390/IJMS25158044",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

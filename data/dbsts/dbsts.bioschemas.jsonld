@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/dbsts",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4bd67eb78e6540a9bead76bdef8a54db"
+        "@id": "_:N9e560da005ad4de5bc6e042bfad0fdce"
       },
       "bsc:output": {
-        "@id": "_:N1d222461a3dd4e6daff6ece43efe7748"
+        "@id": "_:Nc2ef59aeae084677a06c9cda885c1229"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0102"
@@ -66,8 +66,8 @@
       "sc:name": "NCBI database of sequence tagged sites",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.ncbi.nlm.nih.gov/dbSTS/"
@@ -75,7 +75,15 @@
       "sc:url": "http://www.ncbi.nlm.nih.gov/dbSTS/"
     },
     {
-      "@id": "_:N1d222461a3dd4e6daff6ece43efe7748",
+      "@id": "_:N9e560da005ad4de5bc6e042bfad0fdce",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2389"
+      },
+      "sc:name": "UniSTS accession"
+    },
+    {
+      "@id": "_:Nc2ef59aeae084677a06c9cda885c1229",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -84,14 +92,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N4bd67eb78e6540a9bead76bdef8a54db",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2389"
-      },
-      "sc:name": "UniSTS accession"
     }
   ]
 }

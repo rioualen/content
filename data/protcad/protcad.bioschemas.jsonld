@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac937",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/protcad",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N23ea9ce7056b472ca35428745c556544"
+          "@id": "_:N8d2adee60a12493084fc4c9a24172df3"
         },
         {
-          "@id": "_:Na63de00e65b146bb8cc4c8b26bc4fab2"
+          "@id": "_:N5835a847a0e343e7a2e1e3d50d8a2405"
         },
         {
-          "@id": "_:N5eae5e1acc4142bc94d68d86960ef19c"
+          "@id": "_:N8de0221b780d4ff4896ff0c4dc62a695"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2828"
+          "@id": "edam:topic_2814"
         },
         {
           "@id": "edam:topic_0196"
@@ -66,12 +62,12 @@
           "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_2828"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC9825537",
         "pubmed:36300618",
+        "pmcid:PMC9825537",
         {
           "@id": "https://doi.org/10.1093/nar/gkac937"
         }
@@ -79,34 +75,26 @@
       "sc:description": "The Protein Common Assembly Database (ProtCAD) – A comprehensive structural resource of protein complexes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0310"
-        },
-        {
           "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_2475"
+        },
+        {
+          "@id": "edam:operation_0310"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "ProtCAD",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "http://dunbrack2.fccc.edu/protcad"
     },
     {
-      "@id": "_:N23ea9ce7056b472ca35428745c556544",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2758"
-      },
-      "sc:name": "Pfam clan ID"
-    },
-    {
-      "@id": "_:Na63de00e65b146bb8cc4c8b26bc4fab2",
+      "@id": "_:N8d2adee60a12493084fc4c9a24172df3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -114,12 +102,24 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N5eae5e1acc4142bc94d68d86960ef19c",
+      "@id": "_:N5835a847a0e343e7a2e1e3d50d8a2405",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2758"
+      },
+      "sc:name": "Pfam clan ID"
+    },
+    {
+      "@id": "_:N8de0221b780d4ff4896ff0c4dc62a695",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2764"
       },
       "sc:name": "Protein name (UniProt)"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac937",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

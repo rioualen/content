@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0009-0003-9805-8998",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3645-1455",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/oligopipe",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,32 +43,35 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Ne5e353b283b74c97a862d9e074e0b636"
+          "@id": "_:N85374ce4fb8f4063a16f2667bba64b79"
         },
         {
-          "@id": "_:N045e2370576343fc96f64203a26157f6"
+          "@id": "_:Nf5ae2a37cd2b4f278111e250a9f65c13"
         },
         {
-          "@id": "_:N0e9463814a624979b1cfdc5f4f9ee949"
+          "@id": "_:N057693f55b7c41dfbb5ba6e6769d84a9"
         },
         {
-          "@id": "_:N043486d3766a4860b13fab50152a5508"
+          "@id": "_:Na81d52859f0148419f2940c380bd0d72"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7fa9084b93994aa691a8f83d6d16aff1"
+          "@id": "_:Nc6c229b858554ca8ad391d5aed5097fb"
         },
         {
-          "@id": "_:N0e5eff75fcaf4963bb331ce245971aa4"
+          "@id": "_:Naaffa8cf8fd64b28b0cc9e03b67633e4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0199"
+        },
         {
           "@id": "edam:topic_0622"
         },
@@ -84,16 +79,13 @@
           "@id": "edam:topic_0625"
         },
         {
+          "@id": "edam:topic_3063"
+        },
+        {
           "@id": "edam:topic_0634"
         },
         {
           "@id": "edam:topic_3325"
-        },
-        {
-          "@id": "edam:topic_0199"
-        },
-        {
-          "@id": "edam:topic_3063"
         }
       ],
       "sc:author": {
@@ -112,65 +104,22 @@
       "sc:license": "MIT",
       "sc:name": "oligopipe - Python package for Oligogenic Variant Analysis pipelines",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "Interuniversity Institute of Bioinformatics in Brussels",
       "sc:softwareHelp": [
         {
-          "@id": "https://pypi.org/project/oligopipe/"
+          "@id": "https://oligogenic.github.io/oligopipe-docs/"
         },
         {
-          "@id": "https://oligogenic.github.io/oligopipe-docs/"
+          "@id": "https://pypi.org/project/oligopipe/"
         }
       ],
       "sc:url": "https://pypi.org/project/oligopipe/"
     },
     {
-      "@id": "_:Ne5e353b283b74c97a862d9e074e0b636",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3275"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "Phenotype name"
-    },
-    {
-      "@id": "_:N045e2370576343fc96f64203a26157f6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N0e9463814a624979b1cfdc5f4f9ee949",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N043486d3766a4860b13fab50152a5508",
+      "@id": "_:N85374ce4fb8f4063a16f2667bba64b79",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -181,7 +130,50 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N7fa9084b93994aa691a8f83d6d16aff1",
+      "@id": "_:Nf5ae2a37cd2b4f278111e250a9f65c13",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3275"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Phenotype name"
+    },
+    {
+      "@id": "_:N057693f55b7c41dfbb5ba6e6769d84a9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Na81d52859f0148419f2940c380bd0d72",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Nc6c229b858554ca8ad391d5aed5097fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -192,7 +184,7 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N0e5eff75fcaf4963bb331ce245971aa4",
+      "@id": "_:Naaffa8cf8fd64b28b0cc9e03b67633e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -201,6 +193,14 @@
         "@id": "edam:format_3464"
       },
       "sc:name": "Score"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3645-1455",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-9805-8998",
+      "@type": "sc:Person"
     }
   ]
 }

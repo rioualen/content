@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/gigascience/gix022",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/regate",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Olivia Doppelt-Azeroual",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -59,17 +63,13 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ReGaTE",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://regate.readthedocs.io/en/latest/"
       },
       "sc:url": "https://github.com/C3BI-pasteur-fr/ReGaTE"
-    },
-    {
-      "@id": "https://doi.org/10.1093/gigascience/gix022",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

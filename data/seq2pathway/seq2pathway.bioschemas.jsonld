@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,58 +39,58 @@
       "@id": "https://bio.tools/seq2pathway",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Xinan Yang",
-        "Ana Marija Sokovic"
+        "Ana Marija Sokovic",
+        "Xinan Yang"
       ],
       "bsc:input": {
-        "@id": "_:N5aa3bc838ec24c9c91fbdbbdcd9f8abc"
+        "@id": "_:N76a1416bfd474d4da8828612eac82518"
       },
       "bsc:output": [
         {
-          "@id": "_:N132e9c5a6a214b56980cb271447d5607"
+          "@id": "_:N4ee9c48633384117b2e4ffe280469e86"
         },
         {
-          "@id": "_:Nd59b5387c2f84a9d8534159c1fdcd190"
+          "@id": "_:N8e3fcf5704be48f19ac9de458eec3fd9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_3517"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pubmed:22291585",
+        "pmcid:PMC3266878",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1002350"
-        },
-        "pubmed:22291585",
-        "pmcid:PMC3266878"
+        }
       ],
       "sc:description": "This functional gene-set tool for the analysis of NGS data consists of \"seq2gene\" and \"gene2path\" components. The seq2gene component links sequence-level measurements of genomic regions (including SNPs or point mutation coordinates) to gene-level scores, and the gene2path feature summarizes gene scores to pathway-scores for each sample.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3680"
+          "@id": "edam:operation_2497"
         },
         {
-          "@id": "edam:operation_2497"
+          "@id": "edam:operation_3680"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "seq2pathway",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/seq2pathway.html"
@@ -99,7 +99,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/seq2pathway.html"
     },
     {
-      "@id": "_:N5aa3bc838ec24c9c91fbdbbdcd9f8abc",
+      "@id": "_:N76a1416bfd474d4da8828612eac82518",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -110,18 +110,7 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N132e9c5a6a214b56980cb271447d5607",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Nd59b5387c2f84a9d8534159c1fdcd190",
+      "@id": "_:N4ee9c48633384117b2e4ffe280469e86",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2725"
@@ -130,6 +119,17 @@
         "@id": "edam:format_3033"
       },
       "sc:name": "Ensembl transcript ID"
+    },
+    {
+      "@id": "_:N8e3fcf5704be48f19ac9de458eec3fd9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Score"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pcbi.1002350",

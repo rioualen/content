@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3389/fncel.2015.00053",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mirnapath",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "James M. Ward",
       "bsc:input": [
         {
-          "@id": "_:Nd3a1b18fdce3497da072996f012e504b"
+          "@id": "_:Na59622d5854047c89f25da77b21ddeb1"
         },
         {
-          "@id": "_:N91f5c38c5cff44b291be97fe07595666"
+          "@id": "_:N0149085fd80c4530a54a5e698c7abc12"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N60891a16832f4f618ed0eca107cce777"
+          "@id": "_:N16aec5fa75534c69a65159e45ad33cbc"
         },
         {
-          "@id": "_:Na8b5f41242e64fb095ff808208dad660"
+          "@id": "_:N8675623d940e4992a157a588d8e5d3b1"
         },
         {
-          "@id": "_:N21045ef695e941e0901ff5e9d02356c0"
+          "@id": "_:N40a1e67610a34caea2436458f77d2319"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -89,9 +85,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "miRNApath",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/miRNApath.html"
@@ -100,7 +96,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/miRNApath.html"
     },
     {
-      "@id": "_:Nd3a1b18fdce3497da072996f012e504b",
+      "@id": "_:Na59622d5854047c89f25da77b21ddeb1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -111,7 +107,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N91f5c38c5cff44b291be97fe07595666",
+      "@id": "_:N0149085fd80c4530a54a5e698c7abc12",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3115"
@@ -122,52 +118,56 @@
       "sc:name": "Microarray metadata"
     },
     {
-      "@id": "_:N60891a16832f4f618ed0eca107cce777",
+      "@id": "_:N16aec5fa75534c69a65159e45ad33cbc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:Na8b5f41242e64fb095ff808208dad660",
+      "@id": "_:N8675623d940e4992a157a588d8e5d3b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N21045ef695e941e0901ff5e9d02356c0",
+      "@id": "_:N40a1e67610a34caea2436458f77d2319",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fncel.2015.00053",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

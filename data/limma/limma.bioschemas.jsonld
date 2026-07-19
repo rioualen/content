@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -46,15 +46,15 @@
         "@id": "http://orcid.org/0000-0001-9221-2892"
       },
       "bsc:input": {
-        "@id": "_:Nea50b611014045e0a839637ed683a4d8"
+        "@id": "_:Nc36c64567aa544c59e2cbadba578d336"
       },
       "bsc:output": {
-        "@id": "_:N800eb11433f742b7835ce49ca6a42ced"
+        "@id": "_:N2eef9e26e7934e6194d214be4a1258c5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -65,11 +65,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25605792",
+        "pmcid:PMC4402510",
         {
           "@id": "https://doi.org/10.1093/nar/gkv007"
-        },
-        "pubmed:25605792",
-        "pmcid:PMC4402510"
+        }
       ],
       "sc:description": "Data analysis, linear models and differential expression for microarray data.",
       "sc:featureList": {
@@ -78,9 +78,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "limma",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/limma.html"
@@ -89,18 +89,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/limma.html"
     },
     {
-      "@id": "_:N800eb11433f742b7835ce49ca6a42ced",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nea50b611014045e0a839637ed683a4d8",
+      "@id": "_:Nc36c64567aa544c59e2cbadba578d336",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -109,6 +98,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N2eef9e26e7934e6194d214be4a1258c5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkv007",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,50 +36,54 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/imagehts",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Joseph Barry",
       "bsc:input": [
         {
-          "@id": "_:N9a0c1a5ca76d4e0da658d108f53c188c"
+          "@id": "_:N680589f627574665bff2065ac100e742"
         },
         {
-          "@id": "_:N95bb30b0110445af84f76fdf0510b575"
+          "@id": "_:N146cc7b8e7a44353a92c6312491323d6"
         },
         {
-          "@id": "_:Ncd935642c09d4ad78da7624ecde44448"
+          "@id": "_:Nc355214e4a5c49a2a0b820f47e881727"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N860551632a95476b839888a44e7df5fa"
+          "@id": "_:N3d7cebbed970450bb50336db06517ca9"
         },
         {
-          "@id": "_:N6293bd1a173948879a822ac5a794d34e"
+          "@id": "_:Na1e2061b8ac14e028448593bf6c6d749"
         },
         {
-          "@id": "_:N59c5354130944652887d4c84d17a3f5a"
+          "@id": "_:N2da2e378047e4c3ebd86a9d61148bcc8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3383"
         },
         {
-          "@id": "edam:topic_3383"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "R package dedicated to the analysis of high-throughput microscopy-based screens. The package provides a modular and extensible framework to segment cells, extract quantitative cell features, predict cell types and browse screen data through web interfaces. Designed to operate in distributed environments, it provides a standardized access to remote data and facilitates the dissemination of high-throughput microscopy-based datasets.",
       "sc:featureList": {
@@ -88,8 +92,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "imageHTS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -99,17 +103,36 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/imageHTS.html"
     },
     {
-      "@id": "_:N9a0c1a5ca76d4e0da658d108f53c188c",
+      "@id": "_:N680589f627574665bff2065ac100e742",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3546"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Image metadata"
+    },
+    {
+      "@id": "_:N146cc7b8e7a44353a92c6312491323d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3579"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3579"
         },
         {
           "@id": "edam:format_2330"
@@ -118,7 +141,7 @@
       "sc:name": "Raw image"
     },
     {
-      "@id": "_:N95bb30b0110445af84f76fdf0510b575",
+      "@id": "_:Nc355214e4a5c49a2a0b820f47e881727",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1052"
@@ -128,54 +151,54 @@
           "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3579"
         },
         {
-          "@id": "edam:format_3579"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "URL"
     },
     {
-      "@id": "_:Ncd935642c09d4ad78da7624ecde44448",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3546"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Image metadata"
-    },
-    {
-      "@id": "_:N860551632a95476b839888a44e7df5fa",
+      "@id": "_:N3d7cebbed970450bb50336db06517ca9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3547"
         },
         {
           "@id": "edam:format_3579"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3475"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:N6293bd1a173948879a822ac5a794d34e",
+      "@id": "_:Na1e2061b8ac14e028448593bf6c6d749",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3546"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Image metadata"
+    },
+    {
+      "@id": "_:N2da2e378047e4c3ebd86a9d61148bcc8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -185,36 +208,13 @@
           "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3579"
         },
         {
-          "@id": "edam:format_3579"
+          "@id": "edam:format_3475"
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N59c5354130944652887d4c84d17a3f5a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3546"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3579"
-        }
-      ],
-      "sc:name": "Image metadata"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

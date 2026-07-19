@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/banana",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4c026985b8ee4fbda809295d80911685"
+          "@id": "_:N8ca6d821f7d84e508a7b404785e57958"
         },
         {
-          "@id": "_:Nba7a7fc0a3ac450d917e750d416a528f"
+          "@id": "_:Nb5d1c9ea99654917a27bb0cd16091fd1"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ndbc750205cf14b2ba22e4cce8ab436bd"
+        "@id": "_:Nf88b3e302d8942c382c3293685da49d3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
@@ -63,17 +59,17 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
-        "EMBOSS Contributors",
         "UK BBSRC",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Plot bending and curvature data for B-DNA.",
       "sc:featureList": {
@@ -89,8 +85,8 @@
       "sc:name": "banana",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -98,10 +94,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/banana.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/banana.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
@@ -111,23 +107,7 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/banana.html"
     },
     {
-      "@id": "_:Ndbc750205cf14b2ba22e4cce8ab436bd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0912"
-      },
-      "sc:name": "Nucleic acid property"
-    },
-    {
-      "@id": "_:N4c026985b8ee4fbda809295d80911685",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Nba7a7fc0a3ac450d917e750d416a528f",
+      "@id": "_:N8ca6d821f7d84e508a7b404785e57958",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1590"
@@ -135,11 +115,31 @@
       "sc:name": "DNA base trimer roll angles data"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nb5d1c9ea99654917a27bb0cd16091fd1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:Nf88b3e302d8942c382c3293685da49d3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0912"
+      },
+      "sc:name": "Nucleic acid property"
     },
     {
       "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     }
   ]

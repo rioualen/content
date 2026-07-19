@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw769",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/h-blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yuesheng Xu",
       "bsc:input": {
-        "@id": "_:N55b357b5e81f4b8ebc5166374ec88a63"
+        "@id": "_:N714d8dd29d6a49a494ab522b400ad5b5"
       },
       "bsc:output": {
-        "@id": "_:N0d06268b6fff4b438c4781dba0fc040f"
+        "@id": "_:Nffbd4f8d95cf4496b81a57e187d752af"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_0097"
         },
         {
           "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -67,16 +71,16 @@
       "sc:description": "Fast protein sequence alignment toolkit on heterogeneous computers with GPUs .",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0346"
         }
       ],
       "sc:name": "H-BLAST",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/Yeyke/H-BLAST"
@@ -84,7 +88,7 @@
       "sc:url": "https://github.com/Yeyke/H-BLAST"
     },
     {
-      "@id": "_:N55b357b5e81f4b8ebc5166374ec88a63",
+      "@id": "_:N714d8dd29d6a49a494ab522b400ad5b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -92,16 +96,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N0d06268b6fff4b438c4781dba0fc040f",
+      "@id": "_:Nffbd4f8d95cf4496b81a57e187d752af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw769",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

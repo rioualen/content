@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -37,17 +37,17 @@
   "@id": "https://bio.tools/skeleton3d",
   "@type": "sc:SoftwareApplication",
   "biotools:primaryContact": "Philip Kollmannsberger",
-  "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
   "sc:additionalType": "Library",
   "sc:applicationSubCategory": [
-    {
-      "@id": "edam:topic_3382"
-    },
     {
       "@id": "edam:topic_3070"
     },
     {
       "@id": "edam:topic_3344"
+    },
+    {
+      "@id": "edam:topic_3382"
     }
   ],
   "sc:description": "Calculates the 3D skeleton of an arbitrary binary volume using parallel medial axis thinning.",
@@ -57,8 +57,8 @@
   "sc:isAccessibleForFree": true,
   "sc:name": "Skeleton3D",
   "sc:operatingSystem": [
-    "Mac",
     "Linux",
+    "Mac",
     "Windows"
   ],
   "sc:softwareVersion": "1.12.0.1",

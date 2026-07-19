@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/rcm.6162",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1021/acs.jproteome.1c00528",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.jproteome.2c00457",
       "@type": "sc:CreativeWork"
     },
     {
@@ -54,75 +46,75 @@
         "@id": "http://orcid.org/0000-0002-5865-8994"
       },
       "bsc:input": {
-        "@id": "_:N1ecc53998d034855a9c7a636c45051d4"
+        "@id": "_:N22978646faf744df86affb7436716696"
       },
       "bsc:output": [
         {
-          "@id": "_:N50ba1f7974d9405ca8fa3af56568119d"
+          "@id": "_:Nbf347dcebcc04f119df791caf6c79ccb"
         },
         {
-          "@id": "_:N91e92832bbfc47feb4b9fbc67112d5b8"
+          "@id": "_:Ne4654838745945c481910cac8d35ca6e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_0084"
+        },
+        {
+          "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-1220-9173"
+          "@id": "http://orcid.org/0000-0002-5865-8994"
         },
         {
-          "@id": "http://orcid.org/0000-0002-5865-8994"
+          "@id": "https://orcid.org/0000-0002-1220-9173"
         }
       ],
       "sc:citation": [
-        "pubmed:22368051",
-        "pmcid:PMC8491155",
-        "pubmed:36173614",
         "pubmed:34523928",
-        {
-          "@id": "https://doi.org/10.1002/rcm.6162"
-        },
-        {
-          "@id": "https://doi.org/10.1021/acs.jproteome.2c00457"
-        },
+        "pmcid:PMC8491155",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.1c00528"
         },
-        "pmcid:PMC9903320"
+        "pubmed:36173614",
+        "pmcid:PMC9903320",
+        {
+          "@id": "https://doi.org/10.1021/acs.jproteome.2c00457"
+        },
+        "pubmed:22368051",
+        {
+          "@id": "https://doi.org/10.1002/rcm.6162"
+        }
       ],
       "sc:description": "compareMS2 is a tool for comparing sets of (tandem) mass spectra for clustering samples, molecular phylogenetics, identification of biological species or tissues, and quality control. compareMS2 currently consumes Mascot Generic Format, or MGF, and produces output in a variety of common image and distance matrix formats.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0567"
+          "@id": "edam:operation_2424"
         },
         {
-          "@id": "edam:operation_2424"
+          "@id": "edam:operation_0567"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "compareMS2",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -139,7 +131,7 @@
       "sc:url": "https://github.com/524D/compareMS2"
     },
     {
-      "@id": "_:N1ecc53998d034855a9c7a636c45051d4",
+      "@id": "_:N22978646faf744df86affb7436716696",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -150,7 +142,26 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N50ba1f7974d9405ca8fa3af56568119d",
+      "@id": "_:Nbf347dcebcc04f119df791caf6c79ccb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2855"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1912"
+        },
+        {
+          "@id": "edam:format_1991"
+        },
+        {
+          "@id": "edam:format_1910"
+        }
+      ],
+      "sc:name": "Distance matrix"
+    },
+    {
+      "@id": "_:Ne4654838745945c481910cac8d35ca6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3272"
@@ -166,23 +177,12 @@
       "sc:name": "Species tree"
     },
     {
-      "@id": "_:N91e92832bbfc47feb4b9fbc67112d5b8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2855"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1991"
-        },
-        {
-          "@id": "edam:format_1912"
-        },
-        {
-          "@id": "edam:format_1910"
-        }
-      ],
-      "sc:name": "Distance matrix"
+      "@id": "https://doi.org/10.1021/acs.jproteome.2c00457",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/rcm.6162",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "http://orcid.org/0000-0002-5865-8994",

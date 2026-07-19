@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,16 +41,16 @@
       "biotools:primaryContact": "Alexis Criscuolo",
       "bsc:input": [
         {
-          "@id": "_:Ne7fd60c4e9be45069ae5454da4764b84"
+          "@id": "_:Nc091c5c8161549ac8942f7450ee29cab"
         },
         {
-          "@id": "_:N05a651207b63479e895c6b1c7be5b212"
+          "@id": "_:Nf9b6ba117b7b4b658272f30c11b6a784"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5b396302af77496eaa3a2a4caab5c584"
+        "@id": "_:N08478ec59fb3412f94da6644e16f8d84"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -58,13 +58,13 @@
       "sc:author": "Alexis Criscuolo",
       "sc:citation": [
         "pubmed:23912058",
-        "pubmed:24860597",
         {
           "@id": "https://doi.org/10.1016/j.ygeno.2013.07.011"
         },
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        }
+        },
+        "pubmed:24860597"
       ],
       "sc:description": "Trimming and clipping FASTQ-formatted read files.",
       "sc:featureList": {
@@ -74,13 +74,13 @@
       "sc:license": "GPL-2.0",
       "sc:name": "AlienTrimmer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "Institut Pasteur",
-        "Bioinformatics and Biostatistics Hub"
+        "Bioinformatics and Biostatistics Hub",
+        "Institut Pasteur"
       ],
       "sc:softwareHelp": {
         "@id": "https://research.pasteur.fr/en/software/alientrimmer/"
@@ -89,18 +89,7 @@
       "sc:url": "https://research.pasteur.fr/en/software/alientrimmer/"
     },
     {
-      "@id": "_:Ne7fd60c4e9be45069ae5454da4764b84",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3497"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence (raw)"
-    },
-    {
-      "@id": "_:N05a651207b63479e895c6b1c7be5b212",
+      "@id": "_:Nc091c5c8161549ac8942f7450ee29cab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -111,7 +100,18 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:N5b396302af77496eaa3a2a4caab5c584",
+      "@id": "_:Nf9b6ba117b7b4b658272f30c11b6a784",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3497"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "_:N08478ec59fb3412f94da6644e16f8d84",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"

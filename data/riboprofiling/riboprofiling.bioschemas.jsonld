@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.12688/f1000research.8964.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/riboprofiling",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "A. Popa",
       "bsc:input": {
-        "@id": "_:N18bc91a0c83e427d9090cc0ec2ea0947"
+        "@id": "_:Nf24a29cde3da4799b2af4160b7e7c5cc"
       },
       "bsc:output": {
-        "@id": "_:Ndd019ca27ba34755a7688f15fcfbcb1f"
+        "@id": "_:Ne9234f3264c941aca3470c9d6dce7671"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -68,8 +64,8 @@
       "sc:name": "RiboProfiling",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/RiboProfiling.html"
@@ -78,7 +74,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/RiboProfiling.html"
     },
     {
-      "@id": "_:N18bc91a0c83e427d9090cc0ec2ea0947",
+      "@id": "_:Nf24a29cde3da4799b2af4160b7e7c5cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -89,7 +85,7 @@
       "sc:name": "Sequence range"
     },
     {
-      "@id": "_:Ndd019ca27ba34755a7688f15fcfbcb1f",
+      "@id": "_:Ne9234f3264c941aca3470c9d6dce7671",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -98,6 +94,10 @@
         "@id": "edam:format_1921"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.12688/f1000research.8964.1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4184",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/nanopolish",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jared Simpson",
       "bsc:input": [
         {
-          "@id": "_:N1629dc144dbf444aaec86ef7b28a2b11"
+          "@id": "_:N10378f6978464dd190bb72ec4f0b37cc"
         },
         {
-          "@id": "_:Neb0888fff687437a8f3a1b871e5d8716"
+          "@id": "_:Naa31f2d5d6dd470897a4faf47827026a"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne6a0429d75964650bc02cb0e4384330c"
+        "@id": "_:N9914f576c034476b90119c68c61625da"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_0199"
         },
@@ -63,17 +64,23 @@
           "@id": "edam:topic_0080"
         },
         {
+          "@id": "edam:topic_3168"
+        },
+        {
           "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:28218898",
         {
           "@id": "https://doi.org/10.1038/nmeth.4184"
-        },
-        "pubmed:28218898"
+        }
       ],
       "sc:description": "A package for detecting cytosine methylations and genetic variations from nanopore MinION sequencing data.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3197"
+        },
         {
           "@id": "edam:operation_2429"
         },
@@ -81,13 +88,10 @@
           "@id": "edam:operation_3204"
         },
         {
-          "@id": "edam:operation_3197"
+          "@id": "edam:operation_0310"
         },
         {
           "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_0310"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -99,7 +103,7 @@
       "sc:url": "https://github.com/jts/nanopolish"
     },
     {
-      "@id": "_:N1629dc144dbf444aaec86ef7b28a2b11",
+      "@id": "_:N10378f6978464dd190bb72ec4f0b37cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -110,7 +114,7 @@
       "sc:name": "Data reference"
     },
     {
-      "@id": "_:Neb0888fff687437a8f3a1b871e5d8716",
+      "@id": "_:Naa31f2d5d6dd470897a4faf47827026a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -121,16 +125,12 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:Ne6a0429d75964650bc02cb0e4384330c",
+      "@id": "_:N9914f576c034476b90119c68c61625da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
       },
       "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4184",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/009332",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mygene",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chunlei Wu",
       "bsc:input": {
-        "@id": "_:N37b9c887c68b49e3bcb6a4543288a972"
+        "@id": "_:N9097b5199eb54bb19d322a56db76078a"
       },
       "bsc:output": [
         {
-          "@id": "_:N06d37208ba634af894daecd62053a696"
+          "@id": "_:Nffc4ede0051246239015afd2dd6e0b28"
         },
         {
-          "@id": "_:Nff85bfbf590440cabd605b52cbc9d214"
+          "@id": "_:N9e539173bcb24beea4f973bf64b30b23"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3321"
@@ -68,18 +64,18 @@
       "sc:description": "This package provides simple-to-use REST web services to query/retrieve gene annotation data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3282"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3282"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "mygene",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/mygene.html"
@@ -88,7 +84,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/mygene.html"
     },
     {
-      "@id": "_:N37b9c887c68b49e3bcb6a4543288a972",
+      "@id": "_:N9097b5199eb54bb19d322a56db76078a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -99,7 +95,18 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N06d37208ba634af894daecd62053a696",
+      "@id": "_:Nffc4ede0051246239015afd2dd6e0b28",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1033"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Ensembl gene ID"
+    },
+    {
+      "@id": "_:N9e539173bcb24beea4f973bf64b30b23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1027"
@@ -110,15 +117,8 @@
       "sc:name": "Gene ID (NCBI)"
     },
     {
-      "@id": "_:Nff85bfbf590440cabd605b52cbc9d214",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1033"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Ensembl gene ID"
+      "@id": "https://doi.org/10.1101/009332",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

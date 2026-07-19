@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-015-0470-y",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/wavcluster",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-8970-6610"
       },
       "bsc:input": {
-        "@id": "_:Necf67496af7f42e1ae2c781738e0305c"
+        "@id": "_:N134a2e8f9db543229b69d6962597b652"
       },
       "bsc:output": {
-        "@id": "_:Ncc046b676b864c5194a80236ad1fe48a"
+        "@id": "_:N075e41c1051c4cf1a01610bb24510fce"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -61,8 +65,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4339748",
         "pubmed:25638391",
+        "pmcid:PMC4339748",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0470-y"
         }
@@ -70,21 +74,21 @@
       "sc:description": "The package provides an integrated pipeline for the analysis of PAR-CLIP data. PAR-CLIP-induced transitions are first discriminated from sequencing errors, SNPs and additional non-experimental sources by a non- parametric mixture model. The protein binding sites (clusters) are then resolved at high resolution and cluster statistics are estimated using a rigorous Bayesian framework.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0361"
-        },
-        {
           "@id": "edam:operation_0278"
         },
         {
           "@id": "edam:operation_2441"
+        },
+        {
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "wavClusteR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/wavClusteR.html"
@@ -93,7 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/wavClusteR.html"
     },
     {
-      "@id": "_:Ncc046b676b864c5194a80236ad1fe48a",
+      "@id": "_:N134a2e8f9db543229b69d6962597b652",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -104,7 +108,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:Necf67496af7f42e1ae2c781738e0305c",
+      "@id": "_:N075e41c1051c4cf1a01610bb24510fce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -113,10 +117,6 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-015-0470-y",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "http://orcid.org/0000-0002-8970-6610",

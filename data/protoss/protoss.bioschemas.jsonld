@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,49 +36,45 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1758-2946-6-12",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/protoss",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf99dc628b2304967b31ef6b44911d0d6"
+          "@id": "_:Nd28325d6e5db48c8a4dd303ad75bcd1c"
         },
         {
-          "@id": "_:Nfaf719f895014111939f2e6dc9104d34"
+          "@id": "_:Nb0d223f8af0c4d1fa1dbc83fca6a818a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N55074273e5e748b99f4f8a8aad5800c5"
+          "@id": "_:N31ca6029e2344b88838192fbcdcf5386"
         },
         {
-          "@id": "_:Ndc1c8397726542dbb7d8382a6b147e15"
+          "@id": "_:N1bc47450b4014a199a133c3d56f4e838"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0128"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1186/1758-2946-6-12"
-        },
         "pubmed:20298519",
-        "pmcid:PMC4019353",
-        "pubmed:24694216",
+        "pmcid:PMC3225823",
         {
           "@id": "https://doi.org/10.1186/1758-2946-1-13"
         },
-        "pmcid:PMC3225823"
+        "pubmed:24694216",
+        "pmcid:PMC4019353",
+        {
+          "@id": "https://doi.org/10.1186/1758-2946-6-12"
+        }
       ],
       "sc:description": "Fully automated hydrogen prediction tool for protein-ligand complexes. It adds missing hydrogen atoms to protein structures and detects reasonable protonation states, tautomers, and hydrogen coordinates of both protein and ligand molecules. It investigates hydrogen bonds, metal interactions and repulsive atom contacts for all possible states and calculates an optimal hydrogen bonding network within these degrees of freedom.",
       "sc:featureList": [
@@ -91,9 +87,9 @@
       ],
       "sc:name": "Protoss",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Hamburg - Center for Bioinformatics",
       "sc:softwareHelp": {
@@ -102,18 +98,7 @@
       "sc:url": "http://proteinsplus.zbh.uni-hamburg.de/#protoss"
     },
     {
-      "@id": "_:N55074273e5e748b99f4f8a8aad5800c5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1461"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein-ligand complex"
-    },
-    {
-      "@id": "_:Ndc1c8397726542dbb7d8382a6b147e15",
+      "@id": "_:Nd28325d6e5db48c8a4dd303ad75bcd1c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -124,7 +109,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nf99dc628b2304967b31ef6b44911d0d6",
+      "@id": "_:Nb0d223f8af0c4d1fa1dbc83fca6a818a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
@@ -135,7 +120,7 @@
       "sc:name": "Protein-ligand complex"
     },
     {
-      "@id": "_:Nfaf719f895014111939f2e6dc9104d34",
+      "@id": "_:N31ca6029e2344b88838192fbcdcf5386",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -144,6 +129,21 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N1bc47450b4014a199a133c3d56f4e838",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1758-2946-6-12",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1186/1758-2946-1-13",

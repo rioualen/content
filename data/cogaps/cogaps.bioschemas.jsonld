@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq503",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cogaps",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Elana J. Fertig",
       "bsc:input": {
-        "@id": "_:Naf02ad664bb9413886dec8dc4f41f361"
+        "@id": "_:Nce43a74c926a426baf88a009cf98f15c"
       },
       "bsc:output": [
         {
-          "@id": "_:N7418ab3541bb47d892e2bd43d70a9f9e"
+          "@id": "_:Nd148719473644563b1639bed9c724a54"
         },
         {
-          "@id": "_:Nb995d9f67b314572b7379da9577f1dc8"
+          "@id": "_:Nff96e5a9e22f4d48a802e9f26b6cf87b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -59,8 +63,8 @@
         "@id": "edam:topic_0203"
       },
       "sc:citation": [
-        "pmcid:PMC3025742",
         "pubmed:20810601",
+        "pmcid:PMC3025742",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btq503"
         }
@@ -72,9 +76,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "CoGAPS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/CoGAPS.html"
@@ -83,29 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/CoGAPS.html"
     },
     {
-      "@id": "_:N7418ab3541bb47d892e2bd43d70a9f9e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Nb995d9f67b314572b7379da9577f1dc8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Naf02ad664bb9413886dec8dc4f41f361",
+      "@id": "_:Nce43a74c926a426baf88a009cf98f15c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -116,8 +98,26 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq503",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nd148719473644563b1639bed9c724a54",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nff96e5a9e22f4d48a802e9f26b6cf87b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Score"
     }
   ]
 }

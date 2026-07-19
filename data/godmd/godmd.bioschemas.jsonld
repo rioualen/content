@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt324",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/godmd",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Institute for Research in Biomedicine Barcelona",
       "bsc:input": {
-        "@id": "_:Naeb7be4481c441f99c64871871b8c332"
+        "@id": "_:Ne67d17eb58634368ba2e56b3e3ecc572"
       },
       "bsc:output": {
-        "@id": "_:N347984cb3cc8469b990a6c0c0a9c6ca0"
+        "@id": "_:N2701155e688e4a03a5c560899ae69959"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0176"
       },
       "sc:citation": [
-        "pubmed:23740746",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btt324"
-        },
         "pubmed:26605625",
         {
           "@id": "https://doi.org/10.1021/ct300494q"
+        },
+        "pubmed:23740746",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btt324"
         }
       ],
       "sc:description": "Web portal for determining pathways for conformational transitions in macromolecules based on the use of discrete molecular dynamics and biasing techniques based on a combination of essential dynamics and Maxwell-Demon sampling techniques.",
@@ -67,9 +71,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "GOdMD",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://mmb.irbbarcelona.org/GOdMD/index.php?id=about"
@@ -77,15 +81,7 @@
       "sc:url": "http://mmb.irbbarcelona.org/GOdMD"
     },
     {
-      "@id": "_:N347984cb3cc8469b990a6c0c0a9c6ca0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:Naeb7be4481c441f99c64871871b8c332",
+      "@id": "_:Ne67d17eb58634368ba2e56b3e3ecc572",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -96,11 +92,15 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "https://doi.org/10.1021/ct300494q",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2701155e688e4a03a5c560899ae69959",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:name": "Structure"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt324",
+      "@id": "https://doi.org/10.1021/ct300494q",
       "@type": "sc:CreativeWork"
     }
   ]

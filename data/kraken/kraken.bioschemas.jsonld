@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/gb-2014-15-3-r46",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/kraken",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Derrick Wood",
       "bsc:input": {
-        "@id": "_:N9acd1b0068034ddead1bfc0e9211b28f"
+        "@id": "_:Na9f5a68a17e947f68d4685d8e842deb2"
       },
       "bsc:output": {
-        "@id": "_:Nd17245f5627c4be4a9d4765f9101c156"
+        "@id": "_:Nec58ab2e2c884a77b84760a41b13d28d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -81,7 +77,18 @@
       "sc:url": "https://ccb.jhu.edu/software/kraken/"
     },
     {
-      "@id": "_:Nd17245f5627c4be4a9d4765f9101c156",
+      "@id": "_:Na9f5a68a17e947f68d4685d8e842deb2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2546"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nec58ab2e2c884a77b84760a41b13d28d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -92,15 +99,8 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N9acd1b0068034ddead1bfc0e9211b28f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2546"
-      },
-      "sc:name": "DNA sequence"
+      "@id": "https://doi.org/10.1186/gb-2014-15-3-r46",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

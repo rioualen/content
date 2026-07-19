@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.7b00391",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/edia",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N765ff065940a467a8a32cf7fbe7a7bd1"
+          "@id": "_:N400ffbc9742a4e2cb01b5952b0307935"
         },
         {
-          "@id": "_:Nf6e6ead169864c2fba446c04c29a97a2"
+          "@id": "_:Ncacad14130104df28fbcaa1c8f63f8f9"
         }
       ],
       "bsc:output": {
-        "@id": "_:N198ef4f58cda40fd8412e2ec7ffd9cea"
+        "@id": "_:Ndf4e3824558d43ef807656db2a8c5204"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -72,18 +68,18 @@
       "sc:description": "Easily interpretable electron density score for individual atoms. It quantifies the electron density support of each single atom by computing a weighted sum over an oversampled electron density grid in the proximity of the atom. Atomic EDIA values can also be combined with the help of the power mean to compute EDIA_m, an electron density score for small molecules, fragments, or residues.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2406"
+          "@id": "edam:operation_0321"
         },
         {
-          "@id": "edam:operation_0321"
+          "@id": "edam:operation_2406"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "EDIA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Hamburg - Center for Bioinformatics",
       "sc:softwareHelp": {
@@ -92,15 +88,7 @@
       "sc:url": "http://proteinsplus.zbh.uni-hamburg.de/#edia"
     },
     {
-      "@id": "_:N198ef4f58cda40fd8412e2ec7ffd9cea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N765ff065940a467a8a32cf7fbe7a7bd1",
+      "@id": "_:N400ffbc9742a4e2cb01b5952b0307935",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -111,7 +99,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nf6e6ead169864c2fba446c04c29a97a2",
+      "@id": "_:Ncacad14130104df28fbcaa1c8f63f8f9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
@@ -120,6 +108,18 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Ndf4e3824558d43ef807656db2a8c5204",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jcim.7b00391",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

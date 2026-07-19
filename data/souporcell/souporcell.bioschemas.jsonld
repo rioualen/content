@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41592-020-0820-1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/souporcell",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nbbc012d4aae746be88e3bbf75d79a04d"
+          "@id": "_:N4a27d848638641ce871dd6d6144186ca"
         },
         {
-          "@id": "_:N5a0d0956a95647fe90d4d7845a52011f"
+          "@id": "_:N7419e58db46b4c7f92635e85e1f1121d"
         }
       ],
       "bsc:output": {
-        "@id": "_:N4cb085aa35764a70a37131f6febb0f0a"
+        "@id": "_:N16ca9b4548d64952a545dd86335b7787"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0203"
       },
       "sc:citation": [
+        "pubmed:32366989",
         {
           "@id": "https://doi.org/10.1038/s41592-020-0820-1"
-        },
-        "pubmed:32366989"
+        }
       ],
       "sc:description": "A method for clustering mixed-genotype scRNAseq experiments by individual.",
       "sc:featureList": {
@@ -78,18 +74,7 @@
       "sc:url": "https://github.com/wheaton5/souporcell"
     },
     {
-      "@id": "_:Nbbc012d4aae746be88e3bbf75d79a04d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:N5a0d0956a95647fe90d4d7845a52011f",
+      "@id": "_:N4a27d848638641ce871dd6d6144186ca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -100,7 +85,18 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N4cb085aa35764a70a37131f6febb0f0a",
+      "@id": "_:N7419e58db46b4c7f92635e85e1f1121d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N16ca9b4548d64952a545dd86335b7787",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -109,6 +105,10 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41592-020-0820-1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

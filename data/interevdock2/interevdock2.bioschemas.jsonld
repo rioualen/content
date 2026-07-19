@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,71 +36,75 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-5294-2858",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1093/bioinformatics/btt260",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gky377",
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1093/nar/gkw340",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/interevdock2",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Jessica Andreani",
         {
           "@id": "https://orcid.org/0000-0001-5294-2858"
-        }
+        },
+        "Jessica Andreani"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nf23701149d554a23a847b4c4ead3fac4"
+          "@id": "_:Na8b7c23e01684b9a9834b4dad985217e"
         },
         {
-          "@id": "_:N007d27c657ff4ed38933f2cfd6dd9db2"
+          "@id": "_:N57d70a25f1cd49a9a3223eed2538a328"
         },
         {
-          "@id": "_:Na4b5a0e9b764429580803a2361de8c29"
+          "@id": "_:Nfb179766c7b543f8a67e6107d1f74a84"
         },
         {
-          "@id": "_:N3dc485d0a4d54043b145ef4bae075a8b"
+          "@id": "_:N0b808a6535dd4b4b9580295e733c3a55"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na6ae9c81052644879757abe1ecad0628"
+          "@id": "_:N7eb68b2057e84948aca89337eb850b0b"
         },
         {
-          "@id": "_:Nf0ee328d8bb8462fbb476241505dc66b"
+          "@id": "_:N87de1ffd38cb4d5ea86944ad2e91aaba"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2275"
+        },
         {
           "@id": "edam:topic_0128"
         },
         {
           "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_2275"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4987904",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btt260"
-        },
         "pubmed:27131368",
-        "pmcid:PMC6030979",
+        "pmcid:PMC4987904",
         {
           "@id": "https://doi.org/10.1093/nar/gkw340"
         },
         "pubmed:29741647",
-        "pubmed:23652426",
+        "pmcid:PMC6030979",
         {
           "@id": "https://doi.org/10.1093/nar/gky377"
+        },
+        "pubmed:23652426",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btt260"
         }
       ],
       "sc:description": "Ab initio protein docking based on rigid-body sampling followed by consensus scoring using physics-based and statistical potentials, including the InterEvScore function specifically developed to incorporate co-evolutionary information in docking.",
@@ -122,7 +126,7 @@
       "sc:url": "https://mobyle.rpbs.univ-paris-diderot.fr/cgi-bin/portal.py#forms::InterEvDock2"
     },
     {
-      "@id": "_:Nf23701149d554a23a847b4c4ead3fac4",
+      "@id": "_:Na8b7c23e01684b9a9834b4dad985217e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -133,29 +137,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N007d27c657ff4ed38933f2cfd6dd9db2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:Na4b5a0e9b764429580803a2361de8c29",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N3dc485d0a4d54043b145ef4bae075a8b",
+      "@id": "_:N57d70a25f1cd49a9a3223eed2538a328",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -166,7 +148,29 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Na6ae9c81052644879757abe1ecad0628",
+      "@id": "_:Nfb179766c7b543f8a67e6107d1f74a84",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N0b808a6535dd4b4b9580295e733c3a55",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N7eb68b2057e84948aca89337eb850b0b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2877"
@@ -177,7 +181,7 @@
       "sc:name": "Protein complex"
     },
     {
-      "@id": "_:Nf0ee328d8bb8462fbb476241505dc66b",
+      "@id": "_:N87de1ffd38cb4d5ea86944ad2e91aaba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2877"
@@ -188,12 +192,8 @@
       "sc:name": "Protein complex"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw340",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt260",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0001-5294-2858",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/ac501530d",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ramclustr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na8e066768ae943a4b2ef0201897c2b2d"
+          "@id": "_:Ne4688789a90d4ee48a5a74c3653517c4"
         },
         {
-          "@id": "_:Nf1728aad6c30447f9f8cee4a25e2b7ac"
+          "@id": "_:N44210b8c43e3489084725df981738740"
         },
         {
-          "@id": "_:Nde45104e4f3644a79a3cc61dffea8fb4"
+          "@id": "_:N9d987abfb6ee42458c3b8593ec0d10da"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb3a94566bbea4076a472ff5840c75a1d"
+          "@id": "_:Nd002c42c0b70489bb8452a8015827fc0"
         },
         {
-          "@id": "_:Nc30980b27d4f46f58c048f805fa0f403"
+          "@id": "_:Nb86ed149a9b141edaa75784626508c27"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3172"
@@ -71,80 +75,29 @@
       "sc:description": "A feature clustering algorithm for non-targeted mass spectrometric metabolomics data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3465"
-        },
-        {
-          "@id": "edam:operation_3435"
-        },
-        {
           "@id": "edam:operation_3432"
         },
         {
+          "@id": "edam:operation_3465"
+        },
+        {
           "@id": "edam:operation_3557"
+        },
+        {
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "RAMClustR",
       "sc:softwareVersion": [
-        "1.3.0",
-        "1.2.2"
+        "1.2.2",
+        "1.3.0"
       ],
       "sc:url": "https://github.com/cbroeckl/RAMClustR"
     },
     {
-      "@id": "_:Nb3a94566bbea4076a472ff5840c75a1d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:Nc30980b27d4f46f58c048f805fa0f403",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:Na8e066768ae943a4b2ef0201897c2b2d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3113"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2333"
-        }
-      ],
-      "sc:name": "Sample annotation"
-    },
-    {
-      "@id": "_:Nf1728aad6c30447f9f8cee4a25e2b7ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2333"
-        }
-      ],
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:Nde45104e4f3644a79a3cc61dffea8fb4",
+      "@id": "_:Ne4688789a90d4ee48a5a74c3653517c4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -160,8 +113,55 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "https://doi.org/10.1021/ac501530d",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N44210b8c43e3489084725df981738740",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_3752"
+        }
+      ],
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N9d987abfb6ee42458c3b8593ec0d10da",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3113"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_3752"
+        }
+      ],
+      "sc:name": "Sample annotation"
+    },
+    {
+      "@id": "_:Nd002c42c0b70489bb8452a8015827fc0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:Nb86ed149a9b141edaa75784626508c27",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Expression data"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkn260",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-14-205",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkt1273",
       "@type": "sc:CreativeWork"
     },
@@ -44,18 +52,18 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "Bohdan Schneider",
-        "Daniel Svozil",
+        "Filip Lankaš",
         "Jiří Černý",
         "Petr Cech",
-        "Filip Lankaš"
+        "Daniel Svozil"
       ],
       "bsc:input": {
-        "@id": "_:N1c1f41058df74060a9ca1c10cb27dfd9"
+        "@id": "_:N8d4c7bb2d11e4dcdbe6c17dd5a72848b"
       },
       "bsc:output": {
-        "@id": "_:Nd7c7570153e9432a8439d7fe1073bc72"
+        "@id": "_:N20c8beabbfac40f286260b91b3cd2cc9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -66,21 +74,21 @@
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1186/1471-2105-14-205"
-        },
         "pubmed:18477633",
-        "pubmed:23800225",
-        "pubmed:24335080",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkt1273"
-        },
+        "pmcid:PMC2441783",
         {
           "@id": "https://doi.org/10.1093/nar/gkn260"
         },
+        "pubmed:24335080",
         "pmcid:PMC3950675",
-        "pmcid:PMC2441783",
-        "pmcid:PMC3694522"
+        {
+          "@id": "https://doi.org/10.1093/nar/gkt1273"
+        },
+        "pubmed:23800225",
+        "pmcid:PMC3694522",
+        {
+          "@id": "https://doi.org/10.1186/1471-2105-14-205"
+        }
       ],
       "sc:description": "Database of local biomolecular conformers, stores DNA structural data including the information about DNA local spatial arrangement.",
       "sc:featureList": {
@@ -89,9 +97,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Dolbico",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-CZ",
       "sc:softwareHelp": {
@@ -101,18 +109,7 @@
       "sc:url": "http://dolbico.org/"
     },
     {
-      "@id": "_:Nd7c7570153e9432a8439d7fe1073bc72",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3128"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Nucleic acid structure report"
-    },
-    {
-      "@id": "_:N1c1f41058df74060a9ca1c10cb27dfd9",
+      "@id": "_:N8d4c7bb2d11e4dcdbe6c17dd5a72848b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1070"
@@ -123,12 +120,15 @@
       "sc:name": "Structure ID"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkn260",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-14-205",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N20c8beabbfac40f286260b91b3cd2cc9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3128"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Nucleic acid structure report"
     }
   ]
 }

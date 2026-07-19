@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,67 +45,67 @@
       "biotools:primaryContact": "Xin Wang",
       "bsc:input": [
         {
-          "@id": "_:N94506f5f84784363ae35d9d19afb67b5"
+          "@id": "_:N41e5c02983094ba7bedf88cb836f39f2"
         },
         {
-          "@id": "_:N74ea3e29490e4a58a7bf15dee26b58e2"
+          "@id": "_:Nab1010ab077a481dacb2a6c7d8cc8014"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6ef481c829d041a5b738974e499c6724"
+          "@id": "_:N6ef8b129ef544d668f906e2c362a65d8"
         },
         {
-          "@id": "_:N4a3893fed87a4fe5993a9f33979d6547"
+          "@id": "_:Ncd832d8585c0463399a1f66c848865cf"
         },
         {
-          "@id": "_:N78b55fd8ee564dd8bb27639017333786"
+          "@id": "_:N415e1bb4aacc4fdca7575e57986fac83"
         },
         {
-          "@id": "_:N28913c4972b64712a340c10f7e16240c"
+          "@id": "_:Nd8803dd8e5de42aa99ab796cdc0a0d82"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3523"
-        },
-        {
           "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3523"
+        },
+        {
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
+        "pubmed:22761558",
+        "pmcid:PMC3386165",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1002566"
-        },
-        "pmcid:PMC3386165",
-        "pubmed:22761558"
+        }
       ],
       "sc:description": "This package provides S4 classes and methods for inferring functional gene networks with edges encoding posterior beliefs of gene association types and nodes encoding perturbation effects.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3658"
+          "@id": "edam:operation_3562"
         },
         {
-          "@id": "edam:operation_3562"
+          "@id": "edam:operation_3658"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "PANR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/PANR.html"
@@ -114,83 +114,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/PANR.html"
     },
     {
-      "@id": "_:N6ef481c829d041a5b738974e499c6724",
+      "@id": "_:N41e5c02983094ba7bedf88cb836f39f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_3108"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2013"
-        },
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N4a3893fed87a4fe5993a9f33979d6547",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N78b55fd8ee564dd8bb27639017333786",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:N28913c4972b64712a340c10f7e16240c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N94506f5f84784363ae35d9d19afb67b5",
+      "@id": "_:Nab1010ab077a481dacb2a6c7d8cc8014",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3111"
@@ -201,15 +136,80 @@
       "sc:name": "Processed microarray data"
     },
     {
-      "@id": "_:N74ea3e29490e4a58a7bf15dee26b58e2",
+      "@id": "_:N6ef8b129ef544d668f906e2c362a65d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3108"
+        "@id": "edam:data_2082"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Ncd832d8585c0463399a1f66c848865cf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
       },
-      "sc:name": "Experimental measurement"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N415e1bb4aacc4fdca7575e57986fac83",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nd8803dd8e5de42aa99ab796cdc0a0d82",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Score"
     }
   ]
 }

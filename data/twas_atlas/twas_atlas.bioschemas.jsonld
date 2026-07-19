@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac821",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/twas_atlas",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1c14f4a51072415bbad46494656c2779"
+          "@id": "_:Nffee54ce9df14580b8cf7280637ac51c"
         },
         {
-          "@id": "_:Nda6814708c4e4b1ca0d328013121732b"
+          "@id": "_:Nb35d071891744e93ab1632889f25c880"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_2885"
         },
         {
           "@id": "edam:topic_3517"
@@ -63,26 +59,26 @@
           "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_0749"
         },
         {
-          "@id": "edam:topic_0749"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
+        "pubmed:36243959",
         "pmcid:PMC9825460",
         {
           "@id": "https://doi.org/10.1093/nar/gkac821"
-        },
-        "pubmed:36243959"
+        }
       ],
       "sc:description": "Transcriptome-Wide Association Studies (TWAS) Atlas is a curated knowledgebase of transcriptome-wide association studies, integrating trait-associated transcriptome signals from TWAS publications and constructing TWAS knowledge graph to provide reliable and practical resource for researchers.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_3791"
         },
         {
-          "@id": "edam:operation_3791"
+          "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_3227"
@@ -91,14 +87,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "TWAS Atlas",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://ngdc.cncb.ac.cn/twas/"
     },
     {
-      "@id": "_:N1c14f4a51072415bbad46494656c2779",
+      "@id": "_:Nffee54ce9df14580b8cf7280637ac51c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1025"
@@ -106,12 +102,16 @@
       "sc:name": "Gene identifier"
     },
     {
-      "@id": "_:Nda6814708c4e4b1ca0d328013121732b",
+      "@id": "_:Nb35d071891744e93ab1632889f25c880",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
       },
       "sc:name": "Genotype/phenotype report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac821",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

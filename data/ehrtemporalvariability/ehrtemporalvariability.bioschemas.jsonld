@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/s10618-014-0378-6",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0003-2678-8249",
+      "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1016/j.ijmedinf.2018.09.015",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/jamia/ocw010",
+      "@id": "https://doi.org/10.1101/2020.04.07.20056564",
       "@type": "sc:CreativeWork"
     },
     {
@@ -55,38 +51,38 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N33e25ecb3b2545848500760d83b5e065"
+          "@id": "_:N79a6e4bfe4674e5f9ad683eca83fd037"
         },
         {
-          "@id": "_:N3b06291f4c474a13bb9456dae6e6459a"
+          "@id": "_:N5d06310522304e7c9a7b37fbe86e02a8"
         },
         {
-          "@id": "_:N4d350e1afbdf4a3b893dae514aaffa6c"
+          "@id": "_:N8f53b9997fb741ddb3a52a0b7979ccb9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N93134c65ba76418086f615027f32375d"
+          "@id": "_:N93bddb978a724f1481581bff7df005a8"
         },
         {
-          "@id": "_:N7c52582373dc462e91f1c14c3f91341e"
+          "@id": "_:N86efd58c1886423495cf9d99e31b41ef"
         },
         {
-          "@id": "_:Nede7d89c10a349cf812414984f1e15b4"
+          "@id": "_:N72b8bf131e844811ab9690c70e9b5beb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
+        "Library",
         "Web application",
-        "Library"
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_3063"
+          "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_0092"
@@ -95,62 +91,62 @@
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3063"
         }
       ],
       "sc:citation": [
+        "pubmed:30342679",
         {
-          "@id": "https://doi.org/10.1101/2020.04.07.20056564"
+          "@id": "https://doi.org/10.1016/j.ijmedinf.2018.09.015"
         },
         "pubmed:27107447",
+        {
+          "@id": "https://doi.org/10.1093/jamia/ocw010"
+        },
         {
           "@id": "https://doi.org/10.1007/s10618-014-0378-6"
         },
         {
-          "@id": "https://doi.org/10.1016/j.ijmedinf.2018.09.015"
-        },
-        {
-          "@id": "https://doi.org/10.1093/jamia/ocw010"
-        },
-        "pubmed:30342679"
+          "@id": "https://doi.org/10.1101/2020.04.07.20056564"
+        }
       ],
       "sc:description": "Functions to delineate temporal dataset shifts in Electronic Health Records through the projection and visualization of dissimilarities among data temporal batches. This is done through the estimation of data statistical distributions over time and their projection in non-parametric statistical manifolds, uncovering the patterns of the data latent temporal variability. EHRtemporalVariability is particularly suitable for multi-modal data and categorical variables with a high number of values, common features of biomedical data where traditional statistical process control or time-series methods may not be appropriate. EHRtemporalVariability allows you to explore and identify dataset shifts through visual analytics formats such as Data Temporal heatmaps and Information Geometric Temporal (IGT) plots. An additional EHRtemporalVariability Shiny app can be used to load and explore the package results and even to allow the use of these functions to those users non-experienced in R coding.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3731"
+          "@id": "edam:operation_3561"
         },
         {
           "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_2939"
-        },
-        {
           "@id": "edam:operation_3744"
         },
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_2939"
         },
         {
-          "@id": "edam:operation_3561"
+          "@id": "edam:operation_3731"
         },
         {
           "@id": "edam:operation_3359"
+        },
+        {
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:license": "Apache-2.0",
       "sc:name": "EHRtemporalVariability",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/hms-dbmi/EHRtemporalVariability"
+          "@id": "https://cran.r-project.org/web/packages/EHRtemporalVariability/EHRtemporalVariability.pdf"
         },
         {
-          "@id": "https://cran.r-project.org/web/packages/EHRtemporalVariability/EHRtemporalVariability.pdf"
+          "@id": "https://github.com/hms-dbmi/EHRtemporalVariability"
         },
         {
           "@id": "https://cran.r-project.org/web/packages/EHRtemporalVariability/vignettes/EHRtemporalVariability.html"
@@ -160,34 +156,15 @@
       "sc:url": "http://github.com/hms-dbmi/EHRtemporalVariability"
     },
     {
-      "@id": "_:N93134c65ba76418086f615027f32375d",
+      "@id": "_:N79a6e4bfe4674e5f9ad683eca83fd037",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1636"
+        "@id": "edam:data_2082"
       },
-      "sc:name": "Heat map"
+      "sc:name": "Matrix"
     },
     {
-      "@id": "_:N7c52582373dc462e91f1c14c3f91341e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:Nede7d89c10a349cf812414984f1e15b4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3914"
-      },
-      "sc:name": "Quality control report"
-    },
-    {
-      "@id": "_:N33e25ecb3b2545848500760d83b5e065",
+      "@id": "_:N5d06310522304e7c9a7b37fbe86e02a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2855"
@@ -198,36 +175,59 @@
       "sc:name": "Distance matrix"
     },
     {
-      "@id": "_:N3b06291f4c474a13bb9456dae6e6459a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:N4d350e1afbdf4a3b893dae514aaffa6c",
+      "@id": "_:N8f53b9997fb741ddb3a52a0b7979ccb9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3861"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3751"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_3751"
         }
       ],
       "sc:name": "Electronic health record"
     },
     {
-      "@id": "https://doi.org/10.1101/2020.04.07.20056564",
+      "@id": "_:N93bddb978a724f1481581bff7df005a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N86efd58c1886423495cf9d99e31b41ef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3914"
+      },
+      "sc:name": "Quality control report"
+    },
+    {
+      "@id": "_:N72b8bf131e844811ab9690c70e9b5beb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Trajectory data"
+    },
+    {
+      "@id": "https://doi.org/10.1007/s10618-014-0378-6",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0003-2678-8249",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1093/jamia/ocw010",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.ijmedinf.2018.09.015",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

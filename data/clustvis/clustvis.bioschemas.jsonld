@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,73 +36,69 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv468",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/clustvis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Tauno Metsalu",
       "bsc:input": [
         {
-          "@id": "_:N1c5de2747cd440339453bcad9c109f1b"
+          "@id": "_:N6ecda22b57b7475a873f049ced858f93"
         },
         {
-          "@id": "_:Nd1b36bb4a4fd4bb783fe77de31c08d45"
+          "@id": "_:N4d736c6b5fb84f5b87e83a9674c41c6e"
         },
         {
-          "@id": "_:N1a1d919687ea4a55b4d4896327654203"
+          "@id": "_:N432c2e2171af48239ee7a7e3cc9c4b15"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf88b838194c04d3fa9f1b6e11e979670"
+          "@id": "_:N3dffcbab71534c83964a0723bf01f9ec"
         },
         {
-          "@id": "_:N0e833d13bb4a4a11acf136a70ece793d"
+          "@id": "_:Nbfa5209eaa6d4e128311b6c9fb2fdc7f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:25969447",
         "pmcid:PMC4489295",
         {
           "@id": "https://doi.org/10.1093/nar/gkv468"
-        },
-        "pubmed:25969447"
+        }
       ],
       "sc:description": "Web tool which allows users to upload their own data and easily create Principal Component Analysis (PCA) plots and heatmaps. Data can be uploaded as a file or by copy-pasteing it to the text box.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2942"
+          "@id": "edam:operation_0313"
         },
         {
           "@id": "edam:operation_0531"
         },
         {
+          "@id": "edam:operation_2939"
+        },
+        {
           "@id": "edam:operation_2238"
         },
         {
-          "@id": "edam:operation_0313"
-        },
-        {
-          "@id": "edam:operation_2939"
+          "@id": "edam:operation_2942"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "ClustVis",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-EE",
@@ -113,7 +109,7 @@
       "sc:url": "http://biit.cs.ut.ee/clustvis"
     },
     {
-      "@id": "_:N1c5de2747cd440339453bcad9c109f1b",
+      "@id": "_:N6ecda22b57b7475a873f049ced858f93",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -129,7 +125,23 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Nd1b36bb4a4fd4bb783fe77de31c08d45",
+      "@id": "_:N4d736c6b5fb84f5b87e83a9674c41c6e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3111"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Processed microarray data"
+    },
+    {
+      "@id": "_:N432c2e2171af48239ee7a7e3cc9c4b15",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3113"
@@ -145,23 +157,26 @@
       "sc:name": "Sample annotation"
     },
     {
-      "@id": "_:N1a1d919687ea4a55b4d4896327654203",
+      "@id": "_:N3dffcbab71534c83964a0723bf01f9ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3111"
+        "@id": "edam:data_1636"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3466"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3604"
         }
       ],
-      "sc:name": "Processed microarray data"
+      "sc:name": "Heat map"
     },
     {
-      "@id": "_:Nf88b838194c04d3fa9f1b6e11e979670",
+      "@id": "_:Nbfa5209eaa6d4e128311b6c9fb2fdc7f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -180,23 +195,8 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N0e833d13bb4a4a11acf136a70ece793d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3466"
-        }
-      ],
-      "sc:name": "Heat map"
+      "@id": "https://doi.org/10.1093/nar/gkv468",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

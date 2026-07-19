@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkr245",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-1461-0988",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/TCoffee_SIB",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-1461-0988"
       },
       "bsc:input": {
-        "@id": "_:Nacbb7728734c4ae19afed26e05864777"
+        "@id": "_:N8a22039967324d3d8e7411adb9220d73"
       },
       "bsc:output": {
-        "@id": "_:N36001a9fd25245da83de3631fa137045"
+        "@id": "_:N85cba28086de48fbbad822a57c97433d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Suite"
+        "Suite",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -81,18 +73,18 @@
       "sc:description": "A collection of tools for computing, evaluating and manipulating multiple alignments of DNA, RNA, protein sequences and structures. Includes M-Coffee, R-Coffee, Expresso, PSI-Coffee, iRMSD-APDB.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2403"
+          "@id": "edam:operation_0492"
         },
         {
-          "@id": "edam:operation_0492"
+          "@id": "edam:operation_2403"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "T-Coffee (SIB)",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.tcoffee.org/Projects/tcoffee/"
@@ -100,7 +92,15 @@
       "sc:url": "http://tcoffee.vital-it.ch/"
     },
     {
-      "@id": "_:N36001a9fd25245da83de3631fa137045",
+      "@id": "_:N8a22039967324d3d8e7411adb9220d73",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N85cba28086de48fbbad822a57c97433d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -108,12 +108,12 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nacbb7728734c4ae19afed26e05864777",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
+      "@id": "http://orcid.org/0000-0003-1461-0988",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkr245",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

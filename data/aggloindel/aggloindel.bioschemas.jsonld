@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2164-14-s1-s12",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/aggloindel",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb1a70cc7005d44d6b8cf55a60330b10e"
+        "@id": "_:Nda5e280b0d7d4f469b3a0683ad286457"
       },
       "bsc:output": {
-        "@id": "_:N957d887f91bb4b17a6616c9d32bc8884"
+        "@id": "_:Nc8a33323b9fd4b75ab586c82615c5110"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0160"
       },
       "sc:author": [
-        "Roland Wittler",
-        "Maureen Smith"
+        "Maureen Smith",
+        "Roland Wittler"
       ],
       "sc:citation": [
         "pubmed:23369161",
@@ -72,13 +76,13 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "AggloIndel",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "Bielefeld University",
         "BiBiServ",
+        "Bielefeld University",
         "CeBiTec"
       ],
       "sc:softwareHelp": {
@@ -88,7 +92,7 @@
       "sc:url": "http://bibiserv.cebitec.uni-bielefeld.de/agglodel"
     },
     {
-      "@id": "_:Nb1a70cc7005d44d6b8cf55a60330b10e",
+      "@id": "_:Nda5e280b0d7d4f469b3a0683ad286457",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1288"
@@ -99,16 +103,12 @@
       "sc:name": "Genome map"
     },
     {
-      "@id": "_:N957d887f91bb4b17a6616c9d32bc8884",
+      "@id": "_:Nc8a33323b9fd4b75ab586c82615c5110",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2164-14-s1-s12",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
@@ -44,24 +48,20 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/skipredundant",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N416daf4688f548dd857592d8b6aee617"
+          "@id": "_:N1836d35c2843443ebb5a02dfd2dc7068"
         },
         {
-          "@id": "_:N0db151f9379c4bf2ace306327498485a"
+          "@id": "_:N259d9779fd4f4e8fbb121e2fbab11111"
         }
       ],
       "bsc:output": {
-        "@id": "_:N2e37b0f304fd40cc93022aaabde03cd7"
+        "@id": "_:Nbfaa0a9ba240466c8087aa77c646165f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3071"
@@ -71,28 +71,28 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "Wellcome Trust",
         "UK BBSRC",
-        "EMBOSS Contributors",
-        "UK MRC"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Remove redundant sequences from an input set.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0290"
+          "@id": "edam:operation_0491"
         },
         {
           "@id": "edam:operation_0231"
         },
         {
-          "@id": "edam:operation_0491"
+          "@id": "edam:operation_0290"
         }
       ],
       "sc:funder": [
@@ -104,30 +104,30 @@
       "sc:license": "GPL-3.0",
       "sc:name": "skipredundant",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
-        "EMBOSS",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "EMBOSS"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
           "@id": "http://emboss.open-bio.org/rel/rel6/apps/skipredundant.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/skipredundant.html"
     },
     {
-      "@id": "_:N416daf4688f548dd857592d8b6aee617",
+      "@id": "_:N1836d35c2843443ebb5a02dfd2dc7068",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0874"
@@ -135,7 +135,7 @@
       "sc:name": "Comparison matrix"
     },
     {
-      "@id": "_:N0db151f9379c4bf2ace306327498485a",
+      "@id": "_:N259d9779fd4f4e8fbb121e2fbab11111",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -143,7 +143,7 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N2e37b0f304fd40cc93022aaabde03cd7",
+      "@id": "_:Nbfaa0a9ba240466c8087aa77c646165f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"

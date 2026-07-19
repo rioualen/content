@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,81 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "https://bio.tools/clustalw",
-      "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": "Clustal helpdesk",
-      "bsc:input": {
-        "@id": "_:Nf13fa9cf28ed4d0fbc2f10e745bde67f"
-      },
-      "bsc:output": {
-        "@id": "_:N5e5243e2ce6d45569ce5ae01534b12ea"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
-      ],
-      "sc:applicationSubCategory": {
-        "@id": "edam:topic_0080"
-      },
-      "sc:citation": [
-        "pubmed:1591615",
-        "pubmed:12824352",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/8.2.189"
-        },
-        "pubmed:7984417",
-        "pubmed:9396791",
-        {
-          "@id": "https://doi.org/10.1093/nar/25.24.4876"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkg500"
-        },
-        "pmcid:PMC168907",
-        {
-          "@id": "https://doi.org/10.1016/0378-1119(88)90330-7"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/22.22.4673"
-        },
-        "pmcid:PMC147148",
-        "pmcid:PMC308517"
-      ],
-      "sc:description": "Multiple sequence alignment software. Old deprecated versions. Even older versions were CLUSTAL and CLUSTAL V (ClustalV).",
-      "sc:featureList": {
-        "@id": "edam:operation_0492"
-      },
-      "sc:name": "Clustal 1.8 (Clustal W, Clustal X)",
-      "sc:operatingSystem": [
-        "Mac",
-        "Linux",
-        "Windows"
-      ],
-      "sc:softwareVersion": "1.8 - 1.83",
-      "sc:url": "http://www.clustal.org/download/1.X/ftp-igbmc.u-strasbg.fr/pub/"
-    },
-    {
-      "@id": "_:N5e5243e2ce6d45569ce5ae01534b12ea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nf13fa9cf28ed4d0fbc2f10e745bde67f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
+      "@id": "https://doi.org/10.1093/nar/25.24.4876",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1016/0378-1119(88)90330-7",
@@ -121,12 +48,85 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/25.24.4876",
+      "@id": "https://doi.org/10.1093/nar/22.22.4673",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/22.22.4673",
-      "@type": "sc:CreativeWork"
+      "@id": "https://bio.tools/clustalw",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "Clustal helpdesk",
+      "bsc:input": {
+        "@id": "_:N294c62ac2eb64e7b968902dfb946a1ba"
+      },
+      "bsc:output": {
+        "@id": "_:N40646759393f45a182c30d8ff1774d8a"
+      },
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Command-line tool",
+        "Desktop application"
+      ],
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_0080"
+      },
+      "sc:citation": [
+        "pubmed:7984417",
+        "pmcid:PMC308517",
+        {
+          "@id": "https://doi.org/10.1093/nar/22.22.4673"
+        },
+        "pubmed:9396791",
+        "pmcid:PMC147148",
+        {
+          "@id": "https://doi.org/10.1093/nar/25.24.4876"
+        },
+        "pubmed:12824352",
+        "pmcid:PMC168907",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkg500"
+        },
+        "pubmed:1591615",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/8.2.189"
+        },
+        {
+          "@id": "https://doi.org/10.1016/0378-1119(88)90330-7"
+        }
+      ],
+      "sc:description": "Multiple sequence alignment software. Old deprecated versions. Even older versions were CLUSTAL and CLUSTAL V (ClustalV).",
+      "sc:featureList": {
+        "@id": "edam:operation_0492"
+      },
+      "sc:name": "Clustal 1.8 (Clustal W, Clustal X)",
+      "sc:operatingSystem": [
+        "Linux",
+        "Mac",
+        "Windows"
+      ],
+      "sc:softwareVersion": "1.8 - 1.83",
+      "sc:url": "http://www.clustal.org/download/1.X/ftp-igbmc.u-strasbg.fr/pub/"
+    },
+    {
+      "@id": "_:N294c62ac2eb64e7b968902dfb946a1ba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N40646759393f45a182c30d8ff1774d8a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkg500",

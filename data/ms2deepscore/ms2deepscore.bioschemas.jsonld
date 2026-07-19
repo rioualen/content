@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-3535-9406",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2021.04.18.440324",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ms2deepscore",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,37 +51,37 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N7b862ec63bb9438b81616bb0b28ddae0"
+          "@id": "_:Na8577016ed094c93ad48d4af08eb3bd3"
         },
         {
-          "@id": "_:Ndbb1854d3b1e4bedbcad1026c36f0015"
+          "@id": "_:Nee5e00cf801343718d6f758cd4816a9d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nee42a848ddb04d42b7df45c2b6f46799"
+          "@id": "_:Nd634181c675c467ca4155b4458f364c2"
         },
         {
-          "@id": "_:Nfa1ecfcb353b47d483c519025c1eec42"
+          "@id": "_:N3cb7adca668d4233b0b6fc16052cebb3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3474"
-        },
-        {
-          "@id": "edam:topic_0154"
-        },
-        {
           "@id": "edam:topic_3343"
+        },
+        {
+          "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": {
@@ -82,13 +90,13 @@
       "sc:description": "MS2DeepScore is a deep learning similarity measure for mass fragmentation spectrum comparisons. MS2DeepScore provides a Siamese neural network that is trained to predict molecular structural similarities (Tanimoto scores) from pairs of mass spectrometry spectra.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2426"
+        },
+        {
           "@id": "edam:operation_2424"
         },
         {
           "@id": "edam:operation_3803"
-        },
-        {
-          "@id": "edam:operation_2426"
         },
         {
           "@id": "edam:operation_3801"
@@ -99,29 +107,7 @@
       "sc:url": "https://github.com/matchms/ms2deepscore"
     },
     {
-      "@id": "_:N7b862ec63bb9438b81616bb0b28ddae0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_4039"
-        }
-      ],
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:Ndbb1854d3b1e4bedbcad1026c36f0015",
+      "@id": "_:Na8577016ed094c93ad48d4af08eb3bd3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -137,7 +123,40 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Nee42a848ddb04d42b7df45c2b6f46799",
+      "@id": "_:Nee5e00cf801343718d6f758cd4816a9d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_4039"
+        },
+        {
+          "@id": "edam:format_3244"
+        }
+      ],
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:Nd634181c675c467ca4155b4458f364c2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3464"
+      },
+      "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "_:N3cb7adca668d4233b0b6fc16052cebb3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -151,25 +170,6 @@
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:Nfa1ecfcb353b47d483c519025c1eec42",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3464"
-      },
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2021.04.18.440324",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3535-9406",
-      "@type": "sc:Person"
     }
   ]
 }

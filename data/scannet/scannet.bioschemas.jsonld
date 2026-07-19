@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,16 +44,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N79038f2f48a54f8dab8bff20ace2951c"
+          "@id": "_:N508c9183f47f422aadc54b2be177e727"
         },
         {
-          "@id": "_:Nd6f925baf5bc4a25af80fc53688c6b03"
+          "@id": "_:N7350f40b5af94f758f21a6ba56d26d54"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nfde43115508f49f5af212b1e44da7e9d"
+        "@id": "_:N9adf3afdc24040848e9682803606ef3e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -63,13 +63,13 @@
           "@id": "edam:topic_3474"
         },
         {
+          "@id": "edam:topic_3534"
+        },
+        {
           "@id": "edam:topic_0736"
         },
         {
           "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_3534"
         }
       ],
       "sc:citation": {
@@ -78,45 +78,29 @@
       "sc:description": "An interpretable geometric deep learning model for structure-based protein binding site prediction.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0416"
-        },
-        {
-          "@id": "edam:operation_0477"
-        },
-        {
           "@id": "edam:operation_2575"
         },
         {
+          "@id": "edam:operation_0416"
+        },
+        {
           "@id": "edam:operation_0252"
+        },
+        {
+          "@id": "edam:operation_0477"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "ScanNet",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://bioinfo3d.cs.tau.ac.il/ScanNet/"
     },
     {
-      "@id": "_:Nfde43115508f49f5af212b1e44da7e9d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1476"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N79038f2f48a54f8dab8bff20ace2951c",
+      "@id": "_:N508c9183f47f422aadc54b2be177e727",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -124,12 +108,28 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:Nd6f925baf5bc4a25af80fc53688c6b03",
+      "@id": "_:N7350f40b5af94f758f21a6ba56d26d54",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2291"
       },
       "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:N9adf3afdc24040848e9682803606ef3e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Database search results"
     }
   ]
 }

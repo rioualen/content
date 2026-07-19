@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw558",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-9564-7525",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/rnalien",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-9564-7525"
       },
       "bsc:input": {
-        "@id": "_:Nc5d5f1ac838247b3b505e4980922c82e"
+        "@id": "_:Na96c662789ba4eef9911e9b60ab24099"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0099"
@@ -61,8 +53,8 @@
         "@id": "http://orcid.org/0000-0001-9564-7525"
       },
       "sc:citation": [
-        "pmcid:PMC5041467",
         "pubmed:27330139",
+        "pmcid:PMC5041467",
         {
           "@id": "https://doi.org/10.1093/nar/gkw558"
         }
@@ -90,7 +82,7 @@
       "sc:url": "https://github.com/eggzilla/RNAlien"
     },
     {
-      "@id": "_:Nc5d5f1ac838247b3b505e4980922c82e",
+      "@id": "_:Na96c662789ba4eef9911e9b60ab24099",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -99,6 +91,14 @@
         "@id": "edam:format_2546"
       },
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw558",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-9564-7525",
+      "@type": "sc:Person"
     }
   ]
 }

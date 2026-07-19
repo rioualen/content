@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btab181",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/tress",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3295"
+        },
         {
           "@id": "edam:topic_3512"
         },
         {
           "@id": "edam:topic_3674"
-        },
-        {
-          "@id": "edam:topic_3295"
         },
         {
           "@id": "edam:topic_3794"
@@ -58,8 +62,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC9991887",
         "pubmed:33724304",
+        "pmcid:PMC9991887",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btab181"
         }
@@ -67,30 +71,26 @@
       "sc:description": "TRESS is a tool for detecting m6A methylation regions from Methylated RNA Immunoprecipitation Sequencing.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0314"
+        },
+        {
           "@id": "edam:operation_3919"
         },
         {
           "@id": "edam:operation_3222"
-        },
-        {
-          "@id": "edam:operation_0314"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "TRESS",
       "sc:softwareHelp": [
         {
-          "@id": "https://bioconductor.org/packages/release/bioc/manuals/TRESS/man/TRESS.pdf"
+          "@id": "https://bioconductor.org/packages/release/bioc/vignettes/TRESS/inst/doc/TRESS.html"
         },
         {
-          "@id": "https://bioconductor.org/packages/release/bioc/vignettes/TRESS/inst/doc/TRESS.html"
+          "@id": "https://bioconductor.org/packages/release/bioc/manuals/TRESS/man/TRESS.pdf"
         }
       ],
       "sc:url": "https://bioconductor.org/packages/release/bioc/html/TRESS.html"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btab181",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

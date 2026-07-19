@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bcftools_view",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Ncb3aa2b9d84043359c63213eaa8dc1e5"
+          "@id": "_:Ncb5cd581a0db4f5cb3f3a508de3741e8"
         },
         {
-          "@id": "_:N875680afe33f485b81caca11e4d71dcc"
+          "@id": "_:N373b7eae7dba4bd39e62dc985f98cb2a"
         }
       ],
       "bsc:output": {
-        "@id": "_:N8074816d469740e8b0474abf68b39af7"
+        "@id": "_:Nbca749a47b16438bad0a94eb64021222"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
@@ -72,9 +80,9 @@
       },
       "sc:name": "bcftools_view",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.htslib.org/doc/samtools.html#4"
@@ -83,7 +91,18 @@
       "sc:url": "http://www.htslib.org/"
     },
     {
-      "@id": "_:Ncb3aa2b9d84043359c63213eaa8dc1e5",
+      "@id": "_:Ncb5cd581a0db4f5cb3f3a508de3741e8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N373b7eae7dba4bd39e62dc985f98cb2a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -94,7 +113,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N875680afe33f485b81caca11e4d71dcc",
+      "@id": "_:Nbca749a47b16438bad0a94eb64021222",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -103,28 +122,9 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Data"
-    },
-    {
-      "@id": "_:N8074816d469740e8b0474abf68b39af7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1534/genetics.112.144204",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     }
   ]

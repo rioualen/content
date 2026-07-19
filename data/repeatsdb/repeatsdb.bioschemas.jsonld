@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw1268",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "http://orcid.org/0000-0003-4525-7793",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw1268",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/repeatsdb",
@@ -51,35 +51,35 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Neaf4cb543423481ebc91a305589cfdff"
+          "@id": "_:N8bc631809c7c4404bca9b249639f36fe"
         },
         {
-          "@id": "_:N69bcb99f7d474cbfbd1d50085538d76b"
+          "@id": "_:N255ae9dbaa924452b2fc5db7190c8f2f"
         },
         {
-          "@id": "_:N16088db66e424753a5ef93bfb7b3f8be"
+          "@id": "_:Nb8229ee2c50949689d2fead205c72ad4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8dc03335a4664e04a50dbaed3eff331b"
+          "@id": "_:N163bfb7fe60a41c183e51992fb4915c2"
         },
         {
-          "@id": "_:Ncb303c2fbf5d49eabaad04a89b024da5"
+          "@id": "_:Na2b69183e7da4271bc1b26f24b0af0c9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Database portal",
         "Web API",
-        "Web application",
-        "Database portal"
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0157"
+          "@id": "edam:topic_2814"
         },
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_0157"
         }
       ],
       "sc:citation": [
@@ -92,26 +92,26 @@
       "sc:description": "Database of annotated tandem repeat protein structures.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0570"
-        },
-        {
-          "@id": "edam:operation_2996"
-        },
-        {
           "@id": "edam:operation_2406"
+        },
+        {
+          "@id": "edam:operation_0224"
         },
         {
           "@id": "edam:operation_0564"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_2996"
+        },
+        {
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:name": "RepeatsDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Padua, Department of Biomedical Sciences, BioComputing UP lab",
       "sc:softwareHelp": {
@@ -121,7 +121,34 @@
       "sc:url": "https://repeatsdb.org/"
     },
     {
-      "@id": "_:N8dc03335a4664e04a50dbaed3eff331b",
+      "@id": "_:N8bc631809c7c4404bca9b249639f36fe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1127"
+      },
+      "sc:name": "PDB ID"
+    },
+    {
+      "@id": "_:N255ae9dbaa924452b2fc5db7190c8f2f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Nb8229ee2c50949689d2fead205c72ad4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2007"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "UniProt keyword"
+    },
+    {
+      "@id": "_:N163bfb7fe60a41c183e51992fb4915c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -132,7 +159,7 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:Ncb303c2fbf5d49eabaad04a89b024da5",
+      "@id": "_:Na2b69183e7da4271bc1b26f24b0af0c9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -141,33 +168,6 @@
         "@id": "edam:format_3464"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Neaf4cb543423481ebc91a305589cfdff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1127"
-      },
-      "sc:name": "PDB ID"
-    },
-    {
-      "@id": "_:N69bcb99f7d474cbfbd1d50085538d76b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N16088db66e424753a5ef93bfb7b3f8be",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2007"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "UniProt keyword"
     }
   ]
 }

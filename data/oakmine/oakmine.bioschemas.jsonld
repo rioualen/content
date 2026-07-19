@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,52 +44,49 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb81b3d7b2af9419db92da4774c906e09"
+          "@id": "_:Nba9f3a3182d240e8ae92d9bb61b9f1c5"
         },
         {
-          "@id": "_:N300242b2d3c941248526511925e6ddc0"
+          "@id": "_:Nf3334d498ef64dc691e909428db9dff8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8e0e3e4df59a45c4bf9a26ab21496667"
+          "@id": "_:N50a962c7ea1d400799d9de591bcfd0f1"
         },
         {
-          "@id": "_:N57a20aac34324a4aac5072a0e8553246"
+          "@id": "_:Na89c610d145547cd934b0beb6dfcb8af"
         },
         {
-          "@id": "_:Ncc28a227721c47aaaf8d6a7eca00c0b7"
+          "@id": "_:N04b13d7a23e449e7bd8070200faa0997"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Database portal",
+        "Web application",
         "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
+        "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pubmed:23023984",
-        "pmcid:PMC3516146"
+        }
       ],
       "sc:description": "Quercus robur annotation database",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0337"
-        },
         {
           "@id": "edam:operation_2422"
         },
@@ -98,52 +95,31 @@
         },
         {
           "@id": "edam:operation_0224"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "OakMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "2.3",
       "sc:url": "https://urgi.versailles.inra.fr/OakMine_PM1N"
     },
     {
-      "@id": "_:N8e0e3e4df59a45c4bf9a26ab21496667",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:N57a20aac34324a4aac5072a0e8553246",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Ncc28a227721c47aaaf8d6a7eca00c0b7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3753"
-      },
-      "sc:name": "Over-representation data"
-    },
-    {
-      "@id": "_:Nb81b3d7b2af9419db92da4774c906e09",
+      "@id": "_:Nba9f3a3182d240e8ae92d9bb61b9f1c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -151,7 +127,31 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N300242b2d3c941248526511925e6ddc0",
+      "@id": "_:Nf3334d498ef64dc691e909428db9dff8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N50a962c7ea1d400799d9de591bcfd0f1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3753"
+      },
+      "sc:name": "Over-representation data"
+    },
+    {
+      "@id": "_:Na89c610d145547cd934b0beb6dfcb8af",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:N04b13d7a23e449e7bd8070200faa0997",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"

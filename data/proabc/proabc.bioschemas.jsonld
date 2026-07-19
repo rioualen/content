@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt369",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/proabc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pier Paolo Olimpieri",
       "bsc:input": {
-        "@id": "_:Ne13611975eae4abf9a352f78995bb85c"
+        "@id": "_:Nfc4385824cad4c92be0e8f54080e6c95"
       },
       "bsc:output": {
-        "@id": "_:N92465618ebc8438da9237b874e94a802"
+        "@id": "_:Na177a24ce5c849dbbcd8bf370a4e5b46"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0081"
@@ -60,17 +64,17 @@
       "sc:description": "Predictor of Antibody-Antigen interactions based on the Random Forest Algorithm. User submitted sequences are automatically aligned and annotated according to their source organism and germline families.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0474"
+          "@id": "edam:operation_2492"
         },
         {
-          "@id": "edam:operation_2492"
+          "@id": "edam:operation_0474"
         }
       ],
       "sc:name": "proABC",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-SAPIENZA",
       "sc:softwareHelp": {
@@ -80,7 +84,7 @@
       "sc:url": "http://www.biocomputing.it/proABC"
     },
     {
-      "@id": "_:Ne13611975eae4abf9a352f78995bb85c",
+      "@id": "_:Nfc4385824cad4c92be0e8f54080e6c95",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -88,16 +92,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N92465618ebc8438da9237b874e94a802",
+      "@id": "_:Na177a24ce5c849dbbcd8bf370a4e5b46",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0906"
       },
       "sc:name": "Protein interaction data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt369",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

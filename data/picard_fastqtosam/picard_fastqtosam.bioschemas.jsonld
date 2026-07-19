@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/picard_fastqtosam",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Nca9cc331f0c3482298fc58b9b31de659"
+          "@id": "_:Naec1db5fd79c4eb398ca0c17aa55d23d"
         },
         {
-          "@id": "_:N5a5337c34a9d461487b28251cca5a253"
+          "@id": "_:N6c54b24a9ccc4cafa5a8a1116aa5f367"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7f351dd314ac4270b3b99eea47eb17ce"
+        "@id": "_:Nbb038df594ff49659508b95395bc783b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Create an unaligned BAM file.",
@@ -69,9 +77,9 @@
       },
       "sc:name": "picard_fastqtosam",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://broadinstitute.github.io/picard/command-line-overview.html#FastqToSam"
@@ -80,15 +88,12 @@
       "sc:url": "https://broadinstitute.github.io/picard/"
     },
     {
-      "@id": "_:Nca9cc331f0c3482298fc58b9b31de659",
+      "@id": "_:Naec1db5fd79c4eb398ca0c17aa55d23d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1933"
-        },
         {
           "@id": "edam:format_1930"
         },
@@ -97,20 +102,20 @@
         },
         {
           "@id": "edam:format_1932"
+        },
+        {
+          "@id": "edam:format_1933"
         }
       ],
       "sc:name": "Data"
     },
     {
-      "@id": "_:N5a5337c34a9d461487b28251cca5a253",
+      "@id": "_:N6c54b24a9ccc4cafa5a8a1116aa5f367",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1933"
-        },
         {
           "@id": "edam:format_1930"
         },
@@ -119,12 +124,15 @@
         },
         {
           "@id": "edam:format_1932"
+        },
+        {
+          "@id": "edam:format_1933"
         }
       ],
       "sc:name": "Data"
     },
     {
-      "@id": "_:N7f351dd314ac4270b3b99eea47eb17ce",
+      "@id": "_:Nbb038df594ff49659508b95395bc783b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -133,14 +141,6 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

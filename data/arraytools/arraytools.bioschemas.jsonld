@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/arraytools",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Arthur Li",
       "bsc:input": {
-        "@id": "_:Nf9ab43297baf492283890c6a8b2f2186"
+        "@id": "_:N150eb957f91141c2a074c1054c8fdacb"
       },
       "bsc:output": {
-        "@id": "_:N02be95907e114a3298f069b3de121ae8"
+        "@id": "_:N51bc317004f746f58bd777d431983546"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4509590",
         "pubmed:25633503",
+        "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
         }
@@ -73,8 +77,8 @@
       "sc:name": "ArrayTools",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ArrayTools.html"
@@ -83,7 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ArrayTools.html"
     },
     {
-      "@id": "_:Nf9ab43297baf492283890c6a8b2f2186",
+      "@id": "_:N150eb957f91141c2a074c1054c8fdacb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -94,7 +98,7 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N02be95907e114a3298f069b3de121ae8",
+      "@id": "_:N51bc317004f746f58bd777d431983546",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -103,10 +107,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

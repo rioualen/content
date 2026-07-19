@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioadv/vbaf010",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sequali",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4e867f25e55448c59d592958daba33f3"
+        "@id": "_:Nfebc1930372748b584a16aa4d07451fc"
       },
       "bsc:output": {
-        "@id": "_:Nb13c6fd8f1ba4fef9d47f810d712084d"
+        "@id": "_:N02052f3233ff48c4be772b7cf1106d07"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": {
@@ -60,10 +64,10 @@
       "sc:description": "Fast sequencing data quality metrics",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_3218"
         },
         {
-          "@id": "edam:operation_3218"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:name": "Sequali",
@@ -71,23 +75,23 @@
       "sc:url": "https://github.com/rhpvorderman/sequali"
     },
     {
-      "@id": "_:N4e867f25e55448c59d592958daba33f3",
+      "@id": "_:Nfebc1930372748b584a16aa4d07451fc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2182"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_2182"
         }
       ],
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nb13c6fd8f1ba4fef9d47f810d712084d",
+      "@id": "_:N02052f3233ff48c4be772b7cf1106d07",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3914"
@@ -101,10 +105,6 @@
         }
       ],
       "sc:name": "Quality control report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioadv/vbaf010",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

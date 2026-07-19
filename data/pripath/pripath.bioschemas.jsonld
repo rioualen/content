@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,73 +36,85 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-023-05187-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pripath",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc823055bbf3a449193bd4cb4e1b77060"
+          "@id": "_:N7c7ff8aceae04105b08c0e145c043851"
         },
         {
-          "@id": "_:Nf3799c733ee54702b4de4015289b4ca0"
+          "@id": "_:Ncf3c4210e6cc4a2caeea2eccf60ea844"
         }
       ],
       "bsc:output": {
-        "@id": "_:Na88605aa11b44c45925e4bf38ec17ea0"
+        "@id": "_:N23d6c690b56643eea9d8b75cf0033667"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_2640"
+        },
+        {
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
+        "pubmed:36823571",
+        "pmcid:PMC9947447",
         {
           "@id": "https://doi.org/10.1186/s12859-023-05187-2"
-        },
-        "pubmed:36823571",
-        "pmcid:PMC9947447"
+        }
       ],
       "sc:description": "PriPath: identifying affected pathways from differential gene expression via grouping, scoring and modeling with an embedded machine learning approach.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3223"
+        },
         {
           "@id": "edam:operation_0533"
         },
         {
           "@id": "edam:operation_2436"
-        },
-        {
-          "@id": "edam:operation_3223"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-4.0",
       "sc:name": "PriPath",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://github.com/malikyousef/PriPath.git"
     },
     {
-      "@id": "_:Na88605aa11b44c45925e4bf38ec17ea0",
+      "@id": "_:N7c7ff8aceae04105b08c0e145c043851",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:Ncf3c4210e6cc4a2caeea2eccf60ea844",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2343"
+      },
+      "sc:name": "Pathway ID (KEGG)"
+    },
+    {
+      "@id": "_:N23d6c690b56643eea9d8b75cf0033667",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -113,20 +125,8 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:Nc823055bbf3a449193bd4cb4e1b77060",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:Nf3799c733ee54702b4de4015289b4ca0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2343"
-      },
-      "sc:name": "Pathway ID (KEGG)"
+      "@id": "https://doi.org/10.1186/s12859-023-05187-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

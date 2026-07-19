@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,19 +40,19 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Alexey Nesvizhskii",
       "bsc:input": {
-        "@id": "_:N9e7b502c8d684c498a8e63c68a99474c"
+        "@id": "_:Ne60397add4e7429ab9fc93a6680dde5f"
       },
       "bsc:output": {
-        "@id": "_:N63496b07d17a4ad299db2d9c51dde452"
+        "@id": "_:N1c8968eae5c748c39673a0af2930d201"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0601"
         },
         {
-          "@id": "edam:topic_0601"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
@@ -60,10 +60,10 @@
       ],
       "sc:citation": [
         "pubmed:28394336",
+        "pmcid:PMC5409104",
         {
           "@id": "https://doi.org/10.1038/nmeth.4256"
-        },
-        "pmcid:PMC5409104"
+        }
       ],
       "sc:description": "A database search tool for performing mass spectometry data similarity comparisons. For that it uses a fragment ion indexing method.",
       "sc:featureList": [
@@ -80,7 +80,29 @@
       "sc:url": "http://www.nesvilab.org/software"
     },
     {
-      "@id": "_:N63496b07d17a4ad299db2d9c51dde452",
+      "@id": "_:Ne60397add4e7429ab9fc93a6680dde5f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3712"
+        },
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
+        }
+      ],
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N1c8968eae5c748c39673a0af2930d201",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -94,28 +116,6 @@
         }
       ],
       "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N9e7b502c8d684c498a8e63c68a99474c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3712"
-        },
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Mass spectrum"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth.4256",

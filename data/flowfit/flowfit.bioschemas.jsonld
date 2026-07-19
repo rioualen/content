@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,41 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu127",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowfit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Davide Rambaldi",
       "bsc:input": {
-        "@id": "_:N4f2bfc64cedc49168f5d5538d1f8aa87"
+        "@id": "_:Ncc4ed5603c844c8c9d64f3b785f23416"
       },
       "bsc:output": [
         {
-          "@id": "_:N39d17ab0707449899f2f2ae6b9d606de"
+          "@id": "_:N9f0aca31223041bbaeab27758150f2de"
         },
         {
-          "@id": "_:Nf4d01ae988454c0f89eeaf657a490e4f"
+          "@id": "_:N4118bf26d97d40c28bfb0ad159b985fb"
         },
         {
-          "@id": "_:Nb17dbfa629de4e75b08dbb38741904cd"
+          "@id": "_:N74c74228be3643d8b5efd698c533db8b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3361"
-        },
         {
           "@id": "edam:topic_3306"
         },
         {
           "@id": "edam:topic_3071"
+        },
+        {
+          "@id": "edam:topic_3361"
         }
       ],
       "sc:citation": [
@@ -78,21 +82,21 @@
       "sc:description": "This package estimate the proliferation of a cell population in cell-tracking dye studies. The package uses an R implementation of the Levenberg-Marquardt algorithm (minpack.lm) to fit a set of peaks (corresponding to different generations of cells) over the proliferation-tracking dye distribution in a FACS experiment.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_3214"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "flowFit",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/flowFit.html"
@@ -101,23 +105,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/flowFit.html"
     },
     {
-      "@id": "_:N39d17ab0707449899f2f2ae6b9d606de",
+      "@id": "_:Ncc4ed5603c844c8c9d64f3b785f23416",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_3108"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:Nf4d01ae988454c0f89eeaf657a490e4f",
+      "@id": "_:N9f0aca31223041bbaeab27758150f2de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -133,7 +132,23 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nb17dbfa629de4e75b08dbb38741904cd",
+      "@id": "_:N4118bf26d97d40c28bfb0ad159b985fb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N74c74228be3643d8b5efd698c533db8b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -147,21 +162,6 @@
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:N4f2bfc64cedc49168f5d5538d1f8aa87",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu127",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,43 +40,39 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1016/S0022-2836(05)80360-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/blast_best_score",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:Neae6f56cb92e41f79e57af495a3ec4a1"
+        "@id": "_:N09d7523beb2c4b01ac290b9d66f74581"
       },
       "bsc:output": {
-        "@id": "_:N07d8bfd1fc6a4f31bab5b62d9dba616e"
+        "@id": "_:Nb8a469503eb748039d37fe7ad154cd31"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0077"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1016/S0022-2836(05)80360-2"
-        },
         "pubmed:27137889",
         "pmcid:PMC4987906",
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
+          "@id": "https://doi.org/10.1016/S0022-2836(05)80360-2"
+        },
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Returns the list best hits from a list of BLAST results.",
@@ -86,8 +82,8 @@
       "sc:name": "blast_best_score",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Fodoppelt%2Fpgp_tools%2Fblast_best_score%2F0.0.1"
@@ -96,18 +92,7 @@
       "sc:url": "https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/odoppelt/pgp_tools/blast_best_score/0.0.1"
     },
     {
-      "@id": "_:N07d8bfd1fc6a4f31bab5b62d9dba616e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Neae6f56cb92e41f79e57af495a3ec4a1",
+      "@id": "_:N09d7523beb2c4b01ac290b9d66f74581",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -118,7 +103,22 @@
       "sc:name": "Sequence search results"
     },
     {
+      "@id": "_:Nb8a469503eb748039d37fe7ad154cd31",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Data"
+    },
+    {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0022-2836(05)80360-2",
       "@type": "sc:CreativeWork"
     }
   ]

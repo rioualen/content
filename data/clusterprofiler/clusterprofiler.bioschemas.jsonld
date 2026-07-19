@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,8 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-6485-8781",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1089/omi.2011.0118",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/clusterprofiler",
@@ -46,30 +46,30 @@
         "@id": "http://orcid.org/0000-0002-6485-8781"
       },
       "bsc:input": {
-        "@id": "_:N1a8222d51dd04e28a392acf268c0c461"
+        "@id": "_:Ne907ec851f144ba79907921a5eeb0c89"
       },
       "bsc:output": [
         {
-          "@id": "_:Ncccb1af4f4bf457daefd402f6096f1dc"
+          "@id": "_:Ne6da31fc53984a9f81703e087b87cd93"
         },
         {
-          "@id": "_:N92c5c6dac8244e5bbf3cb657a455b870"
+          "@id": "_:N1c2ec5d7e164474bac52b83bcd5c24c7"
         },
         {
-          "@id": "_:N41eb55e993d04bf2a024e9f4969eca02"
+          "@id": "_:Nc04ade62d3614ca8877813525eb0fdeb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3053"
         }
       ],
       "sc:citation": [
@@ -92,9 +92,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "clusterProfiler",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/clusterProfiler.html"
@@ -103,40 +103,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/clusterProfiler.html"
     },
     {
-      "@id": "_:Ncccb1af4f4bf457daefd402f6096f1dc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N92c5c6dac8244e5bbf3cb657a455b870",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0862"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Dotplot"
-    },
-    {
-      "@id": "_:N41eb55e993d04bf2a024e9f4969eca02",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N1a8222d51dd04e28a392acf268c0c461",
+      "@id": "_:Ne907ec851f144ba79907921a5eeb0c89",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1027"
@@ -147,8 +114,41 @@
       "sc:name": "Gene ID (NCBI)"
     },
     {
-      "@id": "https://doi.org/10.1089/omi.2011.0118",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne6da31fc53984a9f81703e087b87cd93",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0862"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Dotplot"
+    },
+    {
+      "@id": "_:N1c2ec5d7e164474bac52b83bcd5c24c7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:Nc04ade62d3614ca8877813525eb0fdeb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-6485-8781",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,17 +40,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Zuguang Gu",
       "bsc:input": {
-        "@id": "_:Nbbc632f69ac54ba89096a3a7b6aab544"
+        "@id": "_:Ndf78f73237b0416cbf2345d15fa46c0f"
       },
       "bsc:output": [
         {
-          "@id": "_:Nf80a90d8195642cd819f1bf82ba7db26"
+          "@id": "_:N4c708285fdb14fa9bc07ef57e738553d"
         },
         {
-          "@id": "_:Nccb9127277c34a4daa514554ac50ac53"
+          "@id": "_:N1161e6e648d54bbaa457475c561e88db"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -66,9 +66,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "rGREAT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/rGREAT.html"
@@ -77,51 +77,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/rGREAT.html"
     },
     {
-      "@id": "_:Nf80a90d8195642cd819f1bf82ba7db26",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3696"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nccb9127277c34a4daa514554ac50ac53",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3696"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:Nbbc632f69ac54ba89096a3a7b6aab544",
+      "@id": "_:Ndf78f73237b0416cbf2345d15fa46c0f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -130,6 +86,50 @@
         "@id": "edam:format_3003"
       },
       "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N4c708285fdb14fa9bc07ef57e738553d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3696"
+        },
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N1161e6e648d54bbaa457475c561e88db",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3696"
+        },
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.21203/RS.3.RS-1239072/V1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pikachu",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6ec4b23c184c4e878efb0b403265adfc"
+        "@id": "_:N968067bda6e44cfb94ead07e1e06d253"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_2258"
         },
         {
           "@id": "edam:topic_3314"
         },
         {
-          "@id": "edam:topic_2258"
+          "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": {
@@ -63,18 +67,18 @@
       "sc:description": "A Python-based Informatics Kit for Analysing Chemical Units.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_1812"
         },
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "PIKAChU",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,16 +87,12 @@
       "sc:url": "https://github.com/BTheDragonMaster/pikachu"
     },
     {
-      "@id": "_:N6ec4b23c184c4e878efb0b403265adfc",
+      "@id": "_:N968067bda6e44cfb94ead07e1e06d253",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
       },
       "sc:name": "SMILES string"
-    },
-    {
-      "@id": "https://doi.org/10.21203/RS.3.RS-1239072/V1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

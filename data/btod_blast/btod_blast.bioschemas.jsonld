@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,34 +40,34 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9145ef38fd0b43fc9f176c74166d08a9"
+          "@id": "_:N02f06845b1f6484883dad6a831cc14cc"
         },
         {
-          "@id": "_:Na868cd62f5a64af99ce0eec0a4b3225f"
+          "@id": "_:N4dfce2bd38084a8c8b9d13b0328842d8"
         },
         {
-          "@id": "_:Ned09199c8a4048d38ba0a893e453d38d"
+          "@id": "_:Nf3cc7dfc191a491ba42e2b31d3478817"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ncb5e6e258f0e4e309c0d58c270371ddf"
+          "@id": "_:N3657d345d4194627b4b96d92929229bc"
         },
         {
-          "@id": "_:N62232aebe4184cdd85f4c6b902fe5461"
+          "@id": "_:N14dd8441ee5348c7b8055fbc380ead21"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0080"
-        },
         {
           "@id": "edam:topic_0654"
         },
         {
           "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:description": "An algorithm for comparing primary biological sequence information, such as the amino-acid sequences of proteins or the nucleotides of DNA sequences. A BLAST search enables a researcher to compare a query sequence with a library or database of sequences, and identify library sequences that resemble the query sequence above a certain threshold.",
@@ -81,8 +81,8 @@
       ],
       "sc:name": "BTOD",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -92,7 +92,7 @@
       "sc:url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi"
     },
     {
-      "@id": "_:N9145ef38fd0b43fc9f176c74166d08a9",
+      "@id": "_:N02f06845b1f6484883dad6a831cc14cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1056"
@@ -103,7 +103,7 @@
       "sc:name": "Database name"
     },
     {
-      "@id": "_:Na868cd62f5a64af99ce0eec0a4b3225f",
+      "@id": "_:N4dfce2bd38084a8c8b9d13b0328842d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -114,7 +114,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Ned09199c8a4048d38ba0a893e453d38d",
+      "@id": "_:Nf3cc7dfc191a491ba42e2b31d3478817",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -125,7 +125,26 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Ncb5e6e258f0e4e309c0d58c270371ddf",
+      "@id": "_:N3657d345d4194627b4b96d92929229bc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3331"
+        },
+        {
+          "@id": "edam:format_1333"
+        },
+        {
+          "@id": "edam:format_2066"
+        }
+      ],
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "_:N14dd8441ee5348c7b8055fbc380ead21",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1381"
@@ -139,25 +158,6 @@
         }
       ],
       "sc:name": "Sequence alignment (pair)"
-    },
-    {
-      "@id": "_:N62232aebe4184cdd85f4c6b902fe5461",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1333"
-        },
-        {
-          "@id": "edam:format_3331"
-        },
-        {
-          "@id": "edam:format_2066"
-        }
-      ],
-      "sc:name": "Sequence search results"
     }
   ]
 }

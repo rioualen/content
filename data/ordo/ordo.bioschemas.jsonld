@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw170",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ordo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Contact Form",
       "bsc:input": {
-        "@id": "_:N028701ab3ba34e0db78ef700a4917ceb"
+        "@id": "_:N3cd75d0ebe184b7ea84536bf4af28add"
       },
       "bsc:output": {
-        "@id": "_:N2f50dcfcef1346d5b6e993320ac77dee"
+        "@id": "_:N4b46729c08394506a1d18eef986b8f28"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Database portal",
-        "Ontology"
+        "Ontology",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0634"
-        },
-        {
-          "@id": "edam:topic_3325"
+          "@id": "edam:topic_3307"
         },
         {
           "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3307"
+          "@id": "edam:topic_0089"
         },
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_0634"
+        },
+        {
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:citation": {
@@ -84,9 +88,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "ORDO",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Inserm US14",
       "sc:softwareHelp": {
@@ -96,7 +100,7 @@
       "sc:url": "http://www.ebi.ac.uk/ols/ontologies/ordo"
     },
     {
-      "@id": "_:N028701ab3ba34e0db78ef700a4917ceb",
+      "@id": "_:N3cd75d0ebe184b7ea84536bf4af28add",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2800"
@@ -104,7 +108,7 @@
       "sc:name": "Orpha number"
     },
     {
-      "@id": "_:N2f50dcfcef1346d5b6e993320ac77dee",
+      "@id": "_:N4b46729c08394506a1d18eef986b8f28",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0967"
@@ -113,10 +117,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Ontology concept data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw170",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

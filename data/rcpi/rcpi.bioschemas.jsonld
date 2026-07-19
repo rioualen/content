@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu624",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "http://orcid.org/0000-0002-0250-5673",
       "@type": "sc:Person"
     },
@@ -51,24 +47,24 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N7f967952b5f94e1c9b2d4da39ad3c7c0"
+          "@id": "_:Nb4995a0feff24bd59ab66dcbc18457e4"
         },
         {
-          "@id": "_:Ne3f4c7de61a34500845884e0ffa75a8e"
+          "@id": "_:N9fb81fd0484b46fe89718f6996292a94"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na0397ad57fe64890a2782e6fe121a9fb"
+          "@id": "_:N7a19187c408b434ea40c1dd801bd5dc2"
         },
         {
-          "@id": "_:N4c8d27cec5de445495f8188c685ac02f"
+          "@id": "_:Nba36fe4fc33d41abab68f0585a46b8d6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -91,9 +87,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "Rcpi",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/Rcpi.html"
@@ -102,49 +98,17 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Rcpi.html"
     },
     {
-      "@id": "_:Na0397ad57fe64890a2782e6fe121a9fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N4c8d27cec5de445495f8188c685ac02f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2854"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Position-specific scoring matrix"
-    },
-    {
-      "@id": "_:N7f967952b5f94e1c9b2d4da39ad3c7c0",
+      "@id": "_:Nb4995a0feff24bd59ab66dcbc18457e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1476"
         },
         {
           "@id": "edam:format_1196"
@@ -153,23 +117,59 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Ne3f4c7de61a34500845884e0ffa75a8e",
+      "@id": "_:N9fb81fd0484b46fe89718f6996292a94",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1476"
         },
         {
           "@id": "edam:format_1196"
         }
       ],
       "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N7a19187c408b434ea40c1dd801bd5dc2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nba36fe4fc33d41abab68f0585a46b8d6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2854"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Position-specific scoring matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu624",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,35 +40,35 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Kevin Rue-Albrecht",
       "bsc:input": {
-        "@id": "_:N7aadbd51b58a4eeea91aa3bed49c7c91"
+        "@id": "_:Nf950a58e37c9404bb71b80f0ae8adb03"
       },
       "bsc:output": [
         {
-          "@id": "_:Naf7ce9d67101466b887b49ff5fcf16c2"
+          "@id": "_:N76413547e31b49a5b9341678988496bf"
         },
         {
-          "@id": "_:N94d55268c5284315a8d5bdb4fa27e464"
+          "@id": "_:N228d94baac414f9c856150da6558b7e0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pubmed:26968614",
+        "pmcid:PMC4788925",
         {
           "@id": "https://doi.org/10.1186/s12859-016-0971-3"
-        },
-        "pmcid:PMC4788925",
-        "pubmed:26968614"
+        }
       ],
       "sc:description": "This package contains methods to visualise the expression profile of genes from a microarray or RNA-seq experiment, and offers a supervised clustering approach to identify GO terms containing genes with expression levels that best classify two or more predefined groups of samples.",
       "sc:featureList": {
@@ -77,9 +77,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "GOexpress",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/GOexpress.html"
@@ -88,7 +88,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GOexpress.html"
     },
     {
-      "@id": "_:N7aadbd51b58a4eeea91aa3bed49c7c91",
+      "@id": "_:Nf950a58e37c9404bb71b80f0ae8adb03",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -99,23 +99,7 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:Naf7ce9d67101466b887b49ff5fcf16c2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N94d55268c5284315a8d5bdb4fa27e464",
+      "@id": "_:N76413547e31b49a5b9341678988496bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -129,6 +113,22 @@
         }
       ],
       "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N228d94baac414f9c856150da6558b7e0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "P-value"
     },
     {
       "@id": "https://doi.org/10.1186/s12859-016-0971-3",

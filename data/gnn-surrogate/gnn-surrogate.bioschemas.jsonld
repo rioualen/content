@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,9 +36,13 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1109/tvcg.2022.3165345",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gnn-surrogate",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3474"
@@ -55,10 +59,10 @@
           "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_3799"
+          "@id": "edam:operation_3927"
         },
         {
-          "@id": "edam:operation_3927"
+          "@id": "edam:operation_3799"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -66,14 +70,10 @@
       "sc:name": "GNN-Surrogate",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://github.com/trainsn/GNN-Surrogate"
-    },
-    {
-      "@id": "https://doi.org/10.1109/tvcg.2022.3165345",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

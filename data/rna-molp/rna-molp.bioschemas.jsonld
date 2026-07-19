@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkx429",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rna-molp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jérôme Waldispühl",
       "bsc:input": [
         {
-          "@id": "_:Nbd3a92cfaa1148828f8a8fa14a6d29d6"
+          "@id": "_:Nf6a6dc3ee7ae4bf6988d2aec6901e5ef"
         },
         {
-          "@id": "_:N919d966f77a547a1821432f5e6778cbc"
+          "@id": "_:N6c76c94327104fd58079101d088c0abc"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -65,8 +61,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC5793723",
         "pubmed:28525607",
+        "pmcid:PMC5793723",
         {
           "@id": "https://doi.org/10.1093/nar/gkx429"
         }
@@ -90,7 +86,18 @@
       "sc:url": "http://rnamoip.cs.mcgill.ca/"
     },
     {
-      "@id": "_:Nbd3a92cfaa1148828f8a8fa14a6d29d6",
+      "@id": "_:Nf6a6dc3ee7ae4bf6988d2aec6901e5ef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3496"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "RNA sequence (raw)"
+    },
+    {
+      "@id": "_:N6c76c94327104fd58079101d088c0abc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -101,15 +108,8 @@
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:N919d966f77a547a1821432f5e6778cbc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3496"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "RNA sequence (raw)"
+      "@id": "https://doi.org/10.1093/nar/gkx429",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

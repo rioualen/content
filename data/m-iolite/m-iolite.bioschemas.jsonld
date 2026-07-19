@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,41 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.ifacol.2016.12.140",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/m-iolite",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Maria I Klapa",
       "bsc:input": [
         {
-          "@id": "_:Nab8ab4dd414b4d3f9d80045cde42372e"
+          "@id": "_:N6d2473c6dff949a4b6c6c1f00fa684ed"
         },
         {
-          "@id": "_:Nec188716049c4aa78d26a85da2851193"
+          "@id": "_:Nb84167c8270245098953f56c7d5ae500"
         },
         {
-          "@id": "_:Nea6ae4a615e14e52a9bcd9fc0f4af261"
+          "@id": "_:N5a9158ef377d4f36b613fb97c7adb97d"
         },
         {
-          "@id": "_:N2d2baf159dd146fbbec365c0e70d53e0"
+          "@id": "_:Nad365e6b43824c4eb3692005cb5ab6c4"
         },
         {
-          "@id": "_:Nd0a97fb807ea4b818386ba04550345eb"
+          "@id": "_:N2275e87d967b43e89c297bdb6ff7a7cd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Suite",
-        "Workflow",
         "Database portal",
-        "Desktop application"
+        "Desktop application",
+        "Suite",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2259"
-        },
         {
           "@id": "edam:topic_3292"
         },
@@ -78,16 +71,10 @@
           "@id": "edam:topic_3369"
         },
         {
-          "@id": "edam:topic_3572"
-        },
-        {
-          "@id": "edam:topic_0081"
-        },
-        {
           "@id": "edam:topic_3345"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_0219"
@@ -97,6 +84,15 @@
         },
         {
           "@id": "edam:topic_3172"
+        },
+        {
+          "@id": "edam:topic_2269"
+        },
+        {
+          "@id": "edam:topic_0081"
+        },
+        {
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": {
@@ -105,22 +101,22 @@
       "sc:description": "MESBL GC-MS metabolite peak database is a standardized library of more than 900 metabolite peaks from MS-reconstructed gas chromatograms integrating the in-house standard compound and peak library of the FORTH/ICE-HT Metabolic Engineering and Systems Laboratory, appropriately filtered GOLM database peak information and Human Metabolome database information.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_3431"
         },
         {
           "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_0335"
-        },
-        {
-          "@id": "edam:operation_3660"
-        },
-        {
           "@id": "edam:operation_3357"
         },
         {
-          "@id": "edam:operation_3431"
+          "@id": "edam:operation_0335"
+        },
+        {
+          "@id": "edam:operation_1812"
+        },
+        {
+          "@id": "edam:operation_3660"
         },
         {
           "@id": "edam:operation_3083"
@@ -142,23 +138,7 @@
       "sc:url": "http://miolite2.iceht.forth.gr"
     },
     {
-      "@id": "_:Nab8ab4dd414b4d3f9d80045cde42372e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1154"
-      },
-      "sc:name": "KEGG object identifier"
-    },
-    {
-      "@id": "_:Nec188716049c4aa78d26a85da2851193",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:Nea6ae4a615e14e52a9bcd9fc0f4af261",
+      "@id": "_:N6d2473c6dff949a4b6c6c1f00fa684ed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0990"
@@ -166,7 +146,15 @@
       "sc:name": "Compound name"
     },
     {
-      "@id": "_:N2d2baf159dd146fbbec365c0e70d53e0",
+      "@id": "_:Nb84167c8270245098953f56c7d5ae500",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1154"
+      },
+      "sc:name": "KEGG object identifier"
+    },
+    {
+      "@id": "_:N5a9158ef377d4f36b613fb97c7adb97d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1864"
@@ -174,12 +162,24 @@
       "sc:name": "Map set data"
     },
     {
-      "@id": "_:Nd0a97fb807ea4b818386ba04550345eb",
+      "@id": "_:Nad365e6b43824c4eb3692005cb5ab6c4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N2275e87d967b43e89c297bdb6ff7a7cd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0984"
       },
       "sc:name": "Molecule name"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.ifacol.2016.12.140",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

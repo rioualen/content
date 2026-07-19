@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,37 +39,37 @@
       "@id": "https://bio.tools/matchbox",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Luigi Marchionni",
-        "Anuj Gupta"
+        "Anuj Gupta",
+        "Luigi Marchionni"
       ],
       "bsc:input": {
-        "@id": "_:N95f81be387984c80913f63ac7b18ee2f"
+        "@id": "_:N2365a4c4c02d4609b58558d140de8cb5"
       },
       "bsc:output": [
         {
-          "@id": "_:Ndd20d77789af434c9f6d6075a7bf98e3"
+          "@id": "_:Ne4ae2bb308ce41fd8e5867e39b4fc37a"
         },
         {
-          "@id": "_:N7b3d354380f74eb1b19644c80c0791cf"
+          "@id": "_:N633717ad08c84c7e9889fe9db2d3f126"
         },
         {
-          "@id": "_:N58093678e2174427aa75e0bdf5485f8e"
+          "@id": "_:N654471c45b5c446987648666c90ae126"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0092"
+        },
         {
           "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_2269"
-        },
-        {
-          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": [
@@ -90,9 +90,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "matchBox",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/matchBox.html"
@@ -101,10 +101,21 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/matchBox.html"
     },
     {
-      "@id": "_:Ndd20d77789af434c9f6d6075a7bf98e3",
+      "@id": "_:N2365a4c4c02d4609b58558d140de8cb5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Ne4ae2bb308ce41fd8e5867e39b4fc37a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
       },
       "sc:encodingFormat": [
         {
@@ -114,10 +125,10 @@
           "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Report"
+      "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N7b3d354380f74eb1b19644c80c0791cf",
+      "@id": "_:N633717ad08c84c7e9889fe9db2d3f126",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -133,10 +144,10 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N58093678e2174427aa75e0bdf5485f8e",
+      "@id": "_:N654471c45b5c446987648666c90ae126",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
@@ -146,18 +157,7 @@
           "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N95f81be387984c80913f63ac7b18ee2f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Gene expression data"
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth756",

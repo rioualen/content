@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,22 +40,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Tulio de Oliveira",
       "bsc:input": {
-        "@id": "_:N62c940c1388f45368c08c4aea3b78b12"
+        "@id": "_:N0ff8011d8a0c4b50bab84efa2289fae1"
       },
       "bsc:output": {
-        "@id": "_:N4ede9a00b83e479ca0f41866235b44de"
+        "@id": "_:N24ec3fe0685d4fd18ce0172e58f30082"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0781"
       },
       "sc:citation": [
+        "pubmed:18948277",
+        "pmcid:PMC2686580",
         {
           "@id": "https://doi.org/10.1093/nar/gkn729"
-        },
-        "pubmed:18948277",
-        "pmcid:PMC2686580"
+        }
       ],
       "sc:description": "RNA virus genome database.",
       "sc:featureList": {
@@ -63,14 +63,22 @@
       },
       "sc:name": "RNA virus genome database (RNAVirusDB)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://bioafrica.mrc.ac.za/rnavirusdb/"
     },
     {
-      "@id": "_:N4ede9a00b83e479ca0f41866235b44de",
+      "@id": "_:N0ff8011d8a0c4b50bab84efa2289fae1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2784"
+      },
+      "sc:name": "RNAVirusDB ID"
+    },
+    {
+      "@id": "_:N24ec3fe0685d4fd18ce0172e58f30082",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2530"
@@ -79,14 +87,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Organism report"
-    },
-    {
-      "@id": "_:N62c940c1388f45368c08c4aea3b78b12",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2784"
-      },
-      "sc:name": "RNAVirusDB ID"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkn729",

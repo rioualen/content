@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,59 +36,55 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/S12859-021-04355-6",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/motif_prob",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nbbab1299fffb47db8e39324e90354200"
+          "@id": "_:N75b70e3c14504571b8bce3946cceaff7"
         },
         {
-          "@id": "_:N78664efdadf04ef2bcbc23f3d4db63b2"
+          "@id": "_:N7fe5a96179434ec4b9c43a69370b629e"
         }
       ],
       "bsc:output": {
-        "@id": "_:N337920273a224a17b5d5a67ed1379639"
+        "@id": "_:N2f4a0e11497f41f9b7c5cdc16c540cd9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_2269"
-        },
-        {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0160"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:34537012",
         "pmcid:PMC8449872",
         {
           "@id": "https://doi.org/10.1186/S12859-021-04355-6"
-        },
-        "pubmed:34537012"
+        }
       ],
       "sc:description": "Fast and exact quantification of motif occurrences in biological sequences.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_3799"
         },
         {
           "@id": "edam:operation_0238"
         },
         {
-          "@id": "edam:operation_3799"
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -101,18 +97,7 @@
       "sc:url": "https://github.com/DataIntellSystLab/motif_prob"
     },
     {
-      "@id": "_:Nbbab1299fffb47db8e39324e90354200",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N78664efdadf04ef2bcbc23f3d4db63b2",
+      "@id": "_:N75b70e3c14504571b8bce3946cceaff7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -123,12 +108,27 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N337920273a224a17b5d5a67ed1379639",
+      "@id": "_:N7fe5a96179434ec4b9c43a69370b629e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N2f4a0e11497f41f9b7c5cdc16c540cd9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
       },
       "sc:name": "Sequence report"
+    },
+    {
+      "@id": "https://doi.org/10.1186/S12859-021-04355-6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

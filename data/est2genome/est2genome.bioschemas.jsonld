@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/est2genome",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N45ec69a55ac241a495b21590e321ad70"
+          "@id": "_:N414d4d524bd440b881465f6ef36b9fb8"
         },
         {
-          "@id": "_:N4d4a436386b845ec92d275b78e37def6"
+          "@id": "_:N2671b8823d754873b6b5f3d9166de3cc"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3bf1eade766349c09f8aa8e0448f5f47"
+        "@id": "_:N25f96f5ec3764aceab4894e7bf26653f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
@@ -71,17 +59,17 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
-        "EMBOSS Contributors",
         "UK BBSRC",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Align EST sequences to genomic DNA sequence.",
       "sc:featureList": {
@@ -96,8 +84,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "est2genome",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -106,10 +94,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/est2genome.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/est2genome.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
@@ -119,7 +107,7 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/est2genome.html"
     },
     {
-      "@id": "_:N45ec69a55ac241a495b21590e321ad70",
+      "@id": "_:N414d4d524bd440b881465f6ef36b9fb8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -127,7 +115,7 @@
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "_:N4d4a436386b845ec92d275b78e37def6",
+      "@id": "_:N2671b8823d754873b6b5f3d9166de3cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -135,12 +123,24 @@
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "_:N3bf1eade766349c09f8aa8e0448f5f47",
+      "@id": "_:N25f96f5ec3764aceab4894e7bf26653f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

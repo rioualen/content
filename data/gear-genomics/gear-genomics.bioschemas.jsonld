@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,66 +36,62 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12864-020-6635-8",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gear-genomics",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne1b1449e3bb24ef3a8b8b2683af197b8"
+        "@id": "_:N0db92df35cad4d2a90a9f481b6061787"
       },
       "bsc:output": [
         {
-          "@id": "_:N3fb1741a10d8495abd01100ee92ba9c0"
+          "@id": "_:N579da69839044418961c104e09e0d7dc"
         },
         {
-          "@id": "_:Nc055b25720244ba5991f0a0dc1c3a670"
+          "@id": "_:Na1227db610b34fb9887d2bbc1ace6df1"
         },
         {
-          "@id": "_:Nc05f4e7eb6fb437b963e926c2f95353e"
+          "@id": "_:Nd995306a39cf46139bb80e1bea66997a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": "Tobias Rausch",
       "sc:citation": [
         "pubmed:32171249",
+        "pmcid:PMC7071639",
         {
           "@id": "https://doi.org/10.1186/s12864-020-6635-8"
-        },
-        "pmcid:PMC7071639"
+        }
       ],
       "sc:description": "Gear is a genome analysis web server hosting applications for molecular biologists to analyze Sanger traces, design PCR primers and perform DNA sequence analyses.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2403"
+          "@id": "edam:operation_3185"
         },
         {
           "@id": "edam:operation_3203"
         },
         {
+          "@id": "edam:operation_3197"
+        },
+        {
           "@id": "edam:operation_3182"
-        },
-        {
-          "@id": "edam:operation_3185"
-        },
-        {
-          "@id": "edam:operation_0233"
         },
         {
           "@id": "edam:operation_3661"
         },
         {
-          "@id": "edam:operation_3197"
+          "@id": "edam:operation_2403"
+        },
+        {
+          "@id": "edam:operation_0233"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -103,8 +99,8 @@
       "sc:name": "Gear-Genomics",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.gear-genomics.com/docs/tracy/"
@@ -112,7 +108,37 @@
       "sc:url": "https://www.gear-genomics.com/"
     },
     {
-      "@id": "_:N3fb1741a10d8495abd01100ee92ba9c0",
+      "@id": "_:N0db92df35cad4d2a90a9f481b6061787",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3000"
+        },
+        {
+          "@id": "edam:format_1628"
+        },
+        {
+          "@id": "edam:format_1632"
+        }
+      ],
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N579da69839044418961c104e09e0d7dc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3464"
+      },
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:Na1227db610b34fb9887d2bbc1ace6df1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1711"
@@ -123,7 +149,7 @@
       "sc:name": "Sequence alignment image"
     },
     {
-      "@id": "_:Nc055b25720244ba5991f0a0dc1c3a670",
+      "@id": "_:Nd995306a39cf46139bb80e1bea66997a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -139,34 +165,8 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:Nc05f4e7eb6fb437b963e926c2f95353e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3464"
-      },
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:Ne1b1449e3bb24ef3a8b8b2683af197b8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1628"
-        },
-        {
-          "@id": "edam:format_3000"
-        },
-        {
-          "@id": "edam:format_1632"
-        }
-      ],
-      "sc:name": "Nucleic acid sequence"
+      "@id": "https://doi.org/10.1186/s12864-020-6635-8",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

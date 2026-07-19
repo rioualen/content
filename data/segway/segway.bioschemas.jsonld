@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,54 +36,62 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-4517-1562",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gks1284",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/segway",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6b79ae94b1484af9ae907d0623bf098a"
+        "@id": "_:N77d7f8375b28426f8a10510589cc1f00"
       },
       "bsc:output": [
         {
-          "@id": "_:N08c881bd6b2d49adb106eecc112484bd"
+          "@id": "_:N58afdfb13fda437399121d005bcb834a"
         },
         {
-          "@id": "_:Ne4ca9ec2d0ba470f9ae31cf4b9a84ea4"
+          "@id": "_:N2b6d7b47de4242ed9e3eebe76f02bb64"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0085"
+          "@id": "edam:topic_3173"
         },
         {
-          "@id": "edam:topic_3173"
+          "@id": "edam:topic_0085"
         }
       ],
       "sc:author": [
-        "Eric Roberts",
         {
           "@id": "http://orcid.org/0000-0002-4517-1562"
-        }
+        },
+        "Eric Roberts"
       ],
       "sc:citation": [
+        "pubmed:22426492",
         "pmcid:PMC3340533",
         {
           "@id": "https://doi.org/10.1038/nmeth.1937"
         },
+        "pubmed:23221638",
         "pmcid:PMC3553955",
         {
           "@id": "https://doi.org/10.1093/nar/gks1284"
-        },
-        "pubmed:22426492",
-        "pubmed:23221638"
+        }
       ],
       "sc:description": "Novel method for analyzing multiple tracks of functional genomics data which uses a dynamic Bayesian network (DBN) model, which enables it to analyze the entire genome at 1-bp resolution even in the face of heterogeneous patterns of missing data. This method is the first application of DBN techniques to genome-scale data and the first genomic segmentation method designed for use with the maximum resolution data available from ChIP-seq experiments without downsampling.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0362"
+          "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_0362"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -96,42 +104,20 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://bitbucket.org/hoffmanlab/segway/"
+          "@id": "http://segway.hoffmanlab.org/"
         },
         {
           "@id": "http://segway.readthedocs.io/"
         },
         {
-          "@id": "http://segway.hoffmanlab.org/"
+          "@id": "https://bitbucket.org/hoffmanlab/segway/"
         }
       ],
       "sc:softwareVersion": "1.4.0",
       "sc:url": "http://segway.hoffmanlab.org/"
     },
     {
-      "@id": "_:N08c881bd6b2d49adb106eecc112484bd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:Ne4ca9ec2d0ba470f9ae31cf4b9a84ea4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2919"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N6b79ae94b1484af9ae907d0623bf098a",
+      "@id": "_:N77d7f8375b28426f8a10510589cc1f00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -142,16 +128,30 @@
       "sc:name": "Experimental measurement"
     },
     {
+      "@id": "_:N58afdfb13fda437399121d005bcb834a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N2b6d7b47de4242ed9e3eebe76f02bb64",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2919"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
       "@id": "https://doi.org/10.1038/nmeth.1937",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gks1284",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-4517-1562",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/622852",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ThermoRawFileParser",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Computational Omics and Systems Biology Group",
       "bsc:input": {
-        "@id": "_:N7254352bf92948fca7d2a4a302211199"
+        "@id": "_:N06d403d67c3441f5a3db8cae50633cff"
       },
       "bsc:output": {
-        "@id": "_:Nf60f43f997934c24a2f41176c2e8d822"
+        "@id": "_:N06f785832bb94b3b95ecfc0f38200805"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
         {
           "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": {
@@ -81,8 +77,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "ThermoRawFileParser",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/compomics/ThermoRawFileParser/blob/master/README.md"
@@ -90,7 +86,7 @@
       "sc:url": "https://github.com/compomics/ThermoRawFileParser"
     },
     {
-      "@id": "_:N7254352bf92948fca7d2a4a302211199",
+      "@id": "_:N06d403d67c3441f5a3db8cae50633cff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -101,20 +97,24 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:Nf60f43f997934c24a2f41176c2e8d822",
+      "@id": "_:N06f785832bb94b3b95ecfc0f38200805",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3651"
         },
         {
-          "@id": "edam:format_3651"
+          "@id": "edam:format_3244"
         }
       ],
       "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "https://doi.org/10.1101/622852",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkm342",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/minactionpath",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Marc Delarue Contact Form",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -59,8 +63,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC1933200",
         "pubmed:17545201",
+        "pmcid:PMC1933200",
         {
           "@id": "https://doi.org/10.1093/nar/gkm342"
         }
@@ -71,29 +75,25 @@
           "@id": "edam:operation_0249"
         },
         {
-          "@id": "edam:operation_0250"
+          "@id": "edam:operation_2574"
         },
         {
           "@id": "edam:operation_0477"
         },
         {
-          "@id": "edam:operation_2574"
+          "@id": "edam:operation_0250"
         }
       ],
       "sc:name": "MinActionPath",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://lorentz.immstr.pasteur.fr/joel/index.php"
       },
       "sc:url": "http://lorentz.immstr.pasteur.fr/joel/index.php"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkm342",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

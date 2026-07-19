@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-8-166",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gosim",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Holger Froehlich",
       "bsc:input": {
-        "@id": "_:N9b9ee8c95586455485647a1ee110d0fc"
+        "@id": "_:N2d7ca107b63e419db31c05abbe77c91f"
       },
       "bsc:output": [
         {
-          "@id": "_:N34e69d976e6d48848e5e6e4c5fd1c8e4"
+          "@id": "_:N347ef98dad334ea69f4887f6814c0675"
         },
         {
-          "@id": "_:Nfa6b4338927c43fa8e79a6f3c10f2bc3"
+          "@id": "_:N43e2f87e67bf48d1ae4939ad34805fd8"
         },
         {
-          "@id": "_:N2f2fd1242ba7425eb7fac347adc6e161"
+          "@id": "_:N19c3e60b68b34e60bff1cccd3df04f8f"
         },
         {
-          "@id": "_:N1a891f9e38fe4e43a6161a74bd78278a"
+          "@id": "_:N54f2ddb231dc4a0f8a652ea114f15661"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -74,27 +70,27 @@
         }
       ],
       "sc:citation": [
+        "pubmed:17519018",
         "pmcid:PMC1892785",
         {
           "@id": "https://doi.org/10.1186/1471-2105-8-166"
-        },
-        "pubmed:17519018"
+        }
       ],
       "sc:description": "This package implements several functions useful for computing similarities between GO terms and gene products based on their GO annotation. Moreover it allows for computing a GO enrichment analysis.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3352"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3352"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "GOSim",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/GOSim.html"
@@ -103,7 +99,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GOSim.html"
     },
     {
-      "@id": "_:N34e69d976e6d48848e5e6e4c5fd1c8e4",
+      "@id": "_:N2d7ca107b63e419db31c05abbe77c91f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1027"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene ID (NCBI)"
+    },
+    {
+      "@id": "_:N347ef98dad334ea69f4887f6814c0675",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -119,23 +126,7 @@
       "sc:name": "ID list"
     },
     {
-      "@id": "_:Nfa6b4338927c43fa8e79a6f3c10f2bc3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N2f2fd1242ba7425eb7fac347adc6e161",
+      "@id": "_:N43e2f87e67bf48d1ae4939ad34805fd8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"
@@ -151,7 +142,7 @@
       "sc:name": "Ontology"
     },
     {
-      "@id": "_:N1a891f9e38fe4e43a6161a74bd78278a",
+      "@id": "_:N19c3e60b68b34e60bff1cccd3df04f8f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -167,15 +158,24 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N9b9ee8c95586455485647a1ee110d0fc",
+      "@id": "_:N54f2ddb231dc4a0f8a652ea114f15661",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1027"
+        "@id": "edam:data_1772"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID (NCBI)"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-8-166",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

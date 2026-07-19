@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pwmenrich",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Robert Stojnic",
       "bsc:input": {
-        "@id": "_:Nc3bf85ee3d1c48659337746a0f1fec9e"
+        "@id": "_:N258c32920b6343d399c265a94a77b184"
       },
       "bsc:output": [
         {
-          "@id": "_:N11ddc048f5d24e5297fdaa43426b6877"
+          "@id": "_:Neba87753b3c548cea0ab081c0fe121bf"
         },
         {
-          "@id": "_:Nb1f86d3818714a7f983c0c676248167d"
+          "@id": "_:N87d9209563ec4278bf119759f08c37ee"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_3511"
         },
         {
-          "@id": "edam:topic_3511"
+          "@id": "edam:topic_0097"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "A toolkit of high-level functions for DNA motif scanning and enrichment analysis built upon Biostrings. The main functionality is PWM enrichment analysis of already known PWMs (e.g. from databases such as MotifDb), but the package also implements high-level functions for PWM scanning and visualisation. The package does not perform \"de novo\" motif discovery, but is instead focused on using motifs that are either experimentally derived or computationally constructed by other tools.",
       "sc:featureList": [
@@ -85,8 +89,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "PWMEnrich",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -96,29 +100,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/PWMEnrich.html"
     },
     {
-      "@id": "_:N11ddc048f5d24e5297fdaa43426b6877",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nb1f86d3818714a7f983c0c676248167d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Nc3bf85ee3d1c48659337746a0f1fec9e",
+      "@id": "_:N258c32920b6343d399c265a94a77b184",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -129,8 +111,26 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Neba87753b3c548cea0ab081c0fe121bf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N87d9209563ec4278bf119759f08c37ee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
     }
   ]
 }

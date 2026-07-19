@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt607",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/protter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N30abed19fddc4c80b658d49d44f25a5c"
+          "@id": "_:Ndeefe6239b9b462b8c26f35f71e3238c"
         },
         {
-          "@id": "_:N2af5e1cfdcbe48a69a93909d8578e5c0"
+          "@id": "_:N643d2f6edd034e52a304d033e73a3b92"
         },
         {
-          "@id": "_:N1775750ea481490991fed40c06ba8a5c"
+          "@id": "_:N34e163f70b32478db03b85797612842e"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nb3dd8b8024f94b5aaed70347eadf2187"
+        "@id": "_:Ne98ae99677644bf3b3641b77ed9e0ced"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3534"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0736"
         },
         {
           "@id": "edam:topic_0128"
@@ -75,38 +71,38 @@
           "@id": "edam:topic_2814"
         },
         {
-          "@id": "edam:topic_0736"
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
+        "pubmed:24162465",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt607"
-        },
-        "pubmed:24162465"
+        }
       ],
       "sc:description": "Interactive protein feature visualization and integration with experimental proteomic data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2241"
-        },
-        {
           "@id": "edam:operation_0472"
-        },
-        {
-          "@id": "edam:operation_3092"
         },
         {
           "@id": "edam:operation_3636"
         },
         {
+          "@id": "edam:operation_3092"
+        },
+        {
           "@id": "edam:operation_2486"
+        },
+        {
+          "@id": "edam:operation_2241"
         }
       ],
       "sc:name": "Protter",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://wlab.ethz.ch/protter/help/"
@@ -114,98 +110,102 @@
       "sc:url": "http://wlab.ethz.ch/protter/"
     },
     {
-      "@id": "_:N30abed19fddc4c80b658d49d44f25a5c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2547"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_3747"
-        }
-      ],
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N2af5e1cfdcbe48a69a93909d8578e5c0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2547"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_3747"
-        }
-      ],
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N1775750ea481490991fed40c06ba8a5c",
+      "@id": "_:Ndeefe6239b9b462b8c26f35f71e3238c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3747"
+          "@id": "edam:format_3752"
         },
         {
           "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_2547"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
           "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3747"
+        },
+        {
+          "@id": "edam:format_2547"
         }
       ],
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nb3dd8b8024f94b5aaed70347eadf2187",
+      "@id": "_:N643d2f6edd034e52a304d033e73a3b92",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3747"
+        },
+        {
+          "@id": "edam:format_2547"
+        }
+      ],
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N34e163f70b32478db03b85797612842e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3747"
+        },
+        {
+          "@id": "edam:format_2547"
+        }
+      ],
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Ne98ae99677644bf3b3641b77ed9e0ced",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1709"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3508"
+        },
+        {
           "@id": "edam:format_3603"
         },
         {
           "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3508"
         }
       ],
       "sc:name": "Protein secondary structure image"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt607",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

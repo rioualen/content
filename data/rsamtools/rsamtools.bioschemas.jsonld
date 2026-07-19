@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rsamtools",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "BioConductor Package Maintainer",
       "bsc:input": {
-        "@id": "_:N689eea34c8254658bc35258bb9db4519"
+        "@id": "_:N81e801b93ac6402bbafe7c89bee9d026"
       },
       "bsc:output": [
         {
-          "@id": "_:N1e30a487c1fa484799dac4cd854d3fe3"
+          "@id": "_:Ne544bf8c82c74544be726863d0e3faa6"
         },
         {
-          "@id": "_:Nb5ca3bc0d51e4621a9290bac06a543d1"
+          "@id": "_:N5a0334d56bb74637b9f97ea17920b0fd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3170"
@@ -68,20 +72,20 @@
       "sc:description": "This package provides an interface to the 'samtools', 'bcftools', and 'tabix' utilities (see 'LICENCE') for manipulating SAM (Sequence Alignment / Map), FASTA, binary variant call (BCF) and compressed indexed tab-delimited (tabix) files.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0227"
+        },
+        {
           "@id": "edam:operation_3563"
         },
         {
           "@id": "edam:operation_3219"
-        },
-        {
-          "@id": "edam:operation_0227"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "Rsamtools",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -91,7 +95,43 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Rsamtools.html"
     },
     {
-      "@id": "_:N1e30a487c1fa484799dac4cd854d3fe3",
+      "@id": "_:N81e801b93ac6402bbafe7c89bee9d026",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3020"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2573"
+        },
+        {
+          "@id": "edam:format_3616"
+        }
+      ],
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:Ne544bf8c82c74544be726863d0e3faa6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3327"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N5a0334d56bb74637b9f97ea17920b0fd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -100,46 +140,6 @@
         "@id": "edam:format_3327"
       },
       "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:Nb5ca3bc0d51e4621a9290bac06a543d1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3327"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "_:N689eea34c8254658bc35258bb9db4519",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_3020"
-        },
-        {
-          "@id": "edam:format_2573"
-        },
-        {
-          "@id": "edam:format_3616"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0022-2836(05)80360-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ensembl_genomes_protists_blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:Nf2eddc95b01943d9bb7db02b3a72cd46"
+        "@id": "_:N5b7ae83c36b544e0884db5cfde28697e"
       },
       "bsc:output": {
-        "@id": "_:Nc2ee65a60b224dfbb221aad4383bfa2f"
+        "@id": "_:N25d14ca72f36470b813d6ddc1855208a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -61,16 +57,16 @@
       "sc:description": "Searches Ensembl Protists sequences using WU-BLAST.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0346"
         }
       ],
       "sc:name": "Ensembl Genomes Protists Blast",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
@@ -86,7 +82,7 @@
       "sc:url": "http://protists.ensembl.org/Multi/blastview"
     },
     {
-      "@id": "_:Nf2eddc95b01943d9bb7db02b3a72cd46",
+      "@id": "_:N5b7ae83c36b544e0884db5cfde28697e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -97,12 +93,16 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nc2ee65a60b224dfbb221aad4383bfa2f",
+      "@id": "_:N25d14ca72f36470b813d6ddc1855208a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0022-2836(05)80360-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

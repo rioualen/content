@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,50 +36,54 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ThaleMine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4eb681d389cc40f79015d30c9a19bec0"
+          "@id": "_:N3930a1359a13467b9dc38d183e2ebb09"
         },
         {
-          "@id": "_:Nb72ba493e2324eaeab250bc7a0627fe1"
+          "@id": "_:Nbb5f4a2bbf3c4fb68ba14058e5023ea5"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N67902aa6c5c14ef8b5970d9d4dd562fd"
+          "@id": "_:N4e5f77bb2dfd4048b320b8df627c5935"
         },
         {
-          "@id": "_:N4b4d1bb8105c4137b9270881be3b74b2"
+          "@id": "_:N1b1ab9aa22aa49148b3d22b1cd4c5892"
         },
         {
-          "@id": "_:N4f675de6d31e42199a4aedafb768a9ff"
+          "@id": "_:Nd35a48df01bb47bc92947a56fc48be5a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Database portal",
+        "Web application",
         "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
+        "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pubmed:23023984",
-        "pmcid:PMC3516146"
+        }
       ],
       "sc:description": "ThaleMine enables you to analyze Arabidopsis thaliana genes, proteins, gene expression, protein-protein interactions, orthologs, and more.",
       "sc:featureList": [
@@ -100,22 +104,22 @@
       "sc:license": "LGPL-2.1",
       "sc:name": "ThaleMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "4.3.1-20210109",
       "sc:url": "https://bar.utoronto.ca/thalemine"
     },
     {
-      "@id": "_:N4eb681d389cc40f79015d30c9a19bec0",
+      "@id": "_:N3930a1359a13467b9dc38d183e2ebb09",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -123,7 +127,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:Nb72ba493e2324eaeab250bc7a0627fe1",
+      "@id": "_:Nbb5f4a2bbf3c4fb68ba14058e5023ea5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -131,23 +135,7 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:N67902aa6c5c14ef8b5970d9d4dd562fd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:N4b4d1bb8105c4137b9270881be3b74b2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N4f675de6d31e42199a4aedafb768a9ff",
+      "@id": "_:N4e5f77bb2dfd4048b320b8df627c5935",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -155,8 +143,20 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N1b1ab9aa22aa49148b3d22b1cd4c5892",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:Nd35a48df01bb47bc92947a56fc48be5a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

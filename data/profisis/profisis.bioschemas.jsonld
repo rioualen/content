@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl303",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/profisis",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nec85254dfe6a4d2ca1f9939487f76882"
+        "@id": "_:N0ff827da00774ff2a128dafb163e3166"
       },
       "bsc:output": {
-        "@id": "_:N50396d26eed74834a6cfeadd0d3a0d90"
+        "@id": "_:Naee9dfc29255496bb617a424047ec3c8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -64,8 +60,8 @@
         }
       ],
       "sc:contributor": [
-        "Burkhard Rost",
-        "Grants RO1-GM63029-01 and R01-GM64633-01 from the National Institutes of Health (NIH)"
+        "Grants RO1-GM63029-01 and R01-GM64633-01 from the National Institutes of Health (NIH)",
+        "Burkhard Rost"
       ],
       "sc:description": "Prediction of protein-protein interaction sites identified from sequence.",
       "sc:featureList": {
@@ -77,8 +73,8 @@
       "sc:name": "PROFisis",
       "sc:operatingSystem": "Linux",
       "sc:provider": [
-        "RostLab",
-        "Columbia University"
+        "Columbia University",
+        "RostLab"
       ],
       "sc:softwareHelp": {
         "@id": "https://rostlab.org/owiki/index.php/PROFisis"
@@ -87,7 +83,18 @@
       "sc:url": "https://rostlab.org/owiki/index.php/PROFisis"
     },
     {
-      "@id": "_:N50396d26eed74834a6cfeadd0d3a0d90",
+      "@id": "_:N0ff827da00774ff2a128dafb163e3166",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2200"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:Naee9dfc29255496bb617a424047ec3c8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -98,15 +105,8 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:Nec85254dfe6a4d2ca1f9939487f76882",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2200"
-      },
-      "sc:name": "Protein sequence record"
+      "@id": "https://doi.org/10.1093/bioinformatics/btl303",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

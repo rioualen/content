@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/pmic.201000595",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/searchgui",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1a048041ad754be98ab4b931b0e354e8"
+          "@id": "_:Nbbcef2eea25b48d6ba0dedc073ee433e"
         },
         {
-          "@id": "_:Na79512bc11a3461982d6d06a00352357"
+          "@id": "_:Nb8f270788ac1489bb49fe5e416e7e968"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf642ae5fe78d41edb4f573bb414e39bf"
+        "@id": "_:N1ca231432e57453a829daefbc048739e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -74,10 +78,10 @@
       "sc:description": "Graphical user interface for proteomics identification search engines",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3767"
+          "@id": "edam:operation_3647"
         },
         {
-          "@id": "edam:operation_3644"
+          "@id": "edam:operation_3694"
         },
         {
           "@id": "edam:operation_3646"
@@ -86,19 +90,19 @@
           "@id": "edam:operation_3631"
         },
         {
+          "@id": "edam:operation_3767"
+        },
+        {
           "@id": "edam:operation_3648"
         },
         {
-          "@id": "edam:operation_3647"
-        },
-        {
-          "@id": "edam:operation_3694"
+          "@id": "edam:operation_3644"
         }
       ],
       "sc:name": "SearchGUI",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -109,7 +113,7 @@
       "sc:url": "http://compomics.github.io/projects/searchgui.html"
     },
     {
-      "@id": "_:N1a048041ad754be98ab4b931b0e354e8",
+      "@id": "_:Nbbcef2eea25b48d6ba0dedc073ee433e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -125,7 +129,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Na79512bc11a3461982d6d06a00352357",
+      "@id": "_:Nb8f270788ac1489bb49fe5e416e7e968",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -136,7 +140,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nf642ae5fe78d41edb4f573bb414e39bf",
+      "@id": "_:N1ca231432e57453a829daefbc048739e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -150,10 +154,6 @@
         }
       ],
       "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "https://doi.org/10.1002/pmic.201000595",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

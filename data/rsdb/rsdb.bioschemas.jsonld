@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41597-022-01654-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rsdb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb50b4c1bfd9149f0937f276dc2332d21"
+          "@id": "_:N15c399e56c98428c8e2e3b0640939ccb"
         },
         {
-          "@id": "_:N4ae20172058d4b3dba9980330006167f"
+          "@id": "_:Nbb3fb6b5eb2d4fb89b4051542a7a20d3"
         },
         {
-          "@id": "_:Nffcac05aaed14b8091794c4ed0e8500b"
+          "@id": "_:N249b333bfef64746a4bb02890d70ce29"
         },
         {
-          "@id": "_:Nacdb442eca844cc885db8e56173b39ec"
+          "@id": "_:N3ab5ebd0b3e24bff850589947f275a35"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3373"
+        },
+        {
+          "@id": "edam:topic_0625"
+        },
         {
           "@id": "edam:topic_0209"
         },
@@ -67,58 +69,44 @@
         },
         {
           "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0625"
-        },
-        {
-          "@id": "edam:topic_3373"
         }
       ],
       "sc:citation": [
+        "pubmed:36028515",
+        "pmcid:PMC9418253",
         {
           "@id": "https://doi.org/10.1038/s41597-022-01654-2"
-        },
-        "pubmed:36028515",
-        "pmcid:PMC9418253"
+        }
       ],
       "sc:description": "A rare skin disease database to link drugs with potential drug targets for rare skin diseases.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_4009"
+          "@id": "edam:operation_3925"
         },
         {
-          "@id": "edam:operation_3925"
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-NC-SA-4.0",
       "sc:name": "RSDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://rsdb.cmdm.tw"
     },
     {
-      "@id": "_:Nb50b4c1bfd9149f0937f276dc2332d21",
+      "@id": "_:N15c399e56c98428c8e2e3b0640939ccb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3275"
+        "@id": "edam:data_1001"
       },
-      "sc:name": "Phenotype name"
+      "sc:name": "Chemical name (synonymous)"
     },
     {
-      "@id": "_:N4ae20172058d4b3dba9980330006167f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:name": "Gene name"
-    },
-    {
-      "@id": "_:Nffcac05aaed14b8091794c4ed0e8500b",
+      "@id": "_:Nbb3fb6b5eb2d4fb89b4051542a7a20d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3668"
@@ -126,12 +114,24 @@
       "sc:name": "Disease name"
     },
     {
-      "@id": "_:Nacdb442eca844cc885db8e56173b39ec",
+      "@id": "_:N249b333bfef64746a4bb02890d70ce29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1001"
+        "@id": "edam:data_2299"
       },
-      "sc:name": "Chemical name (synonymous)"
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N3ab5ebd0b3e24bff850589947f275a35",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3275"
+      },
+      "sc:name": "Phenotype name"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41597-022-01654-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

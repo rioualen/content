@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,54 +36,50 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/hortres.2016.56",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/Plant_DataDiscovery",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Support service",
       "bsc:input": [
         {
-          "@id": "_:N3b4e7a7211cb4e2495267f7021541c14"
+          "@id": "_:Na5c410b193fa4f05b6d5102cea2dd142"
         },
         {
-          "@id": "_:N939772bbf13b46959f6cdd7071f17c91"
+          "@id": "_:N2272bbcda17847bd9c0689f728fb99b1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na206a66f7a4d4ff7bf27a43ab564e9c3"
+          "@id": "_:N8df55dfdd6384293b3dd627aba917da8"
         },
         {
-          "@id": "_:Nb8efc5bf19ae4c50874b4fdb19c7b2f0"
+          "@id": "_:N2a1c052bc3a74befb29c749e3ef2e5ec"
         },
         {
-          "@id": "_:N2f890beda7c84f73b57999f278eb027a"
+          "@id": "_:Ncd0dd1e68174449392da943216e566c8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
+        "Database portal",
         "Web API",
         "Web application",
-        "Database portal"
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0610"
-        },
-        {
-          "@id": "edam:topic_0780"
-        },
-        {
           "@id": "edam:topic_3810"
+        },
+        {
+          "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0610"
+        },
+        {
+          "@id": "edam:topic_0780"
         }
       ],
       "sc:citation": [
@@ -97,13 +93,13 @@
       "sc:description": "The purpose of this web portal is to facilitate the discoverability of public data on plant biology managed by different laboratories across the world.\n\nThe web portal indexes and makes findable any kind of plant data. Plant DataDiscovery is an implementation of DataDiscovery.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3908"
-        },
-        {
           "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_0227"
+        },
+        {
+          "@id": "edam:operation_3908"
         },
         {
           "@id": "edam:operation_3625"
@@ -117,10 +113,10 @@
           "@id": "https://urgi.versailles.inrae.fr/data-discovery/join"
         },
         {
-          "@id": "https://urgi.versailles.inrae.fr/data-discovery/legal"
+          "@id": "https://urgi.versailles.inrae.fr/data-discovery/about"
         },
         {
-          "@id": "https://urgi.versailles.inrae.fr/data-discovery/about"
+          "@id": "https://urgi.versailles.inrae.fr/data-discovery/legal"
         },
         {
           "@id": "https://urgi.versailles.inrae.fr/data-discovery/help"
@@ -129,31 +125,7 @@
       "sc:url": "https://urgi.versailles.inrae.fr/data-discovery/"
     },
     {
-      "@id": "_:Na206a66f7a4d4ff7bf27a43ab564e9c3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:Nb8efc5bf19ae4c50874b4fdb19c7b2f0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N2f890beda7c84f73b57999f278eb027a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N3b4e7a7211cb4e2495267f7021541c14",
+      "@id": "_:Na5c410b193fa4f05b6d5102cea2dd142",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
@@ -161,12 +133,40 @@
       "sc:name": "Keyword"
     },
     {
-      "@id": "_:N939772bbf13b46959f6cdd7071f17c91",
+      "@id": "_:N2272bbcda17847bd9c0689f728fb99b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
       },
       "sc:name": "Ontology data"
+    },
+    {
+      "@id": "_:N8df55dfdd6384293b3dd627aba917da8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:name": "Data reference"
+    },
+    {
+      "@id": "_:N2a1c052bc3a74befb29c749e3ef2e5ec",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:Ncd0dd1e68174449392da943216e566c8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "https://doi.org/10.1038/hortres.2016.56",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1186/s13059-018-1491-4",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1118",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/merops_blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "MEROPS group",
       "bsc:input": [
         {
-          "@id": "_:Nb8a3986a12e64a368721cbd10e042a39"
+          "@id": "_:N39c4a1e558f84455beded13a711b3aaa"
         },
         {
-          "@id": "_:Na575fe776e824be2ac1897d22e8288b9"
+          "@id": "_:N3191091368594d1988fa4b179d619132"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N455bd96ef7974fb5ac9ff97a9aa45f63"
+          "@id": "_:Nf408f0640a0741e3a6e12bdf1de336e9"
         },
         {
-          "@id": "_:N3427b68377a74cb6b6d749d9819e24c7"
+          "@id": "_:Ne878bae9b8994a408ef9947dbee0b057"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -70,11 +74,11 @@
         "Neil Rawlings"
       ],
       "sc:citation": [
+        "pubmed:26527717",
         "pmcid:PMC4702814",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1118"
-        },
-        "pubmed:26527717"
+        }
       ],
       "sc:contributor": "NCBI",
       "sc:description": "Search MEROPS sequences with BLAST.",
@@ -83,9 +87,9 @@
       },
       "sc:name": "MEROPS Blast",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -93,33 +97,17 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://merops.sanger.ac.uk/about/special_features.shtml#BLAST"
         },
         {
-          "@id": "http://merops.sanger.ac.uk/about/special_features.shtml#BLAST"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://merops.sanger.ac.uk/cgi-bin/blast/submitblast/merops/advanced"
     },
     {
-      "@id": "_:N455bd96ef7974fb5ac9ff97a9aa45f63",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N3427b68377a74cb6b6d749d9819e24c7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:Nb8a3986a12e64a368721cbd10e042a39",
+      "@id": "_:N39c4a1e558f84455beded13a711b3aaa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -127,7 +115,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Na575fe776e824be2ac1897d22e8288b9",
+      "@id": "_:N3191091368594d1988fa4b179d619132",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -135,8 +123,20 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1118",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf408f0640a0741e3a6e12bdf1de336e9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:Ne878bae9b8994a408ef9947dbee0b057",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
     }
   ]
 }

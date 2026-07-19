@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41525-021-00278-6",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fjd-pipeline",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-4099-9421"
       },
       "bsc:input": {
-        "@id": "_:Ne462c62485d3441d9bc20b0b9a942986"
+        "@id": "_:N775b94c560c549068061d45f078af80d"
       },
       "bsc:output": {
-        "@id": "_:N367a963eab4d42a993f7cef8c021f37d"
+        "@id": "_:Ne7cc1d0584154b0f81d9a63ab6acba98"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC8795168",
         "pubmed:35087072",
+        "pmcid:PMC8795168",
         {
           "@id": "https://doi.org/10.1038/s41525-021-00278-6"
         }
@@ -71,13 +67,13 @@
       "sc:description": "Pipeline for Single Nucleotide Variants (SNVs) and Copy Number Variation (CNVs) variant calling. This tool is no longer maintained. See the new version: PARROT-FJD.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3961"
+        },
+        {
           "@id": "edam:operation_0362"
         },
         {
           "@id": "edam:operation_3227"
-        },
-        {
-          "@id": "edam:operation_3961"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -90,7 +86,7 @@
       "sc:url": "https://github.com/TBLabFJD/VariantCallingFJD"
     },
     {
-      "@id": "_:Ne462c62485d3441d9bc20b0b9a942986",
+      "@id": "_:N775b94c560c549068061d45f078af80d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1193"
@@ -101,7 +97,7 @@
       "sc:name": "Tool name (FASTA)"
     },
     {
-      "@id": "_:N367a963eab4d42a993f7cef8c021f37d",
+      "@id": "_:Ne7cc1d0584154b0f81d9a63ab6acba98",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -114,6 +110,10 @@
     {
       "@id": "https://orcid.org/0000-0003-4099-9421",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41525-021-00278-6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

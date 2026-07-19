@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7032-5650",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7860-3560",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1038/s41559-022-01956-z",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "http://orcid.org/0000-0002-8209-173X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-7032-5650",
       "@type": "sc:Person"
     },
     {
@@ -63,37 +67,37 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nc8381f3d42854d0f82fc583c8daf127f"
+          "@id": "_:Nd44111ccdcb24219bbee9841379366f2"
         },
         {
-          "@id": "_:Nd74659630456426690fe4370fb67890a"
+          "@id": "_:Ncc9a7653480f4dcbae83314cb0b1ed73"
         },
         {
-          "@id": "_:N95e6ad3246dc4d4a8e9b3bd3afb6afd9"
+          "@id": "_:N8843ed9141a84a47a1d7c9302b1b41d8"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3fed10d850274c5eaa3ea78ac2032892"
+        "@id": "_:N523c965c011044a191731341f9082c12"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0084"
-        },
         {
           "@id": "edam:topic_3299"
         },
         {
           "@id": "edam:topic_0194"
+        },
+        {
+          "@id": "edam:topic_0084"
         }
       ],
       "sc:citation": [
+        "pubmed:36646945",
         "pmcid:PMC9998269",
         {
           "@id": "https://doi.org/10.1038/s41559-022-01956-z"
-        },
-        "pubmed:36646945"
+        }
       ],
       "sc:description": "AGORA stands for “Algorithm for Gene Order Reconstruction in Ancestors” .\n\nAGORA is used to generate ancestral genomes for the Genomicus online server for gene order comparison, and has been in constant use in the group since.",
       "sc:featureList": {
@@ -103,21 +107,13 @@
       "sc:license": "CECILL-C",
       "sc:name": "AGORA",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://github.com/DyogenIBENS/Agora"
     },
     {
-      "@id": "_:N3fed10d850274c5eaa3ea78ac2032892",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2711"
-      },
-      "sc:name": "Genome report"
-    },
-    {
-      "@id": "_:Nc8381f3d42854d0f82fc583c8daf127f",
+      "@id": "_:Nd44111ccdcb24219bbee9841379366f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -125,15 +121,7 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:Nd74659630456426690fe4370fb67890a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3272"
-      },
-      "sc:name": "Species tree"
-    },
-    {
-      "@id": "_:N95e6ad3246dc4d4a8e9b3bd3afb6afd9",
+      "@id": "_:Ncc9a7653480f4dcbae83314cb0b1ed73",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3271"
@@ -141,8 +129,20 @@
       "sc:name": "Gene tree"
     },
     {
-      "@id": "https://orcid.org/0000-0002-7860-3560",
-      "@type": "sc:Person"
+      "@id": "_:N8843ed9141a84a47a1d7c9302b1b41d8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3272"
+      },
+      "sc:name": "Species tree"
+    },
+    {
+      "@id": "_:N523c965c011044a191731341f9082c12",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2711"
+      },
+      "sc:name": "Genome report"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gks1153",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/plantsdb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -47,12 +43,12 @@
         "Klaus Mayer"
       ],
       "bsc:input": {
-        "@id": "_:N305b8401d80a43c5a689ae68ba10d493"
+        "@id": "_:N21378543dbe740e480019379aa03ba89"
       },
       "bsc:output": {
-        "@id": "_:N7517ed2c5ab9462cbc0eb1de4960ed9f"
+        "@id": "_:Ne012376e731a43fb856faf59a9629525"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3053"
@@ -70,8 +66,8 @@
       },
       "sc:name": "PlantsDB",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "hmgu",
@@ -81,7 +77,7 @@
       "sc:url": "http://pgsb.helmholtz-muenchen.de/plant/index.jsp"
     },
     {
-      "@id": "_:N305b8401d80a43c5a689ae68ba10d493",
+      "@id": "_:N21378543dbe740e480019379aa03ba89",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
@@ -92,12 +88,16 @@
       "sc:name": "Keyword"
     },
     {
-      "@id": "_:N7517ed2c5ab9462cbc0eb1de4960ed9f",
+      "@id": "_:Ne012376e731a43fb856faf59a9629525",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
       },
       "sc:name": "Database search results"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gks1153",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

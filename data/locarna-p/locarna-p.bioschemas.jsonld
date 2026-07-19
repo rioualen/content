@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/locarna-p",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Sebastian Will",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Sebastian Will"
       ],
       "bsc:input": {
-        "@id": "_:N090cf876d4934605aa7bf6f0d06041db"
+        "@id": "_:N8fa21d3d2ff948bea203995d570cfdb7"
       },
       "bsc:output": [
         {
-          "@id": "_:N2b8a0886e2f540eaa53c0acb04fcf08d"
+          "@id": "_:N5f7388704dc0475f8de6ce8c0198fd66"
         },
         {
-          "@id": "_:N43ee88b86b3b449a8431906827e31fd2"
+          "@id": "_:N291f9e8dc53246aa9ce431101848c6a0"
         },
         {
-          "@id": "_:Nf188073d08e044b198b398be2848b7aa"
+          "@id": "_:N3286f63556694f36b27522a9f2f9911c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -69,14 +73,14 @@
         }
       ],
       "sc:author": [
-        "Sebastian Will",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Sebastian Will"
       ],
       "sc:citation": [
-        "pmcid:PMC3334699",
         "pubmed:22450757",
+        "pmcid:PMC3334699",
         {
           "@id": "https://doi.org/10.1261/rna.029041.111"
         }
@@ -88,12 +92,12 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "LocARNA-P",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "rnateam",
-        "University Freiburg"
+        "University Freiburg",
+        "rnateam"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.bioinf.uni-freiburg.de/Software/LocARNA/"
@@ -102,7 +106,7 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/LocARNA/"
     },
     {
-      "@id": "_:N090cf876d4934605aa7bf6f0d06041db",
+      "@id": "_:N8fa21d3d2ff948bea203995d570cfdb7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -118,29 +122,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N2b8a0886e2f540eaa53c0acb04fcf08d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N43ee88b86b3b449a8431906827e31fd2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1465"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3466"
-      },
-      "sc:name": "RNA structure"
-    },
-    {
-      "@id": "_:Nf188073d08e044b198b398be2848b7aa",
+      "@id": "_:N5f7388704dc0475f8de6ce8c0198fd66",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -156,12 +138,30 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "https://doi.org/10.1261/rna.029041.111",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N291f9e8dc53246aa9ce431101848c6a0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
+      "@id": "_:N3286f63556694f36b27522a9f2f9911c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1465"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3466"
+      },
+      "sc:name": "RNA structure"
+    },
+    {
+      "@id": "https://doi.org/10.1261/rna.029041.111",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

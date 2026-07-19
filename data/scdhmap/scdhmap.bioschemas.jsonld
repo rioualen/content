@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/gr.277068.122",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/scdhmap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4ca6463ce44d4285ba0a0406ab4ed911"
+        "@id": "_:N9c338e092cc040cc8b246e93ae69360f"
       },
       "bsc:output": {
-        "@id": "_:Nece705df170e47f1b0155737ef81bc4f"
+        "@id": "_:N3cfb880b4c2f4c6aa5b2af70e2516372"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_3391"
+          "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_3391"
         }
       ],
       "sc:citation": [
+        "pubmed:36849204",
+        "pmcid:PMC10069463",
         {
           "@id": "https://doi.org/10.1101/gr.277068.122"
-        },
-        "pubmed:36849204",
-        "pmcid:PMC10069463"
+        }
       ],
       "sc:description": "Model-based deep hyperbolic manifold learning for visualizing complex hierarchical structures in single-cell genomics data.",
       "sc:featureList": {
@@ -73,24 +77,13 @@
       "sc:name": "scDHMap",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://github.com/ttgump/scDHMap"
     },
     {
-      "@id": "_:Nece705df170e47f1b0155737ef81bc4f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N4ca6463ce44d4285ba0a0406ab4ed911",
+      "@id": "_:N9c338e092cc040cc8b246e93ae69360f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -101,8 +94,15 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "https://doi.org/10.1101/gr.277068.122",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N3cfb880b4c2f4c6aa5b2af70e2516372",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

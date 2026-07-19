@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/S12021-020-09467-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mearec",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -64,13 +60,13 @@
       "sc:description": "A Fast and Customizable Testbench Simulator for Ground-truth Extracellular Spiking Activity.\n\nMEArec: Fast and customizable simulation of extracellular recordings on Multi-Electrode-Arrays.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3802"
-        },
-        {
           "@id": "edam:operation_2426"
         },
         {
           "@id": "edam:operation_3927"
+        },
+        {
+          "@id": "edam:operation_3802"
         }
       ],
       "sc:license": "GPL-3.0",
@@ -79,6 +75,10 @@
         "@id": "https://mearec.readthedocs.io/"
       },
       "sc:url": "https://github.com/alejoe91/MEArec"
+    },
+    {
+      "@id": "https://doi.org/10.1007/S12021-020-09467-7",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

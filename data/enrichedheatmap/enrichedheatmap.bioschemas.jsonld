@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12864-018-4625-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/enrichedheatmap",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Zuguang Gu",
       "bsc:input": [
         {
-          "@id": "_:N6b511d5015024f57ae83dde13b7a1919"
+          "@id": "_:N82e574efa38f4c719c90eef5821839d2"
         },
         {
-          "@id": "_:Nf0bda0b58b6d442087d6ca7cff871c77"
+          "@id": "_:N5634468026f3401f9c86f2f304811dd0"
         },
         {
-          "@id": "_:N62ffa2b74e434d6da5084baefdba5cb7"
+          "@id": "_:N42f76c6783644e8b8e3e8d28ac72d242"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3b57acaedafa4ada8be77a53642fd1f0"
+        "@id": "_:N9fac1f3822af4ace9106b5ab9d5ebf36"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3511"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3511"
         }
       ],
       "sc:author": "Zuguang Gu",
@@ -85,9 +81,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "EnrichedHeatmap",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/EnrichedHeatmap.html"
@@ -96,29 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/EnrichedHeatmap.html"
     },
     {
-      "@id": "_:N6b511d5015024f57ae83dde13b7a1919",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1017"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence range"
-    },
-    {
-      "@id": "_:Nf0bda0b58b6d442087d6ca7cff871c77",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N62ffa2b74e434d6da5084baefdba5cb7",
+      "@id": "_:N82e574efa38f4c719c90eef5821839d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -129,7 +103,29 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N3b57acaedafa4ada8be77a53642fd1f0",
+      "@id": "_:N5634468026f3401f9c86f2f304811dd0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N42f76c6783644e8b8e3e8d28ac72d242",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1017"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence range"
+    },
+    {
+      "@id": "_:N9fac1f3822af4ace9106b5ab9d5ebf36",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -138,6 +134,10 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Heat map"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12864-018-4625-x",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
