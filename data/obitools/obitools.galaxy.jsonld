@@ -13,7 +13,6 @@
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "galaxytool": "https://github.com/galaxyproject/tools-iuc/tree/master/tools/",
-    "galaxywf": "https://usegalaxy.eu/published/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "odrl": "http://www.w3.org/ns/odrl/2/",
     "org": "http://www.w3.org/ns/org#",
@@ -36,49 +35,86 @@
     "workflowhub": "https://workflowhub.eu/workflows/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "galaxytool:obitools",
-  "@type": "schema1:SoftwareApplication",
-  "schema1:applicationSubCategory": [
+  "@graph": [
     {
-      "@id": "edam:operation_2403"
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
     },
     {
-      "@id": "edam:topic_0080"
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     },
     {
-      "@id": "edam:topic_0654"
+      "@id": "galaxytool:obitools",
+      "@type": "schema1:SoftwareApplication",
+      "schema1:applicationSubCategory": [
+        {
+          "@id": "edam:operation_2403"
+        },
+        {
+          "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_0654"
+        },
+        {
+          "@id": "edam:topic_3168"
+        }
+      ],
+      "schema1:description": "OBITools is a set of programs developed to simplify the manipulation of sequence files",
+      "schema1:featureList": [
+        {
+          "@id": "edam:operation_2403"
+        },
+        {
+          "@id": "edam:topic_0080"
+        }
+      ],
+      "schema1:identifier": [
+        {
+          "@id": "biotools:obitools"
+        },
+        {
+          "@id": "bioconda:obitools"
+        }
+      ],
+      "schema1:isPartOf": [
+        {
+          "@id": "workflowhub:1702?version=1"
+        },
+        {
+          "@id": "https://workflowhub.eu"
+        },
+        {
+          "@id": "workflowhub:655?version=1"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=afad9a17a80bb26d"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=513389e1a8c6bba9"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=edf7e2128f5aef8d"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=470eb26144325590"
+        },
+        {
+          "@id": "https://usegalaxy.org.au"
+        }
+      ],
+      "schema1:keywords": "Sequence Analysis",
+      "schema1:name": "obitools",
+      "schema1:softwareVersion": "1.2.13",
+      "schema1:url": "http://metabarcoding.org/obitools"
     },
     {
-      "@id": "edam:topic_3168"
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
     }
-  ],
-  "schema1:description": "OBITools is a set of programs developed to simplify the manipulation of sequence files",
-  "schema1:featureList": [
-    {
-      "@id": "edam:operation_2403"
-    },
-    {
-      "@id": "edam:topic_0080"
-    }
-  ],
-  "schema1:identifier": [
-    {
-      "@id": "biotools:obitools"
-    },
-    {
-      "@id": "bioconda:obitools"
-    }
-  ],
-  "schema1:isPartOf": [
-    "workflowhub:1702?version=1",
-    "workflowhub:655?version=1",
-    "https://usegalaxy.eu/published/workflow?id=afad9a17a80bb26d",
-    "https://usegalaxy.eu/published/workflow?id=513389e1a8c6bba9",
-    "https://usegalaxy.eu/published/workflow?id=edf7e2128f5aef8d",
-    "https://usegalaxy.org.au/published/workflow?id=470eb26144325590"
-  ],
-  "schema1:keywords": "Sequence Analysis",
-  "schema1:name": "obitools",
-  "schema1:softwareVersion": "1.2.13",
-  "schema1:url": "http://metabarcoding.org/obitools"
+  ]
 }

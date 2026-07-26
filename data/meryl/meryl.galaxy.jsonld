@@ -13,7 +13,6 @@
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "galaxytool": "https://github.com/galaxyproject/tools-iuc/tree/master/tools/",
-    "galaxywf": "https://usegalaxy.eu/published/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "odrl": "http://www.w3.org/ns/odrl/2/",
     "org": "http://www.w3.org/ns/org#",
@@ -36,55 +35,108 @@
     "workflowhub": "https://workflowhub.eu/workflows/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "galaxytool:meryl",
-  "@type": "schema1:SoftwareApplication",
-  "schema1:applicationSubCategory": [
+  "@graph": [
     {
-      "@id": "edam:topic_3673"
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     },
     {
-      "@id": "edam:topic_0622"
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
     },
     {
-      "@id": "edam:operation_2403"
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
     },
     {
-      "@id": "edam:topic_0080"
-    },
-    {
-      "@id": "edam:topic_3168"
+      "@id": "galaxytool:meryl",
+      "@type": "schema1:SoftwareApplication",
+      "schema1:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3673"
+        },
+        {
+          "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:operation_2403"
+        },
+        {
+          "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_3168"
+        }
+      ],
+      "schema1:description": "Meryl a k-mer counter.",
+      "schema1:featureList": {
+        "@id": "edam:operation_3472"
+      },
+      "schema1:identifier": [
+        {
+          "@id": "biotools:meryl"
+        },
+        {
+          "@id": "bioconda:merqury"
+        }
+      ],
+      "schema1:isPartOf": [
+        {
+          "@id": "workflowhub:632?version=13"
+        },
+        {
+          "@id": "https://workflowhub.eu"
+        },
+        {
+          "@id": "workflowhub:631?version=6"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=59f35cb60b3d989d"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=41c48e4632684f76"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=0ccb3838765a8b84"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=10bde4e7f8dbd0c4"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=b4f9d9aafe87af82"
+        },
+        {
+          "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=beefb67de2b0728c"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=4b919e575a16d062"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=af1f4dba9aaa0b52"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=6988c29ae84d2788"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=9f1aabc6f5d18d13"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=5503f7835226bc04"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=83898f7cbfb7f88e"
+        }
+      ],
+      "schema1:keywords": "Assembly",
+      "schema1:name": "meryl",
+      "schema1:softwareVersion": "1.4.1",
+      "schema1:url": "https://github.com/marbl/meryl"
     }
-  ],
-  "schema1:description": "Meryl a k-mer counter.",
-  "schema1:featureList": {
-    "@id": "edam:operation_3472"
-  },
-  "schema1:identifier": [
-    {
-      "@id": "biotools:meryl"
-    },
-    {
-      "@id": "bioconda:merqury"
-    }
-  ],
-  "schema1:isPartOf": [
-    "workflowhub:632?version=13",
-    "workflowhub:631?version=6",
-    "https://usegalaxy.eu/published/workflow?id=59f35cb60b3d989d",
-    "https://usegalaxy.eu/published/workflow?id=41c48e4632684f76",
-    "https://usegalaxy.eu/published/workflow?id=0ccb3838765a8b84",
-    "https://usegalaxy.eu/published/workflow?id=10bde4e7f8dbd0c4",
-    "https://usegalaxy.org/published/workflow?id=b4f9d9aafe87af82",
-    "https://usegalaxy.org/published/workflow?id=beefb67de2b0728c",
-    "https://usegalaxy.org/published/workflow?id=4b919e575a16d062",
-    "https://usegalaxy.org/published/workflow?id=af1f4dba9aaa0b52",
-    "https://usegalaxy.org/published/workflow?id=6988c29ae84d2788",
-    "https://usegalaxy.org/published/workflow?id=9f1aabc6f5d18d13",
-    "https://usegalaxy.org/published/workflow?id=5503f7835226bc04",
-    "https://usegalaxy.org/published/workflow?id=83898f7cbfb7f88e"
-  ],
-  "schema1:keywords": "Assembly",
-  "schema1:name": "meryl",
-  "schema1:softwareVersion": "1.4.1",
-  "schema1:url": "https://github.com/marbl/meryl"
+  ]
 }

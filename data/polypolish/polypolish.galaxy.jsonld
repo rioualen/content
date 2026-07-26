@@ -13,7 +13,6 @@
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "galaxytool": "https://github.com/galaxyproject/tools-iuc/tree/master/tools/",
-    "galaxywf": "https://usegalaxy.eu/published/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "odrl": "http://www.w3.org/ns/odrl/2/",
     "org": "http://www.w3.org/ns/org#",
@@ -36,57 +35,72 @@
     "workflowhub": "https://workflowhub.eu/workflows/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "galaxytool:polypolish",
-  "@type": "schema1:SoftwareApplication",
-  "schema1:applicationSubCategory": [
+  "@graph": [
     {
-      "@id": "edam:data_0925"
+      "@id": "galaxytool:polypolish",
+      "@type": "schema1:SoftwareApplication",
+      "schema1:applicationSubCategory": [
+        {
+          "@id": "edam:data_0925"
+        },
+        {
+          "@id": "edam:operation_0310"
+        },
+        {
+          "@id": "edam:topic_0196"
+        },
+        {
+          "@id": "edam:topic_0157"
+        },
+        {
+          "@id": "edam:operation_2429"
+        },
+        {
+          "@id": "edam:topic_0102"
+        }
+      ],
+      "schema1:description": "\"Polypolish is a tool for polishing genome assemblies with short reads.Polypolish uses SAM files where each read has been aligned to all possible locations (not just a single best location).This allows it to repair errors in repeat regions that other alignment-based polishers cannot fix.\"",
+      "schema1:featureList": [
+        {
+          "@id": "edam:operation_0525"
+        },
+        {
+          "@id": "edam:operation_3440"
+        },
+        {
+          "@id": "edam:operation_3198"
+        },
+        {
+          "@id": "edam:operation_0523"
+        },
+        {
+          "@id": "edam:operation_3195"
+        }
+      ],
+      "schema1:identifier": [
+        {
+          "@id": "biotools:Polypolish"
+        },
+        {
+          "@id": "bioconda:polypolish"
+        }
+      ],
+      "schema1:isPartOf": [
+        {
+          "@id": "workflowhub:1613?version=2"
+        },
+        {
+          "@id": "https://workflowhub.eu"
+        }
+      ],
+      "schema1:keywords": "Sequence Analysis",
+      "schema1:name": "polypolish",
+      "schema1:softwareVersion": "0.6.1",
+      "schema1:url": "https://github.com/rrwick/Polypolish"
     },
     {
-      "@id": "edam:operation_0310"
-    },
-    {
-      "@id": "edam:topic_0196"
-    },
-    {
-      "@id": "edam:topic_0157"
-    },
-    {
-      "@id": "edam:operation_2429"
-    },
-    {
-      "@id": "edam:topic_0102"
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
     }
-  ],
-  "schema1:description": "\"Polypolish is a tool for polishing genome assemblies with short reads.Polypolish uses SAM files where each read has been aligned to all possible locations (not just a single best location).This allows it to repair errors in repeat regions that other alignment-based polishers cannot fix.\"",
-  "schema1:featureList": [
-    {
-      "@id": "edam:operation_0525"
-    },
-    {
-      "@id": "edam:operation_3440"
-    },
-    {
-      "@id": "edam:operation_3198"
-    },
-    {
-      "@id": "edam:operation_0523"
-    },
-    {
-      "@id": "edam:operation_3195"
-    }
-  ],
-  "schema1:identifier": [
-    {
-      "@id": "biotools:Polypolish"
-    },
-    {
-      "@id": "bioconda:polypolish"
-    }
-  ],
-  "schema1:isPartOf": "workflowhub:1613?version=2",
-  "schema1:keywords": "Sequence Analysis",
-  "schema1:name": "polypolish",
-  "schema1:softwareVersion": "0.6.1",
-  "schema1:url": "https://github.com/rrwick/Polypolish"
+  ]
 }

@@ -13,7 +13,6 @@
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "galaxytool": "https://github.com/galaxyproject/tools-iuc/tree/master/tools/",
-    "galaxywf": "https://usegalaxy.eu/published/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "odrl": "http://www.w3.org/ns/odrl/2/",
     "org": "http://www.w3.org/ns/org#",
@@ -36,43 +35,58 @@
     "workflowhub": "https://workflowhub.eu/workflows/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "galaxytool:gtdb_to_taxdump",
-  "@type": "schema1:SoftwareApplication",
-  "schema1:applicationSubCategory": {
-    "@id": "edam:topic_3307"
-  },
-  "schema1:description": "Convert GTDB taxonomy to NCBI taxdump format",
-  "schema1:featureList": [
+  "@graph": [
     {
-      "@id": "edam:operation_2409"
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     },
     {
-      "@id": "edam:operation_2427"
-    },
-    {
-      "@id": "edam:operation_2429"
-    },
-    {
-      "@id": "edam:topic_0102"
-    },
-    {
-      "@id": "edam:operation_3429"
+      "@id": "galaxytool:gtdb_to_taxdump",
+      "@type": "schema1:SoftwareApplication",
+      "schema1:applicationSubCategory": {
+        "@id": "edam:topic_3307"
+      },
+      "schema1:description": "Convert GTDB taxonomy to NCBI taxdump format",
+      "schema1:featureList": [
+        {
+          "@id": "edam:operation_2409"
+        },
+        {
+          "@id": "edam:operation_2427"
+        },
+        {
+          "@id": "edam:operation_2429"
+        },
+        {
+          "@id": "edam:topic_0102"
+        },
+        {
+          "@id": "edam:operation_3429"
+        }
+      ],
+      "schema1:identifier": [
+        {
+          "@id": "biotools:gtdb_to_taxdump"
+        },
+        {
+          "@id": "bioconda:gtdb_to_taxdump"
+        }
+      ],
+      "schema1:isPartOf": [
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=cf0159c14418525e"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=e4dabaf57668dbd1"
+        }
+      ],
+      "schema1:keywords": "Metagenomics",
+      "schema1:name": "gtdb_to_taxdump",
+      "schema1:softwareVersion": "0.1.9",
+      "schema1:url": "https://github.com/nick-youngblut/gtdb_to_taxdump"
     }
-  ],
-  "schema1:identifier": [
-    {
-      "@id": "biotools:gtdb_to_taxdump"
-    },
-    {
-      "@id": "bioconda:gtdb_to_taxdump"
-    }
-  ],
-  "schema1:isPartOf": [
-    "https://usegalaxy.eu/published/workflow?id=cf0159c14418525e",
-    "https://usegalaxy.eu/published/workflow?id=e4dabaf57668dbd1"
-  ],
-  "schema1:keywords": "Metagenomics",
-  "schema1:name": "gtdb_to_taxdump",
-  "schema1:softwareVersion": "0.1.9",
-  "schema1:url": "https://github.com/nick-youngblut/gtdb_to_taxdump"
+  ]
 }
