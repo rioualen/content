@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -38,6 +39,17 @@
   },
   "@id": "debianmed:trimmomatic",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:input": {
+    "@id": "edam:data_2044"
+  },
+  "bioschemas:output": [
+    {
+      "@id": "edam:data_2044"
+    },
+    {
+      "@id": "edam:data_2048"
+    }
+  ],
   "schema1:additionalType": [
     {
       "@id": "edam:data_2044"
@@ -50,7 +62,6 @@
     "@id": "edam:topic_3168"
   },
   "schema1:citation": "doi:10.1093/bioinformatics/btu170",
-  "schema1:description": "flexible read trimming tool for Illumina NGS data",
   "schema1:featureList": {
     "@id": "edam:operation_3218"
   },
