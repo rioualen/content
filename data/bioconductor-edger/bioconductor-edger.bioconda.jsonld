@@ -9,8 +9,10 @@
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
     "dcterms": "http://purl.org/dc/terms/",
+    "debian": "https://salsa.debian.org/med-team/",
     "doap": "http://usefulinc.com/ns/doap#",
     "foaf": "http://xmlns.com/foaf/0.1/",
+    "galaxytools": "https://github.com/galaxyproject/tools-iuc/tree/master/tools/",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "odrl": "http://www.w3.org/ns/odrl/2/",
     "org": "http://www.w3.org/ns/org#",
@@ -34,23 +36,18 @@
   },
   "@id": "bioconda:bioconductor-edger",
   "@type": "schema1:SoftwareApplication",
-  "schema1:description": "Empirical Analysis of Digital Gene Expression Data in R",
+  "schema1:alternateName": "Empirical Analysis of Digital Gene Expression Data in R",
+  "schema1:description": "Differential expression analysis of RNA-seq expression profiles with biological replication. Implements a range of statistical methodology based on the negative binomial distributions, including empirical Bayes estimation, exact tests, generalized linear models and quasi-likelihood tests. As well as RNA-seq, it be applied to differential signal analysis of other types of genomic data that produce read counts, including ChIP-seq, ATAC-seq, Bisulfite-seq, SAGE and CAGE.",
   "schema1:downloadUrl": [
     "https://bioconductor.org/packages/3.20/bioc/src/contrib/edgeR_4.4.0.tar.gz",
     "https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/edgeR/edgeR_4.4.0.tar.gz",
     "https://bioarchive.galaxyproject.org/edgeR_4.4.0.tar.gz",
     "https://depot.galaxyproject.org/software/bioconductor-edger/bioconductor-edger_4.4.0_src_all.tar.gz"
   ],
-  "schema1:hasPart": [
-    "bioconductor-limma",
-    "r-base",
-    "r-locfit",
-    "libblas",
-    "liblapack"
+  "schema1:identifier": [
+    "biotools:edger",
+    "usegalaxy-eu:edger"
   ],
-  "schema1:identifier": {
-    "@id": "biotools:edger"
-  },
   "schema1:license": "GPL (>=2)",
   "schema1:name": "bioconductor-edger",
   "schema1:softwareVersion": "4.4.0",
